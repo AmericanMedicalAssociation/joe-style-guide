@@ -3,32 +3,33 @@
     {
       "level": "1",
       "text": "Heading Level 1",
-      "class": "ama__h1"
+      "class": ""
     },
     {
       "level": "2",
       "text": "Heading Level 2",
-      "class": "ama__h2"
+      "class": ""
     },
     {
       "level": "3",
       "text": "Heading Level 3",
-      "class": "ama__h3"
+      "class": ""
     },
     {
       "level": "4",
       "text": "Heading Level 4",
-      "class": "ama__h4"
+      "class": ""
     },
     {
       "level": "5",
       "text": "Heading Level 5",
-      "class": "ama__h5"
+      "class": ""
     },
     {
       "level": "6",
       "text": "Heading Level 6",
-      "class": "ama__h6"
+      "class": ""
     }
   ]
 }
+
