@@ -99,6 +99,20 @@
       "placeholder": ""
     },
     {
+      "type": "checkbox",
+      "name": "checkbox input",
+      "id": "checkbox-input",
+      "value": "",
+      "placeholder": ""
+    },
+    {
+      "type": "radio",
+      "name": "radio input",
+      "id": "radio-input",
+      "value": "",
+      "placeholder": ""
+    },
+    {
       "type": "submit",
       "name": "submit input",
       "id": "submit-input",

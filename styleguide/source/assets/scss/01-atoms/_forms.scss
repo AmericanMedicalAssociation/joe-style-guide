@@ -89,6 +89,22 @@ input[type='radio'] {
   }
 }
 
+input[type="submit"] {
+  @extend %joe__button;
+}
+
+input[type="reset"] {
+  @extend %joe__link;
+  @include type($font-serif, .9em, $font-weight-bold, 1.25);
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  background-color: 0;
+  outline: 0;
+  box-shadow: 0;
+  padding: 0;
+}
+
 textarea {
   @extend %joe__input;
   appearance: none;
