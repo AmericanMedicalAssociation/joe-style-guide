@@ -10,21 +10,21 @@
 
   @if($style == "secondary") {
     background-color: transparent;
-    border-color: $purple;
-    color: $purple;
+    border-color: $blue;
+    color: $blue;
 
     &:hover {
-      background-color: $purple;
+      background-color: $blue-darker;
       color: $white;
     }
   } //outline
   @else {
-    background-color: $purple;
+    background-color: $red;
     border-color: transparent;
     color: $white;
 
     &:hover {
-      background-color: $purple-darker;
+      background-color: $red-darker;
     }
   }
 }
