@@ -57,6 +57,12 @@ input[type="datetime-local"] {
   @extend %joe__input;
 }
 
+input[type="range"] {
+  @extend %joe__input;
+  border: 0;
+  box-shadow: none;
+}
+
 input[type="color"] {
   display: block;
   height: 50px;
