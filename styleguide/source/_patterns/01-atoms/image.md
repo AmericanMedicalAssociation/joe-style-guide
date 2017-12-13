@@ -8,10 +8,8 @@ image {
     type: string / required
   src:
     type: string (url) / required
-  height:
-    type: string / required
-  width:
-    type: string / required
+  class:
+    type: string / optional
 }
 ~~~
 
