@@ -3,7 +3,7 @@ body {
   /* stylelint-disable property-no-vendor-prefix */
   -webkit-text-size-adjust: 100%;
   /* stylelint-enable */
-  color: #000;
+  color: $black-90;
   -webkit-font-smoothing: antialiased;
   @include type($base-font-family, $base-font-size, $base-font-weight, $base-line-height);
 

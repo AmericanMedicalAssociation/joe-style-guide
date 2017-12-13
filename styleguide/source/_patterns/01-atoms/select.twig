@@ -1,0 +1,10 @@
+<select name="{{ select.name }}"
+        id="{{ select.id }}">
+
+  {% for option in select.options %}
+    <option value="{{ option.value }}" 
+            {% if option.selected %}selected {% endif %}>
+      {{ option.name }}
+    </option>
+  {% endfor %}
+</select>

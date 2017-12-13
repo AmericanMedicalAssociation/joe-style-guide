@@ -1,0 +1,101 @@
+%joe__input,
+.joe__input {
+  @extend %joe__type--smaller;
+  width: 100%;
+  outline: 0;
+  border: 1px solid $black-20;
+  background-color: $white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: $black-90;
+  padding: 10px 8px;
+  box-shadow: 0 0px 3px rgba($black-20, .25);
+  margin-bottom: .5em;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border-color: $blue;
+    transition: border-color .5s ease;
+  }
+}
+
+label,
+legend {
+  @extend %joe__type--smaller;
+  color: $black-90;
+  margin-bottom: rhythm(.25);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $black-80;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $black-80;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $black-80;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: $black-80;
+}
+
+// input styles
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="range"],
+input[type="datetime"],
+input[type="datetime-local"] {
+  @extend %joe__input;
+}
+
+input[type="color"] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  padding: 0;
+}
+
+select {
+  @extend %joe__input;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+}
+
+// radio and checkbox styles
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline-block;
+
+  & + label {
+    @extend %joe__type--smaller;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    color: $black-90;
+    text-transform: none;
+    margin: 0 1em 0 .25em;
+  }
+}
+
+textarea {
+  @extend %joe__input;
+  appearance: none;
+  min-height: 300px;
+}
+
+fieldset {
+  margin: 24px 0;
+  padding: 0;
+}

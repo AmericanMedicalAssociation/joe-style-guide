@@ -1,0 +1,21 @@
+{
+  "select": {
+    "name": "select",
+    "id": "select-id",
+    "options": [
+      { 
+        "value":"option-1", 
+        "name":"Option 1" 
+      },
+      { 
+        "value":"option-2", 
+        "name":"Option 2",
+        "selected" : true 
+      },
+      { 
+        "value":"option-3", 
+        "name":"Option 3" 
+      }
+    ]
+  }
+}
