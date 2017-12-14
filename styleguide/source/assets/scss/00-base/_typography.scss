@@ -30,6 +30,13 @@ body {
   @include type($font-sans-serif, .75em, $font-weight-medium, 1.25);
 }
 
+p,
+%joe__paragraph,
+.joe__paragraph {
+  margin-top: 0;
+  margin-bottom: $base-line-height / 2;
+}
+
 %track-out,
 .track-out {
   letter-spacing: .1em;
