@@ -1,8 +1,8 @@
 {
-  "three_column": {
-    "ribbon": {
+  "two_column_left": {
+    "utility": {
       "placeholder": {
-      "text": "Ribbon placeholder"
+      "text": "Utility placeholder"
       }
     },
     "header": {
