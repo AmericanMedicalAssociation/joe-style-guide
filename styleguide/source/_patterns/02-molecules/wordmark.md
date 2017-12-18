@@ -8,7 +8,5 @@ wordmark {
     type: string / required
   subtitle:
     type: string / required
-  class:
-    type: string / optional
 }
 ~~~

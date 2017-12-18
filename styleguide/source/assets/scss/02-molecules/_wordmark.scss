@@ -7,7 +7,7 @@
   margin-bottom: 5px;
   margin-top: 0;
   
-  .joe__wordmark--small & {
+  .joe__footer & {
     @extend %joe__h3;
   }
 }
@@ -17,7 +17,7 @@
   font-style: italic;
   margin-top: 0;
   
-  .joe__wordmark--small & {
+  .joe__footer & {
     @include type($font-sans-serif, 0.85em, $font-weight-medium, 1.15);
   }
 }
