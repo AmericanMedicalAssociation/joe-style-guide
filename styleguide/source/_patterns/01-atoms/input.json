@@ -1,0 +1,9 @@
+{
+  "input": {
+    "type": "text",
+    "name": "text input",
+    "id": "text-input",
+    "value": "",
+    "placeholder": "Text Input" 
+  }
+}

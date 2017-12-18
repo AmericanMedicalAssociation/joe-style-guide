@@ -1,16 +1,15 @@
-{% set buttonSize = button.size ? "ama__button--" ~ button.size : "" %}
-{% set buttonStyle =  button.style ? "ama__button--" ~ button.style : "" %}
+{% set buttonSize = button.size ? "joe__button--" ~ button.size : "" %}
+{% set buttonStyle =  button.style ? "joe__button--" ~ button.style : "" %}
 
 {% if button.href %}
-  <a 
-    href="{{ button.href }}" 
-    class="ama__button"
-    title="{{ button.info }}">
+  <a href="{{ button.href }}" 
+     class="{{ buttonSize }} {{buttonStyle}}"
+     title="{{ button.info }}">
       {{ button.text }}
   </a>
 {% else %}
   <button type="{{ button.type }}"
-          class="ama__button {{ buttonSize }} {{buttonStyle}}"
+          class="{{ buttonSize }} {{buttonStyle}}"
           aria-label="{{ button.info }}">
     {{ button.text }}
   </button>

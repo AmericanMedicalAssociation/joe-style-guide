@@ -1,0 +1,34 @@
+{
+  "two_column_left": {
+    "utility": {
+      "placeholder": {
+      "text": "Utility placeholder"
+      }
+    },
+    "header": {
+      "placeholder": {
+        "text": "Header placeholder"
+      }
+    },
+    "page_content": {
+      "placeholder": {
+        "text": "Page content placeholder"
+      }
+    },
+    "sidebar_primary": {
+      "placeholder": {
+        "text": "Page sidebar primary placeholder"
+      }
+    },
+    "sidebar_secondary": {
+      "placeholder": {
+        "text": "Page sidebar secondary placeholder"
+      }
+    },
+    "footer": {
+      "placeholder": {
+        "text": "Page footer placeholder"
+      }
+    }
+  }
+}

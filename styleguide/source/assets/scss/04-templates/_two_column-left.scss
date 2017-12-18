@@ -1,0 +1,110 @@
+.joe__layout--two-column-left {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  // min-height: 30em;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: auto;
+
+  @include breakpoint($bp-small) {
+    grid-template-columns: 2fr  1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 2fr  1fr;
+    -ms-grid-rows: auto auto;
+  }
+
+  @include breakpoint($bp-large) {
+    grid-template-columns: 8fr  3fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 8fr  3fr;
+    -ms-grid-rows: auto;
+  }
+  
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid.flexbox & {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    @include breakpoint($bp-small) {
+      flex-direction: row;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    @extend %clearfix;
+  }
+}
+
+.joe__page-content {
+  grid-column: 1 / 1;
+  grid-row: 1;
+  -ms-grid-row: 1;
+
+  @include breakpoint($bp-small) {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+    
+    @include breakpoint($bp-small) {
+      width: 66.66%;
+    }
+    
+    @include breakpoint($bp-large) {
+      width: 72%;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    
+    @include breakpoint($bp-small) {
+      clear: left;
+      display: inline-block;
+      float: left;
+    }
+  }
+}// end article
+
+
+.joe__sidebar {
+  grid-column: 1 / 1;
+  grid-row: 2;
+  -ms-grid-row: 2;
+
+  @include breakpoint($bp-small) {
+    grid-column: 2 / 2;
+    grid-row: 1;
+    -ms-grid-row: 1;
+  }
+  
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+    
+    @include breakpoint($bp-small) {
+      width: 33.33%;
+    }
+    
+    @include breakpoint($bp-large) {
+      width: 28%;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    
+    @include breakpoint($bp-small) {
+      clear: right;
+      display: inline-block;
+      float: right;
+    }
+  }
+} // end aside.primary
+

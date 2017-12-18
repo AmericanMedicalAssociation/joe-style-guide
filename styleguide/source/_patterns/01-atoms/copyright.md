@@ -5,8 +5,6 @@ Display footer copyright text and style
 
 ~~~
 copyright {
-  begin:
-    type: string / required
   end:
     type: string / required
 }

@@ -1,0 +1,10 @@
+{
+  "link":
+    {
+      "title": "Link to something",
+      "href": "#",
+      "text": "Lorem ipsum dolor sit amet.",
+      "class": "joe__link",
+      "target": "_self"
+    }
+}

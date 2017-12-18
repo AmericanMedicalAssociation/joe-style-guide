@@ -1,0 +1,20 @@
+{
+  "buttons": [
+    {
+      "href": "",
+      "info": "alt",
+      "text": "Button",
+      "type": "button",
+      "style": "",
+      "size": ""
+    },
+    {
+      "href": "",
+      "info": "alt",
+      "text": "Button",
+      "type": "button",
+      "style": "",
+      "size": "small"
+    }
+  ]
+}

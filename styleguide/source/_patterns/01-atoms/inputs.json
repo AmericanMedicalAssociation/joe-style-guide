@@ -1,0 +1,130 @@
+{
+  "inputs": [
+    {
+      "type": "text",
+      "name": "text input",
+      "id": "text-input",
+      "value": "",
+      "placeholder": "Text Input"
+    },
+    {
+      "type": "email",
+      "name": "email input",
+      "id": "email-input",
+      "value": "",
+      "placeholder": "Email Input"
+    },
+    {
+      "type": "search",
+      "name": "search input",
+      "id": "search-input",
+      "value": "",
+      "placeholder": "Search Input"
+    },
+    {
+      "type": "url",
+      "name": "url input",
+      "id": "url-input",
+      "value": "",
+      "placeholder": "URL Input"
+    },
+    {
+      "type": "tel",
+      "name": "tel input",
+      "id": "tel-input",
+      "value": "",
+      "placeholder": "Tel Input"
+    },
+    {
+      "type": "number",
+      "name": "number input",
+      "id": "number-input",
+      "value": "",
+      "placeholder": "Number Input"
+    },
+    {
+      "type": "date",
+      "name": "date input",
+      "id": "date-input",
+      "value": "",
+      "placeholder": "Date Input"
+    },
+    {
+      "type": "time",
+      "name": "time input",
+      "id": "time-input",
+      "value": "",
+      "placeholder": "Time Input"
+    },
+    {
+      "type": "month",
+      "name": "month input",
+      "id": "month-input",
+      "value": "",
+      "placeholder": "Month Input"
+    },
+    {
+      "type": "week",
+      "name": "week input",
+      "id": "week-input",
+      "value": "",
+      "placeholder": "Week Input"
+    },
+    {
+      "type": "range",
+      "name": "range input",
+      "id": "range-input",
+      "value": "",
+      "placeholder": "Range Input"
+    },
+    {
+      "type": "datetime",
+      "name": "datetime input",
+      "id": "datetime-input",
+      "value": "",
+      "placeholder": "Datetime Input"
+    },
+    {
+      "type": "datetime-local",
+      "name": "datetime-local input",
+      "id": "datetime-local-input",
+      "value": "",
+      "placeholder": "Datetime-local Input"
+    },
+    {
+      "type": "color",
+      "name": "color input",
+      "id": "color-input",
+      "value": "",
+      "placeholder": ""
+    },
+    {
+      "type": "checkbox",
+      "name": "checkbox input",
+      "id": "checkbox-input",
+      "value": "",
+      "placeholder": ""
+    },
+    {
+      "type": "radio",
+      "name": "radio input",
+      "id": "radio-input",
+      "value": "",
+      "placeholder": ""
+    },
+    {
+      "type": "submit",
+      "name": "submit input",
+      "id": "submit-input",
+      "value": "Submit",
+      "placeholder": ""
+    },
+    {
+      "type": "reset",
+      "name": "reset input",
+      "id": "reset-input",
+      "value": "",
+      "placeholder": "Reset Input"
+    }
+  ]
+}

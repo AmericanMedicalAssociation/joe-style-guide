@@ -1,52 +1,16 @@
 /* Links */
-a {
-  color: $black;
+a,
+%joe__link,
+.joe__link {
+  color: $blue-darker;
   text-decoration: none;
   outline: 0;
-  &:hover,
-  &:focus {
-    color: $black;
-  }
-}
+  border-bottom: 1px solid $blue-lighter;
+  transition: all .3s ease;
 
-.ama__link-black {
-  &:link,
-  &:visited {
-    color: $black;
-  }
-  // if the default link style changes this will need to include color: black; text-decoration: none;
-  &:active,
   &:hover,
   &:focus {
-    color: $blue;
-    text-decoration: none;
-  }
-}
-
-.ama__link-white {
-  &:link,
-  &:visited {
-    color: $white;
-  }
-  // if the default link style changes this will need to include color: black; text-decoration: none;
-  &:active,
-  &:hover,
-  &:focus {
-    color: $white;
-    text-decoration: underline;
-  }
-}
-
-.ama__link-blue {
-  &:link,
-  &:visited {
-    color: $blue;
-  }
-  // if the default link style changes this will need to include color: black; text-decoration: none;
-  &:active,
-  &:hover,
-  &:focus {
-    color: $blue;
-    text-decoration: underline;
+    color: $orange-darker;
+    border-bottom: 1px solid $orange-lighter;
   }
 }
