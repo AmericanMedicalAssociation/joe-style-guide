@@ -5,6 +5,8 @@ body {
   /* stylelint-enable */
   color: $black-90;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  
   @include type($base-font-family, $base-font-size, $base-font-weight, $base-line-height);
 
   @include breakpoint($bp-med) {
