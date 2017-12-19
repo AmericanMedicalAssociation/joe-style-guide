@@ -21,8 +21,8 @@
     </article>
 
     <aside id="sidebar" class="joe__sidebar" role="complementary">
-      {% block sidebarSecondary %}
-        {% set placeholder = two_column_left.sidebar_secondary.placeholder %}
+      {% block sidebar %}
+        {% set placeholder = two_column_left.sidebar.placeholder %}
         {% include '@base/placeholder.twig' %}
       {% endblock %}
     </aside>

@@ -27,7 +27,7 @@ body {
 
 %joe__type--smallest,
 .joe__type--smallest {
-  @include type($font-sans-serif, .75em, $font-weight-medium, 1.25);
+  @include type($font-sans-serif, .7em, $font-weight-medium, 1.25);
 }
 
 p,

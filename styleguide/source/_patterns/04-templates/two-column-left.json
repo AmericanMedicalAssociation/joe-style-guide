@@ -2,7 +2,7 @@
   "two_column_left": {
     "utility": {
       "placeholder": {
-      "text": "Utility placeholder"
+        "text": "Utility placeholder"
       }
     },
     "header": {
@@ -15,14 +15,9 @@
         "text": "Page content placeholder"
       }
     },
-    "sidebar_primary": {
+    "sidebar": {
       "placeholder": {
-        "text": "Page sidebar primary placeholder"
-      }
-    },
-    "sidebar_secondary": {
-      "placeholder": {
-        "text": "Page sidebar secondary placeholder"
+        "text": "Page sidebar placeholder"
       }
     },
     "footer": {

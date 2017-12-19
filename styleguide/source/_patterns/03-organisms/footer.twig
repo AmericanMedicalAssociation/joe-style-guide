@@ -1,3 +1,32 @@
 <footer class="joe__footer">
-  {% include "@molecules/wordmark.twig" with {'wordmark': {'title':'AMA Journal of Ethics', 'subtitle':'Illuminating the Art of Medicine' }} %}
+  <div class="container">
+    <div class="joe__layout--two-column">
+      <div class="joe__col-one">
+        {% set wordmark = footer_wordmark %}
+        {% include "@molecules/wordmark.twig" %}
+        {% include "@molecules/footer-nav.twig" %}
+      </div>
+      <div class="joe__col-two joe__footer--right">
+        <div class="joe__footer__block">
+          {% set title_label = footer_title_label %}
+          {% include "@atoms/title-label.twig" %}
+          {% set paragraph = footer_address %}
+          {% include "@atoms/paragraph.twig" %}
+        </div>
+        <div class="joe__footer__block">
+          {% set title_label = footer_title_label_2 %}
+          {% include "@atoms/title-label.twig" %}
+          {% set link = footer_phone %}
+          {% include "@atoms/link.twig" %}
+          
+          {% set title_label = footer_title_label_3 %}
+          {% include "@atoms/title-label.twig" %}
+          {% set link = footer_email %}
+          {% include "@atoms/link.twig" %}
+        </div>
+      </div>
+    </div>
+    
+    {% include "@atoms/copyright.twig" %}
+  </div>
 </footer>
