@@ -35,7 +35,6 @@
   grid-column: 1 / 1;
   grid-row: 1;
   -ms-grid-row: 1;
-  padding: 0 1em;
 
   @include breakpoint($bp-small) {
     grid-column: 1 / 2;
@@ -68,7 +67,6 @@
   grid-column: 1 / 1;
   grid-row: 2;
   -ms-grid-row: 2;
-  padding: 0 1em;
 
   @include breakpoint($bp-small) {
     grid-column: 2 / 2;
