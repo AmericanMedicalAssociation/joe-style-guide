@@ -1,0 +1,16 @@
+{
+  "search_inputs": [
+    {
+      "type": "search",
+      "name": "Site Search",
+      "id": "site-search",
+      "placeholder": "Search"
+    },
+    {
+      "type": "submit",
+      "name": "Site Search Submit",
+      "id": "site-search-submit",
+      "value": "Search"
+    }
+  ]
+}

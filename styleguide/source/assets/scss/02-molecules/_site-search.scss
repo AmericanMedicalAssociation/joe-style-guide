@@ -1,0 +1,30 @@
+.joe__site-search {
+  
+  @include breakpoint($bp-med) {
+    width: 350px;
+    position: relative;
+    top: -110px;
+    float: right;
+    border: 1px solid $orange;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  @include breakpoint($bp-xl) {
+    
+  }
+  
+  input[type="search"] {
+    border: 0;
+    padding-right: 50px;
+    margin-bottom: 0;
+  }
+  
+  input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    background: none;
+    color: $black-90;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "primary_navs": [
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/",
+      "text": "Issues"
+    },
+    {
+      "href": "/",
+      "text": "Browse Articles"
+    },
+    {
+      "href": "/",
+      "text": "Ethics Cases"
+    },
+    {
+      "href": "/",
+      "text": "Podcasts"
+    },
+    {
+      "href": "/",
+      "text": "For Authors"
+    }
+  ]
+}

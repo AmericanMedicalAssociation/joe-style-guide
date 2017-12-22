@@ -1,0 +1,35 @@
+{
+  "utility_left_navs": [
+    {
+      "href": "/",
+      "text": "Call for Papers"
+    },
+    {
+      "href": "/",
+      "text": "Submit Article"
+    },
+    {
+      "href": "/",
+      "text": "Submit Artwork"
+    },
+    {
+      "href": "/",
+      "text": "Become an Issue Editor"
+    },
+    {
+      "href": "/",
+      "text": "About"
+    }
+  ],
+  "utility_right_navs": [
+    {
+      "href": "/",
+      "text": "CME Articles"
+    },
+    {
+      "href": "/",
+      "text": "Follow Us",
+      "title": "Follow AMA Journal of Ethics on Twitter"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.joe__utility-nav {
+  
+  @include breakpoint($bp-med) {
+    position: absolute;
+    top: -26px;
+    width: 95%;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+  
+  @include breakpoint($bp-xl) {
+    width: 100%;
+  }
+}
+
+.joe__utility-nav__list {
+  @extend %joe__type--smaller;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.joe__utility-nav__list--right {
+  float: right;
+}
+
+.joe__utility-nav__item {
+  display: inline-block;
+  
+  a:link,
+  a:visited {
+    padding: 0 .5em;
+    color: $white;
+    border: 0;
+  }
+  
+  a:active,
+  a:hover,
+  a:focus {
+    color: $orange-lighter;
+  }
+}

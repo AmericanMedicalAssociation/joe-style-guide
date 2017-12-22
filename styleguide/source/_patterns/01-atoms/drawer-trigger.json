@@ -1,0 +1,9 @@
+{
+  "drawer_trigger": {
+    "id": "menu-trigger",
+    "text": "Menu",
+    "controlId": "#primary-nav",
+    "visible" : false,
+    "icon": "icon"
+  }
+}

@@ -1,0 +1,12 @@
+.joe__header {
+  background-color: $white;
+  box-shadow: 0 0 5px rgba($black-90, .25);
+  border-top: 1px solid $orange;
+  padding: 5px 0;
+  
+  @include breakpoint($bp-med) {
+    border-top: 32px solid $blue-darkest;
+    padding: 1em 0;
+    position: relative;
+  }
+}

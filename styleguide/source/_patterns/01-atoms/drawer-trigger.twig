@@ -1,0 +1,8 @@
+<button id="{{ drawer_trigger.id }}" 
+        class="joe__trigger {{ drawer_trigger.class }}" 
+        aria-controls="{{ drawer_trigger.controlId }}">
+  {% if drawer_trigger.visible == false %}<span class="visually-hidden">{% endif %}
+  {{ drawer_trigger.text }}
+  {% if drawer_trigger.visible == false %}</span>{% endif %} 
+  {% if drawer_trigger.icon %}{{ drawer_trigger.icon }}{% endif %}
+</button>
