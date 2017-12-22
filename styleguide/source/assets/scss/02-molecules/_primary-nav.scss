@@ -1,6 +1,7 @@
 .joe__primary-nav {
   
   @include breakpoint($bp-med) {
+    margin-top: 40px;
     float: right;
   }
 }
