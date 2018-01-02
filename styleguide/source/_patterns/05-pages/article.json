@@ -97,5 +97,63 @@
   "twitter_icon": {
     "symbol": "twitter",
     "text": "twitter"
-  }
+  },
+  "footer_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine"
+  },
+  
+  "footer_navs": [
+    {
+      "href": "/",
+      "text": "AMA Home"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    },
+    {
+      "href": "/",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/",
+      "text": "Site Map"
+    },
+    {
+      "href": "/",
+      "text": "FAQs"
+    }
+  ],
+  "footer_title_label": {
+      "level": "3",
+      "text": "Contact Us"
+    },
+  "footer_address": {
+    "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+  },
+  "footer_title_label_2": {
+    "level": "4",
+    "text": "Telephone"
+  },
+  "footer_phone":
+    {
+      "title": "Call AMA Journal of Ethics",
+      "href": "tel:+13124644075",
+      "text": "312-464-4075",
+      "class": "joe__link--black"
+    },
+  "footer_title_label_3": {
+    "level": "4",
+    "text": "Email"
+  },
+  "footer_email":
+    {
+      "title": "Email AMA Journal of Ethics",
+      "href": "mailto:joe@ama-assn.org",
+      "text": "joe@ama-assn.org",
+      "class": "joe__link--black"
+    },
+  "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
+
 }

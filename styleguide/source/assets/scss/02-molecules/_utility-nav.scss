@@ -49,6 +49,18 @@
 .joe__utility-nav__item {
   display: block;
   
+  .icon-twitter {
+    height: 20px;
+    width: 20px;
+    float: right;
+    
+    svg {
+      fill: $white;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  
   a:link,
   a:visited {
     display: block;

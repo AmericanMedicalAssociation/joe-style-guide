@@ -12,6 +12,10 @@
     <li class="joe__utility-nav__item">
       {% set link = utility_right_nav %}
       {% include "@atoms/link.twig" %}
+      {% if utility_right_nav.text == "Follow Us" %}
+        {% set icon = twitter_icon %}
+        {% include "@atoms/icon.twig" %}
+      {% endif %}
     </li>
   {% endfor %}
   </ul>

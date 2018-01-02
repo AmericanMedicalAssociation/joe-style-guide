@@ -3,6 +3,11 @@
   @include breakpoint($bp-med) {
     float: right;
     clear: right;
+    
+    .joe__sticky-header & {
+      float: none;
+      text-align: center;
+    }
   }
 }
 
@@ -70,6 +75,20 @@
         border-bottom: 1px solid $orange;
         transition: height .45s ease, width .45s ease;
       } 
+    }
+    
+    .joe__sticky-header & {
+      
+      a:link,
+      a:visited {
+        color: $white;
+      }
+      
+      a:active,
+      a:hover,
+      a:focus {
+        color: $white;
+      }
     }
   }
 }

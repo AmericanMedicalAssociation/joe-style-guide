@@ -11,6 +11,10 @@
     {
       "symbol": "close",
       "text": "close"
+    },
+    {
+      "symbol": "twitter",
+      "text": "twitter"
     }
   ]
 }

@@ -31,5 +31,9 @@
       "text": "Follow Us",
       "title": "Follow AMA Journal of Ethics on Twitter"
     }
-  ]
+  ],
+  "twitter_icon": {
+    "symbol": "twitter",
+    "text": "twitter"
+  }
 }

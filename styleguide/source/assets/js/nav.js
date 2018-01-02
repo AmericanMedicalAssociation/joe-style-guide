@@ -34,7 +34,17 @@
            $('#joe__nav-drawer').removeClass('is-active');
            $('#menu-trigger').removeClass('is-active');
          });
-
+         
+         // sticky sticky-header
+         
+         $(window).scroll(function(){
+            var winTop = $(window).scrollTop();
+            if(winTop >= 30){
+              $("body").addClass("joe__sticky-header");
+            }else{
+              $("body").removeClass("joe__sticky-header");
+            }//if-else
+          });//win func.
      }
    };
  })(jQuery, Drupal);
