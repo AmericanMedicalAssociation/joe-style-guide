@@ -1,30 +1,85 @@
 .joe__site-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 95px;
+  max-height: 0;
+  visibility: hidden;
+  background-color: $blue-darker;
+  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
+  box-shadow: 0 0 5px rgba($black-90, .25);
+  transition: max-height .5s ease-in, visibility 0s ease-in .5s;
+  overflow: hidden;
+  padding: 0 .5em;
   
-  @include breakpoint($bp-med) {
-    width: 350px;
-    position: relative;
-    top: -22px;
-    float: right;
-    border: 1px solid $orange;
-    border-radius: 0 0 4px 4px;
+  &.is-active {
+    max-height: 200px;
+    visibility: visible;
+    transition: max-height .5s ease-in, visibility 0s ease-in;
   }
   
-  @include breakpoint($bp-xl) {
+  @include breakpoint($bp-med) {
+    padding: 0;
+    max-height: none;
+    visibility: visible;
+    width: 350px;
+    position: relative;
+    top: -21px;
+    float: right;
+    border: 1px solid $blue-darkest;
+    border-radius: 0 0 4px 4px;
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: visible;
     
+    &.is-active {
+      max-height: none;
+      visibility: visible;
+    }
+  }
+  
+  @include breakpoint($bp-large) {
+    top: -23px;
   }
   
   input[type="search"] {
+    margin: 1em 0;
     border: 0;
     padding-right: 50px;
-    margin-bottom: 0;
+    
+    @include breakpoint($bp-med) {
+      margin: 0;
+    }
   }
   
   input[type="submit"] {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
     background-color: transparent;
-    background: none;
-    color: $black-90;
+    background: url(../icons/svg/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    width: 25px;
+    height: 41px;
+    color: transparent;
+    opacity: .6;
+    
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+    
+    @include breakpoint($bp-med) {
+      right: 0;
+      top: 0;
+    }
   }
+}
+
+.joe__search-input[type="submit"] {
+  color: transparent;
 }

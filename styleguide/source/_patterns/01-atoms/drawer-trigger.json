@@ -3,7 +3,9 @@
     "id": "menu-trigger",
     "text": "Menu",
     "controlId": "#primary-nav",
-    "visible" : false,
-    "icon": "icon"
+    "icon": {
+      "symbol": "menu",
+      "text": "Menu"
+    }
   }
 }

@@ -2,18 +2,99 @@
   @extend %clearfix;
   background-color: $white;
   box-shadow: 0 0 5px rgba($black-90, .25);
-  border-top: 1px solid $orange;
-  padding: 5px 0;
+  border-top: 4px solid $blue-darkest;
+  padding: 18px 0 5px;
+  z-index: 2;
+  position: relative;
+  
+  .joe__wordmark {
+    float: left;
+    max-width: calc(100% - 105px);
+    margin-bottom: 10px;
+  }
   
   @include breakpoint($bp-med) {
-    border-top: 32px solid $blue-darkest;
-    padding: 1em 0;
-    position: relative;
+    border-top: 30px solid $blue-darkest;
+    padding: 1em 0 .5em;
+  }
+  
+  @include breakpoint($bp-large) {
+    border-top: 36px solid $blue-darkest;
+  }
+}
+
+%joe__nav-drawer,
+.joe__nav-drawer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 95px;
+  max-height: 0;
+  visibility: hidden;
+  background-color: $blue-darker;
+  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
+  box-shadow: 0 0 5px rgba($black-90, .25);
+  transition: max-height .5s ease-in, visibility 0s ease-in .5s;
+  overflow: hidden;
+  
+  &.is-active {
+    max-height: 500px;
+    visibility: visible;
+    transition: max-height .5s ease-in, visibility 0s ease-in;
+  }
+  
+  @include breakpoint($bp-med) {
+    max-height: none;
+    visibility: visible;
+    position: static;
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: visible;
     
-    .joe__wordmark {
-      float: left;
+    &.is-active {
+      max-height: none;
+      visibility: visible;
+    }
+  }
+}
+
+.joe__search-trigger,
+.joe__menu-trigger {
+  display: inline-block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  padding: 8px 5px;
+  margin-left: 10px;
+  
+  svg {
+    fill: $white;
+  }
+  
+  .icon-search,
+  .icon-menu {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .icon-search {
+    svg {
+      height: 22px;
+      width: 22px;
     }
   }
   
+  .icon-menu {
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
   
+  @include breakpoint($bp-med) {
+    display: none;
+    visibility: hidden;
+  }
 }

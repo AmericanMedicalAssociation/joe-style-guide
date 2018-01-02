@@ -1,11 +1,25 @@
 .joe__utility-nav {
+  @extend %clearfix;
+  display: block;
+  background-color: $blue-darkest;
+  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
+  column-count: 2;
+  padding: .25em 0 .5em;
   
   @include breakpoint($bp-med) {
     position: absolute;
-    top: -26px;
+    top: -25px;
     width: 95%;
     max-width: 1550px;
     margin: 0 auto;
+    column-count: 1;
+    padding: 0;
+    background: none;
+    background-color: transparent;
+  }
+  
+  @include breakpoint($bp-large) {
+    top: -28px;
   }
   
   @include breakpoint($bp-xl) {
@@ -18,19 +32,27 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  float: left;
+  
+  @include breakpoint($bp-med) {
+    float: left;
+  }
 }
 
 .joe__utility-nav__list--right {
-  float: right;
+  
+  
+  @include breakpoint($bp-med) {
+    float: right;
+  }
 }
 
 .joe__utility-nav__item {
-  display: inline-block;
+  display: block;
   
   a:link,
   a:visited {
-    padding: 0 .5em;
+    display: block;
+    padding: .25em .5em;
     color: $white;
     border: 0;
   }
@@ -39,5 +61,15 @@
   a:hover,
   a:focus {
     color: $orange-lighter;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    
+    a:link,
+    a:visited {
+      display: inline-block;
+      padding: 0 .5em;
+    }
   }
 }

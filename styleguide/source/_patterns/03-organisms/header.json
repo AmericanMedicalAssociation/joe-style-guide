@@ -5,10 +5,12 @@
   },
   "menu_trigger": {
     "id": "menu-trigger",
-    "text": "Menu",
+    "class": "joe__menu-trigger",
     "controlId": "#joe__nav-drawer",
-    "visible" : false,
-    "icon": "Menu"
+    "icon": {
+      "symbol": "menu",
+      "text": "Menu"
+    }
   },
   "primary_navs": [
     {
@@ -38,10 +40,12 @@
   ],
   "search_trigger": {
     "id": "search-trigger",
-    "text": "Open Search",
+    "class": "joe__search-trigger",
     "controlId": "#joe__site-search",
-    "visible" : false,
-    "icon": "Search"
+    "icon": {
+      "symbol": "search",
+      "text": "Search"
+    }
   },
   "search_inputs": [
     {

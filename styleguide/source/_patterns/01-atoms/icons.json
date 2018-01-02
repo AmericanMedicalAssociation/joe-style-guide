@@ -1,0 +1,16 @@
+{
+  "icons": [
+    {
+      "symbol": "search",
+      "text": "search"
+    },
+    {
+      "symbol": "menu",
+      "text": "menu"
+    },
+    {
+      "symbol": "close",
+      "text": "close"
+    }
+  ]
+}

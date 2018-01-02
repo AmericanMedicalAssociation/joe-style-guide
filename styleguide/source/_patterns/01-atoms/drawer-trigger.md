@@ -1,5 +1,5 @@
 ### Description
-The drawer trigger is used to control drawers.
+The drawer trigger is used to control drawers. It has an optional icon that uses grunticon to render.
 
 ~~~
 trigger {
@@ -11,9 +11,9 @@ trigger {
     type: string / required
   text: 
     type: string / required
-  visible:
-    type: boolean / required (controls text label visibility)
-  icon:
-    type: svg / optional
+  icon.symbol:
+    type: string / optional
+  icon.text:
+    type: string / optional
 }
 ~~~

@@ -33,3 +33,4 @@ window.Drupal = {behaviors: {}, locale: {}};
   // Attach all behaviors.
   $('document').ready(function () { Drupal.attachBehaviors(document, {}); });
 })(jQuery);
+
