@@ -1,0 +1,14 @@
+<header class="joe__article-header">
+  {% set flag = article_flag %}
+  {% include "@atoms/flag.twig" %}
+  <h2 class="joe__article-header__title">{{ article_title }}</h2>
+  <div class="joe__article-header__meta">
+    {% for article_author in article_authors %}
+      {% if loop.last %}
+        and {{ article_author.name }}
+      {% else %}
+        {{ article_author.name }}, 
+      {% endif %}
+    {% endfor %}
+  </div>
+</header>
