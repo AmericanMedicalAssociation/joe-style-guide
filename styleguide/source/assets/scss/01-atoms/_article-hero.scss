@@ -2,16 +2,18 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  max-height: 1400px;
+  height: 1400px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $blue-darkest 100%);
+  z-index: -1;
+  margin-bottom: -1100px;
 }
 
 .joe__article-hero__image {
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .joe__article-hero__overlay {
@@ -21,6 +23,6 @@
   max-width: 1800px;
   height: 50%;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 0;
   background: linear-gradient(rgba($white, 0%) 0%, $white 100%);
 }
