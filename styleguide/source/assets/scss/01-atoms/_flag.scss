@@ -1,8 +1,9 @@
 .joe__flag {
-  @include type($font-serif, .75em, $font-weight-medium, 1.25);
+  @include type($font-serif, .65em, $font-weight-medium, 1.25);
   display: inline-block;
   position: relative;
-  padding: 4px 6px 4px 10px;
+  left: -15px;
+  padding: 4px 6px 4px 15px;
   color: $white;
   background-color: $blue-darkest;
   background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
@@ -20,21 +21,22 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     
-    border-left: 10px solid $black;
+    border-right: 10px solid $black;
     z-index: -1;
   }
 }
 
 .joe__flag--larger {
-  @include type($font-serif, .9em, $font-weight-medium, 1.25);
-  padding: 6px 9px 6px 15px;
+  @include type($font-serif, .75em, $font-weight-medium, 1.25);
+  padding: 6px 9px 6px 20px;
+  left: -2.5em;
   
   &:after {
     bottom: -15px;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     
-    border-left: 15px solid $black;
+    border-right: 15px solid $black;
   }
 }
 
