@@ -52,7 +52,9 @@
   .icon-twitter {
     height: 20px;
     width: 20px;
-    float: right;
+    position: relative;
+    top: 5px;
+    margin-top: -5px;
     
     svg {
       fill: $white;
@@ -63,7 +65,7 @@
   
   a:link,
   a:visited {
-    display: block;
+    display: inline-block;
     padding: .25em .5em;
     color: $white;
     border: 0;
@@ -77,6 +79,10 @@
   
   @include breakpoint($bp-med) {
     display: inline-block;
+    
+    .icon-twitter {
+      float: right;
+    }
     
     a:link,
     a:visited {
