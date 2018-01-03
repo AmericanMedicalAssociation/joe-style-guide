@@ -1,0 +1,43 @@
+.joe__article--top {
+  background-color: rgba($white, .9);
+  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
+  position: relative;
+  
+  // create shadow corner effect
+  &:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -2;
+    display: block;
+    background: url('../images/background-gradient.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1100px;
+  }
+}
+
+.joe__article--bottom {
+  background-color: $white;
+  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
+  position: relative;
+  
+  // create shadow corner effect
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -2;
+    display: block;
+    background: url('../images/background-gradient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1100px;
+    transform: rotate(180deg);
+  }
+}
