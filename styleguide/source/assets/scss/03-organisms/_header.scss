@@ -32,6 +32,7 @@
     border-top: 4px solid $blue-darkest;
     padding: 8px 0;
     transition: all .25s ease-in;
+    background-color: rgba($white, .85);
     
     .joe__wordmark {
       font-size: 80%;
@@ -62,11 +63,10 @@
   background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
   box-shadow: 0 0 5px rgba($black-90, .25);
   transition: max-height .5s ease-in, visibility 0s ease-in .5s;
-  overflow: hidden;
+  overflow-y: scroll;
   
   &.is-active {
     max-height: 80vh;
-    overflow-y: scroll;
     visibility: visible;
     transition: max-height .5s ease-in, visibility 0s ease-in;
   }
