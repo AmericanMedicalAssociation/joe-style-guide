@@ -16,5 +16,14 @@
       "style": "",
       "size": "small"
     }
+    ,
+    {
+      "href": "",
+      "info": "alt",
+      "text": "Button",
+      "type": "button",
+      "style": "tool",
+      "size": ""
+    }
   ]
 }

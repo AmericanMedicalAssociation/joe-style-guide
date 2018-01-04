@@ -33,3 +33,22 @@ button {
   @include type($font-serif, .75em, $font-weight-bold, 1.25);
   padding: 5px 15px;
 }
+
+%joe__button--tool,
+.joe__button--tool {
+  @extend %joe__button;
+  @include type($font-serif, .65em, $font-weight-bold, 1.25);
+  background-color: $orange-darker;
+  background: linear-gradient($orange-darker 0%, $pink 100%);
+  border-radius: 0;
+  padding: 6px 8px;
+  text-transform: none;
+  letter-spacing: 0;
+  
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $blue-darker;
+    background: linear-gradient($blue-darker 0%, $blue-darkest 100%);
+  }
+}
