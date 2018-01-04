@@ -1,20 +1,29 @@
 {% extends '@templates/two-column-left.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
-  {% include '@atoms/article-hero.twig' with {'article_hero' :{'src': 'article-hero-placeholder.png', 'alt': 'alt'}} %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '1'}} %}
+{% endblock %}
+
+{% block pageContent_header %}
+  {% include '@molecules/article-header.twig' %}
+  {% include '@molecules/article-tools.twig' %}
+  {% include '@molecules/share.twig' %}
 {% endblock %}
 
 {% block pageContent_top %}
-  {% include '@molecules/article-header.twig' %}
-  {% include '@molecules/article-tools.twig' %}
+  {% include '@base/placeholder.twig' with {'placeholder':{'text':'Page content top'}} %}
 {% endblock %}
 
-{% block sidebar_top %}
-  {% include '@base/placeholder.twig' with {'placeholder':{'text':'Page sidebar Top content'}} %}
+{% block pageContent_poll %}
+  {% include '@base/placeholder.twig' with {'placeholder':{'text':'poll'}} %}
 {% endblock %}
 
 {% block pageContent_bottom %}
   {% include '@base/placeholder.twig' with {'placeholder':{'text':'Page content bottom'}} %}
+{% endblock %}
+
+{% block sidebar_top %}
+  {% include '@base/placeholder.twig' with {'placeholder':{'text':'Page sidebar Top content'}} %}
 {% endblock %}
 
 {% block sidebar_bottom %}

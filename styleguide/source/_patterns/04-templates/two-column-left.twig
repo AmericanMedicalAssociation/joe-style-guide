@@ -4,40 +4,49 @@
     {% set placeholder = two_column_left.header.placeholder %}
     {% include '@base/placeholder.twig' %}
   {% endblock %}
-  <main id="main-content" tabindex="-1" role="main">
+  <main id="main-content" role="main">
     <div class="container">
       <div class="joe__layout--two-column-left">
         {# Keeping tabindex for accessibility purposes #}
         <article class="joe__page-content joe__article--top" role="article">
+          {% block pageContent_header %}
+            {% set placeholder = two_column_left.page_content.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </article>
+        <article class="joe__page-content joe__article" role="article">
           {% block pageContent_top %}
             {% set placeholder = two_column_left.page_content.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}
         </article>
-
-        <aside id="sidebar" class="joe__sidebar" role="complementary">
-          {% block sidebar_top %}
-            {% set placeholder = two_column_left.sidebar.placeholder %}
+        <article class="joe__page-content joe__article" role="article">
+          {% block pageContent_poll %}
+            {% set placeholder = two_column_left.page_content.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}
-        </aside>
-      </div>
-    </div>
-    <div class="container">
-      <div class="joe__layout--two-column-left">
+        </article>
         <article class="joe__page-content joe__article--bottom" role="article">
           {% block pageContent_bottom %}
             {% set placeholder = two_column_left.page_content.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}
         </article>
-
-        <aside id="sidebar" class="joe__sidebar" role="complementary">
+        
+        <aside id="sidebar" class="joe__sidebar joe__sidebar--top" role="complementary">
+          {% block sidebar_top %}
+            {% set placeholder = two_column_left.sidebar.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </aside>
+        
+        <aside id="sidebar" class="joe__sidebar joe__sidebar--bottom" role="complementary">
           {% block sidebar_bottom %}
             {% set placeholder = two_column_left.sidebar.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}
         </aside>
+        
       </div>
     </div>
   </main>

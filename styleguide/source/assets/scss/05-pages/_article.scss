@@ -1,3 +1,8 @@
+.joe__article {
+  background-color: $white;
+  padding: 0 $gutter;
+}
+
 .joe__article--top {
   background-color: rgba($white, .9);
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
@@ -23,6 +28,7 @@
 }
 
 .joe__article--bottom {
+  @include gutter($margin-bottom-full...);
   background-color: $white;
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
