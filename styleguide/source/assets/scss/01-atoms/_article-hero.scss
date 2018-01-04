@@ -2,18 +2,18 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 1400px;
+  height: 800px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $blue-darkest 100%);
   z-index: -1;
-  margin-bottom: -1100px;
-}
-
-.joe__article-hero__image {
-  width: 100%;
-  z-index: -1;
+  margin-bottom: -600px;
+  
+  @include breakpoint($bp-med) {
+    height: 1400px;
+    margin-bottom: -1100px;
+  }
 }
 
 .joe__article-hero__overlay {
@@ -25,4 +25,17 @@
   margin: 0 auto;
   z-index: 0;
   background: linear-gradient(rgba($white, 0%) 0%, $white 100%);
+}
+
+// Image classes for heroes
+// Can be custom per article
+
+.joe__article-hero__1 {
+  background: url('../images/article-hero-placeholder.png');
+}
+
+.joe__article-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
