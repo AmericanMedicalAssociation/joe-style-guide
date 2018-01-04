@@ -50,5 +50,7 @@ button {
   &:focus {
     background-color: $blue-darker;
     background: linear-gradient($blue-darker 0%, $blue-darkest 100%);
+    text-decoration: none;
+    border-bottom: 0;
   }
 }

@@ -1,0 +1,6 @@
+.joe__tool-drawer {
+  @extend %joe__type--smaller;
+  padding: 8px;
+  background-color: $black-05;
+  display: none;
+}
