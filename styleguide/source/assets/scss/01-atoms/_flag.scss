@@ -29,7 +29,7 @@
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
   padding: 6px 9px 6px 20px;
-  left: -2.5em;
+  left: -3.5em;
   
   &:after {
     bottom: -15px;

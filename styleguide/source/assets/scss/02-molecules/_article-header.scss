@@ -1,11 +1,13 @@
 .joe__article-header {
-  margin-bottom: 1em;
+  @include gutter($margin-bottom-half...);
 }
 
 .joe__article-header__title {
-  margin-top: 2em;
+  @include gutter($margin-top-full...);
+  @include type($font-serif, 2.15em, $font-weight-bold, 1.25);
 }
 
 .joe__article-header__meta {
   color: $black-80;
+  margin-top: $gutter / 2;
 }

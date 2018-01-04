@@ -2,22 +2,23 @@
   background-color: rgba($white, .9);
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
-  padding: 2em 1.25em 0 1.25em;
+  padding: 3em $gutter 0 $gutter;
   
   // create shadow corner effect
   &:before {
     content: "";
     position: absolute;
-    top: -5px;
-    right: -5px;
-    left: -5px;
+    top: -6px;
+    right: -6px;
+    left: -6px;
     z-index: -1;
     display: block;
     background: url('../images/background-gradient.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
-    height: 1100px;
+    min-height: 450px;
+    max-height: 600px;
   }
 }
 
@@ -25,21 +26,22 @@
   background-color: $white;
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
-  padding: 0 1.25em 1.25em 1.25em;
+  padding: 0 $gutter 1.25em $gutter;
   
   // create shadow corner effect
   &:after {
     content: "";
     position: absolute;
-    bottom: -5px;
-    right: -5px;
-    left: -5px;
+    bottom: -6px;
+    right: -6px;
+    left: -6px;
     z-index: -2;
     display: block;
     background: url('../images/background-gradient.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 1100px;
+    min-height: 450px;
+    max-height: 600px;
     transform: rotate(180deg);
   }
 }

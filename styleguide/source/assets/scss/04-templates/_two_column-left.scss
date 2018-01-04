@@ -39,6 +39,7 @@
 }
 
 .joe__page-content {
+  @include gutter($margin-right-half...);
   grid-column: 1 / 1;
 
 
@@ -72,6 +73,7 @@
 
 
 .joe__sidebar {
+  @include gutter($margin-left-half...);
   grid-column: 1 / 1;
 
   @include breakpoint($bp-small) {
