@@ -22,7 +22,7 @@
     }
   }
   
-  // Flexbox fallback for CSS Grids
+  // Fallback for CSS Grids
   .no-cssgrid & {
     @extend %clearfix;
   }
@@ -37,7 +37,7 @@
     -ms-grid-column: 1;
   }
   
-  // Flexbox fallback for CSS Grids
+  // Fallback for CSS Grids
   .no-cssgrid & {
     
     @include breakpoint($bp-med) {
@@ -60,7 +60,7 @@
     grid-column: 2 / 2;
   }
   
-  // Flexbox fallback for CSS Grids
+  // Fallback for CSS Grids
   .no-cssgrid & {
     
     @include breakpoint($bp-med) {
