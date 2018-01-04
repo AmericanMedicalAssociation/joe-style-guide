@@ -159,6 +159,28 @@
       }
     }
   },
+  "shares": [
+    {
+      "symbol": "square-twitter",
+      "text": "Share on Twitter"
+    },
+    {
+      "symbol": "square-facebook",
+      "text": "Share on Facebook"
+    },
+    {
+      "symbol": "square-linkedin",
+      "text": "Share on LinkedIn"
+    },
+    {
+      "symbol": "square-gplus",
+      "text": "Share on Google Plus"
+    },
+    {
+      "symbol": "square-email",
+      "text": "Share by Email"
+    }
+  ],
   "footer_wordmark": {
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine"
