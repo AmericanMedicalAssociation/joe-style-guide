@@ -13,14 +13,14 @@
 
          // Opens and closes tool drawer. 
          // Closes other drawers when selected one opens.
-         $('#tool-drawer__trigger').click(function() {
+         $('.tool-drawer__trigger').click(function() {
            // Unfocus on the dropdown
            $(this).blur();
            // add a class to the sibling dropdown
            $(this).toggleClass('is-active');
-           $(this).siblings('.joe__tool-drawer').slideToggle(300);
-           $('#tool-drawer__trigger').not(this).removeClass('is-active');
-           $('#tool-drawer__trigger').not(this).siblings('.joe__tool-drawer').slideUp(300);
+           $(this).siblings('.joe__tool-drawer__content').slideToggle(300);
+           $(this).parents().siblings().children('.tool-drawer__trigger').removeClass('is-active');
+           $(this).parents().siblings().children('.joe__tool-drawer__content').slideUp(300);
          });
          
      }
