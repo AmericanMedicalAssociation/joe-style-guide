@@ -1,13 +1,33 @@
 .joe__share {
+  @extend %clearfix;
   display: block;
   list-style: none;
-  margin: 0;
+  margin: 1em 0 0;
   padding: 0;
+  text-align: center;
+  
+  @include breakpoint($bp-xs) {
+    position: relative;
+    text-align: left;
+    top: -45px;
+  }
+  
+  @include breakpoint($bp-small) {
+    position: absolute;
+    left: -10px;
+    top: auto;
+    bottom: -164px;
+  }
+  
+  @include breakpoint($bp-med) {
+    bottom: -155px;
+  }
 }
 
 .joe__share__item {
-  float: left;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
   
   .joe__icon {
     height: 25px;
@@ -31,5 +51,19 @@
    svg {
     fill: $orange-darker;
    } 
+  }
+  
+  @include breakpoint($bp-xs) {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  
+  @include breakpoint($bp-small) {
+    display: block;
+    margin: 0;
+    
+    svg {
+      box-shadow: 0 0 5px rgba($black-90, .5);
+    }
   }
 }

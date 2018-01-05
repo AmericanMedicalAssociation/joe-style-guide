@@ -1,13 +1,17 @@
 .joe__article {
   background-color: $white;
-  padding: 0 $gutter;
+  padding: 0 $gutter-mobile;
+  
+  @include breakpoint($bp-med) {
+    padding: 0 $gutter;
+  }
 }
 
 .joe__article--top {
   background-color: rgba($white, .9);
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
-  padding: 3em $gutter 0 $gutter;
+  padding: 2em $gutter-mobile 0 $gutter-mobile;
   
   // create shadow corner effect
   &:before {
@@ -25,6 +29,10 @@
     min-height: 450px;
     max-height: 600px;
   }
+  
+  @include breakpoint($bp-med) {
+    padding: 3em $gutter 0 $gutter;
+  }
 }
 
 .joe__article--bottom {
@@ -32,7 +40,7 @@
   background-color: $white;
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
-  padding: 0 $gutter 1.25em $gutter;
+  padding: 0 $gutter-mobile 1.25em $gutter-mobile;
   
   // create shadow corner effect
   &:after {
@@ -49,5 +57,9 @@
     min-height: 450px;
     max-height: 600px;
     transform: rotate(180deg);
+  }
+  
+  @include breakpoint($bp-med) {
+    padding: 0 $gutter 1.25em $gutter;
   }
 }

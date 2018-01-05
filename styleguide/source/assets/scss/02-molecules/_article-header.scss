@@ -4,7 +4,14 @@
 
 .joe__article-header__title {
   @include gutter($margin-top-full...);
-  @include type($font-serif, 2.15em, $font-weight-bold, 1.25);
+  
+  @include breakpoint($bp-med) {
+    @include type($font-serif, 2.05em, $font-weight-bold, 1.25);
+  }
+  
+  @include breakpoint($bp-large) {
+    @include type($font-serif, 2.15em, $font-weight-bold, 1.25);
+  }
 }
 
 .joe__article-header__meta {

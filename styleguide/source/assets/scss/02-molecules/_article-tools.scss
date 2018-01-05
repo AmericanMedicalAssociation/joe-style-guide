@@ -9,14 +9,26 @@
   
   .joe__button--tool {
     float: right;
-    margin-left: 8px;
+    margin-left: 4px;
+    
+    @include breakpoint($bp-med) {
+      margin-left: 8px;
+    }
   }
   
   .joe__tool-drawer:nth-of-type(1) {
     
     .joe__button--tool {
       position: relative;
-      right: 195px;
+      right: 162px;
+      
+      @include breakpoint($bp-med) {
+        right: 184px;
+      }
+      
+      @include breakpoint($bp-large) {
+        right: 195px;
+      }
     }
   }
   
@@ -24,7 +36,15 @@
     
     .joe__button--tool {
       position: relative;
-      right: 112px;
+      right: 93px;
+      
+      @include breakpoint($bp-med) {
+        right: 107px;
+      }
+      
+      @include breakpoint($bp-large) {
+        right: 112px;
+      }
     }
   }
 }
