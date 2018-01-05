@@ -1,0 +1,49 @@
+%joe__inline {
+  @extend %clearfix;
+  margin: 1em 0;
+}
+
+.joe__inline-caption {
+  @extend %joe__type--smaller;
+  margin-top: .5em;
+}
+
+.joe__inline-image {
+  @extend %joe__inline;
+
+  img {
+    width: 100%;
+  }
+}
+
+.joe__inline-image--left {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: left;
+    margin: .5em 1em .5em 0;
+  }
+}
+
+.joe__inline-image--right {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: right;
+    margin: .5em 0 .5em 1em;
+  }
+}
+
+.joe__inline-image--portrait {
+  width: 50%;
+  float: left;
+  margin: .5em 1em .5em 0;
+
+  @include breakpoint($bp-small) {
+    width: 30%;
+  }
+
+  @include breakpoint($bp-med) {
+    width: 25%;
+  }
+}

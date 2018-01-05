@@ -11,7 +11,7 @@
   background-color: rgba($white, .9);
   background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
-  padding: 2em $gutter-mobile 0 $gutter-mobile;
+  padding: 2em $gutter-mobile $gutter $gutter-mobile;
   
   // create shadow corner effect
   &:before {
@@ -31,7 +31,7 @@
   }
   
   @include breakpoint($bp-med) {
-    padding: 3em $gutter 0 $gutter;
+    padding: 3em $gutter $gutter $gutter;
   }
 }
 
