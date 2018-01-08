@@ -3,9 +3,9 @@
   {% set image = inline_image.image %}
   {% include "@atoms/image.twig" %}
   
-  <span class="joe__inline-image__zoom">
+  <button class="joe__inline-image__zoom">
     {% include "@atoms/icon.twig" with {'icon' : {'symbol': 'zoom', 'text': 'Zoom in on image'}} %}
-  </span>
+  </button>
   
   {% if inline_image.caption %}
   <figcaption class="joe__inline-caption">

@@ -10,6 +10,7 @@
 
 .joe__inline-image {
   @extend %joe__inline;
+  position: relative;
 
   img {
     width: 100%;
@@ -37,6 +38,7 @@
 .joe__inline-image--portrait {
   width: 50%;
   float: left;
+  top: 100%;
   margin: .5em 1em .5em 0;
 
   @include breakpoint($bp-small) {
@@ -45,5 +47,34 @@
 
   @include breakpoint($bp-med) {
     width: 25%;
+  }
+}
+
+.joe__inline-image__zoom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $orange-darker;
+  background: linear-gradient(120deg, $orange-darker 0%, $pink 30%, $pink 100%); 
+  border-radius: 0;
+  padding: 6px;
+  
+  .icon-zoom {
+    display: block;
+    height: 26px;
+    width: 26px;
+    
+    svg {
+      height: 25px;
+      width: 25px;
+      fill: $white;
+    }
+  }
+  
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $blue-darkest;
+    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
   }
 }
