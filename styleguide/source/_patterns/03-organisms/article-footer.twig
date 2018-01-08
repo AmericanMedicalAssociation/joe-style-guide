@@ -1,0 +1,28 @@
+<footer class="joe__article-footer">
+  {% include "@molecules/references.twig" %}
+  
+  <div class="joe__article-footer--secondary">
+    {% if editor_note %}
+      {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Editor's Note" } } %}
+      {{ editor_note }}
+    {% endif %}
+    {% if citation %}
+      {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Citation" } } %}
+      {{ citation }}
+    {% endif %}
+    {% if doi %}
+      {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "DOI" } } %}
+      {{ doi }}
+    {% endif %}
+    {% if acknowledgements %}
+      {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "acknowledgements" } } %}
+      {{ acknowledgements}}
+    {% endif %}
+    {% if disclosure %}
+      <small>{{ disclosure }}</small>
+    {% endif %}
+    {% if ethics_case %}
+      <small>The people and events in this case are fictional. Resemblance to real events or to names of people, living or dead, is entirely coincidental. The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.</small>
+    {% endif %}
+  </div>
+</footer>

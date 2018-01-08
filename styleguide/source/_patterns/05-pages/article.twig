@@ -21,14 +21,14 @@
     <h2>Introduction</h2>
     <p>Worldwide there is a growing awareness of the need to adapt health care systems to meet the challenges of the twenty-first century. The reasons for this need are many but include shifting trends in demographics and illness, epidemiological knowledge of the social determinants of health, the radical possibilities of new technologies, and rapidly increasing health care costs as well as relatively long-standing concerns about the need to respect and support the autonomy of patients [1, 2].</p>
 
-    {% include "inline-image.twig" with { "inline_image": { "alignment": "left", "caption": "lorem ipsum dolor set amet", "image" : { "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36", "alt" : "Placeholder Image" }}} %}
+    {% include "@molecules/inline-image.twig" with { "inline_image": { "alignment": "left", "caption": "lorem ipsum dolor set amet", "image" : { "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36", "alt" : "Placeholder Image" }}} %}
     
     <p>One response to these challenges has been calls for the co-creation of health care systems. Co-creation can take a number of different forms, but at heart it represents bringing together key stakeholders to jointly address problems [3]. In medicine, health professionals, patients, providers, and other stakeholders can be involved in co-creation initiatives including achieving professional-patient concordance through shared decision making, personalization of health services, patient self-management or self-care, and interprofessional or interagency collaboration (e.g., among physicians, nurses, dieticians, podiatrists, and a variety of allied health professionals in caring for patients with diabetes) [4]. Co-creation in medicine typically seeks to extend the role of patients or service users in clinical settings and beyond by encouraging their participation in care processes or service design [4]. It can enable service users to exercise voice and choice and to take up new roles and responsibilities. For instance, in the context of the UK National Health Service, patients with chronic conditions are encouraged to assume “self-management” roles that involve taking responsibility for decision making, administering self-care, and even managing a personal health care budget [5]. Co-creation can also entail broad structural changes, such as partnerships that span clinical or institutional boundaries [3], including those in which health professionals of different stripes are brought together to work with public sector professionals or community stakeholders.</p>
   </div>
 {% endblock %}
 
 {% block pageContent_poll %}
-  {% include "poll.twig" %}
+  {% include "@organisms/poll.twig" %}
 {% endblock %}
 
 {% block pageContent_bottom %}
@@ -38,7 +38,7 @@
     <h2>Common Ground in Diverse Contexts?</h2>
     <p>We begin by questioning what (for some at least) might be a central assumption of co-creation: that those involved in co-creating health care processes, service designs, or systems will be able to find common ground upon which to base an agenda. The idea that a consensus on the ends and means of health care is self-evident or can be straightforwardly established is problematic for several reasons.</p>
     
-    {% include "inline-quote.twig" with { "inline_quote": { "alignment": "right", "text": "Reaching, managing, and maintaining some convergence of purposes and values is therefore a key challenge for co-creating health systems."}} %}
+    {% include "@molecules/inline-quote.twig" with { "inline_quote": { "alignment": "right", "text": "Reaching, managing, and maintaining some convergence of purposes and values is therefore a key challenge for co-creating health systems."}} %}
     
     <p>Values in health care are contested [7]. Those involved in health care might have different ideas about what matters most and why. For instance, community stakeholders might seek greater accessibility and equity; patients might value greater safety and convenience; health professionals might want higher quality care, greater patient satisfaction, and fair remuneration; policymakers might prioritize efficiency. Given the diversity of values at stake, co-creation cannot be understood in simple catchall terms, (e.g., as simply about optimizing health outcomes). Moreover, inevitable resource limitations and potentially competing values make it difficult to pursue all potential values at once. In reality, bringing people together to achieve shared goals may prove difficult, as evidenced by patient nonadherence to medical recommendations undermining high-value care [7] or by cases in which patients and clinicians disagree about means and ends [8]. Reaching, managing, and maintaining some convergence of purposes and values is therefore a key challenge for co-creating health systems.</p>
 
@@ -64,8 +64,10 @@
     <h2>Co-Creation: Transforming Health Care?</h2>
     <p>Co-creation provides an opportunity to take stock and consider the possibilities for transforming health care systems by bringing together citizens, professionals, organizations, and institutions to renegotiate key values and relationships. While the opportunities for change are significant, ambitions for co-creation must be assessed in light of what is practically and politically achievable and mindful of ethical dilemmas. However, for better or worse, co-creation offers the chance for clinicians to reconsider the purposes of medicine and for patients and other stakeholders to have their voices heard and respected. Co-creation therefore provides a platform for understanding medicine in far broader terms than at present, enabling the social dimensions of health and the long-standing inequalities and inadequacies of health care systems to be illuminated and transformed. This is certainly not a risk-free endeavor. If it is to be a success, co-creation will require the rebalancing and renegotiation of multiple roles and relationships and the promotion of more complex forms of coordination and collaboration. The risks and challenges are significant, but so, too, are the potential rewards.</p>
     
-    {% include "tags-list.twig" %}
+    {% include "@molecules/tags-list.twig" %}
   </div>
+  {% include "@organisms/article-footer.twig" %}
+  
 {% endblock %}
 
 {% block sidebar_top %}
