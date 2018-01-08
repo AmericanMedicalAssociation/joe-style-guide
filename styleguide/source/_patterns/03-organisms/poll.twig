@@ -1,0 +1,26 @@
+<section class="joe__poll">
+  {% if poll.label %}
+    {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
+  {% endif %}
+  <div class="joe__poll__question">
+    <div>
+    {{ poll.question }}
+    </div>
+    {% include "@atoms/link.twig" with { "link": {"title" : "View Related Article", "href" : "#", "text" : "View Related Article", "class": "joe__poll__link" } } %}
+  </div>
+  <form class="joe__poll__answers">
+    <ul class="joe__poll__answerlist">
+    {% for answer in poll.answers %}
+      <li class="joe__poll__answer">
+      {% set input = answer.input %}
+      {% include "@atoms/input.twig" %}
+      {% set label = answer.label %}
+      {% include "@atoms/label.twig" %}
+      </li>
+    {% endfor %}
+    </ul>
+    
+    {% include "@atoms/input.twig" with { "input": {"type" : "submit", "name" : "Ethics Poll Submit", "id" : "ethics_poll_submit", "value" : "submit"  } } %}
+    {% include "@atoms/button.twig" with { "button": {"text" : "Show results", "id" : "ethics_poll_results_trigger", "type" : "button", "class": "joe__poll__reveal" } } %}
+  </form>
+</section>
