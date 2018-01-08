@@ -1,0 +1,48 @@
+.joe__inline-quote {
+  @extend %joe__inline;
+  @include type($font-serif, 1.1em, $font-weight-bold, 1.35);
+  color: $blue-darkest;
+  
+  .icon-quote {
+    display: block;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 30px;
+    
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: $green;
+    }
+  }
+  
+  &:after {
+    content: '';
+    height: 8px;
+    width: 100%;
+    background-color: $blue-darker;
+    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 100%);
+    margin-top: 1em;
+  }
+}
+
+.joe__inline-quote--left {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: left;
+    padding: 1em 2em 1em 0;
+    margin: .5em 1em .5em 0;
+  }
+}
+
+.joe__inline-quote--right {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: right;
+    padding: 1em 0 1em 2em;
+    margin: .5em 0 .5em 1em;
+  }
+}
+
