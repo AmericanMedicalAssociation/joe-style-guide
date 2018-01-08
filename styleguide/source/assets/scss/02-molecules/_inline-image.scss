@@ -54,8 +54,8 @@
   position: absolute;
   right: 0;
   top: 0;
-  background-color: $orange-darker;
-  background: linear-gradient(120deg, $orange-darker 0%, $pink 30%, $pink 100%); 
+  background-color: rgba($white, .8);
+  background: rgba($white, .8);
   border-radius: 0;
   padding: 6px;
   
@@ -67,7 +67,7 @@
     svg {
       height: 25px;
       width: 25px;
-      fill: $white;
+      fill: $blue-darkest;
     }
   }
   
@@ -76,5 +76,11 @@
   &:focus {
     background-color: $blue-darkest;
     background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
+  
+    .icon-zoom {
+      svg {
+        fill: $white;
+      }
+    }
   }
 }
