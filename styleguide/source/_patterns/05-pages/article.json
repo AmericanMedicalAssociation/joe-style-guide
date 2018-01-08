@@ -246,6 +246,28 @@
       }
     ]
   },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Access to Care"
+    },
+    {
+      "url": "#",
+      "text": "Conflict of Interest"
+    },
+    {
+      "url": "#",
+      "text": "Contract with Society"
+    },
+    {
+      "url": "#",
+      "text": "Cost of Care"
+    },
+    {
+      "url": "#",
+      "text": "Human Rights"
+    }
+  ],
   "footer_wordmark": {
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine"

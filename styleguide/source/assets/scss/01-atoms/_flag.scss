@@ -24,12 +24,16 @@
     border-right: 10px solid $black;
     z-index: -1;
   }
+  
+  @include breakpoint($bp-med) {
+    
+  }
 }
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
   padding: 6px 9px 6px 20px;
-  left: -3.5em;
+  left: -3em;
   
   &:after {
     bottom: -15px;
@@ -37,6 +41,10 @@
     border-bottom: 15px solid transparent;
     
     border-right: 15px solid $black;
+  }
+  
+  @include breakpoint($bp-med) {
+    left: -3.5em;
   }
 }
 
@@ -48,4 +56,9 @@
 .joe__flag--green {
   background-color: $green-darker;
   background: linear-gradient(120deg, $green 0%, $green-darker 15%, $green-darker 100%);
+}
+
+.joe__flag--gray {
+  background-color: $black-20;
+  background: linear-gradient(120deg, $black-20 0%, $black-05 15%, $black-05 100%);
 }
