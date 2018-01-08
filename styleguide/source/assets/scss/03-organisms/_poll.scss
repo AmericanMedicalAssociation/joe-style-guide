@@ -9,6 +9,19 @@
   }
 }
 
+.joe__poll--inline {
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+  
+  @include breakpoint($bp-med) {
+    margin-right: -63%;
+  }
+  
+  @include breakpoint($bp-large) {
+    margin-right: -45%;
+  }
+}
+
 .joe__poll__label {
   @include type($font-serif, .8em, $font-weight-bold, 1.25);
   margin-bottom: $gutter / 2; 
@@ -63,7 +76,7 @@
   margin-bottom: .5em;
   
   label {
-    padding-left: $gutter;
+    padding-left: 1.5em;
   }
   
   input[type="radio"] {

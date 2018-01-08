@@ -1,4 +1,4 @@
-<section class="joe__poll">
+<section class="joe__poll {% if poll.inline %}joe__poll--inline{% endif %}">
   {% if poll.label %}
     {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
   {% endif %}

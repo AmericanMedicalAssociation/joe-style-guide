@@ -88,10 +88,9 @@ input[type='radio'] {
     @extend %joe__type--smaller;
     display: inline-block;
     position: relative;
-    top: 2px;
     color: $black-90;
     text-transform: none;
-    margin: 0 1em 0 .25em;
+    margin: 0;
   }
 }
 
