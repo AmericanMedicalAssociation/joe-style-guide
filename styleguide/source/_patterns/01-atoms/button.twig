@@ -3,8 +3,8 @@
 
 {% if button.href %}
   <a href="{{ button.href }}" 
-     class="{{ buttonSize }} {{buttonStyle}}"
-     title="{{ button.info }}">
+     class="joe__button {{ buttonSize }} {{buttonStyle}}"
+     {% if button.info %}title="{{ button.info }}"{% endif %}>
       {{ button.text }}
   </a>
 {% else %}
