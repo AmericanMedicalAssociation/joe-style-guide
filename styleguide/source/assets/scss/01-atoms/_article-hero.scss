@@ -6,13 +6,23 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
-  background: linear-gradient(top, $blue-darker 0%, $blue-darkest 100%);
+  background: linear-gradient(top, $blue-darker 0%, $white 100%);
   z-index: -1;
   margin-bottom: -600px;
   
   @include breakpoint($bp-med) {
     height: 1400px;
     margin-bottom: -1100px;
+  }
+}
+
+.joe__article-hero--no-image {
+  height: 400px;
+  margin-bottom: -300px;
+  
+  @include breakpoint($bp-med) {
+    height: 800px;
+    margin-bottom: -700px;
   }
 }
 

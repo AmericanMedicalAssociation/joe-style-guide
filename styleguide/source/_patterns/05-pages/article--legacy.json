@@ -1,0 +1,531 @@
+{
+  "header_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine"
+  },
+  "menu_trigger": {
+    "id": "menu-trigger",
+    "class": "joe__menu-trigger",
+    "controlId": "#joe__nav-drawer",
+    "icon": {
+      "symbol": "menu",
+      "text": "Menu"
+    }
+  },
+  "primary_navs": [
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/",
+      "text": "Issues"
+    },
+    {
+      "href": "/",
+      "text": "Browse Articles"
+    },
+    {
+      "href": "/",
+      "text": "Ethics Cases"
+    },
+    {
+      "href": "/",
+      "text": "Podcasts"
+    },
+    {
+      "href": "/",
+      "text": "For Authors"
+    }
+  ],
+  "search_trigger": {
+    "id": "search-trigger",
+    "class": "joe__search-trigger",
+    "controlId": "#joe__site-search",
+    "icon": {
+      "symbol": "search",
+      "text": "Search"
+    }
+  },
+  "search_inputs": [
+    {
+      "type": "search",
+      "name": "Site Search",
+      "id": "site-search",
+      "placeholder": "Search"
+    },
+    {
+      "type": "submit",
+      "name": "Site Search Submit",
+      "id": "site-search-submit",
+      "value": "Search"
+    }
+  ],
+  "utility_left_navs": [
+    {
+      "href": "/",
+      "text": "Call for Papers"
+    },
+    {
+      "href": "/",
+      "text": "Submit Article"
+    },
+    {
+      "href": "/",
+      "text": "Submit Artwork"
+    },
+    {
+      "href": "/",
+      "text": "Become an Issue Editor"
+    },
+    {
+      "href": "/",
+      "text": "About"
+    }
+  ],
+  "utility_right_navs": [
+    {
+      "href": "/",
+      "text": "CME Articles"
+    },
+    {
+      "href": "/",
+      "text": "Follow Us",
+      "title": "Follow AMA Journal of Ethics on Twitter"
+    }
+  ],
+  "twitter_icon": {
+    "symbol": "twitter",
+    "text": "twitter"
+  },
+  "article_flag": {
+    "type": "Medicine & Society",
+    "issue": "Oct. 2017",
+    "class": "joe__flag--larger"
+  },
+  "article_authors": [
+    {
+      "name": "Guddi Singh, MB BChir, MPH",
+      "description": "is a pediatric registrar in London and a clinical fellow at Health Education England with wide experience in global public health. Having previously worked on issues related to social justice and health equity with the World Health Organization and Medact, she is now researching how medical professionalism and education might advance in the light of the social dimensions of health and illness."
+    },
+    {
+      "name": "John Owens, MA, PhD",
+      "description": "is a lecturer in public policy and education at King’s College London, where he is also a member of the Centre for Public Policy Research at the School of Education, Communication and Society. His research focuses on applying philosophical, political, and sociological perspectives to issues in contemporary public policy, particularly in the areas of health care and education."
+    },
+    {
+      "name": "Alan Cribb, PhD",
+      "description": "is a professor of bioethics and education at King’s College London, where he is also the co-director of the Centre for Public Policy Research at the School of Education, Communication and Society. He has a particular interest in interdisciplinary approaches to professional education, health services research, and health policy. Much of his recent work focuses on the philosophy, policy, and practice of person-centered care."
+    }
+  ],
+  "article_title": "What Are the Professional, Political, and Ethical Challenges of Co-Creating Health Care Systems?",
+  "article_tools": {
+    "citation": {
+      "tool_drawer": {
+        "content": "AMA Journal of Ethics. January 2018, Volume 20, Number 1: 69-76. <br/> doi: 10.1001/journalofethics.2018.20.01.hlaw1-1801.",
+        "id" : "citation-drawer",
+        "button": {
+          "text": "Citation",
+          "type": "button",
+          "style": "tool",
+          "control_id": "citation-drawer",
+          "class": "tool-drawer__trigger"
+        }
+      }
+    },
+    "cme": {
+      "tool_drawer": {
+        "content": "To claim one AMA PRA Category 1 Credit™ for the CME activity associated with this article, you must do the following: (1) read this article in its entirety, (2) answer at least 80 percent of the quiz questions correctly, and (3) complete an evaluation. The quiz, evaluation, and form for claiming AMA PRA Category 1 Credit™ are available through the AMA Education Center.",
+        "id" : "cme-drawer",
+        "button": {
+          "text": "CME",
+          "type": "button",
+          "style": "tool",
+          "control_id": "cme-drawer",
+          "class": "tool-drawer__trigger"
+        }
+      }
+    },
+    "pdf": {
+      "button": {
+        "text": "PDF",
+        "type": "link",
+        "style": "tool",
+        "info": "Download PDF"
+      }
+    },
+    "print": {
+      "button": {
+        "text": "Print",
+        "type": "link",
+        "style": "tool",
+        "info": "Print Page"
+      }
+    }
+  },
+  "shares": [
+    {
+      "symbol": "square-twitter",
+      "text": "Share on Twitter"
+    },
+    {
+      "symbol": "square-facebook",
+      "text": "Share on Facebook"
+    },
+    {
+      "symbol": "square-linkedin",
+      "text": "Share on LinkedIn"
+    },
+    {
+      "symbol": "square-gplus",
+      "text": "Share on Google Plus"
+    },
+    {
+      "symbol": "square-email",
+      "text": "Share by Email"
+    }
+  ],
+  "abstract": {
+    "text": "Co-creation is seen by many as a means of meeting the multiple challenges facing contemporary health care systems by involving institutions, professionals, patients, and stakeholders in new roles, relationships, and collaborative practices. While co-creation has the potential to positively transform health care systems, it generates a number of political and ethical challenges that should not be overlooked. We suggest that those involved in envisioning and implementing co-creation initiatives pay close attention to significant questions of equity, power, and justice and to the fundamental challenge of securing a common vision of the aims of and agendas for health care systems. While such initiatives present significant opportunities for improvement, they need to be viewed in light of their accompanying professional, political, and ethical challenges."
+  },
+  "poll": {
+    "inline": true,
+    "label" : true,
+    "question" : "A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
+    "answers" : [
+      {
+        "input" : {
+          "name" : "Answer 1",
+          "id" : "answer_1",
+          "type": "radio"
+        },
+        "label" : {
+          "text" : "Suggest that the parents read the medical science news report about phase 2 results of the trial so that they can cultivate some hope and be more informed about this option after getting such a devastating diagnosis for their child.",
+          "id" : "answer_1"
+        }
+      },
+      {
+        "input" : {
+          "name" : "Answer 2",
+          "id" : "answer_2",
+          "type": "radio"
+        },
+        "label" : {
+          "text" : "Investigate the trial details on your own and invite the family to come to your office for at least an initial conversation.",
+          "id" : "answer_2"
+        }
+      },
+      {
+        "input" : {
+          "name" : "Answer 3",
+          "id" : "answer_3",
+          "type": "radio"
+        },
+        "label" : {
+          "text" : "Admit that you don’t know enough about this trial to advise them well and refer your patient and her family to the specialist.",
+          "id" : "answer_3"
+        }
+      },
+      {
+        "input" : {
+          "name" : "Answer 4",
+          "id" : "answer_4",
+          "type": "radio"
+        },
+        "label" : {
+          "text" : "Ask an administrative staff member from your office to set up a collaborative family meeting with the specialist so that you can also attend and participate in the discussion and in advising the parents.",
+          "id" : "answer_4"
+        }
+      },
+      {
+        "input" : {
+          "name" : "Answer 5",
+          "id" : "answer_5",
+          "type": "radio"
+        },
+        "label" : {
+          "text" : "I Don't Know.",
+          "id" : "answer_5"
+        }
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Access to Care"
+    },
+    {
+      "url": "#",
+      "text": "Conflict of Interest"
+    },
+    {
+      "url": "#",
+      "text": "Contract with Society"
+    },
+    {
+      "url": "#",
+      "text": "Cost of Care"
+    },
+    {
+      "url": "#",
+      "text": "Human Rights"
+    }
+  ],
+  "references": [
+    {
+      "number": "1",
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "google_scholar": "#",
+      "pubmed" : "#",
+      "crossref": "#"
+    },
+    {
+      "number": "2",
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "google_scholar": "#",
+      "pubmed" : "#"
+    },
+    {
+      "number": "3",
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "google_scholar": "#",
+      "pubmed" : "#",
+      "crossref": "#"
+    },
+    {
+      "number": "4",
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "crossref": "#"
+    },
+    {
+      "number": "5",
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "google_scholar": "#",
+      "pubmed" : "#",
+      "crossref": "#"
+    }
+  ],
+  "editor_note": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": true,
+  "footer_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine"
+  },
+  "issue": {
+    "title" : {
+      "text": "Oct. 2017",
+      "level": "4"
+      },
+    "question" : "A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
+    "articles" : [
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "Peer-Reviewed CME Article"
+        },
+        "authors": [
+          {
+            "name" : "Jeremy Balch"
+          },
+          {
+            "name" : "Julia H. Schoen"
+          },
+          {
+            "name" : "Payal K. Patel"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
+        }
+      },
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "Podcast",
+          "class": "joe__flag--red"
+        },
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
+        }
+      },
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "The Code Says"
+        },
+        "authors": [
+          {
+            "name" : "Jeremy Balch"
+          },
+          {
+            "name" : "Julia H. Schoen"
+          },
+          {
+            "name" : "Payal K. Patel"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
+        }
+      }
+    ],
+    "feature_article": {
+      "size": "large",
+      "style": "reverse",
+      "flag": {
+        "type": "State of the Art and Science"
+      },
+      "authors": [
+        {
+          "name" : "Steven S. Coughlin"
+        },
+        {
+          "name" : "Osman Yousufzai"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+      }
+    }
+  },
+  "related": {
+    "articles" : [
+      { "size": "small",
+        "flag": {
+          "type": "The Code Says",
+          "issue": "Sept. 2017"
+        },
+        "authors": [
+          {
+            "name" : "Annalise Norling"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The AMA Code of Medical Ethics’ Opinions Related to Health Care for Incarcerated People"
+        }
+      },
+      {
+        "size": "small",
+        "flag": {
+          "type": "Ethics Case",
+          "issue": "Apr. 2017",
+          "class": "joe__flag--green"
+        },
+        "authors": [
+          {
+            "name" : "Tom Peteet, MD"
+          },
+          {
+            "name" : "Matt Tobey, MD, MPH"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"How Should a Health Care Professional Respond to an Incarcerated Patient’s Request for a Particular Treatment?"
+        }
+      },
+      {
+        "size": "small",
+        "flag": {
+          "type": "Medicine and Society",
+          "issue": "Feb. 2017"
+        },
+        "authors": [
+          {
+            "name" : "E. Bernadette McKinney, JD, PhD"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
+        }
+      }
+    ]
+  },
+  "rail_cta": { 
+    "heading": {
+      "level": "3",
+      "text": "Join the Discussion",
+      "class": "joe__rail-cta__title"
+    },
+    "paragraph" : {
+      "text": "Our Discussion Forum provides an opportunity for students, educators, and clinicians to engage experts in an online conversation about important ethical issues in health care."
+    },
+    "button": {
+      "href": "#",
+      "info": "alt",
+      "text": "Discussion Forum",
+      "type": "link",
+      "size": "small"
+    }
+  },
+  "footer_navs": [
+    {
+      "href": "/",
+      "text": "AMA Home"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    },
+    {
+      "href": "/",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/",
+      "text": "Site Map"
+    },
+    {
+      "href": "/",
+      "text": "FAQs"
+    }
+  ],
+  "footer_title_label": {
+      "level": "3",
+      "text": "Contact Us"
+    },
+  "footer_address": {
+    "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+  },
+  "footer_title_label_2": {
+    "level": "4",
+    "text": "Telephone"
+  },
+  "footer_phone":
+    {
+      "title": "Call AMA Journal of Ethics",
+      "href": "tel:+13124644075",
+      "text": "312-464-4075",
+      "class": "joe__link--black"
+    },
+  "footer_title_label_3": {
+    "level": "4",
+    "text": "Email"
+  },
+  "footer_email":
+    {
+      "title": "Email AMA Journal of Ethics",
+      "href": "mailto:joe@ama-assn.org",
+      "text": "joe@ama-assn.org",
+      "class": "joe__link--black"
+    },
+  "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
+
+}
