@@ -1,6 +1,7 @@
 .joe__issue-teaser {
   @include gutter($padding-top-full...);
   @include gutter($padding-bottom-full...);
+  @include gutter($margin-top-full...);
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $blue-darkest 100%);
   text-align: center;
@@ -18,8 +19,8 @@
       margin-right: 15px;
     }
   }
-  @include breakpoint($bp-small) {
-    .joe__col-one {
+  @include breakpoint($bp-med) {
+    .joe__col-one--med {
       @include gutter($padding-right-full...);
     } 
   }

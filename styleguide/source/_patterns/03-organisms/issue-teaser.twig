@@ -5,12 +5,12 @@
     {% include "@atoms/title-label.twig" %}
     <div class="joe__layout--two-column joe__issue-teaser__block">
       {# Keeping tabindex for accessibility purposes #}
-      <div class="joe__col-one">
+      <div class="joe__col-one--med">
         {% set teaser = issue.feature_article %}
         {% include '@organisms/article-teaser.twig' %}
       </div>
 
-      <div class="joe__col-two">
+      <div class="joe__col-two--med">
         {% for article in issue.articles %}
           {% set teaser = article %}
           {% include '@organisms/article-teaser.twig' %}

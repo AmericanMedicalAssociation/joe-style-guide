@@ -1,4 +1,7 @@
 .joe__related-articles {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 2em $gutter-mobile;
+  
+  @include breakpoint($bp-med) {
+    margin: 1em 0;
+  }
 }

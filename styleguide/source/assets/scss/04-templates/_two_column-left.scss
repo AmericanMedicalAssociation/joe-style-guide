@@ -30,6 +30,7 @@
 
 .joe__page-content {
   grid-column: 1 / 1;
+  min-width: 0;
 
   @include breakpoint($bp-med) {
     @include gutter($padding-right-full...);
@@ -54,6 +55,7 @@
 
 .joe__sidebar {
   grid-column: 1 / 1;
+  min-width: 0;
 
   @include breakpoint($bp-med) {
     @include gutter($padding-left-full...);

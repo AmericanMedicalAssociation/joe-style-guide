@@ -1,9 +1,12 @@
 .joe__rail-cta {
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin: 1em $gutter-mobile;
   background-color: $white;
   padding: 1.5em;
   box-shadow: 0 0 5px rgba($black-90, .25);
+  
+  @include breakpoint($bp-med) {
+    margin: 2em 0 1em 0;
+  }
 }
 
 .joe__rail-cta__title {
