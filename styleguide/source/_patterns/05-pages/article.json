@@ -467,6 +467,23 @@
       }
     ]
   },
+  "rail_cta": { 
+    "heading": {
+      "level": "3",
+      "text": "Join the Discussion",
+      "class": "joe__rail-cta__title"
+    },
+    "paragraph" : {
+      "text": "Our Discussion Forum provides an opportunity for students, educators, and clinicians to engage experts in an online conversation about important ethical issues in health care."
+    },
+    "button": {
+      "href": "#",
+      "info": "alt",
+      "text": "Discussion Forum",
+      "type": "link",
+      "size": "small"
+    }
+  },
   "footer_navs": [
     {
       "href": "/",
