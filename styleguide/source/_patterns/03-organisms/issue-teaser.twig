@@ -1,19 +1,20 @@
 <section class="joe__issue-teaser">
   <div class="container">
     {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Also in this Issue" } } %}
-    {% include "@atoms/title-label.twig" with { "title_label": {"level" : "4", "text" : "October 2017" } } %}
-    <div class="joe__layout--two-column">
+    {% set title_label = issue.title %}
+    {% include "@atoms/title-label.twig" %}
+    <div class="joe__layout--two-column joe__issue-teaser__block">
       {# Keeping tabindex for accessibility purposes #}
       <div class="joe__col-one">
-        Article 1
-        
-        Article 2
-        
-        Article 3
+        {% set teaser = issue.feature_article %}
+        {% include '@organisms/article-teaser.twig' %}
       </div>
 
       <div class="joe__col-two">
-        Article 1
+        {% for article in issue.articles %}
+          {% set teaser = article %}
+          {% include '@organisms/article-teaser.twig' %}
+        {% endfor %}
       </div>
     </div>
   </div>
