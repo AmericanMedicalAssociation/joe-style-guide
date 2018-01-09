@@ -315,6 +315,100 @@
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine"
   },
+  "issue": {
+    "title" : {
+      "text": "Oct. 2017",
+      "level": "4"
+      },
+    "question" : "A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
+    "articles" : [
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "Peer-Reviewed CME Article"
+        },
+        "authors": [
+          {
+            "name" : "Jeremy Balch"
+          },
+          {
+            "name" : "Julia H. Schoen"
+          },
+          {
+            "name" : "Payal K. Patel"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
+        },
+        "image": {
+          "src":"https://ipsumimage.appspot.com/150"
+        }
+      },
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "Podcast",
+          "class": "joe__flag--red"
+        },
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
+        },
+        "image": {
+          "src":"https://ipsumimage.appspot.com/150"
+        }
+      },
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "The Code Says"
+        },
+        "authors": [
+          {
+            "name" : "Jeremy Balch"
+          },
+          {
+            "name" : "Julia H. Schoen"
+          },
+          {
+            "name" : "Payal K. Patel"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
+        }
+      }
+    ],
+    "feature_article": {
+      "size": "large",
+      "style": "reverse",
+      "flag": {
+        "type": "State of the Art and Science"
+      },
+      "authors": [
+        {
+          "name" : "Steven S. Coughlin"
+        },
+        {
+          "name" : "Osman Yousufzai"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/160x90"
+      }
+    }
+  },
   
   "footer_navs": [
     {
