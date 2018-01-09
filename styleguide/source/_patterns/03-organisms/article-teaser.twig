@@ -16,10 +16,20 @@
     <h2 class="joe__article-teaser__title">{% include "@atoms/link.twig" %}</h2>
     <span class="joe__article-teaser__meta">
       {% for author in teaser.authors %}
-        {% if loop.last %}
+        {% if loop.length == 1 %}
+          {{ author.name }}
+        {% elseif loop.length == 2 %}
+          {% if loop.last %}
           and {{ author.name }}
-        {% else %}
-          {{ author.name }}, 
+          {% else %}
+            {{ author.name }} 
+          {% endif %}
+        {% else %}   
+          {% if loop.last %}
+            and {{ author.name }}
+          {% else %}
+            {{ author.name }}, 
+          {% endif %}
         {% endif %}
       {% endfor %}
     </span>
