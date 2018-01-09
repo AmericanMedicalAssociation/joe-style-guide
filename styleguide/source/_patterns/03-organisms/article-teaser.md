@@ -16,8 +16,11 @@ teaser: {
     type: string / required
   url:
     type: string / required
-  image: {
-    "src":"https://ipsumimage.appspot.com/150"
-  }
+  image: 
+    type: media / optional
+  size: 
+    type: string / optional
+  style:
+    type: string / optional
 }
 ~~~

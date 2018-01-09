@@ -13,8 +13,8 @@
     {% set flag = teaser.flag %}
     {% include "@atoms/flag.twig" %}
     {% set link = teaser.title %}
-    <h2>{% include "@atoms/link.twig" %}</h2>
-    <span>
+    <h2 class="joe__article-teaser__title">{% include "@atoms/link.twig" %}</h2>
+    <span class="joe__article-teaser__meta">
       {% for author in teaser.authors %}
         {% if loop.last %}
           and {{ author.name }}
