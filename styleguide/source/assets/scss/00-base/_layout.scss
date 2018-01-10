@@ -10,5 +10,10 @@
 .container {
   max-width: $max-width;
   margin: 0 auto;
+  padding: 0 .5em;
+  
+  @include breakpoint($bp-med) {
+    padding: 0 1em;
+  }
 }
 

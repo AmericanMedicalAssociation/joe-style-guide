@@ -1,0 +1,26 @@
+<footer class="joe__footer">
+  <div class="container">
+    <div class="joe__layout--two-column">
+      <div class="joe__col-one">
+        {% set wordmark = footer_wordmark %}
+        {% include "@molecules/wordmark.twig" %}
+        {% include "@molecules/footer-nav.twig" %}
+      </div>
+      <div class="joe__col-two joe__footer--right">
+        <div class="joe__footer__block">
+          {% set footer_block = footer_block_address %}
+          {% include "@molecules/footer-block.twig" %}
+        </div>
+        <div class="joe__footer__block">
+          {% set footer_block = footer_block_phone %}
+          {% include "@molecules/footer-block.twig" %}
+          
+          {% set footer_block = footer_block_email %}
+          {% include "@molecules/footer-block.twig" %}
+        </div>
+      </div>
+    </div>
+    
+    {% include "@atoms/copyright.twig" %}
+  </div>
+</footer>

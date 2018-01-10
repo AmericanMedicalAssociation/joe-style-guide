@@ -1,0 +1,25 @@
+.joe__wordmark {
+  margin-bottom: 12px;
+}
+
+.joe__wordmark__title {
+  @extend %joe__h2;
+  margin-bottom: 5px;
+  margin-top: 0;
+  
+  .joe__footer & {
+    @extend %joe__h3;
+  }
+}
+
+.joe__wordmark__subtitle {
+  @include type($font-sans-serif, 1em, $font-weight-medium, 1.15);
+  font-style: italic;
+  margin-top: 0;
+  
+  .joe__footer & {
+    @include type($font-sans-serif, 0.85em, $font-weight-medium, 1.15);
+  }
+}
+
+

@@ -1,5 +1,5 @@
 <a
   href="{{ link.href }}"
-  class="{{ link.class }}"
-  title="{{ link.title }}"
-  target="{{ link.target }}">{{ link.text }}</a>
+  {% if link.class %}class="{{ link.class }}"{% endif %}
+  {% if link.title %}title="{{ link.title }}"{% endif %}
+  {% if link.target %}target="{{ link.target }}"{% endif %}>{{ link.text }}</a>

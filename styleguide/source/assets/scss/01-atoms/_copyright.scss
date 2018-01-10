@@ -1,3 +1,9 @@
-.ama__copyright {
+.joe__copyright {
+  @extend %joe__type--smallest;
   color: $black-80;
+  margin-top: 3em;
+  
+  @include breakpoint($bp-small) {
+    text-align: center;
+  }
 }

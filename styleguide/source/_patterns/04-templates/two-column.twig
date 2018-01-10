@@ -1,0 +1,16 @@
+<div class="joe__layout--two-column" tabindex="-1">
+  {# Keeping tabindex for accessibility purposes #}
+  <div class="joe__col-one">
+    {% block col_one %}
+      {% set placeholder = two_column.col_one.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+  </div>
+
+  <div class="joe__col-two">
+    {% block col_two %}
+      {% set placeholder = two_column.col_two.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+  </div>
+</div>

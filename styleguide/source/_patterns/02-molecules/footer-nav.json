@@ -1,0 +1,24 @@
+{
+  "footer_navs": [
+    {
+      "href": "/",
+      "text": "AMA Home"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    },
+    {
+      "href": "/",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/",
+      "text": "Site Map"
+    },
+    {
+      "href": "/",
+      "text": "FAQs"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+.joe__layout--two-column {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  // min-height: 30em;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: auto;
+
+  @include breakpoint($bp-small) {
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr  1fr;
+    -ms-grid-rows: auto auto;
+  }
+
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid.flexbox & {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    @include breakpoint($bp-small) {
+      flex-direction: row;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    @extend %clearfix;
+  }
+}
+
+.joe__col-one {
+  grid-column: 1 / 1;
+  grid-row: 1;
+  -ms-grid-row: 1;
+
+  @include breakpoint($bp-small) {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+    
+    @include breakpoint($bp-small) {
+      width: 50%;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    
+    @include breakpoint($bp-small) {
+      clear: left;
+      display: inline-block;
+      float: left;
+    }
+  }
+}// end col one
+
+
+.joe__col-two {
+  grid-column: 1 / 1;
+  grid-row: 2;
+  -ms-grid-row: 2;
+
+  @include breakpoint($bp-small) {
+    grid-column: 2 / 2;
+    grid-row: 1;
+    -ms-grid-row: 1;
+  }
+  
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+    
+    @include breakpoint($bp-small) {
+      width: 50%;
+    }
+  }
+  
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+    
+    @include breakpoint($bp-small) {
+      clear: right;
+      display: inline-block;
+      float: right;
+    }
+  }
+} // end col-two
+

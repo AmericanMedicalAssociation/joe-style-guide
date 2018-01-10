@@ -1,6 +1,6 @@
 {% include '@atoms/skip-nav.twig' %}
 
-<div class="container">
+
   {% block utility %}
     {% set placeholder = two_column_left.utility.placeholder %}
     {% include '@base/placeholder.twig' %}
@@ -10,7 +10,7 @@
     {% set placeholder = two_column_left.header.placeholder %}
     {% include '@base/placeholder.twig' %}
   {% endblock %}
-
+<div class="container">
   <main id="main-content" class="joe__layout--two-column-left" tabindex="-1" role="main">
     {# Keeping tabindex for accessibility purposes #}
     <article class="joe__page-content" role="article">
@@ -21,12 +21,13 @@
     </article>
 
     <aside id="sidebar" class="joe__sidebar" role="complementary">
-      {% block sidebarSecondary %}
-        {% set placeholder = two_column_left.sidebar_secondary.placeholder %}
+      {% block sidebar %}
+        {% set placeholder = two_column_left.sidebar.placeholder %}
         {% include '@base/placeholder.twig' %}
       {% endblock %}
     </aside>
   </main>
+</div>
 
   {% block footer %}
     {% set placeholder = two_column_left.footer.placeholder %}

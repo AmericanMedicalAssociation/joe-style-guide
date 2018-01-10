@@ -14,3 +14,16 @@ a,
     border-bottom: 1px solid $orange-lighter;
   }
 }
+
+%joe__link--black,
+.joe__link--black {
+  @extend %joe__link;
+  color: $black-90;
+  border-color: $black-80;
+  
+  &:hover,
+  &:focus {
+    color: $blue-darker;
+    border-bottom: 1px solid $blue-lighter;
+  }
+} 
