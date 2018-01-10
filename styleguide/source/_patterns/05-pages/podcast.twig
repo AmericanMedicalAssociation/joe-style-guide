@@ -22,12 +22,7 @@
     {% include "@molecules/tags-list.twig" %}
   
 {% endblock %}
-{% block pageContent_footer %}
-  {% include "@organisms/article-footer.twig" %}
-  
-  {% set authors = article_authors %}
-  {% include "@molecules/author-information.twig" %}
-{% endblock %}
+
 {% block sidebar_top %}
   {% include "@organisms/related-articles.twig" %}
 {% endblock %}
