@@ -157,6 +157,9 @@
       "text": "Share by Email"
     }
   ],
+  "audio": {
+    "src": "http://html5-player.libsyn.com/embed/episode/id/3703250/height/50/width/340/theme/standard/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/"
+  },
   "tags": [
     {
       "url": "#",
