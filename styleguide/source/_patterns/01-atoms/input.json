@@ -3,6 +3,7 @@
     "type": "text",
     "name": "text input",
     "id": "text-input",
+    "class": "class",
     "value": "",
     "placeholder": "Text Input" 
   }

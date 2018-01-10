@@ -10,6 +10,8 @@ input: {
     type: string / required
   id: 
     type: string / required
+  class: 
+    type: string / optional
   value:
     type: string / optional (ex: "submit", "reset")
   placeholder:

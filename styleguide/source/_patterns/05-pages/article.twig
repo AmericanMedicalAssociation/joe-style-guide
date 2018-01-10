@@ -1,4 +1,7 @@
 {% extends '@templates/two-column-left.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+{% endblock %}
 
 {% block pageContent %}
   {% include '@base/placeholder.twig' with {'placeholder':{'text':'Page content'}} %}

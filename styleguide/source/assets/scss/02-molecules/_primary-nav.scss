@@ -1,0 +1,94 @@
+.joe__primary-nav {
+  
+  @include breakpoint($bp-med) {
+    float: right;
+    clear: right;
+    
+    .joe__sticky-header & {
+      float: none;
+      text-align: center;
+    }
+  }
+}
+
+.joe__primary-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.joe__primary-nav__item {
+  @include type($font-serif, 1em, $font-weight-bold, 1.25);
+  display: block;
+  
+  a:link,
+  a:visited {
+    display: block;
+    padding: .5em;
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+  
+  a:active,
+  a:hover,
+  a:focus {
+    position: relative;
+    color: $orange-lighter;
+    border-color: $orange-lighter;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    
+    a:link,
+    a:visited {
+      display: inline-block;
+      padding: .5em;
+      border-bottom: 0;
+      color: $blue-darker;
+      
+      &:after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        background-color: transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        transition: border-color .25s ease;
+      }
+    }
+    
+    a:active,
+    a:hover,
+    a:focus {
+      position: relative;
+      color: $orange-darker;
+      
+      &:after {
+        height: 30px;
+        width: 30px;
+        border-right: 1px solid $orange;
+        border-bottom: 1px solid $orange;
+        transition: height .45s ease, width .45s ease;
+      } 
+    }
+    
+    .joe__sticky-header & {
+      
+      a:link,
+      a:visited {
+        color: $white;
+      }
+      
+      a:active,
+      a:hover,
+      a:focus {
+        color: $white;
+      }
+    }
+  }
+}

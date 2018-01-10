@@ -24,8 +24,8 @@ module.exports = {
   // prefix for CSS classnames
   cssprefix: ".icon-",
 
-  defaultWidth: "300px",
-  defaultHeight: "200px",
+  defaultWidth: "80px",
+  defaultHeight: "80px",
 
   // define vars that can be used in filenames if desirable,
   // like foo.colors-primary-secondary.svg

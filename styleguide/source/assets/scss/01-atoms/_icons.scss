@@ -1,0 +1,17 @@
+.joe__icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  
+  svg {
+    height: 50px;
+    width: 50px;
+    fill: $black;
+  }
+}
+
+span[class^='icon-'] {
+  height: 50px;
+  width: 50px;
+}
+

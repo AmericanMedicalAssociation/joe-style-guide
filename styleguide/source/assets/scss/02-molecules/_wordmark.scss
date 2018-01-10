@@ -3,23 +3,32 @@
 }
 
 .joe__wordmark__title {
-  @extend %joe__h2;
-  margin-bottom: 5px;
+  @extend %joe__h4;
+  margin-bottom: 0;
   margin-top: 0;
   
   .joe__footer & {
-    @extend %joe__h3;
+    @extend %joe__h4;
+  }
+  
+  @include breakpoint($bp-small) {
+    @include type($font-serif, 1.45em, $font-weight-bold, 1.28);
   }
 }
 
 .joe__wordmark__subtitle {
-  @include type($font-sans-serif, 1em, $font-weight-medium, 1.15);
+  @include type($font-sans-serif, .85em, $font-weight-medium, 1.15);
   font-style: italic;
   margin-top: 0;
   
   .joe__footer & {
     @include type($font-sans-serif, 0.85em, $font-weight-medium, 1.15);
   }
+  
+  @include breakpoint($bp-small) {
+    @include type($font-sans-serif, 1em, $font-weight-medium, 1.28);
+  }
+  
 }
 
 
