@@ -31,9 +31,14 @@
 .joe__page-content {
   grid-column: 1 / 1;
   min-width: 0;
+  background-color: $white;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
 
   @include breakpoint($bp-med) {
-    @include gutter($padding-right-full...);
+    @include gutter($margin-right-half...);
+    padding-left: $gutter;
+    padding-right: $gutter;
     grid-column: 1 / 2;
     -ms-grid-column: 1;
   }
@@ -56,9 +61,12 @@
 .joe__sidebar {
   grid-column: 1 / 1;
   min-width: 0;
+  margin-left: $gutter-mobile;
+  margin-right: $gutter-mobile;
 
   @include breakpoint($bp-med) {
-    @include gutter($padding-left-full...);
+    @include gutter($margin-left-half...);
+    margin-right: 0;
     grid-column: 2 / 2;
   }
   
