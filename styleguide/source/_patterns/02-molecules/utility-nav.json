@@ -6,15 +6,11 @@
     },
     {
       "href": "/",
-      "text": "Submit Article"
-    },
-    {
-      "href": "/",
-      "text": "Submit Artwork"
-    },
-    {
-      "href": "/",
       "text": "Become an Issue Editor"
+    },
+    {
+      "href": "/",
+      "text": "CME Articles"
     },
     {
       "href": "/",
@@ -24,7 +20,7 @@
   "utility_right_navs": [
     {
       "href": "/",
-      "text": "CME Articles"
+      "text": "Sign Up for Newsletter"
     },
     {
       "href": "/",
