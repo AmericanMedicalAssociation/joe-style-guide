@@ -10,32 +10,32 @@
  (function ($, Drupal) {
    Drupal.behaviors.nav = {
      attach: function (context, settings) {
-        var menuTrigger = '#menu-trigger',
-            searchTrigger = '#search-trigger',
-            navDrawer = '#joe__nav-drawer',
-            searchDrawer = '#site-search-form';
+        var menuTrigger = $('#menu-trigger'),
+            searchTrigger = $('#search-trigger'),
+            navDrawer = $('#joe__nav-drawer'),
+            searchDrawer = $('#site-search-form');
          // Menu
          // When a user clicks on the menu trigger (main)
-         $(menuTrigger).click(function() {
+         menuTrigger.click(function() {
            // Unfocus on the dropdown
            $(this).blur();
            // add a class to the sibling dropdown
            $(this).toggleClass('is-active');
-           $(this).siblings(navDrawer).toggleClass('is-active');
-           $(searchTrigger).removeClass('is-active');
-           $(searchDrawer).removeClass('is-active');
+           $(this).siblings('#joe__nav-drawer').toggleClass('is-active');
+           searchTrigger.removeClass('is-active');
+           searchDrawer.removeClass('is-active');
          });
          
          // Search
          // When a user clicks on the search trigger
-         $(searchTrigger).click(function() {
+         searchTrigger.click(function() {
            // Unfocus on the dropdown
            $(this).blur();
            // add a class to the sibling dropdown
            $(this).toggleClass('is-active');
-           $(this).siblings(searchDrawer).toggleClass('is-active');
-           $(navDrawer).removeClass('is-active');
-           $(menuTrigger).removeClass('is-active');
+           $(this).siblings('#site-search-form').toggleClass('is-active');
+           navDrawer.removeClass('is-active');
+           menuTrigger.removeClass('is-active');
          });
          
          // sticky sticky-header
