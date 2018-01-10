@@ -311,10 +311,6 @@
   "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
   "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
   "ethics_case": true,
-  "footer_wordmark": {
-    "title": "AMA Journal of Ethics",
-    "subtitle": "Illuminating the Art of Medicine"
-  },
   "issue": {
     "title" : {
       "text": "Oct. 2017",
@@ -484,6 +480,10 @@
       "size": "small"
     }
   },
+  "footer_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine"
+  },
   "footer_navs": [
     {
       "href": "/",
@@ -506,35 +506,39 @@
       "text": "FAQs"
     }
   ],
-  "footer_title_label": {
+  "footer_block_address": {
+    "title_label": {
       "level": "3",
       "text": "Contact Us"
     },
-  "footer_address": {
-    "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+    "paragraph": {
+      "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+    } 
   },
-  "footer_title_label_2": {
-    "level": "4",
-    "text": "Telephone"
-  },
-  "footer_phone":
-    {
+  "footer_block_phone": {
+    "title_label": {
+      "level": "4",
+      "text": "Telephone"
+    },
+    "link": {
       "title": "Call AMA Journal of Ethics",
       "href": "tel:+13124644075",
       "text": "312-464-4075",
       "class": "joe__link--black"
-    },
-  "footer_title_label_3": {
-    "level": "4",
-    "text": "Email"
+    }  
   },
-  "footer_email":
-    {
+  "footer_block_email": {
+    "title_label": {
+      "level": "4",
+      "text": "Email"
+    },
+    "link": {
       "title": "Email AMA Journal of Ethics",
       "href": "mailto:joe@ama-assn.org",
       "text": "joe@ama-assn.org",
       "class": "joe__link--black"
-    },
+    }
+  },
   "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
 
 }
