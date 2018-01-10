@@ -8,18 +8,26 @@
   
   @include breakpoint($bp-med) {
     position: absolute;
-    top: -25px;
     width: 95%;
     max-width: 1550px;
     margin: 0 auto;
     column-count: 1;
     padding: 0;
-    background: none;
-    background-color: transparent;
+    background: $blue-darkest;
+    background-color: $blue-darkest;
+    
+    .joe__header & {
+      top: -25px;
+      background: none;
+      background-color: transparent;
+    }
   }
   
   @include breakpoint($bp-large) {
-    top: -28px;
+    
+    .joe__header & {
+      top: -28px;
+    }
   }
   
   @include breakpoint($bp-xl) {
