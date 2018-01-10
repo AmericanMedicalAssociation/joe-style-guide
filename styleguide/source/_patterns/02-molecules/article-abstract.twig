@@ -1,4 +1,5 @@
-<div class="joe__abstract">
-  <h2>Abstract</h2>
-  <p>{{ abstract.text }}</p>
-</div>
+{% include "heading.twig" with { "heading": {"level": "2", "text": "Abstract"} }%}
+{% set paragraph = abstract %}
+{% include "paragraph.twig" %}
+
+
