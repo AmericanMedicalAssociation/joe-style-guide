@@ -1,0 +1,17 @@
+{
+  "footer_block": {
+    "title_label": {
+      "level": "3",
+      "text": "Contact Us"
+    },
+    "paragraph": {
+      "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+    },
+    "link": {
+      "title": "Call AMA Journal of Ethics",
+      "href": "tel:+13124644075",
+      "text": "312-464-4075",
+      "class": "joe__link--black"
+    }
+  }
+}

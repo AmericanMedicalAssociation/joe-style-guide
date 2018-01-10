@@ -8,21 +8,15 @@
       </div>
       <div class="joe__col-two joe__footer--right">
         <div class="joe__footer__block">
-          {% set title_label = footer_title_label %}
-          {% include "@atoms/title-label.twig" %}
-          {% set paragraph = footer_address %}
-          {% include "@atoms/paragraph.twig" %}
+          {% set footer_block = footer_block_address %}
+          {% include "@molecules/footer-block.twig" %}
         </div>
         <div class="joe__footer__block">
-          {% set title_label = footer_title_label_2 %}
-          {% include "@atoms/title-label.twig" %}
-          {% set link = footer_phone %}
-          {% include "@atoms/link.twig" %}
+          {% set footer_block = footer_block_phone %}
+          {% include "@molecules/footer-block.twig" %}
           
-          {% set title_label = footer_title_label_3 %}
-          {% include "@atoms/title-label.twig" %}
-          {% set link = footer_email %}
-          {% include "@atoms/link.twig" %}
+          {% set footer_block = footer_block_email %}
+          {% include "@molecules/footer-block.twig" %}
         </div>
       </div>
     </div>
