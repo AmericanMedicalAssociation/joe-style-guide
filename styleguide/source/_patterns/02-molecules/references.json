@@ -3,34 +3,80 @@
     {
       "number": "1",
       "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "2",
       "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
-      "google_scholar": "#",
-      "pubmed" : "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "3",
       "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "4",
       "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "5",
       "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     }
   ]
 }
