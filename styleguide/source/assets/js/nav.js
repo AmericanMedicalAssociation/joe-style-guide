@@ -10,29 +10,32 @@
  (function ($, Drupal) {
    Drupal.behaviors.nav = {
      attach: function (context, settings) {
-
+        var menuTrigger = $('#menu-trigger'),
+            searchTrigger = $('#search-trigger'),
+            navDrawer = $('#joe__nav-drawer'),
+            searchDrawer = $('#site-search-form');
          // Menu
          // When a user clicks on the menu trigger (main)
-         $('#menu-trigger').click(function() {
+         menuTrigger.click(function() {
            // Unfocus on the dropdown
            $(this).blur();
            // add a class to the sibling dropdown
            $(this).toggleClass('is-active');
            $(this).siblings('#joe__nav-drawer').toggleClass('is-active');
-           $('#search-trigger').removeClass('is-active');
-           $('#site-search-form').removeClass('is-active');
+           searchTrigger.removeClass('is-active');
+           searchDrawer.removeClass('is-active');
          });
          
          // Search
          // When a user clicks on the search trigger
-         $('#search-trigger').click(function() {
+         searchTrigger.click(function() {
            // Unfocus on the dropdown
            $(this).blur();
            // add a class to the sibling dropdown
            $(this).toggleClass('is-active');
            $(this).siblings('#site-search-form').toggleClass('is-active');
-           $('#joe__nav-drawer').removeClass('is-active');
-           $('#menu-trigger').removeClass('is-active');
+           navDrawer.removeClass('is-active');
+           menuTrigger.removeClass('is-active');
          });
          
          // sticky sticky-header

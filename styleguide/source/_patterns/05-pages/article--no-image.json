@@ -271,34 +271,80 @@
     {
       "number": "1",
       "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "2",
       "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
-      "google_scholar": "#",
-      "pubmed" : "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "3",
       "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "4",
       "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     },
     {
       "number": "5",
       "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
-      "google_scholar": "#",
-      "pubmed" : "#",
-      "crossref": "#"
+      "links": [
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "CrossRef",
+          "url": "#"
+        }
+      ]
     }
   ],
   "editor_note": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
@@ -307,10 +353,6 @@
   "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
   "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
   "ethics_case": true,
-  "footer_wordmark": {
-    "title": "AMA Journal of Ethics",
-    "subtitle": "Illuminating the Art of Medicine"
-  },
   "issue": {
     "title" : {
       "text": "Oct. 2017",
@@ -470,6 +512,10 @@
       "size": "small"
     }
   },
+  "footer_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine"
+  },
   "footer_navs": [
     {
       "href": "/",
@@ -492,35 +538,38 @@
       "text": "FAQs"
     }
   ],
-  "footer_title_label": {
+  "footer_block_address": {
+    "title_label": {
       "level": "3",
       "text": "Contact Us"
     },
-  "footer_address": {
-    "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+    "paragraph": {
+      "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
+    } 
   },
-  "footer_title_label_2": {
-    "level": "4",
-    "text": "Telephone"
-  },
-  "footer_phone":
-    {
+  "footer_block_phone": {
+    "title_label": {
+      "level": "4",
+      "text": "Telephone"
+    },
+    "link": {
       "title": "Call AMA Journal of Ethics",
       "href": "tel:+13124644075",
       "text": "312-464-4075",
       "class": "joe__link--black"
-    },
-  "footer_title_label_3": {
-    "level": "4",
-    "text": "Email"
+    }  
   },
-  "footer_email":
-    {
+  "footer_block_email": {
+    "title_label": {
+      "level": "4",
+      "text": "Email"
+    },
+    "link": {
       "title": "Email AMA Journal of Ethics",
       "href": "mailto:joe@ama-assn.org",
       "text": "joe@ama-assn.org",
       "class": "joe__link--black"
-    },
+    }
+  },
   "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
-
 }

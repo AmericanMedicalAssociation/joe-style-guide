@@ -5,17 +5,13 @@
     {% for reference in references %}
       <li id="reference_{{ number }}" class="joe__references__item">
         {{reference.text}}
+        {% if reference.links %}
         <div class="joe__references__item-links">
-          {% if reference.google_scholar %}
-            <a title="View on Google Scholar" href="{{ reference.google_scholar }}">Google Scholar</a>
-          {% endif %}
-          {% if reference.pubmed %}
-            <a title="View on PubMed" href="{{ reference.pubmed }}">PubMed</a>
-          {% endif %}
-          {% if reference.crossref %}
-            <a title="View on Crossref" href="{{ reference.crossref }}">Crossref</a>
-          {% endif %}
+          {% for link in reference.links %}
+            <a title="View on {{link.text}}" href="{{ link.url }}">{{link.text}}</a>
+          {% endfor %}
         </div>
+        {% endif %}
       </li>
     {% endfor %}
   </ol>
