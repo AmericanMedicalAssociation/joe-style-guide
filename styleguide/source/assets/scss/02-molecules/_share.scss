@@ -5,8 +5,9 @@
   margin: 1em 0 0;
   padding: 0;
   text-align: center;
+  z-index: 10;
   
-  @include breakpoint($bp-xs) {
+  @include breakpoint(542px) {
     position: relative;
     text-align: left;
     top: -45px;
@@ -16,11 +17,11 @@
     position: absolute;
     left: -10px;
     top: auto;
-    bottom: -164px;
+    bottom: -205px;
   }
   
   @include breakpoint($bp-med) {
-    bottom: -155px;
+    bottom: -213px;
   }
 }
 
