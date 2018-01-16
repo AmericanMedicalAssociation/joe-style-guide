@@ -100,37 +100,6 @@
     "class": "joe__flag--larger joe__flag--red"
   },
   "article_title": "Bringing 'Design Thinking' to Health Care: An Interview with John Meyer, Laura Webb, and Dr. Bon Ku",
-  "article_tools": {
-    "citation": {
-      "tool_drawer": {
-        "content": "AMA Journal of Ethics. January 2018, Volume 20, Number 1: 69-76. <br/> doi: 10.1001/journalofethics.2018.20.01.hlaw1-1801.",
-        "id" : "citation-drawer",
-        "button": {
-          "text": "Citation",
-          "type": "button",
-          "style": "tool",
-          "control_id": "citation-drawer",
-          "class": "tool-drawer__trigger"
-        }
-      }
-    },
-    "pdf": {
-      "button": {
-        "text": "PDF",
-        "type": "link",
-        "style": "tool",
-        "info": "Download PDF"
-      }
-    },
-    "print": {
-      "button": {
-        "text": "Print",
-        "type": "link",
-        "style": "tool",
-        "info": "Print Page"
-      }
-    }
-  },
   "shares": [
     {
       "symbol": "square-twitter",
