@@ -3,7 +3,7 @@
   
   <ol class="joe__references__list">
     {% for reference in references %}
-      <li id="reference_{{ number }}" class="joe__references__item">
+      <li id="reference_{{ loop.index }}" class="joe__references__item">
         {{reference.text}}
         {% if reference.links %}
         <div class="joe__references__item-links">
