@@ -1,8 +1,8 @@
 {
-  "name": "ama-style-guide",
+  "name": "ama-joe-style-guide",
   "version": "1.13.1",
-  "description": "A living style guide for the American Medical Association",
-  "repository": "https://github.com/AmericanMedicalAssociation/AMA-style-guide",
+  "description": "A living style guide for the AMA Journal of Ethics",
+  "repository": "https://github.com/palantirnet/ama-style-guide-joe",
   "main": "gulpfile.js",
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
