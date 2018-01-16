@@ -14,15 +14,40 @@
             {% include '@base/placeholder.twig' %}
           {% endblock %}
         </div>
+        <div class="joe__page-content joe__article" role="article">
+          {% block pageContent_top %}
+            {% set placeholder = two_column_left.page_content_top.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </div>
+        <div class="joe__page-content joe__article" role="article">
+          {% block pageContent_poll %}
+            {% set placeholder = two_column_left.page_content_poll.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </div>
         <div class="joe__page-content joe__article--bottom" role="article">
-          {% block pageContent %}
-            {% set placeholder = two_column_left.page_content.placeholder %}
+          {% block pageContent_bottom %}
+            {% set placeholder = two_column_left.page_content_bottom.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </div>
+        <div class="joe__page-content" role="article">
+          {% block pageContent_footer %}
+            {% set placeholder = two_column_left.page_content_footer.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}
         </div>
         
         <aside id="sidebar" class="joe__sidebar joe__sidebar--top" role="complementary">
           {% block sidebar_top %}
+            {% set placeholder = two_column_left.sidebar.placeholder %}
+            {% include '@base/placeholder.twig' %}
+          {% endblock %}
+        </aside>
+        
+        <aside id="sidebar" class="joe__sidebar joe__sidebar--bottom" role="complementary">
+          {% block sidebar_bottom %}
             {% set placeholder = two_column_left.sidebar.placeholder %}
             {% include '@base/placeholder.twig' %}
           {% endblock %}

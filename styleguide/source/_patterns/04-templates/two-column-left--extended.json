@@ -15,9 +15,24 @@
         "text": "Page content Header placeholder"
       }
     },
-    "page_content": {
+    "page_content_top": {
       "placeholder": {
-        "text": "Page content placeholder"
+        "text": "Page content Top placeholder"
+      }
+    },
+    "page_content_poll": {
+      "placeholder": {
+        "text": "Page content Poll placeholder"
+      }
+    },
+    "page_content_bottom": {
+      "placeholder": {
+        "text": "Page content Bottom placeholder"
+      }
+    },
+    "page_content_footer": {
+      "placeholder": {
+        "text": "Page content Footer placeholder"
       }
     },
     "sidebar": {
