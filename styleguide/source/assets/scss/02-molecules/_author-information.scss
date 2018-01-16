@@ -1,6 +1,9 @@
 .joe__author-information {
-  padding: $gutter-mobile;
   margin: $gutter-mobile 0;
+  
+  @include breakpoint($bp-xs) {
+    padding: $gutter-mobile;
+  }
   
   @include breakpoint($bp-med) {
     padding: $gutter;

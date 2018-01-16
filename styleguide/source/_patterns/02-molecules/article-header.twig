@@ -2,6 +2,7 @@
   {% set flag = article_flag %}
   {% include "@atoms/flag.twig" %}
   <h2 class="joe__article-header__title">{{ article_title }}</h2>
+  {% if article_authors %}
   <div class="joe__article-header__meta">
     {% for article_author in article_authors %}
       {% if loop.length == 1 %}
@@ -21,4 +22,5 @@
       {% endif %}
     {% endfor %}
   </div>
+  {% endif %}
 </header>
