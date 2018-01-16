@@ -1,0 +1,86 @@
+%joe__inline {
+  @extend %clearfix;
+  margin: 1em 0;
+}
+
+.joe__inline-caption {
+  @extend %joe__type--smaller;
+  margin-top: .5em;
+}
+
+.joe__inline-image {
+  @extend %joe__inline;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.joe__inline-image--left {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: left;
+    margin: .5em 1em .5em 0;
+  }
+}
+
+.joe__inline-image--right {
+
+  @include breakpoint($bp-small) {
+    width: 50%;
+    float: right;
+    margin: .5em 0 .5em 1em;
+  }
+}
+
+.joe__inline-image--portrait {
+  width: 50%;
+  float: left;
+  top: 100%;
+  margin: .5em 1em .5em 0;
+
+  @include breakpoint($bp-small) {
+    width: 30%;
+  }
+
+  @include breakpoint($bp-med) {
+    width: 25%;
+  }
+}
+
+.joe__inline-image__zoom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba($white, .8);
+  background: rgba($white, .8);
+  border-radius: 0;
+  padding: 6px;
+  
+  .icon-zoom {
+    display: block;
+    height: 26px;
+    width: 26px;
+    
+    svg {
+      height: 25px;
+      width: 25px;
+      fill: $blue-darkest;
+    }
+  }
+  
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $blue-darkest;
+    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
+  
+    .icon-zoom {
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}

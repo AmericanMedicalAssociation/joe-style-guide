@@ -1,0 +1,9 @@
+%joe__rail-title,
+.joe__rail-title {
+  @include type($font-serif, .65em, $font-weight-medium, 1.25);
+  text-transform: uppercase;
+  color: $black-80;
+  margin-bottom: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $black-80;
+}

@@ -1,0 +1,65 @@
+.joe__article {
+  background-color: $white;
+  padding: 0 $gutter-mobile;
+  
+  @include breakpoint($bp-med) {
+    padding: 0 $gutter;
+  }
+}
+
+.joe__article--top {
+  background-color: rgba($white, .9);
+  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
+  position: relative;
+  padding: 2em $gutter-mobile $gutter $gutter-mobile;
+  
+  // create shadow corner effect
+  &:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    left: -6px;
+    z-index: -1;
+    display: block;
+    background: url('../images/background-gradient.png');
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    max-height: 600px;
+  }
+  
+  @include breakpoint($bp-med) {
+    padding: 3em $gutter $gutter $gutter;
+  }
+}
+
+.joe__article--bottom {
+  @include gutter($margin-bottom-full...);
+  background-color: $white;
+  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
+  position: relative;
+  padding: 0 $gutter-mobile 1.25em $gutter-mobile;
+  
+  // create shadow corner effect
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    left: -6px;
+    z-index: -2;
+    display: block;
+    background: url('../images/background-gradient.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    max-height: 600px;
+    transform: rotate(180deg);
+  }
+  
+  @include breakpoint($bp-med) {
+    padding: 0 $gutter 1.25em $gutter;
+  }
+}

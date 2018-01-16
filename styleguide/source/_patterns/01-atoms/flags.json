@@ -1,0 +1,34 @@
+{
+  "flags": [
+    {
+      "type": "Medicine & Society",
+      "issue": "Sept. 2017"
+    },
+    {
+      "type": "Ethics Case",
+      "issue": "Sept. 2017",
+      "class": "joe__flag--green"
+    },
+    {
+      "type": "Podcast",
+      "issue": "Sept. 2017",
+      "class": "joe__flag--red"
+    },
+    {
+      "type": "Medicine & Society",
+      "issue": "Sept. 2017",
+      "class": "joe__flag--larger"
+    },
+    {
+      "type": "Ethics Case",
+      "issue": "Sept. 2017",
+      "class": "joe__flag--green joe__flag--larger"
+    },
+    {
+      "type": "Podcast",
+      "issue": "Sept. 2017",
+      "class": "joe__flag--red joe__flag--larger"
+    }
+  ]
+}
+

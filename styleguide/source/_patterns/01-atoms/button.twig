@@ -3,14 +3,16 @@
 
 {% if button.href %}
   <a href="{{ button.href }}" 
-     class="{{ buttonSize }} {{buttonStyle}}"
-     title="{{ button.info }}">
+     class="joe__button {{ buttonSize }} {{buttonStyle}}"
+     {% if button.info %}title="{{ button.info }}"{% endif %}>
       {{ button.text }}
   </a>
 {% else %}
   <button type="{{ button.type }}"
-          class="{{ buttonSize }} {{buttonStyle}}"
-          aria-label="{{ button.info }}">
+          class="{{ buttonSize }} {{buttonStyle}} {{ button.class }}"
+          aria-label="{{ button.info }}" 
+          {% if button.control_id %}aria-controls="#{{button.control_id}}"{% endif %}
+          {% if button.id %}id="{{button.id}}"{% endif %} >
     {{ button.text }}
   </button>
 {% endif %}

@@ -1,0 +1,5 @@
+<blockquote class="joe__inline-quote {% if inline_quote.alignment %}joe__inline-quote--{{ inline_quote.alignment }}{% endif %}">
+  {% include "icon.twig" with { "icon" : {"symbol" : "quote"}} %}
+  
+  {{ inline_quote.text }}
+</blockquote>

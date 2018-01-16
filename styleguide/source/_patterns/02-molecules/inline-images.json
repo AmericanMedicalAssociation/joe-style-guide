@@ -1,0 +1,37 @@
+{
+  "inline_images": [
+    {
+      "alignment": "",
+      "caption": "Default (Full-width) Inline Image lorem ipsum dolor set amet",
+      "image" : {
+        "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36",
+        "alt" : "Placeholder Image"
+      }
+    },
+    {
+      "alignment": "left",
+      "caption": "Left aligned inline image lorem ipsum dolor set amet",
+      "image" : {
+        "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36",
+        "alt" : "Placeholder Image"
+      }
+    },
+    {
+      "alignment": "right",
+      "caption": "Right aligned inline image lorem ipsum dolor set amet",
+      "image" : {
+        "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36",
+        "alt" : "Placeholder Image"
+      }
+    },
+    {
+      "alignment": "portrait",
+      "caption": "Portrait aligned inline image lorem ipsum dolor set amet",
+      "image" : {
+        "src" : "https://ipsumimage.appspot.com/800x600x186?l=3:2|800x600&s=36",
+        "alt" : "Placeholder Image"
+      }
+    }
+  ]
+}
+

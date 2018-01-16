@@ -1,0 +1,33 @@
+.joe__issue-teaser {
+  @include gutter($padding-top-full...);
+  @include gutter($padding-bottom-full...);
+  @include gutter($margin-top-full...);
+  background-color: $blue-darkest;
+  background: linear-gradient(top, $blue-darker 0%, $blue-darkest 100%);
+  text-align: center;
+  z-index: 0;
+  position: relative;
+  
+  .joe__title-label {
+    @include type($font-serif, 1em, $font-weight-bold, 1.25);
+    color: $white;
+    display: inline-block;
+    font-weight: $font-weight-medium;
+    
+    &:first-child {
+      font-weight: $font-weight-bold;
+      margin-right: 15px;
+    }
+  }
+  @include breakpoint($bp-med) {
+    .joe__col-one--med {
+      @include gutter($padding-right-full...);
+    } 
+  }
+}
+
+
+.joe__issue-teaser__block {
+  @include gutter($margin-top-full...);
+  text-align: left;
+}

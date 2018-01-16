@@ -11,9 +11,11 @@ body {
 
   @include breakpoint($bp-med) {
     font-size: ($base-font-size / 16px) * 110%;
+    line-height: $base-line-height * 1.1;
   }
   @include breakpoint($bp-large) {
     font-size: ($base-font-size / 16px) * 120%;
+    line-height: $base-line-height * 1.2;
   }
 }
 
