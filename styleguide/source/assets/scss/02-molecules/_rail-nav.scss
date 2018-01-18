@@ -2,12 +2,18 @@
   list-style: none;
   margin: 0 0 2em 0;
   padding: 0;
-  border-top: 1px solid $blue-darker
+  background-color: $white;
+  padding: 1.5em;
+  box-shadow: 0 0 5px rgba($black-90, .25);
 }
 
 .joe__rail-nav__item {
   @include type($font-serif, .9em, $font-weight-bold, 1.25);
   display: block;
+  
+  &:first-child > a {
+    border-top: 1px solid $blue-darker
+  }
   
   a:link,
   a:visited {
