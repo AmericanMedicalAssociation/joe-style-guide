@@ -99,19 +99,47 @@
     "class": "joe__flag--larger"
   },
   "page_title": "For Authors",
+  "rail_navs": [
+    {
+      "href": "/",
+      "text": "Author Instructions",
+      "childs": [
+        {
+          "href": "/",
+          "text": "child 1"
+        },
+        {
+          "href": "/",
+          "text": "child 2"
+        },
+        {
+          "href": "/",
+          "text": "child 3"
+        }
+      ]
+    },
+    {
+      "href": "/",
+      "text": "Submit your Manuscript"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    }
+  ],
   "rail_cta": { 
     "heading": {
       "level": "3",
-      "text": "Join the Discussion",
+      "text": "Call for Papers",
       "class": "joe__rail-cta__title"
     },
     "paragraph" : {
-      "text": "Our Discussion Forum provides an opportunity for students, educators, and clinicians to engage experts in an online conversation about important ethical issues in health care."
+      "text": "The AMA Journal of Ethics invites original submissions for peer review on the following themes that will be explored in upcoming issues."
     },
     "button": {
       "href": "#",
       "info": "alt",
-      "text": "Discussion Forum",
+      "text": "Submit a Paper",
       "type": "link",
       "size": "small"
     }

@@ -1,0 +1,30 @@
+{
+  "rail_navs": [
+    {
+      "href": "/",
+      "text": "Author Instructions",
+      "childs": [
+        {
+          "href": "/",
+          "text": "child 1"
+        },
+        {
+          "href": "/",
+          "text": "child 2"
+        },
+        {
+          "href": "/",
+          "text": "child 3"
+        }
+      ]
+    },
+    {
+      "href": "/",
+      "text": "Submit your Manuscript"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    }
+  ]
+}
