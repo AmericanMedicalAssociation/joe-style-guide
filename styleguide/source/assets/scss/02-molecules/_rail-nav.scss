@@ -5,6 +5,14 @@
   background-color: $white;
   padding: 1.5em;
   box-shadow: 0 0 5px rgba($black-90, .25);
+  
+  @include breakpoint($bp-xs) {
+    margin: 1em $gutter-mobile;
+  }
+  
+  @include breakpoint($bp-med) {
+    margin: 2em 0 1em 0;
+  }
 }
 
 .joe__rail-nav__item {
