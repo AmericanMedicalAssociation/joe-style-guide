@@ -1,0 +1,16 @@
+.joe__page-header {
+  @include gutter($margin-bottom-half...);
+}
+
+.joe__page-header__title {
+  @include gutter($margin-top-half...);
+  
+  @include breakpoint($bp-med) {
+    @include type($font-serif, 2.05em, $font-weight-bold, 1.25);
+  }
+  
+  @include breakpoint($bp-large) {
+    @include type($font-serif, 2.15em, $font-weight-bold, 1.25);
+  }
+}
+
