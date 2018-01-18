@@ -1,6 +1,8 @@
 {% extends '@templates/two-column-left--simple.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
+  {% include '@atoms/page-hero.twig' with {'page_hero' :{'image_id': '1'}} %}
+  
 {% endblock %}
 
 {% block pageContent_header %}
