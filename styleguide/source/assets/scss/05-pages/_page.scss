@@ -1,6 +1,7 @@
 .joe__page--top {
   margin-top: 2em;
-  background-color: $white;
+  background-color: rgba($white, .9);
+  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
   position: relative;
   padding-top: 2em;
   
