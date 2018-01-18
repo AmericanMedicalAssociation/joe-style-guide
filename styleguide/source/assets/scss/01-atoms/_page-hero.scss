@@ -1,0 +1,56 @@
+.joe__page-hero {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $blue-darkest;
+  background: linear-gradient(top, $blue-darker 0%, $white 100%);
+  z-index: -1;
+  margin-bottom: -200px;
+  
+  @include breakpoint($bp-med) {
+    height: 600px;
+    margin-bottom: -400px;
+  }
+}
+
+.joe__page-hero--no-image {
+  height: 300px;
+  margin-bottom: -150px;
+  max-width: none;
+  
+  @include breakpoint($bp-med) {
+    height: 400px;
+    margin-bottom: -200px;
+  }
+}
+
+.joe__page-hero__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1800px;
+  height: 50%;
+  margin: 0 auto;
+  z-index: 0;
+  background: linear-gradient(rgba($white, 0%) 0%, $white 100%);
+  
+  .joe__page-hero--no-image & {
+    max-width: none;
+  }
+}
+
+// Image classes for heroes
+// Can be custom per article
+
+.joe__page-hero__1 {
+  background: url('../images/article-hero-placeholder.png');
+}
+
+.joe__page-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
