@@ -8,5 +8,13 @@ rail_navs {
     type: string / required
   text:
     type: string / required
+  childs: 
+    type: array /optional
+    {
+      url:
+        type: string / required
+      text:
+        type: string / required
+    }
 }
 ~~~
