@@ -31,6 +31,7 @@
   
   @include breakpoint($bp-small) {
     display: none;
+    visibility: hidden;
   }
 }
 
