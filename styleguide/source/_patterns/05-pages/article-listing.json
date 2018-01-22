@@ -98,24 +98,18 @@
   "articles": [
     {
       "flag": {
-        "type": "Medicine & Society",
-        "issue": "Oct. 2017"
+        "type": "Peer-Reviewed CME Articles",
+        "issue": "Jan. 2018"
       },
       "authors": [
         {
-          "name" : "Guddi Singh, MB BChir, MPH"
-        },
-        {
-          "name" : "John Owens, MA, PhD"
-        },
-        {
-          "name" : "Alan Cribb, PhD"
+          "name" : "Melinda Manning"
         }
       ],
       "title": {
         "href": "#",
         "class": "joe__article-teaser__title",
-        "text":"What Are the Professional, Political, and Ethical Challenges of Co-Creating Health Care Systems?"
+        "text":"What If a Resident or Medical Student Is Raped? Hospitals’ and Academic Medical Centers’ Title IX Obligations"
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/150"
@@ -125,24 +119,21 @@
     },
     {
       "flag": {
-        "type": "Medicine & Society",
-        "issue": "Oct. 2017"
+        "type": "Peer-Reviewed CME Articles",
+        "issue": "Jan. 2018"
       },
       "authors": [
         {
-          "name" : "Guddi Singh, MB BChir, MPH"
+          "name" : "Jennifer L. Piel"
         },
         {
-          "name" : "John Owens, MA, PhD"
-        },
-        {
-          "name" : "Alan Cribb, PhD"
+          "name" : "Rejoice Opara"
         }
       ],
       "title": {
         "href": "#",
         "class": "joe__article-teaser__title",
-        "text":"What Are the Professional, Political, and Ethical Challenges of Co-Creating Health Care Systems?"
+        "text":"Does Volk v DeMeerleer Conflict with the AMA Code of Medical Ethics on Breaching Patient Confidentiality to Protect Third Parties?"
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/150"
@@ -152,24 +143,176 @@
     },
     {
       "flag": {
-        "type": "Medicine & Society",
-        "issue": "Oct. 2017"
+        "type": "FROM THE EDITORS",
+        "issue": "Jan. 2018"
       },
       "authors": [
         {
-          "name" : "Guddi Singh, MB BChir, MPH"
-        },
-        {
-          "name" : "John Owens, MA, PhD"
-        },
-        {
-          "name" : "Alan Cribb, PhD"
+          "name" : "Lilliana Freire-Vargas"
         }
       ],
       "title": {
         "href": "#",
         "class": "joe__article-teaser__title",
-        "text":"What Are the Professional, Political, and Ethical Challenges of Co-Creating Health Care Systems?"
+        "text":"Violence as a Public Health Crisis"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/150"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "Ethics Case",
+        "issue": "Jan. 2018",
+        "class": "joe__flag--green"
+      },
+      "authors": [
+        {
+          "name" : "Amy Barnhorst"
+        },
+        {
+          "name" : "Garen Wintemute"
+        },
+        {
+          "name" : "Marian E. Betz"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "The Code Says",
+        "issue": "Jan. 2018"
+      },
+      "authors": [
+        {
+          "name" : "Danielle Hahn Chaet"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"AMA Policies and AMA Code of Medical Ethics’ Opinions Related to Responding to Violence"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/150"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "Peer-Reviewed CME Articles",
+        "issue": "Jan. 2018"
+      },
+      "authors": [
+        {
+          "name" : "Melinda Manning"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"What If a Resident or Medical Student Is Raped? Hospitals’ and Academic Medical Centers’ Title IX Obligations"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/150"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "Peer-Reviewed CME Articles",
+        "issue": "Jan. 2018"
+      },
+      "authors": [
+        {
+          "name" : "Jennifer L. Piel"
+        },
+        {
+          "name" : "Rejoice Opara"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"Does Volk v DeMeerleer Conflict with the AMA Code of Medical Ethics on Breaching Patient Confidentiality to Protect Third Parties?"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/150"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "FROM THE EDITORS",
+        "issue": "Jan. 2018"
+      },
+      "authors": [
+        {
+          "name" : "Lilliana Freire-Vargas"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"Violence as a Public Health Crisis"
+      },
+      "image": {
+        "src":"https://ipsumimage.appspot.com/150"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "Ethics Case",
+        "issue": "Jan. 2018",
+        "class": "joe__flag--green"
+      },
+      "authors": [
+        {
+          "name" : "Amy Barnhorst"
+        },
+        {
+          "name" : "Garen Wintemute"
+        },
+        {
+          "name" : "Marian E. Betz"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
+      },
+      "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
+      "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
+    },
+    {
+      "flag": {
+        "type": "The Code Says",
+        "issue": "Jan. 2018"
+      },
+      "authors": [
+        {
+          "name" : "Danielle Hahn Chaet"
+        }
+      ],
+      "title": {
+        "href": "#",
+        "class": "joe__article-teaser__title",
+        "text":"AMA Policies and AMA Code of Medical Ethics’ Opinions Related to Responding to Violence"
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/150"
@@ -177,7 +320,6 @@
       "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
       "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."
     }
-
   ],
   "footer_wordmark": {
     "title": "AMA Journal of Ethics",
