@@ -103,7 +103,7 @@
     {
       "href": "/",
       "text": "Author Instructions",
-      "childs": [
+      "children": [
         {
           "href": "/",
           "text": "child 1"

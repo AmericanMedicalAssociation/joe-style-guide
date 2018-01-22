@@ -4,9 +4,9 @@
     <li class="joe__rail-nav__item">
       {% set link = rail_nav %}
       {% include "@atoms/link.twig" %}
-      {% if rail_nav.childs %}
+      {% if rail_nav.children %}
         <ul class="joe__rail-nav__sublist">
-          {% for child in rail_nav.childs %}
+          {% for child in rail_nav.children %}
             <li class="joe__rail-nav__subitem">
               {% set link = child %}
               {% include "@atoms/link.twig" %}
