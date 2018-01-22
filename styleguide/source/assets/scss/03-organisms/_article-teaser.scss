@@ -6,6 +6,7 @@
   align-content: stretch;
   justify-content: space-between;
   margin-bottom: 1.5em;
+  z-index: 2;
   
   .no-flexbox & {
     padding-right: 170px; 
@@ -56,6 +57,7 @@
 
 .joe__article-teaser__title {
   @include type($font-serif, 1.05em, $font-weight-bold, 1.25);
+  margin-top: .6em;
   
   a:link,
   a:visited {
@@ -75,6 +77,12 @@
 .joe__article-teaser__meta {
   @extend %joe__type--smaller;
   display: block;
+}
+
+.joe__article-teaser__meta--secondary {
+  @extend %joe__type--smallest;
+  display: block;
+  margin-top: 15px;
 }
 
 .joe__article-teaser--large {

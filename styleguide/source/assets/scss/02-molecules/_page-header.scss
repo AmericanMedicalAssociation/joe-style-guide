@@ -3,7 +3,7 @@
 }
 
 .joe__page-header__title {
-  @include gutter($margin-top-half...);
+  margin-top: 0;
   
   @include breakpoint($bp-med) {
     @include type($font-serif, 2.05em, $font-weight-bold, 1.25);
