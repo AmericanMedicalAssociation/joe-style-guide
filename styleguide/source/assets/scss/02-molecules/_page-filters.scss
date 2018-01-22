@@ -1,0 +1,43 @@
+.joe__filters-wrapper {
+  margin: 1em 0;
+}
+
+.joe__filters--trigger {
+  
+  @include breakpoint($bp-med) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.joe__filters {
+  @extend %clearfix;
+  display: none;
+  
+  @include breakpoint($bp-med) {
+    display: block;
+  }
+}
+
+.joe__filter {
+  
+  @include breakpoint($bp-small) {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+  }
+  
+  @include breakpoint($bp-large) {
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+  }
+}
+

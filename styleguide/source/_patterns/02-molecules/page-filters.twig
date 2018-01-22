@@ -1,0 +1,26 @@
+<div class="joe__filters-wrapper">
+  <button class="joe__filters--trigger">Filter {{contentType}}</button>
+  <div class="joe__filters">
+  {% for filter in filters %}
+    <div class="joe__filter">
+    {% if filter.type == 'select' %}
+      {% set label = filter %}
+      {% include "label.twig" %}
+      {% set select = filter %}
+      {% include "select.twig" %}
+    {% else %}
+      {% set label = filter %}
+      {% include "label.twig" %}
+      {% set input = filter %}
+      {% include "input.twig" %}      
+    {% endif %}
+    </div>
+  {% endfor %}
+    <div class="joe__filter__buttons">
+    {% for button in buttons %}
+      {% set input = button %}
+      {% include "input.twig" %}      
+    {% endfor %}
+    </div>
+  </div>
+</div>
