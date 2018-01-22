@@ -19,6 +19,7 @@
 .joe__article-hero--no-image {
   height: 400px;
   margin-bottom: -300px;
+  max-width: none;
   
   @include breakpoint($bp-med) {
     height: 800px;
@@ -35,6 +36,10 @@
   margin: 0 auto;
   z-index: 0;
   background: linear-gradient(rgba($white, 0%) 0%, $white 100%);
+  
+  .joe__article-hero--no-image & {
+    max-width: none;
+  }
 }
 
 // Image classes for heroes
