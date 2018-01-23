@@ -10,17 +10,20 @@
  (function ($, Drupal) {
    Drupal.behaviors.filters = {
      attach: function (context, settings) {
-
+        var filterTrigger = $('.joe__filters--trigger')
+        
          // Opens and closes filter drawer. 
-         $('.joe__filters--trigger').click(function() {
-           // Unfocus on the dropdown
-           $(this).blur();
-           // add a class to the sibling dropdown
-           $(this).toggleClass('is-active');
-           $(this).siblings('.joe__filters').slideToggle(300);
-         });
-         
-         $(".joe__chosen").chosen();
+         filterTrigger.click(function() {
+          if ($(window).width() < 900) {
+            // Unfocus on the dropdown
+            $(this).blur();
+            // add a class to the sibling dropdown
+            $(this).toggleClass('is-active');
+            $(this).siblings('.joe__filters').slideToggle(300);
+          };
+        });
+        
+        $(".joe__chosen").chosen({width: "100%"});
      }
    };
  })(jQuery, Drupal);

@@ -381,14 +381,15 @@
       "name": "submit input",
       "id": "submit-input",
       "value": "Filter",
-      "placeholder": ""
+      "class": "joe__filter-button"
     },
     {
       "type": "reset",
       "name": "reset input",
       "id": "reset-input",
       "value": "",
-      "placeholder": "Reset Filters"
+      "placeholder": "Reset Filters",
+      "class": "joe__filter-button"
     }
   ]
 }
