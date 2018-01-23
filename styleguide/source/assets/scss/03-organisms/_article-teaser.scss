@@ -14,8 +14,10 @@
 }
 
 .joe__article-teaser__image {
-  display: block;
+  display: none;
+  visibility: hidden;
   max-width: 100px;
+  min-width: 0;
   
   .no-flexbox & {
     position: absolute;
@@ -25,6 +27,7 @@
   
   img {
     width: 100px;
+    max-width: 100%;
   }
   
   &:link,
@@ -36,6 +39,11 @@
   &:hover,
   &:focus {
     border-bottom: 0;
+  }
+  
+  @include breakpoint($bp-xs) {
+    display: block;
+    visibility: visible;
   }
   
   @include breakpoint($bp-med) {
@@ -53,6 +61,7 @@
   margin-left: 5px;
   padding-left: 10px; 
   width: 100%;
+  min-width: 0;
 }
 
 .joe__article-teaser__title {
