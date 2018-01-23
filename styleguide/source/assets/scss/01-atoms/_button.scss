@@ -22,7 +22,7 @@ button {
   &:active,
   &:hover,
   &:focus {
-    background-color: $blue-darker;
+    background-color: $orange-darker;
     background: linear-gradient(120deg, $pink 0%, $orange-darker 100%);
     transition: all .5s ease;
     text-decoration: none;
