@@ -5,6 +5,45 @@
   box-shadow: 0 0 5px rgba($black-90, .25);
 }
 
+.joe__footer-brand {
+  @extend %clearfix;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  border-left: 0;
+  max-width: 55px;
+  
+  &:link,
+  &:visited {
+    border-bottom: 0;
+  }
+  
+  @include breakpoint(405px 600px) {
+    display: inline-block;
+    margin-top: 1.35em;
+    margin-left: .75em;
+    padding-left:.75em;
+    border-left: 1px solid $black-20;
+  }
+  
+  @include breakpoint(600px 800px) {
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    border-left: 0;
+  }
+  
+  @include breakpoint(800px) {
+    display: inline-block;
+    margin-top: 1.35em;
+    margin-left: .75em;
+    padding-left:.75em;
+    border-left: 1px solid $black-20;
+  }
+}
+
 .joe__footer--right {
   display: flex;
   flex-direction: column;

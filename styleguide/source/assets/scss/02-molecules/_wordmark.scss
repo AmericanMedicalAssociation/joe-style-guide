@@ -1,5 +1,10 @@
 .joe__wordmark {
   margin-bottom: 12px;
+  
+  .joe__footer & {
+    @extend %clearfix;
+    display: inline-block;
+  }
 }
 
 .joe__wordmark__title {
