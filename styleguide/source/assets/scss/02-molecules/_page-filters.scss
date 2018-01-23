@@ -48,6 +48,7 @@
       color: $black-80;
       background-color: $black-05;
       background: $black-05;
+      outline: 0;
     }
     
     &.is-active {
@@ -92,13 +93,13 @@
   
   @include breakpoint($bp-med) {
     display: inline-block;
-    width: 30%;
+    width: 31%;
     margin-right: 2%;
   }
   
   @include breakpoint($bp-large) {
     display: inline-block;
-    width: 22%;
+    width: 23%;
     margin-right: 2%;
   }
 }
