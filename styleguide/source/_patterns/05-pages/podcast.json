@@ -147,6 +147,11 @@
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine"
   },
+  "footer_logo": {
+    "src": "/assets/images/brand/logo.svg",
+    "alt": "American Medical Association",
+    "link": "/"
+  },
   "issue": {
     "title" : {
       "text": "Oct. 2017",
