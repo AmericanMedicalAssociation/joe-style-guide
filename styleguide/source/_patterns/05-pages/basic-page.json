@@ -35,7 +35,7 @@
     },
     {
       "href": "/",
-      "text": "For Authors"
+      "text": "CME"
     }
   ],
   "search_trigger": {
@@ -64,15 +64,15 @@
   "utility_left_navs": [
     {
       "href": "/",
+      "text": "For Authors"
+    },
+    {
+      "href": "/",
       "text": "Call for Papers"
     },
     {
       "href": "/",
       "text": "Become an Issue Editor"
-    },
-    {
-      "href": "/",
-      "text": "CME Articles"
     },
     {
       "href": "/",
