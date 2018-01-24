@@ -95,7 +95,6 @@
   color: $blue-darker;
   text-transform: none;
   letter-spacing: 0;
-  border-bottom: 1px solid $blue;
   margin-left: 1em;
   
   &:active,
@@ -103,7 +102,7 @@
   &:focus {
     background-color: none;
     background: none;
-    color: $orange-darker;
-    border-color: $orange;
+    text-decoration: underline;
+    color: $blue-darkest;
   }
 }

@@ -75,7 +75,6 @@
   a:active,
   a:hover,
   a:focus {
-    color: $blue-darker;
     text-decoration: underline;
     border-bottom: 0;
   }
@@ -136,12 +135,6 @@
     a:link,
     a:visited {
       color: $white;
-    }
-    
-    a:active,
-    a:hover,
-    a:focus {
-      color: $orange-lighter;
     }
   }
   
