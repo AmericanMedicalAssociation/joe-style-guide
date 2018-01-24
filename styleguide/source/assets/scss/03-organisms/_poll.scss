@@ -14,11 +14,11 @@
   margin-bottom: $gutter;
   
   @include breakpoint($bp-med) {
-    margin-right: -63%;
+    margin-right: -66%;
   }
   
   @include breakpoint($bp-large) {
-    margin-right: -45%;
+    margin-right: -47%;
   }
 }
 
