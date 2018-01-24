@@ -37,10 +37,16 @@
           // Create some variables to detect scroll and viewport
           $.fn.isInViewport = function() {
             var elementTop = $(this).offset().top;
-            var elementBottom = elementTop + $(this).outerHeight();
-            var viewportTop = $(window).scrollTop();
-            var viewportBottom = viewportTop + $(window).height();
-            return elementBottom > viewportTop && elementTop < viewportBottom;
+            // Get the bottom position of the share element
+            var shareTop = $('.joe__share').offset().top;
+            var shareHeight = $('.joe__share').height();
+            var shareBottom = shareTop + shareHeight;
+            // Get the bottom position of the share trigger (in case element is hidden)
+            var shareTriggerTop = $('.joe__share-trigger').offset().top;
+            var shareTriggerHeight = $('.joe__share-trigger').height();
+            var shareTriggerBottom = shareTriggerTop + shareTriggerHeight;
+
+            return elementTop < shareBottom || elementTop < shareTriggerBottom;
           };
 
           // When you see the issue teaser or the footer hide share trigger

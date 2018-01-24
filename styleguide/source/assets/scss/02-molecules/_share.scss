@@ -51,7 +51,7 @@
   padding: 0;
   text-align: center;
   z-index: 10;
-  position: fixed;
+  position: relative;
   bottom: 3px;
   right: 40px;
   opacity: 0;
@@ -74,9 +74,11 @@
     bottom: -213px;
     
     .joe__sticky-share & { 
-      left: 10px;
+      left: auto;
       right: auto;
+      bottom: auto;
       top: 100px;
+      margin-left: -53px;
       transition: top .25s ease-in;
     }
   }
