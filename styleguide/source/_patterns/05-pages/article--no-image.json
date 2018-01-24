@@ -519,7 +519,7 @@
   "footer_navs": [
     {
       "href": "/",
-      "text": "AMA Home"
+      "text": "Current Issue"
     },
     {
       "href": "/",
@@ -546,18 +546,6 @@
     "paragraph": {
       "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
     } 
-  },
-  "footer_block_phone": {
-    "title_label": {
-      "level": "4",
-      "text": "Telephone"
-    },
-    "link": {
-      "title": "Call AMA Journal of Ethics",
-      "href": "tel:+13124644075",
-      "text": "312-464-4075",
-      "class": "joe__link--black"
-    }  
   },
   "footer_block_email": {
     "title_label": {
