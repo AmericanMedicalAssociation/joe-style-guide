@@ -5,13 +5,12 @@ a,
   color: $blue-darker;
   text-decoration: none;
   outline: 0;
-  border-bottom: 1px solid $blue-lighter;
+  text-decoration: underline;
   transition: all .3s ease;
 
   &:hover,
   &:focus {
-    color: $orange-darker;
-    border-bottom: 1px solid $orange-lighter;
+    color: $orange-darkest;
   }
 }
 
@@ -19,11 +18,9 @@ a,
 .joe__link--black {
   @extend %joe__link;
   color: $black-90;
-  border-color: $black-80;
   
   &:hover,
   &:focus {
     color: $blue-darker;
-    border-bottom: 1px solid $blue-lighter;
   }
 } 
