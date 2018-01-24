@@ -5,12 +5,13 @@ a,
   color: $blue-darker;
   text-decoration: none;
   outline: 0;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all .3s ease;
 
   &:hover,
   &:focus {
-    color: $orange-darkest;
+    color: $blue-darkest;
+    text-decoration: underline;
   }
 }
 
