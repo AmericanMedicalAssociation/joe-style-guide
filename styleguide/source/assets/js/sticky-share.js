@@ -22,12 +22,12 @@
 
          // sticky sticky-share
          $(window).scroll(function(){
-            var headerHeight = $('.joe__article--top').height();
-            var navHeight = $('.joe__header').height();
-            var totalHeight = (headerHeight + navHeight + 200)
-            var winTop = $(window).scrollTop();
+            var headerHeight = $('#joe__top').height()
+            var elementOffset = $('#joe__top').offset().top
+            var winTop = $(window).scrollTop()
+            var distance = (elementOffset - winTop + headerHeight);
             
-            if(winTop >= totalHeight) {
+            if (distance < 0) {
               $("body").addClass("joe__sticky-share");
             } else {
               $("body").removeClass("joe__sticky-share");
