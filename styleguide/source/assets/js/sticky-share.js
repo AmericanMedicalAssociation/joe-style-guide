@@ -23,23 +23,23 @@
          // sticky sticky-share
          $(window).scroll(function(){
             var winTop = $(window).scrollTop();
-            if(winTop >= 30){
+            if(winTop >= 800){
               $("body").addClass("joe__sticky-share");
             }else{
               $("body").removeClass("joe__sticky-share");
             }//if-else
           });//win func.
 
+          // Create some variables to detect scroll and viewport
           $.fn.isInViewport = function() {
             var elementTop = $(this).offset().top;
             var elementBottom = elementTop + $(this).outerHeight();
-
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
-
             return elementBottom > viewportTop && elementTop < viewportBottom;
           };
 
+          // When you see the issue teaser or the footer hide share trigger
           $(window).on('resize scroll', function() {
             $('.joe__issue-teaser').each(function() {
               if ($(this).isInViewport()) {

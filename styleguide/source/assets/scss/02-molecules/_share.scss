@@ -53,7 +53,18 @@
   position: fixed;
   bottom: 3px;
   right: 40px;
-  
+
+  .joe__sticky-share & {
+    position: fixed;
+    left: 20px;
+    right: auto;
+    top: 80px;
+
+    @include breakpoint($bp-large){
+      left: 50px;
+    }
+  }
+
   @include breakpoint($bp-med) {
     display: block;
     position: static;
