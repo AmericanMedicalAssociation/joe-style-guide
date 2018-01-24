@@ -18,6 +18,7 @@
   
   @include breakpoint($bp-small) {
     @include type($font-serif, 1.55em, $font-weight-bolder, 1.28);
+    margin-top: 8px;
   }
 }
 
