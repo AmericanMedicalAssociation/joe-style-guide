@@ -409,28 +409,27 @@
           "class": "joe__article-teaser__title",
           "text":"The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
         }
-      }
-    ],
-    "feature_article": {
-      "size": "large",
-      "style": "reverse",
-      "flag": {
-        "type": "State of the Art and Science"
       },
-      "authors": [
-        {
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "State of the Art and Science"
+        },
+        "authors": [
+          {
           "name" : "Steven S. Coughlin"
         },
         {
           "name" : "Osman Yousufzai"
         }
-      ],
-      "title": {
-        "href": "#",
-        "class": "joe__article-teaser__title",
-        "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+        }
       }
-    }
+    ]
   },
   "related": {
     "articles" : [
