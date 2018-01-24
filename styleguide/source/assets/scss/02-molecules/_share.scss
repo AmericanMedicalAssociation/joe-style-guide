@@ -6,29 +6,36 @@
   border-bottom: 0;
   background-color: transparent;
   padding: 0;
-  
+  z-index: 5;
+  opacity: 0;
+
   .joe__icon {
     height: 30px;
     width: 30px;
   }
-  
+
   svg {
     height: 30px;
     width: 30px;
     fill: $blue-darker;
   }
-  
+
   &:active,
   &:hover,
   &:focus {
     background: none;
     background-color: transparent;
-    
+
     svg {
       fill: $orange-darker;
-    } 
+    }
   }
-  
+
+  .joe__sticky-share & {
+    transition: all .25s ease-in;
+    opacity: 1;
+  }
+
   @include breakpoint($bp-small) {
     display: none;
     visibility: hidden;
@@ -55,10 +62,6 @@
     left: -10px;
     top: auto;
     bottom: -213px;
-    
-    &.is-sticky {
-      
-    }
   }
 }
 
@@ -66,50 +69,50 @@
   display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
-  
+
   .joe__icon {
     height: 30px;
     width: 30px;
   }
-  
+
   svg {
     height: 30px;
     width: 30px;
     fill: $blue-darker;
   }
-  
+
   a:link,
   a:visited {
     border-bottom: 0;
   }
-  
+
   a:active,
   a:hover,
   a:focus {
    svg {
     fill: $orange-darker;
-   } 
+   }
   }
-  
+
   @include breakpoint($bp-xs) {
     margin-right: 10px;
     margin-left: 0;
   }
-  
+
   @include breakpoint($bp-small) {
     display: block;
     margin: 0;
-    
+
     .joe__icon {
       height: 25px;
       width: 25px;
     }
-    
+
     svg {
       height: 25px;
       width: 25px;
     }
-    
+
     svg {
       box-shadow: 0 0 5px rgba($black-90, .5);
     }
