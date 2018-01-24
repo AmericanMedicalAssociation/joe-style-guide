@@ -8,6 +8,7 @@
   padding: 0;
   z-index: 5;
   opacity: 0;
+  transition: all .25s ease-in;
 
   .joe__icon {
     height: 30px;
@@ -36,7 +37,7 @@
     opacity: 1;
   }
 
-  @include breakpoint($bp-small) {
+  @include breakpoint($bp-med) {
     display: none;
     visibility: hidden;
   }
@@ -50,18 +51,17 @@
   padding: 0;
   text-align: center;
   z-index: 10;
-  position: fixed;
+  position: none;
   bottom: 3px;
   right: 40px;
 
   .joe__sticky-share & {
     position: fixed;
-    left: 20px;
-    right: auto;
-    top: 80px;
 
-    @include breakpoint($bp-large){
-      left: 50px;
+    @include breakpoint($bp-med) {
+      left: 10px;
+      right: auto;
+      top: 100px;
     }
   }
 
@@ -110,7 +110,7 @@
     margin-left: 0;
   }
 
-  @include breakpoint($bp-small) {
+  @include breakpoint($bp-med) {
     display: block;
     margin: 0;
 
