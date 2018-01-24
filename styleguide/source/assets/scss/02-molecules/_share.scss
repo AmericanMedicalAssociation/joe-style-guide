@@ -51,21 +51,20 @@
   padding: 0;
   text-align: center;
   z-index: 10;
-  position: none;
+  position: fixed;
   bottom: 3px;
   right: 40px;
+  opacity: 0;
+  transition: opacity .25s ease-in;
 
   .joe__sticky-share & {
     position: fixed;
-
-    @include breakpoint($bp-med) {
-      left: 10px;
-      right: auto;
-      top: 100px;
-    }
+    opacity: 1;
+    transition: opacity .25s ease-in;
   }
 
   @include breakpoint($bp-med) {
+    opacity: 1;
     display: block;
     position: static;
     position: absolute;
@@ -73,6 +72,13 @@
     left: -10px;
     top: auto;
     bottom: -213px;
+    
+    .joe__sticky-share & { 
+      left: 10px;
+      right: auto;
+      top: 100px;
+      transition: top .25s ease-in;
+    }
   }
 }
 
