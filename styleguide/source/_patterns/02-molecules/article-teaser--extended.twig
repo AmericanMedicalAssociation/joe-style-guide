@@ -14,23 +14,8 @@
     {% set link = teaser.title %}
     <h2 class="joe__article-teaser__title">{% include "@atoms/link.twig" %}</h2>
     <span class="joe__article-teaser__meta">
-      {% for author in teaser.authors %}
-        {% if loop.length == 1 %}
-          {{ author.name }}
-        {% elseif loop.length == 2 %}
-          {% if loop.last %}
-          and {{ author.name }}
-          {% else %}
-            {{ author.name }} 
-          {% endif %}
-        {% else %}   
-          {% if loop.last %}
-            and {{ author.name }}
-          {% else %}
-            {{ author.name }}, 
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      {% set authors = teaser.authors %}
+      {% include "@atoms/authors.twig" %}
     </span>
     <span class="joe__article-teaser__meta--secondary">{{teaser.citation}}, {{teaser.doi}}</span>
   </div>
