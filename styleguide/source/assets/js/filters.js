@@ -29,7 +29,7 @@
        $(window).on('resize', function() {
          if ($(this).width() > 900 ) {
            // Remove style from all filters.
-           filters.removeAttribute('style');
+           filters.removeAttr('style');
          }
        });
         
