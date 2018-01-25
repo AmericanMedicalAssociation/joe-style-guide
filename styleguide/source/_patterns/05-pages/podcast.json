@@ -152,7 +152,7 @@
       {
         "style": "reverse",
         "flag": {
-          "type": "Peer-Reviewed CME Article"
+          "type": "CME"
         },
         "authors": [
           {
@@ -181,12 +181,15 @@
           "href": "#",
           "class": "joe__article-teaser__title",
           "text":"How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
+        },
+        "image": {
+          "src":"https://ipsumimage.appspot.com/150"
         }
       },
       {
         "style": "reverse",
         "flag": {
-          "type": "The Code Says"
+          "type": "AMA Code Says"
         },
         "authors": [
           {
@@ -203,39 +206,38 @@
           "href": "#",
           "class": "joe__article-teaser__title",
           "text":"The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
+        },
+        "image": {
+          "src":"https://ipsumimage.appspot.com/150"
         }
-      }
-    ],
-    "feature_article": {
-      "size": "large",
-      "style": "reverse",
-      "flag": {
-        "type": "State of the Art and Science"
       },
-      "authors": [
-        {
+      {
+        "style": "reverse",
+        "flag": {
+          "type": "State of the Art and Science"
+        },
+        "authors": [
+          {
           "name" : "Steven S. Coughlin"
         },
         {
           "name" : "Osman Yousufzai"
         }
-      ],
-      "title": {
-        "href": "#",
-        "class": "joe__article-teaser__title",
-        "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
-      },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/160x90"
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+        }
       }
-    }
+    ]
   },
   "related": {
     "articles" : [
       { 
         "size": "small",
         "flag": {
-          "type": "The Code Says",
+          "type": "AMA Code Says",
           "issue": "Sept. 2017"
         },
         "authors": [

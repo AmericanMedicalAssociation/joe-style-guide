@@ -97,7 +97,7 @@
   "article_flag": {
     "type": "Medicine & Society",
     "issue": "Oct. 2017",
-    "class": "joe__flag--larger"
+    "class": "joe__flag--larger joe__flag--green"
   },
   "article_authors": [
     {
@@ -345,7 +345,7 @@
       {
         "style": "reverse",
         "flag": {
-          "type": "Peer-Reviewed CME Article"
+          "type": "CME"
         },
         "authors": [
           {
@@ -382,7 +382,7 @@
       {
         "style": "reverse",
         "flag": {
-          "type": "The Code Says"
+          "type": "AMA Code Says"
         },
         "authors": [
           {
@@ -429,7 +429,7 @@
     "articles" : [
       { "size": "small",
         "flag": {
-          "type": "The Code Says",
+          "type": "AMA Code Says",
           "issue": "Sept. 2017"
         },
         "authors": [
@@ -446,7 +446,7 @@
       {
         "size": "small",
         "flag": {
-          "type": "Ethics Case",
+          "type": "Case with Commentary",
           "issue": "Apr. 2017",
           "class": "joe__flag--green"
         },
@@ -468,7 +468,8 @@
         "size": "small",
         "flag": {
           "type": "Medicine and Society",
-          "issue": "Feb. 2017"
+          "issue": "Feb. 2017",
+          "class": "joe__flag--green"
         },
         "authors": [
           {

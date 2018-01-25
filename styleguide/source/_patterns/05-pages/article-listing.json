@@ -482,7 +482,7 @@
   "articles": [
     {
       "flag": {
-        "type": "Peer-Reviewed CME Articles",
+        "type": "CME",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -503,7 +503,7 @@
     },
     {
       "flag": {
-        "type": "Peer-Reviewed CME Articles",
+        "type": "CME",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -527,7 +527,7 @@
     },
     {
       "flag": {
-        "type": "FROM THE EDITORS",
+        "type": "FROM THE EDITOR",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -548,7 +548,7 @@
     },
     {
       "flag": {
-        "type": "Ethics Case",
+        "type": "Case with Commentary",
         "issue": "Jan. 2018",
         "class": "joe__flag--green"
       },
@@ -573,7 +573,7 @@
     },
     {
       "flag": {
-        "type": "The Code Says",
+        "type": "AMA Code Says",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -594,7 +594,7 @@
     },
     {
       "flag": {
-        "type": "Peer-Reviewed CME Articles",
+        "type": "CME",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -615,7 +615,7 @@
     },
     {
       "flag": {
-        "type": "Peer-Reviewed CME Articles",
+        "type": "CME",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -639,7 +639,7 @@
     },
     {
       "flag": {
-        "type": "FROM THE EDITORS",
+        "type": "FROM THE EDITOR",
         "issue": "Jan. 2018"
       },
       "authors": [
@@ -660,7 +660,7 @@
     },
     {
       "flag": {
-        "type": "Ethics Case",
+        "type": "Case with Commentary",
         "issue": "Jan. 2018",
         "class": "joe__flag--green"
       },
@@ -685,7 +685,7 @@
     },
     {
       "flag": {
-        "type": "The Code Says",
+        "type": "AMA Code Says",
         "issue": "Jan. 2018"
       },
       "authors": [
