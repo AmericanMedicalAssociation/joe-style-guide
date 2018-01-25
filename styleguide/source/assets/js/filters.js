@@ -11,6 +11,7 @@
    Drupal.behaviors.filters = {
      attach: function (context, settings) {
         var filterTrigger = $('.joe__filters--trigger')
+        var filters = $('.joe__filters');
         
          // Opens and closes filter drawer. 
          filterTrigger.click(function() {
@@ -19,9 +20,18 @@
             $(this).blur();
             // add a class to the sibling dropdown
             $(this).toggleClass('is-active');
+            // Only open this trigger's filters.
             $(this).siblings('.joe__filters').slideToggle(300);
-          };
+          }
         });
+
+       // Set the filters back to open when over 900px.
+       $(window).on('resize', function() {
+         if ($(this).width() > 900 ) {
+           // Remove style from all filters.
+           filters.removeAttribute('style');
+         }
+       });
         
         $(".joe__chosen").chosen({width: "100%"});
      }
