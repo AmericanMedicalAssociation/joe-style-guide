@@ -8,7 +8,7 @@
     <div class="container">
       <article class="joe__layout--two-column-left">
         {# Keeping tabindex for accessibility purposes #}
-        <div class="joe__page-content joe__article--top" role="article">
+        <div id="joe__top" class="joe__page-content joe__article--top" role="article">
           {% block pageContent_header %}
             {% set placeholder = two_column_left.page_content_header.placeholder %}
             {% include '@base/placeholder.twig' %}
