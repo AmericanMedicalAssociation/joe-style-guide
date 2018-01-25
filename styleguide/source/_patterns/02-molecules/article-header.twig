@@ -4,23 +4,8 @@
   <h2 class="joe__article-header__title">{{ article_title }}</h2>
   {% if article_authors %}
   <div class="joe__article-header__meta">
-    {% for article_author in article_authors %}
-      {% if loop.length == 1 %}
-        {{ article_author.name }}
-      {% elseif loop.length == 2 %}
-        {% if loop.last %}
-        and {{ article_author.name }}
-        {% else %}
-          {{ article_author.name }} 
-        {% endif %}
-      {% else %}   
-        {% if loop.last %}
-          and {{ article_author.name }}
-        {% else %}
-          {{ article_author.name }}, 
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    {% set authors = article_authors %}
+    {% include "@atoms/authors.twig" %}
   </div>
   {% endif %}
 </header>
