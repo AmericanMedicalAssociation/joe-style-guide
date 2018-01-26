@@ -13,19 +13,6 @@
         }
       }
     },
-    "cme": {
-      "tool_drawer": {
-        "content": "To claim one AMA PRA Category 1 Credit™ for the CME activity associated with this article, you must do the following: (1) read this article in its entirety, (2) answer at least 80 percent of the quiz questions correctly, and (3) complete an evaluation. The quiz, evaluation, and form for claiming AMA PRA Category 1 Credit™ are available through the AMA Education Center.",
-        "id" : "cme-drawer",
-        "button": {
-          "text": "CME",
-          "type": "button",
-          "style": "tool",
-          "control_id": "cme-drawer",
-          "class": "tool-drawer__trigger"
-        }
-      }
-    },
     "pdf": {
       "button": {
         "text": "PDF",

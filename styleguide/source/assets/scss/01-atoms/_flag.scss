@@ -2,60 +2,35 @@
   @include type($font-serif, .65em, $font-weight-medium, 1.25);
   display: inline-block;
   position: relative;
-  left: -20px;
+  left: 0;
   top: -6px;
-  padding: 4px 6px 4px 15px;
+  padding: 4px 6px 4px 6px;
   color: $white;
   background-color: $blue-darkest;
-  background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
   text-transform: uppercase;
   letter-spacing: .075em;
-  
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    
-    border-right: 10px solid $black;
-    z-index: -1;
-  }
 }
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
-  padding: 6px 9px 6px 20px;
-  left: -3em;
-  
-  &:after {
-    bottom: -15px;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    
-    border-right: 15px solid $black;
-  }
+  padding: 6px 9px 6px 27px;
+  left: -2em;
+  margin-right: -2em;
   
   @include breakpoint($bp-med) {
-    left: -3.5em;
+    padding: 6px 9px 6px 40px;
+    left: -2.7em;
   }
 }
 
 .joe__flag--red {
   background-color: $orange-darker;
-  background: linear-gradient(120deg, $orange-darker 0%, $pink 30%, $pink 100%);
 }
 
 .joe__flag--green {
   background-color: $green-darker;
-  background: linear-gradient(120deg, $green 0%, $green-darker 15%, $green-darker 100%);
 }
 
 .joe__flag--gray {
-  background-color: $black-20;
-  background: linear-gradient(120deg, $black-20 0%, $black-05 15%, $black-05 100%);
+  background-color: $black-05;
 }

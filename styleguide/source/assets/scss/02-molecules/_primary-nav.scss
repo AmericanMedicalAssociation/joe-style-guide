@@ -26,6 +26,7 @@
     display: block;
     padding: .5em;
     border-bottom: 1px solid $white;
+    border-left: 1px solid $white;
     color: $white;
   }
   
@@ -33,8 +34,6 @@
   a:hover,
   a:focus {
     position: relative;
-    color: $orange-lighter;
-    border-color: $orange-lighter;
   }
   
   @include breakpoint($bp-med) {
@@ -44,37 +43,22 @@
     a:visited {
       display: inline-block;
       padding: .5em;
-      border-bottom: 0;
       color: $blue-darker;
-      
-      &:after {
-        content: '';
-        display: block;
-        height: 0;
-        width: 0;
-        background-color: transparent;
-        border-right: 1px solid transparent;
-        border-bottom: 1px solid transparent;
-        position: absolute;
-        bottom: 5px;
-        right: 0;
-        transition: border-color .25s ease;
-      }
+      border-bottom: 0;
     }
     
     a:active,
     a:hover,
     a:focus {
       position: relative;
-      color: $orange-darker;
-      
-      &:after {
-        height: 30px;
-        width: 30px;
-        border-right: 1px solid $orange;
-        border-bottom: 1px solid $orange;
-        transition: height .45s ease, width .45s ease;
-      } 
+      border-bottom: 0;
+    }
+    
+    &:last-child {
+      a:link,
+      a:visited {
+        padding-right: 0;
+      }
     }
     
     .joe__sticky-header & {

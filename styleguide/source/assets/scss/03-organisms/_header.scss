@@ -39,6 +39,7 @@
       font-size: 80%;
       transition: all .25s ease-in;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
   
@@ -65,6 +66,7 @@
   box-shadow: 0 0 5px rgba($black-90, .25);
   transition: max-height .5s ease-in, visibility 0s ease-in .5s;
   overflow-y: scroll;
+  border-right: 1px solid $white;
   
   &.is-active {
     max-height: 80vh;
@@ -80,6 +82,7 @@
     background-color: transparent;
     box-shadow: none;
     overflow: visible;
+    border: 0;
     
     &.is-active {
       overflow: visible;

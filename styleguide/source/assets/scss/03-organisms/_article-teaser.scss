@@ -57,9 +57,7 @@
 
 .joe__article-teaser__block {
   @include gutter($padding-right-half...);
-  border-left: 1px solid $black-20;
   margin-left: 5px;
-  padding-left: 10px; 
   width: 100%;
   min-width: 0;
 }
@@ -77,7 +75,6 @@
   a:active,
   a:hover,
   a:focus {
-    color: $blue-darker;
     text-decoration: underline;
     border-bottom: 0;
   }
@@ -138,12 +135,6 @@
     a:link,
     a:visited {
       color: $white;
-    }
-    
-    a:active,
-    a:hover,
-    a:focus {
-      color: $orange-lighter;
     }
   }
   

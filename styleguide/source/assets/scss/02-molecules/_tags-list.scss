@@ -1,23 +1,15 @@
 .joe__flag.joe__tags {
   @extend %joe__type--smaller;
-  padding: 7px 12px 7px 50px;
-  left: -3em;
+  padding: 7px 12px 7px 55px;
+  left: -1.9em;
   margin-top: $gutter * 2;
   margin-bottom: $gutter;
-  
-  &:after {
-    bottom: -15px;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-
-    border-right: 15px solid $black;
-  }
   
   .icon-tag {
     height: 1em;
     width: 1em;
     position: absolute;
-    left: 25px;
+    left: 32px;
     top: 9px;
     
     svg {
@@ -28,8 +20,12 @@
   }
   
   @include breakpoint($bp-med) {
-    left: -3.5em;
-    padding: 7px 12px 7px 60px;
+    left: -2.6em;
+    padding: 7px 12px 7px 75px;
+    
+    .icon-tag {
+      left: 50px;
+    }
   }
 }
 
