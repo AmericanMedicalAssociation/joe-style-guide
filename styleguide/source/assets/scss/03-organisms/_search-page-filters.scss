@@ -1,0 +1,26 @@
+.joe__search-bar {
+  margin: 1em 0;
+  
+  input[type='submit'] {
+    width: 100%;
+    margin-top: .25em;
+  }
+  
+  @include breakpoint($bp-xs) {
+    position: relative;
+    width: 100%;
+    padding-right: 140px;
+    
+    input[type='submit'] {
+      width: auto;
+      margin-top: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    } 
+    
+    @include breakpoint($bp-med) {
+      padding-right: 160px;
+    }
+  }
+}

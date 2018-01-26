@@ -1,0 +1,139 @@
+.joe__filters-wrapper {
+  margin: 1em 0;
+  background-color: $black-05;
+}
+
+.joe__filters--trigger {
+  width: 100%;
+  border-radius: 0;
+  color: $black-80;
+  background-color: $black-20;
+  background: $black-20;
+  
+  &:active,
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $blue-darker;
+    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 100%);
+  }
+  
+  .joe__filters__open {
+    display: none;
+    visibility: hidden;
+  }
+  
+  &.is-active {
+    .joe__filters__open {
+      display: block;
+      visibility: visible;
+    }
+    
+    .joe__filters__closed {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  
+  @include breakpoint($bp-med) {
+    padding: .75em 1em 1px;
+    text-align: left;
+    cursor: default;
+    background-color: $black-05;
+    
+    &:active,
+    &:hover,
+    &:focus {
+      color: $black-80;
+      background-color: $black-05;
+      background: $black-05;
+      outline: 0;
+    }
+    
+    &.is-active {
+      .joe__filters__open {
+        display: none;
+        visibility: hidden;
+      }
+      
+      .joe__filters__closed {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.joe__filters {
+  @extend %clearfix;
+  display: none;
+  font-size: 80%;
+  background-color: $black-05;
+  padding: .5em 1em;
+  box-shadow: 0 0px 3px rgba($black-20, .25);
+  
+  @include breakpoint($bp-med) {
+    display: block;
+  }
+}
+
+.joe__filters-container {
+  @extend %clearfix;
+}
+
+.joe__filter {
+  
+  @include breakpoint($bp-small) {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    width: 31%;
+    margin-right: 2%;
+  }
+  
+  @include breakpoint($bp-large) {
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+  }
+}
+
+.joe__filter__buttons {
+  margin-top: .75em;
+  
+  input {
+    margin-right: 20px;
+  }
+  
+  @include breakpoint($bp-small) {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+    margin-top: 33px;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+  }
+  
+  @include breakpoint($bp-large) {
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+  }
+}
+
+.joe__filter-button,
+.joe__filter-button[type="reset"],
+.joe__filter-button[type="submit"] {
+  @include type($font-serif, .75em, $font-weight-bold, 1.25);
+}

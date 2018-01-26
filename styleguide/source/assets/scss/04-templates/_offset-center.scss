@@ -1,0 +1,43 @@
+.joe__layout--center-offset {
+  .cssgrid & {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto;
+  }
+  
+  // Fallback for CSS Grids
+  .no-cssgrid & {
+    @extend %clearfix;
+    display: block;
+  }
+}
+
+
+.joe__layout--center-offset .joe__page-content {
+  grid-column: 1 / 1;
+  min-width: 0;
+  background-color: $white;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include breakpoint($bp-med) {
+    @include gutter($margin-right-full...);
+    @include gutter($margin-left-full...);
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+  
+  // Fallback for CSS Grids
+  .no-cssgrid & {
+    @extend %clearfix;
+    
+    @include breakpoint($bp-med) {
+      display: block;
+      width: 100%;
+    }
+  }
+}// end article
+

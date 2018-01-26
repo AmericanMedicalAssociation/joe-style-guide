@@ -18,12 +18,12 @@
 
 .joe__page-hero--no-image {
   height: 300px;
-  margin-bottom: -150px;
+  margin-bottom: -275px;
   max-width: none;
   
   @include breakpoint($bp-med) {
     height: 400px;
-    margin-bottom: -200px;
+    margin-bottom: -325px;
   }
 }
 

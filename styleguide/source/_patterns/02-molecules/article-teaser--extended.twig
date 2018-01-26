@@ -1,8 +1,7 @@
-{% set teaserSize = teaser.size ? "joe__article-teaser--" ~ teaser.size : "" %}
 {% set teaserStyle =  teaser.style ? "joe__article-teaser--" ~ teaser.style : "" %}
 
 
-<article class="joe__article-teaser {{ teaserSize }} {{teaserStyle}}">
+<article class="joe__article-teaser {{teaserStyle}}">
   {% if teaser.image %}
   <a href="{{teaser.title.href}}" class="joe__article-teaser__image">
     {% set image = teaser.image %}
@@ -18,5 +17,6 @@
       {% set authors = teaser.authors %}
       {% include "@atoms/authors.twig" %}
     </span>
+    <span class="joe__article-teaser__meta--secondary">{{teaser.citation}}, {{teaser.doi}}</span>
   </div>
 </article>

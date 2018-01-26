@@ -1,0 +1,36 @@
+.joe__pager {
+  margin: 3em 0 1em;
+}
+
+.joe__pager__items {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Pager list item styles
+.joe__pager__item {
+  display: inline-block;
+  margin-right: 5px;
+
+  // Link styles
+  a {
+    @extend %joe__type--smaller;
+    display: block;
+    background-color: $white;
+    border: 1px solid $blue;
+    padding: 5px 8px;
+    
+    &:active,
+    &:hover,
+    &:focus {
+      border-color: $orange;
+    }
+  }
+
+  // Active page
+  &.is-active a {
+    background-color: $blue-darker;
+    border-color: $blue-darker;
+    color: $white;
+  }
+}
