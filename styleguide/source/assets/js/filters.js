@@ -26,12 +26,14 @@
         });
 
        // Set the filters back to open when over 900px.
-       $(window).on('resize', function() {
-         if ($(this).width() > 900 ) {
-           // Remove style from all filters.
-           filters.removeAttr('style');
-         }
-       });
+       if (filters.length) {
+         $(window).on('resize', function () {
+           if ($(this).width() > 900) {
+             // Remove style from all filters.
+             filters.removeAttr('style');
+           }
+         });
+       }
         
         $(".joe__chosen").chosen({width: "100%"});
      }
