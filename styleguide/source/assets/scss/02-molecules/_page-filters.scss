@@ -82,53 +82,14 @@
   @extend %clearfix;
 }
 
-.joe__filter {
-  
-  @include breakpoint($bp-small) {
-    display: inline-block;
-    width: 48%;
-    margin-right: 2%;
-    float: left;
-  }
-  
-  @include breakpoint($bp-med) {
-    display: inline-block;
-    width: 31%;
-    margin-right: 2%;
-  }
-  
-  @include breakpoint($bp-large) {
-    display: inline-block;
-    width: 23%;
-    margin-right: 2%;
-  }
-}
 
 .joe__filter__buttons {
   margin-top: .75em;
+  margin-bottom: .75em;
   
   input {
+    display: inline-block;
     margin-right: 20px;
-  }
-  
-  @include breakpoint($bp-small) {
-    display: inline-block;
-    width: 48%;
-    margin-right: 2%;
-    float: left;
-    margin-top: 33px;
-  }
-  
-  @include breakpoint($bp-med) {
-    display: inline-block;
-    width: 30%;
-    margin-right: 2%;
-  }
-  
-  @include breakpoint($bp-large) {
-    display: inline-block;
-    width: 22%;
-    margin-right: 2%;
   }
 }
 

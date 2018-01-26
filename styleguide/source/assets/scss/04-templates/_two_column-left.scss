@@ -91,6 +91,18 @@
   }
 }
 
+.joe__sidebar--white {
+  background-color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+  
+  @include breakpoint($bp-med) {
+    background-color: transparent;
+  }
+}
+
 .joe__sidebar--bottom {
   @include breakpoint($bp-med) {
     grid-row: 4;
