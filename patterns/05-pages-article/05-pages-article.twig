@@ -1,4 +1,4 @@
-{% extends '@templates/two-column-left.twig' %}
+{% extends '@templates/two-column-left--extended.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
   {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '1'}} %}
@@ -63,6 +63,7 @@
 {% endblock %}
 
 {% block pageContent_footer %}
+  {% include "@molecules/references.twig" %}
   {% include "@organisms/article-footer.twig" %}
   
   {% set authors = article_authors %}

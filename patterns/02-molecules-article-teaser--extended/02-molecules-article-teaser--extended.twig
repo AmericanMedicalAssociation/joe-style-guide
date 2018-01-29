@@ -1,0 +1,22 @@
+{% set teaserStyle =  teaser.style ? "joe__article-teaser--" ~ teaser.style : "" %}
+
+
+<article class="joe__article-teaser {{teaserStyle}}">
+  {% if teaser.image %}
+  <a href="{{teaser.title.href}}" class="joe__article-teaser__image">
+    {% set image = teaser.image %}
+    {% include "@atoms/image.twig" %}
+  </a>
+  {% endif %}
+  <div class="joe__article-teaser__block">
+    {% set flag = teaser.flag %}
+    {% include "@atoms/flag.twig" %}
+    {% set link = teaser.title %}
+    <h2 class="joe__article-teaser__title">{% include "@atoms/link.twig" %}</h2>
+    <span class="joe__article-teaser__meta">
+      {% set authors = teaser.authors %}
+      {% include "@atoms/authors.twig" %}
+    </span>
+    <span class="joe__article-teaser__meta--secondary">{{teaser.citation}}, {{teaser.doi}}</span>
+  </div>
+</article>

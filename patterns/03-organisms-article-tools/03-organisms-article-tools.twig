@@ -1,8 +1,4 @@
 <div class="joe__article-tools">
-  {% if article_tools.cme %}
-    {% set tool_drawer = article_tools.cme.tool_drawer %}
-    {% include "@molecules/tool-drawer.twig" %}
-  {% endif %}
   {% if article_tools.citation %}
     {% set tool_drawer = article_tools.citation.tool_drawer %}
     {% include "@molecules/tool-drawer.twig" %}

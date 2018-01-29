@@ -71,6 +71,15 @@
 
 
 
+.icon-square-share {
+	background-image: url('png/square-share.png');
+	background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+
+
 .icon-square-twitter {
 	background-image: url('png/square-twitter.png');
 	background-repeat: no-repeat;

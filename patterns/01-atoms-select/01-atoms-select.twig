@@ -1,5 +1,7 @@
 <select name="{{ select.name }}"
-        id="{{ select.id }}">
+        id="{{ select.id }}"
+        {% if select.class %}class="{{ select.class }}"{% endif %}
+         {% if select.multiple %}multiple{% endif %}>
 
   {% for option in select.options %}
     <option value="{{ option.value }}" 
