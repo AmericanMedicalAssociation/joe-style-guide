@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 600px;
+  height: 500px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
@@ -11,8 +11,8 @@
   margin-bottom: -300px;
   
   @include breakpoint($bp-med) {
-    height: 900px;
-    margin-bottom: -550px;
+    height: 800px;
+    margin-bottom: -500px;
   }
 }
 
