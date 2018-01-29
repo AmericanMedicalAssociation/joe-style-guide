@@ -2,17 +2,17 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 800px;
+  height: 600px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $white 100%);
   z-index: -1;
-  margin-bottom: -600px;
+  margin-bottom: -300px;
   
   @include breakpoint($bp-med) {
-    height: 1400px;
-    margin-bottom: -1100px;
+    height: 900px;
+    margin-bottom: -550px;
   }
 }
 
