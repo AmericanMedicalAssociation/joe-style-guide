@@ -2,15 +2,30 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 500px;
+  height: 400px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $white 100%);
   z-index: -1;
-  margin-bottom: -300px;
+  margin-bottom: -200px;
+  
+  @include breakpoint($bp-xs) {
+    height: 500px;
+    margin-bottom: -250px;
+  }
+  
+  @include breakpoint($bp-small) {
+    height: 600px;
+    margin-bottom: -300px;
+  }
   
   @include breakpoint($bp-med) {
+    height: 700px;
+    margin-bottom: -350px;
+  }
+  
+  @include breakpoint($bp-large) {
     height: 800px;
     margin-bottom: -400px;
   }
