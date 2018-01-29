@@ -4,7 +4,7 @@
       <div class="joe__col-one">
         {% set wordmark = footer_wordmark %}
         {% include "@molecules/wordmark.twig" %}
-        <a class="joe__footer-brand" href="{{ footer_logo.link }}">
+        <a class="joe__footer-brand" href="{{site.url}}/{{ footer_logo.link }}">
           {% set image = footer_logo %}
           {% include "@atoms/image.twig" %}
         </a>
