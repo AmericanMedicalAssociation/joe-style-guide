@@ -6,6 +6,10 @@
 .joe__issue-teaser__label {
   @include type($font-serif, .8em, $font-weight-bold, 1.25);
   text-transform: uppercase;
+  
+  span {
+    font-weight: $font-weight-medium;
+  }
 }
 
 .joe__issue-teaser__title {

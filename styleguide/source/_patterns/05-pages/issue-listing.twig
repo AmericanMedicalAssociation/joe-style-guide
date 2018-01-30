@@ -12,7 +12,7 @@
 
 {% block pageContent %}
   
-  {# Featured Issue teaser #}
+  {% include '@organisms/current-issue-teaser.twig' %}
 
   <ul class="joe__list--issues">
     {% for issue in issues %}

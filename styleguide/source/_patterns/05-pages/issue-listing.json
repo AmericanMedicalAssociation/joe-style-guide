@@ -95,7 +95,75 @@
     "text": "twitter"
   },
   "page_title": "Issues",
-  "current_issue": "",
+  "current_issue": {
+    "date": "january 2018",
+    "title": {
+      "text": "Clinicians’ Responsiveness to Violence",
+      "href": "#"
+    },
+    "description": "People suffering some form of violence routinely seek health care. As first responders, clinicians are required to treat these patients equitably and promote their best interests. In clinical practice, guidelines can help or hinder clinicians’ capacities to fulfill these duties to patients who are victims of gun violence or rape, for example. Standards of care regarding sexual assault protocols and forensic examinations have important limitations that need clinical and ethical consideration. At the macro level, clinicians can work with organizations and governments to implement prevention strategies. The January 2018 issue of the AMA Journal of Ethics will explore the nature and scope of clinicians’ obligations to respond to violence clinically and as a public health threat.",
+    "number": " Volume 20, Number 1: 1-111",
+    "articles" : [
+      { "size": "small",
+        "flag": {
+          "type": "CME"
+        },
+        "authors": [
+          {
+            "name" : "Melinda Manning"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"What If a Resident or Medical Student Is Raped? Hospitals’ and Academic Medical Centers’ Title IX Obligations"
+        }
+      },
+      {
+        "size": "small",
+        "flag": {
+          "type": "Case",
+          "class": "joe__flag--green"
+        },
+        "authors": [
+          {
+            "name" : "Amy Barnhorst"
+          },
+          {
+            "name" : "Garen Wintemute"
+          },
+          {
+            "name" : "Marian E. Betz"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
+        }
+      },
+      {
+        "size": "small",
+        "flag": {
+          "type": "Medicine and Society",
+          "issue": "Feb. 2017"
+        },
+        "authors": [
+          {
+            "name" : "Bandy X. Lee"
+          },
+          {
+            "name" : "John L. Young"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"Clinicians’ Need for an Ecological Approach to Violence Reduction"
+        }
+      }
+    ]
+  },
   "issues": [
     {
       "date": "December 2017",
