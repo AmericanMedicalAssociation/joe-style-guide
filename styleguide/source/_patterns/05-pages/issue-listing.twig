@@ -14,11 +14,10 @@
   
   {# Featured Issue teaser #}
 
-  <ul class="joe__list--isses">
+  <ul class="joe__list--issues">
     {% for issue in issues %}
     <li>
-      {% set teaser = issue %}
-      {# Issue Teaser Goes here #}
+      {% include '@molecules/issue-teaser.twig' %}
     </li>
     {% endfor %}
   </ul>

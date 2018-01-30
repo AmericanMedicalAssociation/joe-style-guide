@@ -9,3 +9,44 @@
     border-bottom: 1px solid $black-05;
   }
 }
+
+.joe__list--issues {
+  @extend %clearfix;
+  list-style: none;
+  margin: rhythm(1) 0;
+  padding: 0;
+  
+  li {
+    margin-bottom: 1em;
+  }
+  
+  @include breakpoint($bp-small) {
+    li {
+      float: left;
+      width: 45%;
+      display: inline-block;
+      margin-right: 5%;
+      
+      &:nth-of-type(2n+1){
+        clear: left;
+      }
+    }
+  }
+  
+  @include breakpoint($bp-large) {
+    li {
+      float: left;
+      width: 30%;
+      display: inline-block;
+      margin-right: 3%;
+      
+      &:nth-of-type(2n+1){
+        clear: none;
+      }
+      
+      &:nth-of-type(3n+1){
+        clear: left;
+      }
+    }
+  }
+}
