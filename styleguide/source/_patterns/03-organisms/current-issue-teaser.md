@@ -4,13 +4,16 @@ The current issue teaser appears in the issue listing page on first load. It dis
 
 ### Variables
 ~~~
-article_tools {
-  citation:
-    content: string / optional
-  cme:
-    content: string / optional
-  pdf:
-    content: media / optional PDF only
+date:
+  type: string / required
+title: {
+  text :
+    type: string / required
+  href :
+    type: string / required
 }
-
+description:
+  type: string / optional
+number:
+  type: string / optional
 ~~~

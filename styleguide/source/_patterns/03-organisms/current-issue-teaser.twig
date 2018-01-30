@@ -9,13 +9,13 @@
     <div class="joe__issue-teaser__meta">
       {{ current_issue.number }}
     </div>
-    {% include "@atoms/link.twig" with { "link": {"text" : "Read the Issue", "href" : "#" } } %}
+    {% include "@atoms/link.twig" with { "link": {"text" : "Read the Issue", "href" : "#", "class" : "joe__issue-teaser__link" } } %}
   </div>
   <div class="joe__issue-teaser--right">
-    <ul>
+    <ul class="joe__issue-teaser__list">
     {# No images, no date in flag #}
     {% for article in current_issue.articles %} 
-      <li class="joe__issue-teaser__list">
+      <li>
         {% set teaser = article %}
         {% include '@molecules/article-teaser.twig' %}
       </li>

@@ -1,6 +1,6 @@
 
 .joe__issue-teaser {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .joe__issue-teaser__label {
@@ -17,6 +17,17 @@
   margin-top: .5em;
 }
 
+.joe__issue-teaser__desc {
+  @extend %joe__type--small;
+  margin-bottom: .5em;
+}
+
 .joe__issue-teaser__meta {
   @extend %joe__type--smaller;
+}
+
+.joe__issue-teaser__link {
+  @extend %joe__type--smaller;
+  display: inline-block;
+  margin-top: 1em;
 }

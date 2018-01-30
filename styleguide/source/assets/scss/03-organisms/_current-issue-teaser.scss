@@ -9,11 +9,7 @@
   
   @include breakpoint($bp-small) {
     float: left;
-    width: 50%;
-  }
-  
-  @include breakpoint($bp-med) {
-    width: 55%;
+    width: 45%;
   }
 }
 
@@ -21,19 +17,17 @@
   
   @include breakpoint($bp-small) {
     float: right;
-    width: 45%;
-    margin-left: 5%;
-  }
-  
-  @include breakpoint($bp-med) {
-    float: right;
-    width: 40%;
+    width: 50%;
     margin-left: 5%;
   }
 }
 
 .joe__issue-teaser__list {
   list-style: none;
-  margin: 0;
+  margin: 1em 0 0;
   padding: 0;
+  
+  @include breakpoint($bp-small) {
+    margin-top: 0;
+  }
 }
