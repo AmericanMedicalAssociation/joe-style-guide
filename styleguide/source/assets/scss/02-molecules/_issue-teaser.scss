@@ -1,0 +1,18 @@
+
+.joe__issue-teaser {
+  margin-bottom: 1em;
+}
+
+.joe__issue-teaser__label {
+  @include type($font-serif, .8em, $font-weight-bold, 1.25);
+  text-transform: uppercase;
+}
+
+.joe__issue-teaser__title {
+  @include type($font-serif, 1.35em, $font-weight-bold, 1.28);
+  margin-top: .5em;
+}
+
+.joe__issue-teaser__meta {
+  @extend %joe__type--smaller;
+}
