@@ -1,0 +1,118 @@
+.joe__issue-filters {
+  @extend %clearfix;
+  margin: 1em 0 2em;
+  
+  &.is-active {
+    @include breakpoint($bp-small) {
+      margin-bottom: 5em;
+    }
+    
+    @include breakpoint(685px) {
+      margin-bottom: 4em;
+    }
+  }
+}
+
+.joe__issue-filter {
+  @extend %clearfix;
+  border-bottom: 1px solid $black-05;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.joe__issue-filter--trigger {
+  display: block;
+  padding: 5px 8px;
+  border-top: 1px solid $black-05;
+  border-left: 1px solid $black-05;
+  border-right: 1px solid $black-05;
+  color: $black-90;
+  border-radius: 0;
+  background: none;
+  background-color: transparent;
+  text-transform: none;
+  
+  &:active,
+  &:hover,
+  &:focus {
+    background: none;
+    background-color: $black-20;
+    text-decoration: none;
+  }
+  
+  @include breakpoint($bp-small) {
+    display: inline-block;
+  }
+}
+
+.joe__issue-filter__tab {
+  
+  &.is-active {
+    .joe__issue-filter--trigger {
+      background-color: $black-05;
+    }
+  }
+  
+  @include breakpoint($bp-small) {
+    display: inline-block;
+    float: left;
+    margin-right: .5em;
+  }
+}
+
+.joe__issue-filter__children {
+  display: none;
+  visibility: hidden;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid $black-05;
+  padding: 0 .5em;
+  background-color: $black-05;
+  column-count: 2;
+  break-inside: avoid;
+  
+  &.is-active {
+    border-top: 1px solid $black-20;
+    display: block;
+    visibility: visible;
+  }
+  
+  li {
+    display: block;
+    break-inside: avoid;
+    
+    
+    a:link,
+    a:visited {
+      display: block;
+      padding: 5px 0;
+      color: $black-90;
+    }
+  }
+  
+  @include breakpoint($bp-small) {
+    column-count: auto;
+    
+    li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+    
+    &.is-active {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 4em;
+    }
+  }
+  
+  @include breakpoint(685px) {
+    &.is-active {
+      height: 2em;
+    }
+  }
+}
