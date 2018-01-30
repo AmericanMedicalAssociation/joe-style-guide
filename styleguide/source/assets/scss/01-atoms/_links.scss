@@ -25,3 +25,14 @@ a,
     color: $blue-darker;
   }
 } 
+
+%joe__link--reversed,
+.joe__link--reversed {
+  @extend %joe__link;
+  color: $white;
+  
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+} 
