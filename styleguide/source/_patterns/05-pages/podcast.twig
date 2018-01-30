@@ -1,7 +1,7 @@
 {% extends '@templates/two-column-left.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
-  {% include '@atoms/article-hero.twig' %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '6'}} %}
 {% endblock %}
 
 {% block pageContent_header %}
