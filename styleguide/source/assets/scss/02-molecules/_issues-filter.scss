@@ -1,16 +1,6 @@
 .joe__issue-filters {
   @extend %clearfix;
   margin: 1em 0 2em;
-  
-  &.is-active {
-    @include breakpoint($bp-small) {
-      margin-bottom: 5em;
-    }
-    
-    @include breakpoint(685px) {
-      margin-bottom: 4em;
-    }
-  }
 }
 
 .joe__issue-filter {
@@ -33,6 +23,8 @@
   background: none;
   background-color: transparent;
   text-transform: none;
+  width: 100%;
+  text-align: left;
   
   &:active,
   &:hover,
@@ -59,10 +51,21 @@
     display: inline-block;
     float: left;
     margin-right: .5em;
+    
+    &.is-active {
+      margin-bottom: 4em;
+    }
+  }
+  
+  @include breakpoint(750px) {
+    &.is-active {
+      margin-bottom: 2em;
+    }
   }
 }
 
 .joe__issue-filter__children {
+  @extend %clearfix;
   display: none;
   visibility: hidden;
   list-style: none;
@@ -74,7 +77,7 @@
   column-count: 2;
   break-inside: avoid;
   
-  &.is-active {
+  .joe__issue-filter__tab.is-active & {
     border-top: 1px solid $black-20;
     display: block;
     visibility: visible;
@@ -101,17 +104,16 @@
       margin-right: 1em;
     }
     
-    &.is-active {
+    .joe__issue-filter__tab.is-active & {
       position: absolute;
-      top: 100%;
       left: 0;
       right: 0;
       height: 4em;
     }
   }
   
-  @include breakpoint(685px) {
-    &.is-active {
+  @include breakpoint(750px) {
+    .joe__issue-filter__tab.is-active & {
       height: 2em;
     }
   }

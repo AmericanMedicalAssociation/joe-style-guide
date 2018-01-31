@@ -13,12 +13,13 @@
         
         // Opens and closes filter drawer. 
         $('.joe__issue-filter--trigger').click(function() {
+          event.preventDefault();
           // Unfocus on the dropdown
           $(this).blur();
           // add a class to the sibling dropdown
           $(this).parents('.joe__issue-filter__tab').toggleClass('is-active');
-          // Only open this trigger's filters.
-          $(this).siblings('.joe__issue-filter__children').toggleClass('is-active');
+          $(this).parents().siblings('.joe__issue-filter__tab').removeClass('is-active');
+          
         });
      }
    };
