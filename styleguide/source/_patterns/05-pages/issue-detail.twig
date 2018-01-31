@@ -1,0 +1,34 @@
+{% extends '@templates/offset-center.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/page-hero.twig' %}
+{% endblock %}
+
+{% block pageContent_header %}
+    
+    {# Issue Header goes here #}
+    Issue Date
+    Issue Title
+    Issue Desc
+{% endblock %}
+
+{% block pageContent %}
+  
+  {# Issue Articles here #}
+  <ul class="joe__list">
+    {% for article in articles %}
+    <li>
+      {% set teaser = article %}
+      {% include '@molecules/article-teaser.twig' %}
+    </li>
+    {% endfor %}
+  </ul>
+  
+  {% include '@organisms/poll.twig' %
+  
+{% endblock %}
+
+{% block footer %} 
+  {# Issues Footer  #}
+  {% include '@organisms/footer.twig' %}
+{% endblock %}
