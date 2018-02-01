@@ -2,17 +2,32 @@
   position: relative;
   width: 100%;
   max-width: 1800px;
-  height: 800px;
+  height: 400px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $blue-darkest;
   background: linear-gradient(top, $blue-darker 0%, $white 100%);
   z-index: -1;
-  margin-bottom: -600px;
+  margin-bottom: -200px;
+  
+  @include breakpoint($bp-xs) {
+    height: 600px;
+    margin-bottom: -250px;
+  }
+  
+  @include breakpoint($bp-small) {
+    height: 700px;
+    margin-bottom: -300px;
+  }
   
   @include breakpoint($bp-med) {
-    height: 1400px;
-    margin-bottom: -1100px;
+    height: 800px;
+    margin-bottom: -400px;
+  }
+  
+  @include breakpoint($bp-large) {
+    height: 900px;
+    margin-bottom: -500px;
   }
 }
 
@@ -59,6 +74,34 @@
 
 .joe__article-hero__4 {
   background: url('../images/peer3-1.jpg');
+}
+
+.joe__article-hero__5 {
+  background: url('../images/v2/artwork-1.jpg');
+}
+
+.joe__article-hero__6 {
+  background: url('../images/v2/artwork-2.jpg');
+}
+
+.joe__article-hero__7 {
+  background: url('../images/v2/artwork-3.jpg');
+}
+
+.joe__article-hero__8 {
+  background: url('../images/v2/artwork-4.jpg');
+}
+
+.joe__article-hero__9 {
+  background: url('../images/v2/artwork-5.jpg');
+}
+
+.joe__article-hero__10 {
+  background: url('../images/v2/Foodethics3.jpg');
+}
+
+.joe__article-hero__11 {
+  background: url('../images/v2/Stateartscience3.jpg');
 }
 
 .joe__article-hero {

@@ -1,22 +1,31 @@
 .joe__article-teaser {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: flex-start;
   align-content: stretch;
   justify-content: space-between;
   margin-bottom: 1.5em;
   z-index: 2;
   
-  .no-flexbox & {
-    padding-right: 170px; 
+  @include breakpoint(450px) {
+    flex-direction: row-reverse;
+    
+    .no-flexbox & {
+      padding-right: 55%; 
+    }
+  }
+  
+  @include breakpoint($bp-med) {
+    
+    .no-flexbox & {
+      padding-right: 45%; 
+    }
   }
 }
 
 .joe__article-teaser__image {
-  display: none;
-  visibility: hidden;
-  max-width: 100px;
+  width: 100%;
   min-width: 0;
   
   .no-flexbox & {
@@ -26,7 +35,8 @@
   }
   
   img {
-    width: 100px;
+    margin-bottom: .5em;
+    width: 100%;
     max-width: 100%;
   }
   
@@ -41,17 +51,14 @@
     border-bottom: 0;
   }
   
-  @include breakpoint($bp-xs) {
-    display: block;
-    visibility: visible;
+  @include breakpoint(450px) {
+    margin-top: 2em;
+    margin-bottom: 0;
+    width: 50%;
   }
   
   @include breakpoint($bp-med) {
-    max-width: 150px;
-    
-    img {
-      width: 150px;
-    }
+    width: 40%;
   }
 }
 
