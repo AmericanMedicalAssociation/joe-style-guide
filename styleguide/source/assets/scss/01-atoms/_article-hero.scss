@@ -11,23 +11,23 @@
   margin-bottom: -200px;
   
   @include breakpoint($bp-xs) {
-    height: 500px;
+    height: 600px;
     margin-bottom: -250px;
   }
   
   @include breakpoint($bp-small) {
-    height: 600px;
+    height: 700px;
     margin-bottom: -300px;
   }
   
   @include breakpoint($bp-med) {
-    height: 700px;
-    margin-bottom: -350px;
+    height: 800px;
+    margin-bottom: -400px;
   }
   
   @include breakpoint($bp-large) {
-    height: 800px;
-    margin-bottom: -400px;
+    height: 900px;
+    margin-bottom: -500px;
   }
 }
 
