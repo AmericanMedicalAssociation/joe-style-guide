@@ -1,23 +1,16 @@
-<section class="joe__issue-teaser">
+<section class="joe__issues-teaser">
   <div class="container">
-    {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Also in this Issue" } } %}
-    {% set title_label = issue.title %}
+    <div class="l-66-33--1">
+    {% set title_label = issue_teaser.title %}
     {% include "@atoms/title-label.twig" %}
-    <div class="joe__layout--two-column joe__issue-teaser__block">
+    
+    {% include "@atoms/link.twig" with { 'link': { "title": "Issue Archive", "href": '#', 'text': 'Issue Archive', 'class': "joe__issues-teaser__link" } } %}
       {# Keeping tabindex for accessibility purposes #}
-      <div class="joe__col-one--med">
-        {% for article in issue.articles|slice(0,2) %}
-          {% set teaser = article %}
-          {% include '@molecules/article-teaser.twig' %}
-        {% endfor %}
-      </div>
-
-      <div class="joe__col-two--med">
-        {% for article in issue.articles|slice(2,2) %}
-          {% set teaser = article %}
-          {% include '@molecules/article-teaser.twig' %}
-        {% endfor %}
-      </div>
+    <div class="joe__col-one--med">
+      {% for issue in issue_teaser.issues %}
+        {% set teaser = article %}
+        {% include '@molecules/article-teaser.twig' %}
+      {% endfor %}
     </div>
   </div>
 </section>
