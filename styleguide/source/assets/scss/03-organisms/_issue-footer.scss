@@ -1,4 +1,4 @@
-.joe__issue-teaser {
+.joe__issue-footer {
   @include gutter($padding-top-full...);
   @include gutter($padding-bottom-full...);
   @include gutter($margin-top-full...);
@@ -27,7 +27,7 @@
 }
 
 
-.joe__issue-teaser__block {
+.joe__issue-footer__block {
   @include gutter($margin-top-full...);
   text-align: left;
 }
