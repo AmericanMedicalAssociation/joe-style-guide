@@ -5,17 +5,13 @@
 {% endblock %}
 
 {% block pageContent_header %}
-    
-    {# Issue Header goes here #}
-    Issue Date
-    Issue Title
-    Issue Desc
+  {% include '@molecules/issue-header.twig' %}
 {% endblock %}
 
 {% block pageContent %}
   
   {# Issue Articles here #}
-  <ul class="joe__list">
+  <ul class="joe__list--issue">
     {% for article in articles %}
     <li>
       {% set teaser = article %}
