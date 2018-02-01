@@ -1,0 +1,33 @@
+.joe__issue-teaser--current {
+  @extend %clearfix;
+  border-bottom: 1px solid $black-20;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.joe__issue-teaser--left {
+  
+  @include breakpoint($bp-small) {
+    float: left;
+    width: 45%;
+  }
+}
+
+.joe__issue-teaser--right {
+  
+  @include breakpoint($bp-small) {
+    float: right;
+    width: 50%;
+    margin-left: 5%;
+  }
+}
+
+.joe__issue-teaser__list {
+  list-style: none;
+  margin: 1em 0 0;
+  padding: 0;
+  
+  @include breakpoint($bp-small) {
+    margin-top: 0;
+  }
+}

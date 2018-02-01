@@ -57,7 +57,6 @@
 
 .joe__article-teaser__block {
   @include gutter($padding-right-half...);
-  margin-left: 5px;
   width: 100%;
   min-width: 0;
 }
