@@ -1,20 +1,22 @@
 <section class="joe__related-issues">
   <div class="container">
-    <div class="l-66-33--1">
-      {% set title_label = issue_footer.title %}
-      {% include "@atoms/title-label.twig" with { 'title_label': { "text": "Other Issues", 'level': '2', 'class': "joe__related-issues__title" } } %}
-    
-      {% include "@atoms/link.twig" with { 'link': { "title": "Issue Archive", "href": '#', 'text': 'Issue Archive', 'class': "joe__related-issues__link" } } %}
+    <div class="joe__related-issues__container">
+      <div class="joe__related-issues--left">
+        {% set title_label = issue_footer.title %}
+        {% include "@atoms/title-label.twig" with { 'title_label': { "text": "Other Issues", 'level': '2' } } %}
+      
+        {% include "@atoms/link.twig" with { 'link': { "title": "Issue Archive", "href": '#', 'text': 'Issue Archive', 'class': "joe__related-issues__link" } } %}
 
-      <ul class="joe__related-issues__list">
-        {% for issue in issue_footer.issues %}
-          <li>{% include '@molecules/issue-teaser.twig' %}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="l-66-33--2">
-      {% set rail_cta = issue_footer.rail_cta %}
-      {% include "@molecules/rail-cta.twig" %}
+        <ul class="joe__related-issues__list">
+          {% for issue in issue_footer.issues %}
+            <li>{% include '@molecules/issue-teaser.twig' %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="joe__related-issues--right">
+        {% set rail_cta = issue_footer.rail_cta %}
+        {% include "@molecules/rail-cta.twig" %}
+      </div>
     </div>
   </div>
 </section>

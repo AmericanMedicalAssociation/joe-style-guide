@@ -1,7 +1,7 @@
 {% extends '@templates/offset-center.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
-  {% include '@atoms/page-hero.twig' %}
+  {% include '@atoms/page-hero.twig' with {'page_hero' :{'image_id': '2'}} %}
 {% endblock %}
 
 {% block pageContent_header %}
