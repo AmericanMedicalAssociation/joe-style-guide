@@ -1,0 +1,47 @@
+{
+  "issue_footer": {
+    "issues": [
+      {
+        "date": "December 2017",
+        "title": {
+          "text": "Health Care Ethics and Professionalism in the Era of Climate Change",
+          "href": "#"
+        },
+        "number": "Volume 19, Number 11: 1059-1150"
+      },
+      {
+        "date": "November 2017",
+        "title": {
+          "text": "Ethics of Collaborative Health Systems Design",
+          "href": "#"
+        },
+        "number": "Volume 19, Number 11: 1059-1150"
+      },
+      {
+        "date": "October 2017",
+        "title": {
+          "text": "Safe Water Access and the Roles of Clinician",
+          "href": "#"
+        },
+        "number": "Volume 19, Number 11: 1059-1150"
+      }
+    ],
+    "rail_cta": { 
+      "heading": {
+        "level": "3",
+        "text": "Stay Up-to-date.",
+        "class": "joe__rail-cta__title"
+      },
+      "paragraph" : {
+        "text": "Never miss an issue again, sign up for our newsletters to be alerted each time we publish a new issue."
+      },
+      "button": {
+        "href": "#",
+        "info": "alt",
+        "text": "Subscribe",
+        "type": "link",
+        "size": "small"
+      }
+    }
+  }
+}
