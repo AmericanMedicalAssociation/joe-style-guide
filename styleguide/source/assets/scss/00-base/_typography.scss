@@ -21,17 +21,17 @@ body {
 
 %joe__type--small,
 .joe__type--small {
-  @include type($font-sans-serif, .9em, $font-weight-medium, 1.25);
+  @include type($font-sans-serif, .9em, $font-weight-medium, 1.35);
 }
 
 %joe__type--smaller,
 .joe__type--smaller {
-  @include type($font-sans-serif, .8em, $font-weight-medium, 1.25);
+  @include type($font-sans-serif, .8em, $font-weight-medium, 1.35);
 }
 
 %joe__type--smallest,
 .joe__type--smallest {
-  @include type($font-sans-serif, .7em, $font-weight-medium, 1.25);
+  @include type($font-sans-serif, .7em, $font-weight-medium, 1.35);
 }
 
 p,

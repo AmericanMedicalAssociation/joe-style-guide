@@ -1,0 +1,100 @@
+.joe__related-issues {
+  @extend %clearfix;
+  box-shadow: 0 0 5px rgba($black-90, .25);
+  
+  @include breakpoint($bp-med) {
+    background: linear-gradient(to right, $white 0%, $white 75%, $black-05 75%, $black-05 100%);
+  }
+}
+
+.joe__related-issues__container {
+  display: flex;
+  flex-direction: column;
+  
+  @include breakpoint($bp-med) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.joe__related-issues--left {
+  @include gutter($padding-top-full...);
+  @include gutter($padding-bottom-half...);
+  @include gutter($padding-left-full...);
+  @include gutter($padding-right-full...);
+  
+  @include breakpoint($bp-med) {
+    @include gutter($padding-right-full...);
+    padding-left: 0;
+    width: 75%;
+    float: left;
+    
+    .joe__title-label {
+      float: left;
+      color: $black-80;
+    }
+  }
+}
+
+.joe__related-issues--right {
+  border-top: 1px solid $black-20;
+  background-color: $black-05;
+  display: flex;
+  align-items: center;
+  
+  .joe__rail-cta {
+    background-color: transparent;
+    box-shadow: none;
+    
+    @include breakpoint($bp-xs) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @include breakpoint($bp-med) {
+    @include gutter($padding-left-full...);
+    width: 25%;
+    float: right;
+    border-top: 0;
+    border-left: 1px solid $black-20;
+  }
+}
+
+.joe__related-issues__link {
+  @include type($font-serif, .7em, $font-weight-bold, 1.35);
+  
+  @include breakpoint(275px){
+    position: relative;
+    float: right;
+    top: -1.75em;
+  }
+  
+  @include breakpoint($bp-med) {
+    top: 10px;
+  }
+}
+
+.joe__related-issues__list {
+  @extend %clearfix;
+  list-style: none;
+  margin-top: 1.5em;
+  padding: 0;
+  
+  .joe__issue-teaser__title {
+    @extend %joe__h4;
+    margin-top: .5em;
+  }
+  
+  @include breakpoint($bp-med) {
+    margin-top: 3em;
+    
+    li {
+      float: left;
+      margin-right: 5%;
+      width: 28%;
+    }
+  }
+}
+
+

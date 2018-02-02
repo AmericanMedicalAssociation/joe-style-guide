@@ -1,0 +1,21 @@
+.joe__issue-header {
+  text-align: center;
+  margin: 1em auto 3em;
+  max-width: 1000px;
+}
+
+.joe__issue-header__date {
+  @include type($font-serif, .85em, $font-weight-bold, 1.25);
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  color: $blue-darkest;
+}
+
+.joe__issue-header__title {
+  margin-top: 1em;
+  margin-bottom: .25em;
+}
+
+.joe__issue-header__desc {
+  @extend %joe__type--small;
+}
