@@ -1,0 +1,14 @@
+.joe__featured-case {
+  @extend %clearfix;
+  border-bottom: 1px solid $black-20;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.joe__featured-case__link {
+  @include type($font-serif, .8em, $font-weight-bold, 1.35);
+  display: inline-block;
+  margin-top: .25em;
+  text-transform: uppercase;
+  float: right;
+}
