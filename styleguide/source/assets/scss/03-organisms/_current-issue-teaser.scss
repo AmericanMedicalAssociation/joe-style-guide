@@ -3,6 +3,16 @@
   border-bottom: 1px solid $black-20;
   padding-bottom: 2em;
   margin-bottom: 2em;
+  
+  .joe__issue-teaser__title {
+    @include type($font-serif, 1.5em, $font-weight-bold, 1.28);
+    margin-top: 1em;  
+    
+    a:link,
+    a:visited {
+      color: $black;
+    }
+  }
 }
 
 .joe__issue-teaser--left {

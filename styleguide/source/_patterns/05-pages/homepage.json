@@ -103,7 +103,7 @@
     "description": "People suffering some form of violence routinely seek health care. As first responders, clinicians are required to treat these patients equitably and promote their best interests. In clinical practice, guidelines can help or hinder clinicians’ capacities to fulfill these duties to patients who are victims of gun violence or rape, for example. Standards of care regarding sexual assault protocols and forensic examinations have important limitations that need clinical and ethical consideration.",
     "number": " Volume 20, Number 1: 1-111",
     "articles" : [
-      { "size": "small",
+      { 
         "flag": {
           "type": "CME"
         },
@@ -119,7 +119,6 @@
         }
       },
       {
-        "size": "small",
         "flag": {
           "type": "Case",
           "class": "joe__flag--green"
@@ -142,7 +141,6 @@
         }
       },
       {
-        "size": "small",
         "flag": {
           "type": "Medicine and Society"
         },
@@ -166,7 +164,6 @@
     "style": "featured",
     "flag": {
       "type": "Case with Commentary",
-      "issue": "Jan. 2018",
       "class": "joe__flag--green"
     },
     "authors": [
