@@ -27,7 +27,8 @@
 }
 
 .joe__issue-teaser__link {
-  @extend %joe__type--smaller;
+  @include type($font-serif, .8em, $font-weight-bold, 1.35);
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 1.5em;
+  text-transform: uppercase;
 }
