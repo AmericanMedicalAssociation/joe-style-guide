@@ -1,0 +1,23 @@
+{% extends '@templates/offset-center.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/page-hero.twig' with {'page_hero' :{'image_id': '2'}} %}
+{% endblock %}
+
+{% block pageContent_header %}
+  {% include '@organisms/current-issue-teaser.twig' %}
+{% endblock %}
+
+{% block pageContent %}
+  {% include '@organisms/featured-case.twig' %}
+  <h2>Timely Topics</h2>
+  
+  {% include '@organisms/poll.twig' %}
+  
+{% endblock %}
+
+{% block footer %} 
+  <h2>About / Upcoming Topics</h2>
+  <h2>Call to Action Band</h2>
+  {% include '@organisms/footer.twig' %}
+{% endblock %}
