@@ -14,10 +14,9 @@
 {% endblock %}
 
 {% block footer %} 
-  {% include '@organisms/topics.twig' %}
-  
   {% include '@organisms/poll--structured.twig' %}
-  <h2>About / Upcoming Topics</h2>
+  {% include '@organisms/topics.twig' %}
+  {% include '@organisms/about-band.twig' %}
   {% include '@organisms/cta-band.twig' %}
   {% include '@organisms/footer.twig' %}
 {% endblock %}
