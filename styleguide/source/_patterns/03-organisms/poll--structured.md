@@ -1,5 +1,5 @@
 ### Description
-The poll element contains a question and set of answers. It related to an article and has functionality to display the results. It displays inline on an article.
+The structured poll element contains a question and set of answers. It related to an article and has functionality to display the results. It displays full-width on landing pages.
 
 ### Variables
 ~~~

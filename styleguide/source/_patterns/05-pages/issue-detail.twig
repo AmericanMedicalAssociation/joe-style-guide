@@ -20,11 +20,10 @@
     {% endfor %}
   </ul>
   
-  {% include '@organisms/poll.twig' %}
-  
 {% endblock %}
 
 {% block footer %} 
+  {% include '@organisms/poll--structured.twig' %}
   {% include '@organisms/related-issues.twig' %}
   {% include '@organisms/footer.twig' %}
 {% endblock %}
