@@ -6,9 +6,8 @@
 }
 
 .joe__featured-case__link {
-  @include type($font-serif, .8em, $font-weight-bold, 1.35);
+  @extend %joe__link--bold;
   display: inline-block;
   margin-top: .25em;
-  text-transform: uppercase;
   float: right;
 }
