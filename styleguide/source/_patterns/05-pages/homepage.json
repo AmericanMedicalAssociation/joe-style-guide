@@ -285,37 +285,62 @@
       }
     ]
   },
-  "issue_footer": {
-    "issues": [
-      {
-        "date": "December 2017",
-        "title": {
-          "text": "Health Care Ethics and Professionalism in the Era of Climate Change",
-          "href": "#"
-        },
-        "number": "Volume 19, Number 11: 1059-1150"
-      },
-      {
-        "date": "November 2017",
-        "title": {
-          "text": "Ethics of Collaborative Health Systems Design",
-          "href": "#"
-        },
-        "number": "Volume 19, Number 11: 1059-1150"
-      },
-      {
-        "date": "October 2017",
-        "title": {
-          "text": "Safe Water Access and the Roles of Clinician",
-          "href": "#"
-        },
-        "number": "Volume 19, Number 11: 1059-1150"
-      }
-    ],
-    "rail_cta": { 
+  "ctas": [
+    { 
       "heading": {
         "level": "3",
-        "text": "Stay Up-to-date.",
+        "text": "Join the Discussion",
+        "class": "joe__rail-cta__title"
+      },
+      "paragraph" : {
+        "text": "Our Discussion Forum provides an opportunity for students, educators, and clinicians to engage experts in an online conversation about important ethical issues in health care."
+      },
+      "button": {
+        "href": "#",
+        "info": "alt",
+        "text": "Discussion Forum",
+        "type": "link",
+        "size": "small"
+      }
+    },
+    { 
+      "heading": {
+        "level": "3",
+        "text": "Call for Papers",
+        "class": "joe__rail-cta__title"
+      },
+      "paragraph" : {
+        "text": "The AMA Journal of Ethics invites original submissions for peer review on the following themes that will be explored in upcoming issues."
+      },
+      "button": {
+        "href": "#",
+        "info": "alt",
+        "text": "Upcoming Themes",
+        "type": "link",
+        "size": "small"
+      }
+    },
+    { 
+      "heading": {
+        "level": "3",
+        "text": "Become an Editor",
+        "class": "joe__rail-cta__title"
+      },
+      "paragraph" : {
+        "text": "We invite medical students, resident physicians, and fellows to apply to serve as theme issue editors."
+      },
+      "button": {
+        "href": "#",
+        "info": "alt",
+        "text": "Become an Issue Editor",
+        "type": "link",
+        "size": "small"
+      }
+    },
+    { 
+      "heading": {
+        "level": "3",
+        "text": "Stay Up-to-date",
         "class": "joe__rail-cta__title"
       },
       "paragraph" : {
@@ -329,7 +354,7 @@
         "size": "small"
       }
     }
-  },
+  ],
   "footer_wordmark": {
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine"
