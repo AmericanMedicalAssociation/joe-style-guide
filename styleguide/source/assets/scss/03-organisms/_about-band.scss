@@ -1,0 +1,19 @@
+.joe__about-band {
+  @extend %clearfix;
+  padding: $gutter-mobile 0;
+  
+  @include breakpoint($bp-med) {
+    padding: ($gutter * 2) 0;
+  }
+}
+
+.joe__about__title {
+  @extend %joe__h2;
+  margin-top: 0;
+}
+
+.joe__about__link {
+  @extend %joe__link--bold;
+  display: inline-block;
+  margin-top: 1em;
+}

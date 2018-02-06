@@ -1,0 +1,38 @@
+{
+  "about": {
+    "title": "About the Journal",
+    "description": "Our editorial mission is to help medical students and physicians make sound ethical decisions in service to patients and society. Founded in 1999, the AMA Journal of Ethics explores the ethical issues and challenges that students, residents, and other physicians are likely to confront in their training and daily practice.",
+    "link" : {
+      "href": "#",
+      "text": "About the Journal",
+      "class": "joe__about__link"
+    },
+    "themes": [
+      {
+        "title": "Global Reproductive Health Ethics in the 21st Century",
+        "date": "March 2018"
+      },
+      {
+        "title": "Ethical Considerations in Plastic and Reconstructive Surgery",
+        "date": "April 2018"
+      },
+      {
+        "title": "Trauma Surgery Ethics",
+        "date": "May 2018"
+      },
+      {
+        "title": "Ethics in Burn Care",
+        "date": "June 2018"
+      },
+      {
+        "title": "Religion and Spirituality in Health Care Practice",
+        "date": "July 2018"
+      }
+      ,
+      {
+        "title": "Ethics, Policy, and the Roles of Physicians in Care of the Dying",
+        "date": "August 2018"
+      }
+    ]
+  }
+}
