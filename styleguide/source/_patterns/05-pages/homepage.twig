@@ -11,13 +11,12 @@
 {% block pageContent %}
   {% include '@organisms/featured-case.twig' %}
   
-  <h2>Timely Topics</h2>
-  
-  {% include '@organisms/poll.twig' %}
-  
 {% endblock %}
 
 {% block footer %} 
+  {% include '@organisms/topics.twig' %}
+  
+  {% include '@organisms/poll--structured.twig' %}
   <h2>About / Upcoming Topics</h2>
   <h2>Call to Action Band</h2>
   {% include '@organisms/footer.twig' %}

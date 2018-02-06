@@ -1,0 +1,38 @@
+{
+  "topic": {
+    "articles" : [
+      { 
+        "flag": {
+          "type": "AMA Code Says",
+          "issue": "Aug. 2015"
+        },
+        "authors": [
+          {
+            "name" : "AMA Journal of Ethics"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The AMA Code of Medical Ethics’ Opinions on Physicians’ Financial Interests"
+        }
+      },
+      {
+        "flag": {
+          "type": "Health Law",
+          "issue": "Aug. 2015"
+        },
+        "authors": [
+          {
+            "name" : "Sandy H. Ahn"
+          }
+        ],
+        "title": {
+          "href": "#",
+          "class": "joe__article-teaser__title",
+          "text":"The Affordable Care Act and Insurer Business Practices"
+        }
+      }
+    ]
+  }
+}
