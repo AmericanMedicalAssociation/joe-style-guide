@@ -1,10 +1,10 @@
 .joe__cta-band {
   @extend %clearfix;
   background-color: $black-05;
-  padding: $gutter-mobile;
+  padding: $gutter-mobile 0;
   
   @include breakpoint($bp-med) {
-    padding: $gutter;
+    padding: $gutter 0;
   }
 }
 
