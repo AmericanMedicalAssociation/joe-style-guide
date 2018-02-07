@@ -1,6 +1,10 @@
 {
   "items": [
     {
+      "name": "$blue-darkest",
+      "value": "#29688a"
+    },
+    {
       "name": "$blue-darker",
       "value": "#29688a"
     },
@@ -65,8 +69,12 @@
       "value": "#d1d3d4"
     },
     {
+      "name": "$black-10",
+      "value": "#E5E5E5"
+    },
+    {
       "name": "$black-05",
-      "value": "#f1f2f2"
+      "value": "#f1f1f1"
     },
     {
       "name": "$white",
