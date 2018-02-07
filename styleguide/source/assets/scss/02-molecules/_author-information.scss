@@ -2,11 +2,11 @@
   margin: $gutter-mobile 0;
   
   @include breakpoint($bp-xs) {
-    padding: $gutter-mobile;
+    padding: $gutter-mobile 0;
   }
   
   @include breakpoint($bp-med) {
-    padding: $gutter;
+    padding: $gutter 0;
     margin: $gutter 0;
   }
 }
