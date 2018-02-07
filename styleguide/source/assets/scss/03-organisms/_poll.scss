@@ -147,7 +147,7 @@
   visibility: hidden;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .5s ease-in, visibility .1s ease-in .5s, overflow .1s ease-in;
+  transition: max-height .5s ease-in, visibility .1s ease-in .5s;
   
   .choice-result {
     @extend %clearfix;
@@ -174,10 +174,9 @@
   
   .joe__poll__answers.is-open & {
     visibility: visible;
-    overflow: visible;
-    max-height: 30px;
+    max-height: 40px;
     margin-bottom: 1em;
-    transition: max-height .75s ease-in, margin .75s ease-in, overflow .1s ease-in .75s; 
+    transition: max-height .75s ease-in, margin .75s ease-in; 
     
     .choice-result {
       padding-top: .5em; 
