@@ -5,20 +5,35 @@
   padding: $gutter-mobile;
   
   @include breakpoint($bp-med) {
-    padding: $gutter;
+    padding: $gutter 0 ($gutter * 2);
   }
 }
 
 .joe__poll--inline {
   margin-top: $gutter;
   margin-bottom: $gutter;
+  padding: $gutter-mobile;
   
   @include breakpoint($bp-med) {
     margin-right: -66%;
+    padding: $gutter;
   }
   
   @include breakpoint($bp-large) {
     margin-right: -47%;
+  }
+}
+
+.joe__poll__block {
+  @extend %clearfix;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid $black-05;
+  
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
