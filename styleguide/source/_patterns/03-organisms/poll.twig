@@ -1,7 +1,5 @@
 <section class="joe__poll joe__poll--inline">
-  {% if poll.label %}
-    {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
-  {% endif %}
+  {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
   <div class="joe__poll__question">
     <div>
     {{ poll.question }}

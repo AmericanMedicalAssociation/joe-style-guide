@@ -4,10 +4,6 @@ The poll element contains a question and set of answers. It related to an articl
 ### Variables
 ~~~
 poll {
-  inline:
-    type: boolean / required
-  label:
-    type: boolean / required
   question:
     type: string / required
   answers: {
