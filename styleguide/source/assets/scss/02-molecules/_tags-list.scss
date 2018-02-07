@@ -1,7 +1,7 @@
 .joe__flag.joe__tags {
   @extend %joe__type--smaller;
-  padding: 7px 12px 7px 55px;
-  left: -1.9em;
+  padding: 7px 12px 7px 40px;
+
   margin-top: $gutter * 2;
   margin-bottom: $gutter;
   
@@ -9,7 +9,7 @@
     height: 1em;
     width: 1em;
     position: absolute;
-    left: 32px;
+    left: 9px;
     top: 9px;
     
     svg {
@@ -20,12 +20,7 @@
   }
   
   @include breakpoint($bp-med) {
-    left: -2.6em;
-    padding: 7px 12px 7px 75px;
-    
-    .icon-tag {
-      left: 50px;
-    }
+    padding: 7px 12px 7px 40px;
   }
 }
 

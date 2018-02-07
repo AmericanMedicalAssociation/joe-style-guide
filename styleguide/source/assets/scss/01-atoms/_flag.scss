@@ -13,13 +13,11 @@
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
-  padding: 6px 9px 6px 27px;
-  left: -2em;
-  margin-right: -2em;
+  padding: 6px 9px;
   
   @include breakpoint($bp-med) {
-    padding: 6px 9px 6px 40px;
-    left: -2.7em;
+    padding: 6px 9px;
+
   }
 }
 
