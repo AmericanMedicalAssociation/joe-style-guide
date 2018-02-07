@@ -38,8 +38,12 @@
   grid-row: 1;
   -ms-grid-row: 1;
   min-width: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
 
   @include breakpoint($bp-small) {
+    @include gutter($margin-right-half...);
+    padding-left: 0;
     grid-column: 1 / 2;
     grid-row: 1;
     -ms-grid-column: 1;
@@ -71,8 +75,12 @@
   grid-row: 2;
   -ms-grid-row: 2;
   min-width: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
 
   @include breakpoint($bp-small) {
+    @include gutter($margin-left-half...);
+    padding: 0;
     grid-column: 2 / 2;
     grid-row: 1;
     -ms-grid-row: 1;
