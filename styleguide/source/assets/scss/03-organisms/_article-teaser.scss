@@ -124,7 +124,15 @@
 .joe__article-teaser__meta--secondary {
   @extend %joe__type--smallest;
   display: block;
-  margin-top: 15px;
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid $black-10;
+  color: $black-80;
+}
+
+.joe__article-teaser__desc {
+  @extend %joe__type--smaller;
+  margin-top: .5em; 
 }
 
 .joe__article-teaser--large {

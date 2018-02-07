@@ -17,6 +17,13 @@
       {% set authors = teaser.authors %}
       {% include "@atoms/authors.twig" %}
     </span>
+    {% if teaser.description %}
+    <div class="joe__article-teaser__desc">
+      {{ teaser.description }}
+    </div>
+    {% endif %}
+    {% if teaser.citation %}
     <span class="joe__article-teaser__meta--secondary">{{teaser.citation}}, {{teaser.doi}}</span>
+    {% endif %}
   </div>
 </article>
