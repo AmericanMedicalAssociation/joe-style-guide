@@ -96,6 +96,7 @@
   },
   "page_title": "Issues",
   "current_issue": {
+    "level": "2",
     "date": "january 2018",
     "title": {
       "text": "Clinicians’ Responsiveness to Violence",
