@@ -66,12 +66,14 @@
       a:link,
       a:visited {
         color: $white;
+        border: 0;
       }
       
       a:active,
       a:hover,
       a:focus {
         color: $white;
+        border: 0;
       }
     }
   }

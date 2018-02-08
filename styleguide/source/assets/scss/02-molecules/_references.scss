@@ -5,6 +5,7 @@
 .joe__references__list {
   @extend %joe__type--smaller;
   padding-left: 1em;
+  word-wrap: break-word;
 }
 
 .joe__references__item {
