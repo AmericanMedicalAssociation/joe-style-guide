@@ -104,6 +104,7 @@
       "text": "Topics",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Topics",
       "options": [
         { 
           "value":"Topic_1", 
@@ -149,6 +150,7 @@
       "id": "articleCompetencies",
       "text": "Core Competencies",
       "class": "joe__chosen",
+      "chosen_placeholder": "Choose Competencies",
       "multiple": "true",
       "options": [
         { 
@@ -196,6 +198,7 @@
       "text": "Specialty",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Specialties",
       "options": [
         { 
           "value":"Specialty_1", 
@@ -242,6 +245,7 @@
       "text": "Month",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Months",
       "options": [
         { 
           "value":"January", 
@@ -300,6 +304,7 @@
       "text": "Year",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Years",
       "options": [
         { 
           "value":"2018", 
