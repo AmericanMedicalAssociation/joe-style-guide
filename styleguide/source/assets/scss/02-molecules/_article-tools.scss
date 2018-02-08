@@ -9,10 +9,10 @@
   
   .joe__button--tool {
     float: right;
-    margin-left: 4px;
+    margin: 0 0 0 4px;
     
     @include breakpoint($bp-med) {
-      margin-left: 8px;
+      margin: 0 0 0 8px;
     }
   }
   
