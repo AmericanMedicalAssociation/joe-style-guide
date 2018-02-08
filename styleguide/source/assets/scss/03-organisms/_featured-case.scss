@@ -1,0 +1,10 @@
+.joe__featured-case {
+  @extend %clearfix;
+}
+
+.joe__featured-case__link {
+  @extend %joe__link--bold;
+  display: inline-block;
+  margin-top: .25em;
+  float: right;
+}

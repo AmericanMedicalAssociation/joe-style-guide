@@ -14,6 +14,14 @@
     .no-flexbox & {
       padding-right: 55%; 
     }
+    
+    &.joe__article-teaser--featured {
+      flex-direction: row;
+    
+      .no-flexbox & {
+        padding-left: 55%; 
+      }
+    }
   }
   
   @include breakpoint($bp-med) {
@@ -21,18 +29,20 @@
     .no-flexbox & {
       padding-right: 45%; 
     }
+    
+    &.joe__article-teaser--featured {
+      align-items: center;
+    
+      .no-flexbox & {
+        padding-left: 45%; 
+      }
+    }
   }
 }
 
 .joe__article-teaser__image {
   width: 100%;
   min-width: 0;
-  
-  .no-flexbox & {
-    position: absolute;
-    right: 0;
-    top: 25px;
-  }
   
   img {
     margin-bottom: .5em;
@@ -54,11 +64,31 @@
   @include breakpoint(450px) {
     margin-top: 2em;
     margin-bottom: 0;
-    width: 50%;
+    min-width: 40%;
+    width: 40%;
+    
+    .no-flexbox & {
+      position: absolute;
+      right: 0;
+      top: 25px;
+    }
+    
+    .joe__article-teaser--featured & {
+      margin-top: 0;
+      margin-right: 5%;
+    }
   }
   
   @include breakpoint($bp-med) {
-    width: 40%;
+    min-width: 35%;
+    width: 35%;
+    
+    .joe__article-teaser--featured & {
+      min-width: 45%;
+      width: 45%;
+      margin-top: 0;
+      margin-right: 5%;
+    }
   }
 }
 

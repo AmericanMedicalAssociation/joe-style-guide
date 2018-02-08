@@ -1,12 +1,9 @@
-<section class="joe__poll {% if poll.inline %}joe__poll--inline{% endif %}">
-  {% if poll.label %}
-    {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
-  {% endif %}
+<section class="joe__poll joe__poll--inline">
+  {% include "@atoms/heading.twig" with { "heading": {"level" : "2", "text" : "Ethics Poll", "class" : "joe__poll__label" } } %}
   <div class="joe__poll__question">
     <div>
     {{ poll.question }}
     </div>
-    {% include "@atoms/link.twig" with { "link": {"title" : "View Related Article", "href" : "#", "text" : "View Related Article", "class": "joe__poll__link" } } %}
   </div>
   <form class="joe__poll__answers">
     <ul class="joe__poll__answerlist">

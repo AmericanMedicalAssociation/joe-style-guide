@@ -4,6 +4,9 @@ The current issue teaser appears in the issue listing page on first load. It dis
 
 ### Variables
 ~~~
+level:
+  type: number / required 
+  [this should be controlled by the theme.]
 date:
   type: string / required
 title: {

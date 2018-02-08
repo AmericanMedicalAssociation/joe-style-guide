@@ -1,0 +1,112 @@
+.joe__cta-band {
+  @extend %clearfix;
+  background-color: $black-05;
+  padding: $gutter-mobile 0;
+  
+  @include breakpoint($bp-med) {
+    padding: $gutter 0;
+  }
+}
+
+.joe__cta-band__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  @include breakpoint($bp-small) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+    li {
+      margin-bottom: 0;
+      display: inline-block;
+      float: left;
+      
+      // 1-up layout
+      // when there is one item it's full width
+      &:nth-child(1):nth-last-child(1) {
+        width: 100%;
+      }
+
+      // 2-up layout
+      // when there are two items it's 50:50
+      &:nth-child(1):nth-last-child(2) {
+        width: 48%;
+        margin-right: 2%;
+      }
+
+      &:nth-child(2):nth-last-child(1) {
+        width: 48%;
+        margin-left: 2%;
+      }
+
+      // 3-up layout
+      // when there are three items it's 33:33:33
+      &:nth-child(1):nth-last-child(3) {
+        width: 32%;
+        margin-right: 1%;
+      }
+
+      &:nth-child(2):nth-last-child(2) {
+        width: 32%;
+        margin: 0 .5%;
+      }
+
+      &:nth-child(3):nth-last-child(1) {
+        width: 32%;
+        margin-left: 1%;
+      }
+      
+      // 4-up layout
+      // when there are three items it's 33:33:33
+      &:nth-child(1):nth-last-child(4),
+      &:nth-child(3):nth-last-child(2) {
+        width: 49%;
+        margin-right: 1%;
+        margin-bottom: $gutter / 2;
+      }
+
+      &:nth-child(2):nth-last-child(3),
+      &:nth-child(4):nth-last-child(1) {
+        width: 49%;
+        margin-left: 1%;
+        margin-bottom: $gutter / 2;
+      }
+    }
+    
+    .joe__rail-cta {
+      margin: 0;
+      height: 100%;
+    }
+  }
+  
+  @include breakpoint($bp-med) {
+    
+    li {
+      margin-bottom: 0;
+      display: inline-block;
+      float: left;
+
+      // 4-up layout
+      // when there are three items it's 33:33:33
+      &:nth-child(1):nth-last-child(4) {
+        width: 24%;
+        margin-right: .75%;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2):nth-last-child(3),
+      &:nth-child(3):nth-last-child(2) {
+        width: 23.75%;
+        margin: 0 .75%;
+      }
+      
+      &:nth-child(4):nth-last-child(1) {
+        width: 24%;
+        margin-left: .75%; 
+        margin-bottom: 0;   
+      }
+    }
+  }
+}

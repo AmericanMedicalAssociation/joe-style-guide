@@ -36,3 +36,9 @@ a,
     color: $white;
   }
 } 
+
+%joe__link--bold,
+.joe__link--bold {
+  @include type($font-serif, .8em, $font-weight-bold, 1.35);
+  text-transform: uppercase;
+}

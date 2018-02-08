@@ -27,7 +27,7 @@
 }
 
 .joe__issue-teaser__link {
-  @extend %joe__type--smaller;
+  @extend %joe__link--bold;
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }

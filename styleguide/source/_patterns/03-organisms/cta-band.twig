@@ -1,0 +1,11 @@
+<section class="joe__cta-band">
+  <div class="container">
+
+    <ul class="joe__cta-band__list">
+    {% for cta in ctas %}
+      {% set rail_cta = cta %}
+      <li>{% include '@molecules/rail-cta.twig' %}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -2,7 +2,7 @@
   <div class="joe__issue-teaser--left">
     <span class="joe__issue-teaser__label">{{current_issue.date}} <span>Current Issue</span></span>
     {% set link = current_issue.title %}
-    <h2 class="joe__issue-teaser__title">{% include "@atoms/link.twig" %}</h2>
+    <h{{ current_issue.level }} class="joe__issue-teaser__title">{% include "@atoms/link.twig" %}</h{{ current_issue.level }}>
     <div class="joe__issue-teaser__desc">
       {{ current_issue.description }}
     </div>

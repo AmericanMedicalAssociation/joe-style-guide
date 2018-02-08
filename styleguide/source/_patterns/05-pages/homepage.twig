@@ -5,25 +5,18 @@
 {% endblock %}
 
 {% block pageContent_header %}
-  {% include '@molecules/issue-header.twig' %}
+  {% include '@organisms/current-issue-teaser.twig' %}
 {% endblock %}
 
 {% block pageContent %}
-  
-  {# Issue Articles here #}
-  <ul class="joe__list--issue">
-    {% for article in articles %}
-    <li>
-      {% set teaser = article %}
-      {% include '@molecules/article-teaser.twig' %}
-    </li>
-    {% endfor %}
-  </ul>
+  {% include '@organisms/featured-case.twig' %}
   
 {% endblock %}
 
 {% block footer %} 
   {% include '@organisms/poll--structured.twig' %}
-  {% include '@organisms/related-issues.twig' %}
+  {% include '@organisms/topics.twig' %}
+  {% include '@organisms/about-band.twig' %}
+  {% include '@organisms/cta-band.twig' %}
   {% include '@organisms/footer.twig' %}
 {% endblock %}

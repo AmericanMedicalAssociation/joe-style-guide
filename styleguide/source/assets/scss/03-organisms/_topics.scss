@@ -1,0 +1,37 @@
+.joe__topics {
+  @extend %clearfix;
+  background-color: $black-05;
+  padding: $gutter-mobile;
+  
+  @include breakpoint($bp-med) {
+    padding: $gutter 0;
+  }
+}
+
+.joe__topics__label {
+  @include type($font-serif, .8em, $font-weight-bold, 1.25);
+  margin-bottom: $gutter / 2; 
+  text-transform: uppercase;
+}
+
+.joe__topics__list {
+  list-style: none;
+  margin: 2em 0 1em;
+  padding: 0;
+  
+  @include breakpoint($bp-med) {
+    li {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      
+      &:nth-of-type(odd){
+        padding-right: $gutter / 2;
+      }
+      
+      &:nth-of-type(even){
+        padding-left: $gutter / 2;
+      }
+    }
+  }
+}
