@@ -212,7 +212,8 @@
         "style": "reverse",
         "flag": {
           "type": "Health Law",
-          "issue": "Aug. 2015"
+          "issue": "Aug. 2015",
+          "class": "joe__flag--green"
         },
         "authors": [
           {
