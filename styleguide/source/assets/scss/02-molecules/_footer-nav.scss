@@ -16,7 +16,7 @@
   
   a:link,
   a:visited {
-    @include type($font-sans-serif, .8em, $font-weight-medium, 1.1);
+    @include type($font-sans-serif, .8em, $font-weight-bold, 1.1);
     border-bottom: 0;
   }
   

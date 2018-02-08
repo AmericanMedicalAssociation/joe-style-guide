@@ -3,7 +3,7 @@
   border-bottom: 4px solid $blue;
   background-color: $white;
   box-shadow: 0 0 5px rgba($black-90, .25);
-  text-align:center;
+  text-align: center;
   
   @include breakpoint($bp-small) {
     text-align: left;
@@ -14,10 +14,11 @@
   @extend %clearfix;
   display: block;
   margin: 1em auto 0;
-  max-width: 200px;
+  max-width: 150px;
   
   img {
     max-width: 100%;
+    width: 100%;
   }
   
   &:link,
@@ -31,6 +32,7 @@
     margin-top: 1.35em;
     margin-left: .75em;
     padding-left:.75em;
+    width: 150px;
   }
 }
 
