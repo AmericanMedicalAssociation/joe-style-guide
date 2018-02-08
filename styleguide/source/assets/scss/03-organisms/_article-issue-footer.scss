@@ -15,7 +15,6 @@
   
   .joe__title-label {
     @include type($font-serif, .75em, $font-weight-bold, 1.25);
-    color: $white;
     display: inline-block;
     font-weight: $font-weight-medium;
     

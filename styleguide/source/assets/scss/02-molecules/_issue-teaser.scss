@@ -10,20 +10,41 @@
   span {
     font-weight: $font-weight-medium;
   }
+  
+  .joe__related-issues & {
+    color: rgba($white, .8);
+  }
 }
 
 .joe__issue-teaser__title {
   @include type($font-serif, 1.35em, $font-weight-bold, 1.28);
   margin-top: .5em;
+  
+  .joe__related-issues & {
+    color: $white;
+    
+    a:link,
+    a:visited {
+      color: $white;
+    }
+  }
 }
 
 .joe__issue-teaser__desc {
   @extend %joe__type--small;
   margin-bottom: .5em;
+  
+  .joe__related-issues & {
+    color: rgba($white, .8);
+  }
 }
 
 .joe__issue-teaser__meta {
   @extend %joe__type--smaller;
+  
+  .joe__related-issues & {
+    color: rgba($white, .8);
+  }
 }
 
 .joe__issue-teaser__link {

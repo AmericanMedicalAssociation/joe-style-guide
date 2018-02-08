@@ -17,12 +17,5 @@
   a:link,
   a:visited {
     @include type($font-sans-serif, .8em, $font-weight-medium, 1.1);
-    border-bottom: 0;
-  }
-  
-  a:active,
-  a:hover,
-  a:focus {
-    border-bottom: 1px solid $orange-lighter;
   }
 }

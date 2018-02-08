@@ -17,20 +17,24 @@
     @extend %joe__type--smaller;
     display: block;
     background-color: $white;
-    border: 1px solid $blue;
+    border: 1px solid $black-20;
+    color: $black-80;
     padding: 5px 8px;
     
     &:active,
     &:hover,
     &:focus {
-      border-color: $orange;
+      border-color: $navy-lighter;
+      background-color: $navy-lighter;
+      color: $white;
+      text-decoration: none;
     }
   }
 
   // Active page
   &.is-active a {
-    background-color: $blue-darker;
-    border-color: $blue-darker;
+    background-color: $navy-lighter;
+    border-color: $navy-lighter;
     color: $white;
   }
 }
