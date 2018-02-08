@@ -227,6 +227,7 @@
   },
   "polls": [
     {
+      "vote_count": "10",
       "question" : "A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
       "answers" : [
         {
@@ -238,7 +239,9 @@
           "label" : {
             "text" : "Suggest that the parents read the medical science news report about phase 2 results of the trial so that they can cultivate some hope and be more informed about this option after getting such a devastating diagnosis for their child.",
             "id" : "answer_1"
-          }
+          },
+          "percent": "20%",
+          "vote": "2"
         },
         {
           "input" : {
@@ -250,6 +253,9 @@
             "text" : "Investigate the trial details on your own and invite the family to come to your office for at least an initial conversation.",
             "id" : "answer_2"
           }
+          ,
+          "percent": "40%",
+          "vote": "4"
         },
         {
           "input" : {
@@ -260,7 +266,9 @@
           "label" : {
             "text" : "Admit that you don’t know enough about this trial to advise them well and refer your patient and her family to the specialist.",
             "id" : "answer_3"
-          }
+          },
+          "percent": "10%",
+          "vote": "1"
         },
         {
           "input" : {
@@ -271,7 +279,9 @@
           "label" : {
             "text" : "Ask an administrative staff member from your office to set up a collaborative family meeting with the specialist so that you can also attend and participate in the discussion and in advising the parents.",
             "id" : "answer_4"
-          }
+          },
+          "percent": "20%",
+          "vote": "2"
         },
         {
           "input" : {
@@ -282,12 +292,15 @@
           "label" : {
             "text" : "I Don't Know.",
             "id" : "answer_5"
-          }
+          },
+          "percent": "10%",
+          "vote": "1"
         }
       ]
     },
     {
-      "question" : "This is the 2nd poll question. A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
+      "vote_count": "10",
+      "question" : " This is the 2nd question. A child’s parents ask you for advice on whether to enroll their 5-year-old in a phase 3 clinical trial for an agent that might reduce the size of the child’s brain tumor. You’ve heard about this trial in a medical news source recently, and you suspect that the promising results of the phase 2 trials seemed sensationalized. You consider referring the parents to your colleague specialist, but worry that this particular colleague might overemphasize potential benefits and underemphasize potential risks. What will you do?",
       "answers" : [
         {
           "input" : {
@@ -298,7 +311,9 @@
           "label" : {
             "text" : "Suggest that the parents read the medical science news report about phase 2 results of the trial so that they can cultivate some hope and be more informed about this option after getting such a devastating diagnosis for their child.",
             "id" : "answer_1"
-          }
+          },
+          "percent": "20%",
+          "vote": "2"
         },
         {
           "input" : {
@@ -310,6 +325,9 @@
             "text" : "Investigate the trial details on your own and invite the family to come to your office for at least an initial conversation.",
             "id" : "answer_2"
           }
+          ,
+          "percent": "40%",
+          "vote": "4"
         },
         {
           "input" : {
@@ -320,7 +338,9 @@
           "label" : {
             "text" : "Admit that you don’t know enough about this trial to advise them well and refer your patient and her family to the specialist.",
             "id" : "answer_3"
-          }
+          },
+          "percent": "10%",
+          "vote": "1"
         },
         {
           "input" : {
@@ -331,7 +351,9 @@
           "label" : {
             "text" : "Ask an administrative staff member from your office to set up a collaborative family meeting with the specialist so that you can also attend and participate in the discussion and in advising the parents.",
             "id" : "answer_4"
-          }
+          },
+          "percent": "20%",
+          "vote": "2"
         },
         {
           "input" : {
@@ -342,7 +364,9 @@
           "label" : {
             "text" : "I Don't Know.",
             "id" : "answer_5"
-          }
+          },
+          "percent": "10%",
+          "vote": "1"
         }
       ]
     }
