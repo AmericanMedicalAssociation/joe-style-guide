@@ -1,7 +1,7 @@
 .joe__inline-quote {
   @extend %joe__inline;
   @include type($font-serif, 1.1em, $font-weight-bold, 1.35);
-  color: $blue-darkest;
+  color: $navy-lighter;
   
   .icon-quote {
     display: block;
@@ -12,7 +12,7 @@
     svg {
       height: 30px;
       width: 30px;
-      fill: $green;
+      fill: $navy-lighter;
     }
   }
   
@@ -21,7 +21,7 @@
     height: 8px;
     width: 100%;
     background-color: $blue-darker;
-    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 100%);
+    background: $orange-gradient;
     margin-top: 1em;
   }
 }

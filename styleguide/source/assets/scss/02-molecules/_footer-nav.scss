@@ -7,7 +7,7 @@
   list-style: none;
   margin: 0;
   padding: .25em 0 0;
-  border-top: 1px solid $blue;
+  border-top: 1px solid $blue-darkest;
 }
 
 .joe__footer-nav__item {
@@ -16,7 +16,7 @@
   
   a:link,
   a:visited {
-    @include type($font-sans-serif, .8em, $font-weight-bold, 1.1);
+    @include type($font-sans-serif, .8em, $font-weight-medium, 1.1);
     border-bottom: 0;
   }
   

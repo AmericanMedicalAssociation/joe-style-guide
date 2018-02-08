@@ -1,6 +1,6 @@
 .joe__related-issues {
   @extend %clearfix;
-  box-shadow: 0 0 5px rgba($black-90, .25);
+  box-shadow: $shadow;
   
   @include breakpoint($bp-med) {
     background: linear-gradient(to right, $white 0%, $white 75%, $black-05 75%, $black-05 100%);

@@ -74,8 +74,8 @@
   &:active,
   &:hover,
   &:focus {
-    background-color: $blue-darkest;
-    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 30%, $blue-darkest 100%);
+    background-color: $navy-lighter;
+    background: $blue-gradient;
   
     .icon-zoom {
       svg {

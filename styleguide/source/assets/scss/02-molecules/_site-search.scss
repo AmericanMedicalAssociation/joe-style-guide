@@ -5,9 +5,9 @@
   top: 100%;
   max-height: 0;
   visibility: hidden;
-  background-color: $blue-darker;
-  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
-  box-shadow: 0 0 5px rgba($black-90, .25);
+  background-color: $navy-lighter;
+  background: $blue-gradient;
+  box-shadow: $shadow;
   transition: max-height .5s ease-in, visibility 0s ease-in .5s;
   overflow: hidden;
   padding: 0 .5em;
@@ -26,7 +26,7 @@
     position: relative;
     top: -21px;
     float: right;
-    border: 1px solid $blue-darkest;
+    border: 1px solid $navy-lighter;
     border-radius: 0 0 4px 4px;
     background: none;
     background-color: transparent;

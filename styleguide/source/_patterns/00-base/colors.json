@@ -1,12 +1,16 @@
 {
   "items": [
     {
+      "name": "$navy",
+      "value": "#123256"
+    },
+    {
       "name": "$blue-darkest",
       "value": "#29688a"
     },
     {
       "name": "$blue-darker",
-      "value": "#29688a"
+      "value": "#06847F"
     },
     {
       "name": "$blue",
@@ -22,7 +26,7 @@
     },
     {
       "name": "$orange-darker",
-      "value": "#c05027"
+      "value": "#CE4A22"
     },
     {
       "name": "$orange-lighter",
@@ -50,7 +54,7 @@
     },
     {
       "name": "$green-darker",
-      "value": "#697e36"
+      "value": "#458433"
     },
     {
       "name": "$black",
