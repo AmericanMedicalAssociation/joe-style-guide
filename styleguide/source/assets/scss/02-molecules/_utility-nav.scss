@@ -85,12 +85,6 @@
     border-left: 1px solid $white;
   }
   
-  a:active,
-  a:hover,
-  a:focus {
-    color: $orange-lighter;
-  }
-  
   @include breakpoint($bp-med) {
     display: inline-block;
     border: 0;
