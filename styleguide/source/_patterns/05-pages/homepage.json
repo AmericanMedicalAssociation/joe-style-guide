@@ -192,6 +192,7 @@
   "topic": {
     "articles" : [
       { 
+        "style": "reverse",
         "flag": {
           "type": "AMA Code Says",
           "issue": "Aug. 2015"
@@ -208,6 +209,7 @@
         }
       },
       {
+        "style": "reverse",
         "flag": {
           "type": "Health Law",
           "issue": "Aug. 2015"

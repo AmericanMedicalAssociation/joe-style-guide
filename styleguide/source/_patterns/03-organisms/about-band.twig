@@ -1,26 +1,27 @@
 <section class="joe__about-band">
   <div class="container">
-    <div class="joe__layout--two-column">
-      <div class="joe__col-one">
-        <h1 class="joe__about__title">{{ about.title }}</h1>
-        <div class="joe__about__desc">
-          {{ about.description }}
+    <div class="joe__layout--center-offset">
+      <div class="joe__page-content">
+        <div class="joe__about-band__block">
+          <h1 class="joe__about__title">{{ about.title }}</h1>
+          <div class="joe__about__desc">
+            {{ about.description }}
+          </div>
+          {% set button = about.button %}
+          {% include "@atoms/button.twig" %}
         </div>
-        {% set button = about.button %}
-        {% include "@atoms/button.twig" %}
-      </div>
-
-      <div class="joe__col-two">
-        {% include "@atoms/title-label.twig" with { "title_label": {"level" : "2", "text" : "Upcoming Themes" } } %}
-        
-        <ul class="joe__about__themes">
-        {% for theme in about.themes %}
-          <li>
-            <span class="joe__about__themes__date">{{theme.date}}</span>
-            {{ theme.title }}
-          </li>
-        {% endfor %}
-        </ul>
+        <div class="joe__about-band__block">
+          {% include "@atoms/title-label.twig" with { "title_label": {"level" : "2", "text" : "Upcoming Themes" } } %}
+          
+          <ul class="joe__about__themes">
+          {% for theme in about.themes %}
+            <li>
+              <span class="joe__about__themes__date">{{theme.date}}</span>
+              {{ theme.title }}
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </div>

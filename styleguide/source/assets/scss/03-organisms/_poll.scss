@@ -2,7 +2,7 @@
   @extend %clearfix;
   background-color: $white;
   box-shadow: $shadow;
-  padding: $gutter-mobile;
+  padding: $gutter-mobile 0;
   
   @include breakpoint($bp-med) {
     padding: $gutter 0 ($gutter * 2);

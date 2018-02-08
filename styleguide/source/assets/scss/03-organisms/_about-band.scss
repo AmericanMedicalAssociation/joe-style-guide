@@ -1,9 +1,18 @@
 .joe__about-band {
   @extend %clearfix;
-  padding: $gutter-mobile;
+  padding: $gutter-mobile 0;
   
   @include breakpoint($bp-med) {
-    padding: ($gutter * 2) 0;
+    padding: 0;
+    background: linear-gradient(to right, $white 0%, $white 42.5%, $black-05 42.5%, $black-05 100%);
+  }
+  
+  .joe__page-content {
+    
+    @include breakpoint($bp-med) {
+      display: flex;
+      align-items: stretch; 
+    }
   }
 }
 
@@ -32,4 +41,39 @@
 .joe__about__themes__date {
   @extend %joe__type--smaller;
   display: block;
+}
+
+.joe__about-band__block {
+  
+  &:first-child {
+    border-bottom: 1px solid $black-05;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+  }
+  
+  &:last-child {
+    margin-bottom: 1em;
+  }
+  
+  @include breakpoint($bp-med) {
+    display: inline-block;
+    margin-bottom: 0;
+    float: left;
+    padding: ($gutter * 2) 0;
+    
+    &:first-child {
+      @include gutter($padding-right-full...);
+      background-color: $white;
+      width: 40%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    &:last-child {
+      @include gutter($padding-left-full...);
+      width: 60%;
+      background-color: $black-05;
+      margin-bottom: 0;
+    }
+  }
 }

@@ -40,8 +40,8 @@ button {
 .joe__button--tool {
   @extend %joe__button;
   @include type($font-serif, .65em, $font-weight-bold, 1.25);
-  background-color: $orange-darker;
-  background: $orange-gradient;
+  background-color: $green-darker;
+  background: $green-gradient;
   border-radius: 0;
   padding: 6px 8px;
   text-transform: none;
