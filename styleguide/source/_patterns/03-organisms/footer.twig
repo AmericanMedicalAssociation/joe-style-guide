@@ -1,24 +1,16 @@
 <footer class="joe__footer">
   <div class="container">
-    <div class="joe__layout--two-column">
-      <div class="joe__col-one">
+    <div class="joe__layout--66-33">
+      <div class="joe__col-66">
         {% set wordmark = footer_wordmark %}
         {% include "@molecules/wordmark.twig" %}
+        {% include "@molecules/footer-nav.twig" %}
+      </div>
+      <div class="joe__col-33">
         <a class="joe__footer-brand" href="{{ footer_logo.link }}">
           {% set image = footer_logo %}
           {% include "@atoms/image.twig" %}
         </a>
-        {% include "@molecules/footer-nav.twig" %}
-      </div>
-      <div class="joe__col-two joe__footer--right">
-        <div class="joe__footer__block">
-          {% set footer_block = footer_block_address %}
-          {% include "@molecules/footer-block.twig" %}
-        </div>
-        <div class="joe__footer__block">
-          {% set footer_block = footer_block_email %}
-          {% include "@molecules/footer-block.twig" %}
-        </div>
       </div>
     </div>
     

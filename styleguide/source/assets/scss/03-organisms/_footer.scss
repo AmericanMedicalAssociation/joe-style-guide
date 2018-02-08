@@ -3,62 +3,34 @@
   border-bottom: 4px solid $blue;
   background-color: $white;
   box-shadow: 0 0 5px rgba($black-90, .25);
+  text-align:center;
+  
+  @include breakpoint($bp-small) {
+    text-align: left;
+  }
 }
 
 .joe__footer-brand {
   @extend %clearfix;
   display: block;
-  margin-left: 0;
-  padding-left: 0;
-  margin-top: 0;
-  border-left: 0;
-  max-width: 55px;
+  margin: 1em auto 0;
+  max-width: 200px;
+  
+  img {
+    max-width: 100%;
+  }
   
   &:link,
   &:visited {
     border-bottom: 0;
   }
   
-  @include breakpoint(405px 600px) {
-    display: inline-block;
-    margin-top: 1.35em;
-    margin-left: .75em;
-    padding-left:.75em;
-    border-left: 1px solid $black-20;
-  }
-  
-  @include breakpoint(600px 800px) {
-    display: block;
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 0;
-    border-left: 0;
-  }
-  
-  @include breakpoint(800px) {
-    display: inline-block;
-    margin-top: 1.35em;
-    margin-left: .75em;
-    padding-left:.75em;
-    border-left: 1px solid $black-20;
-  }
-}
-
-.joe__footer--right {
-  display: flex;
-  flex-direction: column;
-  
-  @include breakpoint($bp-xs) {
-    flex-direction: row;
-  }
-  
   @include breakpoint($bp-small) {
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  @include breakpoint($bp-med) {
-    flex-direction: row;
+    float: right;
+    display: inline-block;
+    margin-top: 1.35em;
+    margin-left: .75em;
+    padding-left:.75em;
   }
 }
 
