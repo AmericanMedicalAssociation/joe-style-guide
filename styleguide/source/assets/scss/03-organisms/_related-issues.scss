@@ -1,9 +1,10 @@
 .joe__related-issues {
   @extend %clearfix;
-  box-shadow: 0 0 5px rgba($black-90, .25);
+  box-shadow: $shadow;
+  background: $navy;
   
   @include breakpoint($bp-med) {
-    background: linear-gradient(to right, $white 0%, $white 75%, $black-05 75%, $black-05 100%);
+    background: linear-gradient(to right, $navy 0%, $navy 75%, $black-05 75%, $black-05 100%);
   }
 }
 
@@ -23,6 +24,10 @@
   @include gutter($padding-left-full...);
   @include gutter($padding-right-full...);
   
+  .joe__title-label {
+    color: $blue-lighter;
+  }
+  
   @include breakpoint($bp-med) {
     @include gutter($padding-right-full...);
     padding-left: 0;
@@ -31,7 +36,6 @@
     
     .joe__title-label {
       float: left;
-      color: $black-80;
     }
   }
 }
@@ -63,6 +67,11 @@
 
 .joe__related-issues__link {
   @include type($font-serif, .7em, $font-weight-bold, 1.35);
+  
+  &:link,
+  &:visited {
+    color: $blue-lighter;
+  }
   
   @include breakpoint(275px){
     position: relative;

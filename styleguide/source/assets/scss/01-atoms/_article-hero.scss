@@ -5,8 +5,8 @@
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: $blue-darkest;
-  background: linear-gradient(top, $blue-darker 0%, $white 100%);
+  background-color: $orange;
+  background: $gold-gradient;
   z-index: -1;
   margin-bottom: -200px;
   
@@ -22,12 +22,12 @@
   
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -400px;
+    margin-bottom: -350px;
   }
   
   @include breakpoint($bp-large) {
     height: 900px;
-    margin-bottom: -500px;
+    margin-bottom: -450px;
   }
 }
 
@@ -50,7 +50,7 @@
   height: 50%;
   margin: 0 auto;
   z-index: 0;
-  background: linear-gradient(rgba($white, 0%) 0%, $white 100%);
+  background: $white-gradient;
   
   .joe__article-hero--no-image & {
     max-width: none;

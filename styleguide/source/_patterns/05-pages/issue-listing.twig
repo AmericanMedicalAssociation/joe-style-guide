@@ -12,7 +12,9 @@
 
 {% block pageContent %}
   
-  {% include '@organisms/current-issue-teaser.twig' %}
+  <div class="joe__issue-listing--current">
+    {% include '@organisms/current-issue-teaser.twig' %}
+  </div>
 
   <ul class="joe__list--issues">
     {% for issue in issues %}

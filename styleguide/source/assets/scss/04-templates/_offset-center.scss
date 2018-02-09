@@ -22,8 +22,13 @@
   background-color: $white;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
+  
+  .joe__topics &,
+  .joe__about-band & {
+    background-color: transparent;
+  }
 
-  @include breakpoint($bp-med) {
+  @include breakpoint($bp-large) {
     @include gutter($margin-right-full...);
     @include gutter($margin-left-full...);
     padding-left: $gutter;
@@ -34,7 +39,7 @@
   .no-cssgrid & {
     @extend %clearfix;
     
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       display: block;
       width: 100%;
     }

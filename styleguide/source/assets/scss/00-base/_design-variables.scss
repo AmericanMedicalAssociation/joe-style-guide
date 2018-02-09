@@ -1,0 +1,7 @@
+$blue-gradient: linear-gradient(45deg, $navy 0%, $navy-lighter 100%);
+$green-gradient: linear-gradient(45deg, $green-darker 0%, rgba($green-darker, .8) 100%);
+$orange-gradient: linear-gradient(45deg, $orange-darker 0%, $orange 100%);
+$gold-gradient: linear-gradient(45deg, $gold 0%, $orange 100%);
+$white-gradient: linear-gradient(rgba($white, 0%) 0%, $white 100%);
+$shadow: 0 0 5px rgba($black-90, .25);
+$shadow-lighter: 0 0px 3px rgba($black-20, .25);

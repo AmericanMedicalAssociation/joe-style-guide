@@ -1,10 +1,10 @@
 .joe__topics {
   @extend %clearfix;
-  background-color: $black-05;
-  padding: $gutter-mobile;
+  background-color: $navy;
+  padding: 0 0 $gutter-mobile;
   
   @include breakpoint($bp-med) {
-    padding: $gutter 0;
+    padding: 1.5em 0 2.5em;
   }
 }
 
@@ -12,6 +12,8 @@
   @include type($font-serif, .8em, $font-weight-bold, 1.25);
   margin-bottom: $gutter / 2; 
   text-transform: uppercase;
+  color: rgba($white, .8);
+  text-align: center;
 }
 
 .joe__topics__list {

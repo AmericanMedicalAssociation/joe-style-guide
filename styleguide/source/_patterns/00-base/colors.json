@@ -1,8 +1,20 @@
 {
   "items": [
     {
-      "name": "$blue-darker",
+      "name": "$navy",
+      "value": "#1f1f52"
+    },
+    {
+      "name": "$navy-lighter",
+      "value": "#3f3f6d"
+    },
+    {
+      "name": "$blue-darkest",
       "value": "#29688a"
+    },
+    {
+      "name": "$blue-darker",
+      "value": "#06847F"
     },
     {
       "name": "$blue",
@@ -18,11 +30,15 @@
     },
     {
       "name": "$orange-darker",
-      "value": "#c05027"
+      "value": "#CE4A22"
     },
     {
       "name": "$orange-lighter",
       "value": "#ea8575"
+    },
+    {
+      "name": "$gold",
+      "value": "#f2ce5a"
     },
     {
       "name": "$red",
@@ -46,7 +62,7 @@
     },
     {
       "name": "$green-darker",
-      "value": "#697e36"
+      "value": "#298555"
     },
     {
       "name": "$black",
@@ -65,8 +81,12 @@
       "value": "#d1d3d4"
     },
     {
+      "name": "$black-10",
+      "value": "#E5E5E5"
+    },
+    {
       "name": "$black-05",
-      "value": "#f1f2f2"
+      "value": "#f1f1f1"
     },
     {
       "name": "$white",

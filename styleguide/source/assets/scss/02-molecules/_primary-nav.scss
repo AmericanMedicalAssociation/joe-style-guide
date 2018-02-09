@@ -43,7 +43,7 @@
     a:visited {
       display: inline-block;
       padding: .5em;
-      color: $blue-darker;
+      color: $blue-darkest;
       border-bottom: 0;
     }
     
@@ -66,12 +66,14 @@
       a:link,
       a:visited {
         color: $white;
+        border: 0;
       }
       
       a:active,
       a:hover,
       a:focus {
         color: $white;
+        border: 0;
       }
     }
   }

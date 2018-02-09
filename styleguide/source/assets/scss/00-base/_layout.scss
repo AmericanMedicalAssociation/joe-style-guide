@@ -10,10 +10,12 @@
 .container {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 .5em;
+  @include gutter($padding-right-half...);
+  @include gutter($padding-left-half...);
   
   @include breakpoint($bp-med) {
-    padding: 0 1em;
+    @include gutter($padding-right-full...);
+    @include gutter($padding-left-full...);
   }
 }
 

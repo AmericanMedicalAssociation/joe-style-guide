@@ -4,7 +4,7 @@ button {
   @include type($font-serif, .9em, $font-weight-bold, 1.25);
   display: inline-block;
   background-color: $blue-darker;
-  background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 100%);
+  background: $blue-gradient;
   color: $white;
   letter-spacing: .075em;
   text-transform: uppercase;
@@ -23,7 +23,7 @@ button {
   &:hover,
   &:focus {
     background-color: $orange-darker;
-    background: linear-gradient(120deg, $pink 0%, $orange-darker 100%);
+    background: $orange-gradient;
     transition: all .5s ease;
     text-decoration: none;
     border-bottom: 0;
@@ -40,8 +40,8 @@ button {
 .joe__button--tool {
   @extend %joe__button;
   @include type($font-serif, .65em, $font-weight-bold, 1.25);
-  background-color: $orange-darker;
-  background: linear-gradient($orange-darker 0%, $pink 100%);
+  background-color: $green-darker;
+  background: $green-gradient;
   border-radius: 0;
   padding: 6px 8px;
   text-transform: none;
@@ -51,7 +51,7 @@ button {
   &:hover,
   &:focus {
     background-color: $blue-darker;
-    background: linear-gradient($blue-darker 0%, $blue-darkest 100%);
+    background: $blue-gradient;
     text-decoration: none;
     border-bottom: 0;
   }

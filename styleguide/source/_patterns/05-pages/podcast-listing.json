@@ -94,7 +94,7 @@
     "symbol": "twitter",
     "text": "twitter"
   },
-  "page_title": "Podcasts",
+  "page_title": "Podcast",
   "contentType": "Podcasts",
   "filters": [
     {
@@ -104,6 +104,7 @@
       "text": "Topics",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Topics",
       "options": [
         { 
           "value":"Topic_1", 
@@ -149,6 +150,7 @@
       "id": "articleCompetencies",
       "text": "Core Competencies",
       "class": "joe__chosen",
+      "chosen_placeholder": "Choose Competencies",
       "multiple": "true",
       "options": [
         { 
@@ -196,6 +198,7 @@
       "text": "Specialty",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Specialties",
       "options": [
         { 
           "value":"Specialty_1", 
@@ -242,6 +245,7 @@
       "text": "Month",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Months",
       "options": [
         { 
           "value":"January", 
@@ -300,6 +304,7 @@
       "text": "Year",
       "class": "joe__chosen",
       "multiple": "true",
+      "chosen_placeholder": "Choose Years",
       "options": [
         { 
           "value":"2018", 
@@ -404,7 +409,8 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"The Case for Thinking of Violence as a Contagion: An Interview with Dr. Gary Slutkin"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -419,7 +425,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -434,7 +441,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -446,7 +454,8 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"How Clinicians Can Use Their Skills and Authority to Promote Health Equity"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -461,7 +470,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -476,7 +486,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -491,7 +502,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -506,7 +518,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -518,7 +531,8 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"  The Importance of Spiritual Care Referrals for Cancer Patients: An Interview with Dr. Tarris Rosell"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
       "flag": {
@@ -533,7 +547,8 @@
       },
       "image": {
         "src":"https://ipsumimage.appspot.com/450x225"
-      }
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     }
   ],
   "footer_wordmark": {
@@ -548,7 +563,7 @@
   "footer_navs": [
     {
       "href": "/",
-      "text": "Current Issue"
+      "text": "AMA Home"
     },
     {
       "href": "/",
@@ -565,28 +580,11 @@
     {
       "href": "/",
       "text": "FAQs"
+    },
+    {
+      "href": "/",
+      "text": "Contact Us"
     }
   ],
-  "footer_block_address": {
-    "title_label": {
-      "level": "3",
-      "text": "Contact Us"
-    },
-    "paragraph": {
-      "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
-    } 
-  },
-  "footer_block_email": {
-    "title_label": {
-      "level": "4",
-      "text": "Email"
-    },
-    "link": {
-      "title": "Email AMA Journal of Ethics",
-      "href": "mailto:joe@ama-assn.org",
-      "text": "joe@ama-assn.org",
-      "class": "joe__link--black"
-    }
-  },
   "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
 }

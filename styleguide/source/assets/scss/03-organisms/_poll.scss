@@ -1,8 +1,8 @@
 .joe__poll {
   @extend %clearfix;
   background-color: $white;
-  box-shadow: 0 0 5px rgba($black-90, .25);
-  padding: $gutter-mobile;
+  box-shadow: $shadow;
+  padding: $gutter-mobile 0;
   
   @include breakpoint($bp-med) {
     padding: $gutter 0 ($gutter * 2);
@@ -107,7 +107,7 @@
   background: none;
   border-radius: 0;
   padding: 0;
-  color: $blue-darker;
+  color: $blue-darkest;
   text-transform: none;
   letter-spacing: 0;
   margin-left: 1em;
@@ -118,7 +118,7 @@
     background-color: none;
     background: none;
     text-decoration: underline;
-    color: $blue-darkest;
+    color: $navy;
   }
   
   .poll__hide {
@@ -163,7 +163,7 @@
   
   .foreground {
     height: 10px;
-    background-color: $green;
+    background-color: $green-darker;
   }
   
   .percent {

@@ -1,7 +1,8 @@
 <select name="{{ select.name }}"
         id="{{ select.id }}"
         {% if select.class %}class="{{ select.class }}"{% endif %}
-         {% if select.multiple %}multiple{% endif %}>
+        {% if select.multiple %}multiple{% endif %}
+        {% if select.chosen_placeholder %}data-placeholder="{{ select.chosen_placeholder }}"{% endif %}>
 
   {% for option in select.options %}
     <option value="{{ option.value }}" 

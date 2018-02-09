@@ -2,7 +2,7 @@
 a,
 %joe__link,
 .joe__link {
-  color: $blue-darker;
+  color: $blue-darkest;
   text-decoration: none;
   outline: 0;
   text-decoration: none;
@@ -10,7 +10,7 @@ a,
 
   &:hover,
   &:focus {
-    color: $blue-darkest;
+    color: $navy;
     text-decoration: underline;
   }
 }
@@ -22,7 +22,7 @@ a,
   
   &:hover,
   &:focus {
-    color: $blue-darker;
+    color: $blue-darkest;
   }
 } 
 

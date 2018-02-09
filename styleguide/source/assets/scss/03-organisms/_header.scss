@@ -5,7 +5,7 @@
 .joe__header {
   @extend %clearfix;
   background-color: $white;
-  box-shadow: 0 0 5px rgba($black-90, .25);
+  box-shadow: $shadow;
   border-top: 4px solid $blue-darkest;
   padding: 18px 0 5px;
   z-index: 2;
@@ -44,12 +44,12 @@
   }
   
   @include breakpoint($bp-med) {
-    border-top: 30px solid $blue-darkest;
+    border-top: 30px solid $navy;
     padding: 1em 0 .5em;
   }
   
   @include breakpoint($bp-large) {
-    border-top: 36px solid $blue-darkest;
+    border-top: 36px solid $navy;
   }
 }
 
@@ -61,9 +61,8 @@
   top: 100%;
   max-height: 0;
   visibility: hidden;
-  background-color: $blue-darker;
-  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
-  box-shadow: 0 0 5px rgba($black-90, .25);
+  background-color: $navy-lighter;
+  box-shadow: $shadow;
   transition: max-height .5s ease-in, visibility 0s ease-in .5s;
   overflow-y: scroll;
   border-right: 1px solid $white;
@@ -98,8 +97,8 @@
       max-height: 0;
       visibility: hidden;
       background-color: $blue-darker;
-      background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
-      box-shadow: 0 0 5px rgba($black-90, .25);
+      background: $blue-gradient;
+      box-shadow: $shadow;
       transition: max-height .5s ease-in, visibility 0s ease-in .5s;
       overflow: hidden;
       

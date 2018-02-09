@@ -3,34 +3,62 @@
   display: inline-block;
   position: relative;
   left: 0;
-  top: -6px;
-  padding: 4px 6px 4px 6px;
+  padding: 4px 8px 4px 8px;
   color: $white;
-  background-color: $blue-darkest;
+  background-color: $navy-lighter;
+  background: $blue-gradient;
   text-transform: uppercase;
   letter-spacing: .075em;
 }
 
+.joe__flag__type {
+  font-weight: $font-weight-bold;
+  display: inline-block;
+}
+
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
-  padding: 6px 9px 6px 27px;
-  left: -2em;
-  margin-right: -2em;
+  padding: 3em 10px 10px;
+  top: -2.7em;
+  
+  .joe__flag__type {
+    display: block;
+  }
+  
+  .joe__poll & {
+    top: -2em;
+  }
+  
+  .joe__issue-listing--current & {
+    top: -2.7em;
+    padding-top: 2em;
+
+  }
   
   @include breakpoint($bp-med) {
-    padding: 6px 9px 6px 40px;
-    left: -2.7em;
+    padding: 4em 12px 10px;
+    top: -4em;
+    
+    .joe__poll & {
+      top: -2.7em;
+    }
   }
 }
 
+%joe__flag--red,
 .joe__flag--red {
   background-color: $orange-darker;
+  background: $orange-gradient;
 }
 
+%joe__flag--green,
 .joe__flag--green {
   background-color: $green-darker;
+  background: $green-gradient;
 }
 
+%joe__flag--gray,
 .joe__flag--gray {
   background-color: $black-05;
+  background: $black-05;
 }

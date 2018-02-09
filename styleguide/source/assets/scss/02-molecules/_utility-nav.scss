@@ -4,7 +4,7 @@
   background-color: $blue-darkest;
   column-count: 1;
   column-gap: 0;
-  background: linear-gradient(120deg, $blue-darkest 0%, $blue-darker 100%);
+  background: $navy-lighter;
   
   @include breakpoint($bp-xs) {
     column-count: 2;
@@ -12,12 +12,12 @@
   
   @include breakpoint($bp-med) {
     position: absolute;
-    width: 96%;
+    width: 93%;
     max-width: 1550px;
     margin: 0 auto;
     column-count: 1;
-    background: $blue-darkest;
-    background-color: $blue-darkest;
+    background: $navy-lighter;
+    background-color: $navy-lighter;
     
     .joe__header & {
       top: -25px;
@@ -27,7 +27,7 @@
   }
   
   @include breakpoint($bp-large) {
-    width: 97%;
+    width: 94%;
     
     .joe__header & {
       top: -28px;
@@ -54,6 +54,10 @@
   
   @include breakpoint($bp-med) {
     float: right;
+  }
+  
+  @include breakpoint($bp-xl) {
+    margin-right: 1.75em;
   }
 }
 
@@ -83,12 +87,6 @@
     color: $white;
     border: 0;
     border-left: 1px solid $white;
-  }
-  
-  a:active,
-  a:hover,
-  a:focus {
-    color: $orange-lighter;
   }
   
   @include breakpoint($bp-med) {

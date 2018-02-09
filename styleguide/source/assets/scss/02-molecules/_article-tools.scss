@@ -1,6 +1,6 @@
 .joe__article-tools {
   @include gutter($margin-top-full...);
-  border-top: 1px solid $orange-darker;
+  border-top: 1px solid $green-darker;
   position: relative;
   text-align: right;
   width: 100%;
@@ -9,10 +9,10 @@
   
   .joe__button--tool {
     float: right;
-    margin-left: 4px;
+    margin: 0 0 0 4px;
     
     @include breakpoint($bp-med) {
-      margin-left: 8px;
+      margin: 0 0 0 8px;
     }
   }
   
@@ -20,7 +20,7 @@
     
     .joe__button--tool {
       position: relative;
-      right: 93px;
+      right: 94px;
       
       @include breakpoint($bp-med) {
         right: 107px;

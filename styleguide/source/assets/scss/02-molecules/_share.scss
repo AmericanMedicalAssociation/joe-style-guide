@@ -18,7 +18,7 @@
   svg {
     height: 30px;
     width: 30px;
-    fill: $blue-darker;
+    fill: $blue-darkest;
   }
 
   &:active,
@@ -52,7 +52,7 @@
   text-align: center;
   z-index: 10;
   position: relative;
-  background: linear-gradient(rgba($white, 0%),rgba($white, 100%));
+  background: $white-gradient;
   bottom: 3px;
   right: 40px;
   opacity: 0;
@@ -69,6 +69,7 @@
     display: block;
     position: static;
     position: absolute;
+    background: none;
     right: auto;
     left: -10px;
     top: auto;
@@ -98,7 +99,7 @@
   svg {
     height: 30px;
     width: 30px;
-    fill: $blue-darker;
+    fill: $blue-darkest;
   }
 
   a:link,
@@ -134,7 +135,7 @@
     }
 
     svg {
-      box-shadow: 0 0 5px rgba($black-90, .5);
+      box-shadow: $shadow;
     }
   }
 }

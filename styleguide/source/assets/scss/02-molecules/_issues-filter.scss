@@ -10,6 +10,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  
+  @include breakpoint($bp-small) {
+    border-bottom: 0;
+  }
 }
 
 .joe__issue-filter--trigger {
@@ -35,6 +39,7 @@
   }
   
   @include breakpoint($bp-small) {
+    border: 1px solid $black-05;
     display: inline-block;
   }
 }

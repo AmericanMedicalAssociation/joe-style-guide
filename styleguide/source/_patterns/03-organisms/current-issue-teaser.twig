@@ -1,6 +1,6 @@
 <article class="joe__issue-teaser--current">
   <div class="joe__issue-teaser--left">
-    <span class="joe__issue-teaser__label">{{current_issue.date}} <span>Current Issue</span></span>
+    <span class="joe__flag joe__flag--larger"><div class="joe__flag__type">{{current_issue.date}}</div> Current Issue</span>
     {% set link = current_issue.title %}
     <h{{ current_issue.level }} class="joe__issue-teaser__title">{% include "@atoms/link.twig" %}</h{{ current_issue.level }}>
     <div class="joe__issue-teaser__desc">
@@ -22,5 +22,4 @@
     {% endfor %}
     </ul>
   </div>
-
 </article>

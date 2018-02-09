@@ -5,13 +5,18 @@
   margin-bottom: 2em;
   
   .joe__issue-teaser__title {
-    @include type($font-serif, 1.5em, $font-weight-bold, 1.28);
-    margin-top: 1em;  
+    @include type($font-serif, 1.7em, $font-weight-bold, 1.2);
+    margin-top: 0;  
     
     a:link,
     a:visited {
       color: $black;
     }
+  }
+  
+  .joe__issue-listing--current & {
+    border-top: 1px solid $navy-lighter;
+    padding-top: 2em;
   }
 }
 

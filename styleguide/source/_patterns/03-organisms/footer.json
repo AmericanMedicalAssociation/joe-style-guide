@@ -28,40 +28,11 @@
     {
       "href": "/",
       "text": "FAQs"
+    },
+    {
+      "href": "/",
+      "text": "Contact Us"
     }
   ],
-  "footer_block_address": {
-    "title_label": {
-      "level": "3",
-      "text": "Contact Us"
-    },
-    "paragraph": {
-      "text": "AMA Journal of Ethics<br/>330 N. Wabash Ave. Suite 39300<br/>Chicago, Illinois 60611-5885"
-    } 
-  },
-  "footer_block_phone": {
-    "title_label": {
-      "level": "4",
-      "text": "Telephone"
-    },
-    "link": {
-      "title": "Call AMA Journal of Ethics",
-      "href": "tel:+13124644075",
-      "text": "312-464-4075",
-      "class": "joe__link--black"
-    }  
-  },
-  "footer_block_email": {
-    "title_label": {
-      "level": "4",
-      "text": "Email"
-    },
-    "link": {
-      "title": "Email AMA Journal of Ethics",
-      "href": "mailto:joe@ama-assn.org",
-      "text": "joe@ama-assn.org",
-      "class": "joe__link--black"
-    }
-  },
   "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
 }

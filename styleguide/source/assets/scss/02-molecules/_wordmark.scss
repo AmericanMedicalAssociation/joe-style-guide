@@ -13,12 +13,16 @@
   margin-top: 0;
   
   .joe__footer & {
-    @extend %joe__h4;
+    @include type($font-serif, 1.2em, $font-weight-bolder, 1.3);
   }
   
   @include breakpoint($bp-small) {
     @include type($font-serif, 1.55em, $font-weight-bolder, 1.28);
     margin-top: 8px;
+    
+    .joe__footer & {
+      @include type($font-serif, 1.4em, $font-weight-bolder, 1.3);
+    }
   }
 }
 
@@ -33,6 +37,10 @@
   
   @include breakpoint($bp-small) {
     @include type($font-sans-serif, 1.1em, $font-weight-medium, 1.28);
+    
+    .joe__footer & {
+      @include type($font-sans-serif, 0.95em, $font-weight-medium, 1.15);
+    }
   }
   
 }

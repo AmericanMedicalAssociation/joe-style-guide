@@ -14,8 +14,8 @@
   &:hover,
   &:focus {
     color: $white;
-    background-color: $blue-darker;
-    background: linear-gradient(120deg, $blue-darker 0%, $blue-darkest 100%);
+    background-color: $navy-lighter;
+    background: $blue-gradient;
   }
   
   .joe__filters__open {
@@ -71,7 +71,7 @@
   font-size: 80%;
   background-color: $black-05;
   padding: .5em 1em;
-  box-shadow: 0 0px 3px rgba($black-20, .25);
+  box-shadow: $shadow;
   
   @include breakpoint($bp-med) {
     display: block;

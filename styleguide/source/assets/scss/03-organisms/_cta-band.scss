@@ -1,6 +1,7 @@
 .joe__cta-band {
   @extend %clearfix;
-  background-color: $black-05;
+  background-color: $orange;
+  background: $gold-gradient;
   padding: $gutter-mobile 0;
   
   @include breakpoint($bp-med) {

@@ -4,24 +4,27 @@
 
 .joe__article-header__reviewed {
   @extend %joe__type--smaller;
-  display: inline-block;
+  display: block;
   color: $black-80;
-  border: 1px solid $black-20;
-  border-right: 0;
-  padding: 6px 27px 6px 9px;
-  position: relative;
-  top: -5px;
-  right: -1.9em;
-  float: right;
+  margin-bottom: 1em;
+  
+  @include breakpoint(500px) {
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
+    top: -2.5em;
+    float: right;
+    border: 1px solid $black-20;
+    border-top: 0;
+  }
   
   @include breakpoint($bp-med) {
-    padding: 6px 40px 6px 9px;
-    right: -2.5em;
+    top: -3.75em;
   }
 }
 
 .joe__article-header__title {
-  @include gutter($margin-top-half...);
+  margin-top: 0;
   
   @include breakpoint($bp-med) {
     @include type($font-serif, 2.05em, $font-weight-bold, 1.25);
