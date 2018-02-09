@@ -31,7 +31,7 @@
 }
 
 .joe__issue-teaser__desc {
-  @extend %joe__type--small;
+  @include type($font-sans-serif, 1em, $font-weight-medium, 1.35);
   margin-bottom: .5em;
   
   .joe__related-issues & {

@@ -5,7 +5,7 @@
   margin-bottom: 2em;
   
   .joe__issue-teaser__title {
-    @include type($font-serif, 1.5em, $font-weight-bold, 1.28);
+    @include type($font-serif, 1.7em, $font-weight-bold, 1.2);
     margin-top: 0;  
     
     a:link,
