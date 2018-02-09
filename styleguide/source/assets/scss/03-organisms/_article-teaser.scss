@@ -191,20 +191,8 @@
   .joe__flag--green,
   .joe__flag--gray {
     color: $navy;
-    background-color: rgba($white, .85);
-    background: rgba($white, .85);
-    
-    &.joe__flag--red {
-      color: $orange-darker;
-    }
-    
-    &.joe__flag--green {
-      color: $green-darker;
-    }
-    
-    &.joe__flag--gray {
-      color: $black-80;
-    }
+    background-color: $gold;
+    background: $gold;
   }
 }
 
