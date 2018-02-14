@@ -1,0 +1,10 @@
+<header class="joe__issue-header">
+  <span class="joe__issue-header__date">{{issue.date}}</span>
+
+  <h1 class="joe__issue-header__title">{{ issue.title }}</h1>
+  {% if issue.description %}
+  <div class="joe__issue-header__desc">
+    {{ issue.description }}
+  </div>
+  {% endif %}
+</header>

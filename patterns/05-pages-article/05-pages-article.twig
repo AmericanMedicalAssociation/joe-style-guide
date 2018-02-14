@@ -1,7 +1,7 @@
 {% extends '@templates/two-column-left--extended.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
-  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '1'}} %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '3'}} %}
 {% endblock %}
 
 {% block pageContent_header %}
@@ -58,12 +58,11 @@
 
   <h2>Co-Creation: Transforming Health Care?</h2>
   <p>Co-creation provides an opportunity to take stock and consider the possibilities for transforming health care systems by bringing together citizens, professionals, organizations, and institutions to renegotiate key values and relationships. While the opportunities for change are significant, ambitions for co-creation must be assessed in light of what is practically and politically achievable and mindful of ethical dilemmas. However, for better or worse, co-creation offers the chance for clinicians to reconsider the purposes of medicine and for patients and other stakeholders to have their voices heard and respected. Co-creation therefore provides a platform for understanding medicine in far broader terms than at present, enabling the social dimensions of health and the long-standing inequalities and inadequacies of health care systems to be illuminated and transformed. This is certainly not a risk-free endeavor. If it is to be a success, co-creation will require the rebalancing and renegotiation of multiple roles and relationships and the promotion of more complex forms of coordination and collaboration. The risks and challenges are significant, but so, too, are the potential rewards.</p>
-  
-  {% include "@molecules/tags-list.twig" %}
 {% endblock %}
 
 {% block pageContent_footer %}
   {% include "@molecules/references.twig" %}
+  {% include "@molecules/tags-list.twig" %}
   {% include "@organisms/article-footer.twig" %}
   
   {% set authors = article_authors %}
@@ -79,7 +78,7 @@
 {% endblock %}
 
 {% block footer %}
-  {% include "@organisms/issue-teaser.twig" %}
+  {% include "@organisms/article-issue-footer.twig" %}
   
   {% include '@organisms/footer.twig' %}
 {% endblock %}

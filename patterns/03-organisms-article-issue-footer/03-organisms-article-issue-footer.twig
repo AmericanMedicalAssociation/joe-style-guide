@@ -1,9 +1,9 @@
-<section class="joe__issue-teaser">
+<section class="joe__article-issue-footer">
   <div class="container">
     {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Also in this Issue" } } %}
     {% set title_label = issue.title %}
     {% include "@atoms/title-label.twig" %}
-    <div class="joe__layout--two-column joe__issue-teaser__block">
+    <div class="joe__layout--two-column joe__article-issue-footer__block">
       {# Keeping tabindex for accessibility purposes #}
       <div class="joe__col-one--med">
         {% for article in issue.articles|slice(0,2) %}
@@ -19,5 +19,7 @@
         {% endfor %}
       </div>
     </div>
+    
+    {% include "@atoms/link.twig" with { "link": {"text" : "View Full Issue", "href" : "#", 'class': 'joe__link--reversed' } } %}
   </div>
 </section>
