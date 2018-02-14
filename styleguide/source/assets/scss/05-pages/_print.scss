@@ -1,0 +1,86 @@
+@media print {
+  body {
+    padding-bottom: 20px;
+    background: none;
+    color: $black;
+    width: 100%;
+    font: 10pt helvetica, arial, sans-serif !important;
+    line-height: 1.4;
+    padding-top: 0;
+  }
+  
+  // add some page margin
+  @page {
+    margin: 60px 20px; 
+    padding: 0.5cm 0;
+  }
+  
+  // Control the size of images
+  img {
+    max-width: 400px;
+  }
+  
+  .joe__article-teaser__image {
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  // print body link contents
+  p a:after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+  
+  .joe__sticky-header {
+    padding-top: 0;
+  }
+  
+  .joe__sticky-header .joe__header {
+    position: relative;
+    border-top: 0;
+  }
+  
+  .joe__header {
+    border-top: 0;
+    box-shadow: none;
+  }
+  
+  .joe__inline-image {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .joe__footer {
+    border-bottom: 0;
+    background: none;
+    box-shadow: none;
+  }
+  
+   // Hide things that are not important to print
+  .joe__nav-drawer,
+  .joe__site-search,
+  .joe__trigger,
+  .joe__article-hero,
+  .joe__page-hero,
+  .joe__article-tools,
+  input,
+  .joe__poll__reveal,
+  .joe__rail-cta,
+  .joe__share,
+  .joe__share-trigger,
+  .joe__related-articles,
+  .joe__tags,
+  .joe__article-issue-footer,
+  .joe__footer .joe__layout--66-33,
+  .joe__inline-quote:after,
+  .joe__filters-wrapper,
+  .joe__pager,
+  .joe__inline-image__zoom,
+  .joe__rail-nav,
+  .joe__cta-band,
+  .joe__related-issues,
+  .joe__issue-filters,
+  .joe__audio-player {
+    display: none !important;
+  }
+}
