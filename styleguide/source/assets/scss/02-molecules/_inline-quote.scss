@@ -1,4 +1,5 @@
-.joe__inline-quote {
+.joe__inline-quote,
+blockquote {
   @extend %joe__inline;
   @include type($font-serif, 1.1em, $font-weight-bold, 1.35);
   color: $navy-lighter;

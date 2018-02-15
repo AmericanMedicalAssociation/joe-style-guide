@@ -6,6 +6,10 @@
 .joe__inline-caption {
   @extend %joe__type--smaller;
   margin-top: .5em;
+  
+  .is-zoomed & {
+    display: none;
+  }
 }
 
 .joe__inline-image {
@@ -15,6 +19,34 @@
   img {
     width: 100%;
   }
+  
+  &.is-zoomed {
+    background-color: rgba($black, .95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    transition: background-color .15s ease;
+    
+    img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      max-width: 80%;
+      max-height: 80%;
+      width: auto;
+      transform: translate(-50%, -50%);
+      z-index: 21; 
+      opacity: 0;
+      animation: fadeIn .5s ease .15s forwards;
+       
+      .no-cssanimations & {
+        opacity: 1;
+      }    
+    }
+  }
 }
 
 .joe__inline-image--left {
@@ -23,6 +55,12 @@
     width: 50%;
     float: left;
     margin: .5em 1em .5em 0;
+    
+    &.is-zoomed {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
   }
 }
 
@@ -32,6 +70,12 @@
     width: 50%;
     float: right;
     margin: .5em 0 .5em 1em;
+    
+     &.is-zoomed {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
   }
 }
 
@@ -40,13 +84,27 @@
   float: left;
   top: 100%;
   margin: .5em 1em .5em 0;
+  
+  &.is-zoomed {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
 
   @include breakpoint($bp-small) {
     width: 30%;
+    
+    &.is-zoomed {
+      width: 100%;
+    }
   }
 
   @include breakpoint($bp-med) {
     width: 25%;
+    
+    &.is-zoomed {
+      width: 100%;
+    }
   }
 }
 
@@ -71,6 +129,23 @@
     }
   }
   
+  .icon-close {
+    display: none;
+    visibility: hidden;
+    height: 26px;
+    width: 26px;
+    
+    svg {
+      height: 25px;
+      width: 25px;
+      fill: $white;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      z-index: 22;
+    }
+  }
+  
   &:active,
   &:hover,
   &:focus {
@@ -81,6 +156,28 @@
       svg {
         fill: $white;
       }
+    }
+  }
+  
+  .joe__inline-image.is-zoomed & {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+    background: none;
+    background-color: transparent;
+    
+    .icon-zoom {
+      display: none;
+      visibility: hidden;
+    }
+    
+    .icon-close {
+      display: block;
+      visibility: visible;
     }
   }
 }
