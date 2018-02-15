@@ -5,8 +5,12 @@
     color: $black;
     width: 100%;
     font: 10pt helvetica, arial, sans-serif !important;
-    line-height: 1.4;
+    line-height: 1.5;
     padding-top: 0;
+    
+    p {
+      line-height: 1.5;
+    }
   }
   
   // add some page margin
@@ -43,6 +47,18 @@
   .joe__header {
     border-top: 0;
     box-shadow: none;
+  }
+  
+  .joe__article--top,
+  .joe__page--top {
+    background: none;
+    background-color: transparent;
+    border-top: 1px solid $black-20;
+    margin-top: 0;
+    
+    &:before {
+      display: none;
+    }
   }
   
   .joe__inline-image {
