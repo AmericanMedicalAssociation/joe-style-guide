@@ -57,7 +57,7 @@
 
           // When you see the issue teaser or the footer hide share trigger
           $(window).on('resize scroll', function() {
-            $('.joe__issue-footer').each(function() {
+            $('.joe__article-issue-footer').each(function() {
               if ($(this).isInViewport()) {
                 $('body').removeClass('joe__sticky-share');
               }

@@ -1,9 +1,8 @@
 .joe__page--top {
-  margin-top: 2em;
   background-color: rgba($white, .9);
-  background: linear-gradient(rgba($white, .85%) 0%, $white 100%);
+  background: linear-gradient(rgba($white, .75%) 0%, $white 100%);
   position: relative;
-  padding-top: 2em;
+  padding-top: 1em;
   
   // create shadow corner effect
   &:before {
@@ -23,7 +22,7 @@
   }
   
   @include breakpoint($bp-med) {
-    padding-top: 3em;
+    padding-top: 1.5em;
   }
 }
 

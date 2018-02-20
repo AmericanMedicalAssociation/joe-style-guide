@@ -24,7 +24,7 @@
     visibility: visible;
     width: 350px;
     position: relative;
-    top: -21px;
+    top: -7px;
     float: right;
     border: 1px solid $navy-lighter;
     border-radius: 0 0 4px 4px;
@@ -49,7 +49,7 @@
   }
   
   @include breakpoint($bp-large) {
-    top: -23px;
+    top: -7px;
     
     .joe__sticky-header & {
       margin-top: 10px;

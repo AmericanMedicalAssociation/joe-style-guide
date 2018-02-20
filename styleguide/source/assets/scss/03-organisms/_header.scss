@@ -7,7 +7,7 @@
   background-color: $white;
   box-shadow: $shadow;
   border-top: 4px solid $blue-darkest;
-  padding: 18px 0 5px;
+  padding: 8px 0 8px;
   z-index: 2;
   position: relative;
   transition: all .25s ease-in;
@@ -16,7 +16,6 @@
   .joe__wordmark {
     float: left;
     max-width: calc(100% - 105px);
-    margin-bottom: 10px;
     
     @include breakpoint(0 $bp-xxs) {
       .joe__wordmark__subtitle {
@@ -45,7 +44,7 @@
   
   @include breakpoint($bp-med) {
     border-top: 30px solid $navy;
-    padding: 1em 0 .5em;
+    padding: .3em 0 .25em;
   }
   
   @include breakpoint($bp-large) {
@@ -144,6 +143,10 @@
       height: 25px;
       width: 25px;
     }
+  }
+  
+  @include breakpoint($bp-small) {
+    margin-top: 15px;
   }
   
   @include breakpoint($bp-med) {

@@ -1,9 +1,13 @@
 .joe__wordmark {
-  margin-bottom: 12px;
   
   .joe__footer & {
     @extend %clearfix;
     display: inline-block;
+  }
+  
+  @include breakpoint($bp-med) {
+    margin-top: 3px;
+    margin-bottom: 10px;
   }
 }
 
