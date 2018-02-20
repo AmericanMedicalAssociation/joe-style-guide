@@ -1,33 +1,32 @@
 .joe__article-hero {
   position: relative;
   width: 100%;
-  max-width: 1800px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
   background-color: $orange;
   background: $gold-gradient;
   z-index: -1;
-  margin-bottom: -200px;
+  margin-bottom: -250px;
   
   @include breakpoint($bp-xs) {
     height: 600px;
-    margin-bottom: -250px;
+    margin-bottom: -400px;
   }
   
   @include breakpoint($bp-small) {
     height: 700px;
-    margin-bottom: -300px;
+    margin-bottom: -425px;
   }
   
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -350px;
+    margin-bottom: -500px;
   }
   
   @include breakpoint($bp-large) {
     height: 900px;
-    margin-bottom: -450px;
+    margin-bottom: -525px;
   }
 }
 
@@ -51,10 +50,6 @@
   margin: 0 auto;
   z-index: 0;
   background: $white-gradient;
-  
-  .joe__article-hero--no-image & {
-    max-width: none;
-  }
 }
 
 // Image classes for heroes
