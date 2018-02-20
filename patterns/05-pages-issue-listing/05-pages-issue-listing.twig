@@ -1,0 +1,34 @@
+{% extends '@templates/offset-center.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/page-hero.twig' %}
+{% endblock %}
+
+{% block pageContent_header %}
+    {% include '@molecules/page-header.twig' %}
+    
+    {% include '@molecules/issues-filter.twig' %}
+{% endblock %}
+
+{% block pageContent %}
+  
+  <div class="joe__issue-listing--current">
+    {% include '@organisms/current-issue-teaser.twig' %}
+  </div>
+
+  <ul class="joe__list--issues">
+    {% for issue in issues %}
+    <li>
+      {% include '@molecules/issue-teaser.twig' %}
+    </li>
+    {% endfor %}
+  </ul>
+  
+  {% include '@molecules/pagination.twig' %}
+  
+{% endblock %}
+
+
+{% block footer %}  
+  {% include '@organisms/footer.twig' %}
+{% endblock %}

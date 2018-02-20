@@ -1,0 +1,17 @@
+{% for author in authors %}
+  {% if loop.length == 1 %}
+    {{ author.name }}
+  {% elseif loop.length == 2 %}
+    {% if loop.last %}
+    and {{ author.name }}
+    {% else %}
+      {{ author.name }} 
+    {% endif %}
+  {% else %}   
+    {% if loop.last %}
+      and {{ author.name }}
+    {% else %}
+      {{ author.name }}, 
+    {% endif %}
+  {% endif %}
+{% endfor %}

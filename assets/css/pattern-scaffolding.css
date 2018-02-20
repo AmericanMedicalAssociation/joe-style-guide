@@ -1,3 +1,7 @@
+.sg-introduction {
+  max-width: 800px;
+  margin-top: 45px; }
+
 .sg-colors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +39,7 @@
   height: 40px;
   width: 40px; }
 
-.ama__social-icons {
+.joe__social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
