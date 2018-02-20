@@ -18,8 +18,8 @@
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
-  padding: 3em 10px 10px;
-  top: -2.7em;
+  padding: 2em 10px 10px;
+  top: -1.3em;
   
   .joe__flag__type {
     display: block;
@@ -36,8 +36,8 @@
   }
   
   @include breakpoint($bp-med) {
-    padding: 4em 12px 10px;
-    top: -4em;
+    padding: 2em 12px 10px;
+    top: -2em;
     
     .joe__poll & {
       top: -2.7em;
