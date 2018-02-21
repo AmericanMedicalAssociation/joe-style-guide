@@ -11,8 +11,9 @@
    Drupal.behaviors.pollReveal = {
      attach: function (context, settings) {
         // Opens and closes results. 
-        $('.joe__poll__reveal').click(function() {
-          event.preventDefault();
+        $('.joe__poll__reveal').click(function(e) {
+          e.preventDefault();
+          e.stopPropagation();
           // Unfocus on the dropdown
           $(this).blur();
           // add a class to the sibling dropdown
