@@ -54,10 +54,15 @@
               return elementTop < shareBottom || elementTop < shareTriggerBottom;
             }
           };
-
+          
           // When you see the issue teaser or the footer hide share trigger
           $(window).on('resize scroll', function() {
             $('.joe__article-issue-footer').each(function() {
+              if ($(this).isInViewport()) {
+                $('body').removeClass('joe__sticky-share');
+              }
+            });
+            $('.joe__related-issues').each(function() {
               if ($(this).isInViewport()) {
                 $('body').removeClass('joe__sticky-share');
               }
