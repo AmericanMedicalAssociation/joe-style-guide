@@ -26,6 +26,10 @@
   }
 }
 
+.joe__article {
+  padding-top: 1px;
+}
+
 .joe__article--bottom {
   @include gutter($margin-bottom-full...);
   background-color: $white;

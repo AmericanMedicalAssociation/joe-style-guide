@@ -11,6 +11,7 @@
     
     @include breakpoint($bp-med) {
       display: flex;
+      display: -webkit-flex;
       align-items: stretch; 
     }
   }

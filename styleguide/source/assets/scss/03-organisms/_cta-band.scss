@@ -16,6 +16,7 @@
   
   @include breakpoint($bp-small) {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     align-items: stretch;
     
