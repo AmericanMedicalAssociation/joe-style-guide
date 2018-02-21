@@ -1,20 +1,20 @@
 .joe__filters-wrapper {
   margin: 1em 0;
-  background-color: $black-05;
+  background-color: $navy-lighter;
 }
 
 .joe__filters--trigger {
   width: 100%;
   border-radius: 0;
-  color: $black-80;
-  background-color: $black-20;
-  background: $black-20;
+  color: $white;
+  background-color: $navy-lighter;
+  background: $navy-lighter;
   
   &:active,
   &:hover,
   &:focus {
     color: $white;
-    background-color: $navy-lighter;
+    background-color: $navy;
     background: $blue-gradient;
   }
   
@@ -40,14 +40,14 @@
     padding: .75em 1em 1px;
     text-align: left;
     cursor: default;
-    background-color: $black-05;
+    background-color: $navy-lighter;
     
     &:active,
     &:hover,
     &:focus {
-      color: $black-80;
-      background-color: $black-05;
-      background: $black-05;
+      color: $white;
+      background-color: $navy-lighter;
+      background: $navy-lighter;
       outline: 0;
     }
     
@@ -69,9 +69,13 @@
   @extend %clearfix;
   display: none;
   font-size: 80%;
-  background-color: $black-05;
+  background-color: $navy-lighter;
   padding: .5em 1em;
   box-shadow: $shadow;
+  
+  label {
+    color: $white;
+  }
   
   @include breakpoint($bp-med) {
     display: block;
@@ -84,7 +88,7 @@
 
 
 .joe__filter__buttons {
-  margin-top: .75em;
+  margin-top: 1em;
   margin-bottom: .75em;
   
   input {
@@ -97,4 +101,21 @@
 .joe__filter-button[type="reset"],
 .joe__filter-button[type="submit"] {
   @include type($font-serif, .75em, $font-weight-bold, 1.25);
+}
+
+.joe__filter-button[type="submit"] {
+  background-color: $gold;
+  background: $gold;
+  color: $navy;
+  
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $orange;
+    background: $orange;
+  }
+}
+
+.joe__filter-button[type="reset"] {
+  color: $gold;
 }
