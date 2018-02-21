@@ -35,6 +35,8 @@
   background-color: $white;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
   @include breakpoint($bp-med) {
     @include gutter($margin-right-half...);
@@ -64,6 +66,8 @@
   min-width: 0;
   margin-left: $gutter-mobile;
   margin-right: $gutter-mobile;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
   @include breakpoint($bp-med) {
     @include gutter($margin-left-half...);
