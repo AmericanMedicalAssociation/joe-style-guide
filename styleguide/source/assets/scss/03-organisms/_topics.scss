@@ -1,7 +1,7 @@
 .joe__topics {
   @extend %clearfix;
   background-color: $navy;
-  padding: 0 0 $gutter-mobile;
+  padding: 1px 0 $gutter-mobile;
   
   @include breakpoint($bp-med) {
     padding: 1.5em 0 2.5em;

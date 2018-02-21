@@ -68,7 +68,7 @@
   }
   
   @include breakpoint(450px) {
-    // margin-top: 2em;
+    @include gutter($padding-right-half...);
     margin-bottom: 0;
     min-width: 40%;
     width: 40%;
@@ -104,7 +104,6 @@
   
   @include breakpoint($bp-small) {
     @include gutter($padding-right-half...);
-    @include gutter($padding-left-half...);
   }
 }
 
