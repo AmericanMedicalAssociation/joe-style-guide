@@ -19,3 +19,8 @@
 .joe__issue-header__desc {
   @extend %joe__type--small;
 }
+
+.joe__issue-header__meta {
+  @extend %joe__type--smaller;
+  margin-top: 1em;
+}
