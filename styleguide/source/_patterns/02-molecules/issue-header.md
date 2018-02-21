@@ -16,6 +16,8 @@ issue {
     type: string / optional
   issn:
     type: string / optional
+  pdf:
+    type: media / optional
 }
 
 ~~~
