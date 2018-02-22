@@ -1,7 +1,9 @@
 .joe__issue-header {
   text-align: center;
-  margin: 1em auto 3em;
+  margin: 1em auto 2em;
   max-width: 1000px;
+  border-bottom: 1px solid $black-05;
+  padding-bottom: 1.5em;
 }
 
 .joe__issue-header__date {
@@ -18,13 +20,21 @@
 
 .joe__issue-header__desc {
   @extend %joe__type--small;
+  text-align: left;
 }
 
 .joe__issue-header__meta {
   @extend %joe__type--smaller;
   margin-top: 1em;
+  text-align: left;
 }
 
 .joe__issue-header__download {
-  margin-left: 20px;
+  @include type($font-serif, .9em, $font-weight-bold, 1.35);
+  display: block;
+  margin-top: .25em;
+  
+  @include breakpoint($bp-small) {
+    float: right;
+  }
 }

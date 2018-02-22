@@ -20,10 +20,6 @@
     border-color: $blue;
     transition: border-color .5s ease;
   }
-  
-  @include breakpoint($bp-med) {
-    @extend %joe__type--smaller;
-  }
 }
 
 label,
