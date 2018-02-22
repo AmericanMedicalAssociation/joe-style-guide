@@ -113,6 +113,9 @@
             "name" : "Melinda Manning"
           }
         ],
+        "image": {
+          "src":"https://ipsumimage.appspot.com/450x225"
+        },
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
@@ -153,6 +156,9 @@
             "name" : "John L. Young"
           }
         ],
+        "image": {
+          "src":"https://ipsumimage.appspot.com/450x225"
+        },
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
@@ -493,7 +499,7 @@
   "footer_navs": [
     {
       "href": "/",
-      "text": "AMA Home"
+      "text": "Current Issue"
     },
     {
       "href": "/",

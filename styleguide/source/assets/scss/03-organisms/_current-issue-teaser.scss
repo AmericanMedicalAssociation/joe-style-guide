@@ -22,17 +22,17 @@
 
 .joe__issue-teaser--left {
   
-  @include breakpoint($bp-small) {
+  @include breakpoint($bp-med) {
     float: left;
-    width: 45%;
+    width: 40%;
   }
 }
 
 .joe__issue-teaser--right {
   
-  @include breakpoint($bp-small) {
+  @include breakpoint($bp-med) {
     float: right;
-    width: 50%;
+    width: 55%;
     margin-left: 5%;
   }
 }
@@ -42,7 +42,7 @@
   margin: 1em 0 0;
   padding: 0;
   
-  @include breakpoint($bp-small) {
+  @include breakpoint($bp-med) {
     margin-top: 0;
   }
 }

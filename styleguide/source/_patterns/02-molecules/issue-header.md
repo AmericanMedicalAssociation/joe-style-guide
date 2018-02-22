@@ -10,6 +10,14 @@ issue {
     type: string / required
   description:
     type: string / optional
+  volume:
+    type: string / optional
+  number:
+    type: string / optional
+  issn:
+    type: string / optional
+  pdf:
+    type: media / optional
 }
 
 ~~~

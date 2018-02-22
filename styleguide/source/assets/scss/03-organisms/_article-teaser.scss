@@ -1,7 +1,10 @@
 .joe__article-teaser {
+  @extend %clearfix;
   position: relative;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   align-items: flex-start;
   align-content: stretch;
   justify-content: space-between;
@@ -10,6 +13,7 @@
   
   @include breakpoint(450px) {
     flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
     
     .no-flexbox & {
       padding-right: 55%; 
@@ -17,6 +21,7 @@
     
     &.joe__article-teaser--featured {
       flex-direction: row;
+      -webkit-flex-direction: row;
     
       .no-flexbox & {
         padding-left: 55%; 
@@ -43,6 +48,7 @@
 .joe__article-teaser__image {
   width: 100%;
   min-width: 0;
+  display: block;
   
   img {
     margin-bottom: .5em;
@@ -62,7 +68,7 @@
   }
   
   @include breakpoint(450px) {
-    margin-top: 2em;
+    @include gutter($padding-right-half...);
     margin-bottom: 0;
     min-width: 40%;
     width: 40%;
@@ -93,9 +99,12 @@
 }
 
 .joe__article-teaser__block {
-  @include gutter($padding-right-half...);
   width: 100%;
   min-width: 0;
+  
+  @include breakpoint($bp-small) {
+    @include gutter($padding-right-half...);
+  }
 }
 
 .joe__article-teaser__title {

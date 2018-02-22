@@ -10,6 +10,7 @@
 
 .joe__related-issues__container {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   
   @include breakpoint($bp-med) {
@@ -44,6 +45,7 @@
   border-top: 1px solid $black-20;
   background-color: $black-05;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   
   .joe__rail-cta {

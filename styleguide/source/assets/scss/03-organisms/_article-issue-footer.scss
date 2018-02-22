@@ -2,10 +2,13 @@
   @include gutter($padding-top-full...);
   @include gutter($padding-bottom-full...);
   @include gutter($margin-top-full...);
+  @extend %clearfix;
   background-color: $navy;
   text-align: center;
   z-index: 0;
   position: relative;
+  width: 100%; 
+  overflow: hidden;
   
   .joe__link--reversed {
     @extend %joe__type--smaller;
@@ -25,6 +28,7 @@
     }
   }
   @include breakpoint($bp-med) {
+    
     .joe__col-one--med {
       @include gutter($padding-right-full...);
     } 
