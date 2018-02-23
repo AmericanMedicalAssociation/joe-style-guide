@@ -1,12 +1,13 @@
 {
   "footer_wordmark": {
     "title": "AMA Journal of Ethics",
-    "subtitle": "Illuminating the Art of Medicine"
+    "subtitle": "Illuminating the Art of Medicine",
+    "tm": "true"
   },
   "footer_logo": {
     "src": "/assets/images/brand/logo.svg",
     "alt": "American Medical Association",
-    "link": "/"
+    "link": "https://www.ama-assn.org/"
   },
   "footer_navs": [
     {

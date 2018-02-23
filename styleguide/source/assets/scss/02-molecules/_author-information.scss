@@ -7,7 +7,7 @@
   
   @include breakpoint($bp-med) {
     padding: 0;
-    margin: $gutter 0;
+    margin: 85px 0 $gutter;
   }
 }
 

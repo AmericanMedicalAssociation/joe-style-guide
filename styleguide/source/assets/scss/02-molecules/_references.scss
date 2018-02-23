@@ -2,17 +2,21 @@
   margin-bottom: 1em;
 }
 
-.joe__references__list {
-  @extend %joe__type--smaller;
+.joe__references__list,
+.joe__references ul,
+.joe__references ol {
+  @extend %joe__type--small;
   padding-left: 1em;
   word-wrap: break-word;
 }
 
-.joe__references__item {
+.joe__references__item,
+.joe__references li {
   margin-bottom: 1em;
 }
 
-.joe__references__item-links {
+.joe__references__item-links,
+.joe__references li {
   a {
     margin-right: 15px;
   }

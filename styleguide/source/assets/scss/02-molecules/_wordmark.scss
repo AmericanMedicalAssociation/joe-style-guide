@@ -16,6 +16,12 @@
   margin-bottom: 0;
   margin-top: 0;
   
+  sup {
+    font-family: $font-sans-serif;
+    font-weight: $font-weight-medium;
+    font-size: .75em;
+  }
+  
   .joe__footer & {
     @include type($font-serif, 1.2em, $font-weight-bolder, 1.3);
   }
