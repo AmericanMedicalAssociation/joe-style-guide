@@ -36,7 +36,7 @@
   }
   
   @include breakpoint($bp-med) {
-    padding: 2em 12px 10px;
+    padding: 2.75em 12px 10px;
     top: -2em;
     
     .joe__poll & {
