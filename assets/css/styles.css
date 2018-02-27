@@ -1,7 +1,19 @@
 /*------------------------------------*    $JOE PATTERNS
 \*------------------------------------*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .joe__list--issues:after,
-.joe__video-container:after, .joe__inline-image:after, .joe__inline-quote:after, .joe__issue-filters:after, .joe__issue-filter:after, .joe__issue-filter__children:after, .joe__filters:after, .joe__filters-container:after, .joe__share:after, .joe__utility-nav:after, .joe__footer .joe__wordmark:after, .joe__about-band:after, .joe__cta-band:after, .joe__issue-teaser--current:after, .joe__featured-case:after, .joe__footer-brand:after, .joe__header:after, .joe__poll:after, .joe__poll__block:after, .joe__poll__result:after, .joe__poll__result .choice-result:after, .joe__related-issues:after, .joe__related-issues__list:after, .joe__topics:after, .no-cssgrid .joe__layout--center-offset:after, .no-cssgrid .joe__layout--center-offset .joe__page-content:after, .no-cssgrid .joe__layout--two-column-left:after, .no-cssgrid.no-flexbox .joe__layout--66-33:after, .no-cssgrid.no-flexbox .joe__layout--two-column:after,
+.joe__video-container:after, .joe__inline-image:after, .joe__inline-quote:after,
+blockquote:after, .joe__issue-filters:after, .joe__issue-filter:after, .joe__issue-filter__children:after, .joe__filters:after, .joe__filters-container:after, .joe__share:after, .joe__utility-nav:after, .joe__footer .joe__wordmark:after, .joe__about-band:after, .joe__article-issue-footer:after, .joe__article-teaser:after, .joe__cta-band:after, .joe__issue-teaser--current:after, .joe__featured-case:after, .joe__footer-brand:after, .joe__header:after, .joe__poll:after, .joe__poll__block:after, .joe__poll__result:after, .joe__poll__result .choice-result:after, .joe__related-issues:after, .joe__related-issues__list:after, .joe__topics:after, .no-cssgrid .joe__layout--center-offset:after, .no-cssgrid .joe__layout--center-offset .joe__page-content:after, .no-cssgrid .joe__layout--two-column-left:after, .no-cssgrid.no-flexbox .joe__layout--66-33:after, .no-cssgrid.no-flexbox .joe__layout--two-column:after,
 .clearfix:after {
   content: "";
   display: table;
@@ -62,29 +74,19 @@ body {
       font-size: 135%;
       line-height: 30px; } }
 
-.joe__author-information__list, .joe__issue-header__desc, .joe__rail-cta__text, .joe__poll__link, .joe__poll__reveal,
+.joe__author-information__list, .joe__issue-header__desc, .joe__rail-cta__text, .joe__references__list,
+.joe__references ul,
+.joe__references ol, .joe__tags, .joe__article-footer, .joe__poll__link, .joe__poll__reveal,
 .joe__type--small {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 0.9em;
   font-weight: 400;
   line-height: 1.35; }
 
-input[type="text"],
-input[type="email"],
-input[type="search"],
-input[type="url"],
-input[type="tel"],
-input[type="number"],
-input[type="date"],
-input[type="time"],
-input[type="month"],
-input[type="week"],
-input[type="range"],
-input[type="datetime"],
-input[type="datetime-local"], select, textarea,
-.joe__input, label,
+label,
 legend, input[type='checkbox'] + label,
-input[type='radio'] + label, .joe__article-header__reviewed, .chosen-container, .joe__inline-caption, .joe__issue-teaser__meta, .joe__pager__item a, .joe__references__list, .joe__flag.joe__tags, .joe__utility-nav__list, .joe__article-footer, .joe__article-issue-footer .joe__link--reversed, .joe__article-teaser__meta, .joe__article-teaser__desc, .joe__footer__block p, .joe__footer__block a,
+input[type='radio'] + label, .joe__table td,
+table td, .joe__article-header__reviewed, .chosen-container, .joe__inline-caption, .joe__issue-header__meta, .joe__issue-teaser__meta, .joe__pager__item a, .joe__utility-nav__list, .joe__article-issue-footer .joe__link--reversed, .joe__article-teaser__meta, .joe__article-teaser__desc, .joe__footer__block p, .joe__footer__block a,
 .joe__type--smaller {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
@@ -129,30 +131,29 @@ p,
 .joe__article-hero {
   position: relative;
   width: 100%;
-  max-width: 1800px;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
   background-color: #ed6923;
   background: linear-gradient(45deg, #f2ce5a 0%, #ed6923 100%);
   z-index: -1;
-  margin-bottom: -200px; }
+  margin-bottom: -250px; }
   @media (min-width: 25em) {
     .joe__article-hero {
       height: 600px;
-      margin-bottom: -250px; } }
+      margin-bottom: -400px; } }
   @media (min-width: 37.5em) {
     .joe__article-hero {
       height: 700px;
-      margin-bottom: -300px; } }
+      margin-bottom: -425px; } }
   @media (min-width: 56.25em) {
     .joe__article-hero {
       height: 800px;
-      margin-bottom: -350px; } }
+      margin-bottom: -500px; } }
   @media (min-width: 75em) {
     .joe__article-hero {
       height: 900px;
-      margin-bottom: -450px; } }
+      margin-bottom: -525px; } }
 
 .joe__article-hero--no-image {
   height: 400px;
@@ -167,14 +168,11 @@ p,
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 1800px;
   height: 50%;
   margin: 0 auto;
   z-index: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, #ffffff 100%); }
-  .joe__article-hero--no-image .joe__article-hero__overlay {
-    max-width: none; }
 
 .joe__article-hero__1 {
   background: url("../images/article-hero-placeholder.png"); }
@@ -287,18 +285,22 @@ button {
   font-size: 0.65em;
   font-weight: 700;
   line-height: 1.25;
-  background-color: #298555;
-  background: linear-gradient(45deg, #298555 0%, rgba(41, 133, 85, 0.8) 100%);
+  background-color: #CE4A22;
+  background: #CE4A22;
   border-radius: 0;
   padding: 6px 8px;
   text-transform: none;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  -webkit-box-shadow: inset 0 0 20px #ed6923;
+          box-shadow: inset 0 0 20px #ed6923; }
   
   .joe__button--tool:active,
   .joe__button--tool:hover,
   .joe__button--tool:focus {
     background-color: #06847F;
     background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
     text-decoration: none;
     border-bottom: 0; }
 
@@ -333,8 +335,8 @@ button {
   font-size: 0.75em;
   font-weight: 400;
   line-height: 1.25;
-  padding: 3em 10px 10px;
-  top: -2.7em; }
+  padding: 2em 10px 10px;
+  top: -1.3em; }
   .joe__flag--larger .joe__flag__type {
     display: block; }
   .joe__poll .joe__flag--larger {
@@ -344,8 +346,8 @@ button {
     padding-top: 2em; }
   @media (min-width: 56.25em) {
     .joe__flag--larger {
-      padding: 4em 12px 10px;
-      top: -4em; }
+      padding: 2.75em 12px 10px;
+      top: -2em; }
       .joe__poll .joe__flag--larger {
         top: -2.7em; } }
 
@@ -382,6 +384,7 @@ input[type="datetime-local"], select, textarea,
   outline: 0;
   border: 1px solid #d1d3d4;
   background-color: #ffffff;
+  background: #ffffff;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -392,7 +395,8 @@ input[type="datetime-local"], select, textarea,
   margin-bottom: .5em;
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+          appearance: none;
+  font-size: 16px; }
   input[type="text"]:active,
   input[type="email"]:active,
   input[type="search"]:active,
@@ -476,7 +480,8 @@ select {
           appearance: none;
   background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
   background-position: 98% 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #ffffff; }
 
 input[type='checkbox'],
 input[type='radio'] {
@@ -488,6 +493,11 @@ input[type='radio'] {
     color: #414042;
     text-transform: none;
     margin: 0; }
+
+input[type="submit"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
 input[type="reset"] {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -501,7 +511,10 @@ input[type="reset"] {
   outline: 0;
   -webkit-box-shadow: 0;
           box-shadow: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
 textarea {
   -webkit-appearance: none;
@@ -669,55 +682,6 @@ input[type="reset"],
       .joe__list--issues li:nth-of-type(3n+1) {
         clear: left; } }
 
-.joe__page-hero {
-  position: relative;
-  width: 100%;
-  max-width: 1800px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: #29688a;
-  background: linear-gradient(45deg, #f2ce5a 0%, #ed6923 100%);
-  z-index: -1;
-  margin-bottom: -200px; }
-  @media (min-width: 56.25em) {
-    .joe__page-hero {
-      height: 600px;
-      margin-bottom: -400px; } }
-
-.joe__page-hero--no-image {
-  height: 300px;
-  margin-bottom: -275px;
-  max-width: none; }
-  @media (min-width: 56.25em) {
-    .joe__page-hero--no-image {
-      height: 400px;
-      margin-bottom: -325px; } }
-
-.joe__page-hero__overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-width: 1800px;
-  height: 50%;
-  margin: 0 auto;
-  z-index: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
-  background: linear-gradient(rgba(255, 255, 255, 0) 0%, #ffffff 100%); }
-  .joe__page-hero--no-image .joe__page-hero__overlay {
-    max-width: none; }
-
-.joe__page-hero__1 {
-  background: url("../images/about-hero-01.png"); }
-
-.joe__page-hero__2 {
-  background: url("../images/v2/artwork-1.jpg"); }
-
-.joe__page-hero {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-
 
 .joe__rail-title {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -744,6 +708,55 @@ input[type="reset"],
 
 .ama__social-icons {
   list-style: none; }
+
+.joe__table,
+table {
+  margin: 1.5em 0;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: normal;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-overflow-scrolling: touch;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 0%, transparent 75%) -1% center, radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 0%, transparent 75%) 101% center;
+  background-size: 15px 100%, 15px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat; }
+  @media (min-width: 75em) {
+    .joe__table,
+    table {
+      white-space: normal; } }
+  .joe__table td:first-child,
+  table td:first-child {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 20px 100%; }
+  .joe__table td:last-child,
+  table td:last-child {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 20px 100%; }
+  .joe__table th,
+  table th {
+    font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.35;
+    background: #3f3f6d;
+    color: #ffffff;
+    text-align: left; }
+  .joe__table th,
+  .joe__table td,
+  table th,
+  table td {
+    padding: 8px 12px;
+    border: 1px solid #d1d3d4;
+    max-width: 80vw; }
 
 
 .joe__title-label {
@@ -786,13 +799,14 @@ input[type="reset"],
       display: inline-block;
       padding: 6px 10px;
       position: relative;
-      top: -2.5em;
+      top: -1.25em;
       float: right;
       border: 1px solid #d1d3d4;
-      border-top: 0; } }
+      border-top: 0;
+      background-color: #ffffff; } }
   @media (min-width: 56.25em) {
     .joe__article-header__reviewed {
-      top: -3.75em; } }
+      top: -1.85em; } }
 
 .joe__article-header__title {
   margin-top: 0; }
@@ -815,13 +829,14 @@ input[type="reset"],
 
 .joe__article-tools {
   margin-top: 1.5em;
-  border-top: 1px solid #298555;
+  border-top: 2px solid #ed6923;
   position: relative;
   text-align: right;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
@@ -830,7 +845,8 @@ input[type="reset"],
       margin-top: 2em; } }
   .joe__article-tools .joe__button--tool {
     float: right;
-    margin: 0 0 0 4px; }
+    margin: 0 0 0 4px;
+    position: relative; }
     @media (min-width: 56.25em) {
       .joe__article-tools .joe__button--tool {
         margin: 0 0 0 8px; } }
@@ -851,8 +867,8 @@ input[type="reset"],
       padding: 1.5em 0; } }
   @media (min-width: 56.25em) {
     .joe__author-information {
-      padding: 2em 0;
-      margin: 2em 0; } }
+      padding: 0;
+      margin: 85px 0 2em; } }
 
 .joe__author-information__list {
   margin: 1em 0 0;
@@ -1310,40 +1326,85 @@ This file is generated by `grunt build`, do not edit it by hand.
     font-weight: 400;
     line-height: 1.1; }
 
-.joe__inline-image, .joe__inline-quote {
+.joe__inline-image, .joe__inline-quote,
+blockquote {
   margin: 1em 0; }
 
 .joe__inline-caption {
   margin-top: .5em; }
+  .is-zoomed .joe__inline-caption {
+    display: none; }
 
 .joe__inline-image {
   position: relative; }
   .joe__inline-image img {
     width: 100%; }
+  .joe__inline-image.is-zoomed {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    -webkit-transition: background-color .15s ease;
+    transition: background-color .15s ease;
+    margin: 0; }
+    .joe__inline-image.is-zoomed img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      max-width: 80%;
+      max-height: 80%;
+      width: auto;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      z-index: 21;
+      opacity: 0;
+      -webkit-animation: fadeIn .5s ease .15s forwards;
+              animation: fadeIn .5s ease .15s forwards; }
+      .no-cssanimations .joe__inline-image.is-zoomed img {
+        opacity: 1; }
 
 @media (min-width: 37.5em) {
   .joe__inline-image--left {
     width: 50%;
     float: left;
-    margin: .5em 1em .5em 0; } }
+    margin: .5em 1em .5em 0; }
+    .joe__inline-image--left.is-zoomed {
+      width: 100%;
+      float: none;
+      margin: 0; } }
 
 @media (min-width: 37.5em) {
   .joe__inline-image--right {
     width: 50%;
     float: right;
-    margin: .5em 0 .5em 1em; } }
+    margin: .5em 0 .5em 1em; }
+    .joe__inline-image--right.is-zoomed {
+      width: 100%;
+      float: none;
+      margin: 0; } }
 
 .joe__inline-image--portrait {
   width: 50%;
   float: left;
   top: 100%;
   margin: .5em 1em .5em 0; }
+  .joe__inline-image--portrait.is-zoomed {
+    width: 100%;
+    float: none;
+    margin: 0; }
   @media (min-width: 37.5em) {
     .joe__inline-image--portrait {
-      width: 30%; } }
+      width: 30%; }
+      .joe__inline-image--portrait.is-zoomed {
+        width: 100%; } }
   @media (min-width: 56.25em) {
     .joe__inline-image--portrait {
-      width: 25%; } }
+      width: 25%; }
+      .joe__inline-image--portrait.is-zoomed {
+        width: 100%; } }
 
 .joe__inline-image__zoom {
   position: absolute;
@@ -1361,28 +1422,61 @@ This file is generated by `grunt build`, do not edit it by hand.
       height: 25px;
       width: 25px;
       fill: #29688a; }
+  .joe__inline-image__zoom .icon-close {
+    display: none;
+    visibility: hidden;
+    height: 26px;
+    width: 26px; }
+    .joe__inline-image__zoom .icon-close svg {
+      height: 25px;
+      width: 25px;
+      fill: #ffffff;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      z-index: 22; }
   .joe__inline-image__zoom:active, .joe__inline-image__zoom:hover, .joe__inline-image__zoom:focus {
     background-color: #3f3f6d;
     background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%); }
     .joe__inline-image__zoom:active .icon-zoom svg, .joe__inline-image__zoom:hover .icon-zoom svg, .joe__inline-image__zoom:focus .icon-zoom svg {
       fill: #ffffff; }
+  .joe__inline-image.is-zoomed .joe__inline-image__zoom {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+    background: none;
+    background-color: transparent; }
+    .joe__inline-image.is-zoomed .joe__inline-image__zoom .icon-zoom {
+      display: none;
+      visibility: hidden; }
+    .joe__inline-image.is-zoomed .joe__inline-image__zoom .icon-close {
+      display: block;
+      visibility: visible; }
 
-.joe__inline-quote {
+.joe__inline-quote,
+blockquote {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.35;
   color: #3f3f6d; }
-  .joe__inline-quote .icon-quote {
+  .joe__inline-quote .icon-quote,
+  blockquote .icon-quote {
     display: block;
     margin-bottom: 15px;
     height: 30px;
     width: 30px; }
-    .joe__inline-quote .icon-quote svg {
+    .joe__inline-quote .icon-quote svg,
+    blockquote .icon-quote svg {
       height: 30px;
       width: 30px;
-      fill: #298555; }
-  .joe__inline-quote:after {
+      fill: #ed6923; }
+  .joe__inline-quote:after,
+  blockquote:after {
     content: '';
     height: 8px;
     width: 100%;
@@ -1406,8 +1500,10 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .joe__issue-header {
   text-align: center;
-  margin: 1em auto 3em;
-  max-width: 1000px; }
+  margin: 1em auto 2em;
+  max-width: 1000px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 1.5em; }
 
 .joe__issue-header__date {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -1421,6 +1517,24 @@ This file is generated by `grunt build`, do not edit it by hand.
 .joe__issue-header__title {
   margin-top: 1em;
   margin-bottom: .25em; }
+
+.joe__issue-header__desc {
+  text-align: left; }
+
+.joe__issue-header__meta {
+  margin-top: 1em;
+  text-align: left; }
+
+.joe__issue-header__download {
+  font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.35;
+  display: block;
+  margin-top: .25em; }
+  @media (min-width: 37.5em) {
+    .joe__issue-header__download {
+      float: right; } }
 
 .joe__issue-teaser {
   margin-bottom: 2em; }
@@ -1558,17 +1672,17 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .joe__filters-wrapper {
   margin: 1em 0;
-  background-color: #f1f1f1; }
+  background-color: #3f3f6d; }
 
 .joe__filters--trigger {
   width: 100%;
   border-radius: 0;
-  color: #58595b;
-  background-color: #d1d3d4;
-  background: #d1d3d4; }
+  color: #ffffff;
+  background-color: #3f3f6d;
+  background: #3f3f6d; }
   .joe__filters--trigger:active, .joe__filters--trigger:hover, .joe__filters--trigger:focus {
     color: #ffffff;
-    background-color: #3f3f6d;
+    background-color: #1f1f52;
     background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%); }
   .joe__filters--trigger .joe__filters__open {
     display: none;
@@ -1584,11 +1698,11 @@ This file is generated by `grunt build`, do not edit it by hand.
       padding: .75em 1em 1px;
       text-align: left;
       cursor: default;
-      background-color: #f1f1f1; }
+      background-color: #3f3f6d; }
       .joe__filters--trigger:active, .joe__filters--trigger:hover, .joe__filters--trigger:focus {
-        color: #58595b;
-        background-color: #f1f1f1;
-        background: #f1f1f1;
+        color: #ffffff;
+        background-color: #3f3f6d;
+        background: #3f3f6d;
         outline: 0; }
       .joe__filters--trigger.is-active .joe__filters__open {
         display: none;
@@ -1600,16 +1714,18 @@ This file is generated by `grunt build`, do not edit it by hand.
 .joe__filters {
   display: none;
   font-size: 80%;
-  background-color: #f1f1f1;
+  background-color: #3f3f6d;
   padding: .5em 1em;
   -webkit-box-shadow: 0 0 5px rgba(65, 64, 66, 0.25);
           box-shadow: 0 0 5px rgba(65, 64, 66, 0.25); }
+  .joe__filters label {
+    color: #ffffff; }
   @media (min-width: 56.25em) {
     .joe__filters {
       display: block; } }
 
 .joe__filter__buttons {
-  margin-top: .75em;
+  margin-top: 1em;
   margin-bottom: .75em; }
   .joe__filter__buttons input {
     display: inline-block;
@@ -1622,6 +1738,17 @@ This file is generated by `grunt build`, do not edit it by hand.
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1.25; }
+
+.joe__filter-button[type="submit"] {
+  background-color: #f2ce5a;
+  background: #f2ce5a;
+  color: #1f1f52; }
+  .joe__filter-button[type="submit"]:active, .joe__filter-button[type="submit"]:hover, .joe__filter-button[type="submit"]:focus {
+    background-color: #ed6923;
+    background: #ed6923; }
+
+.joe__filter-button[type="reset"] {
+  color: #f2ce5a; }
 
 .joe__page-header {
   margin-bottom: 0.75em; }
@@ -1707,7 +1834,7 @@ This file is generated by `grunt build`, do not edit it by hand.
       .joe__primary-nav__item a:visited {
         display: inline-block;
         padding: .5em;
-        color: #29688a;
+        color: #3f3f6d;
         border-bottom: 0; }
       .joe__primary-nav__item a:active,
       .joe__primary-nav__item a:hover,
@@ -1805,14 +1932,18 @@ This file is generated by `grunt build`, do not edit it by hand.
 .joe__references {
   margin-bottom: 1em; }
 
-.joe__references__list {
+.joe__references__list,
+.joe__references ul,
+.joe__references ol {
   padding-left: 1em;
   word-wrap: break-word; }
 
-.joe__references__item {
+.joe__references__item,
+.joe__references li {
   margin-bottom: 1em; }
 
-.joe__references__item-links a {
+.joe__references__item-links a,
+.joe__references li a {
   margin-right: 15px; }
 
 .joe__share-trigger {
@@ -1833,7 +1964,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   .joe__share-trigger svg {
     height: 30px;
     width: 30px;
-    fill: #29688a; }
+    fill: #3f3f6d; }
   .joe__share-trigger:active, .joe__share-trigger:hover, .joe__share-trigger:focus {
     background: none;
     background-color: transparent; }
@@ -1898,7 +2029,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   .joe__share__item svg {
     height: 30px;
     width: 30px;
-    fill: #29688a; }
+    fill: #3f3f6d; }
   .joe__share__item a:link,
   .joe__share__item a:visited {
     border-bottom: 0; }
@@ -1951,7 +2082,7 @@ This file is generated by `grunt build`, do not edit it by hand.
       visibility: visible;
       width: 350px;
       position: relative;
-      top: -21px;
+      top: -7px;
       float: right;
       border: 1px solid #3f3f6d;
       border-radius: 0 0 4px 4px;
@@ -1973,7 +2104,7 @@ This file is generated by `grunt build`, do not edit it by hand.
         transition: all .25s ease-in; } }
   @media (min-width: 75em) {
     .joe__site-search {
-      top: -23px; }
+      top: -7px; }
       .joe__sticky-header .joe__site-search {
         margin-top: 10px; } }
   .joe__site-search input[type="search"] {
@@ -2006,23 +2137,24 @@ This file is generated by `grunt build`, do not edit it by hand.
 .joe__search-input[type="submit"] {
   color: transparent; }
 
-.joe__flag.joe__tags {
-  padding: 7px 12px 7px 40px;
-  margin-top: 4em;
-  margin-bottom: 2em; }
-  .joe__flag.joe__tags .icon-tag {
+.joe__tags {
+  position: relative;
+  margin: 2em 0 4em;
+  padding: 1em 0 0 40px;
+  border-top: 1px solid #d1d3d4; }
+  .joe__tags .icon-tag {
     height: 1em;
     width: 1em;
     position: absolute;
     left: 9px;
-    top: 9px; }
-    .joe__flag.joe__tags .icon-tag svg {
+    top: 1.2em; }
+    .joe__tags .icon-tag svg {
       height: 1em;
       width: 1em;
       fill: #58595b; }
   @media (min-width: 56.25em) {
-    .joe__flag.joe__tags {
-      padding: 7px 12px 7px 40px; } }
+    .joe__tags {
+      padding: 1em 0 0 40px; } }
 
 .joe__tags-list {
   list-style: none;
@@ -2151,10 +2283,13 @@ This file is generated by `grunt build`, do not edit it by hand.
       .joe__utility-nav__item:first-child a:visited {
         padding-left: 0; } }
 
-.joe__wordmark {
-  margin-bottom: 12px; }
-  .joe__footer .joe__wordmark {
-    display: inline-block; }
+.joe__footer .joe__wordmark {
+  display: inline-block; }
+
+@media (min-width: 56.25em) {
+  .joe__wordmark {
+    margin-top: 3px;
+    margin-bottom: 10px; } }
 
 .joe__wordmark__title {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -2163,6 +2298,10 @@ This file is generated by `grunt build`, do not edit it by hand.
   line-height: 1.3;
   margin-bottom: 0;
   margin-top: 0; }
+  .joe__wordmark__title sup {
+    font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: .75em; }
   .joe__footer .joe__wordmark__title {
     font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
     font-size: 1.2em;
@@ -2217,6 +2356,7 @@ This file is generated by `grunt build`, do not edit it by hand.
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      display: -webkit-flex;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch; } }
@@ -2288,7 +2428,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 .joe__article-footer {
   background-color: #E5E5E5;
   padding: 1.5em;
-  margin: 1.5em 0; }
+  margin: .5em 0; }
   .joe__article-footer .joe__title-label {
     font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
     font-size: 0.875em;
@@ -2301,7 +2441,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   @media (min-width: 56.25em) {
     .joe__article-footer {
       padding: 2em;
-      margin: 2em 0; } }
+      margin: 1em 0; } }
 
 .joe__article-issue-footer {
   padding-top: 1.5em;
@@ -2310,7 +2450,9 @@ This file is generated by `grunt build`, do not edit it by hand.
   background-color: #1f1f52;
   text-align: center;
   z-index: 0;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
   @media (min-width: 56.25em) {
     .joe__article-issue-footer {
       padding-top: 2em; } }
@@ -2353,6 +2495,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2394,7 +2537,8 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .joe__article-teaser__image {
   width: 100%;
-  min-width: 0; }
+  min-width: 0;
+  display: block; }
   .joe__article-teaser__image img {
     margin-bottom: .5em;
     width: 100%;
@@ -2405,10 +2549,14 @@ This file is generated by `grunt build`, do not edit it by hand.
     border-bottom: 0; }
   @media (min-width: 450px) {
     .joe__article-teaser__image {
-      margin-top: 2em;
+      padding-right: 0.75em;
       margin-bottom: 0;
       min-width: 40%;
-      width: 40%; }
+      width: 40%; } }
+  @media (min-width: 450px) and (min-width: 56.25em) {
+    .joe__article-teaser__image {
+      padding-right: 1em; } }
+  @media (min-width: 450px) {
       .no-flexbox .joe__article-teaser__image {
         position: absolute;
         right: 0;
@@ -2427,10 +2575,12 @@ This file is generated by `grunt build`, do not edit it by hand.
         margin-right: 5%; } }
 
 .joe__article-teaser__block {
-  padding-right: 0.75em;
   width: 100%;
   min-width: 0; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 37.5em) {
+    .joe__article-teaser__block {
+      padding-right: 0.75em; } }
+  @media (min-width: 37.5em) and (min-width: 56.25em) {
     .joe__article-teaser__block {
       padding-right: 1em; } }
 
@@ -2523,6 +2673,7 @@ This file is generated by `grunt build`, do not edit it by hand.
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      display: -webkit-flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-align: stretch;
@@ -2594,22 +2745,22 @@ This file is generated by `grunt build`, do not edit it by hand.
     border-top: 1px solid #3f3f6d;
     padding-top: 2em; }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
   .joe__issue-teaser--left {
     float: left;
-    width: 45%; } }
+    width: 40%; } }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
   .joe__issue-teaser--right {
     float: right;
-    width: 50%;
+    width: 55%;
     margin-left: 5%; } }
 
 .joe__issue-teaser__list {
   list-style: none;
   margin: 1em 0 0;
   padding: 0; }
-  @media (min-width: 37.5em) {
+  @media (min-width: 56.25em) {
     .joe__issue-teaser__list {
       margin-top: 0; } }
 
@@ -2663,7 +2814,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   -webkit-box-shadow: 0 0 5px rgba(65, 64, 66, 0.25);
           box-shadow: 0 0 5px rgba(65, 64, 66, 0.25);
   border-top: 4px solid #29688a;
-  padding: 18px 0 5px;
+  padding: 8px 0 8px;
   z-index: 2;
   position: relative;
   -webkit-transition: all .25s ease-in;
@@ -2671,8 +2822,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   z-index: 11; }
   .joe__header .joe__wordmark {
     float: left;
-    max-width: calc(100% - 105px);
-    margin-bottom: 10px; }
+    max-width: calc(100% - 105px); }
     @media (min-width: 0) and (max-width: 20em) {
       .joe__header .joe__wordmark .joe__wordmark__subtitle {
         display: none; } }
@@ -2695,7 +2845,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   @media (min-width: 56.25em) {
     .joe__header {
       border-top: 30px solid #1f1f52;
-      padding: 1em 0 .5em; } }
+      padding: .3em 0 .25em; } }
   @media (min-width: 75em) {
     .joe__header {
       border-top: 36px solid #1f1f52; } }
@@ -2787,6 +2937,10 @@ This file is generated by `grunt build`, do not edit it by hand.
   .joe__menu-trigger .icon-menu svg {
     height: 25px;
     width: 25px; }
+  @media (min-width: 37.5em) {
+    .joe__search-trigger,
+    .joe__menu-trigger {
+      margin-top: 15px; } }
   @media (min-width: 56.25em) {
     .joe__search-trigger,
     .joe__menu-trigger {
@@ -2969,6 +3123,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3021,6 +3176,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -3095,7 +3251,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .joe__topics {
   background-color: #1f1f52;
-  padding: 0 0 1.5em; }
+  padding: 1px 0 1.5em; }
   @media (min-width: 56.25em) {
     .joe__topics {
       padding: 1.5em 0 2.5em; } }
@@ -3186,7 +3342,9 @@ This file is generated by `grunt build`, do not edit it by hand.
   min-width: 0;
   background-color: #ffffff;
   padding-left: 1.5em;
-  padding-right: 1.5em; }
+  padding-right: 1.5em;
+  padding-top: 1px;
+  padding-bottom: 1px; }
   @media (min-width: 56.25em) {
     .joe__page-content {
       margin-right: 0.75em;
@@ -3210,7 +3368,9 @@ This file is generated by `grunt build`, do not edit it by hand.
   grid-column: 1 / 1;
   min-width: 0;
   margin-left: 1.5em;
-  margin-right: 1.5em; }
+  margin-right: 1.5em;
+  padding-top: 1px;
+  padding-bottom: 1px; }
   @media (min-width: 56.25em) {
     .joe__sidebar {
       margin-left: 0.75em;
@@ -3266,6 +3426,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3351,6 +3512,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3471,10 +3633,10 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 .joe__article--top {
   background-color: rgba(255, 255, 255, 0.9);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(#ffffff));
-  background: linear-gradient(rgba(255, 255, 255, 0.85) 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(#ffffff));
+  background: linear-gradient(rgba(255, 255, 255, 0.75) 0%, #ffffff 100%);
   position: relative;
-  padding-top: 2em; }
+  padding-top: 1em; }
   .joe__article--top:before {
     content: "";
     position: absolute;
@@ -3491,7 +3653,10 @@ This file is generated by `grunt build`, do not edit it by hand.
     max-height: 600px; }
   @media (min-width: 56.25em) {
     .joe__article--top {
-      padding-top: 3em; } }
+      padding-top: 1.5em; } }
+
+.joe__article {
+  padding-top: 1px; }
 
 .joe__article--bottom {
   margin-bottom: 1.5em;
@@ -3501,12 +3666,12 @@ This file is generated by `grunt build`, do not edit it by hand.
       margin-bottom: 2em; } }
 
 .joe__page--top {
-  margin-top: 2em;
   background-color: rgba(255, 255, 255, 0.9);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(#ffffff));
-  background: linear-gradient(rgba(255, 255, 255, 0.85) 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(#ffffff));
+  background: linear-gradient(rgba(255, 255, 255, 0.75) 0%, #ffffff 100%);
   position: relative;
-  padding-top: 2em; }
+  padding-top: 1em;
+  padding-bottom: 1px; }
   .joe__page--top:before {
     content: "";
     position: absolute;
@@ -3523,10 +3688,84 @@ This file is generated by `grunt build`, do not edit it by hand.
     max-height: 600px; }
   @media (min-width: 56.25em) {
     .joe__page--top {
-      padding-top: 3em; } }
+      padding-top: 1.5em; } }
 
 .joe__page--bottom {
   margin-bottom: 4em; }
+
+@media print {
+  body {
+    padding-bottom: 20px;
+    background: none;
+    color: #000000;
+    width: 100%;
+    font: 10pt helvetica, arial, sans-serif !important;
+    line-height: 1.5;
+    padding-top: 0; }
+    body p {
+      line-height: 1.5; }
+  @page {
+    margin: 60px 20px;
+    padding: 0.5cm 0; }
+  img {
+    max-width: 400px; }
+  .joe__article-teaser__image {
+    width: 200px;
+    min-width: 200px; }
+  p a:after {
+    content: " (" attr(href) ")";
+    font-size: 80%; }
+  .joe__sticky-header {
+    padding-top: 0; }
+  .joe__sticky-header .joe__header {
+    position: relative;
+    border-top: 0; }
+  .joe__header {
+    border-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .joe__article--top,
+  .joe__page--top {
+    background: none;
+    background-color: transparent;
+    border-top: 1px solid #d1d3d4;
+    margin-top: 0; }
+    .joe__article--top:before,
+    .joe__page--top:before {
+      display: none; }
+  .joe__inline-image {
+    float: left;
+    margin-right: 20px; }
+  .joe__footer {
+    border-bottom: 0;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .joe__nav-drawer,
+  .joe__site-search,
+  .joe__trigger,
+  .joe__article-hero,
+  .joe__page-hero,
+  .joe__article-tools,
+  input,
+  .joe__poll__reveal,
+  .joe__rail-cta,
+  .joe__share,
+  .joe__share-trigger,
+  .joe__related-articles,
+  .joe__tags,
+  .joe__article-issue-footer,
+  .joe__footer .joe__layout--66-33,
+  .joe__inline-quote:after,
+  .joe__filters-wrapper,
+  .joe__pager,
+  .joe__inline-image__zoom,
+  .joe__rail-nav,
+  .joe__cta-band,
+  .joe__related-issues,
+  .joe__issue-filters,
+  .joe__audio-player {
+    display: none !important; } }
 
 .sg-introduction {
   max-width: 800px;
@@ -3573,6 +3812,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

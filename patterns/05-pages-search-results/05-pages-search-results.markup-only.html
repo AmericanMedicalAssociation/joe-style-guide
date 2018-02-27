@@ -105,8 +105,8 @@
     </div>
   </div>
 </header>
-  <div class="joe__page-hero joe__page-hero--no-image">
-  <span class="joe__page-hero__overlay"></span>
+  <div class="joe__article-hero joe__article-hero--no-image">
+  <span class="joe__article-hero__overlay"></span>
 </div>
   <main id="main-content" role="main">
     <div class="container">
@@ -117,7 +117,7 @@
 </header>
     <form class="joe__search-bar">
   <label class="visually-hidden">Site Search</label>
-  <input type="search" name="site-search" placeholder="Search our Site" />
+  <input type="search" name="site-search" placeholder="Search our Journal" />
   <input type="submit" name="site-search-submit" value="Search"/>
 </form>
 
@@ -125,14 +125,14 @@
         
         <aside id="sidebar" class="joe__sidebar joe__sidebar--white joe__sidebar--top" role="complementary">
               <div class="joe__filters-wrapper">
-  <button class="joe__filters--trigger" aria-controls="#joe__filters"><span class="joe__filters__closed">Filter Search Results</span><span class="joe__filters__open">Close Filters</span></button>
+  <button type="button" class="joe__filters--trigger" aria-controls="#joe__filters"><span class="joe__filters__closed">Filter Search Results</span><span class="joe__filters__open">Close Filters</span></button>
   <form id="joe__filters" class="joe__filters">
 
               <div class="joe__filter ">
-                            <label for="articleType">Article Type</label>
+                            <label for="articleType">Article Types</label>
                     <select name="articleType"
         id="articleType"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Article Types">
 
       <option value="CasewithCommentary" 
             >
@@ -216,7 +216,7 @@
                             <label for="articleTopics">Topics</label>
                     <select name="articleTopics"
         id="articleTopics"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Topics">
 
       <option value="Topic_1" 
             >
@@ -260,7 +260,7 @@
                             <label for="articleCompetencies">Core Competencies</label>
                     <select name="articleCompetencies"
         id="articleCompetencies"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Core Competencies">
 
       <option value="Competency_1" 
             >
@@ -301,10 +301,10 @@
   </select>
                 </div>
               <div class="joe__filter ">
-                            <label for="articleSpecialty">Specialty</label>
+                            <label for="articleSpecialty">Specialties</label>
                     <select name="articleSpecialty"
         id="articleSpecialty"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Specialties">
 
       <option value="Specialty_1" 
             >
@@ -345,10 +345,10 @@
   </select>
                 </div>
               <div class="joe__filter ">
-                            <label for="month">Month</label>
+                            <label for="month">Months</label>
                     <select name="Month"
         id="month"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Months">
 
       <option value="January" 
             >
@@ -401,10 +401,10 @@
   </select>
                 </div>
               <div class="joe__filter ">
-                            <label for="year">Year</label>
+                            <label for="year">Years</label>
                     <select name="year"
         id="year"
-        class="joe__chosen"        multiple        >
+        class="joe__chosen"        multiple        data-placeholder="Choose Years">
 
       <option value="2018" 
             >
@@ -829,7 +829,7 @@
     <div class="joe__layout--66-33">
       <div class="joe__col-66">
                 <div class="joe__wordmark">
-  <h1 class="joe__wordmark__title">AMA Journal of Ethics</h1>
+  <h1 class="joe__wordmark__title">AMA Journal of Ethics<sup>&trade;</sup></h1>
   <h2 class="joe__wordmark__subtitle">Illuminating the Art of Medicine</h2>
 </div>
         <nav class="joe__footer-nav">
@@ -837,7 +837,7 @@
       <li class="joe__footer-nav__item">
             <a
   href="/"
-      >AMA Home</a>
+      >Current Issue</a>
     </li>
       <li class="joe__footer-nav__item">
             <a
@@ -868,7 +868,7 @@
 </nav>
       </div>
       <div class="joe__col-33">
-        <a class="joe__footer-brand" href="/">
+        <a class="joe__footer-brand" href="https://www.ama-assn.org/">
                     <img 
         alt="American Medical Association" 
     src="/assets/images/brand/logo.svg"  
