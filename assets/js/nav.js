@@ -38,6 +38,16 @@
            menuTrigger.removeClass('is-active');
          });
          
+         // close everything when esc is pressed
+        $(document).keydown(function(event) { 
+          if (event.keyCode == 27) { 
+            navDrawer.removeClass('is-active');
+            menuTrigger.removeClass('is-active');
+            searchTrigger.removeClass('is-active');
+            searchDrawer.removeClass('is-active');
+          }
+        });
+        
          // sticky sticky-header
          
          $(window).scroll(function(){

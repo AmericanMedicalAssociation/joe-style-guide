@@ -1,11 +1,12 @@
 {% extends '@templates/offset-center.twig' %}
 {% block header %}
   {% include '@organisms/header.twig' %}
-  {% include '@atoms/page-hero.twig' with {'page_hero' :{'image_id': '2'}} %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '5'}} %}
 {% endblock %}
 
 {% block pageContent_header %}
   {% include '@molecules/issue-header.twig' %}
+  {% include '@molecules/share.twig' %}
 {% endblock %}
 
 {% block pageContent %}
