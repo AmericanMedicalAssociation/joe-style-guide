@@ -26,15 +26,10 @@
 .joe__issue-header__meta {
   @extend %joe__type--smaller;
   margin-top: 1em;
-  text-align: left;
 }
 
 .joe__issue-header__download {
   @include type($font-serif, .9em, $font-weight-bold, 1.35);
   display: block;
   margin-top: .25em;
-  
-  @include breakpoint($bp-small) {
-    float: right;
-  }
 }
