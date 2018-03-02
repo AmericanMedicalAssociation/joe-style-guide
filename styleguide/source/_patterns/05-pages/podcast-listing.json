@@ -95,7 +95,7 @@
     "text": "twitter"
   },
   "page_title": "Podcast",
-  "contentType": "Podcasts",
+  "contentType": "Podcast Episodes",
   "filters": [
     {
       "type": "select",

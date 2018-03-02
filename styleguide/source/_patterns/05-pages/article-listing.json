@@ -107,8 +107,8 @@
       "chosen_placeholder": "Choose Article Types",
       "options": [
         { 
-          "value":"CasewithCommentary", 
-          "name":"Case with Commentary" 
+          "value":"CaseandCommentary", 
+          "name":"Case and Commentary" 
         },
         { 
           "value":"MedicalEducation", 
@@ -121,10 +121,6 @@
         { 
           "value":"StateoftheArtandScience", 
           "name":"State of the Art and Science" 
-        },
-        { 
-          "value":"Podcast", 
-          "name":"Podcast" 
         },
         { 
           "value":"HealthLaw", 
@@ -163,24 +159,12 @@
           "name":"AMA Code Says" 
         },
         { 
-          "value":"Peer-reviewedCME", 
-          "name":"Peer-reviewed CME" 
-        },
-        { 
           "value":"OriginalResearch", 
           "name":"Original Research" 
         },
         { 
           "value":"LettertotheEditor", 
           "name":"Letter to the Editor" 
-        },
-        { 
-          "value":"Errata", 
-          "name":"Errata" 
-        },
-        { 
-          "value":"AbouttheContributors", 
-          "name":"About the Contributors" 
         }
       ]
     },
