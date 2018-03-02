@@ -1,7 +1,7 @@
 .joe__tags {
   @extend %joe__type--small;
   position: relative;
-  margin: $gutter 0 ($gutter * 2);
+  margin: $gutter 0;
   padding: 1em 0 0 40px;
 
   border-top: 1px solid $black-20;

@@ -70,13 +70,13 @@
   @include breakpoint($bp-med) {
     @include gutter($padding-left-half...);
     display: inline-block;
-    width: 50%;
+    width: 45%;
     float: right;
     margin-top: 0;
   }
   
   @include breakpoint($bp-large) {
-    width: 60%;
+    width: 55%;
   }
 }
 

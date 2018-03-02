@@ -2,7 +2,7 @@
   @extend %joe__type--small;
   background-color: $black-10;
   padding: $gutter-mobile;
-  margin: .5em 0;
+  margin: 0;
   
   .joe__title-label {
     @include type($font-serif, .875em, $font-weight-bold, 1.25);
@@ -16,6 +16,5 @@
   
   @include breakpoint($bp-med) {
     padding: $gutter;
-    margin: 1em 0;
   }
 }

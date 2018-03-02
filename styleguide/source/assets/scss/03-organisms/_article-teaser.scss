@@ -88,6 +88,7 @@
   @include breakpoint($bp-med) {
     min-width: 35%;
     width: 35%;
+    margin-top: 45px;
     
     .joe__article-teaser--featured & {
       min-width: 45%;
