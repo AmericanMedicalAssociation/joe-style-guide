@@ -110,7 +110,7 @@
 
 .joe__sidebar--bottom {
   @include breakpoint($bp-med) {
-    grid-row: 4;
+    grid-row: 3;
     
     .no-cssgrid & {
       float: right;
