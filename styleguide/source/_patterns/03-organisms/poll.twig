@@ -1,11 +1,6 @@
 <section class="joe__poll joe__poll--inline">
   {% include "@atoms/flag.twig" with { "flag": {"type": "Ethics Poll", "class": "joe__flag--larger joe__flag--green" }} %}
   <div class="joe__poll__block">
-    <div class="joe__poll__question">
-      <div>
-      {{ poll.question }}
-      </div>
-    </div>
     <form class="joe__poll__answers">
       <ul class="joe__poll__answerlist">
       {% for answer in poll.answers %}
@@ -30,6 +25,16 @@
       <button type="button" class="joe__poll__reveal">
         <span class="poll__show">Show</span><span class="poll__hide">Hide</span> results
       </button>
+      
+      <small class="joe__poll__disclaimer">
+        Disclaimer: Pellentesque pretium id ante id tincidunt. Integer id quam at justo sollicitudin condimentum nec in ante. Integer nec ex id sapien posuere feugiat ut a ligula. Suspendisse placerat tempus libero, finibus facilisis massa commodo condimentum.
+      </small>
     </form>
+    
+    <div class="joe__poll__question">
+      <div>
+      {{ poll.question }}
+      </div>
+    </div>
   </div>
 </section>
