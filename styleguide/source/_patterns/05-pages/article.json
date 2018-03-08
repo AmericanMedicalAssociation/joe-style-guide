@@ -133,6 +133,7 @@
       "button": {
         "text": "PDF",
         "type": "link",
+        "href": "/sdsd",
         "style": "tool",
         "info": "Download PDF"
       }
@@ -141,8 +142,9 @@
       "button": {
         "text": "Print",
         "type": "link",
+        "href": "javascript:window.print()",
         "style": "tool",
-        "info": "Print Page"
+        "info": "Print this Page"
       }
     }
   },
