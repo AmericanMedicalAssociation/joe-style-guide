@@ -217,7 +217,8 @@ p,
   margin: 1em 0;
   width: 100%;
   float: left;
-  padding: 0; }
+  padding: 0;
+  clear: both; }
   .joe__audio-player iframe {
     height: 50px;
     width: 100%;
@@ -2138,6 +2139,7 @@ blockquote {
   position: relative;
   margin: 2em 0;
   padding: 1em 0 0 40px;
+  clear: both;
   border-top: 1px solid #d1d3d4; }
   .joe__tags .icon-tag {
     height: 1em;
