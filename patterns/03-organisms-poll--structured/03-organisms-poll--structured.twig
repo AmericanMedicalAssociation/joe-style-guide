@@ -6,12 +6,6 @@
         
         {% for poll in polls %}
         <div class="joe__poll__block">
-          <div class="joe__poll__question">
-            <div>
-            {{ poll.question }}
-            </div>
-            {% include "@atoms/link.twig" with { "link": {"title" : "View Related Article", "href" : "#", "text" : "View Related Article", "class": "joe__poll__link" } } %}
-          </div>
           <form class="joe__poll__answers">
             <ul class="joe__poll__answerlist">
             {% for answer in poll.answers %}
@@ -37,6 +31,13 @@
               <span class="poll__show">Show</span><span class="poll__hide">Hide</span> results
             </button>
           </form>
+          
+          <div class="joe__poll__question">
+            <div>
+            {{ poll.question }}
+            </div>
+            {% include "@atoms/link.twig" with { "link": {"title" : "View Related Article", "href" : "#", "text" : "View Related Article", "class": "joe__poll__link" } } %}
+          </div>
         </div>
         {% endfor %}
       </div>
