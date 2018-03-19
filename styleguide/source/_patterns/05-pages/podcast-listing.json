@@ -423,9 +423,6 @@
         "class": "joe__article-teaser__title",
         "text":"What are the Health Risks of Global Climate Change?"
       },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
-      },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
@@ -438,9 +435,6 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"Bringing “Design Thinking” to Health Care"
-      },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
@@ -468,9 +462,6 @@
         "class": "joe__article-teaser__title",
         "text":"  What Are Clinicians’ Responsibilities to Incarcerated Patients?"
       },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
-      },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
@@ -483,9 +474,6 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"  What Happens When Bad Outcomes Are Unavoidable? Strategies for Communicating Iatrogenic Consequences in Pediatrics"
-      },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
@@ -500,9 +488,6 @@
         "class": "joe__article-teaser__title",
         "text":"Creating Social and Community Connections for People with Dementia: An Interview with Beth Soltzberg"
       },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
-      },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
     {
@@ -515,9 +500,6 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"Strategies for Addressing Moral Distress: An Interview with Dr. Elizabeth Epstein"
-      },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     },
@@ -544,9 +526,6 @@
         "href": "#",
         "class": "joe__article-teaser__title",
         "text":"  Rethinking So-Called “Difficult” Patients: An Interview with Dr. Autumn Fiester"
-      },
-      "image": {
-        "src":"https://ipsumimage.appspot.com/450x225"
       },
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus eu dolor euismod porttitor elementum quis erat. Suspendisse ac dolor elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eget condimentum turpis, eget porttitor odio. Mauris pulvinar nisi in laoreet iaculis"
     }
