@@ -128,15 +128,6 @@
         }
       }
     },
-    "pdf": {
-      "button": {
-        "text": "PDF",
-        "type": "link",
-        "href": "/sdsd",
-        "style": "tool",
-        "info": "Download PDF"
-      }
-    },
     "print": {
       "button": {
         "text": "Print",
