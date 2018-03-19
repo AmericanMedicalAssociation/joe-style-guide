@@ -33,4 +33,16 @@
       }
     }
   }
+  
+  &.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
+    right: 52px;
+    
+    @include breakpoint($bp-med) {
+      right: 54px;
+    }
+    
+    @include breakpoint($bp-large) {
+      right: 57px;
+    }
+  }
 }
