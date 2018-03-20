@@ -861,6 +861,14 @@ table {
     @media (min-width: 75em) {
       .joe__article-tools .joe__tool-drawer .joe__button--tool {
         right: 112px; } }
+  .joe__article-tools.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
+    right: 52px; }
+    @media (min-width: 56.25em) {
+      .joe__article-tools.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
+        right: 54px; } }
+    @media (min-width: 75em) {
+      .joe__article-tools.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
+        right: 57px; } }
 
 .joe__author-information {
   margin: 1.5em 0; }

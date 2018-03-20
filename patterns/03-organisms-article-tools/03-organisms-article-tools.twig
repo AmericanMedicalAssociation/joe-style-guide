@@ -1,4 +1,4 @@
-<div class="joe__article-tools">
+<div class="joe__article-tools {% if article_tools.pdf == false %}joe__article-tools--no-pdf {% endif %}">
   {% if article_tools.citation %}
     {% set tool_drawer = article_tools.citation.tool_drawer %}
     {% include "@molecules/tool-drawer.twig" %}
