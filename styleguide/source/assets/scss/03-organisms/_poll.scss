@@ -62,7 +62,7 @@
   @include breakpoint($bp-med) {
     @include gutter($padding-right-half...);
     display: inline-block;
-    width: 50%;
+    width: 47%;
     float: left;
   }
   
@@ -87,6 +87,10 @@
   }
   
   @include breakpoint($bp-large) {
+    width: 52%;
+  }
+  
+  @include breakpoint(1275px) {
     width: 55%;
   }
 }
