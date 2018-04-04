@@ -1963,10 +1963,12 @@ blockquote {
   z-index: 5;
   opacity: 0;
   -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in; }
+  transition: all .25s ease-in;
+  border-radius: 2px; }
   .joe__share-trigger .joe__icon {
     height: 30px;
-    width: 30px; }
+    width: 30px;
+    display: block; }
   .joe__share-trigger svg {
     height: 30px;
     width: 30px;
@@ -3026,7 +3028,7 @@ blockquote {
   .joe__poll__question {
     padding-right: 0.75em;
     display: inline-block;
-    width: 50%;
+    width: 47%;
     float: left; } }
   @media (min-width: 56.25em) and (min-width: 56.25em) {
     .joe__poll__question {
@@ -3051,6 +3053,10 @@ blockquote {
       padding-left: 1em; } }
 
 @media (min-width: 75em) {
+  .joe__poll__answers {
+    width: 52%; } }
+
+@media (min-width: 1275px) {
   .joe__poll__answers {
     width: 55%; } }
 
