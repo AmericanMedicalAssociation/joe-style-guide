@@ -78,12 +78,14 @@
 }
 
 .joe__poll__answers {
+  margin-top: 1em;
   
   @include breakpoint($bp-med) {
     @include gutter($padding-left-half...);
     display: inline-block;
     width: 45%;
     float: right;
+    margin-top: 0;
   }
   
   @include breakpoint($bp-large) {
