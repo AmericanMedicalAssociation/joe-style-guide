@@ -30,62 +30,143 @@
 }
 
 .joe__page-content {
-  grid-column: 1 / 1;
+  grid-column: 1;
+  grid-row: auto;
   min-width: 0;
   background-color: $white;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
   padding-top: 1px;
   padding-bottom: 1px;
+  
+  &:nth-of-type(1) {
+    grid-row: 1;
+    -ms-grid-row: 1;
+  }
+  
+  &:nth-of-type(2) {
+    grid-row: 3;
+    -ms-grid-row: 3;
+  }
+  
+  &:nth-of-type(3) {
+    grid-row: 4;
+    -ms-grid-row: 4;
+  }
+  
+  &:nth-of-type(4) {
+    grid-row: 5;
+    -ms-grid-row: 5;
+  }
 
   @include breakpoint($bp-med) {
     @include gutter($margin-right-half...);
     padding-left: $gutter;
     padding-right: $gutter;
-    grid-column: 1 / 2;
-    -ms-grid-column: 1;
+    grid-column: 1;
+    
+    &:nth-of-type(2) {
+      grid-row: 2;
+      -ms-grid-row: 2;
+    }
+    
+    &:nth-of-type(3) {
+      grid-row: 3;
+      -ms-grid-row: 3;
+    }
+    
+    &:nth-of-type(4) {
+      grid-row: 4;
+      -ms-grid-row: 4;
+    }
   }
   
   // Fallback for CSS Grids
   .no-cssgrid & {
+    width: 100%;
+    display: block;
+    float: none;
+    clear: both;
+    
+    @include breakpoint($bp-small) {
+      width: 100%;
+      display: block;
+      float: none;
+      clear: both;
+    }
     
     @include breakpoint($bp-med) {
-      width: 66.66%;
+      width: 63.66%;
       float: left;
+      clear: none;
       display: inline-block;
     }
     
     @include breakpoint($bp-large) {
-      width: 72%;
+      width: 70%;
+      float: left;
+      clear: none;
+      display: inline-block;
     }
   }
 }// end article
 
 .joe__sidebar {
-  grid-column: 1 / 1;
+  grid-column: 1;
+  grid-row: 5;
+  -ms-grid-row: 5;
   min-width: 0;
   margin-left: $gutter-mobile;
   margin-right: $gutter-mobile;
   padding-top: 1px;
   padding-bottom: 1px;
+  
+  .is-listing & {
+    grid-row: 2;
+    -ms-grid-row: 2;
+  }
 
   @include breakpoint($bp-med) {
     @include gutter($margin-left-half...);
     margin-right: 0;
-    grid-column: 2 / 2;
+    grid-column: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    
+    
+    .is-listing & {
+      grid-row: 2;
+      -ms-grid-row: 2;
+    }
   }
   
   // Fallback for CSS Grids
   .no-cssgrid & {
+    width: 100%; 
+    display: block;
+    float: none;
+    clear: both;
+    
+    @include breakpoint($bp-small) {
+      width: 100%; 
+      display: block;
+      float: none;
+      clear: both;
+    }
     
     @include breakpoint($bp-med) {
-      width: 33.33%;
+      width: 31.33%;
       display: inline-block;
-      clear: right;
+      float: right;
+      clear: none;
     }
     
     @include breakpoint($bp-large) {
-      width: 28%;
+      width: 26%;
+      display: inline-block;
+      float: right;
+      clear: none;
     }
   }
 } // end aside.primary
@@ -93,6 +174,8 @@
 .joe__sidebar--top {
   @include breakpoint($bp-med) {
     grid-row: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
   }
 }
 
