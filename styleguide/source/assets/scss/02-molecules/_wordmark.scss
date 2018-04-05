@@ -9,6 +9,11 @@
     margin-top: 3px;
     margin-bottom: 10px;
   }
+  
+  a:link,
+  a:visited {
+    color: $black-90;
+  }
 }
 
 .joe__wordmark__title {
