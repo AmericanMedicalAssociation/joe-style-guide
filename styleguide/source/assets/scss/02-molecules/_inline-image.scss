@@ -120,7 +120,7 @@
   
   &:after {
     content: 'Zoom in on this Image';
-    background-image: url('/assets/images/zoom-blue.png');
+    background-image: url('../images/zoom-blue.png');
     background-size: 25px 25px;
     height: 25px;
     width: 25px;
@@ -137,7 +137,7 @@
     background: $blue-gradient;
   
     &:after {
-      background-image: url('/assets/images/zoom-white.png');
+      background-image: url('../images/zoom-white.png');
     }
   }
   
@@ -157,7 +157,7 @@
       position: absolute;
       top: 10px;
       right: 10px;
-      background-image: url('/assets/images/close.png');
+      background-image: url('../images/close.png');
       background-size: 25px 25px;
       height: 25px;
       width: 25px;
