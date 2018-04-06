@@ -2415,25 +2415,17 @@ blockquote {
     display: inline-block;
     margin-bottom: 0;
     float: left;
-    width: 50%;
+    width: 44%;
     padding: 4em 0; }
     .joe__about-band__block:first-child {
-      padding-right: 1.5em;
+      padding-right: 5%;
       background-color: #ffffff;
       margin-bottom: 0;
-      padding-bottom: 0; } }
-    @media (min-width: 56.25em) and (min-width: 56.25em) {
-      .joe__about-band__block:first-child {
-        padding-right: 2em; } }
-
-@media (min-width: 56.25em) {
+      padding-bottom: 0; }
     .joe__about-band__block:last-child {
-      padding-left: 1.5em;
+      padding-left: 5%;
       background-color: #f1f1f1;
       margin-bottom: 0; } }
-    @media (min-width: 56.25em) and (min-width: 56.25em) {
-      .joe__about-band__block:last-child {
-        padding-left: 2em; } }
 
 .joe__article-footer {
   background-color: #E5E5E5;
@@ -3438,13 +3430,13 @@ blockquote {
         clear: both; } }
     @media (min-width: 56.25em) {
       .no-cssgrid .joe__page-content {
-        width: 63.66%;
+        width: 57%;
         float: left;
         clear: none;
         display: inline-block; } }
     @media (min-width: 75em) {
       .no-cssgrid .joe__page-content {
-        width: 70%;
+        width: 65%;
         float: left;
         clear: none;
         display: inline-block; } }
@@ -3489,13 +3481,19 @@ blockquote {
         clear: both; } }
     @media (min-width: 56.25em) {
       .no-cssgrid .joe__sidebar {
-        width: 31.33%;
+        width: 27%;
         display: inline-block;
         float: right;
         clear: none; } }
     @media (min-width: 75em) {
       .no-cssgrid .joe__sidebar {
-        width: 26%;
+        width: 23%;
+        display: inline-block;
+        float: right;
+        clear: none; } }
+    @media (min-width: 100em) {
+      .no-cssgrid .joe__sidebar {
+        width: 25%;
         display: inline-block;
         float: right;
         clear: none; } }
@@ -3644,7 +3642,7 @@ blockquote {
       margin-right: 1em; } }
   @media (min-width: 37.5em) {
     .no-cssgrid .joe__col-one {
-      width: 50%;
+      width: 47%;
       clear: left;
       display: inline-block;
       float: left; } }
@@ -3668,7 +3666,7 @@ blockquote {
       margin-left: 1em; } }
   @media (min-width: 37.5em) {
     .no-cssgrid .joe__col-two {
-      width: 50%;
+      width: 47%;
       clear: right;
       display: inline-block;
       float: right; } }
@@ -3694,7 +3692,7 @@ blockquote {
       -ms-grid-column-span: 1; } }
   @media (min-width: 56.25em) {
     .no-cssgrid .joe__col-one--med {
-      width: 50%;
+      width: 47%;
       clear: left;
       display: inline-block;
       float: left; } }
@@ -3720,7 +3718,7 @@ blockquote {
       -ms-grid-row: 1; } }
   @media (min-width: 56.25em) {
     .no-cssgrid .joe__col-two--med {
-      width: 50%;
+      width: 47%;
       clear: right;
       display: inline-block;
       float: right; } }
