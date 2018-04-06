@@ -1426,7 +1426,7 @@ blockquote {
   padding: 6px; }
   .joe__inline-image__zoom:after {
     content: 'Zoom in on this Image';
-    background-image: url("/assets/images/zoom-blue.png");
+    background-image: url("../images/zoom-blue.png");
     background-size: 25px 25px;
     height: 25px;
     width: 25px;
@@ -1438,7 +1438,7 @@ blockquote {
     background-color: #3f3f6d;
     background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%); }
     .joe__inline-image__zoom:active:after, .joe__inline-image__zoom:hover:after, .joe__inline-image__zoom:focus:after {
-      background-image: url("/assets/images/zoom-white.png"); }
+      background-image: url("../images/zoom-white.png"); }
   .joe__inline-image.is-zoomed .joe__inline-image__zoom {
     position: fixed;
     width: 100%;
@@ -1454,7 +1454,7 @@ blockquote {
       position: absolute;
       top: 10px;
       right: 10px;
-      background-image: url("/assets/images/close.png");
+      background-image: url("../images/close.png");
       background-size: 25px 25px;
       height: 25px;
       width: 25px; }
@@ -1469,7 +1469,7 @@ blockquote {
   .joe__inline-quote:before,
   blockquote:before {
     content: '';
-    background-image: url("/assets/images/quote.png");
+    background-image: url("../images/quote.png");
     background-size: 30px 30px;
     height: 30px;
     width: 30px;
