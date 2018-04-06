@@ -1,11 +1,14 @@
 .joe__related-articles {
-  margin: 2em 0;
+  margin: 1em 0;
+  background-color: $white;
+  padding: 0;
   
   @include breakpoint($bp-xs) {
     margin: 2em $gutter-mobile;
   }
   
   @include breakpoint($bp-med) {
-    margin: 4em 0;
+    margin: 2em 0 1em 0;
+    padding: 1em 1.5em;
   }
 }
