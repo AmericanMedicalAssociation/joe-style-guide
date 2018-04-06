@@ -118,33 +118,16 @@
   border-radius: 0;
   padding: 6px;
   
-  .icon-zoom {
+  &:after {
+    content: 'Zoom in on this Image';
+    background-image: url('/assets/images/zoom-blue.png');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
     display: block;
-    height: 26px;
-    width: 26px;
-    
-    svg {
-      height: 25px;
-      width: 25px;
-      fill: $blue-darkest;
-    }
-  }
-  
-  .icon-close {
-    display: none;
-    visibility: hidden;
-    height: 26px;
-    width: 26px;
-    
-    svg {
-      height: 25px;
-      width: 25px;
-      fill: $white;
-      position: absolute;
-      top: 1em;
-      right: 1em;
-      z-index: 22;
-    }
+    color: transparent;
+    font-size: 0;
+    overflow: hidden;
   }
   
   &:active,
@@ -153,10 +136,8 @@
     background-color: $navy-lighter;
     background: $blue-gradient;
   
-    .icon-zoom {
-      svg {
-        fill: $white;
-      }
+    &:after {
+      background-image: url('/assets/images/zoom-white.png');
     }
   }
   
@@ -171,14 +152,15 @@
     background: none;
     background-color: transparent;
     
-    .icon-zoom {
-      display: none;
-      visibility: hidden;
-    }
-    
-    .icon-close {
-      display: block;
-      visibility: visible;
+    &:after {
+      content: 'Close';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-image: url('/assets/images/close.png');
+      background-size: 25px 25px;
+      height: 25px;
+      width: 25px;
     }
   }
 }

@@ -4,17 +4,14 @@ blockquote {
   @include type($font-serif, 1.1em, $font-weight-bold, 1.35);
   color: $navy-lighter;
   
-  .icon-quote {
-    display: block;
-    margin-bottom: 15px;
+  &:before {
+    content: '';
+    background-image: url('/assets/images/quote.png');
+    background-size: 30px 30px;
     height: 30px;
     width: 30px;
-    
-    svg {
-      height: 30px;
-      width: 30px;
-      fill: $orange;
-    }
+    display: block;
+    margin-bottom: 15px;
   }
   
   &:after {
