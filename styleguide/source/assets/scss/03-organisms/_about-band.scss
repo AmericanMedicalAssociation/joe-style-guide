@@ -62,18 +62,18 @@
     display: inline-block;
     margin-bottom: 0;
     float: left;
-    width: 50%;
+    width: 44%;
     padding: ($gutter * 2) 0;
     
     &:first-child {
-      @include gutter($padding-right-full...);
+      padding-right: 5%;
       background-color: $white;
       margin-bottom: 0;
       padding-bottom: 0;
     }
     
     &:last-child {
-      @include gutter($padding-left-full...);
+      padding-left: 5%;
       background-color: $black-05;
       margin-bottom: 0;
     }

@@ -96,14 +96,14 @@
     }
     
     @include breakpoint($bp-med) {
-      width: 63.66%;
+      width: 57%;
       float: left;
       clear: none;
       display: inline-block;
     }
     
     @include breakpoint($bp-large) {
-      width: 70%;
+      width: 65%;
       float: left;
       clear: none;
       display: inline-block;
@@ -156,14 +156,21 @@
     }
     
     @include breakpoint($bp-med) {
-      width: 31.33%;
+      width: 27%;
       display: inline-block;
       float: right;
       clear: none;
     }
     
     @include breakpoint($bp-large) {
-      width: 26%;
+      width: 23%;
+      display: inline-block;
+      float: right;
+      clear: none;
+    }
+    
+    @include breakpoint($bp-xl) {
+      width: 25%;
       display: inline-block;
       float: right;
       clear: none;
