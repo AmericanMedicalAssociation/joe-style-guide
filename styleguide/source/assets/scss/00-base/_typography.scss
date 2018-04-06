@@ -59,6 +59,14 @@ p,
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+%visually-hidden-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
 %focusable,
 .focusable {
   @extend %visually-hidden;
