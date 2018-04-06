@@ -23,7 +23,8 @@
     li {
       margin-bottom: 0;
       display: inline-block;
-      float: left;
+      float: flex;
+      overflow: hidden;
       
       // 1-up layout
       // when there is one item it's full width
@@ -79,7 +80,6 @@
     
     .joe__rail-cta {
       margin: 0;
-      height: 100%;
     }
   }
   
@@ -87,7 +87,7 @@
     
     li {
       margin-bottom: 0;
-      display: inline-block;
+      display: flex;
       float: left;
 
       // 4-up layout
