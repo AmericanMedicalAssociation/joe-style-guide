@@ -2296,6 +2296,11 @@ blockquote {
 .joe__wordmark a:visited {
   color: #414042; }
 
+.joe__wordmark a:active,
+.joe__wordmark a:hover,
+.joe__wordmark a:focus {
+  text-decoration: none; }
+
 .joe__wordmark__title {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
   font-size: 1.2em;
@@ -3430,13 +3435,13 @@ blockquote {
         clear: both; } }
     @media (min-width: 56.25em) {
       .no-cssgrid .joe__page-content {
-        width: 57%;
+        width: 55%;
         float: left;
         clear: none;
         display: inline-block; } }
     @media (min-width: 75em) {
       .no-cssgrid .joe__page-content {
-        width: 65%;
+        width: 63%;
         float: left;
         clear: none;
         display: inline-block; } }
@@ -3481,13 +3486,13 @@ blockquote {
         clear: both; } }
     @media (min-width: 56.25em) {
       .no-cssgrid .joe__sidebar {
-        width: 27%;
+        width: 25%;
         display: inline-block;
         float: right;
         clear: none; } }
     @media (min-width: 75em) {
       .no-cssgrid .joe__sidebar {
-        width: 23%;
+        width: 21%;
         display: inline-block;
         float: right;
         clear: none; } }
