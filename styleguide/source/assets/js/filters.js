@@ -36,6 +36,10 @@
        }
         
         $(".joe__chosen").chosen({width: "100%"});
+        
+        $('.chosen-choices').on('touchend', '.search-choice-close', function(){
+            $(this).trigger('click');
+        });
      }
    };
  })(jQuery, Drupal);
