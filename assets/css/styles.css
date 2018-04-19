@@ -1933,6 +1933,10 @@ blockquote {
 .joe__references ol {
   padding-left: 1em;
   word-wrap: break-word; }
+  .joe__references__list p,
+  .joe__references ul p,
+  .joe__references ol p {
+    display: inline; }
 
 .joe__references__item,
 .joe__references li {
