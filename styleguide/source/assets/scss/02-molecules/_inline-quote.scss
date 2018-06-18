@@ -1,5 +1,10 @@
-.joe__inline-quote,
 blockquote {
+  font-size: .85em;
+  margin: 1em auto;
+  line-height: 1.4;
+}
+
+.joe__inline-quote{
   @extend %joe__inline;
   @include type($font-serif, 1.1em, $font-weight-bold, 1.35);
   color: $navy-lighter;
