@@ -1,7 +1,6 @@
 blockquote {
-  font-size: .85em;
   margin: 1em auto;
-  line-height: 1.4;
+  @include type($base-font-family, .85em, $font-weight-medium, 1.4);
 }
 
 .joe__inline-quote{
