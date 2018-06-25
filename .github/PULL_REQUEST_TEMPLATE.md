@@ -6,7 +6,7 @@ Please do not submit a Pull Request without a relevant JIRA ticket or Github iss
 
 **Github Issue**
 
-- [Issue XXX: Issue Title](https://github.com/AmericanMedicalAssociation/AMA-style-guide/issues/XXX)
+- [Issue XXX: Issue Title](https://github.com/AmericanMedicalAssociation/joe-style-guide/issues/XXX)
 
 **Jira Ticket**
 
