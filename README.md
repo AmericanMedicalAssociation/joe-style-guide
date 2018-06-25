@@ -1,12 +1,13 @@
-[![Latest Release](https://img.shields.io/github/release/AmericanMedicalAssociation/AMA-style-guide.svg)](https://github.com/AmericanMedicalAssociation/AMA-style-guide/releases/latest)
+[![Latest Release](https://img.shields.io/github/release/AmericanMedicalAssociation/joe-style-guide.svg)](https://github.com/AmericanMedicalAssociation/joe-style-guide/releases/latest)
 
-# Living Style Guide for AMA
-This will be the new and improved living style guide for the American Medical Association. It is the canonical source for the Digital Technology Team's Drupal 8 work, as well as a platform-agnostic tool to empower employees and vendors to maintain consistent design and hierarchy throughout the AMA digital ecosystem.
+# Living Style Guide for Journal of Ethics
+This will be the new and improved living style guide for the Journal of Ethics. It is the canonical source for the Digital Technology Team's Drupal 8 work on Journal of Ethics, as well as a platform-agnostic tool to empower employees and vendors to maintain consistent design and hierarchy throughout the AMA digital ecosystem.
 
-This style guide is a compilation of [atomic components](http://bradfrost.com/blog/post/atomic-web-design/) that have been specifically tailored to the needs of AMA. By documenting and assembling this collection of patterns, we are able to build consistently, reuse code, and [see all of our patterns in one place](https://americanmedicalassociation.github.io/AMA-style-guide/).
+This style guide is a compilation of [atomic components](http://bradfrost.com/blog/post/atomic-web-design/) that have been specifically tailored to the needs of AMA. By documenting and assembling this collection of patterns, we are able to build consistently, reuse code, and [see all of our patterns in one place](https://americanmedicalassociation.github.io/joe-style-guide/).
 
 ## Style Guide Consumers - To use this Style Guide on a project:
-- Grab the [latest release](https://github.com/AmericanMedicalAssociation/AMA-style-guide-2/releases)
+- Grab the [latest release](https://github.com/AmericanMedicalAssociation/joe-style-guide
+/releases)
 - Open the `.zip` into your project
 - Link to the production files at `assets/`
 
