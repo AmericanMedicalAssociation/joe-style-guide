@@ -18,6 +18,11 @@ table {
   @include breakpoint($bp-large) {
     white-space: normal;
   }
+  
+  caption{
+    text-align: left;
+    padding: 0px 12px;
+  }
 
   // change these gradients from white to your background colour if it differs
   // gradient on the first cells to hide the left shadow
