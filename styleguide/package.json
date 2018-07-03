@@ -1,6 +1,6 @@
 {
   "name": "joe-style-guide",
-  "version": "1.21.1",
+  "version": "1.21.2",
   "description": "A living style guide for the AMA Journal of Ethics",
   "repository": "https://github.com/AmericanMedicalAssociation/joe-style-guide",
   "main": "gulpfile.js",
@@ -43,8 +43,7 @@
     "run-sequence": "^2.2.0"
   },
   "scripts": {
-    "prepare": "npx patch-package",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "patch-package"
   },
   "author": "Avi Schwab",
   "license": "ISC",

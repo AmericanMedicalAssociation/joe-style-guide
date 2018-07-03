@@ -15,10 +15,12 @@ This style guide is a compilation of [atomic components](http://bradfrost.com/bl
 
 **Environment setup (mac)**
 
- - Have [`homebrew`](https://brew.sh/) installed
- - `brew install nvm`
- - `nvm install v7.10.0` (or some relatively recent node version. Note 8.0.0 has a fatal bug with require-dir module)
- - `nvm use 7.10.0`
+  - Have [`homebrew`](https://brew.sh/) installed
+  - `brew update`
+  - `brew install nvm`
+  - `nvm install v9.9.0`
+  - `nvm use 9.9.0`
+  - `nvm alias default v9.9.0`
 
 **Just the first time:**
 
@@ -45,9 +47,9 @@ This style guide is a compilation of [atomic components](http://bradfrost.com/bl
 This project will maintain a number of branches:
 
 - `develop` - the (uncompiled) working branch
-- [WIP] `gh-pages` - the compiled, publicly accessible “production” artifact
-- [WIP] `dev-assets` - the compiled, Drupal-consumed artifact for testing
-- `master` - the compiled production release that gets tagged.
+- `gh-pages` - the compiled, publicly accessible “testing” artifact
+- `dev-assets` - the compiled production release that gets tagged.
+
 
 For more detail on how to deploy to these branches, see [Creating a Release](https://github.com/AmericanMedicalAssociation/joe-style-guide/blob/develop/docs/creating_a_release.md)
 
