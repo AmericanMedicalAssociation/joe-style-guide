@@ -113,14 +113,20 @@
 
 .joe__sidebar {
   grid-column: 1;
-  grid-row: 5;
-  -ms-grid-row: 5;
+  grid-row: 2;
+  -ms-grid-row: 2;
+
   min-width: 0;
   margin-left: $gutter-mobile;
   margin-right: $gutter-mobile;
   padding-top: 1px;
   padding-bottom: 1px;
-  
+
+  @include breakpoint($bp-large) {
+    grid-row: 5;
+    -ms-grid-row: 5;
+  }
+
   .is-listing & {
     grid-row: 2;
     -ms-grid-row: 2;
