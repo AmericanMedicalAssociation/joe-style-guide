@@ -34,3 +34,7 @@
   @include gutter($margin-bottom-full...);
   background-color: $white;
 }
+
+.joe__page-content--article {
+  padding-top: 5px;
+}
