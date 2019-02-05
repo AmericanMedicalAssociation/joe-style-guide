@@ -80,3 +80,11 @@ p,
     overflow: auto;
   }
 }
+
+sup {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
