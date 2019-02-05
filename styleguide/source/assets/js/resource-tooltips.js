@@ -10,7 +10,7 @@
  (function ($, Drupal) {
    Drupal.behaviors.resourceToolips = {
      attach: function (context, settings) {
-       $('article p sup').hover(
+       $('article sup').hover(
          function() {
            // Find the <sup> tag number and convert it into an integer
            var $supNumber = parseInt($(this).text()) - 1;
