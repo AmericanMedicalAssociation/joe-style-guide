@@ -54,11 +54,11 @@
   
   @include breakpoint($bp-med) {
     float: right;
-    margin-right: 5em;
+    margin-right: 5.0em;
   }
 
   @include breakpoint($bp-large) {
-    margin-right: 5em;
+    margin-right: 5.0em;
   }
   
   @include breakpoint($bp-xl) {
