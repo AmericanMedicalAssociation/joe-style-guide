@@ -12,7 +12,7 @@
   
   @include breakpoint($bp-med) {
     position: absolute;
-    width: 93%;
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     column-count: 1;
@@ -27,7 +27,7 @@
   }
   
   @include breakpoint($bp-large) {
-    width: 95%;
+    width: 100%;
     
     .joe__header & {
       top: -28px;
@@ -54,10 +54,15 @@
   
   @include breakpoint($bp-med) {
     float: right;
+    margin-right: 5em;
+  }
+
+  @include breakpoint($bp-large) {
+    margin-right: 5em;
   }
   
   @include breakpoint($bp-xl) {
-    margin-right: 1.75em;
+    margin-right: 0em;
   }
 }
 
