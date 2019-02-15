@@ -13,12 +13,12 @@
       // Opens and closes results. 
       $(document).ready(function () {
         $('.joe__poll__reveal').unbind('click').bind('click', (function (event) {
-        console.log('test');
-        // Prevents the default event behavior (ie: click).
-        event.preventDefault();
-        // Prevents the event from propagating (ie: "bubbling").
-        event.stopPropagation();
-        // Unfocus on the dropdown
+          // Prevents the default event behavior (ie: click).
+          event.preventDefault();
+          // Prevents the event from propagating (ie: "bubbling").
+          event.stopPropagation();
+          // console.log('test');
+          // Unfocus on the dropdown
         $(this).blur();
         // add a class to the sibling dropdown  
         $(this).parents('.joe__poll__answers').toggleClass('is-open');
@@ -28,23 +28,3 @@
    }
   }
 })(jQuery, Drupal);
-
-// (function ($, Drupal) {
-//   Drupal.behaviors.pollReveal = {
-//     attach: function (context, settings) {
-//  
-//       $('.joe__poll__reveal', context).once('pollReveal').unbind('click').bind('click', (function (event) {
-//           console.log('test');
-//           // Prevents the default event behavior (ie: click).
-//           event.preventDefault();
-//           // Prevents the event from propagating (ie: "bubbling").
-//           event.stopPropagation();
-//           // Unfocus on the dropdown
-//           $(this).blur();
-//           // add a class to the sibling dropdown  
-//           $(this).parents('.joe__poll__answers').toggleClass('is-open');
-//           $(this).toggleClass('is-active');
-//         }));
-//     }
-//   }
-// })(jQuery, Drupal);
