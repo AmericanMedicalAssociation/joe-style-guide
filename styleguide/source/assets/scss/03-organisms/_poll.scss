@@ -121,6 +121,8 @@
 .joe__poll__reveal,
 .joe__poll__reveal[type='submit'] {
   @extend %joe__type--small;
+  margin-left: .5em;
+  display: inline;
   background-color: none;
   background: none;
   border-radius: 0;

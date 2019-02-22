@@ -17,13 +17,18 @@
           event.preventDefault();
           // Prevents the event from propagating (ie: "bubbling").
           event.stopPropagation();
-          // console.log('test');
           // Unfocus on the dropdown
         $(this).blur();
         // add a class to the sibling dropdown  
         $(this).parents('.joe__poll__answers').toggleClass('is-open');
         $(this).toggleClass('is-active');
       }));
+      // Updates show/hide text. 
+      $('.joe__poll__answers').each(function(i, obj) {
+          if($(this).is(".is-open")){
+	          $(this).find('.joe__poll__reveal').addClass('is-active');
+          }
+      });
     });
    }
   }
