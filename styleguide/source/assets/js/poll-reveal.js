@@ -23,7 +23,7 @@
         $(this).parents('.joe__poll__answers').toggleClass('is-open');
         $(this).toggleClass('is-active');
       }));
-      // Updates show/hide text. 
+      // Updates show/hide text.
       $('.joe__poll__answers').each(function(i, obj) {
           if($(this).is(".is-open")){
 	          $(this).find('.joe__poll__reveal').addClass('is-active');
