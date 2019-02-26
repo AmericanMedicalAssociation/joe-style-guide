@@ -8,22 +8,23 @@
   
   @include breakpoint($bp-xs) {
     column-count: 2;
-  }
-  
-  @include breakpoint($bp-med) {
+
     position: absolute;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    column-count: 1;
     background: $navy-lighter;
     background-color: $navy-lighter;
-    
+
     .joe__header & {
       top: -25px;
       background: none;
       background-color: transparent;
     }
+  }
+  
+  @include breakpoint($bp-med) {
+    column-count: 1;
   }
   
   @include breakpoint($bp-large) {
