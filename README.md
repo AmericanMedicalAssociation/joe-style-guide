@@ -51,7 +51,7 @@ This project will maintain a number of branches:
 - `dev-assets` - the compiled production release that gets tagged.
 
 
-For more detail on how to deploy to these branches, see [Creating a Release](https://github.com/AmericanMedicalAssociation/joe-style-guide/blob/develop/docs/creating_a_release.md)
+For more detail on how to deploy to these branches, see [Creating a Release](https://issues.ama-assn.org:8446/confluence/display/DTD/Deployment+Guide+for+Journal+of+Ethics+Style+Guide)
 
 ## Troubleshooting:
 ### Make sure your npm dependencies are up to date
