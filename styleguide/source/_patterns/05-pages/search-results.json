@@ -61,6 +61,32 @@
       "value": "Search"
     }
   ],
+  "search_filter": {
+    "input": {
+      "type": "search",
+      "name": "site-search",
+      "id": "keyword-search",
+      "class": "joe__search-bar__input-search",
+      "value": "",
+      "placeholder": "Search our Journal"
+    },
+    "select": {
+      "name": "select",
+      "id": "sort-search",
+      "class": "joe__search-bar__select",
+      "options": [
+        {
+          "value":"relevance",
+          "name":"Relevance",
+          "selected" : true
+        },
+        {
+          "value":"most_recent",
+          "name":"Most recent"
+        }
+      ]
+    }
+  },
   "utility_left_navs": [
     {
       "href": "/",

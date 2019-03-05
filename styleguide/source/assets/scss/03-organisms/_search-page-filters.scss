@@ -1,7 +1,10 @@
 .joe__search-bar {
   margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   
-  input[type='submit'] {
+  input[type='submit'], &__select {
     width: 100%;
     margin-top: .25em;
   }
@@ -9,14 +12,26 @@
   @include breakpoint($bp-xs) {
     position: relative;
     padding-right: 140px;
-    
+    flex-direction: row;
+    justify-content: center;
+
     input[type='submit'] {
       width: auto;
       margin-top: 0;
       position: absolute;
       right: 0;
       top: 0;
-    } 
+    }
+    &__input-search{
+      flex: 2 0 60%;
+      max-width: 100%;
+      margin-right: 1em;
+    }
+    &__select{
+      max-width: 25%;
+      flex: 0 1 25%;
+      margin-top: 0;
+    }
     
     @include breakpoint($bp-med) {
       padding-right: 160px;
