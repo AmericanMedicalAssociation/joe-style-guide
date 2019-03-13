@@ -83,7 +83,8 @@ p,
 
 sup {
   position: relative;
-
+  line-height: 1;
+  font-size: $base-font-size * 0.8;
   &:hover {
     cursor: pointer;
   }
