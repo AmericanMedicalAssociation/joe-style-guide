@@ -128,6 +128,13 @@ p,
   width: auto;
   overflow: auto; }
 
+sup {
+  position: relative;
+  line-height: 1;
+  font-size: 14.4px; }
+  sup:hover {
+    cursor: pointer; }
+
 .joe__article-hero {
   position: relative;
   width: 100%;
@@ -772,6 +779,22 @@ table {
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 5px; }
+
+.ama__tooltip {
+  -webkit-box-shadow: 0 0 5px rgba(65, 64, 66, 0.25);
+          box-shadow: 0 0 5px rgba(65, 64, 66, 0.25);
+  padding: 1em;
+  border-top: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  min-width: 250px;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  word-break: break-all; }
 
 
 .joe__video-container {
@@ -2214,24 +2237,24 @@ blockquote {
   @media (min-width: 25em) {
     .joe__utility-nav {
       -webkit-column-count: 2;
-              column-count: 2; } }
-  @media (min-width: 56.25em) {
-    .joe__utility-nav {
+              column-count: 2;
       position: absolute;
-      width: 93%;
-      max-width: 1550px;
+      width: 100%;
+      max-width: 1600px;
       margin: 0 auto;
-      -webkit-column-count: 1;
-              column-count: 1;
       background: #3f3f6d;
       background-color: #3f3f6d; }
       .joe__header .joe__utility-nav {
         top: -25px;
         background: none;
         background-color: transparent; } }
+  @media (min-width: 56.25em) {
+    .joe__utility-nav {
+      -webkit-column-count: 1;
+              column-count: 1; } }
   @media (min-width: 75em) {
     .joe__utility-nav {
-      width: 94%; }
+      width: 100%; }
       .joe__header .joe__utility-nav {
         top: -28px; } }
   @media (min-width: 100em) {
@@ -2248,11 +2271,16 @@ blockquote {
 
 @media (min-width: 56.25em) {
   .joe__utility-nav__list--right {
-    float: right; } }
+    float: right;
+    margin-right: 5.0em; } }
+
+@media (min-width: 75em) {
+  .joe__utility-nav__list--right {
+    margin-right: 5.0em; } }
 
 @media (min-width: 100em) {
   .joe__utility-nav__list--right {
-    margin-right: 1.75em; } }
+    margin-right: 0em; } }
 
 .joe__utility-nav__item {
   position: relative;
@@ -3082,6 +3110,8 @@ blockquote {
 
 .joe__poll__reveal,
 .joe__poll__reveal[type='submit'] {
+  margin-left: .5em;
+  display: inline;
   background-color: none;
   background: none;
   border-radius: 0;
@@ -3805,6 +3835,9 @@ blockquote {
   @media (min-width: 56.25em) {
     .joe__article--bottom {
       margin-bottom: 2em; } }
+
+.joe__page-content--article {
+  padding-top: 5px; }
 
 .joe__page--top {
   background-color: rgba(255, 255, 255, 0.9);
