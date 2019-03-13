@@ -1,0 +1,15 @@
+.ama__tooltip {
+  box-shadow: $shadow;
+  padding: $gutter / 2;
+  border-top: 1px solid $black-05;
+  border-left: 1px solid $black-05;
+  border-right: 1px solid $black-05;
+  display: none;
+  position: absolute;
+  background: $white;
+  min-width: 250px;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  word-break: break-all;
+}

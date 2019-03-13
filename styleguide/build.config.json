@@ -37,6 +37,7 @@
       "source/assets/js/init.js",
       "source/assets/js/form-items.js",
       "source/assets/js/nav.js",
+      "source/assets/js/resource-tooltips.js",
       "source/assets/js/poll-reveal.js",
       "source/_patterns/**/*.js"
     ],
