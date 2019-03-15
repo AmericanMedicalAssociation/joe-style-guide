@@ -22,3 +22,27 @@
   @extend %joe__type--small;
   margin-bottom: 1em;
 }
+
+.joe__rail-cta--secondary {
+  background-color: transparent;
+  background: $blue-gradient;
+  
+  .joe__rail-cta__title,
+  .joe__rail-cta__text {
+    color: $white;
+  }
+  
+  .joe__button,
+  .joe__button[type="submit"] {
+    background-color: $gold;
+    background: $gold;
+    color: $navy;
+    
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: $orange;
+      background: $orange;
+    }
+  }
+}
