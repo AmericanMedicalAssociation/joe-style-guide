@@ -1,0 +1,15 @@
+.joe__rail-cta--secondary {
+
+  .joe__rail-form__form label {
+    color: $white;
+  }
+  
+  .joe__rail-form__form {
+    border-color: rgba($white, .25);
+  }
+}
+
+.joe__rail-form__form {
+  border-top: 1px solid $black-20;
+  padding-top: .5em;
+}
