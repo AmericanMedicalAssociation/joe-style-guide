@@ -1,6 +1,5 @@
 .joe__tags-title {
   @include type($font-serif, .65em, $font-weight-medium, 1.25);
-  display: inline;
   text-transform: uppercase;
   font-weight: 700;
   margin-right: .5em;
