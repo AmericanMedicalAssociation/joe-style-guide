@@ -55,8 +55,10 @@
 {% endblock %}
 
 {% block pageContent_footer %}
-  {% include "@molecules/references.twig" %}
   {% include "@molecules/tags-list.twig" %}
+  
+  {% include "@molecules/references.twig" %}
+  
   {% include "@organisms/article-footer.twig" %}
   
   {% set authors = article_authors %}
