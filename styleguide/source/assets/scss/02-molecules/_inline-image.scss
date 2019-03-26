@@ -32,14 +32,6 @@
     margin: 0;
     
     img {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      max-width: 80%;
-      max-height: 80%;
-      width: auto;
-      transform: translate(-50%, -50%);
-      z-index: 21; 
       opacity: 0;
       animation: fadeIn .5s ease .15s forwards;
        
