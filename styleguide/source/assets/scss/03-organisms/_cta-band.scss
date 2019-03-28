@@ -26,6 +26,10 @@
       float: flex;
       overflow: hidden;
       
+      .joe__rail-cta  {
+        height: 100%;
+      }
+      
       // 1-up layout
       // when there is one item it's full width
       &:nth-child(1):nth-last-child(1) {

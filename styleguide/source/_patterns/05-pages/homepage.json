@@ -470,20 +470,34 @@
       }
     },
     { 
+      "form": true,
       "heading": {
         "level": "3",
-        "text": "Stay Up-to-date",
+        "text": "Stay Up-to-Date",
         "class": "joe__rail-cta__title"
       },
       "paragraph" : {
-        "text": "Never miss an issue again, sign up for our newsletters to be alerted each time we publish a new issue."
+        "text": "Receive email updates when we publish our monthly issue."
       },
-      "button": {
-        "href": "#",
-        "info": "alt",
-        "text": "Subscribe",
-        "type": "link",
-        "size": "small"
+      "label": {
+        "id": "newsletterEmail",
+        "text": "Email"
+      },
+      "emailinput": {
+        "type": "email",
+        "name": "Newsletter Email",
+        "id": "newsletterEmail",
+        "value": null,
+        "placeholder": null,
+        "class": "joe__rail-form__input"
+      },
+      "formsubmit": {
+        "type": "submit",
+        "name": "Newsletter Form Submit",
+        "id": "newsletter-submit",
+        "value": "Subscribe",
+        "placeholder": null,
+        "class": "joe__button joe__button--small joe__rail-form__submit"
       }
     }
   ],

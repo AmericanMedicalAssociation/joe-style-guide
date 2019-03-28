@@ -1,4 +1,4 @@
-<aside class="joe__rail-cta">
+<aside class="joe__rail-cta {% if rail_cta.secondary == true %}joe__rail-cta--secondary{% endif %}">
   {% set heading = rail_cta.heading %}
   {% include "heading.twig" %}
   <div class="joe__rail-cta__text">

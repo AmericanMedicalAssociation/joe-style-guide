@@ -31,7 +31,8 @@ button {
 }
 
 %joe__button--small,
-.joe__button--small {
+.joe__button--small,
+.joe__button--small[type="submit"] {
   @include type($font-serif, .75em, $font-weight-bold, 1.25);
   padding: 8px 18px;
 }
