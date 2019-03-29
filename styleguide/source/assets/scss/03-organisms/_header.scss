@@ -75,6 +75,7 @@
   
   @include breakpoint($bp-med) {
     max-height: none;
+    opacity: 1;
     visibility: visible;
     position: static;
     background: none;
