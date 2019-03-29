@@ -1,0 +1,149 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "bp-xs",
+      "width": 400,
+      "height": 480
+    },
+    {
+      "label": "bp-small",
+      "width": 600,
+      "height": 480
+    },
+    {
+      "label": "bp-med",
+      "width": 900,
+      "height": 1024
+    },
+    {
+      "label": "bp-large",
+      "width": 1200,
+      "height": 1024
+    },
+    {
+      "label": "bp-xl",
+      "width": 1400,
+      "height": 1024
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "article no image",
+      "url": "http://localhost:3000/patterns/05-pages-article--no-image/05-pages-article--no-image.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-article--no-image/05-pages-article--no-image.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "article listing",
+      "url": "http://localhost:3000/patterns/05-pages-article-listing/05-pages-article-listing.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-article-listing/05-pages-article-listing.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "article listing",
+      "url": "http://localhost:3000/patterns/05-pages-article/05-pages-article.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-article/05-pages-article.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "article",
+      "url": "http://localhost:3000/patterns/05-pages-article/05-pages-article.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-article/05-pages-article.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "basic page",
+      "url": "http://localhost:3000/patterns/05-pages-basic-page/05-pages-basic-page.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-basic-page/05-pages-basic-page.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "homepage",
+      "url": "http://localhost:3000/patterns/05-pages-homepage/05-pages-homepage.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-homepage/05-pages-homepage.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "issue detail",
+      "url": "http://localhost:3000/patterns/05-pages-issue-detail/05-pages-issue-detail.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-issue-detail/05-pages-issue-detail.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "podcast listing",
+      "url": "http://localhost:3000/patterns/05-pages-podcast-listing/05-pages-podcast-listing.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-podcast-listing/05-pages-podcast-listing.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "podcast",
+      "url": "http://localhost:3000/patterns/05-pages-podcast/05-pages-podcast.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-podcast/05-pages-podcast.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "search results",
+      "url": "http://localhost:3000/patterns/05-pages-search-results/05-pages-search-results.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-search-results/05-pages-search-results.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    },
+    {
+      "label": "term listing",
+      "url": "http://localhost:3000/patterns/05-pages-term-listing/05-pages-term-listing.html",
+      "referenceUrl": "https://americanmedicalassociation.github.io/joe-style-guide/patterns/05-pages-term-listing/05-pages-term-listing.html",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "readySelector": "#main-content"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 10,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
