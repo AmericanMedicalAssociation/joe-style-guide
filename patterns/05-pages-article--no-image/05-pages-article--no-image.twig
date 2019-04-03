@@ -20,8 +20,6 @@
   
   <p>One response to these challenges has been calls for the co-creation of health care systems. Co-creation can take a number of different forms, but at heart it represents bringing together key stakeholders to jointly address problems [3]. In medicine, health professionals, patients, providers, and other stakeholders can be involved in co-creation initiatives including achieving professional-patient concordance through shared decision making, personalization of health services, patient self-management or self-care, and interprofessional or interagency collaboration (e.g., among physicians, nurses, dieticians, podiatrists, and a variety of allied health professionals in caring for patients with diabetes) [4]. Co-creation in medicine typically seeks to extend the role of patients or service users in clinical settings and beyond by encouraging their participation in care processes or service design [4]. It can enable service users to exercise voice and choice and to take up new roles and responsibilities. For instance, in the context of the UK National Health Service, patients with chronic conditions are encouraged to assume “self-management” roles that involve taking responsibility for decision making, administering self-care, and even managing a personal health care budget [5]. Co-creation can also entail broad structural changes, such as partnerships that span clinical or institutional boundaries [3], including those in which health professionals of different stripes are brought together to work with public sector professionals or community stakeholders.</p>
   
-  {% include "@organisms/poll.twig" %}
-  
   <p>Although co-creation presents opportunities to develop more responsive, integrated, and outward-looking health care systems [6], realizing co-creation in practice means confronting significant professional, political, and ethical challenges. In this paper, we seek to promote critical reflection about some of these challenges. We argue that for co-creation to be successful, these challenges must be recognized, by clinicians in particular, and then negotiated as best as possible.</p>
 
   <h2>Common Ground in Diverse Contexts?</h2>
@@ -35,6 +33,8 @@
 
   <p>Thus what matters most for co-creative health systems should be decided with reference to local views and circumstances rather than abstract or universal principles. With this in mind, co-creation should rightly involve bringing local citizens, patients, health care practitioners, policymakers, and other stakeholders together to discuss the dilemmas inherent to processes of agenda setting in health care. Throughout these discussions, sensitivity to divergent interests and perspectives will be key to building a consensus.</p>
 
+  {% include "@organisms/poll.twig" %}
+  
   <h3>Challenges of Changing Professional Roles</h3>
   <p>Having examined the difficulties involved in finding a consensus upon which to base co-creation initiatives, we now consider some of the broader challenges associated with implementing co-creation in practice.</p>
 
@@ -55,22 +55,20 @@
 {% endblock %}
 
 {% block pageContent_footer %}
-  {% include "@molecules/references.twig" %}
   {% include "@molecules/tags-list.twig" %}
+  {% include "@molecules/references.twig" %}
   {% include "@organisms/article-footer.twig" %}
-  
   {% set authors = article_authors %}
   {% include "@molecules/author-information.twig" %}
 {% endblock %}
 
 {% block sidebar_top %}
+  {% include "@molecules/rail-form.twig" %}
   {% include "@molecules/rail-cta.twig" %}
-  
   {% include "@organisms/related-articles.twig" %}
 {% endblock %}
 
 {% block footer %}
   {% include "@organisms/article-issue-footer.twig" %}
-  
   {% include '@organisms/footer.twig' %}
 {% endblock %}
