@@ -4,6 +4,7 @@
   background-color: $blue-darkest;
   column-count: 1;
   column-gap: 0;
+  border-right: 1px solid $white; 
   background: $navy-lighter;
   
   @include breakpoint($bp-xs) {
@@ -15,16 +16,14 @@
     margin: 0 auto;
     background: $navy-lighter;
     background-color: $navy-lighter;
-
-    .joe__header & {
-      top: -25px;
-      background: none;
-      background-color: transparent;
-    }
   }
   
   @include breakpoint($bp-med) {
     column-count: 1;
+
+    .joe__header & {
+      top: -25px;
+    }
   }
   
   @include breakpoint($bp-large) {
