@@ -70,19 +70,19 @@
       "value": "",
       "placeholder": "Search our Journal"
     },
-    "selectMenu": {
+    "select": {
       "name": "select",
       "id": "sort-search",
       "class": "joe__search-bar__select",
       "options": [
         {
           "value":"relevance",
-          "text":"Relevance",
+          "name":"Relevance",
           "selected" : true
         },
         {
           "value":"most_recent",
-          "text":"Most recent"
+          "name":"Most recent"
         }
       ]
     }

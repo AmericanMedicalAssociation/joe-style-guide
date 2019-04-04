@@ -6,7 +6,7 @@
 
 {% block pageContent_header %}
     {% include '@molecules/page-header.twig' %}
-    {% include '@molecules/search-page-filters.twig' with { "input": search_filter.input, "selectMenu": search_filter.selectMenu } %}
+    {% include '@molecules/search-page-filters.twig' with { "input": search_filter.input, "select": search_filter.select } %}
 {% endblock %}
 
 {% block sidebar_top %}
