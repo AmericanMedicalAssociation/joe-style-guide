@@ -57,3 +57,7 @@
   }
 }// end article
 
+// Adding a special case for the homepage.
+.joe__homepage.joe__layout--center-offset .joe__page-content {
+  background-color: transparent;
+}
