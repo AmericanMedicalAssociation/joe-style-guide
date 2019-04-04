@@ -1,0 +1,47 @@
+.joe__form-group {
+  display: flex;
+  max-width: 100%;
+
+  .ui-selectmenu-button {
+    padding: 10px 8px;
+    outline-width: 0;
+    background-color: white;
+    font-size: 16px;
+
+    &:focus {
+      transition: border-color 0.5s ease;
+      border: 1px solid #099995;
+    }
+
+    &.ui-button {
+      max-width: 100%;
+      margin-right: 1em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open {
+  color: black;
+  font-size: 16px;
+}
+
+.joe__form-group label {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.ui-button:active,
+.ui-button.ui-state-active:hover,
+a.ui-button:active {
+  border-color: #099995;
+  background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%);
+}
