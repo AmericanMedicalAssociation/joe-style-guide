@@ -2,7 +2,8 @@
   "flags": [
     {
       "type": "Medicine & Society",
-      "issue": "Sept. 2017"
+      "issue": "Sept. 2017",
+      "class": "joe__flag--blue"
     },
     {
       "type": "Ethics Case",
@@ -17,7 +18,7 @@
     {
       "type": "Medicine & Society",
       "issue": "Sept. 2017",
-      "class": "joe__flag--larger"
+      "class": "joe__flag--blue joe__flag--larger"
     },
     {
       "type": "Ethics Case",
@@ -31,4 +32,3 @@
     }
   ]
 }
-
