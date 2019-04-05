@@ -13,7 +13,7 @@
     {
       "type": "Podcast",
       "issue": "Sept. 2017",
-      "class": "joe__flag--red"
+      "class": "joe__flag--orange"
     },
     {
       "type": "Medicine & Society",
@@ -28,7 +28,7 @@
     {
       "type": "Podcast",
       "issue": "Sept. 2017",
-      "class": "joe__flag--red joe__flag--larger"
+      "class": "joe__flag--orange joe__flag--larger"
     }
   ]
 }
