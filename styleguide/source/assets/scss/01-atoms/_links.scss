@@ -13,6 +13,16 @@ a,
     color: $navy;
     text-decoration: underline;
   }
+  
+  .joe__article p & {
+    text-decoration: underline;
+    color: $navy;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid $navy;
+    }
+  }
 }
 
 %joe__link--black,
