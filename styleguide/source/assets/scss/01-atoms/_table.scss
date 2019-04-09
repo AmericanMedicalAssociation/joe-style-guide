@@ -9,11 +9,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   -webkit-overflow-scrolling: touch;
-  background: radial-gradient(ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) -1% center,
-              radial-gradient(ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 101% center;
-  background-size: 15px 100%, 15px 100%;
-  background-attachment: scroll, scroll;
-  background-repeat: no-repeat;
   
   @include breakpoint($bp-large) {
     white-space: normal;
@@ -58,5 +53,3 @@ table {
     @extend %joe__type--smaller;
   }
 }
-
-
