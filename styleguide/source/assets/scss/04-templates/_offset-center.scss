@@ -19,7 +19,6 @@
 .joe__layout--center-offset .joe__page-content {
   grid-column: 1 / 1;
   min-width: 0;
-  background-color: $white;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
   
@@ -56,4 +55,3 @@
     }
   }
 }// end article
-
