@@ -375,6 +375,16 @@ button {
   background-color: #f1f1f1;
   background: #f1f1f1; }
 
+
+.joe__flag--orange {
+  background-color: #CE4A22;
+  background: linear-gradient(45deg, #CE4A22 0%, rgba(206, 74, 34, 0.95) 100%); }
+
+
+.joe__flag--blue {
+  background-color: #3f3f6d;
+  background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%); }
+
 input[type="text"],
 input[type="email"],
 input[type="search"],
@@ -3417,7 +3427,6 @@ blockquote {
 .joe__layout--center-offset .joe__page-content {
   grid-column: 1 / 1;
   min-width: 0;
-  background-color: #ffffff;
   padding-left: 1.5em;
   padding-right: 1.5em; }
   .joe__topics .joe__layout--center-offset .joe__page-content,
