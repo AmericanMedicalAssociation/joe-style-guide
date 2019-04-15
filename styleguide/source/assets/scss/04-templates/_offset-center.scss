@@ -15,7 +15,6 @@
   }
 }
 
-
 .joe__layout--center-offset .joe__page-content {
   grid-column: 1 / 1;
   min-width: 0;
@@ -23,7 +22,8 @@
   padding-right: $gutter-mobile;
   
   .joe__topics &,
-  .joe__about-band & {
+  .joe__about-band &,
+  .joe__article-hero & {
     background-color: transparent;
   }
 
