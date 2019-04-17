@@ -19,22 +19,6 @@ table {
     padding: 0px 12px;
   }
 
-  // change these gradients from white to your background colour if it differs
-  // gradient on the first cells to hide the left shadow
-  td:first-child {
-    background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: 20px 100%;
-  }
-
-  // gradient on the last cells to hide the right shadow
-  td:last-child{
-    background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 20px 100%;
-  }
-
   th {
     @include type($font-serif, .8em, $font-weight-bold, 1.35);
     background: $navy-lighter;
