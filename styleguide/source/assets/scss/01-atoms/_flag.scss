@@ -62,3 +62,15 @@
   background-color: $black-05;
   background: $black-05;
 }
+
+%joe__flag--orange,
+.joe__flag--orange {
+  background-color: $orange-darker;
+  background: $orange-gradient;
+}
+
+%joe__flag--blue,
+.joe__flag--blue {
+  background-color: $navy-lighter;
+  background: $blue-gradient;
+}

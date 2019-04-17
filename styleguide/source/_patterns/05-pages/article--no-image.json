@@ -370,7 +370,8 @@
       {
         "style": "reverse",
         "flag": {
-          "type": "AMA Code Says"
+          "type": "AMA Code Says",
+          "class": "joe__flag--blue"
         },
         "authors": [
           {
@@ -416,7 +417,8 @@
       { "size": "small",
         "flag": {
           "type": "AMA Code Says",
-          "issue": "Sept. 2017"
+          "issue": "Sept. 2017",
+          "class": "joe__flag--blue"
         },
         "authors": [
           {
