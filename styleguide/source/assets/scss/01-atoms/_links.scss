@@ -5,13 +5,21 @@ a,
   color: $blue-darkest;
   text-decoration: none;
   outline: 0;
-  text-decoration: none;
   transition: all .3s ease;
 
   &:hover,
   &:focus {
     color: $navy;
     text-decoration: underline;
+  }
+  
+  .joe__article p & {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $red-darker;
+    }
   }
 }
 
