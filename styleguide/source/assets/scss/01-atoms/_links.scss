@@ -15,11 +15,10 @@ a,
   
   .joe__article p & {
     text-decoration: underline;
-    color: $navy;
 
     &:hover,
     &:focus {
-      color: black;
+      color: $red-darker;
     }
   }
 }
