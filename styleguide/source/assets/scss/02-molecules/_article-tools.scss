@@ -23,9 +23,9 @@
     .joe__button--tool {
       position: relative;
       
-      right: 124px;
+      right: 119px;
       @include breakpoint($bp-med) {
-        right: 137px;
+        right: 125px;
       }
       
       @include breakpoint($bp-large) {
