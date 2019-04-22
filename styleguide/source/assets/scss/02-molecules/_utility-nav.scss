@@ -1,12 +1,11 @@
 .joe__utility-nav {
   @extend %clearfix;
   display: block;
-  background-color: $blue-darkest;
   column-count: 1;
   column-gap: 0;
   border-right: 1px solid $white; 
-  background: $navy-lighter;
-  
+  background-color: $navy-lighter;
+
   @include breakpoint($bp-xs) {
     column-count: 2;
 
@@ -14,12 +13,11 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    background: $navy-lighter;
-    background-color: $navy-lighter;
   }
   
   @include breakpoint($bp-med) {
     column-count: 1;
+    background-color: transparent;
 
     .joe__header & {
       top: -25px;
@@ -28,7 +26,7 @@
   
   @include breakpoint($bp-large) {
     width: 100%;
-    
+
     .joe__header & {
       top: -28px;
     }

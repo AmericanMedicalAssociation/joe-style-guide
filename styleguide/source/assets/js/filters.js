@@ -40,6 +40,7 @@
         $('.chosen-choices').on('touchend', '.search-choice-close', function(){
             $(this).trigger('click');
         });
+        $('.joe__search-bar__select').chosen( {disable_search: true} );
      }
    };
  })(jQuery, Drupal);
