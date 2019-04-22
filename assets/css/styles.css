@@ -895,13 +895,13 @@ table {
         margin: 0 0 0 8px; } }
   .joe__article-tools .joe__tool-drawer .joe__button--tool {
     position: relative;
-    right: 94px; }
+    right: 119px; }
     @media (min-width: 56.25em) {
       .joe__article-tools .joe__tool-drawer .joe__button--tool {
-        right: 107px; } }
+        right: 134px; } }
     @media (min-width: 75em) {
       .joe__article-tools .joe__tool-drawer .joe__button--tool {
-        right: 112px; } }
+        right: 142px; } }
   .joe__article-tools.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
     right: 52px; }
     @media (min-width: 56.25em) {
