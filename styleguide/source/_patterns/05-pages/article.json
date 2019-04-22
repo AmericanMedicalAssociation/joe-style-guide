@@ -140,9 +140,9 @@
     },
     "print": {
       "button": {
-        "text": "Print",
+        "text": "Altmetric",
         "type": "link",
-        "href": "javascript:window.print()",
+        "href": "#",
         "style": "tool",
         "info": "Print this Page"
       }
@@ -496,7 +496,7 @@
       }
     ]
   },
-  "rail_cta": { 
+  "rail_cta": {
     "heading": {
       "level": "3",
       "text": "Join the Discussion",

@@ -22,14 +22,14 @@
     
     .joe__button--tool {
       position: relative;
-      right: 94px;
       
+      right: 119px;
       @include breakpoint($bp-med) {
-        right: 107px;
+        right: 134px;
       }
       
       @include breakpoint($bp-large) {
-        right: 112px;
+        right: 142px;
       }
     }
   }
