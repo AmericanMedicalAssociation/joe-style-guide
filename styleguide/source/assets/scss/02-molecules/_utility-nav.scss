@@ -3,7 +3,6 @@
   display: block;
   column-count: 1;
   column-gap: 0;
-  border-right: 1px solid $white; 
   background-color: $navy-lighter;
 
   @include breakpoint($bp-xs) {
