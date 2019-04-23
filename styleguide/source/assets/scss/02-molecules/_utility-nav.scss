@@ -3,7 +3,6 @@
   display: block;
   column-count: 1;
   column-gap: 0;
-  border-right: 1px solid $white; 
   background-color: $navy-lighter;
 
   @include breakpoint($bp-xs) {
@@ -20,7 +19,8 @@
     background-color: transparent;
 
     .joe__header & {
-      top: -25px;
+      top: -32px;
+      height: 26px;
     }
   }
   
@@ -28,7 +28,8 @@
     width: 100%;
 
     .joe__header & {
-      top: -28px;
+      top: -35px;
+      height: 29px;
     }
   }
   
@@ -52,15 +53,6 @@
   
   @include breakpoint($bp-med) {
     float: right;
-    margin-right: 5.0em;
-  }
-
-  @include breakpoint($bp-large) {
-    margin-right: 5.0em;
-  }
-  
-  @include breakpoint($bp-xl) {
-    margin-right: 0em;
   }
 }
 
