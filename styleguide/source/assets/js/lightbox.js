@@ -17,12 +17,15 @@
           $(this).blur();
           // add a class to the sibling dropdown
           $(this).parents('.joe__inline-image').toggleClass('is-zoomed');
+          // While image is zoomed-in, freeze scrolling in the rest of page.
+          $('.layout-container').toggleClass('freeze-scrolling');
         });
         
         // close the modal when esc is pressed
         $(document).keydown(function(event) { 
           if (event.keyCode == 27) { 
             $(".joe__inline-image").removeClass('is-zoomed');
+            $('.layout-container').removeClass('freeze-scrolling');
           }
         });
 
