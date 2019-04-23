@@ -41,14 +41,20 @@
       }    
     }
 
-    .joe__inline-image__zoom:after {
+    .joe__inline-image__zoom {
       position: absolute;
       z-index: 1;
       top: 20px;
       right: 30px;
       content: "Close";
       color: transparent;
+      background-color: transparent;
       background-image: url("../images/close.png");
+      background-size: contain;
+
+      &:after {
+        background-image: none;
+      }
     }
   }
 }
