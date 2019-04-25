@@ -1,4 +1,5 @@
-/*------------------------------------*    $JOE PATTERNS
+/*------------------------------------*\
+    $JOE PATTERNS
 \*------------------------------------*/
 @-webkit-keyframes fadeIn {
   0% {
@@ -253,8 +254,8 @@ button {
   border-radius: 50px;
   padding: 8px 22px; }
   
-  .joe__button--tool:link, input[type="submit"]:link,
-  .joe__button--tool:visited, input[type="submit"]:visited,
+  .joe__button--tool:link, input:link[type="submit"],
+  .joe__button--tool:visited, input:visited[type="submit"],
   .joe__button:link,
   .joe__button:visited,
   button:link,
@@ -263,9 +264,9 @@ button {
     text-decoration: none;
     border-bottom: 0; }
   
-  .joe__button--tool:active, input[type="submit"]:active,
-  .joe__button--tool:hover, input[type="submit"]:hover,
-  .joe__button--tool:focus, input[type="submit"]:focus,
+  .joe__button--tool:active, input:active[type="submit"],
+  .joe__button--tool:hover, input:hover[type="submit"],
+  .joe__button--tool:focus, input:focus[type="submit"],
   .joe__button:active,
   .joe__button:hover,
   .joe__button:focus,
@@ -375,6 +376,16 @@ button {
   background-color: #f1f1f1;
   background: #f1f1f1; }
 
+
+.joe__flag--orange {
+  background-color: #CE4A22;
+  background: linear-gradient(45deg, #CE4A22 0%, rgba(206, 74, 34, 0.95) 100%); }
+
+
+.joe__flag--blue {
+  background-color: #3f3f6d;
+  background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%); }
+
 input[type="text"],
 input[type="email"],
 input[type="search"],
@@ -406,43 +417,43 @@ input[type="datetime-local"], select, textarea,
      -moz-appearance: none;
           appearance: none;
   font-size: 16px; }
-  input[type="text"]:active,
-  input[type="email"]:active,
-  input[type="search"]:active,
-  input[type="url"]:active,
-  input[type="tel"]:active,
-  input[type="number"]:active,
-  input[type="date"]:active,
-  input[type="time"]:active,
-  input[type="month"]:active,
-  input[type="week"]:active,
-  input[type="range"]:active,
-  input[type="datetime"]:active,
-  input[type="datetime-local"]:active, select:active, textarea:active, input[type="text"]:hover,
-  input[type="email"]:hover,
-  input[type="search"]:hover,
-  input[type="url"]:hover,
-  input[type="tel"]:hover,
-  input[type="number"]:hover,
-  input[type="date"]:hover,
-  input[type="time"]:hover,
-  input[type="month"]:hover,
-  input[type="week"]:hover,
-  input[type="range"]:hover,
-  input[type="datetime"]:hover,
-  input[type="datetime-local"]:hover, select:hover, textarea:hover, input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="search"]:focus,
-  input[type="url"]:focus,
-  input[type="tel"]:focus,
-  input[type="number"]:focus,
-  input[type="date"]:focus,
-  input[type="time"]:focus,
-  input[type="month"]:focus,
-  input[type="week"]:focus,
-  input[type="range"]:focus,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:focus, select:focus, textarea:focus,
+  input:active[type="text"],
+  input:active[type="email"],
+  input:active[type="search"],
+  input:active[type="url"],
+  input:active[type="tel"],
+  input:active[type="number"],
+  input:active[type="date"],
+  input:active[type="time"],
+  input:active[type="month"],
+  input:active[type="week"],
+  input:active[type="range"],
+  input:active[type="datetime"],
+  input:active[type="datetime-local"], select:active, textarea:active, input:hover[type="text"],
+  input:hover[type="email"],
+  input:hover[type="search"],
+  input:hover[type="url"],
+  input:hover[type="tel"],
+  input:hover[type="number"],
+  input:hover[type="date"],
+  input:hover[type="time"],
+  input:hover[type="month"],
+  input:hover[type="week"],
+  input:hover[type="range"],
+  input:hover[type="datetime"],
+  input:hover[type="datetime-local"], select:hover, textarea:hover, input:focus[type="text"],
+  input:focus[type="email"],
+  input:focus[type="search"],
+  input:focus[type="url"],
+  input:focus[type="tel"],
+  input:focus[type="number"],
+  input:focus[type="date"],
+  input:focus[type="time"],
+  input:focus[type="month"],
+  input:focus[type="week"],
+  input:focus[type="range"],
+  input:focus[type="datetime"],
+  input:focus[type="datetime-local"], select:focus, textarea:focus,
   .joe__input:active,
   .joe__input:hover,
   .joe__input:focus {
@@ -612,20 +623,32 @@ input[type="reset"],
   color: #29688a;
   text-decoration: none;
   outline: 0;
-  text-decoration: none;
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
   a:hover, a:focus,
-  input[type="reset"]:hover,
+  input:hover[type="reset"],
   .joe__link--black:hover,
   .joe__link--reversed:hover,
-  input[type="reset"]:focus,
+  input:focus[type="reset"],
   .joe__link--black:focus,
   .joe__link--reversed:focus,
   .joe__link:hover,
   .joe__link:focus {
     color: #1f1f52;
     text-decoration: underline; }
+  .joe__article p a, .joe__article p input[type="reset"],
+  .joe__article p .joe__link--black,
+  .joe__article p .joe__link--reversed, .joe__article p
+  .joe__link {
+    text-decoration: underline; }
+    .joe__article p a:hover, .joe__article p a:focus, .joe__article p input:hover[type="reset"],
+    .joe__article p .joe__link--black:hover,
+    .joe__article p .joe__link--reversed:hover, .joe__article p input:focus[type="reset"],
+    .joe__article p .joe__link--black:focus,
+    .joe__article p .joe__link--reversed:focus, .joe__article p
+    .joe__link:hover, .joe__article p
+    .joe__link:focus {
+      color: #a41e22; }
 
 
 .joe__link--black {
@@ -728,11 +751,7 @@ table {
   white-space: normal;
   border-collapse: collapse;
   border-spacing: 0;
-  -webkit-overflow-scrolling: touch;
-  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 0%, transparent 75%) -1% center, radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 0%, transparent 75%) 101% center;
-  background-size: 15px 100%, 15px 100%;
-  background-attachment: scroll, scroll;
-  background-repeat: no-repeat; }
+  -webkit-overflow-scrolling: touch; }
   @media (min-width: 75em) {
     .joe__table,
     table {
@@ -741,19 +760,6 @@ table {
   table caption {
     text-align: left;
     padding: 0px 12px; }
-  .joe__table td:first-child,
-  table td:first-child {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
-    background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: 20px 100%; }
-  .joe__table td:last-child,
-  table td:last-child {
-    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
-    background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 20px 100%; }
   .joe__table th,
   table th {
     font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -881,13 +887,13 @@ table {
         margin: 0 0 0 8px; } }
   .joe__article-tools .joe__tool-drawer .joe__button--tool {
     position: relative;
-    right: 94px; }
+    right: 119px; }
     @media (min-width: 56.25em) {
       .joe__article-tools .joe__tool-drawer .joe__button--tool {
-        right: 107px; } }
+        right: 134px; } }
     @media (min-width: 75em) {
       .joe__article-tools .joe__tool-drawer .joe__button--tool {
-        right: 112px; } }
+        right: 142px; } }
   .joe__article-tools.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
     right: 52px; }
     @media (min-width: 56.25em) {
@@ -972,22 +978,32 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 /* @end */
 /* @group Single Chosen */
+.chosen-container-single.chosen-container-active .chosen-single {
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
+  border: 1px solid #099995; }
+
 .chosen-container-single .chosen-single {
   position: relative;
   display: block;
   overflow: hidden;
+  height: 44px;
   padding: 9px 8px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #444;
   border: 1px solid #d1d3d4;
-  -webkit-box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25);
-          box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25);
   border-radius: 0;
   background-color: #ffffff;
   background-clip: padding-box;
-  color: #444;
-  text-decoration: none;
-  white-space: nowrap;
-  line-height: 22px;
-  height: 44px; }
+  -webkit-box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25);
+          box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25);
+  line-height: 22px; }
+  .chosen-container-single .chosen-single:active, .chosen-container-single .chosen-single:hover, .chosen-container-single .chosen-single:focus {
+    -webkit-transition: border-color 0.5s ease;
+    transition: border-color 0.5s ease;
+    border-color: #099995;
+    outline: 0; }
   .chosen-container-single .chosen-single a {
     border-bottom: 0; }
     .chosen-container-single .chosen-single a:active, .chosen-container-single .chosen-single a:hover, .chosen-container-single .chosen-single a:focus {
@@ -1080,8 +1096,8 @@ This file is generated by `grunt build`, do not edit it by hand.
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  margin: 0 4px 4px 0;
-  padding: 0 0 0 4px;
+  margin: 0;
+  padding: 0;
   max-height: 240px;
   -webkit-overflow-scrolling: touch; }
 
@@ -1104,7 +1120,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   cursor: default; }
 
 .chosen-container .chosen-results li.highlighted {
-  background-color: #29688a;
+  background-color: #3f3f6d;
   color: #ffffff; }
 
 .chosen-container .chosen-results li.no-results {
@@ -1137,10 +1153,6 @@ This file is generated by `grunt build`, do not edit it by hand.
   border: 1px solid #d1d3d4;
   background-color: #ffffff;
   cursor: text; }
-  .chosen-container-multi .chosen-choices:active, .chosen-container-multi .chosen-choices:hover, .chosen-container-multi .chosen-choices:focus {
-    border-color: #099995;
-    -webkit-transition: border-color .5s ease;
-    transition: border-color .5s ease; }
 
 .chosen-container-multi .chosen-choices li {
   float: left;
@@ -1236,7 +1248,6 @@ This file is generated by `grunt build`, do not edit it by hand.
           box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25); }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
-  border: 1px solid #d1d3d4;
   -webkit-box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25);
           box-shadow: 0 0px 3px rgba(209, 211, 212, 0.25); }
 
@@ -1655,8 +1666,10 @@ blockquote {
   padding: 0 .5em;
   background-color: #f1f1f1;
   -webkit-column-count: 2;
+     -moz-column-count: 2;
           column-count: 2;
   -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
           break-inside: avoid; }
   .joe__issue-filter__tab.is-active .joe__issue-filter__children {
     border-top: 1px solid #d1d3d4;
@@ -1665,6 +1678,7 @@ blockquote {
   .joe__issue-filter__children li {
     display: block;
     -webkit-column-break-inside: avoid;
+       page-break-inside: avoid;
             break-inside: avoid; }
     .joe__issue-filter__children li a:link,
     .joe__issue-filter__children li a:visited {
@@ -1674,6 +1688,7 @@ blockquote {
   @media (min-width: 37.5em) {
     .joe__issue-filter__children {
       -webkit-column-count: auto;
+         -moz-column-count: auto;
               column-count: auto; }
       .joe__issue-filter__children li {
         display: inline-block;
@@ -2246,34 +2261,37 @@ blockquote {
 
 .joe__utility-nav {
   display: block;
-  background-color: #29688a;
   -webkit-column-count: 1;
+     -moz-column-count: 1;
           column-count: 1;
   -webkit-column-gap: 0;
+     -moz-column-gap: 0;
           column-gap: 0;
-  border-right: 1px solid #ffffff;
-  background: #3f3f6d; }
+  background-color: #3f3f6d; }
   @media (min-width: 25em) {
     .joe__utility-nav {
       -webkit-column-count: 2;
+         -moz-column-count: 2;
               column-count: 2;
       position: absolute;
       width: 100%;
       max-width: 1600px;
-      margin: 0 auto;
-      background: #3f3f6d;
-      background-color: #3f3f6d; } }
+      margin: 0 auto; } }
   @media (min-width: 56.25em) {
     .joe__utility-nav {
       -webkit-column-count: 1;
-              column-count: 1; }
+         -moz-column-count: 1;
+              column-count: 1;
+      background-color: transparent; }
       .joe__header .joe__utility-nav {
-        top: -25px; } }
+        top: -32px;
+        height: 26px; } }
   @media (min-width: 75em) {
     .joe__utility-nav {
       width: 100%; }
       .joe__header .joe__utility-nav {
-        top: -28px; } }
+        top: -35px;
+        height: 29px; } }
   @media (min-width: 100em) {
     .joe__utility-nav {
       width: 100%; } }
@@ -2288,16 +2306,7 @@ blockquote {
 
 @media (min-width: 56.25em) {
   .joe__utility-nav__list--right {
-    float: right;
-    margin-right: 5.0em; } }
-
-@media (min-width: 75em) {
-  .joe__utility-nav__list--right {
-    margin-right: 5.0em; } }
-
-@media (min-width: 100em) {
-  .joe__utility-nav__list--right {
-    margin-right: 0em; } }
+    float: right; } }
 
 .joe__utility-nav__item {
   position: relative;
@@ -2943,7 +2952,7 @@ blockquote {
       max-height: none;
       opacity: 1;
       visibility: visible;
-      position: static;
+      position: relative;
       background: none;
       background-color: transparent;
       -webkit-box-shadow: none;
@@ -3392,7 +3401,14 @@ blockquote {
 .joe__topics__list {
   list-style: none;
   margin: 2em 0 1em;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .joe__topics__list li {
+    width: 100%; }
   @media (min-width: 56.25em) {
     .joe__topics__list li {
       width: 47%;
@@ -3417,11 +3433,11 @@ blockquote {
 .joe__layout--center-offset .joe__page-content {
   grid-column: 1 / 1;
   min-width: 0;
-  background-color: #ffffff;
   padding-left: 1.5em;
   padding-right: 1.5em; }
   .joe__topics .joe__layout--center-offset .joe__page-content,
-  .joe__about-band .joe__layout--center-offset .joe__page-content {
+  .joe__about-band .joe__layout--center-offset .joe__page-content,
+  .joe__article-hero .joe__layout--center-offset .joe__page-content {
     background-color: transparent; }
   @media (min-width: 75em) {
     .joe__layout--center-offset .joe__page-content {
