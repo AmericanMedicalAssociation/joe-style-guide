@@ -16,9 +16,13 @@ a,
   .joe__article p & {
     text-decoration: underline;
 
+    &:active,
     &:hover,
     &:focus {
-      color: $red-darker;
+      // color: $red-darker;
+      color: $white;
+      text-decoration: none;
+      background-color: $orange-darker;
     }
   }
 }
