@@ -96,7 +96,8 @@
   },
   "article_flag": {
     "type": "Medicine & Society",
-    "issue": "Oct. 2017",
+    "issue_date": "Sep 2017",
+    "issue_url": "",
     "class": "joe__flag--larger joe__flag--green"
   },
   "article_authors": [
