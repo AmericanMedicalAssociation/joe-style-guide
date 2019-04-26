@@ -9,12 +9,27 @@
   background: $blue-gradient;
   text-transform: uppercase;
   letter-spacing: .075em;
+
+  &:focus,
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .joe__flag__type {
   font-weight: $font-weight-bold;
   display: inline-block;
+  text-decoration: none;
 }
+
+.joe__flag__date {
+  a:focus &,
+  a:hover & {
+    text-decoration: underline;
+  }
+}
+
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
