@@ -2,32 +2,38 @@
   "flags": [
     {
       "type": "Medicine & Society",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--blue"
     },
     {
       "type": "Ethics Case",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--green"
     },
     {
       "type": "Podcast",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--orange"
     },
     {
       "type": "Medicine & Society",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--blue joe__flag--larger"
     },
     {
       "type": "Ethics Case",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--green joe__flag--larger"
     },
     {
       "type": "Podcast",
-      "issue": "Sept. 2017",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
       "class": "joe__flag--orange joe__flag--larger"
     }
   ]
