@@ -334,10 +334,18 @@ button {
   background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%);
   text-transform: uppercase;
   letter-spacing: .075em; }
+  .joe__flag:focus, .joe__flag:hover {
+    color: white;
+    text-decoration: none; }
 
 .joe__flag__type {
   font-weight: 700;
-  display: inline-block; }
+  display: inline-block;
+  text-decoration: none; }
+
+a:focus .joe__flag__date,
+a:hover .joe__flag__date {
+  text-decoration: underline; }
 
 .joe__flag--larger {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
@@ -1612,7 +1620,7 @@ blockquote {
 
 .joe__issue-teaser__link {
   display: inline-block;
-  margin-top: 1.5em; }
+  margin: 1.5em 0 3em 0; }
 
 .joe__issue-filters {
   margin: 1em 0 2em; }
@@ -2269,7 +2277,6 @@ blockquote {
           column-count: 1;
   -webkit-column-gap: 0;
           column-gap: 0;
-  border-right: 1px solid #ffffff;
   background-color: #3f3f6d; }
   @media (min-width: 25em) {
     .joe__utility-nav {
@@ -2285,12 +2292,14 @@ blockquote {
               column-count: 1;
       background-color: transparent; }
       .joe__header .joe__utility-nav {
-        top: -25px; } }
+        top: -32px;
+        height: 26px; } }
   @media (min-width: 75em) {
     .joe__utility-nav {
       width: 100%; }
       .joe__header .joe__utility-nav {
-        top: -28px; } }
+        top: -35px;
+        height: 29px; } }
   @media (min-width: 100em) {
     .joe__utility-nav {
       width: 100%; } }
@@ -2305,16 +2314,7 @@ blockquote {
 
 @media (min-width: 56.25em) {
   .joe__utility-nav__list--right {
-    float: right;
-    margin-right: 5.0em; } }
-
-@media (min-width: 75em) {
-  .joe__utility-nav__list--right {
-    margin-right: 5.0em; } }
-
-@media (min-width: 100em) {
-  .joe__utility-nav__list--right {
-    margin-right: 0em; } }
+    float: right; } }
 
 .joe__utility-nav__item {
   position: relative;
@@ -2960,7 +2960,7 @@ blockquote {
       max-height: none;
       opacity: 1;
       visibility: visible;
-      position: static;
+      position: relative;
       background: none;
       background-color: transparent;
       -webkit-box-shadow: none;
