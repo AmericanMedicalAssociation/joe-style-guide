@@ -2,7 +2,7 @@
   @extend %joe__type--small;
   background-color: $black-10;
   padding: $gutter-mobile;
-  margin-top: 3em;
+  margin: 3em 0;
   
   .joe__title-label {
     @include type($font-serif, .875em, $font-weight-bold, 1.25);
