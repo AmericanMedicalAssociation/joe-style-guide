@@ -96,7 +96,8 @@
   },
   "article_flag": {
     "type": "Podcast",
-    "issue": "November 2017",
+    "issue_date": "September 2017",
+    "issue_url": "",
     "class": "joe__flag--larger joe__flag--red"
   },
   "article_title": "Bringing 'Design Thinking' to Health Care: An Interview with John Meyer, Laura Webb, and Dr. Bon Ku",

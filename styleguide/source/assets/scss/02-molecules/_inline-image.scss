@@ -30,6 +30,7 @@
     z-index: 20;
     transition: background-color .15s ease;
     margin: 0;
+    overflow: auto;
     
     img {
       opacity: 0;
@@ -38,6 +39,22 @@
       .no-cssanimations & {
         opacity: 1;
       }    
+    }
+
+    .joe__inline-image__zoom {
+      position: absolute;
+      z-index: 1;
+      top: 20px;
+      right: 30px;
+      content: "Close";
+      color: transparent;
+      background-color: transparent;
+      background-image: url("../images/close.png");
+      background-size: contain;
+
+      &:after {
+        background-image: none;
+      }
     }
   }
 }
@@ -132,27 +149,8 @@
       background-image: url('../images/zoom-white.png');
     }
   }
-  
-  .joe__inline-image.is-zoomed & {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 21;
-    background: none;
-    background-color: transparent;
-    
-    &:after {
-      content: 'Close';
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-image: url('../images/close.png');
-      background-size: 25px 25px;
-      height: 25px;
-      width: 25px;
-    }
-  }
+}
+
+.layout-container.freeze-scrolling {
+  position: fixed;
 }

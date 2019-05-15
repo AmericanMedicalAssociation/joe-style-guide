@@ -20,6 +20,12 @@
   list-style: none;
   margin: 2em 0 1em;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 100%;
+  }
   
   @include breakpoint($bp-med) {
     li {

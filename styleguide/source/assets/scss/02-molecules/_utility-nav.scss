@@ -1,11 +1,10 @@
 .joe__utility-nav {
   @extend %clearfix;
   display: block;
-  background-color: $blue-darkest;
   column-count: 1;
   column-gap: 0;
-  background: $navy-lighter;
-  
+  background-color: $navy-lighter;
+
   @include breakpoint($bp-xs) {
     column-count: 2;
 
@@ -13,25 +12,24 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    background: $navy-lighter;
-    background-color: $navy-lighter;
-
-    .joe__header & {
-      top: -25px;
-      background: none;
-      background-color: transparent;
-    }
   }
   
   @include breakpoint($bp-med) {
     column-count: 1;
+    background-color: transparent;
+
+    .joe__header & {
+      top: -32px;
+      height: 26px;
+    }
   }
   
   @include breakpoint($bp-large) {
     width: 100%;
-    
+
     .joe__header & {
-      top: -28px;
+      top: -35px;
+      height: 29px;
     }
   }
   
@@ -55,15 +53,6 @@
   
   @include breakpoint($bp-med) {
     float: right;
-    margin-right: 5.0em;
-  }
-
-  @include breakpoint($bp-large) {
-    margin-right: 5.0em;
-  }
-  
-  @include breakpoint($bp-xl) {
-    margin-right: 0em;
   }
 }
 

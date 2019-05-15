@@ -1,6 +1,8 @@
 {
   "flag": {
-      "type": "Article",
-      "issue": "Sept. 2017"
+      "type": "Medicine & Society",
+      "issue_date": "Sep 2017",
+      "issue_url": "",
+      "class": "joe__flag--blue"
     }
 }
