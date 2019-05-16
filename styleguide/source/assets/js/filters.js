@@ -7,40 +7,108 @@
  * - https://drupal.org/node/1446420
  * - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
  */
- (function ($, Drupal) {
-   Drupal.behaviors.filters = {
-     attach: function (context, settings) {
-        var filterTrigger = $('.joe__filters--trigger')
-        var filters = $('.joe__filters');
-        
-         // Opens and closes filter drawer. 
-         filterTrigger.click(function() {
-          if ($(window).width() < 900) {
-            // Unfocus on the dropdown
-            $(this).blur();
-            // add a class to the sibling dropdown
-            $(this).toggleClass('is-active');
-            // Only open this trigger's filters.
-            $(this).siblings('.joe__filters').slideToggle(300);
-          }
-        });
+(function ($, Drupal) {
+  function init(toggler, menu) {
+    // When javascript is enabled, set the height to 0, collapsed menu.
+    menu.style.height = "0";
+    toggler.setAttribute('aria-expanded', 'false');
+    menu.classList.add('facet-dropdown-items--collapsed');
+    toggler.setAttribute('aria-controls', menu.getAttribute('id'));
+  }
 
-       // Set the filters back to open when over 900px.
-       if (filters.length) {
-         $(window).on('resize', function () {
-           if ($(this).width() > 900) {
-             // Remove style from all filters.
-             filters.removeAttr('style');
-           }
-         });
-       }
-        
-        $(".joe__chosen").chosen({width: "100%"});
-        
-        $('.chosen-choices').on('touchend', '.search-choice-close', function(){
-            $(this).trigger('click');
-        });
-        $('.joe__search-bar__select').chosen( {disable_search: true} );
-     }
-   };
- })(jQuery, Drupal);
+  function collapseSection(element) {
+    // Get the height of the element's inner content,
+    // regardless of its actual size.
+    var sectionHeight = element.scrollHeight;
+
+    // Temporarily disable all css transitions.
+    var elementTransition = element.style.transition;
+    element.style.transition = '';
+
+    // On the next frame (as soon as the previous style change has taken
+    // effect), explicitly set the element's height to its current pixel height,
+    // so we aren't transitioning out of 'auto'.
+    return requestAnimationFrame(function() {
+      element.style.height = sectionHeight + 'px';
+      element.style.transition = elementTransition;
+
+      // On the next frame (as soon as the previous style change has taken
+      // effect), have the element transition to height: 0.
+      return requestAnimationFrame(function() {
+        element.style.height = 0;
+      });
+    });
+  }
+
+  function expandSection(element) {
+    // Get the height of the element's inner content,
+    // regardless of its actual size.
+    var sectionHeight = element.scrollHeight;
+
+    // Have the element transition to the height of its inner content.
+    element.style.height = sectionHeight + 'px';
+  }
+
+  function toggleMenu() {
+    const expanded = this.getAttribute('aria-expanded');
+    const menu = this.parentElement.querySelector('[data-drupal-selector="facet-dropdown-items"]');
+
+    if (expanded === 'false') {
+      this.setAttribute('aria-expanded', 'true');
+      menu.classList.remove('facet-dropdown-items--collapsed');
+      expandSection(menu);
+    } else {
+      this.setAttribute('aria-expanded', 'false');
+      collapseSection(menu);
+    }
+  }
+
+  function toggleVisibility(event) {
+    if (event.propertyName === 'height') {
+      // Waiting for drop-down to fully collapse before hiding the items.
+      // Avoid hiding items if menu is still open (when user use double-click).
+      if (this.previousElementSibling.getAttribute('aria-expanded') === 'false') {
+        this.classList.add('facet-dropdown-items--collapsed');
+      }
+    }
+  }
+
+  Drupal.behaviors.facetDropdownToggler = {
+    attach: function (context) {
+      if (context.className === 'block-facet--checkbox' || context.nodeName === '#document') {
+        const toggler = context.querySelectorAll(
+          '[data-drupal-selector="facet-dropdown-toggle"]'
+        );
+        const menu = context.querySelectorAll('[data-drupal-selector="facet-dropdown-items"]');
+        // The template doesn't have the aria-expanded attribute, so we can
+        // use that as a proxy for the first run.
+        if (toggler && toggler[0].getAttribute('aria-expanded') === null) {
+          for (i = 0; i < toggler.length; i++) { 
+            init(toggler[i], menu[i]);
+            toggler[i].addEventListener('click', toggleMenu);
+            menu[i].addEventListener('transitionend', toggleVisibility);
+          }
+        }
+      }
+    }
+  };
+
+
+
+
+  function findCheckedFacetFilter() {
+    $('.block-facet--checkbox').each(function() {
+      // search for checkbox that are already checked (in order to keep the dropdown open)
+      var checkboxFound = this.querySelectorAll('input[type="checkbox"]:checked').length > 0;
+      console.log(this.querySelectorAll('input[type="checkbox"]:checked').length);
+      if (checkboxFound) {
+        this.querySelector('.facet-dropdown-toggle').click();
+      }    
+    });
+  }
+  
+  // This javascript runs before facets finished running its own javascript (which create the checkboxes)
+  setTimeout(function() {
+    findCheckedFacetFilter();
+  }, 500);
+})(jQuery, Drupal);
