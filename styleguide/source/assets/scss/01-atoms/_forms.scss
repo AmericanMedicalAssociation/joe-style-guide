@@ -99,10 +99,6 @@ select {
 
   .form-item-sort-by {
     width: 150px;
-    
-  //   select {
-  //     appearance: menulist;
-  //   }
   }
 }
 
@@ -128,10 +124,6 @@ input[type='radio'] {
 .block-facet--checkbox label {
   color: white;
   font-weight: bold;
-}
-
-.facet-dropdown-toggle label {
-  margin-left: 10px;
 }
 
 .facet-dropdown-items ul {
@@ -204,8 +196,9 @@ input[type='radio'] {
 button {
   .language-switcher-plus,
   .language-switcher-minus {
-    width: 10px;
     display: none;
+    width: 10px;
+    margin-right: 10px;
   }
   &[aria-expanded="false"] {
     .language-switcher-plus {

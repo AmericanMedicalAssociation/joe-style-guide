@@ -93,10 +93,13 @@
         // The template doesn't have the aria-expanded attribute, so we can
         // use that as a proxy for the first run.
         if (menu.length > 0 && toggler && toggler[0].getAttribute('aria-expanded') === null) {
-          for (i = 0; i < toggler.length; i++) { 
-            init(toggler[i], menu[i]);
-            toggler[i].addEventListener('click', toggleMenu);
-            menu[i].addEventListener('transitionend', toggleVisibility);
+          for (i = 0; i < toggler.length; i++) {
+            // Only create dropdown to facets that have options to choose from.
+            if (menu[i]) {
+              init(toggler[i], menu[i]);
+              toggler[i].addEventListener('click', toggleMenu);
+              menu[i].addEventListener('transitionend', toggleVisibility);
+            }
           }
         }
       }
