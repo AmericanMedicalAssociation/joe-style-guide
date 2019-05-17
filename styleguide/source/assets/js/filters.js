@@ -73,6 +73,16 @@
     }
   }
 
+  function findCheckedFacetFilter() {
+    $('.block-facet--checkbox').each(function() {
+      // search for checkbox that are already checked (in order to keep the dropdown open)
+      var checkboxFound = this.querySelectorAll('input[type="checkbox"]:checked').length > 0;
+      if (checkboxFound) {
+        this.querySelector('.facet-dropdown-toggle').click();
+      }    
+    });
+  }
+
   Drupal.behaviors.facetDropdownToggler = {
     attach: function (context) {
       if (context.className === 'block-facet--checkbox' || context.nodeName === '#document') {
@@ -82,7 +92,7 @@
         const menu = context.querySelectorAll('[data-drupal-selector="facet-dropdown-items"]');
         // The template doesn't have the aria-expanded attribute, so we can
         // use that as a proxy for the first run.
-        if (toggler && toggler[0].getAttribute('aria-expanded') === null) {
+        if (menu.length > 0 && toggler && toggler[0].getAttribute('aria-expanded') === null) {
           for (i = 0; i < toggler.length; i++) { 
             init(toggler[i], menu[i]);
             toggler[i].addEventListener('click', toggleMenu);
@@ -90,25 +100,40 @@
           }
         }
       }
+
+      // This javascript runs before facets finished running its own javascript (which create the checkboxes)
+      setTimeout(function() {
+        findCheckedFacetFilter();
+      }, 500);
+
+      // Apply Chosen on the sort-by select box.
+      $('.joe__search-bar .form-item-sort-by .form-select').chosen( {disable_search: true} );
+
+      // On narrow screens hide all filters and expose them when clicking on a button.
+      var filterTrigger = $('.joe__filters--trigger');
+      var filters = $('.joe__filters');
+      
+      // Opens and closes filter drawer. 
+      filterTrigger.click(function() {
+        if ($(window).width() < 900) {
+          // Unfocus on the dropdown
+          $(this).blur();
+          // add a class to the sibling dropdown
+          $(this).toggleClass('is-active');
+          // Only open this trigger's filters.
+          $(this).siblings('.joe__filters').slideToggle(300);
+        }
+      });
+
+      // Set the filters back to open when over 900px.
+      if (filters.length) {
+        $(window).on('resize', function () {
+          if ($(this).width() > 900) {
+            // Remove style from all filters.
+            filters.removeAttr('style');
+          }
+        });
+      }
     }
   };
-
-
-
-
-  function findCheckedFacetFilter() {
-    $('.block-facet--checkbox').each(function() {
-      // search for checkbox that are already checked (in order to keep the dropdown open)
-      var checkboxFound = this.querySelectorAll('input[type="checkbox"]:checked').length > 0;
-      console.log(this.querySelectorAll('input[type="checkbox"]:checked').length);
-      if (checkboxFound) {
-        this.querySelector('.facet-dropdown-toggle').click();
-      }    
-    });
-  }
-  
-  // This javascript runs before facets finished running its own javascript (which create the checkboxes)
-  setTimeout(function() {
-    findCheckedFacetFilter();
-  }, 500);
 })(jQuery, Drupal);

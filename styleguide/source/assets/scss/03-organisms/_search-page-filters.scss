@@ -9,10 +9,13 @@
     margin-top: .25em;
   }
   
+  @include breakpoint($bp-large) {
+    flex-direction: row;
+  }
+
   @include breakpoint($bp-xs) {
     position: relative;
     padding-right: 140px;
-    flex-direction: row;
     justify-content: center;
 
     input[type='submit'] {

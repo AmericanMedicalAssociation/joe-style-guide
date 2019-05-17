@@ -82,6 +82,30 @@ select {
   background-color: $white;
 }
 
+.joe__search-bar {
+  .form-item-search {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 30px;
+
+    input.form-text {
+      line-height: 23px;
+    }
+  }
+
+  label[for="edit-sort-by"] {
+    display: none;
+  }
+
+  .form-item-sort-by {
+    width: 150px;
+    
+  //   select {
+  //     appearance: menulist;
+  //   }
+  }
+}
+
 // radio and checkbox styles
 input[type='checkbox'],
 input[type='radio'] {
@@ -219,7 +243,6 @@ button {
 }
 .facet-item {
   visibility: visible;
-  text-align: center;
 }
 
 .facet-dropdown-items--collapsed .facet-item {
