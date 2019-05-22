@@ -82,6 +82,26 @@ select {
   background-color: $white;
 }
 
+.joe__search-bar {
+  .form-item-search {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 30px;
+
+    input.form-text {
+      line-height: 23px;
+    }
+  }
+
+  label[for="edit-sort-by"] {
+    display: none;
+  }
+
+  .form-item-sort-by {
+    width: 150px;
+  }
+}
+
 // radio and checkbox styles
 input[type='checkbox'],
 input[type='radio'] {
@@ -94,7 +114,132 @@ input[type='radio'] {
     color: $black-90;
     text-transform: none;
     margin: 0;
+
+    .facet-dropdown-items & {
+      color: white;
+    }
   }
+}
+
+.block-facet--checkbox label {
+  color: white;
+  font-weight: bold;
+}
+
+.facet-dropdown-items ul {
+  padding: 0;
+
+  li.facet-item {
+    display: flex;
+    margin-bottom: 10px;
+    
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+
+    label {
+      padding-left: 32px;
+    }
+
+    label::before,
+    label::after {
+      position: absolute;
+      content: "";
+    }
+
+    // Outer box of the fake checkbox
+    label::before{
+      height: 16px;
+      width: 16px;
+      
+      border: 1px solid;
+      left: 0px;
+    }
+
+    // Checkmark of the fake checkbox
+    label::after {
+      height: 5px;
+      width: 9px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      
+      transform: rotate(-45deg);
+      
+      left: 4px;
+      top: 4px;
+    }
+
+    // Hide the checkmark by default
+    input[type="checkbox"] + label::after {
+      content: none;
+    }
+
+    // Unhide on the checked state
+    input[type="checkbox"]:checked + label::after {
+      content: "";
+    }
+
+    // Adding focus styles on the outer-box of the fake checkbox
+    input[type="checkbox"]:focus + label::before {
+      outline: white dotted 2px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+// Facets dropdown styling
+
+button {
+  .language-switcher-plus,
+  .language-switcher-minus {
+    display: none;
+    width: 10px;
+    margin-right: 10px;
+  }
+  &[aria-expanded="false"] {
+    .language-switcher-plus {
+      display: block;
+    }
+  }
+  &[aria-expanded="true"] {
+    .language-switcher-minus {
+      display: block;
+    }
+  }
+
+  &.facet-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding-left: 0;
+  }
+}
+
+.facet-dropdown-items {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  transition: height 0.5s ease-in-out;
+  color: #000;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .facet-dropdown-items {
+    transition: height 0s;
+  }
+}
+.facet-item {
+  visibility: visible;
+}
+
+.facet-dropdown-items--collapsed .facet-item {
+  visibility: hidden;
 }
 
 input[type="submit"] {
