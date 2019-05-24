@@ -510,6 +510,23 @@ select {
   background-repeat: no-repeat;
   background-color: #ffffff; }
 
+.joe__search-bar .form-item-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 30px; }
+  .joe__search-bar .form-item-search input.form-text {
+    line-height: 23px; }
+
+.joe__search-bar label[for="edit-sort-by"] {
+  display: none; }
+
+.joe__search-bar .form-item-sort-by {
+  width: 150px; }
+
 input[type='checkbox'],
 input[type='radio'] {
   display: inline-block; }
@@ -520,6 +537,100 @@ input[type='radio'] {
     color: #414042;
     text-transform: none;
     margin: 0; }
+    .facet-dropdown-items input[type='checkbox'] + label, .facet-dropdown-items
+    input[type='radio'] + label {
+      color: white; }
+
+.block-facet--checkbox label {
+  color: white;
+  font-weight: bold; }
+
+.facet-dropdown-items ul {
+  padding: 0; }
+  .facet-dropdown-items ul li.facet-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px; }
+    .facet-dropdown-items ul li.facet-item input[type="checkbox"] {
+      position: absolute;
+      opacity: 0; }
+    .facet-dropdown-items ul li.facet-item label {
+      padding-left: 32px; }
+    .facet-dropdown-items ul li.facet-item label::before,
+    .facet-dropdown-items ul li.facet-item label::after {
+      position: absolute;
+      content: ""; }
+    .facet-dropdown-items ul li.facet-item label::before {
+      height: 16px;
+      width: 16px;
+      border: 1px solid;
+      left: 0px; }
+    .facet-dropdown-items ul li.facet-item label::after {
+      height: 5px;
+      width: 9px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      left: 4px;
+      top: 4px; }
+    .facet-dropdown-items ul li.facet-item input[type="checkbox"] + label::after {
+      content: none; }
+    .facet-dropdown-items ul li.facet-item input[type="checkbox"]:checked + label::after {
+      content: ""; }
+    .facet-dropdown-items ul li.facet-item input[type="checkbox"]:focus + label::before {
+      outline: white dotted 2px; }
+    .facet-dropdown-items ul li.facet-item a {
+      color: white; }
+
+button .language-switcher-plus,
+button .language-switcher-minus {
+  display: none;
+  width: 10px;
+  margin-right: 10px; }
+
+button[aria-expanded="false"] .language-switcher-plus {
+  display: block; }
+
+button[aria-expanded="true"] .language-switcher-minus {
+  display: block; }
+
+button.facet-dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  padding-left: 0; }
+
+.facet-dropdown-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  color: #000; }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .facet-dropdown-items {
+    -webkit-transition: height 0s;
+    transition: height 0s; } }
+
+.facet-item {
+  visibility: visible; }
+
+.facet-dropdown-items--collapsed .facet-item {
+  visibility: hidden; }
 
 input[type="submit"] {
   -webkit-appearance: none;
@@ -3357,14 +3468,16 @@ blockquote {
   .joe__search-bar input[type='submit'], .joe__search-bar__select {
     width: 100%;
     margin-top: .25em; }
+  @media (min-width: 75em) {
+    .joe__search-bar {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   @media (min-width: 25em) {
     .joe__search-bar {
       position: relative;
       padding-right: 140px;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
