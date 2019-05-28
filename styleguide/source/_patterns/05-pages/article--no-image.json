@@ -96,7 +96,7 @@
   },
   "article_flag": {
     "type": "AMA Code Says",
-    "issue": "Oct. 2017",
+    "issue_date": "Oct. 2017",
     "class": "joe__flag--larger"
   },
   "article_authors": [
