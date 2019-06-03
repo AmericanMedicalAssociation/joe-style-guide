@@ -226,7 +226,7 @@ sup {
   padding: 0;
   clear: both; }
   .joe__audio-player iframe {
-    height: 50px;
+    height: 90px;
     width: 100%;
     padding-top: 5px;
     border: none; }
@@ -343,8 +343,7 @@ button {
   display: inline-block;
   text-decoration: none; }
 
-a:focus .joe__flag__date,
-a:hover .joe__flag__date {
+.joe__flag__date {
   text-decoration: underline; }
 
 .joe__flag--larger {
