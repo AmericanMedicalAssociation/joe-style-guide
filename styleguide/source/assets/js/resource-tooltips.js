@@ -15,9 +15,9 @@
          var $sup = $(this);
          var supText = $sup.text().trim();
          if (supText.indexOf(',') > -1) {
-           $sup.replaceWith($sup.html().split(',').map(function(el, i) {
+           $sup.replaceWith($sup.text().split(',').map(function(el, i) {
              // If the sup number is the last one it should not have a comma after it
-             return $sup.length - 1 === i ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
+             return $sup.length !== i - 1  ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
            }));
          }
        });
