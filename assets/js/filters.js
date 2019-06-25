@@ -50,8 +50,8 @@
   }
 
   function toggleMenu() {
-    const expanded = this.getAttribute('aria-expanded');
-    const menu = this.parentElement.querySelector('[data-drupal-selector="facet-dropdown-items"]');
+    var expanded = this.getAttribute('aria-expanded');
+    var menu = this.parentElement.querySelector('[data-drupal-selector="facet-dropdown-items"]');
 
     if (expanded === 'false') {
       this.setAttribute('aria-expanded', 'true');
@@ -86,10 +86,10 @@
   Drupal.behaviors.facetDropdownToggler = {
     attach: function (context) {
       if (context.className === 'block-facet--checkbox' || context.nodeName === '#document') {
-        const toggler = context.querySelectorAll(
+        var toggler = context.querySelectorAll(
           '[data-drupal-selector="facet-dropdown-toggle"]'
         );
-        const menu = context.querySelectorAll('[data-drupal-selector="facet-dropdown-items"]');
+        var menu = context.querySelectorAll('[data-drupal-selector="facet-dropdown-items"]');
         // The template doesn't have the aria-expanded attribute, so we can
         // use that as a proxy for the first run.
         if (menu.length > 0 && toggler && toggler[0].getAttribute('aria-expanded') === null) {
