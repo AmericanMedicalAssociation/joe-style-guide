@@ -17,7 +17,7 @@
          if (supText.indexOf(',') > -1) {
            $sup.replaceWith($sup.text().split(',').map(function(el, i) {
              // If the sup number is the last one it should not have a comma after it
-             return $sup.length !== i - 1  ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
+             return $sup.text().split(',').length - 1 !== i ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
            }));
          }
        });
@@ -31,9 +31,15 @@
           // Prevent the hover function from cloning the reference more than once
           if(!$(this).find('.ama__tooltip').length){
             // Append a div with the reference to the <sup>
-            $(this).append('<div class="ama__tooltip">' + $reference.html() + '</div>');
-            // Show the reference tooltip
-            $(this).children('.ama__tooltip').fadeIn()
+            if($reference.html() === undefined) {
+              $(this).append('<div class="ama__tooltip">Reference not found.</div>');
+              // Show the reference tooltip
+              $(this).children('.ama__tooltip').fadeIn()
+            } else {
+              $(this).append('<div class="ama__tooltip">' + $reference.html() + '</div>');
+              // Show the reference tooltip
+              $(this).children('.ama__tooltip').fadeIn()
+            }
           } else {
             $(this).find('.ama__tooltip').fadeIn();
           }
