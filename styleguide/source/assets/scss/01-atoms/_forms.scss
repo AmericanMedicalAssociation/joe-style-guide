@@ -117,6 +117,7 @@ input[type='radio'] {
 
     .facet-dropdown-items & {
       color: white;
+      width: 90%;
     }
   }
 }
@@ -216,6 +217,10 @@ button {
     align-items: center;
     background: transparent;
     padding-left: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
