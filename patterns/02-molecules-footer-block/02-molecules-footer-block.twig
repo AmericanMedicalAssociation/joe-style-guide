@@ -1,9 +1,0 @@
-{% set title_label = footer_block.title_label %}
-{% include "@atoms/title-label.twig" %}
-{% if footer_block.link %}
-  {% set link = footer_block.link %}
-  {% include "@atoms/link.twig" %}
-{% else %}
-  {% set paragraph = footer_block.paragraph %}
-  {% include "@atoms/paragraph.twig" %}
-{% endif %} 
