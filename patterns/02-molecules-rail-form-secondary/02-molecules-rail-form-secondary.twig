@@ -1,0 +1,17 @@
+<aside class="joe__rail-cta {% if rail_form.secondary == true %}joe__rail-cta--secondary{% endif %}">
+  {% set heading = rail_form.heading %}
+  {% include "heading.twig" %}
+  <div class="joe__rail-cta__text">
+    {% set paragraph = rail_form.paragraph %}
+    {% include "paragraph.twig" %}
+  </div>
+  <form class="joe__rail-form__form">
+    {% set label = rail_form.label %}
+    {% include "label.twig" %}
+    {% set input = rail_form.emailinput %}
+    {% include "input.twig" %}
+    {% set input = rail_form.formsubmit %}
+    {% include "input.twig" %}
+  </form>
+ 
+</aside>

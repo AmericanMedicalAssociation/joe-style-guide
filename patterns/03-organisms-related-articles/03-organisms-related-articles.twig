@@ -1,0 +1,8 @@
+<aside class="joe__related-articles">
+  {% include "@atoms/rail-title.twig" with { "rail_title": {"level" : "3", "text" : "You may also be interested in" } } %}
+
+  {% for article in related.articles %}
+    {% set teaser = article %}
+    {% include '@molecules/article-teaser.twig' %}
+  {% endfor %}
+</aside>

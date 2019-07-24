@@ -1,0 +1,12 @@
+<div class="joe__tags">
+  <h2 class="joe__tags-title">Read More</h2>
+  <ul class="joe__tags-list">
+    {% for tag in tags %}
+      {% if loop.last %}
+        <li class="joe__tag"><a href="{{tag.url}}">{{tag.text}}</a></li>
+      {% else %}
+        <li class="joe__tag"><a href="{{tag.url}}">{{tag.text}}</a>,</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
