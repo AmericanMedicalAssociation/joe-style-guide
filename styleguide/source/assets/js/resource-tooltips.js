@@ -11,7 +11,7 @@
    Drupal.behaviors.resourceToolips = {
      attach: function () {
        // Separates the sup tags that have multiple numbers into individual sup tags
-       $('sup').each(function(){
+       $('article sup').each(function(){
          var $sup = $(this);
          var supText = $sup.text().trim();
          if (supText.indexOf(',') > -1) {
