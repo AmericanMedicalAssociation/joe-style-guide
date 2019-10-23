@@ -21,16 +21,13 @@
   }
   
   &.is-zoomed {
-    background-color: rgba($black, .95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 90%;
+    position: absolute;
     z-index: 20;
-    transition: background-color .15s ease;
     margin: 0;
     overflow: auto;
+    transition: background-color .15s ease;
+    background-color: rgba($black, .95);
     
     img {
       opacity: 0;
@@ -44,13 +41,17 @@
     .joe__inline-image__zoom {
       position: absolute;
       z-index: 1;
-      top: 20px;
-      right: 30px;
+      top: 1em;
+      right: 1em;
       content: "Close";
       color: transparent;
-      background-color: transparent;
+      background-color: black;
       background-image: url("../images/close.png");
       background-size: contain;
+      border-radius: 50%;
+      background-origin: content-box;
+      background-repeat: no-repeat;
+      padding: 10px;
 
       &:after {
         background-image: none;
@@ -67,7 +68,7 @@
     margin: .5em 1em .5em 0;
     
     &.is-zoomed {
-      width: 100%;
+      width: 90%;
       float: none;
       margin: 0;
     }
