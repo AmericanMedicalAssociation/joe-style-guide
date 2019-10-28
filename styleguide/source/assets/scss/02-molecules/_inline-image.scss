@@ -21,7 +21,7 @@
   }
   
   &.is-zoomed {
-    width: 90%;
+    width: 86%;
     position: absolute;
     z-index: 20;
     margin: 0;
@@ -68,7 +68,6 @@
     margin: .5em 1em .5em 0;
     
     &.is-zoomed {
-      width: 90%;
       float: none;
       margin: 0;
     }
@@ -82,8 +81,7 @@
     float: right;
     margin: .5em 0 .5em 1em;
     
-     &.is-zoomed {
-      width: 100%;
+    &.is-zoomed {
       float: none;
       margin: 0;
     }
@@ -97,25 +95,16 @@
   margin: .5em 1em .5em 0;
   
   &.is-zoomed {
-    width: 100%;
     float: none;
     margin: 0;
   }
 
   @include breakpoint($bp-small) {
     width: 30%;
-    
-    &.is-zoomed {
-      width: 100%;
-    }
   }
 
   @include breakpoint($bp-med) {
     width: 25%;
-    
-    &.is-zoomed {
-      width: 100%;
-    }
   }
 }
 
