@@ -19,7 +19,8 @@
         // Unfocus on the dropdown
         $(this).blur();
         // add a class to the sibling dropdown
-        $(this).parents('.joe__inline-image').toggleClass('is-zoomed');
+        var $figure = $(this).closest('.joe__inline-image');
+        $figure.toggleClass('is-zoomed');
       });
       
       // Close the modal when esc is pressed.
