@@ -116,6 +116,7 @@
   background: rgba($white, .8);
   border-radius: 0;
   padding: 6px;
+  cursor: pointer;
   
   &:after {
     content: 'Zoom in on this Image';
