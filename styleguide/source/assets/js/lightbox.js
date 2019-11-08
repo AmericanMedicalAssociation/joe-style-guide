@@ -21,6 +21,7 @@
         // add a class to the sibling dropdown
         var $figure = $(this).closest('.joe__inline-image');
         $figure.toggleClass('is-zoomed');
+        $figure.css('max-width', $(window).width() + 'px');
       });
       
       // Close the modal when esc is pressed.
