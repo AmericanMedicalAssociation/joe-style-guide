@@ -21,8 +21,9 @@
   }
   
   &.is-zoomed {
-    width: 96%;
     position: absolute;
+    left: 0;
+    top: auto;
     z-index: 20;
     margin: 0;
     overflow: auto;
