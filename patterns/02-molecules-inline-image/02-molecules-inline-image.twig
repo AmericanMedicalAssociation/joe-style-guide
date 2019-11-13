@@ -1,0 +1,13 @@
+<figure class="joe__inline-image {% if inline_image.alignment %}joe__inline-image--{{inline_image.alignment }}{% endif %}">
+  
+  {% set image = inline_image.image %}
+  {% include "@atoms/image.twig" %}
+  
+  <button class="joe__inline-image__zoom"></button>
+  
+  {% if inline_image.caption %}
+  <figcaption class="joe__inline-caption">
+    {{ inline_image.caption }}
+  </figcaption>
+  {% endif %}
+</figure>

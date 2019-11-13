@@ -1,0 +1,22 @@
+{% extends '@templates/offset-center.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '5'}} %}
+{% endblock %}
+
+{% block pageContent_header %}
+  {% include '@organisms/current-issue-teaser.twig' %}
+{% endblock %}
+
+{% block pageContent %}
+  {% include '@organisms/featured-case.twig' %}
+  
+{% endblock %}
+
+{% block footer %} 
+  {% include '@organisms/poll--structured.twig' %}
+  {% include '@organisms/topics.twig' %}
+  {% include '@organisms/about-band.twig' %}
+  {% include '@organisms/cta-band.twig' %}
+  {% include '@organisms/footer.twig' %}
+{% endblock %}
