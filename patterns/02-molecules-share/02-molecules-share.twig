@@ -1,9 +1,0 @@
-<button id="joe__share--trigger" class="joe__share-trigger" title="Open Sharing Options">{% include "icon.twig" with { "icon": { "symbol": "square-share", "text": "Open Sharing Options"}} %}</button>
-<ul class="joe__share">
-  {% for share in shares %}
-  <li class="joe__share__item">
-    {% set icon = share %}
-    <a href="#">{% include "icon.twig" %}</a>
-  </li>
-  {% endfor %}
-</ul>
