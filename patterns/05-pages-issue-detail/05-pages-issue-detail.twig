@@ -1,0 +1,30 @@
+{% extends '@templates/offset-center.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/article-hero.twig' with {'article_hero' :{'image_id': '5'}} %}
+{% endblock %}
+
+{% block pageContent_header %}
+  {% include '@molecules/issue-header.twig' %}
+  {% include '@molecules/share.twig' %}
+{% endblock %}
+
+{% block pageContent %}
+  
+  {# Issue Articles here #}
+  <ul class="joe__list--issue">
+    {% for article in articles %}
+    <li>
+      {% set teaser = article %}
+      {% include '@molecules/article-teaser--extended.twig' %}
+    </li>
+    {% endfor %}
+  </ul>
+  
+{% endblock %}
+
+{% block footer %} 
+  {% include '@organisms/poll--structured.twig' %}
+  {% include '@organisms/related-issues.twig' %}
+  {% include '@organisms/footer.twig' %}
+{% endblock %}
