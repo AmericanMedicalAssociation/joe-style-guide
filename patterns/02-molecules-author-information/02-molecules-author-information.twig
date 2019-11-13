@@ -1,9 +1,0 @@
-<aside class="joe__author-information">
-  {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Author Information" } } %}
-  
-  <ul class="joe__author-information__list">
-    {% for author in authors %}
-      <li><strong>{{author.name}}</strong> {{author.description}}</li>
-    {% endfor %}
-  </ul>
-</aside>
