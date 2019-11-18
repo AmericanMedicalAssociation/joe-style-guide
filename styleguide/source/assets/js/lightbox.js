@@ -23,7 +23,7 @@
         $figure.toggleClass('is-zoomed');
         $figure.css('max-width', $('.layout-container').width());
       });
-      
+
       // Close the modal when esc is pressed.
       $(document).on('keydown', function(e) {
         if (e.keyCode === 27) {
@@ -31,13 +31,11 @@
         }
       });
 
-      // Close when clicking outside of zoomed image.
       $(document).on('click', function(e) {
-        e.preventDefault();
-        var target = $(e.target);
-        if (target.is(':not(img)')) {
-          $(".joe__inline-image").removeClass('is-zoomed');
-        }
+         var target = $(e.target);
+         if (target.is(':not(img)')) {
+           $(".joe__inline-image").removeClass('is-zoomed');
+         }
       });
     }
   };
