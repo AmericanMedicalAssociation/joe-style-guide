@@ -25,8 +25,10 @@
 
         if ($figure.hasClass('is-zoomed')) {
           $figure.css('width', $width)
+          $('.contextual-region').css('position', 'static')
         } else {
           $figure.removeAttr('style')
+          $('.contextual-region').css('position', 'relative')
         }
       })
 
@@ -34,6 +36,7 @@
       $(document).on('keydown', function (e) {
         if (e.keyCode === 27) {
           $('.joe__inline-image').removeClass('is-zoomed').removeAttr('style')
+          $('.contextual-region').css('position', 'relative')
         }
       })
 
@@ -41,6 +44,7 @@
         var target = $(e.target)
         if (target.is(':not(img)')) {
           $('.joe__inline-image').removeClass('is-zoomed').removeAttr('style')
+          $('.contextual-region').css('position', 'relative')
         }
       })
     }
