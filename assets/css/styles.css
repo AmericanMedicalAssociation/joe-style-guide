@@ -2436,6 +2436,9 @@ blockquote {
 .tool-drawer__trigger {
   z-index: 0; }
 
+* {
+  background: red; }
+
 .joe__utility-nav {
   display: block;
   -webkit-column-count: 1;
