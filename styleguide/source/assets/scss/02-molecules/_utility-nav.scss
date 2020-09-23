@@ -1,3 +1,4 @@
+
 .joe__utility-nav {
   @extend %clearfix;
   display: block;
@@ -7,13 +8,12 @@
 
   @include breakpoint($bp-xs) {
     column-count: 2;
-
     position: absolute;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
   }
-  
+
   @include breakpoint($bp-med) {
     column-count: 1;
     background-color: transparent;
@@ -23,7 +23,7 @@
       height: 26px;
     }
   }
-  
+
   @include breakpoint($bp-large) {
     width: 100%;
 
@@ -32,7 +32,7 @@
       height: 29px;
     }
   }
-  
+
   @include breakpoint($bp-xl) {
     width: 100%;
   }
@@ -43,38 +43,85 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   @include breakpoint($bp-med) {
     float: left;
   }
 }
 
+//Social List
 .joe__utility-nav__list--right {
-  
   @include breakpoint($bp-med) {
     float: right;
+  }
+  .joe__utility-nav__item {
+    margin-right: .5em;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    //give the first social icon a left border on mobile
+    &:first-of-type + .social {
+      .social-icon {
+        padding-left: .75em;
+        border-left-color: $white;
+        @include breakpoint($bp-med) {
+          padding: 0;
+          border-left-color: transparent;
+        }
+      }
+      > .social {
+        .social-icon {
+
+        }
+      }
+    }
+    //icon styling
+    &.social {
+      vertical-align: middle;
+      display: inline-block;
+      border: none;
+      margin-right: 0;
+
+      .social-icon {
+        height: 23px;
+        width: 26px;
+        position: relative;
+        border-left-color: transparent;
+        padding: 9px .2em;
+        &.youtube {
+          width: 32px;
+          padding: 0;
+          height: 28px;
+        }
+        @include breakpoint($bp-med) {
+          padding: 0;
+          height: 20px;
+          &.twitter {
+            height: 18px;
+          }
+          &.youtube {
+            width: 28px;
+            height: 20px;
+          }
+        }
+        svg {
+          fill: $white;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
 .joe__utility-nav__item {
-  position: relative;
   display: block;
   border-bottom: 1px solid $white;
-  
-  .icon-twitter {
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 9px;
-    left: 80px;
-    
-    svg {
-      fill: $white;
-      height: 20px;
-      width: 20px;
-    }
-  }
-  
+  position: relative;
+  top: auto;
+  left: auto;
+
   a:link,
   a:visited {
     display: block;
@@ -83,25 +130,18 @@
     border: 0;
     border-left: 1px solid $white;
   }
-  
+
   @include breakpoint($bp-med) {
     display: inline-block;
     border: 0;
-    
-    .icon-twitter {
-      float: right;
-      position: relative;
-      top: auto;
-      left: auto;
-    }
-    
+
     a:link,
     a:visited {
       display: inline-block;
       padding: 0 .5em;
       border: 0;
     }
-    
+
     &:first-child {
       a:link,
       a:visited {
