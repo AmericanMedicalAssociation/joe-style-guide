@@ -1,0 +1,35 @@
+.gallery-wrapper {
+  margin: 0;
+  .gallery-section {
+    display: flex;
+    margin: 0 auto;
+    .images-top-wrapper {
+      order: 1;
+      flex-grow: 0;
+      height: 100vh;
+      width:100%;
+      overflow: hidden;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      background: red;
+    }
+    .captions-top-wrapper {
+      order: 0;
+      color: white;
+      flex-shrink: 0;
+      padding: 0 40px;
+      width: 400px;
+      position: relative;
+      min-height: 100vh;
+      background: blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .caption {
+        min-height: 100vw;
+      }
+    }
+  }
+}
