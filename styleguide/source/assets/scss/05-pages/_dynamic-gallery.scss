@@ -11,8 +11,13 @@
       overflow: hidden;
       padding: 20px;
       position: sticky;
-      top: 0;
+      top: 60px;
       background: red;
+      .block {
+        width:200px;
+        height:200px;
+        background: green;
+      }
     }
     .captions-top-wrapper {
       order: 0;
