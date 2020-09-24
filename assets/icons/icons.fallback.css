@@ -8,6 +8,15 @@
 
 
 
+.icon-facebook {
+	background-image: url('png/facebook.png');
+	background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+
+
 .icon-menu {
 	background-image: url('png/menu.png');
 	background-repeat: no-repeat;
@@ -100,6 +109,15 @@
 
 .icon-twitter {
 	background-image: url('png/twitter.png');
+	background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+.icon-youtube {
+	background-image: url('png/youtube.png');
 	background-repeat: no-repeat;
   width: 80px;
   height: 80px;
