@@ -6,14 +6,15 @@
     margin-bottom: 0;
     margin-top: 0;
   }
-  .gallery-header {
+  &.gallery-header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     padding: 8px 0;
     transition: all .25s ease-in;
-    background-color: rgba($white, .85);
+    background-color: rgba($white, 1);
+    padding: 5px 15px;
   }
 }
 
@@ -56,14 +57,7 @@
       position: sticky;
       top: 60px;
     }
-    p {
-      position: fixed;
-      bottom: 4%;
-      left: 0;
-      text-align: center;
-      width: 100%;
-      font-size: 1.8em;
-    }
+
     svg {
       background-color: #333;
       height:100%;
@@ -71,39 +65,33 @@
     }
   }
   .text-column {
-    height: 100%;
     padding: 28px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index:99;
     @include breakpoint($bp-med) {
-      position: initial;
       width: calc(20% - 56px);
       z-index:1;
     }
     .caption {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       p {
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: $white;
+        padding: 15px;
+        @include breakpoint($bp-small) {
+          padding: 0;
+        }
       }
     }
   }
 }
-.gallery-audio {
-  position: relative;
+audio.gallery-audio {
+  z-index: 999;
+  max-width: 100%;
   &.played {
-    width: 100%;
-    background: $white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    //background: $white;
+    //position:fixed;
+    //bottom:0;
   }
+}
+
+#fp-nav.fp-left {
+  left: 0 !important;
 }
