@@ -4075,6 +4075,95 @@ blockquote {
     .joe__article--bottom {
       margin-bottom: 2em; } }
 
+.joe__sticky-gallery-header {
+  padding-top: 100px; }
+  .joe__sticky-gallery-header .joe__wordmark {
+    font-size: 70%;
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .joe__sticky-gallery-header.gallery-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 8px 0;
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    background-color: white;
+    padding: 5px 15px; }
+
+.gallery-header {
+  z-index: 2;
+  position: relative;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  z-index: 11;
+  padding: 0;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
+  @media (min-width: 37.5em) {
+    .gallery-header {
+      padding: 20px 15px; } }
+  .gallery-header .joe__wordmark {
+    margin: 0 15px; }
+    .gallery-header .joe__wordmark .joe__wordmark__title {
+      margin-top: 0; }
+    .gallery-header .joe__wordmark .joe__wordmark__subtitle {
+      margin-bottom: 0; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative; }
+  .gallery .image-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    height: 100vh; }
+    @media (min-width: 56.25em) {
+      .gallery .image-wrapper {
+        width: 80%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 60px; } }
+    .gallery .image-wrapper svg {
+      background-color: #333;
+      height: 100%;
+      width: 100%; }
+  .gallery .text-column {
+    padding: 28px;
+    z-index: 99; }
+    @media (min-width: 56.25em) {
+      .gallery .text-column {
+        width: calc(20% - 56px);
+        z-index: 1; } }
+    .gallery .text-column .caption p {
+      background-color: #ffffff;
+      padding: 15px; }
+      @media (min-width: 37.5em) {
+        .gallery .text-column .caption p {
+          padding: 0; } }
+
+audio.gallery-audio {
+  z-index: 999;
+  max-width: 100%; }
+
+#fp-nav.fp-left {
+  left: 0 !important; }
+
 .joe__page--top {
   background-color: rgba(255, 255, 255, 0.9);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(#ffffff));
