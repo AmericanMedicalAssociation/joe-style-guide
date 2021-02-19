@@ -2,7 +2,7 @@
   Drupal.behaviors.gallery = {
     attach: function (context, settings) {
 
-      var w = '20';
+      /*var w = '20';
       var x = '20';
       var y = '1680';
       var z = '1680';
@@ -42,7 +42,7 @@
           x = parseInt(ui.value);
           $('svg').attr('viewBox', w + ' ' + x +  ' ' + y + ' ' + z);
         }
-      });
+      });*/
 
     }
   };
