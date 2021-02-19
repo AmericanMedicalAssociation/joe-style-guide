@@ -5,8 +5,9 @@
       var observer = new IntersectionObserver(function(entries) {
         // isIntersecting is true when element and viewport are overlapping
         // isIntersecting is false when element and viewport don't overlap
-        if(entries[0].isIntersecting === true)
+        if(entries[0].isIntersecting === true) {
           console.log('Element has just become visible in screen');
+        }
       }, { threshold: [0] });
 
       //const p = document.querySelector('.image-wrapper p');
@@ -26,7 +27,7 @@
         }
       });
 
-      $('.gallery-audio').on("play", function() {
+      $('.gallery-audio').on('play', function() {
         $(this).addClass('played');
       });
 
@@ -58,7 +59,7 @@
                 }
               });
               $('.gallery-header').removeClass('joe__sticky-gallery-header');
-              console.log("index 0");
+              console.log('index 0');
             }
             if (destination.index === 1) {
               gallery.to(svg, {
@@ -66,7 +67,7 @@
                   viewBox: '623 755 843 843'
                 }
               });
-              console.log("index 1");
+              console.log('index 1');
             }
             if (destination.index === 2) {
               gallery.to(svg, {
@@ -74,7 +75,7 @@
                   viewBox: '65 755 843 843'
                 }
               });
-              console.log("index 2");
+              console.log('index 2');
             }
             if (destination.index === 3) {
               gallery.to(svg, {
@@ -82,7 +83,7 @@
                   viewBox: '246 387 1188 1188'
                 }
               });
-              console.log("index 3");
+              console.log('index 3');
             }
           }
         });
