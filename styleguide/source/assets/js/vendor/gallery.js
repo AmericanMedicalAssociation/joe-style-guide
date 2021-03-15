@@ -41,8 +41,7 @@
           ],
           licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
           //scrollOverflow: true,
-          navigation: true,
-          navigationPosition: 'left',
+          navigation: false,
           onLeave: function(origin, destination, direction) {
             var params = {
               origin: origin,

@@ -13,7 +13,7 @@
     top: 0;
     padding: 8px 0;
     transition: all .25s ease-in;
-    background-color: rgba($white, 1);
+    background-color: rgba($white, 0.85);
     padding: 5px 15px;
   }
 }
@@ -24,6 +24,7 @@
   transition: all .25s ease-in;
   z-index: 11;
   padding: 0;
+  background-color: rgba($white, 1);
   @include breakpoint($bp-small) {
     padding: 20px 15px;
   }
@@ -53,9 +54,9 @@
     z-index:0;
     height: 100vh;
     @include breakpoint($bp-med) {
-      width: 80%;
+      width: 60%;
       position: sticky;
-      top: 60px;
+      //top: 60px;
     }
 
     svg {
@@ -68,7 +69,7 @@
     padding: 28px;
     z-index:99;
     @include breakpoint($bp-med) {
-      width: calc(20% - 56px);
+      width: calc(40% - 56px);
       z-index:1;
     }
     .caption {
