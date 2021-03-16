@@ -4091,7 +4091,7 @@ blockquote {
     padding: 8px 0;
     -webkit-transition: all .25s ease-in;
     transition: all .25s ease-in;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 5px 15px; }
 
 .gallery-header {
@@ -4101,6 +4101,7 @@ blockquote {
   transition: all .25s ease-in;
   z-index: 11;
   padding: 0;
+  background-color: white;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
   @media (min-width: 37.5em) {
@@ -4135,10 +4136,9 @@ blockquote {
     height: 100vh; }
     @media (min-width: 56.25em) {
       .gallery .image-wrapper {
-        width: 80%;
+        width: 60%;
         position: -webkit-sticky;
-        position: sticky;
-        top: 60px; } }
+        position: sticky; } }
     .gallery .image-wrapper svg {
       background-color: #333;
       height: 100%;
@@ -4148,7 +4148,7 @@ blockquote {
     z-index: 99; }
     @media (min-width: 56.25em) {
       .gallery .text-column {
-        width: calc(20% - 56px);
+        width: calc(40% - 56px);
         z-index: 1; } }
     .gallery .text-column .caption p {
       background-color: #ffffff;
