@@ -84,15 +84,55 @@
   }
 }
 audio.gallery-audio {
+  opacity: 0;
   z-index: 999;
-  max-width: 100%;
+  width: 100%;
+  transition: opacity 1s ease-out;
+  @include breakpoint($bp-med) {
+    width: 40%;
+  }
   &.played {
-    //background: $white;
-    //position:fixed;
-    //bottom:0;
+    opacity:1;
+    transition: opacity 1s ease-out;
+    position:fixed;
+    bottom:0;
+    height: 40px;
+    left: 0;
   }
 }
 
 #fp-nav.fp-left {
   left: 0 !important;
+}
+
+.play-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  padding:18px;
+  .play-ring {
+    border-radius: 100%;
+    padding: 10px;
+    border: 3px solid black;
+    width:90px;
+    height:90px;
+    position: relative;
+
+    .play-triangle {
+      position: relative;
+      top: 33px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 50px solid black;
+    }
+  }
+}
+
+footer {
+  height:400px;
+  background: red;
 }
