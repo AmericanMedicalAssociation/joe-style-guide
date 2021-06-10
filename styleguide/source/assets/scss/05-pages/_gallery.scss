@@ -12,6 +12,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   .joe__wordmark {
     margin: 0 15px;
+    display: inline-block;
     .joe__wordmark__title {
       margin-top: 0;
     }
@@ -36,8 +37,92 @@
       transition: all .25s ease-in;
       background-color: rgba($white, 0.85);
     }
+    .joe__menu-trigger {
+      margin-right: 30px;
+      margin-top:5px;
+      @include breakpoint($bp-med) {
+        margin-top: 6px;
+        display: inline-block;
+        visibility: visible;
+      }
+    }
+  }
+  .joe__menu-trigger {
+    display: inline-block;
+    background: transparent;
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 8px 5px;
+    margin-left: auto;
+    svg {
+      fill: #333;
+    }
+    .icon-menu {
+      svg {
+        height: 25px;
+        width: 25px;
+      }
+    }
+    &:hover {
+      svg {
+        fill: $white;
+      }
+      background: #333;
+    }
+  }
+
+  .joe__nav-drawer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height .5s ease-in, visibility 0s ease-in .5s, opacity .25s ease-in .25s;
+    opacity: 0;
+    background-color: $navy-lighter;
+    box-shadow: $shadow;
+    border-right: 1px solid $white;
+    &.is-active {
+      max-height: 80vh;
+      visibility: visible;
+      transition: max-height .5s ease-in, visibility 0s ease-in, opacity .25s ease-in .25s;
+      opacity: 1;
+    }
+  }
+  .joe__primary-nav {
+    .joe__primary-nav__list {
+      @include breakpoint($bp-med) {
+        padding-right: 30px;
+      }
+
+      .joe__primary-nav__item {
+        a,
+        a:visited,
+        a:link {
+          color: $white;
+          border-left: none;
+        }
+      }
+    }
+  }
+  .joe__utility-nav {
+    visibility: visible;
+    @include breakpoint($bp-med) {
+      visibility: hidden;
+      width:auto;
+      margin-top: 12px;
+      margin-left: 15px;
+    }
+    @include breakpoint($bp-xl) {
+      visibility: visible;
+    }
   }
 }
+
+
 
 #fp-nav.fp-left {
   left: 0 !important;
