@@ -28,7 +28,7 @@
 
       // Initialize the first section to trigger correct first scroll animation
       $( document ).ready(function() {
-        var viewBox = $('svg').attr('viewBox');
+        var viewBox = $('.image-wrapper svg').attr('viewBox');
         console.log(viewBox);
         gallery.to(svg, {
           attr: {
