@@ -12,6 +12,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   .joe__wordmark {
     margin: 0 15px;
+    display: inline-block;
     .joe__wordmark__title {
       margin-top: 0;
     }
@@ -108,10 +109,15 @@
     }
   }
   .joe__utility-nav {
+    visibility: visible;
     @include breakpoint($bp-med) {
+      visibility: hidden;
       width:auto;
       margin-top: 12px;
       margin-left: 15px;
+    }
+    @include breakpoint($bp-xl) {
+      visibility: visible;
     }
   }
 }
