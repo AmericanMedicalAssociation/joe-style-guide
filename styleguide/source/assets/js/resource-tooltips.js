@@ -7,23 +7,22 @@
  * - https://drupal.org/node/1446420
  * - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
  */
- (function ($, Drupal) {
-   Drupal.behaviors.resourceToolips = {
-     attach: function () {
-       // Separates the sup tags that have multiple numbers into individual sup tags
-       $('article sup').each(function(){
-         var $sup = $(this);
-         var supText = $sup.text().trim();
-         if (supText.indexOf(',') > -1) {
-           $sup.replaceWith($sup.text().split(',').map(function(el, i) {
-             // If the sup number is the last one it should not have a comma after it
-             return $sup.text().split(',').length - 1 !== i ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
-           }));
-         }
-       });
+(function ($, Drupal) {
+  Drupal.behaviors.resourceToolips = {
+    attach: function () {
+      // Separates the sup tags that have multiple numbers into individual sup tags
+      $('article sup, aside sup').each(function(){
+        var $sup = $(this);
+        var supText = $sup.text().trim();
+        if (supText.indexOf(',') > -1) {
+          $sup.replaceWith($sup.text().split(',').map(function(el, i) {
+            // If the sup number is the last one it should not have a comma after it
+            return $sup.text().split(',').length - 1 !== i ? '<sup>' + el + ', </sup>' : '<sup>' + el + '</sup>'
+          }));
+        }
+      });
       // Sup on hover connect it to the references
-       $('article sup').hover(
-        function() {
+      $('article sup, aside sup').hover(function() {
           // Find the <sup> tag number and convert it into an integer
           var $supNumber = parseInt($(this).text()) - 1;
           // Take <sup> number and use it to get the reference
@@ -48,8 +47,8 @@
           $(this).find('.ama__tooltip').fadeOut();
         }
       );
-     }
-   };
- })(jQuery, Drupal);
+    }
+  };
+})(jQuery, Drupal);
 
 
