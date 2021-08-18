@@ -269,7 +269,7 @@ gulp.task('serve', function () {
 // Task: Publish static content
 // Description: Publish static content using rsync shell command
 gulp.task('publish', gulp.series('clean:publish', function(){
-  return gulp.src(config.deployment.local.path)
+  return gulp.src(config.deployment.local.path, {allowEmpty: true})
     .pipe(ghPages({ branch: config.deployment.branch}));
 }));
 
