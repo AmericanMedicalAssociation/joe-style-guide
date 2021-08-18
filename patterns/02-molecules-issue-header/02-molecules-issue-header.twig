@@ -1,0 +1,17 @@
+<header class="joe__issue-header">
+  <span class="joe__issue-header__date">{{issue.date}}</span>
+
+  <h1 class="joe__issue-header__title">{{ issue.title }}</h1>
+  
+  {% if issue.description %}
+  <div class="joe__issue-header__desc">
+    {{ issue.description }}
+  </div>
+  {% endif %}
+  
+  {# issue PDF downloads an uploaded PDF of the issue #}
+  <div class="joe__issue-header__meta">
+    {{ issue.volume }}, {{ issue.number }}: {{ issue.issn }} {% if issue.pdf %}<a class="joe__issue-header__download" href="{{issue.pdf}}">Download PDF</a> {% endif %}
+  </div>
+  
+</header>

@@ -1,0 +1,10 @@
+<nav class="joe__primary-nav">
+  <ul class="joe__primary-nav__list">
+  {% for primary_nav in primary_navs %}
+    <li class="joe__primary-nav__item">
+      {% set link = primary_nav %}
+      {% include "@atoms/link.twig" %}
+    </li>
+  {% endfor %}
+  </ul>
+</nav>

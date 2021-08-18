@@ -1,0 +1,28 @@
+<div class="joe__filters-wrapper">
+  <button type="button" class="joe__filters--trigger" aria-controls="#joe__filters"><span class="joe__filters__closed">Filter {{contentType}}</span><span class="joe__filters__open">Close Filters</span></button>
+  <form id="joe__filters" class="joe__filters">
+
+      {% for filter in filters %}
+        <div class="joe__filter {% if filter.width %}{{filter.width}}{% endif %}">
+        {% if filter.type == 'select' %}
+          {% set label = filter %}
+          {% include "label.twig" %}
+          {% set select = filter %}
+          {% include "select.twig" %}
+        {% else %}
+          {% set label = filter %}
+          {% include "label.twig" %}
+          {% set input = filter %}
+          {% include "input.twig" %}      
+        {% endif %}
+        </div>
+      {% endfor %}
+
+    <div class="joe__filter__buttons">
+    {% for button in buttons %}
+      {% set input = button %}
+      {% include "input.twig" %}      
+    {% endfor %}
+    </div>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="joe__layout--66-33">
+  {# Keeping tabindex for accessibility purposes #}
+  <div class="joe__col-66">
+    {% block col_one %}
+      {% set placeholder = two_column.col_one.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+  </div>
+
+  <div class="joe__col-33">
+    {% block col_two %}
+      {% set placeholder = two_column.col_two.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+  </div>
+</div>

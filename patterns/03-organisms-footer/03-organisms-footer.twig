@@ -1,0 +1,19 @@
+<footer class="joe__footer">
+  <div class="container">
+    <div class="joe__layout--66-33">
+      <div class="joe__col-66">
+        {% set wordmark = footer_wordmark %}
+        {% include "@molecules/wordmark.twig" %}
+        {% include "@molecules/footer-nav.twig" %}
+      </div>
+      <div class="joe__col-33">
+        <a class="joe__footer-brand" href="{{ footer_logo.link }}">
+          {% set image = footer_logo %}
+          {% include "@atoms/image.twig" %}
+        </a>
+      </div>
+    </div>
+    
+    {% include "@atoms/copyright.twig" %}
+  </div>
+</footer>
