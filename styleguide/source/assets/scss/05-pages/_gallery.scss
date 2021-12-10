@@ -169,6 +169,7 @@
       width: calc(40% - 56px);
       z-index:1;
       padding: 28px;
+      background: $black;
     }
     .section {
       display: flex;
@@ -183,7 +184,8 @@
       &.caption {
         .inner {
           padding: 28px 28px 82px;
-          background-color: $white;
+          background-color: $black;
+          color: $white;
           display: flex;
           flex-direction: column;
           align-content: center;
@@ -257,6 +259,12 @@
               }
             }
           }
+        }
+      }
+      a {
+        color: #109ae5;
+        &:hover {
+          color: #046da7;
         }
       }
     }
