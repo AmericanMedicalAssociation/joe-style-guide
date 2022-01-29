@@ -10,7 +10,7 @@
         e.preventDefault();
         fullpage_api.moveSectionDown();
       });
-console.log('theres a change~');
+
       var svg = document.querySelector('.image-wrapper svg');
       var anchorList = [];
       var coordList = [];
