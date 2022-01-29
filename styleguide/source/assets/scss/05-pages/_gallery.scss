@@ -212,27 +212,6 @@
         justify-content: center;
       }
       &.caption {
-        @include breakpoint($bp-med) {
-          background-color: #333;
-          transition: background-color 1s ease;
-        }
-        @include breakpoint($bp-med) {
-          .title {
-            margin-top: 200px;
-          }
-          .subheading {
-            margin-bottom:110px;
-          }
-        }
-        .title {
-          margin-bottom: 10px;
-          width:100%;
-          margin-top: 0;
-          h1 {
-            font-size: 2.8em;
-            font-weight: 400;
-            margin-top: 0;
-          }
         .inner {
           transition: opacity 1s ease;
           opacity: 1;
@@ -245,7 +224,27 @@
           align-items: center;
           background-color: rgba(0,0,0, 0.8);
           transition: background-color 1s ease;
-
+          @include breakpoint($bp-med) {
+            background-color: #333;
+            transition: background-color 1s ease;
+          }
+          @include breakpoint($bp-med) {
+            .title {
+              margin-top: 200px;
+            }
+            .subheading {
+              margin-bottom:110px;
+            }
+          }
+          .title {
+            margin-bottom: 10px;
+            width:100%;
+            margin-top: 0;
+            h1 {
+              font-size: 2.8em;
+              font-weight: 400;
+              margin-top: 0;
+            }
           }
           .subheading {
             margin-bottom: 50px;

@@ -61,11 +61,14 @@
               destination:destination,
               direction: direction
             };
-            gallery.to(svg, {
-              attr: {
-                viewBox: coordList[destination.index]
-              }
-            });
+            if((destination.anchor !== 'references') && (destination.anchor !== 'footer')) {
+              gallery.to(svg, {
+                attr: {
+                  viewBox: coordList[destination.index]
+                }
+              });
+            }
+
 
             //  When you leave the first slide
             if (destination.index !== 0) {
