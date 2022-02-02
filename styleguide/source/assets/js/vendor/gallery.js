@@ -4,7 +4,9 @@
 
       $.fn.setViewportHeight = function() {
         var viewportHeight = $('.image-wrapper').height();
+        var footerHeight = $('.gallery-footer-wrapper').height();
         $('.image-wrapper svg').css('height', viewportHeight);
+        //$('.footer-spacer').css('height', (footerHeight + 36));
       };
       $('.scroll-down').on('click', function(e) {
         e.preventDefault();

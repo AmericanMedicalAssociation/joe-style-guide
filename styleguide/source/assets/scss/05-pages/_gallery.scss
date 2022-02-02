@@ -2,7 +2,10 @@
 .user-logged-in {
   .gallery-header,
   .joe__sticky-gallery-header.gallery-header {
-    top:111px;
+    top:0;
+    @include breakpoint($bp-med) {
+      top:111px;
+    }
   }
 }
 .gallery-content-wrapper {
@@ -33,6 +36,7 @@
   }
 
   &.joe__sticky-gallery-header {
+    padding: 6px 15px;
     .joe__wordmark {
       font-size: 70%;
       transition: all .25s ease-in;
@@ -148,17 +152,14 @@
     z-index:0;
     height: 100vh;
     @include breakpoint($bp-med) {
-      width: 75%;
+      width: 67vw;
       position: sticky;
     }
     svg {
-      width:350%;
-      margin-left: -150%;
       height:100vh;
       position:relative;
       @include breakpoint($bp-med) {
         width: 100%;
-        margin-left: 0;
       }
       foreignObject {
         position:absolute;
@@ -177,6 +178,17 @@
     opacity: 1;
   }
   .text-column {
+    z-index:99;
+    color: $white;
+    background-color: transparent;
+    transition: background-color 1s ease;
+    width:100vw;
+    @include breakpoint($bp-med) {
+      width: 33vw;
+      z-index:1;
+      background-color: #333;
+      transition: background-color 1s ease;
+    }
     &.loading {
       .inner {
         opacity: 0;
@@ -188,18 +200,6 @@
         opacity: 1;
         transition: opacity 1s ease;
       }
-    }
-    z-index:99;
-    padding: 0;
-    color: $white;
-    background-color: transparent;
-    transition: background-color 1s ease;
-    @include breakpoint($bp-med) {
-      width: calc(25% - 56px);
-      z-index:1;
-      padding: 28px;
-      background-color: #333;
-      transition: background-color 1s ease;
     }
     .section {
       display: flex;
@@ -216,7 +216,7 @@
           transition: opacity 1s ease;
           opacity: 1;
           max-width: 100%;
-          padding: 0;
+          padding: 28px 28px;
           color: $white;
           display: flex;
           flex-direction: column;
@@ -233,7 +233,7 @@
               margin-top: 200px;
             }
             .subheading {
-              margin-bottom:110px;
+              margin-bottom: 110px;
             }
           }
           .title {
@@ -245,6 +245,9 @@
               font-weight: 400;
               margin-top: 0;
             }
+          }
+          h2 {
+            margin: 0 0 1.5em;
           }
           .subheading {
             margin-bottom: 50px;
@@ -258,12 +261,10 @@
       &.fullpage {
         display: block;
         background: #333;
-        padding: 28px;
         color: $white;
         width: 100vw !important;
         @include breakpoint($bp-med) {
-          margin: 0 -28px;
-          padding: 120px 28px 28px 28px;
+          margin: 0;
         }
 
         /* Fullpage row/columns */
@@ -289,36 +290,48 @@
               background: transparent;
             }
           }
+        }
+        &.footer {
+          padding-top: 3em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          align-content: flex-end;
+          justify-content: left;
 
-          /* Fullpage with 3 columns */
+          .gallery-footer-wrapper {
+            width: 100vw;
+            background-color: #fff;
+            padding-bottom: $gutter;
 
-          &.three {
-            .content-section {
-              margin-right: 3%;
-              @include breakpoint($bp-med) {
-                width: 30%;
-              }
-            }
           }
-
-          /* Fullpage with 2 columns */
-
-          &.two {
-            .content-section {
-              margin-right: 2%;
-              @include breakpoint($bp-med) {
-                width: 45%;
-              }
+          .joe__article-footer {
+            color: #333;
+          }
+        }
+        &.references {
+          .joe__references {
+            margin: 0;
+            padding: 6em 28px 28px;
+            border-top:none;
+            .reference-inner {
+              padding-top:28px;
+              border-top: 1px solid #fff;
             }
           }
         }
       }
-      a {
-        color: white;
-        &:hover {
-          color: #777;
-        }
-      }
+    }
+  }
+  .ama__tooltip {
+    background: #202020;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.4);
+    a {
+      color: #0a6eb4 !important;
     }
   }
 }
@@ -466,5 +479,16 @@ a.scroll-down {
     left:5px;
     bottom:8px;
     background-repeat: no-repeat;
+  }
+}
+.joe__references__list {
+  column-gap: 0;
+  column-count: 1;
+  @include breakpoint($bp-med) {
+    column-gap: 5%;
+    column-count: 2;
+  }
+  @include breakpoint($bp-large) {
+    column-count: 3;
   }
 }
