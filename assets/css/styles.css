@@ -146,7 +146,10 @@ sup {
   background-color: #ed6923;
   background: linear-gradient(45deg, #f2ce5a 0%, #ed6923 100%);
   z-index: -1;
-  margin-bottom: -250px; }
+  margin-bottom: -250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   @media (min-width: 25em) {
     .joe__article-hero {
       height: 600px;
