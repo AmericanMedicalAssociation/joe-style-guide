@@ -3,11 +3,10 @@
     attach: function (context, settings) {
 
       $.fn.setViewportHeight = function() {
-        var viewportHeight = $('.image-wrapper').height();
-        var footerHeight = $('.gallery-footer-wrapper').height();
-        $('.image-wrapper svg').css('height', viewportHeight);
-        //$('.footer-spacer').css('height', (footerHeight + 36));
+        // var viewportHeight = $('.image-wrapper').height();
+        //  $('.image-wrapper svg').css('height', viewportHeight);
       };
+
       $('.scroll-down').on('click', function(e) {
         e.preventDefault();
         fullpage_api.moveSectionDown();
@@ -20,16 +19,19 @@
       // Initialize the first section to trigger correct first scroll animation
       $( document ).ready(function() {
         $.fn.setViewportHeight();
+
         // Add each data-anchor to an array for fullpage.js
         $('div[data-anchor]').each(function(idx, el){
           anchorList.push($(this).attr('data-anchor'));
         });
+
         // Add each coordinate to an array
         $('div[data-coordinates]').each(function(idx, el){
           coordList.push($(this).attr('data-coordinates'));
         });
       });
 
+      //  set height on each resize.
       $(window).resize(function() {
         $.fn.setViewportHeight();
       });
@@ -55,7 +57,10 @@
           scrollOverflow: true,
           navigation: false,
           verticalCentered: false,
+          fitToSection: true,
           scrollingSpeed: 1300,
+          animateAnchor: false,
+
 
           onLeave: function(origin, destination, direction) {
             var params = {
@@ -63,13 +68,17 @@
               destination:destination,
               direction: direction
             };
-            if((destination.anchor !== 'references') && (destination.anchor !== 'footer')) {
+            if((destination.anchor !== 'references') && (destination.anchor !== 'footer') && (destination.anchor !== 'notes')) {
               gallery.to(svg, {
                 attr: {
                   viewBox: coordList[destination.index]
                 }
               });
+              $('.image-wrapper svg').css('opacity', 1);
+            } else {
+              $('.image-wrapper svg').css('opacity', 0);
             }
+
 
 
             //  When you leave the first slide
