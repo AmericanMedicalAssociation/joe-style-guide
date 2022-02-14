@@ -164,12 +164,9 @@
         width: 100%;
       }
       foreignObject {
-        position:absolute;
+        width: 100%;
         overflow: visible;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        height: 100%;
       }
     }
   }
