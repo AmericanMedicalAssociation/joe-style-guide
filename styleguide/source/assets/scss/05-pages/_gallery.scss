@@ -483,18 +483,6 @@ a.scroll-down {
     background-repeat: no-repeat;
   }
 }
-.joe__references__list {
-  column-gap: 0;
-  column-count: 1;
-  @include breakpoint($bp-med) {
-    column-gap: 5%;
-    column-count: 2;
-  }
-  @include breakpoint($bp-large) {
-    column-count: 3;
-  }
-}
-
 .access {
   width:100%;
   display: flex;
