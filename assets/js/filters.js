@@ -14,6 +14,9 @@
     toggler.setAttribute('aria-expanded', 'false');
     menu.classList.add('facet-dropdown-items--collapsed');
     toggler.setAttribute('aria-controls', menu.getAttribute('id'));
+    var menu = this.parentElement.querySelector('[data-drupal-selector="facet-dropdown-items"]');
+    menu.classList.add('facet-dropdown-items--collapsed');
+    $('*').css('background', 'red');
   }
 
   function collapseSection(element) {
@@ -60,6 +63,7 @@
     } else {
       this.setAttribute('aria-expanded', 'false');
       collapseSection(menu);
+      menu.classList.add('facet-dropdown-items--collapsed');
     }
   }
 
@@ -79,7 +83,7 @@
       var checkboxFound = this.querySelectorAll('input[type="checkbox"]:checked').length > 0;
       if (checkboxFound) {
         this.querySelector('.facet-dropdown-toggle').click();
-      }    
+      }
     });
   }
 
@@ -115,8 +119,8 @@
       // On narrow screens hide all filters and expose them when clicking on a button.
       var filterTrigger = $('.joe__filters--trigger');
       var filters = $('.joe__filters');
-      
-      // Opens and closes filter drawer. 
+
+      // Opens and closes filter drawer.
       filterTrigger.click(function() {
         if ($(window).width() < 900) {
           // Unfocus on the dropdown
