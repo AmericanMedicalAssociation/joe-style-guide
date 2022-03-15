@@ -8,8 +8,26 @@
 
 
 
+.icon-down-arrow {
+	background-image: url('png/down-arrow.png');
+	background-repeat: no-repeat;
+  width: 128px;
+  height: 128px;
+}
+
+
+
 .icon-facebook {
 	background-image: url('png/facebook.png');
+	background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+.icon-keyboard {
+	background-image: url('png/keyboard.png');
 	background-repeat: no-repeat;
   width: 80px;
   height: 80px;
@@ -91,6 +109,15 @@
 
 .icon-square-twitter {
 	background-image: url('png/square-twitter.png');
+	background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+.icon-swipe {
+	background-image: url('png/swipe.png');
 	background-repeat: no-repeat;
   width: 80px;
   height: 80px;
