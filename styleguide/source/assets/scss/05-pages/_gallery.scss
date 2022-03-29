@@ -12,7 +12,7 @@
 
 .gallery-content-wrapper {
   overflow:hidden;
-  background: #151515;
+  background: $black;
 }
 .gallery-header {
   z-index: 999;
@@ -80,14 +80,14 @@
       svg {
         fill: $white;
       }
-      background: #151515;
+      background: $black;
     }
   }
 
   .joe__nav-drawer {
     position: absolute;
     padding: 0;
-    width:30vw;
+    width:35vw;
     left: auto;
     top: 100%;
     max-height: 0;
@@ -98,8 +98,14 @@
     box-shadow: none;
     border-right: 1px solid $white;
     @include breakpoint($bp-med) {
-      width:15vw;
+      width:25vw;
       padding: 20px 0;
+    }
+    @include breakpoint($bp-large) {
+      width:15vw;
+    }
+    @include breakpoint($bp-xl) {
+      width:10vw;
     }
     &.is-active {
       max-height: 80vh;
@@ -112,10 +118,8 @@
     float: none;
     clear: none;
     .joe__primary-nav__list {
-      @include breakpoint($bp-med) {
-        padding-right: 30px;
-        padding-left:30px;
-      }
+      text-align: right;
+      padding-right: 42px;
 
       .joe__primary-nav__item {
         display:block;
@@ -124,6 +128,12 @@
         a:link {
           color: $navy-lighter;
           border-left: none;
+        }
+        &:last-child {
+          padding-right: 0;
+          @include breakpoint($bp-med) {
+            padding-right: 0.5em;
+          }
         }
       }
     }
@@ -156,7 +166,7 @@
   .image-wrapper {
     width: 100%;
     position: fixed;
-    background: #101010 url('../images/subtle-texture.png') top left;
+    background: $black url('../images/subtle-texture.png') top left;
     top: 0;
     bottom: 0;
     right: 0;
@@ -192,7 +202,7 @@
     @include breakpoint($bp-med) {
       width: 33vw;
       z-index:1;
-      background-color: #151515;
+      background-color: $black;
       transition: background-color 1s ease;
     }
     &.loading {
@@ -235,7 +245,7 @@
           background-color: rgba(0,0,0, 0.8);
           transition: background-color 1s ease;
           @include breakpoint($bp-med) {
-            background-color: #151515;
+            background-color: $black;
             padding: 0 28px 28px;
             transition: background-color 1s ease;
           }
@@ -273,7 +283,7 @@
       /* Fullpage section */
 
       &.fullpage {
-        background: #333;
+        background: $black;
         color: $white;
         width: 100vw !important;
         @include breakpoint($bp-med) {
@@ -321,6 +331,10 @@
             .reference-inner {
               padding-top: 28px;
               border-top: 1px solid #fff;
+            }
+            &.container {
+              margin-left: auto;
+              margin-right: auto;
             }
           }
         }
