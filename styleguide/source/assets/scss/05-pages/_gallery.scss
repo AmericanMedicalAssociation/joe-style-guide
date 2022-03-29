@@ -86,16 +86,21 @@
 
   .joe__nav-drawer {
     position: absolute;
-    left: 0;
-    right: 0;
+    padding: 0;
+    width:30vw;
+    left: auto;
     top: 100%;
     max-height: 0;
     visibility: hidden;
     transition: max-height .5s ease-in, visibility 0s ease-in .5s, opacity .25s ease-in .25s;
     opacity: 0;
-    background-color: $navy-lighter;
-    box-shadow: $shadow;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: none;
     border-right: 1px solid $white;
+    @include breakpoint($bp-med) {
+      width:15vw;
+      padding: 20px 0;
+    }
     &.is-active {
       max-height: 80vh;
       visibility: visible;
@@ -104,16 +109,20 @@
     }
   }
   .joe__primary-nav {
+    float: none;
+    clear: none;
     .joe__primary-nav__list {
       @include breakpoint($bp-med) {
         padding-right: 30px;
+        padding-left:30px;
       }
 
       .joe__primary-nav__item {
+        display:block;
         a,
         a:visited,
         a:link {
-          color: $white;
+          color: $navy-lighter;
           border-left: none;
         }
       }
