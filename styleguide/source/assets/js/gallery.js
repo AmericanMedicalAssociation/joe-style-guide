@@ -78,12 +78,15 @@
               destination:destination,
               direction: direction
             };
-            if((destination.anchor !== 'references') && (destination.anchor !== 'footer') && (destination.anchor !== 'notes')) {
-              gallery.to(svg, {
-                attr: {
-                  viewBox: coordList[destination.index]
-                }
-              });
+            console.log(destination);
+            if((destination.anchor !== 'references') && (destination.anchor !== 'footer') && (destination.anchor !== 'notes') && (destination.section !== 'static')) {
+              if(coordList[destination.index]) {
+                gallery.to(svg, {
+                  attr: {
+                    viewBox: coordList[destination.index]
+                  }
+                });
+              }
               $('.image-wrapper svg').css('opacity', 1);
             } else {
               $('.image-wrapper svg').css('opacity', 0);
