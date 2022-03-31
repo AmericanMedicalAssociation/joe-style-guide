@@ -2,11 +2,7 @@
   Drupal.behaviors.gallery = {
     attach: function (context, settings) {
 
-      $.fn.setViewportHeight = function() {
-        // var viewportHeight = $('.image-wrapper').height();
-        //  $('.image-wrapper svg').css('height', viewportHeight);
-      };
-
+      //  down arrow click event
       $('.scroll-down').on('click', function(e) {
         e.preventDefault();
         fullpage_api.moveSectionDown();
@@ -16,9 +12,28 @@
       var anchorList = [];
       var coordList = [];
 
+      function windowHeightCheck() {
+        if($(window).innerWidth() < 960) {
+          columnHeight = $('.part-1.caption').height();
+          captionHeight = $('.part-1.caption .inner').height();
+          heightDifference = (columnHeight - captionHeight - 70).toFixed(0);
+          if (heightDifference <= 0) {
+            $('.part-1.caption').addClass('height-fix');
+          }
+          else {
+            $('.part-1.caption').removeClass('height-fix');
+          }
+        }
+      }
+
       // Initialize the first section to trigger correct first scroll animation
       $( document ).ready(function() {
-        $.fn.setViewportHeight();
+
+        //  set class if first caption is too large
+        windowHeightCheck();
+        $(window).on('resize', function(){
+          windowHeightCheck();
+        });
 
         // Add each data-anchor to an array for fullpage.js
         $('div[data-anchor]').each(function(idx, el){
@@ -29,11 +44,6 @@
         $('div[data-coordinates]').each(function(idx, el){
           coordList.push($(this).attr('data-coordinates'));
         });
-      });
-
-      //  set height on each resize.
-      $(window).resize(function() {
-        $.fn.setViewportHeight();
       });
 
       var gallery = gsap.timeline({
@@ -78,7 +88,6 @@
             } else {
               $('.image-wrapper svg').css('opacity', 0);
             }
-
 
 
             //  When you leave the first slide
