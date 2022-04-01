@@ -11,6 +11,9 @@
       var svg = document.querySelector('.image-wrapper svg');
       var anchorList = [];
       var coordList = [];
+      var xoordList = [];
+      var ycoordList = [];
+      var zcoordList = [];
 
       function windowHeightCheck() {
         if($(window).innerWidth() < 960) {
@@ -42,7 +45,15 @@
 
         // Add each coordinate to an array
         $('div[data-coordinates]').each(function(idx, el){
+          let coordHolder = $(this).attr('data-coordinates');
+
+          let n = coordHolder.search('([^\s]+)');
+          console.log(n);
+
           coordList.push($(this).attr('data-coordinates'));
+          //xcoordList.push();
+          //ycoordList.push();
+          //zcoordList.push();
         });
       });
 
@@ -60,10 +71,13 @@
           viewBox: viewBox
         }
       });
+      console.log('new');
       function initialization() {
         var myFullpage = new fullpage('#fullpage', {
-          anchors: anchorList,
           licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
+          dragAndMoveKey: ['YW1hLWFzc24ub3JnX2Q1MVpISmhaMEZ1WkUxdmRtVT04S3o=', 'bG5kby5zaXRlX1k4R1pISmhaMEZ1WkUxdmRtVT03NWo='],
+          dragAndMove: 'fingersonly',
+          anchors: anchorList,
           scrollOverflow: true,
           navigation: false,
           verticalCentered: false,
@@ -78,9 +92,9 @@
               destination:destination,
               direction: direction
             };
-            console.log(destination);
             if((destination.anchor !== 'references') && (destination.anchor !== 'footer') && (destination.anchor !== 'notes') && (destination.section !== 'static')) {
               if(coordList[destination.index]) {
+                var parseCoords = coordList[destination.index];
                 gallery.to(svg, {
                   attr: {
                     viewBox: coordList[destination.index]
