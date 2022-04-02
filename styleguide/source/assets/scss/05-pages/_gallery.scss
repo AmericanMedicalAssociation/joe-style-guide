@@ -189,9 +189,7 @@
       transition: opacity 1.5s ease;
       height: 100%;
       position: relative;
-      @include breakpoint($bp-med) {
         width: 100%;
-      }
       foreignObject {
 
         overflow: visible;

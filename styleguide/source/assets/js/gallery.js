@@ -43,6 +43,7 @@
         }
       }
 
+      //  set active breakpoint on resize
       function breakpointCheck(width, height) {
         if (width < 900) {
           breakpoint = 'mobile';
@@ -130,6 +131,7 @@
       //  portable svg update function
       function updateSvg(coords) {
         gallery.to(svg, {
+          scale: 1,
           attr: {
             viewBox: coords
           }
