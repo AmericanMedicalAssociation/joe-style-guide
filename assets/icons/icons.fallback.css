@@ -44,6 +44,15 @@
 
 
 
+.icon-pdf {
+	background-image: url('png/pdf.png');
+	background-repeat: no-repeat;
+  width: 100px;
+  height: 80px;
+}
+
+
+
 .icon-quote {
 	background-image: url('png/quote.png');
 	background-repeat: no-repeat;
