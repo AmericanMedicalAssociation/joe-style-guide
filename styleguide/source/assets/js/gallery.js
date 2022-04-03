@@ -68,7 +68,7 @@
         breakpointCheck(width, height);
 
         //  Set starting coords based on first slide.
-        let coords = $('.caption.part-1').attr('data-coordinates-' + breakpoint);
+        let coords = $('.caption.active').attr('data-coordinates-' + breakpoint);
 
         //  set coords
         updateSvg(coords);
@@ -152,7 +152,7 @@
         var myFullpage = new fullpage('#fullpage', {
           licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
           dragAndMoveKey: ['YW1hLWFzc24ub3JnX2Q1MVpISmhaMEZ1WkUxdmRtVT04S3o=', 'bG5kby5zaXRlX1k4R1pISmhaMEZ1WkUxdmRtVT03NWo='],
-          dragAndMove: 'fingersonly',
+          dragAndMove: true,
           anchors: anchorList,
           scrollOverflow: true,
           navigation: false,
@@ -164,6 +164,7 @@
           //  This callback is fired just after the structure of the page is generated.
           afterRender: function(){
             $('.text-column').removeClass('loading').addClass('loaded');
+            setInitialCoords();
           },
 
           //  This callback is fired after resizing the browser's window. Just after the sections are resized.
@@ -197,6 +198,9 @@
           //  This callback is fired once the user leaves a section, in the transition to the new section.
           //  Returning false will cancel the move before it takes place.
           onLeave: function(origin, destination, direction){
+            $('video').each(function() {
+              this.pause();
+            });
 
             var sectionType = $(destination.item).attr('data-section');
 
@@ -218,9 +222,13 @@
             //  When you leave the first, add the 'top' button and shrink the header
             if (destination.index !== 0) {
               $('.gallery-header').addClass('joe__sticky-gallery-header');
+              $('.image-wrapper').removeClass('first');
+              $('.spacer').removeClass('tall');
               $('.top').addClass('visible');
             } else {
+              $('.image-wrapper').addClass('first');
               $('.top').removeClass('visible');
+              $('.spacer').addClass('tall');
               $('.gallery-header').removeClass('joe__sticky-gallery-header');
             }
           }
@@ -228,7 +236,7 @@
       }
       $(document).ready(function() {
         loadArrays();
-        setInitialCoords();
+
       })
       initialization();
     }
