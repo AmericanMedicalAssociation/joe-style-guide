@@ -120,9 +120,9 @@
     visibility: hidden;
     transition: max-height .5s ease-in, visibility 0s ease-in .5s, opacity .25s ease-in .25s;
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: #000;
     box-shadow: none;
-    border-right: 1px solid $white;
+    border-right: none;
     @include breakpoint($bp-med) {
       width: 25vw;
       padding: 20px 0;
@@ -152,7 +152,7 @@
         a,
         a:visited,
         a:link {
-          color: $navy-lighter;
+          color: #fff;
           border-left: none;
         }
         &:last-child {
@@ -419,9 +419,8 @@
             @include breakpoint($bp-med) {
               margin: 0 0 2em;
             }
-            .joe__author-information {
-              padding: 0;
-              margin: 0;
+            .joe__article-header__meta {
+              color : #fff;
             }
           }
         }
@@ -546,7 +545,7 @@
         }
         &.footer {
           .gallery-footer-wrapper {
-            padding-bottom:2em;
+            padding-bottom: 2em;
             background: $white;
           }
         }
@@ -562,6 +561,7 @@
             &.container {
               margin-left: auto;
               margin-right: auto;
+              width: 100%;
             }
           }
         }
