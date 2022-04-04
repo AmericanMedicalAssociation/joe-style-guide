@@ -4098,6 +4098,17 @@ blockquote {
   overflow: hidden;
   background: #000000; }
 
+.fp-viewing-part-1 .gallery-header .joe__wordmark .joe__wordmark__title {
+  margin-top: 0;
+  font-size: 2em; }
+  @media (min-width: 56.25em) {
+    .fp-viewing-part-1 .gallery-header .joe__wordmark .joe__wordmark__title {
+      font-size: 2.5em; } }
+
+.fp-viewing-part-1 .gallery-header .joe__wordmark .joe__wordmark__subtitle {
+  margin-bottom: 0;
+  font-size: 1.3em; }
+
 .gallery-header {
   z-index: 500;
   position: fixed;
@@ -4116,10 +4127,14 @@ blockquote {
       padding: 20px 15px; } }
   .gallery-header .joe__wordmark {
     margin: 0 15px;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 12px; }
     .gallery-header .joe__wordmark .joe__wordmark__title {
       margin-top: 0;
       font-size: 1.55em; }
+      @media (min-width: 56.25em) {
+        .gallery-header .joe__wordmark .joe__wordmark__title {
+          font-size: 1.55em; } }
     .gallery-header .joe__wordmark .joe__wordmark__subtitle {
       margin-bottom: 0;
       font-size: 1em; }
@@ -4135,7 +4150,7 @@ blockquote {
       -webkit-transition: all .25s ease-in;
       transition: all .25s ease-in;
       margin-bottom: 0;
-      margin-top: 0; }
+      margin-top: 4px; }
     .gallery-header.joe__sticky-gallery-header .joe__menu-trigger {
       margin-top: 5px;
       -webkit-transition: margin-top .4s ease;
@@ -4295,6 +4310,8 @@ blockquote {
       position: relative;
       width: 100%; }
       .gallery .image-wrapper svg foreignObject {
+        width: 100%;
+        height: 100%;
         overflow: visible; }
   .gallery .text-column {
     z-index: 99;
