@@ -4086,7 +4086,7 @@ blockquote {
   top: 70px; }
   @media (min-width: 56.25em) {
     .user-logged-in .gallery-header {
-      top: 111px; } }
+      top: 106px; } }
 
 .user-logged-in .gallery .image-wrapper {
   top: 113px; }
@@ -4272,7 +4272,6 @@ blockquote {
     transition: top .5s ease;
     position: fixed;
     background: #000000;
-    top: 62px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -4285,7 +4284,7 @@ blockquote {
     .gallery .image-wrapper.first {
       -webkit-transition: top .5s ease;
       transition: top .5s ease;
-      top: 80px; }
+      top: 79px; }
       @media (min-width: 56.25em) {
         .gallery .image-wrapper.first {
           top: 106px; } }
@@ -4304,6 +4303,8 @@ blockquote {
     background-color: transparent;
     -webkit-transition: background-color 1s ease;
     transition: background-color 1s ease;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
     width: 100vw; }
     @media (min-width: 56.25em) {
       .gallery .text-column {
@@ -4668,9 +4669,6 @@ blockquote {
               margin-left: auto;
               margin-right: auto;
               width: auto; }
-              @media (min-width: 75em) {
-                .gallery .text-column .section.fullpage.references .joe__references.container {
-                  width: 100%; } }
         .gallery .text-column .section.fullpage.notes .joe__article-footer {
           margin: 0 0 3em;
           color: #333; }
