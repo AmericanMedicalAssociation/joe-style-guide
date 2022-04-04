@@ -154,11 +154,38 @@
         a:link {
           color: #fff;
           border-left: none;
+          border-bottom: 0;
         }
         &:last-child {
           padding-right: 0;
           @include breakpoint($bp-med) {
             padding-right: 0.5em;
+          }
+        }
+      }
+    }
+    .joe__utility-nav__list {
+      float: none;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      align-content: center;
+      padding-right: 42px;
+      padding-top: 1em;
+      .joe__utility-nav__item {
+        display: none;
+        &:first-of-type {
+
+        }
+        &.social {
+          display: block;
+          .social-icon {
+            border-left: none !important;
+            padding-left: none !important;
+            margin-right: 4px;
+            &.facebook {
+              border-left-color: transparent !important;
+            }
           }
         }
       }
@@ -251,6 +278,11 @@
       }
     }
     .section {
+      display: flex;
+      align-items: flex-end;
+      align-content: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
       .first-caption-info {
         display: flex;
         flex-direction: row;
@@ -268,7 +300,7 @@
           width: 100%;
         }
         @include breakpoint($bp-large) {
-          flex-direction: 50%;
+          width: 50%;
         }
         &.article-flag {
           padding-bottom: 0;
@@ -304,24 +336,6 @@
           @include breakpoint($bp-large) {
             justify-content: right;
           }
-          .joe__utility-nav__list {
-            float: none;
-            display: flex;
-            align-items: center;
-            justify-content: right;
-            align-content: center;
-            .joe__utility-nav__item {
-              display: none;
-              &.social {
-                display: block;
-                .social-icon {
-                  border-left: none !important;
-                  padding-left: none !important;
-                  margin-right: 4px;
-                }
-              }
-            }
-          }
           .joe__button--tool {
             background: transparent;
             box-shadow: none;
@@ -351,11 +365,6 @@
         justify-content: center;
         align-content: center;
       }
-      display: flex;
-      align-items: flex-end;
-      align-content: flex-end;
-      justify-content: flex-end;
-      flex-direction: column;
       &.notes {
         align-items: center;
         align-content: center;
@@ -550,6 +559,9 @@
           }
         }
         &.references {
+          align-items: center;
+          justify-content: center;
+          align-content: center;
           .joe__references {
             margin: 0;
             padding: 0 28px 28px;
@@ -561,7 +573,10 @@
             &.container {
               margin-left: auto;
               margin-right: auto;
-              width: 100%;
+              width: auto;
+              @include breakpoint($bp-large) {
+                width: 100%;
+              }
             }
           }
         }
@@ -786,4 +801,9 @@ a.scroll-down {
       height: 106px;
     }
   }
+}
+//  One-ff stupid as hell override.
+.joe__utility-nav__list--right .joe__utility-nav__item:first-of-type + .social .social-icon {
+  border-left: none;
+  padding-left: 0;
 }
