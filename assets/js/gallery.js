@@ -151,8 +151,6 @@
       function initialization() {
         var myFullpage = new fullpage('#fullpage', {
           licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
-          dragAndMoveKey: ['YW1hLWFzc24ub3JnX2Q1MVpISmhaMEZ1WkUxdmRtVT04S3o=', 'bG5kby5zaXRlX1k4R1pISmhaMEZ1WkUxdmRtVT03NWo='],
-          dragAndMove: true,
           anchors: anchorList,
           scrollOverflow: true,
           navigation: false,
