@@ -8,7 +8,7 @@
   .gallery-header {
     top: 70px;
     @include breakpoint($bp-med) {
-      top: 111px;
+      top: 106px;
     }
   }
   .gallery {
@@ -220,7 +220,6 @@
     transition: top .5s ease;
     position: fixed;
     background: $black;
-    top: 62px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -232,7 +231,7 @@
     }
     &.first {
       transition: top .5s ease;
-      top: 80px;
+      top: 79px;
       @include breakpoint($bp-med) {
         top: 106px;
       }
@@ -258,6 +257,7 @@
     opacity: 1;
     background-color: transparent;
     transition: background-color 1s ease;
+    transition: opacity 1s ease;
     width: 100vw;
     @include breakpoint($bp-med) {
       width: 33vw;
@@ -574,9 +574,6 @@
               margin-left: auto;
               margin-right: auto;
               width: auto;
-              @include breakpoint($bp-large) {
-                width: 100%;
-              }
             }
           }
         }
