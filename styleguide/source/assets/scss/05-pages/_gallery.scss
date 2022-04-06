@@ -6,11 +6,15 @@
   justify-content: center;
 }
 
-$image-width: 67vw;
-$text-width: 33vw;
+$image-width-large: 60vw;
+$text-width-large: 40vw;
+$image-width-desktop: 55vw;
+$text-width-desktop: 45vw;
 $image-width-tablet: 50vw;
 $text-width-tablet: 50vw;
-
+.image-wrapper.first {
+  background: red;
+}
 $transition: all 1s ease;
 
 $header-first-slide-height-desktop: 60px;
@@ -306,7 +310,10 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       left: initial;
     }
     @include breakpoint($bp-large) {
-      width: $image-width;
+      width: $image-width-desktop;
+    }
+    @include breakpoint($bp-xl) {
+      width: $image-width-large;
     }
     &.first {
       transition: top .5s ease;
@@ -326,6 +333,14 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
         overflow: visible;
       }
     }
+    &.loading {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    &.loaded {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
   }
 
   /* Primary scroll wrapper and sections */
@@ -344,7 +359,10 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       transition: $transition;
     }
     @include breakpoint($bp-large) {
-      width: $text-width;
+      width: $text-width-desktop;
+    }
+    @include breakpoint($bp-xl) {
+      width: $text-width-large;
     }
     &.loading {
       .inner {
