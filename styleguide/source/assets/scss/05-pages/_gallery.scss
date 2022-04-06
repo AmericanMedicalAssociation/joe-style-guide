@@ -1,4 +1,41 @@
 /* Gallery Header */
+
+@mixin flex-center {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+$image-width: 67vw;
+$text-width: 33vw;
+$image-width-tablet: 50vw;
+$text-width-tablet: 50vw;
+
+$transition: all 1s ease;
+
+$header-first-slide-height-desktop: 60px;
+$header-first-slide-top-bottom-padding-desktop: 20px;
+$header-spacer-first-slide-height-desktop: calc((#{$header-first-slide-top-bottom-padding-desktop} * 2) + #{$header-first-slide-height-desktop});
+
+$header-height-desktop: 55px;
+$header-top-bottom-padding-desktop: 6px;
+$header-spacer-height-desktop: calc((#{$header-top-bottom-padding-desktop} * 2) + #{$header-height-desktop});
+
+$header-first-slide-height-mobile: 52px;
+$header-first-slide-top-bottom-padding-mobile: 15px;
+$header-spacer-first-slide-height-mobile: calc((#{$header-first-slide-top-bottom-padding-mobile} * 2) + #{$header-first-slide-height-mobile});
+
+$header-height-mobile: 50px;
+$header-top-bottom-padding-mobile: 6px;
+$header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + #{$header-height-mobile});
+
+.padding-fix {
+  padding-bottom: $header-spacer-height-mobile;
+  @include breakpoint($bp-med) {
+    padding-bottom: $header-spacer-height-desktop;
+  }
+}
+
 .fp-enabled {
   body.page-node-gallery {
     background: $black;
@@ -20,9 +57,7 @@
     height: 0 !important;
   }
 }
-.page-node-gallery {
 
-}
 .gallery-content-wrapper {
   overflow: hidden;
   background: $black;
@@ -45,20 +80,38 @@
     }
   }
 }
+
+.gallery-header-spacer {
+  height: $header-spacer-height-mobile;
+  display:block;
+  width:100%;
+  max-width:100%;
+  @include breakpoint($bp-med) {
+    height: $header-spacer-height-desktop;
+  }
+  &.first {
+    transition: $transition;
+    height: $header-spacer-first-slide-height-mobile;
+    @include breakpoint($bp-med) {
+      height: $header-spacer-first-slide-height-desktop;
+    }
+  }
+}
 .gallery-header {
   z-index: 500;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  max-height: 66px;
   transition: all .25s ease-in;
-  padding: 10px 15px;
   background-color: rgba($white, 0.97);
-  @include breakpoint($bp-med) {
-    padding: 20px 15px;
-  }
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  height: $header-first-slide-height-mobile;
+  padding: $header-first-slide-top-bottom-padding-mobile 15px;
+  @include breakpoint($bp-med) {
+    padding: $header-first-slide-top-bottom-padding-desktop 15px;
+    height: $header-first-slide-height-desktop;
+  }
   .joe__wordmark {
     margin: 0 15px;
     display: inline-block;
@@ -88,8 +141,11 @@
   }
 
   &.joe__sticky-gallery-header {
-    padding: 6px 15px;
-    min-height: 50px;
+    padding: $header-top-bottom-padding-mobile 15px;
+    height: $header-height-mobile;
+    @include breakpoint($bp-med) {
+      height: $header-height-desktop;
+    }
     .joe__wordmark {
       font-size: 70%;
       transition: all .25s ease-in;
@@ -97,11 +153,11 @@
       margin-top: 4px;
     }
     .joe__menu-trigger {
-      margin-top: 5px;
-      transition: margin-top .4s ease;
+      transition: all .4s ease;
       @include breakpoint($bp-med) {
         display: inline-block;
         visibility: visible;
+        margin: 8px 30px 0 auto;
       }
     }
   }
@@ -109,12 +165,13 @@
     display: inline-block;
     background: transparent;
     visibility: visible;
-    transition: margin-top .4s ease;
-    margin-right: 30px;
+    transition: all .4s ease;
+    margin: 5px 30px 0 auto;
     width: 40px;
     height: 40px;
-    border-radius: 2px;
-    margin-left: auto;
+    @include breakpoint($bp-med) {
+      margin: 12px 30px 0 auto;
+    }
     svg {
       fill: #333;
     }
@@ -137,8 +194,6 @@
     padding: 0;
     width: 35vw;
     left: auto;
-    top: 100%;
-    max-height: 0;
     visibility: hidden;
     transition: max-height .5s ease-in, visibility 0s ease-in .5s, opacity .25s ease-in .25s;
     opacity: 0;
@@ -166,9 +221,7 @@
     float: none;
     clear: none;
     .joe__primary-nav__list {
-      text-align: right;
-      padding-right: 42px;
-
+      text-align: center;
       .joe__primary-nav__item {
         display: block;
         a,
@@ -190,9 +243,8 @@
       float: none;
       display: flex;
       align-items: center;
-      justify-content: right;
+      justify-content: center;
       align-content: center;
-      padding-right: 42px;
       padding-top: 1em;
       .joe__utility-nav__item {
         display: none;
@@ -247,21 +299,26 @@
     left: 0;
     z-index:0;
     height: 100vh;
+    top: $header-spacer-height-mobile;
     @include breakpoint($bp-med) {
-      width: 67vw;
+      top: $header-spacer-height-desktop;
+      width: $image-width-tablet;
       left: initial;
+    }
+    @include breakpoint($bp-large) {
+      width: $image-width;
     }
     &.first {
       transition: top .5s ease;
-      top: 79px;
+      top: $header-spacer-first-slide-height-mobile;
       @include breakpoint($bp-med) {
-        top: 106px;
+        top: $header-spacer-first-slide-height-desktop;
       }
     }
     svg {
       transition: opacity 1.5s ease;
-      height: 100%;
       position: relative;
+      height: 100%;
       width: 100%;
       foreignObject {
         width: 100%;
@@ -278,25 +335,27 @@
     color: $white;
     opacity: 1;
     background-color: transparent;
-    transition: background-color 1s ease;
-    transition: opacity 1s ease;
+    transition: $transition;
     width: 100vw;
     @include breakpoint($bp-med) {
-      width: 33vw;
+      width: $text-width-tablet;
       z-index: 1;
       background-color: $black;
-      transition: background-color 1s ease;
+      transition: $transition;
+    }
+    @include breakpoint($bp-large) {
+      width: $text-width;
     }
     &.loading {
       .inner {
         opacity: 0;
-        transition: opacity 1s ease;
+        transition: $transition;
       }
     }
     &.loaded {
       .inner {
         opacity: 1;
-        transition: opacity 1s ease;
+        transition: $transition;
       }
     }
     .section {
@@ -305,25 +364,25 @@
       align-content: flex-end;
       justify-content: flex-end;
       flex-direction: column;
+      @include breakpoint($bp-med) {
+        @include flex-center;
+      }
+      &.first {
+        transition: all .4s ease;
+        @include breakpoint($bp-med) {
+        }
+      }
       .first-caption-info {
         display: flex;
         flex-direction: row;
+        margin-bottom: 4em;
         @include breakpoint($bp-med) {
-          flex-direction:column;
         }
         @include breakpoint($bp-large) {
-          flex-direction: row;
         }
-        margin-bottom: 2em;
       }
       .info {
-        width: 50%;
-        @include breakpoint($bp-med) {
-          width: 100%;
-        }
-        @include breakpoint($bp-large) {
-          width: 50%;
-        }
+        width: 80%;
         &.article-flag {
           padding-bottom: 0;
           @include breakpoint($bp-med) {
@@ -347,17 +406,12 @@
         }
 
         &.social {
+          width:20%;
           display: flex;
           align-items: center;
           justify-content: right;
           align-content: center;
           padding-right: 15px;
-          @include breakpoint($bp-med) {
-            justify-content: left;
-          }
-          @include breakpoint($bp-large) {
-            justify-content: right;
-          }
           .joe__button--tool {
             background: transparent;
             box-shadow: none;
@@ -376,26 +430,20 @@
             }
             .pdf {
               svg {
-                width:20px;
+                width:25px;
               }
             }
           }
         }
       }
       &.height-fix {
-        align-items: center;
-        justify-content: center;
-        align-content: center;
+        @include flex-center;
       }
-      &.notes {
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-      }
-      @include breakpoint($bp-med) {
-        align-items: center;
-        justify-content: center;
-        align-content: center;
+      &.article-footer {
+        @include flex-center;
+        &.height-fix {
+          padding-top:2em;
+        }
       }
       &.caption {
         .joe__author-information__list  {
@@ -407,29 +455,32 @@
         &.part-1 {
           .inner {
             padding-top: 0;
+            padding-bottom: calc(#{ $header-spacer-first-slide-height-mobile} + 25px);
+            @include breakpoint($bp-med) {
+              padding-bottom: calc(#{ $header-spacer-first-slide-height-desktop} + 25px);
+            }
           }
         }
         .inner {
-          transition: opacity 1s ease;
+          transition: $transition;
           max-width: 100%;
-          padding: 50px 30px 25px;
+          padding: 50px 30px calc(#{ $header-spacer-height-mobile} + 25px);
           color: $white;
           display: flex;
           flex-direction: column;
           align-content: center;
           background-color: rgba(0,0,0, 0.8);
-          transition: background-color 1s ease;
+          transition: $transition;
           @include breakpoint($bp-med) {
             background-color: $black;
-            padding: 0 28px 28px;
-            transition: background-color 1s ease;
+            padding:0 28px calc(#{ $header-spacer-height-desktop} + 25px);
+            transition: $transition;
           }
           h2 {
             margin-bottom: 1.5em;
             margin-top: 0;
           }
           .title {
-            margin-top: 2em;
             margin-bottom: .5em;
             @include breakpoint($bp-med) {
               margin-top: 0;
@@ -443,7 +494,6 @@
           }
           .subheading {
             margin-bottom: 1.5em;
-
           }
           .credit {
             margin: 0 0 1.5em;
@@ -451,7 +501,7 @@
               margin: 0 0 2em;
             }
             .joe__article-header__meta {
-              color : #fff;
+              color: $white;
             }
           }
         }
@@ -465,9 +515,6 @@
         width: 100vw !important;
         @include breakpoint($bp-med) {
           margin: 0;
-        }
-        &.align-top {
-          display: block;
         }
 
         /* Fullpage row/columns */
@@ -496,18 +543,22 @@
         }
         &.static-section {
           &.align-content-middle {
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            @include flex-center;
+          }
+          &.align-content-top {
+            align-items: flex-start;
+            display:block;
+            align-content: flex-start;
+            justify-content: flex-start;
           }
           .static-container {
+            padding: 0 30px calc(#{ $header-spacer-height-mobile} + 25px);
             display: flex;
             flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            @include flex-center;
             @include breakpoint($bp-med) {
               flex-direction: row;
+              padding:0 28px calc(#{ $header-spacer-height-desktop} + 25px);
             }
             &.reverse {
               @include breakpoint($bp-med) {
@@ -549,16 +600,11 @@
               .heading {
                 margin-bottom: 2em;
               }
-              .text {
-
-              }
             }
             .image {
               display:flex;
-              align-items: center;
-              justify-content: center;
-              align-content: center;
               width: 100%;
+              @include flex-center;
               @include breakpoint($bp-med) {
                 width: 50%;
               }
@@ -566,42 +612,44 @@
                 width: auto;
                 max-width: 100%;
                 height: auto;
-                max-height:90vh;
+                max-height:70vh;
               }
             }
             .video {
               width:100%;
+              max-height:70vh;
             }
           }
         }
         &.footer {
+          padding-bottom: 2em;
           .gallery-footer-wrapper {
-            padding-bottom: 2em;
+            //padding-bottom: 2em;
             background: $white;
           }
         }
         &.references {
-          align-items: center;
-          justify-content: center;
-          align-content: center;
+          @include flex-center;
           .joe__references {
             margin: 0;
-            padding: 0 28px 28px;
+            padding-top: 0;
+            padding-left: 28px;
+            padding-right: 28px;
             border-top: none;
             .reference-inner {
               padding-top: 28px;
               border-top: 1px solid #fff;
             }
             &.container {
-              margin-left: auto;
-              margin-right: auto;
+              margin: 0 auto;
               width: auto;
             }
           }
         }
-        &.notes {
+        &.article-footer {
           .joe__article-footer {
-            margin: 0 0 3em;
+
+            margin: 2em 0 2em;
             color: #333;
           }
         }
@@ -618,56 +666,6 @@
     a {
       color: #0a6eb4 !important;
     }
-  }
-}
-
-
-/* HTML5 Audio Player */
-
-audio.gallery-audio {
-  opacity: 0;
-  z-index: 999;
-  width: 100%;
-  transition: opacity 1s ease-out;
-  @include breakpoint($bp-med) {
-    width: 40%;
-  }
-  &.playing,
-  &.paused {
-    opacity:1;
-    transition: opacity 1s ease-out;
-    position:fixed;
-    bottom:0;
-    height: 40px;
-    left: 0;
-  }
-}
-
-/* Big Play/Pause button */
-.play-container {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  margin: 20px 0 0;
-  cursor: pointer;
-  &.playing {
-    &:after {
-      background-image: url('../images/pause-button.svg');
-    }
-  }
-  &.paused {
-    &:after {
-      background-image: url('../images/play-button.svg');
-    }
-  }
-  &:after {
-    width:100%;
-    height:100%;
-    position: absolute;
-    content: "";
-    background-size: 100% 100%;
-    background-position: top;
-    background-repeat: no-repeat;
   }
 }
 
@@ -807,22 +805,14 @@ a.scroll-down {
   }
 }
 
-.spacer {
-  display:block;
-  width:100%;
-  content: none;
-  height:0;
-  @include breakpoint($bp-med) {
-    content: none;
-    height:0;  content: "";
-    height:62px;
-    &.tall {
-      height: 106px;
-    }
-  }
-}
 //  One-ff stupid as hell override.
 .joe__utility-nav__list--right .joe__utility-nav__item:first-of-type + .social .social-icon {
   border-left: none;
   padding-left: 0;
+}
+.iScrollVerticalScrollbar {
+  width: 10px !important;
+}
+.iScrollIndicator {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
