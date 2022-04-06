@@ -34,7 +34,8 @@
       function columnHeightFix() {
         let columnHeight = $('.part-1.caption').height();
         let captionHeight = $('.part-1.caption .inner').height();
-        let heightDifference = (columnHeight - captionHeight - 70).toFixed(0);
+        let header = $('.gallery-header-spacer').height();
+        let heightDifference = (columnHeight - captionHeight - header).toFixed(0);
         if (heightDifference <= 0) {
           $('.part-1.caption').addClass('height-fix');
         }
@@ -150,9 +151,29 @@
       //  initialize fullpage.js instance
       function initialization() {
         var myFullpage = new fullpage('#fullpage', {
+
+          //  license for fullpage.js - https://github.com/alvarotrigo/fullPage.js
           licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
+
+          //  ativation keys for Scroll Overflow reset fullpage.js plugin for domains: *.ama-assn.org, *.lndo.site
+          //  https://alvarotrigo.com/fullPage/extensions/scrollOverflowReset.html
+          scrollOverflowResetKey: [
+            'bG5kby5zaXRlX003S2MyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT1wR2Q=',
+            'YW1hLWFzc24ub3JnXzFoS2MyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT1HMjM='
+          ],
+          scrollOverflowReset: true,
+
+          //  ativation keys for Drag And Move fullpage.js plugin: ama-assn.org, lndo.site
+          //  removed due to incompatibility issues on mobile.
+          //  https://alvarotrigo.com/fullPage/extensions/dragAndMove.html
+          //dragAndMoveKey: [
+          // 'YW1hLWFzc24ub3JnX2Q1MVpISmhaMEZ1WkUxdmRtVT04S3o=',
+          // 'bG5kby5zaXRlX1k4R1pISmhaMEZ1WkUxdmRtVT03NWo='
+          //],
+          //dragAndMove: false,
           anchors: anchorList,
           scrollOverflow: true,
+          lazyLoad: false,
           navigation: false,
           verticalCentered: false,
           fitToSection: true,
@@ -167,7 +188,6 @@
 
           //  This callback is fired after resizing the browser's window. Just after the sections are resized.
           afterResize: function(width, height){
-
             //  store the old breakpoint for comparison
             let oldBreakpoint = breakpoint;
 
@@ -220,11 +240,13 @@
             //  When you leave the first, add the 'top' button and shrink the header
             if (destination.index !== 0) {
               $('.gallery-header').addClass('joe__sticky-gallery-header');
+              $('.gallery-header-spacer').removeClass('first');
               $('.image-wrapper').removeClass('first');
               $('.spacer').removeClass('tall');
               $('.top').addClass('visible');
             } else {
               $('.image-wrapper').addClass('first');
+              $('.gallery-header-spacer').addClass('first');
               $('.top').removeClass('visible');
               $('.spacer').addClass('tall');
               $('.gallery-header').removeClass('joe__sticky-gallery-header');
@@ -234,7 +256,6 @@
       }
       $(document).ready(function() {
         loadArrays();
-
       })
       initialization();
     }
