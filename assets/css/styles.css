@@ -4079,9 +4079,6 @@ blockquote {
       margin-bottom: 2em; } }
 
 /* Gallery Header */
-.image-wrapper.first {
-  background: red; }
-
 .padding-fix {
   padding-bottom: calc((6px * 2) + 50px); }
   @media (min-width: 56.25em) {
