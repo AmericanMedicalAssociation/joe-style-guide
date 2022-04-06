@@ -570,13 +570,13 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
             justify-content: flex-start;
           }
           .static-container {
-            padding: 0 30px calc(#{ $header-spacer-height-mobile} + 25px);
+            padding: 0 0 calc(#{ $header-spacer-height-mobile} + 25px);
             display: flex;
             flex-direction: column-reverse;
             @include flex-center;
             @include breakpoint($bp-med) {
               flex-direction: row;
-              padding:0 28px calc(#{ $header-spacer-height-desktop} + 25px);
+              padding:0 0 calc(#{ $header-spacer-height-desktop} + 25px);
             }
             &.reverse {
               @include breakpoint($bp-med) {
@@ -599,9 +599,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
             }
             .caption {
               display:flex;
-              align-items: left;
               justify-content: center;
-              align-content: left;
               flex-direction: column;
               padding-bottom: 25px;
               width: 100%;

@@ -190,7 +190,7 @@
           afterResize: function(width, height){
             //  store the old breakpoint for comparison
             let oldBreakpoint = breakpoint;
-du
+
             //  set the new breakpoint
             breakpointCheck(width, height);
 
