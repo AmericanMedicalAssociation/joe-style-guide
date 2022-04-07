@@ -141,7 +141,6 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       }
     }
   }
-
   &.joe__sticky-gallery-header {
     padding: $header-top-bottom-padding-mobile 15px;
     height: $header-height-mobile;
@@ -190,7 +189,6 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       background: $black;
     }
   }
-
   .joe__nav-drawer {
     position: absolute;
     padding: 0;
@@ -199,7 +197,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     visibility: hidden;
     transition: max-height .5s ease-in, visibility 0s ease-in .5s, opacity .25s ease-in .25s;
     opacity: 0;
-    background-color: #000;
+    background-color: $black;
     box-shadow: none;
     border-right: none;
     @include breakpoint($bp-med) {
@@ -819,7 +817,7 @@ a.scroll-down {
   }
 }
 
-//  One-ff stupid as hell override.
+//  One-off stupid as hell override.
 .joe__utility-nav__list--right .joe__utility-nav__item:first-of-type + .social .social-icon {
   border-left: none;
   padding-left: 0;
