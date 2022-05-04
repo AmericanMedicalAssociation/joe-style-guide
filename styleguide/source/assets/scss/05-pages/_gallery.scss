@@ -13,7 +13,7 @@ $text-width-desktop: 45vw;
 $image-width-tablet: 50vw;
 $text-width-tablet: 50vw;
 
-$transition: all 1s ease;
+$transition: all 1s ease-in;
 
 $header-first-slide-height-desktop: 60px;
 $header-first-slide-top-bottom-padding-desktop: 20px;
@@ -43,16 +43,32 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     background: $black;
   }
 }
+.fp-scrollable {
+  width: 100%;
+}
+
 .user-logged-in {
   .gallery-header {
+    transition: top .25s ease-in;
+    transition: height .25s ease-in;
+    transition: padding .25s ease-in;
     top: 70px;
     @include breakpoint($bp-med) {
-      top: 106px;
+      top: 112px;
     }
   }
   .gallery {
     .image-wrapper {
-      top: 113px;
+      top: 178px;
+      &.loaded {
+        transition: top .25s ease-in;
+        &.first {
+          top: $header-spacer-first-slide-height-mobile;
+          @include breakpoint($bp-med) {
+            top: 212px;
+          }
+        }
+      }
     }
   }
   .spacer {
@@ -88,11 +104,12 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
   display:block;
   width:100%;
   max-width:100%;
+  transition: all .25s ease-in;
   @include breakpoint($bp-med) {
     height: $header-spacer-height-desktop;
   }
   &.first {
-    transition: $transition;
+    transition: all .25s ease-in;
     height: $header-spacer-first-slide-height-mobile;
     @include breakpoint($bp-med) {
       height: $header-spacer-first-slide-height-desktop;
@@ -106,7 +123,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
   right: 0;
   top: 0;
   transition: all .25s ease-in;
-  background-color: rgba($white, 0.97);
+  background-color: $white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   height: $header-first-slide-height-mobile;
   padding: $header-first-slide-top-bottom-padding-mobile 15px;
@@ -154,7 +171,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       margin-top: 4px;
     }
     .joe__menu-trigger {
-      transition: all .4s ease;
+      transition: all .4s ease-in;
       @include breakpoint($bp-med) {
         display: inline-block;
         visibility: visible;
@@ -166,7 +183,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     display: inline-block;
     background: transparent;
     visibility: visible;
-    transition: all .4s ease;
+    transition: all .4s ease-in;
     margin: 5px 30px 0 auto;
     width: 40px;
     height: 40px;
@@ -248,9 +265,6 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       padding-top: 1em;
       .joe__utility-nav__item {
         display: none;
-        &:first-of-type {
-
-        }
         &.social {
           display: block;
           .social-icon {
@@ -291,7 +305,7 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
   flex-direction: row;
   position: relative;
   .image-wrapper {
-    transition: top .5s ease;
+    transition: opacity 1s ease-in-out;
     position: fixed;
     background: $black;
     bottom: 0;
@@ -311,15 +325,8 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     @include breakpoint($bp-xl) {
       width: $image-width-large;
     }
-    &.first {
-      transition: top .5s ease;
-      top: $header-spacer-first-slide-height-mobile;
-      @include breakpoint($bp-med) {
-        top: $header-spacer-first-slide-height-desktop;
-      }
-    }
     svg {
-      transition: opacity 1.5s ease;
+      transition: opacity 1.5s ease-in;
       position: relative;
       height: 100%;
       width: 100%;
@@ -330,12 +337,18 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
       }
     }
     &.loading {
-      opacity: 0;
       transition: opacity 1s ease-in-out;
+      opacity: 0;
     }
     &.loaded {
-      opacity: 1;
       transition: opacity 1s ease-in-out;
+      opacity: 1;
+    }
+    &.first {
+      top: $header-spacer-first-slide-height-mobile;
+      @include breakpoint($bp-med) {
+        top: $header-spacer-first-slide-height-desktop;
+      }
     }
   }
 
@@ -374,26 +387,17 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     }
     .section {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       align-content: flex-end;
       justify-content: flex-end;
       flex-direction: column;
       @include breakpoint($bp-med) {
         @include flex-center;
       }
-      &.first {
-        transition: all .4s ease;
-        @include breakpoint($bp-med) {
-        }
-      }
       .first-caption-info {
         display: flex;
         flex-direction: row;
         margin-bottom: 4em;
-        @include breakpoint($bp-med) {
-        }
-        @include breakpoint($bp-large) {
-        }
       }
       .info {
         width: 80%;
@@ -489,6 +493,14 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
             background-color: $black;
             padding:0 28px calc(#{ $header-spacer-height-desktop} + 25px);
             transition: $transition;
+          }
+          .body {
+            a {
+              color: #9898d9;
+              &:visited {
+                color: #979797;
+              }
+            }
           }
           h2 {
             margin-bottom: 1.5em;
@@ -652,6 +664,14 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
               padding-top: 28px;
               border-top: 1px solid #fff;
             }
+            .joe__references__item-links {
+              a {
+                color: #9898d9;
+                &:visited {
+                  color: #979797;
+                }
+              }
+            }
             &.container {
               margin: 0 auto;
               width: auto;
@@ -675,9 +695,6 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.4);
-    a {
-      color: #0a6eb4 !important;
-    }
   }
 }
 
@@ -745,13 +762,13 @@ a.scroll-down {
 .top {
   &.visible {
     opacity: 1;
-    transition: opacity .75s ease;
+    transition: opacity .75s ease-in;
   }
   &.player-offset {
     bottom: 40px;
   }
   opacity: 0;
-  transition: opacity .75s ease;
+  transition: opacity .75s ease-in;
   height:25px;
   background-color:#111111;
   text-decoration: none;
@@ -826,5 +843,5 @@ a.scroll-down {
   width: 10px !important;
 }
 .iScrollIndicator {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
 }

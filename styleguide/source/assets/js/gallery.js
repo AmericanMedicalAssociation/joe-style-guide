@@ -153,7 +153,7 @@
         var myFullpage = new fullpage('#fullpage', {
 
           //  license for fullpage.js - https://github.com/alvarotrigo/fullPage.js
-          licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
+          licenseKey: '83RK9-LR2C6-98K78-O5JE8-LYOWO',
 
           //  ativation keys for Scroll Overflow reset fullpage.js plugin for domains: *.ama-assn.org, *.lndo.site
           //  https://alvarotrigo.com/fullPage/extensions/scrollOverflowReset.html
@@ -162,15 +162,6 @@
             'YW1hLWFzc24ub3JnXzFoS2MyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT1HMjM='
           ],
           scrollOverflowReset: true,
-
-          //  ativation keys for Drag And Move fullpage.js plugin: ama-assn.org, lndo.site
-          //  removed due to incompatibility issues on mobile.
-          //  https://alvarotrigo.com/fullPage/extensions/dragAndMove.html
-          //dragAndMoveKey: [
-          // 'YW1hLWFzc24ub3JnX2Q1MVpISmhaMEZ1WkUxdmRtVT04S3o=',
-          // 'bG5kby5zaXRlX1k4R1pISmhaMEZ1WkUxdmRtVT03NWo='
-          //],
-          //dragAndMove: false,
           anchors: anchorList,
           scrollOverflow: true,
           lazyLoad: false,
@@ -207,10 +198,6 @@
                 updateSvg(coords);
               }
             }
-          },
-
-          //  Callback fired once the sections have been loaded, after the scrolling has ended.
-          afterLoad: function(origin, destination, direction){
           },
 
           //  This callback is fired once the user leaves a section, in the transition to the new section.
