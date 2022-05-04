@@ -153,7 +153,7 @@
         var myFullpage = new fullpage('#fullpage', {
 
           //  license for fullpage.js - https://github.com/alvarotrigo/fullPage.js
-          licenseKey: '83RK9-LR2C6-98K78-O5JE8-LYOWO',
+          licenseKey: '77D14527-65F84765-8BF82EDE-2814ECA6',
 
           //  ativation keys for Scroll Overflow reset fullpage.js plugin for domains: *.ama-assn.org, *.lndo.site
           //  https://alvarotrigo.com/fullPage/extensions/scrollOverflowReset.html
