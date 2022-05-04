@@ -4598,6 +4598,10 @@ blockquote {
               margin-bottom: 60px; }
             .gallery .text-column .section.fullpage .content-row .content-section p {
               background: transparent; }
+        .gallery .text-column .section.fullpage.static-section:not(.footer) a {
+          color: #9898d9; }
+          .gallery .text-column .section.fullpage.static-section:not(.footer) a:visited {
+            color: #979797; }
         .gallery .text-column .section.fullpage.static-section.align-content-middle {
           -webkit-box-align: center;
               -ms-flex-align: center;
@@ -4617,6 +4621,11 @@ blockquote {
           -webkit-box-pack: start;
               -ms-flex-pack: start;
                   justify-content: flex-start; }
+        .gallery .text-column .section.fullpage.static-section .fp-scrollable .on-top {
+          width: 98vw !important;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
         .gallery .text-column .section.fullpage.static-section .static-container {
           padding: 0 0 calc(calc((6px * 2) + 50px) + 25px);
           display: -webkit-box;
@@ -4655,7 +4664,10 @@ blockquote {
             width: 100vw; }
             @media (min-width: 56.25em) {
               .gallery .text-column .section.fullpage.static-section .static-container.on-top {
-                width: 60vw; } }
+                width: 60vw;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; } }
             .gallery .text-column .section.fullpage.static-section .static-container.on-top .caption {
               width: auto; }
               @media (min-width: 56.25em) {
@@ -4706,10 +4718,10 @@ blockquote {
               width: auto;
               max-width: 100%;
               height: auto;
-              max-height: 70vh; }
+              max-height: 60vh; }
           .gallery .text-column .section.fullpage.static-section .static-container .video {
             width: 100%;
-            max-height: 70vh; }
+            max-height: 60vh; }
         .gallery .text-column .section.fullpage.footer {
           padding-bottom: 2em; }
           .gallery .text-column .section.fullpage.footer .gallery-footer-wrapper {
@@ -4723,6 +4735,10 @@ blockquote {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center; }
+          .gallery .text-column .section.fullpage.references a {
+            color: #9898d9; }
+            .gallery .text-column .section.fullpage.references a:visited {
+              color: #979797; }
           .gallery .text-column .section.fullpage.references .joe__references {
             margin: 0;
             padding-top: 0;
@@ -4732,13 +4748,10 @@ blockquote {
             .gallery .text-column .section.fullpage.references .joe__references .reference-inner {
               padding-top: 28px;
               border-top: 1px solid #fff; }
-            .gallery .text-column .section.fullpage.references .joe__references .joe__references__item-links a {
-              color: #9898d9; }
-              .gallery .text-column .section.fullpage.references .joe__references .joe__references__item-links a:visited {
-                color: #979797; }
             .gallery .text-column .section.fullpage.references .joe__references.container {
               margin: 0 auto;
-              width: auto; }
+              width: auto;
+              max-width: 92vw; }
         .gallery .text-column .section.fullpage.article-footer .joe__article-footer {
           margin: 2em 0 2em;
           color: #333; }
