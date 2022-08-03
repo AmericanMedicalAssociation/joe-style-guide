@@ -10,7 +10,7 @@
   @extend %joe__type--small;
   padding-left: 1em;
   word-wrap: break-word;
-  
+
   p {
     display: inline;
   }
@@ -21,8 +21,12 @@
   margin-bottom: 1em;
 }
 
-.joe__references__item-links{
+.joe__references__item-links {
   a {
     margin-right: 10px;
   }
+}
+
+.joe__references__journal-title {
+  font-style: italic;
 }
