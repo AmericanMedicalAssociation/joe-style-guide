@@ -2186,6 +2186,9 @@ blockquote {
 .joe__references__item-links a {
   margin-right: 10px; }
 
+.joe__references__journal-title {
+  font-style: italic; }
+
 .joe__share-trigger {
   position: fixed;
   bottom: 5px;
@@ -2872,6 +2875,8 @@ blockquote {
   .joe__article-teaser__title a:focus {
     text-decoration: underline;
     border-bottom: 0; }
+  .joe__article-teaser__title p[dir="RTL"] {
+    text-align: right; }
 
 .joe__article-teaser__meta {
   display: block; }
