@@ -124,6 +124,10 @@
     text-decoration: underline;
     border-bottom: 0;
   }
+
+  p[dir="RTL"] {
+    text-align: right; // For right to left language titles.
+  }
 }
 
 .joe__article-teaser__meta {
