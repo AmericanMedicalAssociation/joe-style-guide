@@ -1,6 +1,6 @@
 {
   "name": "joe-style-guide",
-  "version": "1.78.0",
+  "version": "1.78.1",
   "description": "A living style guide for the AMA Journal of Ethics",
   "repository": "https://github.com/AmericanMedicalAssociation/joe-style-guide",
   "main": "gulpfile.js",
