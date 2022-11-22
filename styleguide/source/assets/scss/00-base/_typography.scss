@@ -11,11 +11,11 @@ body {
   @include type($base-font-family, $base-font-size, $base-font-weight, $base-line-height);
 
   @include breakpoint($bp-med) {
-    font-size: ($base-font-size / 16px) * 110%;
+    font-size: (calc($base-font-size / 16px)) * 110%;
     line-height: $base-line-height * 1.1;
   }
   @include breakpoint($bp-large) {
-    font-size: ($base-font-size / 16px) * 120%;
+    font-size: (calc($base-font-size / 16px)) * 120%;
     line-height: $base-line-height * 1.2;
   }
 }
@@ -39,7 +39,7 @@ p,
 %joe__paragraph,
 .joe__paragraph {
   margin-top: 0;
-  margin-bottom: $base-line-height / 2;
+  margin-bottom: calc($base-line-height / 2);
 }
 
 %track-out,

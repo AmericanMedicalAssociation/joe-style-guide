@@ -38,5 +38,5 @@
 
 .joe__article-header__meta {
   color: $black-80;
-  margin-top: $gutter / 2;
+  margin-top: calc($gutter / 2);
 }
