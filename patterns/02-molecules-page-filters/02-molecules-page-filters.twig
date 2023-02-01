@@ -6,14 +6,14 @@
         <div class="joe__filter {% if filter.width %}{{filter.width}}{% endif %}">
         {% if filter.type == 'select' %}
           {% set label = filter %}
-          {% include "label.twig" %}
+          [01-atoms]-[label]
           {% set select = filter %}
-          {% include "select.twig" %}
+          [01-atoms]-[select]
         {% else %}
           {% set label = filter %}
-          {% include "label.twig" %}
+          [01-atoms]-[label]
           {% set input = filter %}
-          {% include "input.twig" %}      
+          [01-atoms]-[input]
         {% endif %}
         </div>
       {% endfor %}
@@ -21,7 +21,7 @@
     <div class="joe__filter__buttons">
     {% for button in buttons %}
       {% set input = button %}
-      {% include "input.twig" %}      
+      [01-atoms]-[input]
     {% endfor %}
     </div>
   </form>

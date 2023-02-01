@@ -2,7 +2,7 @@
 {% set buttonStyle =  button.style ? "joe__button--" ~ button.style : "" %}
 
 {% if button.href %}
-  <a href="{{ button.href }}" 
+  <a href="{{ button.href }}"
      class="joe__button {{ buttonSize }} {{buttonStyle}}"
      {% if button.info %}title="{{ button.info }}"{% endif %}>
       {{ button.text }}
@@ -10,7 +10,7 @@
 {% else %}
   <button type="{{ button.type }}"
           class="{{ buttonSize }} {{buttonStyle}} {{ button.class }}"
-          aria-label="{{ button.info }}" 
+          aria-label="{{ button.info }}"
           {% if button.control_id %}aria-controls="#{{button.control_id}}"{% endif %}
           {% if button.id %}id="{{button.id}}"{% endif %} >
     {{ button.text }}
