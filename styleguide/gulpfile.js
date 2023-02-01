@@ -9,7 +9,7 @@ var gulp        = require('gulp'),
     gulpif      = require('gulp-if'),
     imagemin    = require('gulp-imagemin'),
     rename      = require('gulp-rename'),
-    sass        = require('gulp-sass'),
+    sass        = require('gulp-sass')(require('sass')),
     sassGlob    = require('gulp-sass-glob'),
     svgmin      = require('gulp-svgmin'),
     shell       = require('gulp-shell'),
@@ -246,7 +246,6 @@ gulp.task('default', gulp.series('clean:before', function(callback){
     ['scripts', 'fonts', 'images', 'sass'],
     'patternlab',
     'styleguide',
-    'icons',
     'sass',
     callback
   );

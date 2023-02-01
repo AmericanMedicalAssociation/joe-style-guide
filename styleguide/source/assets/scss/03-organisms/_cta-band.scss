@@ -71,14 +71,14 @@
       &:nth-child(3):nth-last-child(2) {
         width: 49%;
         margin-right: 1%;
-        margin-bottom: $gutter / 2;
+        margin-bottom: calc($gutter / 2);
       }
 
       &:nth-child(2):nth-last-child(3),
       &:nth-child(4):nth-last-child(1) {
         width: 49%;
         margin-left: 1%;
-        margin-bottom: $gutter / 2;
+        margin-bottom: calc($gutter / 2);
       }
     }
     

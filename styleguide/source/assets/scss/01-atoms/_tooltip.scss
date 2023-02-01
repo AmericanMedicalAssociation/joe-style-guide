@@ -1,6 +1,6 @@
 .ama__tooltip {
   box-shadow: $shadow;
-  padding: $gutter / 2;
+  padding: calc($gutter / 2);
   border-top: 1px solid $black-05;
   border-left: 1px solid $black-05;
   border-right: 1px solid $black-05;

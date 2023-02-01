@@ -10,7 +10,7 @@
 
 .joe__topics__label {
   @include type($font-serif, .8em, $font-weight-bold, 1.25);
-  margin-bottom: $gutter / 2; 
+  margin-bottom: calc($gutter / 2); 
   text-transform: uppercase;
   color: rgba($white, .8);
   text-align: center;
@@ -34,11 +34,11 @@
       float: left;
       
       &:nth-of-type(odd){
-        padding-right: $gutter / 2;
+        padding-right: calc($gutter / 2);
       }
       
       &:nth-of-type(even){
-        padding-left: $gutter / 2;
+        padding-left: calc($gutter / 2);
       }
     }
   }
