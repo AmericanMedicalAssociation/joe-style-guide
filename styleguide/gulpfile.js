@@ -246,7 +246,6 @@ gulp.task('default', gulp.series('clean:before', function(callback){
     ['scripts', 'fonts', 'images', 'sass'],
     'patternlab',
     'styleguide',
-    'icons',
     'sass',
     callback
   );
