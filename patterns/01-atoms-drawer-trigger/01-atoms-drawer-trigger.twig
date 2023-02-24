@@ -1,5 +1,5 @@
-<button id="{{ drawer_trigger.id }}" 
-        class="joe__trigger {{ drawer_trigger.class }}" 
+<button id="{{ drawer_trigger.id }}"
+        class="joe__trigger {{ drawer_trigger.class }}"
         aria-controls="{{ drawer_trigger.controlId }}">
   {% if drawer_trigger.text %}
     {{ drawer_trigger.text }}
@@ -7,6 +7,6 @@
 
   {% if drawer_trigger.icon %}
     {% set icon = drawer_trigger.icon %}
-    {% include "icon.twig" %}
+    [01-atoms]-[icon]
   {% endif %}
 </button>
