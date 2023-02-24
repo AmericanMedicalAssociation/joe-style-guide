@@ -3,7 +3,7 @@
   background-color: $orange;
   background: $gold-gradient;
   padding: $gutter-mobile 0;
-  
+
   @include breakpoint($bp-med) {
     padding: $gutter 0;
   }
@@ -13,23 +13,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   @include breakpoint($bp-small) {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     align-items: stretch;
-    
+
     li {
       margin-bottom: 0;
       display: inline-block;
-      float: flex;
       overflow: hidden;
-      
+
       .joe__rail-cta  {
         height: 100%;
       }
-      
+
       // 1-up layout
       // when there is one item it's full width
       &:nth-child(1):nth-last-child(1) {
@@ -64,7 +63,7 @@
         width: 32%;
         margin-left: 1%;
       }
-      
+
       // 4-up layout
       // when there are three items it's 33:33:33
       &:nth-child(1):nth-last-child(4),
@@ -81,18 +80,17 @@
         margin-bottom: calc($gutter / 2);
       }
     }
-    
+
     .joe__rail-cta {
       margin: 0;
     }
   }
-  
+
   @include breakpoint($bp-med) {
-    
+
     li {
       margin-bottom: 0;
       display: flex;
-      float: left;
 
       // 4-up layout
       // when there are three items it's 33:33:33
@@ -107,11 +105,11 @@
         width: 23.75%;
         margin: 0 .75%;
       }
-      
+
       &:nth-child(4):nth-last-child(1) {
         width: 24%;
-        margin-left: .75%; 
-        margin-bottom: 0;   
+        margin-left: .75%;
+        margin-bottom: 0;
       }
     }
   }
