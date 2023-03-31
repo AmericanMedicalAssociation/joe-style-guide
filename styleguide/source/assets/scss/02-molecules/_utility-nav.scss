@@ -5,6 +5,9 @@
   column-count: 1;
   column-gap: 0;
   background-color: $navy-lighter;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  column-rule: 1px solid white;
 
   @include breakpoint($bp-xs) {
     column-count: 2;
@@ -43,6 +46,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  line-height: inherit;
 
   @include breakpoint($bp-med) {
     float: left;
@@ -124,11 +128,11 @@
 
   a:link,
   a:visited {
-    display: block;
+    display: inline-block;
+    width: 100%;
     padding: .75em .75em;
     color: $white;
     border: 0;
-    border-left: 1px solid $white;
   }
 
   @include breakpoint($bp-med) {
