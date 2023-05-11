@@ -20,6 +20,9 @@
   @include breakpoint($bp-med) {
     column-count: 1;
     background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    column-rule: 0;
 
     .joe__header & {
       top: -32px;
