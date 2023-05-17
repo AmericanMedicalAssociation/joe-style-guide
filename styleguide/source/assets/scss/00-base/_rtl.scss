@@ -1,0 +1,23 @@
+article[dir='rtl'] {
+  text-align: left;
+  direction: ltr;
+
+  h2.joe__article-header__title {
+    text-align: right;
+    direction: rtl;
+  }
+
+  .joe__page-content.joe__article {
+    text-align: right;
+    direction: rtl;
+  }
+
+  .joe__page-content--article {
+    text-align: left;
+  }
+
+  footer.joe__article-footer p {
+    text-align: right;
+  }
+}
+
