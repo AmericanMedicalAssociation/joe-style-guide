@@ -4,10 +4,14 @@
   background-color: $white;
   box-shadow: $shadow;
   text-align: center;
-  
+
   @include breakpoint($bp-small) {
     text-align: left;
   }
+}
+
+main + .joe__footer {
+  box-shadow: inherit;
 }
 
 .joe__footer-brand {
@@ -15,17 +19,17 @@
   display: block;
   margin: 1em auto 0;
   max-width: 150px;
-  
+
   img {
     max-width: 100%;
     width: 100%;
   }
-  
+
   &:link,
   &:visited {
     border-bottom: 0;
   }
-  
+
   @include breakpoint($bp-small) {
     float: right;
     display: inline-block;
@@ -39,11 +43,11 @@
 .joe__footer__block {
   display: inline-block;
   margin-right: 1.5em;
-  
+
   p, a {
     @extend %joe__type--smaller;
   }
-  
+
   @include breakpoint($bp-small) {
     margin-left: 1.5em;
     margin-right: 0;
