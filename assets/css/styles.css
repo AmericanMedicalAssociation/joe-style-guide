@@ -3733,6 +3733,11 @@ blockquote {
   }
 }
 
+main + .joe__footer {
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+}
+
 .joe__footer-brand {
   display: block;
   margin: 1em auto 0;
