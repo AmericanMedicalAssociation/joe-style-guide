@@ -1,0 +1,7 @@
+<input type="{{ input.type }}" 
+       name="{{ input.name }}"
+       id="{{ input.id }}"
+       {% if input.class %}class="{{ input.class }}"{% endif %}
+       {% if input.value %}value="{{ input.value }}"{% endif %}
+       {% if input.placeholder %}placeholder="{{ input.placeholder }}"{% endif %}
+       >

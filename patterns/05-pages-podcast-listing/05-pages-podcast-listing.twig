@@ -1,0 +1,33 @@
+{% extends '@templates/two-column-left--list.twig' %}
+{% block header %}
+  {% include '@organisms/header.twig' %}
+  {% include '@atoms/article-hero.twig' %}
+{% endblock %}
+
+{% block pageContent_header %}
+    {% include '@molecules/page-header.twig' %}
+{% endblock %}
+
+{% block sidebar_top %}
+    {% include '@molecules/page-filters.twig' %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <ul class="joe__list">
+    {% for article in articles %}
+    <li>
+      {% set teaser = article %}
+      {% include '@molecules/article-teaser--extended.twig' %}
+    </li>
+    {% endfor %}
+  </ul>
+  
+  {% include '@molecules/pagination.twig' %}
+  
+{% endblock %}
+
+
+{% block footer %}  
+  {% include '@organisms/footer.twig' %}
+{% endblock %}
