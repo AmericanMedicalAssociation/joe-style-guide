@@ -1,0 +1,20 @@
+<nav class="joe__rail-nav">
+  <ul class="joe__rail-nav__list">
+  {% for rail_nav in rail_navs %}
+    <li class="joe__rail-nav__item">
+      {% set link = rail_nav %}
+      {% include "@atoms/link.twig" %}
+      {% if rail_nav.children %}
+        <ul class="joe__rail-nav__sublist">
+          {% for child in rail_nav.children %}
+            <li class="joe__rail-nav__subitem">
+              {% set link = child %}
+              {% include "@atoms/link.twig" %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</nav>
