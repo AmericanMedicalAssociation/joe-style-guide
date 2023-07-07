@@ -40,7 +40,7 @@
     "postcss-reporter": "^7.0.5",
     "postcss-scss": "^4.0.5",
     "sass-grid": "^3.0.0",
-    "stylelint": "^9.10.1",
+    "stylelint": "^15.10.1",
     "what-input": "^5.2.12"
   },
   "devDependencies": {
