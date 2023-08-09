@@ -98,7 +98,7 @@
         padding: 9px .2em;
         &.youtube {
           width: 32px;
-          padding: 0;
+          padding: 6px 0 0;
           height: 28px;
         }
         @include breakpoint($bp-med) {
@@ -110,6 +110,7 @@
           &.youtube {
             width: 28px;
             height: 20px;
+            padding: 0;
           }
         }
         svg {
