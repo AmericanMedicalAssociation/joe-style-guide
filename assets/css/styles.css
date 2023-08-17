@@ -3034,7 +3034,7 @@ blockquote {
 }
 .joe__utility-nav__list--right .joe__utility-nav__item.social .social-icon.youtube {
   width: 32px;
-  padding: 0;
+  padding: 6px 0 0;
   height: 28px;
 }
 @media (min-width: 56.25em) {
@@ -3048,6 +3048,7 @@ blockquote {
   .joe__utility-nav__list--right .joe__utility-nav__item.social .social-icon.youtube {
     width: 28px;
     height: 20px;
+    padding: 0;
   }
 }
 .joe__utility-nav__list--right .joe__utility-nav__item.social .social-icon svg {
