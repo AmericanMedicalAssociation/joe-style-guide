@@ -120,6 +120,15 @@
     @include breakpoint($bp-med) {
       @include type($font-serif, 1.5em, $font-weight-bold, 1.25);
     }
+
+    &:hover a {
+      opacity: 0.5;
+    }
+
+    &:hover a:hover {
+      transform: translateX(0.5rem);
+      opacity: 1;
+    }
   }
 
   .joe__primary-nav__item {
@@ -129,18 +138,27 @@
       @include type($font-serif, 1.5em, $font-weight-bold, 1.25);
     }
 
-    a:hover {
-      transform: translateX(0.5rem);
+    a {
+      display: block;
     }
   }
 
   // Utility overrides
   .joe__utility-nav {
+    width: auto;
     margin-block-start: 4rem;
   }
 
-  .joe__utility-nav__list--right {
+  .joe__utility-nav__list {
     float: none;
+
+    &:hover a {
+      opacity: 0.5;
+    }
+
+    &:hover a:hover {
+      opacity: 1;
+    }
   }
 
   .joe__utility-nav__link {
