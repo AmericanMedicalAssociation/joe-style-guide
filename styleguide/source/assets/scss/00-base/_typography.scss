@@ -95,9 +95,7 @@ sup {
 }
 
 // Base styles for .vc-* pages
-:root.vc-art,
-:root.vc-ethics,
-:root.vc-gallery {
+:root[class*='vc-'] {
   body {
     background-color: var(--c-bg);
     color: var(--c-text);
