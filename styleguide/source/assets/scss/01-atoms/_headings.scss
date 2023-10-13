@@ -7,6 +7,7 @@ h1,
   margin-bottom: 6px;
   margin-top: 2em;
 }
+
 h2,
 .joe__h2,
 %joe__h2 {
@@ -15,6 +16,7 @@ h2,
   margin-bottom: 6px;
   margin-top: 1.5em;
 }
+
 h3,
 .joe__h3,
 %joe__h3 {
@@ -23,6 +25,7 @@ h3,
   margin-bottom: 6px;
   margin-top: 1.25em;
 }
+
 h4,
 .joe__h4,
 %joe__h4 {
@@ -31,6 +34,7 @@ h4,
   margin-bottom: 6px;
   margin-top: 1em;
 }
+
 h5,
 .joe__h5,
 %joe__h5 {
@@ -39,6 +43,7 @@ h5,
   margin-bottom: 6px;
   margin-top: 1em;
 }
+
 h6,
 .joe__h6,
 %joe__h6 {
@@ -46,4 +51,57 @@ h6,
   @include type($font-sans-serif, 1em, $font-weight-bold, 1.25);
   margin-bottom: 6px;
   margin-top: .75em;
+}
+
+// Heading styles for all `vc-*` pages
+:root.vc-art,
+:root.vc-ethics,
+:root.vc-gallery {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-block: 3rem 1.38rem;
+  }
+
+  h1 {
+    // Using clamp calculator to generate these values
+    // https://royalfig.github.io/fluid-typography-calculator/
+    font-size: clamp(2.75rem, 1.696rem + 4.680vw, 5.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 1.444rem + 2.468vw, 3.45rem);
+  }
+
+  h3 {
+    font-size: clamp(1.75rem, 1.462rem + 1.276vw, 2.5rem);
+  }
+
+  h4 {
+    font-size: clamp(1.5rem, 1.308rem + 0.851vw, 2rem);
+  }
+
+  h5 {
+    font-size: clamp(1.25rem, 1.077rem + 0.765vw, 1.7rem);
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+}
+
+// `vc-gallery` overrides
+:root.vc-gallery {
+  h1 {
+    font-family: $font-serif;
+    font-weight: 800;
+    font-size: clamp(2.75rem, 1.122rem + 7.234vw, 7rem);
+  }
 }
