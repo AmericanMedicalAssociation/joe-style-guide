@@ -152,9 +152,22 @@
   }
 
   // Utility overrides
-  .joe__utility-nav {
-    width: auto;
+  .vc-header-nav__nav-utility {
     margin-block-start: 4rem;
+
+    @include breakpoint($bp-large) {
+      margin-block-start: 6rem;
+    }
+  }
+
+  .joe__utility-nav {
+    position: static;
+    background: none;
+    border: 0;
+    width: auto;
+    max-width: none;
+    column-count: auto;
+    margin: 0;
   }
 
   .joe__utility-nav__list {
@@ -171,6 +184,12 @@
     &:hover a:hover {
       opacity: 1;
     }
+  }
+
+  .joe__utility-nav__item {
+    border: 0;
+    display: inline-block;
+    // border-bottom: 0;
   }
 
   .joe__utility-nav__link {
