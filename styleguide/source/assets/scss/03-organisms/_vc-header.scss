@@ -168,6 +168,10 @@
       fill: var(--c-link);
       width: 1.5rem;
       height: 1.5rem;
+
+      path {
+        fill: var(--c-link);
+      }
     }
   }
 
