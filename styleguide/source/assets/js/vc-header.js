@@ -9,7 +9,7 @@
  */
 
 (function ($, Drupal) {
-  Drupal.behaviors.header_vc = {
+  Drupal.behaviors.vc_header = {
     attach: function (context, settings) {
 
       // Global header variables
