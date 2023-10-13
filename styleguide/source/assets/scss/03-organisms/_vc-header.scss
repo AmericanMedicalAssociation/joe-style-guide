@@ -123,11 +123,19 @@
 
     &:hover a {
       opacity: 0.5;
+
+      @media (prefers-reduced-motion) {
+        opacity: 1;
+      }
     }
 
     &:hover a:hover {
       transform: translateX(0.5rem);
       opacity: 1;
+
+      @media (prefers-reduced-motion) {
+        transform: none;
+      }
     }
   }
 
@@ -154,6 +162,10 @@
 
     &:hover a {
       opacity: 0.5;
+
+      @media (prefers-reduced-motion) {
+        opacity: 1;
+      }
     }
 
     &:hover a:hover {
@@ -174,7 +186,6 @@
       }
     }
   }
-
 
   // Search overrides
   .joe__site-search {
