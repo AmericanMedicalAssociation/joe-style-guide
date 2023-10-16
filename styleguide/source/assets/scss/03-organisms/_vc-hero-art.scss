@@ -24,6 +24,7 @@
   right: 0;
   bottom: 5rem;
   z-index: -1;
+  overflow: hidden;
 
   @include breakpoint($bp-large) {
     .vc-hero-art--not-full & {
@@ -51,10 +52,23 @@
     }
   }
 
+  picture {
+    .vc-hero-art--full & {
+      @include breakpoint($bp-large) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+
+    .vc-hero-art--full & {
+      max-width: 2000px;
+    }
   }
 }
 
@@ -128,7 +142,7 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  color: var(--c-bg);
+  color: var(--c-hero-text);
   padding: 2rem;
 
   @include breakpoint($bp-med) {
@@ -148,7 +162,7 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background-color: var(--c-text);
+  background-color: var(--c-hero-bg);
   overflow: hidden;
   z-index: -1;
 
@@ -175,7 +189,7 @@
   }
 
   path {
-    fill: var(--c-text);
+    fill: var(--c-hero-bg);
   }
 }
 
