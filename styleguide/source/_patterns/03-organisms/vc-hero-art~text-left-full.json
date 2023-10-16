@@ -1,6 +1,6 @@
 {
   "htmlClass": "vc-art",
-  "bodyStyle": "--c-bg: #F5F5F5; --c-text: #000; --c-hero-bg: #C54374; --c-button-bg: #9FE7C7; --c-button-bg-hover: #71E8B3; --c-button-text: #484848;",
+  "htmlStyle": "--c-bg: #F5F5F5; --c-text: #000; --c-hero-bg: #C54374; --c-button-bg: #9FE7C7; --c-button-bg-hover: #71E8B3; --c-button-text: #484848;",
   "hero": {
     "modifier_class": "vc-hero-art--text-left vc-hero-art--full",
     "issue_date": "May 2023",

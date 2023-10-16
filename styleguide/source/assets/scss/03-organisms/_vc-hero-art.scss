@@ -203,6 +203,12 @@
 
 .vc-hero-art__title {
   color: var(--c-hero-title);
+
+  :root[class*='vc-art'] & {
+    @include breakpoint(0 $bp-xlarge) {
+      margin-block-start: 0;
+    }
+  }
 }
 
 .vc-hero-art__tools {
