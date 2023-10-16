@@ -1,7 +1,8 @@
 {
   "htmlClass": "vc-art",
-  "bodyStyle": "",
+  "bodyStyle": "--c-bg: #393939; --c-text: #fff; --c-hero-bg: #262626; --c-button-bg: #CE4A22; --c-button-bg-hover: #B4330C; --c-button-text: #fff;",
   "hero": {
+    "modifier_class": "vc-hero-art--text-right vc-hero-art--full",
     "issue_date": "May 2023",
     "issue_href": "/",
     "page_title": "A Completely Normal Conversation With a Box",
