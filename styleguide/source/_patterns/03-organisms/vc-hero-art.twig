@@ -1,27 +1,37 @@
-<header class="vc-hero-art">
+<header class="vc-hero-art {{ hero.modifier_class|default('vc-hero-art--text-left vc-hero-art--not-full') }}">
   <div class="vc-hero-art__image">
     <picture>
-      <source srcset="https://placehold.co/1000x1450" media="(min-width: 600px)"/>
-      <img src="https://placehold.co/600x400" alt="Alt text"/>
+      {% if 'vc-hero-art--not-full' in hero.modifier_class %}
+        <source srcset="https://unsplash.it/1000/1450?random" media="(min-width: 75em)"/>
+      {% else %}
+        <source srcset="https://unsplash.it/1600/900?random" media="(min-width: 75em)"/>
+      {% endif %}
+      <source srcset="https://unsplash.it/1200/675?random" media="(min-width: 56.25em)"/>
+      <img src="https://unsplash.it/800/450?random" alt="Alt text"/>
     </picture>
   </div>
   <div class="vc-container vc-grid">
     <div class="vc-hero-art__flag">
       <span class="vc-hero-art__flag-type">Art of Medicine</span>
-      <a class="vc-hero-art__flag-date" href="#">May 2023</a>
+      <a class="vc-hero-art__flag-date" href="{{ hero.issue_href }}">{{ hero.issue_date }}</a>
     </div>
     <div class="vc-hero-art__content">
-      <h1 class="vc-hero-art__title">A Completely Normal Conversation With a Box</h1>
-      <span class="vc-hero-art__byline">Beck Regan</span>
+      <div class="vc-hero-art__content-bg">
+        {% include "@base/icons/bg-hero-content-art.svg" %}
+      </div>
+      <div class="vc-hero-art__content-body">
+        <h1 class="vc-hero-art__title">{{ hero.page_title }}</h1>
+        <span class="vc-hero-art__byline">{{ hero.author }}</span>
+      </div>
       <div class="vc-hero-art__tools">
         <div class="vc-hero-art__tool">
-          <a class="button vc-hero-art__tool-button" href="#">PDF</a>
+          <a class="button vc-hero-art__tool-button" href="{{ hero.pdf_href }}">PDF</a>
         </div>
         <div class="vc-hero-art__tool">
           <button class="vc-hero-art__tool-button" type="button">Citation</button>
         </div>
         <div class="vc-hero-art__tool">
-          <a class="button vc-hero-art__tool-button" href="#">Altmetric</a>
+          <a class="button vc-hero-art__tool-button" href="{{ hero.altmetric_href }}">Altmetric</a>
         </div>
       </div>
     </div>

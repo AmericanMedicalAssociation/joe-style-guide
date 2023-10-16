@@ -1,5 +1,20 @@
 .vc-hero-art {
   position: relative;
+  margin-block-end: 5rem;
+
+  @include breakpoint($bp-med) {
+    margin-block-end: 10rem;
+  }
+}
+
+.vc-container {
+  .vc-hero-art--text-right & {
+    justify-items: end;
+
+    @include breakpoint($bp-med) {
+      justify-items: normal;
+    }
+  }
 }
 
 .vc-hero-art__image {
@@ -7,25 +22,99 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 5rem;
   z-index: -1;
-  overflow: hidden;
+
+  @include breakpoint($bp-large) {
+    .vc-hero-art--not-full & {
+      left: auto;
+      right: 0;
+      bottom: -1000px;
+      mask-image: url('../images/vc/bg-hero-image-left-art.svg');
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: top left;
+      width: calc(100% - 40rem);
+    }
+
+    .vc-hero-art--text-right.vc-hero-art--not-full & {
+      left: 0;
+      right: auto;
+      mask-image: url('../images/vc/bg-hero-image-right-art.svg');
+      mask-position: top right;
+    }
+  }
+
+  @include breakpoint($bp-xlarge) {
+    .vc-hero-art--not-full & {
+      width: 50%;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .vc-hero-art__flag {
+  position: relative;
   background-color: var(--c-button-bg);
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
   color: var(--c-button-text);
+  text-transform: uppercase;
+  text-align: left;
   grid-column: 1 / -1;
+  padding: 2rem;
+  max-width: 10rem;
 
   @include breakpoint($bp-med) {
-    grid-column: 11 / -1;
+    grid-column: 1 / 4;
+    max-width: none;
+
+    .vc-hero-art--text-right & {
+      grid-column: 10 / -1;
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    min-height: 18rem;
+  }
+
+  .vc-hero-art--text-right & {
+    text-align: right;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(310deg, rgba($black, 0) 53%, rgba($black, 0.05) 53%);
   }
 }
 
 .vc-hero-art__flag-type {
+  position: relative;
+  font-family: $font-serif;
+  font-weight: 500;
   word-spacing: 100vw;
+
+  @include breakpoint($bp-large) {
+    @include type($font-serif, 1.25em, $font-weight-medium, 2);
+  }
+}
+
+.vc-hero-art__flag-date {
+  position: relative;
+  font-family: $font-sans-serif-comp;
+  font-weight: 400;
 }
 
 :root[class*='vc-art'] {
@@ -37,11 +126,64 @@
 .vc-hero-art__content {
   grid-column: 1 / -1;
   position: relative;
-  background-color: var(--c-text);
+  display: flex;
+  justify-content: flex-start;
   color: var(--c-bg);
+  padding: 2rem;
 
   @include breakpoint($bp-med) {
-    grid-column: 6 / -1;
+    grid-column: 1 / -1;
+  }
+
+  .vc-hero-art--text-right & {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.vc-hero-art__content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: var(--c-text);
+  overflow: hidden;
+  z-index: -1;
+
+  @include breakpoint($bp-large) {
+    background-color: transparent;
+  }
+}
+
+#vc-hero-art__content-bg {
+  display: none;
+
+  @include breakpoint($bp-large) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+
+    .vc-hero-art--text-right & {
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+  }
+
+  path {
+    fill: var(--c-text);
+  }
+}
+
+.vc-hero-art__content-body {
+  width: auto;
+
+  @include breakpoint($bp-large) {
+    width: 45rem;
   }
 }
 
@@ -52,9 +194,14 @@
 .vc-hero-art__tools {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   display: flex;
   gap: 0.5rem;
+
+  .vc-hero-art--text-right & {
+    left: auto;
+    right: 0;
+  }
 }
 
 .vc-hero-art__tool:nth-child(even) {
