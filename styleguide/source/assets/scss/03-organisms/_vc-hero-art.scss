@@ -224,10 +224,14 @@
   }
 }
 
-.vc-hero-art__tool:nth-child(even) {
-  .vc-hero-art__tool-button::after {
-    transform: skewY(-3.5deg);
-    transform-origin: right;
+.vc-hero-art__tool {
+  position: relative;
+
+  &:nth-child(even) {
+    .vc-hero-art__tool-button::after {
+      transform: skewY(-3.5deg);
+      transform-origin: right;
+    }
   }
 }
 
@@ -247,5 +251,43 @@
     transform: skewY(3.5deg);
     transform-origin: left;
     z-index: -1;
+  }
+}
+
+.vc-hero-art__tool-content {
+  @include type($font-sans-serif, 0.7em, $font-weight-medium, 1);
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  max-width: 25rem;
+  background-color: var(--c-hero-bg);
+  border: 1px solid var(--c-hero-text);
+  color: var(--c-hero-text);
+  padding: 0.5rem 1rem;
+
+  &:after,
+  &:before {
+    bottom: 100%;
+    left: 3rem;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &::after {
+    border-color: transparent;
+    border-bottom-color: var(--c-hero-bg);
+    border-width: 8px;
+    margin-left: -8px;
+  }
+
+  &::before {
+    border-color: transparent;
+    border-bottom-color: var(--c-hero-text);
+    border-width: 9px;
+    margin-left: -9px;
   }
 }

@@ -37,14 +37,22 @@
       </div>
       <div class="vc-hero-art__tools">
         <div class="vc-hero-art__tool">
-          <a class="button vc-hero-art__tool-button" href="{{ hero.pdf_href }}">PDF</a>
+          <button class="vc-hero-art__tool-button" type="button">Citation</button>
+          <div class="vc-hero-art__tool-content">
+            {{ hero.citation|raw }}
+          </div>
         </div>
         <div class="vc-hero-art__tool">
-          <button class="vc-hero-art__tool-button" type="button">Citation</button>
+          <a class="button vc-hero-art__tool-button" href="{{ hero.pdf_href }}">PDF</a>
         </div>
         <div class="vc-hero-art__tool">
           <a class="button vc-hero-art__tool-button" href="{{ hero.altmetric_href }}">Altmetric</a>
         </div>
+        {% if hero.cme_href %}
+          <div class="vc-hero-art__tool">
+            <a class="button vc-hero-art__tool-button" href="{{ hero.cme_href }}">CME</a>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
