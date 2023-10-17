@@ -47,6 +47,12 @@
 
   .joe__primary-nav__item a {
     text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
   }
 }
 
