@@ -2,6 +2,9 @@
   "htmlClass": "vc-art",
   "htmlStyle": "",
   "hero": {
+    "image_small": "https://unsplash.it/800/450?random",
+    "image_medium": "https://unsplash.it/1200/675?random",
+    "image_large": "https://unsplash.it/1000/1450?random",
     "issue_date": "May 2023",
     "issue_href": "/",
     "page_title": "A Completely Normal Conversation With a Box",

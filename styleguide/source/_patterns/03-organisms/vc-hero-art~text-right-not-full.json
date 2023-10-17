@@ -2,6 +2,9 @@
   "htmlClass": "vc-art",
   "htmlStyle": "--c-bg: #EBEBEB; --c-text: #262626; --c-hero-bg: #484848; --c-hero-title: #5CD5D4; --c-button-bg: #5CD5D4; --c-button-bg-hover: #77F1F0; --c-button-text: #484848;",
   "hero": {
+    "image_small": "https://unsplash.it/800/450?random",
+    "image_medium": "https://unsplash.it/1200/675?random",
+    "image_large": "https://unsplash.it/1000/1450?random",
     "modifier_class": "vc-hero-art--text-right vc-hero-art--not-full",
     "issue_date": "May 2023",
     "issue_href": "/",

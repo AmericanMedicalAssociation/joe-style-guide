@@ -14,12 +14,12 @@
   <div class="vc-hero-art__image">
     <picture>
       {% if 'vc-hero-art--not-full' in hero.modifier_class %}
-        <source srcset="https://unsplash.it/1000/1450?random" media="(min-width: 75em)"/>
+        <source srcset="{{ hero.image_large }}" media="(min-width: 75em)"/>
       {% else %}
-        <source srcset="https://unsplash.it/1600/900?random" media="(min-width: 75em)"/>
+        <source srcset="{{ hero.image_large }}" media="(min-width: 75em)"/>
       {% endif %}
-      <source srcset="https://unsplash.it/1200/675?random" media="(min-width: 56.25em)"/>
-      <img src="https://unsplash.it/800/450?random" alt="Alt text"/>
+      <source srcset="{{ hero.image_medium }}" media="(min-width: 56.25em)"/>
+      <img src="{{ hero.image_small }}" alt="Alt text"/>
     </picture>
   </div>
   <div class="vc-container vc-grid">
@@ -35,10 +35,10 @@
         <h1 class="vc-hero-art__title">{{ hero.page_title }}</h1>
         <span class="vc-hero-art__byline">{{ hero.author }}</span>
       </div>
-      <div class="vc-hero-art__tools">
-        <div class="vc-hero-art__tool">
-          <button class="vc-hero-art__tool-button" type="button">Citation</button>
-          <div class="vc-hero-art__tool-content">
+      <div class="vc-hero-art__tools vc-hero__tools">
+        <div class="vc-hero-art__tool vc-hero__tool">
+          <button class="vc-hero-art__tool-button vc-hero__tool-button" type="button" aria-expanded="false">Citation</button>
+          <div class="vc-hero-art__tool-content vc-hero__tool-content" hidden>
             {{ hero.citation|raw }}
           </div>
         </div>
