@@ -283,13 +283,14 @@
 
 #vc-header-nav,
 #vc-header__search {
+  position: relative;
   background-color: var(--c-bg);
   border: 1px solid var(--c-text);
   border-radius: 3px;
   position: absolute;
   top: calc(100% + 1rem);
-  left: 1rem;
-  right: 1rem;
+  left: 0.5rem;
+  right: 0.5rem;
   padding: 1rem;
   z-index: 1200;
 
@@ -298,15 +299,57 @@
     right: -0.5rem;
     padding: 2rem;
   }
+
+  &:after,
+  &:before {
+    bottom: 100%;
+    left: calc(100% - 1.2rem);
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &::after {
+    border-color: transparent;
+    border-bottom-color: var(--c-bg);
+    border-width: 8px;
+    margin-left: -8px;
+  }
+
+  &::before {
+    border-color: transparent;
+    border-bottom-color: var(--c-text);
+    border-width: 9px;
+    margin-left: -9px;
+  }
 }
 
 #vc-header-nav {
+  @include breakpoint(0 $bp-small) {
+
+    &:after,
+    &:before {
+      left: calc(100% - 3.25rem);
+    }
+  }
+
   @include breakpoint($bp-small) {
     width: 300px;
   }
 }
 
 #vc-header__search {
+  @include breakpoint(0 $bp-small) {
+
+    &:after,
+    &:before {
+      left: calc(100% - 1rem);
+    }
+  }
+
   @include breakpoint($bp-small) {
     width: 450px;
   }
