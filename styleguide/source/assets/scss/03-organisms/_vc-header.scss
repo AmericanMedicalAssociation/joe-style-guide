@@ -39,6 +39,15 @@
       stroke: var(--c-link);
     }
   }
+
+  .vc-header__search-heading {
+    @include type($font-sans-serif, 1em, $font-weight-bold, 1);
+    margin-block-start: 0;
+  }
+
+  .joe__primary-nav__item a {
+    text-decoration: none;
+  }
 }
 
 .vc-header {
@@ -54,37 +63,6 @@
     left: 0;
     right: 0;
     z-index: 999;
-  }
-
-  &.open-dropdown::before {
-    animation-name: topDown;
-    animation-timing-function: cubic-bezier(0.93, 0, 0.39, 0.93);
-    animation-duration: 0.7s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    height: 100vh;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-    }
-  }
-
-  &.close-navs-dropdown::before,
-  &.close-search-dropdown::before {
-    animation-name: bottomUp;
-    animation-timing-function: cubic-bezier(0.93, 0, 0.39, 0.93);
-    animation-duration: 0.7s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    height: 100vh;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-    }
   }
 
   .joe__sticky-header & {
@@ -142,8 +120,8 @@
   .joe__primary-nav__item {
     display: block;
 
-    @include breakpoint($bp-large) {
-      @include type($font-serif, 1.5em, $font-weight-bold, 1.25);
+    @include breakpoint($bp-med) {
+      @include type($font-serif, 0.75em, $font-weight-bold, 1.25);
     }
 
     a {
@@ -153,11 +131,9 @@
 
   // Utility overrides
   .vc-header-nav__nav-utility {
-    margin-block-start: 4rem;
-
-    @include breakpoint($bp-large) {
-      margin-block-start: 6rem;
-    }
+    border-top: 1px solid var(--c-text);
+    padding-block-start: 1.5rem;
+    margin-block-start: 1.5rem;
   }
 
   .joe__utility-nav {
@@ -267,6 +243,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include breakpoint($bp-small) {
+    position: relative;
+  }
 }
 
 .vc-header__action-button {
@@ -303,162 +283,32 @@
 
 #vc-header-nav,
 #vc-header__search {
+  background-color: var(--c-bg);
+  border: 1px solid var(--c-text);
+  border-radius: 3px;
   position: absolute;
-  top: 20vh;
+  top: calc(100% + 1rem);
   left: 1rem;
   right: 1rem;
+  padding: 1rem;
   z-index: 1200;
-  visibility: visible;
 
-  @include breakpoint($bp-med) {
-    left: calc(1rem * 2);
-    right: calc(1rem * 2);
-  }
-
-  &[hidden] {
-    display: block;
-    visibility: hidden;
+  @include breakpoint($bp-small) {
+    left: auto;
+    right: -0.5rem;
+    padding: 2rem;
   }
 }
-
-// Primary nav item animation
-$primary-delay: (
-  0s,
-  0.1s,
-  0.2s,
-  0.3s,
-  0.4s,
-  0.5s,
-  0.6s,
-  0.7s,
-  0.8s
-);
 
 #vc-header-nav {
-
-  .vc-header-nav__nav-utility,
-  .joe__primary-nav__item {
-    opacity: 0;
-  }
-}
-
-// Open navs
-#vc-header-nav:not([hidden]) {
-
-  // Incremental animation for primary items
-  @for $i from 1 through 9 {
-    .joe__primary-nav__item:nth-child(#{$i}) {
-      animation-name: dropdownOpen;
-      animation-timing-function: ease;
-      animation-duration: 0.5s;
-      animation-delay: nth($primary-delay, $i);
-      animation-fill-mode: forwards;
-
-      // Reduce animation motion if enabled per user
-      @media (prefers-reduced-motion) {
-        animation-timing-function: linear;
-        animation-duration: 0s;
-        animation-delay: 0s;
-      }
-    }
-  }
-
-  .vc-header-nav__nav-utility {
-    animation-name: dropdownOpen;
-    animation-timing-function: ease;
-    animation-duration: 0.5s;
-    animation-delay: 0.35s;
-    animation-fill-mode: forwards;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      animation-delay: 0s;
-    }
-  }
-}
-
-// Close navs
-.close-navs-dropdown #vc-header-nav[hidden],
-.switch-to-search-dropdown #vc-header-nav[hidden] {
-
-  .joe__primary-nav__item,
-  .vc-header-nav__nav-utility,
-  .vc-header__close-dropdown {
-    animation-name: dropdownClose;
-    animation-timing-function: cubic-bezier(0.93, 0, 0.39, 0.93);
-    animation-duration: 0.25s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      animation-delay: 0s;
-    }
+  @include breakpoint($bp-small) {
+    width: 300px;
   }
 }
 
 #vc-header__search {
-  .vc-header__search-heading {
-    opacity: 0;
-  }
-}
-
-// Open search
-#vc-header__search:not([hidden]) {
-  .joe__site-search {
-    animation-name: dropdownOpen;
-    animation-timing-function: ease;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      animation-delay: 0s;
-    }
-  }
-
-  .vc-header__search-heading {
-    animation-name: fadeIn;
-    animation-timing-function: ease;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      animation-delay: 0s;
-    }
-  }
-}
-
-// Close search
-.close-search-dropdown #vc-header__search[hidden],
-.switch-to-navs-dropdown #vc-header__search[hidden] {
-
-  .vc-header__search-heading,
-  .joe__site-search,
-  .vc-header__close-dropdown {
-    animation-name: dropdownClose;
-    animation-timing-function: cubic-bezier(0.93, 0, 0.39, 0.93);
-    animation-duration: 0.25s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-
-    // Reduce animation motion if enabled per user
-    @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      animation-delay: 0s;
-    }
+  @include breakpoint($bp-small) {
+    width: 450px;
   }
 }
 
@@ -468,5 +318,8 @@ $primary-delay: (
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+
+  button {
+    margin-block-start: 1rem;
+  }
 }
