@@ -207,6 +207,7 @@
 
 .vc-hero-art__title {
   color: var(--c-hero-title);
+  text-wrap: balance;
 
   :root[class*='vc-art'] & {
     @include breakpoint(0 $bp-xlarge) {
