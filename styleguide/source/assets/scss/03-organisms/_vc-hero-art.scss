@@ -254,8 +254,18 @@
   }
 }
 
+:root[class*='vc-art'] {
+
+  .vc-hero-art__tool-button,
+  a.vc-hero-art__tool-button {
+    @include breakpoint(0 $bp-small) {
+      padding-inline: 10px;
+    }
+  }
+}
+
 .vc-hero-art__tool-content {
-  @include type($font-sans-serif, 0.7em, $font-weight-medium, 1);
+  @include type($font-sans-serif, 0.7em, $font-weight-medium, 1.2);
   position: absolute;
   top: calc(100% + 1rem);
   left: 0;
