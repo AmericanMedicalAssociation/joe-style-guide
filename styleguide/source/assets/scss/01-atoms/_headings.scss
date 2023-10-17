@@ -72,6 +72,7 @@ h6,
     // Using clamp calculator to generate these values
     // https://royalfig.github.io/fluid-typography-calculator/
     font-size: clamp(2.75rem, 1.696rem + 4.680vw, 5.5rem);
+    line-height: 1;
   }
 
   h2 {

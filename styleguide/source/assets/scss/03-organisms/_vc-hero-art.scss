@@ -53,6 +53,10 @@
   }
 
   picture {
+    @include breakpoint($bp-large) {
+      display: block;
+    }
+
     .vc-hero-art--full & {
       @include breakpoint($bp-large) {
         display: flex;
@@ -272,6 +276,7 @@
   max-width: 25rem;
   background-color: var(--c-hero-bg);
   border: 1px solid var(--c-hero-text);
+  text-align: left;
   color: var(--c-hero-text);
   padding: 0.5rem 1rem;
 
