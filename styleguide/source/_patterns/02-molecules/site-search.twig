@@ -1,4 +1,9 @@
 <form class="joe__site-search" id="site-search-form">
+  {% set label = search_label %}
+  {% if search_label.text %}
+    {% include "@atoms/label.twig" %}
+  {% endif %}
+
   {% for search_input in search_inputs %}
     {% set input = search_input %}
     {% include "@atoms/input.twig" %}

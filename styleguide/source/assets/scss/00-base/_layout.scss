@@ -31,6 +31,17 @@
   }
 }
 
+.vc-container--tight {
+  --container-width: #{$vc-max-width-tight};
+  --container-padding: 2rem;
+  width: #{'min(100% - var(--container-padding), var(--container-width))'};
+  margin: 0 auto;
+
+  @include breakpoint($bp-med) {
+    --container-padding: 4rem;
+  }
+}
+
 // Set the default grid gap
 $gap: 2em;
 $row-gap: $gap;

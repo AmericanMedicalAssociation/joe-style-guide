@@ -1,0 +1,61 @@
+<header class="vc-header">
+  <div class="vc-header__container container">
+    {% set wordmark = header_wordmark %}
+    {% include "@molecules/wordmark.twig" %}
+    <div class="vc-header__actions">
+      <div class="vc-header__nav">
+        <button aria-expanded="false" class="vc-header__action-button" id="vc-header__nav-button" type="button">
+          <span class="visually-hidden">Global Menu</span>
+          <span class="vc-header-nav__open">
+            {% include "@base/icons/icon-hamburger.svg" %}
+          </span>
+          <span class="vc-header-nav__close">
+            {% include "@base/icons/icon-close.svg" %}
+          </span>
+        </button>
+        <div hidden id="vc-header-nav">
+          <div class="vc-header-nav__container">
+            <div class="vc-header-nav__nav-primary">
+              {% include "@molecules/primary-nav.twig" %}
+            </div>
+            <div class="vc-header-nav__nav-utility">
+              <nav class="joe__utility-nav">
+                <ul class="joe__utility-nav__list">
+                  {% for item in utility_navs %}
+                    <li class="joe__utility-nav__item">
+                      <a class="joe__utility-nav__link" href="{{ item.href }}">
+                        <span class="visually-hidden">{{ item.text }}</span>
+                        {% include "@base/icons/icon-" ~ item.icon ~ ".svg" %}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="vc-header__close-dropdown">
+            <button class="vc-header__close-button element-focusable" name="button" type="button">Close Navigation Dropdown</button>
+          </div>
+        </div>
+      </div>
+      <div class="vc-header__search">
+        <button aria-expanded="false" class="vc-header__action-button" id="vc-header__search-button" type="button">
+          <span class="visually-hidden">Global Search</span>
+          <span class="vc-header-nav__open">
+            {% include "@base/icons/icon-search.svg" %}
+          </span>
+          <span class="vc-header-nav__close">
+            {% include "@base/icons/icon-close.svg" %}
+          </span>
+        </button>
+        <div hidden id="vc-header__search">
+          <h2 class="vc-header__search-heading">Search AMA Journal of Ethics</h2>
+          {% include "@molecules/site-search.twig" %}
+          <div class="vc-header__close-dropdown">
+            <button class="vc-header__close-button element-focusable" name="button" type="button">Close Search Dropdown</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -2,7 +2,56 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes topDown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes bottomUp {
+  from {
+    height: 100vh;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+@keyframes dropdownOpen {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes dropdownClose {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    transform: translateY(-30vh);
+    opacity: 0;
+    visibility: hidden;
   }
 }
