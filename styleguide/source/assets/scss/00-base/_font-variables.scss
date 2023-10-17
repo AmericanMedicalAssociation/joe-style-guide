@@ -1,12 +1,14 @@
 // AMA Fonts
 $museo-slab: "museo-slab", Georgia, Times, "Times New Roman", serif;
 $franklin-gothic: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$franklin-gothic-comp: "franklin-gothic-urw-comp", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 
 $font: $franklin-gothic;
 $font-secondary: $museo-slab;
 
 // Font family variables
 $font-sans-serif: $franklin-gothic;
+$font-sans-serif-comp: $franklin-gothic-comp;
 $font-serif: $museo-slab;
 
 // Font weight variables
@@ -21,5 +23,3 @@ $base-line-height: 25px;
 $base-font-family: $font-sans-serif;
 $base-font-weight: $font-weight-medium;
 $base-font-multiplier: 1;
-
-
