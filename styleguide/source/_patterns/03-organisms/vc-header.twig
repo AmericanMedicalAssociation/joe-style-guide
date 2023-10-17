@@ -14,7 +14,7 @@
           </span>
         </button>
         <div hidden id="vc-header-nav">
-          <div class="vc-container--tight vc-header-nav__container">
+          <div class="vc-header-nav__container">
             <div class="vc-header-nav__nav-primary">
               {% include "@molecules/primary-nav.twig" %}
             </div>
@@ -49,10 +49,8 @@
           </span>
         </button>
         <div hidden id="vc-header__search">
-          <div class="vc-container--tight">
-            <h2 class="vc-header__search-heading">Search AMA Journal of Ethics</h2>
-            {% include "@molecules/site-search.twig" %}
-          </div>
+          <h2 class="vc-header__search-heading">Search AMA Journal of Ethics</h2>
+          {% include "@molecules/site-search.twig" %}
           <div class="vc-header__close-dropdown">
             <button class="vc-header__close-button element-focusable" name="button" type="button">Close Search Dropdown</button>
           </div>
