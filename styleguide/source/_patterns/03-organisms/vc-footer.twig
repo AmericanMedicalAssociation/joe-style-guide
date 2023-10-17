@@ -1,0 +1,18 @@
+<footer class="joe__footer">
+  <div class="container">
+    <div class="joe__layout--66-33">
+      <div class="joe__col-66">
+        {% set wordmark = footer_wordmark %}
+        {% include "@molecules/wordmark.twig" %}
+        {% include "@molecules/footer-nav.twig" %}
+      </div>
+      <div class="joe__col-33">
+        <a class="joe__footer-brand" href="{{ footer_logo.link }}">
+          <span class="visually-hidden">AMA Journal of Ethics</span>
+          {% include "@base/icons/ama-logo.svg" %}
+        </a>
+      </div>
+    </div>
+    {% include "@atoms/copyright.twig" %}
+  </div>
+</footer>
