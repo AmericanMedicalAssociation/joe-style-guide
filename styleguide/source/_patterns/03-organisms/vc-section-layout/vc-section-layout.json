@@ -1,0 +1,9 @@
+{
+  "htmlClass": "vc-art",
+  "section_fullwidth": true,
+  "section_type": {
+    "placeholder": {
+      "text": "Full-width Section"
+    }
+  }
+}

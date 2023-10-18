@@ -1,0 +1,11 @@
+{
+  "htmlClass": "vc-art",
+  "section_fullwidth": false,
+  "section_centered": true,
+  "section_type": {
+    "placeholder": {
+      "text": "Centered Section"
+    }
+  },
+  "section_heading": "Optional Heading"
+}
