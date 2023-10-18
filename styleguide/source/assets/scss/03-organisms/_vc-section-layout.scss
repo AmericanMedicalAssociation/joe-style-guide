@@ -1,0 +1,17 @@
+.vc-section__item {
+  @include breakpoint($bp-med) {
+    grid-column: span 6;
+  }
+}
+
+.vc-section__item--major {
+  @include breakpoint($bp-med) {
+    grid-column: span 7;
+  }
+}
+
+.vc-section__item--minor {
+  @include breakpoint($bp-med) {
+    grid-column: span 5;
+  }
+}
