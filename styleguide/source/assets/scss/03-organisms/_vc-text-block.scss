@@ -7,3 +7,11 @@
     }
   }
 }
+
+:root[class*='vc-'] {
+
+  // Remove the top margin from first element in content area
+  .vc-text-block>*:first-child {
+    margin-block-start: 0;
+  }
+}
