@@ -2,7 +2,7 @@
   "htmlClass": "vc-art",
   "card": {
     "image": {
-      "src": "https://placehold.co/600x400",
+      "src": "https://placehold.co/400x250",
       "alt": "Alt text"
     },
     "title": "Continuing Medical Education",
