@@ -1,0 +1,13 @@
+:root[class*='vc-'] {
+  .vc-featured-audio__heading {
+    margin-block-start: 0;
+  }
+}
+
+.vc-featured-audio__footer {
+  @include type($font-sans-serif, 0.8em, $font-weight-medium, 1.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+}
