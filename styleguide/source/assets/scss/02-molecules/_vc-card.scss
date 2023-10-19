@@ -1,0 +1,28 @@
+.vc-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--c-text);
+  padding: 1rem;
+  max-width: 70ch;
+}
+
+.vc-card__image {
+  margin: -1rem -1rem 1rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+:root[class*='vc-'] {
+  .vc-card__title {
+    margin-block-start: 0;
+  }
+}
+
+.vc-card__desc {
+  flex-grow: 1;
+  font-size: 0.9em;
+}
