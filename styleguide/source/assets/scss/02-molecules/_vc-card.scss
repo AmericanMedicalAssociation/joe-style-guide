@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--c-text);
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
   max-width: 70ch;
 }
 
 .vc-card__image {
-  margin: -1rem -1rem 1rem;
+  margin: -1rem -1rem 1.5rem;
 
   img {
     display: block;
@@ -18,7 +18,7 @@
 
 :root[class*='vc-'] {
   .vc-card__title {
-    margin-block-start: 0;
+    margin-block-start: 0.5rem;
   }
 }
 
