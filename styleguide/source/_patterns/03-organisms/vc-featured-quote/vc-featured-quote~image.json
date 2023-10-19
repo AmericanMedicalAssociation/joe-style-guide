@@ -1,5 +1,6 @@
 {
   "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #393939; --c-text: #fff;",
   "featured_quote": {
     "image": {
       "src": "https://placehold.co/370x370",
