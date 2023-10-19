@@ -1,0 +1,26 @@
+<div class="vc-featured-audio">
+  <header class="vc-featured-audio__header">
+    <h2 class="vc-featured-audio__heading">{{ featured_audio.title }}</h2>
+    {% if featured_audio.description %}
+      <div class="vc-featured-audio__description">
+        {{ featured_audio.description|raw }}
+      </div>
+    {% endif %}
+  </header>
+  <div class="vc-featured-audio__container clearfix">
+    {% set audio = featured_audio %}
+    {% include "@atoms/audio-player.twig" %}
+  </div>
+  <footer class="vc-featured-audio__footer">
+    {% if featured_audio.transcript_download %}
+      <a class="vc-featured-audio__download" href="{{ featured_audio.transcript_download }}">Download Transcript</a>
+    {% endif %}
+    {% if featured_audio.copyright %}
+      <span class="vc-featured-audio__copyright">
+        {{ featured_audio.copyright }}
+      </span>
+    {% endif %}
+  </footer>
+  {# TODO Reaction component here #}
+  <span>Reaction</span>
+</div>
