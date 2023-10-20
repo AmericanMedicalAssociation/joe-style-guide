@@ -30,3 +30,18 @@
 .joe__references__journal-title {
   font-style: italic;
 }
+
+:root[class*='vc-'] {
+  .joe__references {
+    // temp bg
+    background-color: var(--c-footer-bg);
+    border-top: 0;
+    color: var(--c-footer-text);
+    padding: 0;
+    margin: 0 0 3rem;
+
+    a {
+      color: var(--c-footer-link);
+    }
+  }
+}
