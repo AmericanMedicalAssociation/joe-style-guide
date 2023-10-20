@@ -7,7 +7,7 @@
 }
 
 :root[class*='vc-'] {
-  .joe__title-label {
+  .joe__title-label--vc {
     @include type($font-serif, 0.9em, $font-weight-medium, 1.25);
     background-color: var(--c-footer-text);
     color: var(--c-footer-bg);
