@@ -1,0 +1,15 @@
+<div class="vc-rule-slide">
+  <div class="vc-rule-slide__slider beer-slider">
+    {{ slide_rule.image_before|raw }}
+    <div class="beer-reveal">
+      {{ slide_rule.image_after|raw }}
+    </div>
+  </div>
+  {% if slide_rule.figure_text %}
+    <div class="vc-container--tight vc-rule-slide__container">
+      <div class="vc-rule-slide__caption">
+        {{ slide_rule.caption|raw }}
+      </div>
+    </div>
+  {% endif %}
+</div>
