@@ -29,6 +29,12 @@
   @include breakpoint($bp-med) {
     --container-padding: 4rem;
   }
+
+  .container {
+    max-width: unset;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .vc-container--tight {
