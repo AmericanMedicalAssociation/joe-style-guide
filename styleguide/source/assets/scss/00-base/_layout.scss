@@ -29,6 +29,11 @@
   @include breakpoint($bp-med) {
     --container-padding: 4rem;
   }
+
+  // Remove padding when containers are nested
+  .vc-container {
+    --container-padding: 0;
+  }
 }
 
 .vc-container--tight {
