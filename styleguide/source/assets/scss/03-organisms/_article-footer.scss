@@ -21,16 +21,17 @@
 
 :root[class*='vc-'] {
   .joe__article-footer {
+    max-width: 1000px;
     background-color: rgba($black, 0.1);
     color: var(--c-footer-text);
 
-    >*:first-child {
+    >.joe__title-label:first-child {
       margin-block-start: 0;
     }
 
     .joe__title-label {
       @include type($font-sans-serif, 0.875em, $font-weight-bold, 1.25);
-      margin-block-end: 0.25rem;
+      margin-block: 2rem 0.25rem;
     }
   }
 }

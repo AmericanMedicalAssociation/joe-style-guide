@@ -44,12 +44,11 @@
 
 :root[class*='vc-'] {
   .joe__article-issue-footer {
-    // temp bg
-    background-color: var(--c-footer-bg);
+    background-color: unset;
     color: var(--c-footer-text);
     text-align: left;
     padding: 0;
-    margin: 0 0 3rem;
+    margin: 0 0 5rem;
 
     a {
       color: var(--c-footer-link);

@@ -33,8 +33,7 @@
 
 :root[class*='vc-'] {
   .joe__references {
-    // temp bg
-    background-color: var(--c-footer-bg);
+    max-width: 1000px;
     border-top: 0;
     color: var(--c-footer-text);
     padding: 0;
