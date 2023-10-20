@@ -11,6 +11,8 @@
     {% if article_authors %}
       {% include "@molecules/author-information.twig" %}
     {% endif %}
-    {% include "@organisms/article-issue-footer.twig" %}
+    {% if issue %}
+      {% include "@organisms/article-issue-footer.twig" %}
+    {% endif %}
   </div>
 </div>
