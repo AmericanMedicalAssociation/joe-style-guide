@@ -17,7 +17,7 @@
           new BeerSlider(this, options);
         });
       };
-      $('.vc-rule-slide__slider').each(function (index, el) {
+      $('.vc-slide-rule__slider').each(function (index, el) {
         $(el).BeerSlider()
       });
     }
