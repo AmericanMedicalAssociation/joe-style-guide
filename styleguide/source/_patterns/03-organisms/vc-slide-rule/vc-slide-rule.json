@@ -1,0 +1,8 @@
+{
+  "htmlClass": "vc-ethics",
+  "slide_rule": {
+    "image_before": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
+    "image_after": "<img srcset='https://placehold.co/640x360/000000/FFFFFF.png  640w, https://placehold.co/1280x720/000000/FFFFFF.png  1280w, https://placehold.co/2560x1440/000000/FFFFFF.png 2560w' sizes='100vw' src='https://placehold.co/600x400/000000/FFFFFF.png' alt='Alt text'>",
+    "caption": "<p>Despite its idealized representation of doctoring or likely because of it, The Doctor struck a resonant chord with the public and profession alike. An engraved print of the painting sold more than 1 million copies in the United States. \"A library of books written in your honour would not do what this picture has done and will do for the medical profession in making the hearts of our fellow men warm to us with confidence and affection,\" wrote a physician critic in 1892.7</p>"
+  }
+}
