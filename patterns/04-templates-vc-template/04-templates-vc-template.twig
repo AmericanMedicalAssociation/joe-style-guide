@@ -1,0 +1,17 @@
+{% include '@atoms/skip-nav.twig' %}
+
+{% block header %}
+  {% include "@organisms/vc-header/vc-header.twig" %}
+{% endblock %}
+<main id="main-content" role="main">
+  <article class="vc-article">
+    {% block pageContent %}
+      {% set placeholder = offset_center.page_content.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+  </article>
+</main>
+
+{% block footer %}
+  {% include "@organisms/vc-footer/vc-footer.twig" %}
+{% endblock %}</div>

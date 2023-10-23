@@ -1,0 +1,59 @@
+{#
+  Adjustable color variables
+  --c-bg
+  --c-text
+  --c-hero-bg
+  --c-hero-title
+  --c-hero-text
+  --c-button-bg
+  --c-button-bg-hover
+  --c-button-text
+#}
+
+<header class="vc-hero-art {{ hero.modifier_class|default('vc-hero-art--text-left vc-hero-art--not-full') }}">
+  <div class="vc-hero-art__image">
+    <picture>
+      {% if 'vc-hero-art--not-full' in hero.modifier_class %}
+        <source srcset="{{ hero.image_large }}" media="(min-width: 75em)"/>
+      {% else %}
+        <source srcset="{{ hero.image_large }}" media="(min-width: 75em)"/>
+      {% endif %}
+      <source srcset="{{ hero.image_medium }}" media="(min-width: 56.25em)"/>
+      <img src="{{ hero.image_small }}" alt="Alt text"/>
+    </picture>
+  </div>
+  <div class="vc-container vc-grid">
+    <div class="vc-hero-art__flag">
+      <span class="vc-hero-art__flag-type">Art of Medicine</span>
+      <a class="vc-hero-art__flag-date" href="{{ hero.issue_href }}">{{ hero.issue_date }}</a>
+    </div>
+    <div class="vc-hero-art__content">
+      <div class="vc-hero-art__content-bg">
+        {% include "@base/icons/bg-hero-content-art.svg" %}
+      </div>
+      <div class="vc-hero-art__content-body">
+        <h1 class="vc-hero-art__title">{{ hero.page_title }}</h1>
+        <span class="vc-hero-art__byline">{{ hero.author }}</span>
+      </div>
+      <div class="vc-hero-art__tools vc-hero__tools">
+        <div class="vc-hero-art__tool vc-hero__tool">
+          <button class="vc-hero-art__tool-button vc-hero__tool-button" type="button" aria-expanded="false">Citation</button>
+          <div class="vc-hero-art__tool-content vc-hero__tool-content" hidden>
+            {{ hero.citation|raw }}
+          </div>
+        </div>
+        <div class="vc-hero-art__tool">
+          <a class="button vc-hero-art__tool-button" href="{{ hero.pdf_href }}">PDF</a>
+        </div>
+        <div class="vc-hero-art__tool">
+          <a class="button vc-hero-art__tool-button" href="{{ hero.altmetric_href }}">Altmetric</a>
+        </div>
+        {% if hero.cme_href %}
+          <div class="vc-hero-art__tool">
+            <a class="button vc-hero-art__tool-button" href="{{ hero.cme_href }}">CME</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>
