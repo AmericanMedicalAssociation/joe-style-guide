@@ -2,7 +2,8 @@
   "htmlClass": "vc-ethics",
   "theme_mode": "dark",
   "hero": {
-    "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, ../../assets/images/vc/bg-hero-art-1--medium.jpg 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
+    "less_opacity": false,
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics--large.jpg' alt='Alt text'>",
     "issue_date": "May 2023",
     "issue_href": "/",
     "page_title": "What Is Represented “Worthily” in Luke Fildes’ The Doctor? ",
