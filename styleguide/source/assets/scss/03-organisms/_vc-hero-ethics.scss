@@ -218,3 +218,38 @@
     margin-left: -9px;
   }
 }
+
+.vc-hero-ethics__vertical-label {
+  display: none;
+
+  @include breakpoint($bp-large) {
+    display: block;
+    position: absolute;
+    bottom: 20rem;
+    left: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -13rem;
+      transform: translateY(-50%);
+      background-image: url('../images/vc/icon-scroll-arrow.svg');
+      background-position: left center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 12rem;
+      height: 1rem;
+    }
+  }
+}
+
+:root.vc-ethics[data-theme='light'] {
+  .vc-hero-ethics__vertical-label::before {
+    filter: brightness(0%);
+  }
+}
