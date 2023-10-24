@@ -2,9 +2,9 @@
   "htmlClass": "vc-art",
   "htmlStyle": "",
   "hero": {
-    "image_small": "/assets/images/vc/bg-hero-art-1--small.jpg",
-    "image_medium": "/assets/images/vc/bg-hero-art-1--medium.jpg",
-    "image_large": "/assets/images/vc/bg-hero-art-1--large.jpg",
+    "image_small": "../../assets/images/vc/bg-hero-art-1--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-1--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-1--large.jpg",
     "issue_date": "May 2023",
     "issue_href": "/",
     "page_title": "Greener Health Care Is a Necessity",
