@@ -43,7 +43,8 @@ $white: #ffffff;
 // Ethics Close Up `vc-ethics` variables - Dark mode `Default`
 :root.vc-ethics,
 :root.vc-ethics[data-theme='dark'] {
-  --c-bg: #24282D;
+  --c-bg-rgb: 36, 40, 45;
+  --c-bg: rgb(var(--c-bg-rgb));
   --c-text: #fff;
   --c-link: var(--c-text);
   --c-button-bg: #191B1D;
@@ -58,7 +59,8 @@ $white: #ffffff;
 
 // Ethics Close Up `vc-ethics` variables - Light mode
 :root.vc-ethics[data-theme='light'] {
-  --c-bg: #ECECEC;
+  --c-bg-rgb: 236, 236, 236;
+  --c-bg: rgb(var(--c-bg-rgb));
   --c-text: #171A1D;
   --c-link: var(--c-text);
   --c-button-bg: #fff;
