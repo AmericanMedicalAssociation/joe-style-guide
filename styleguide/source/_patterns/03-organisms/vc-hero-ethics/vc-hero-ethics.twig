@@ -1,0 +1,46 @@
+<header class="vc-hero-ethics">
+  <div class="vc-hero-ethics__image">
+    {{ hero.image|raw }}
+  </div>
+  <div class="vc-container vc-hero-ethics__container clearfix">
+    <div class="vc-hero-ethics__shape"></div>
+    <div class="vc-hero-ethics__flag">
+      <span class="vc-hero-ethics__flag-type">Ethics Close Up</span>
+      <a class="vc-hero-ethics__flag-date" href="{{ hero.issue_href }}">{{ hero.issue_date }}</a>
+    </div>
+    <div class="vc-hero-ethics__content">
+      <div class="vc-hero-ethics__content-body">
+        <h1 class="vc-hero-ethics__title">{{ hero.page_title }}</h1>
+        <span class="vc-hero-ethics__byline">{{ hero.author }}</span>
+      </div>
+      <div class="vc-hero-ethics__tools vc-hero__tools">
+        <div class="vc-hero-ethics__tool vc-hero__tool">
+          <button class="vc-hero-ethics__tool-button vc-hero__tool-button" type="button" aria-expanded="false">Citation</button>
+          <div class="vc-hero-ethics__tool-content vc-hero__tool-content" hidden>
+            {{ hero.citation|raw }}
+          </div>
+        </div>
+        <div class="vc-hero-ethics__tool">
+          <a class="button vc-hero-ethics__tool-button" href="{{ hero.pdf_href }}">PDF</a>
+        </div>
+        <div class="vc-hero-ethics__tool">
+          <a class="button vc-hero-ethics__tool-button" href="{{ hero.altmetric_href }}">Altmetric</a>
+        </div>
+        {% if hero.cme_href %}
+          <div class="vc-hero-ethics__tool">
+            <a class="button vc-hero-ethics__tool-button" href="{{ hero.cme_href }}">CME</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="vc-container">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget arcu nec nibh tincidunt ultrices vel id augue. Nulla bibendum tortor sed est hendrerit ullamcorper. Vivamus elit justo, facilisis non tortor at, congue vulputate nibh. Proin convallis dolor a massa congue, vel porta felis tincidunt. Integer id nunc sed mi sagittis vestibulum. Nulla facilisi. Suspendisse eu volutpat enim, non egestas metus. Aenean tempor libero dolor, vel faucibus diam elementum ac. Sed ante lectus, interdum ac scelerisque eget, eleifend et felis. Nunc in pharetra orci. Proin venenatis tellus nisi, a lacinia tortor feugiat id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet rutrum mi. Donec nec elit at libero efficitur malesuada.
+  </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget arcu nec nibh tincidunt ultrices vel id augue. Nulla bibendum tortor sed est hendrerit ullamcorper. Vivamus elit justo, facilisis non tortor at, congue vulputate nibh. Proin convallis dolor a massa congue, vel porta felis tincidunt. Integer id nunc sed mi sagittis vestibulum. Nulla facilisi. Suspendisse eu volutpat enim, non egestas metus. Aenean tempor libero dolor, vel faucibus diam elementum ac. Sed ante lectus, interdum ac scelerisque eget, eleifend et felis. Nunc in pharetra orci. Proin venenatis tellus nisi, a lacinia tortor feugiat id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet rutrum mi. Donec nec elit at libero efficitur malesuada.
+  </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget arcu nec nibh tincidunt ultrices vel id augue. Nulla bibendum tortor sed est hendrerit ullamcorper. Vivamus elit justo, facilisis non tortor at, congue vulputate nibh. Proin convallis dolor a massa congue, vel porta felis tincidunt. Integer id nunc sed mi sagittis vestibulum. Nulla facilisi. Suspendisse eu volutpat enim, non egestas metus. Aenean tempor libero dolor, vel faucibus diam elementum ac. Sed ante lectus, interdum ac scelerisque eget, eleifend et felis. Nunc in pharetra orci. Proin venenatis tellus nisi, a lacinia tortor feugiat id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet rutrum mi. Donec nec elit at libero efficitur malesuada.
+  </p>
+</div>

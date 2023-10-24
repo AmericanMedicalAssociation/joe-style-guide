@@ -1,0 +1,15 @@
+{
+  "htmlClass": "vc-ethics",
+  "theme_mode": "dark",
+  "hero": {
+    "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, ../../assets/images/vc/bg-hero-art-1--medium.jpg 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "What Is Represented “Worthily” in Luke Fildes’ The Doctor? ",
+    "author": "Audiey C. Kao, MD, PhD",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/",
+    "cme_href": "/"
+  }
+}
