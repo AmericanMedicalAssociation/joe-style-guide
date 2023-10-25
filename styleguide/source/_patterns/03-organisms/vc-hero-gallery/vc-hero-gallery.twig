@@ -1,0 +1,14 @@
+<header class="vc-hero-gallery">
+  <div class="vc-container--tight">
+    <div class="vc-hero-gallery__flag">
+      <span class="vc-hero-gallery__flag-type">Art Exhibition</span>
+    </div>
+    <div class="vc-hero-gallery__content">
+      <div class="vc-hero-gallery__content-body">
+        <h1 class="vc-hero-gallery__title {% if hero.has_mask == true %}vc-hero-gallery__title--masked{% endif %}">{{ hero.page_title }}</h1>
+        <div class="vc-hero-gallery__desc">{{ hero.description|raw }}</div>
+      </div>
+      [Slides]
+    </div>
+  </div>
+</header>
