@@ -8,7 +8,18 @@
         <h1 class="vc-hero-gallery__title {% if hero.has_mask == true %}vc-hero-gallery__title--masked{% endif %}">{{ hero.page_title }}</h1>
         <div class="vc-hero-gallery__desc">{{ hero.description|raw }}</div>
       </div>
-      [Slides]
     </div>
+  </div>
+  <div class="vc-hero-gallery__nav">
+    {% for item in hero.gallery_nav %}
+      <a class="vc-hero-gallery__anchor" href="{{ item.href }}">
+        {% set image = item.image %}
+        {% include "@atoms/image.twig" %}
+        <h2 class="vc-hero-gallery__anchor-label">{{ item.title }}</h2>
+      </a>
+    {% endfor %}
+  </div>
+  <div class="vc-hero-gallery__nav-controls">
+    <span class="vc-hero-gallery__nav-label">Exhibition Galleries</span>
   </div>
 </header>
