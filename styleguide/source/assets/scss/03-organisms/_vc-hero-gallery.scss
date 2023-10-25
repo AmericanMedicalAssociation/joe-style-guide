@@ -1,0 +1,48 @@
+.vc-hero-gallery {
+  --top-padding: 8rem;
+  --bottom-padding: 8rem;
+  padding-block: var(--top-padding) var(--bottom-padding);
+
+  @include breakpoint($bp-large) {
+    --top-padding: 10rem;
+  }
+}
+
+.vc-hero-gallery__content-body {
+  text-align: center;
+}
+
+.vc-hero-gallery__flag {
+  text-align: center;
+}
+
+.vc-hero-gallery__flag-type {
+  @include type($font-serif, 1em, $font-weight-bold, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-inline-end: 2rem;
+}
+
+:root.vc-gallery {
+  .vc-hero-gallery__title {
+    text-wrap: balance;
+    margin-block-start: 1rem;
+  }
+
+  .vc-hero-gallery__title--masked {
+    background-image: var(--hero-gallery-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.vc-hero-gallery__desc {
+  text-wrap: balance;
+
+  @include breakpoint($bp-large) {
+    font-size: 1.2em;
+  }
+}
