@@ -1,0 +1,16 @@
+{
+  "htmlClass": "vc-art",
+  "layout_fullwidth": false,
+  "layout_equal_col": true,
+  "layout_heading": "Equal Col Heading - Optional",
+  "layout_first": {
+    "placeholder": {
+      "text": "First Region"
+    }
+  },
+  "layout_second": {
+    "placeholder": {
+      "text": "Second Region"
+    }
+  }
+}

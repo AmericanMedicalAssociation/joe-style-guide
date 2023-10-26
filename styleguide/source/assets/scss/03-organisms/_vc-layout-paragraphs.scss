@@ -1,0 +1,145 @@
+:root[class*='vc-'] {
+  .c-field__content {
+    --layout-padding: 3rem;
+    padding-block: var(--layout-padding);
+
+    @include breakpoint($bp-med) {
+      --layout-padding: 6rem;
+    }
+  }
+
+  .layout {
+    @include basegrid();
+
+    @include breakpoint($bp-large) {
+      grid-row-gap: $row-gap;
+    }
+  }
+
+  .layout__heading {
+    margin-block: 0;
+  }
+
+  // ONE COLUMN - CENTERED
+  .layout--onecol-centered {
+    @extend .vc-container--tight;
+
+    .layout__region {
+      border: 0;
+      width: auto;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+
+      >.layout__region--top,
+      >.layout__region--bottom {
+        grid-column: span 12;
+        margin: 0;
+      }
+    }
+  }
+
+  // ONE COLUMN - FULL WIDTH
+  .layout--onecol-fullwidth {
+    .layout__region {
+      border: 0;
+    }
+
+    >.layout__region--top {
+      @extend .vc-container;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+      }
+
+      >.layout__region--bottom {
+        grid-column: span 12;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - EQUAL
+  .layout--twocol-equal {
+    @extend .vc-container;
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 6;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 6;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - LARGER LEFT COL
+  .layout--twocol-larger-left-col {
+    @extend .vc-container;
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 7;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 5;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - LARGER RIGHT COL
+  .layout--twocol-larger-right-col {
+    @extend .vc-container;
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      .layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 5;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 7;
+        margin: 0;
+      }
+    }
+  }
+}
