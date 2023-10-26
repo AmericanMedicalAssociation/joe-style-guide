@@ -1,0 +1,20 @@
+<div class="vc-cards">
+  <div class="vc-container">
+    <header class="vc-cards__header">
+      <h2 class="vc-cards__heading">{{ cards.title }}</h2>
+      {% if cards.description %}
+        <div class="vc-cards__desc">
+          {{ cards.description|raw }}
+        </div>
+      {% endif %}
+      {% if cards.link %}
+        <a class="vc-cards__link" href="{{ cards.href }}">{{ cards.link }}</a>
+      {% endif %}
+    </header>
+    <div class="vc-cards__content">
+      {% for card in card_group %}
+        {% include "@molecules/vc-card/vc-card.twig" %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

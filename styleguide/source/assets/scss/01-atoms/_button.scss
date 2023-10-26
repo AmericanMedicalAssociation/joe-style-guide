@@ -62,8 +62,11 @@ button {
 
 // Visual Contnet button styles
 :root[class*='vc-'] {
-  button {
+
+  button,
+  a.button {
     @include type($font-sans-serif, 0.75em, $font-weight-bold, 1.25);
+    display: inline-block;
     transition: all 0.3s ease;
     background: var(--c-button-bg);
     color: var(--c-button-text);
@@ -92,7 +95,9 @@ button {
 }
 
 :root.vc-ethics {
-  button {
+
+  button,
+  a.button {
     padding: 15px 65px;
   }
 }

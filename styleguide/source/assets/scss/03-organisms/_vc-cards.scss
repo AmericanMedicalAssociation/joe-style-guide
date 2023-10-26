@@ -1,0 +1,27 @@
+:root[class*='vc-'] {
+  .vc-cards__heading {
+    margin-block-start: 0;
+  }
+}
+
+.vc-cards__header {
+  margin-block-end: 3rem;
+}
+
+.vc-cards__desc {
+  max-width: 80ch;
+}
+
+.vc-cards__content {
+  @include basegrid($bp: $bp-small);
+
+  .vc-card {
+    @include breakpoint($bp-small) {
+      grid-column: span 6;
+    }
+
+    @include breakpoint($bp-med) {
+      grid-column: span 4;
+    }
+  }
+}
