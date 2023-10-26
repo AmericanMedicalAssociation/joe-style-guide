@@ -2,7 +2,9 @@
   <div class="c-paragraph c-paragraph--type-one-column-full-width c-paragraph--view-mode-default">
     <div class="layout layout--onecol-fullwidth">
       <div class="layout__region layout__region--top">
-        <h2 class="layout__heading">{{ layout_heading }}</h2>
+        {% if layout_heading %}
+          <h2 class="layout__heading">{{ layout_heading }}</h2>
+        {% endif %}
       </div>
       <div class="layout__region layout__region--bottom">
         {% block layout_bottom %}
@@ -15,11 +17,11 @@
 {% elseif layout_centered %}
   <div class="c-paragraph c-paragraph--type-one-column-centered c-paragraph--view-mode-default">
     <div class="layout layout--onecol-centered">
-      {% if layout_heading %}
-        <div class="layout__region layout__region--top">
+      <div class="layout__region layout__region--top">
+        {% if layout_heading %}
           <h2 class="layout__heading">{{ layout_heading }}</h2>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
       <div class="layout__region layout__region--bottom">
         {{ block('layout_bottom') }}
       </div>
@@ -28,11 +30,11 @@
 {% elseif layout_equal_col %}
   <div class="c-paragraph c-paragraph--type-two-columns-equal c-paragraph--view-mode-default">
     <div class="layout layout--twocol-equal">
-      {% if layout_heading %}
-        <div class="layout__region layout__region--top">
+      <div class="layout__region layout__region--top">
+        {% if layout_heading %}
           <h2 class="layout__heading">{{ layout_heading }}</h2>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
       <div class="layout__region layout__region--first">
         {% block layout_first %}
           {% set placeholder = layout_first.placeholder %}
@@ -50,11 +52,11 @@
 {% elseif layout_larger_left_col %}
   <div class="c-paragraph c-paragraph--type-two-columns-larger-left-column c-paragraph--view-mode-default">
     <div class="layout layout--twocol-larger-left-col">
-      {% if layout_heading %}
-        <div class="layout__region layout__region--top">
+      <div class="layout__region layout__region--top">
+        {% if layout_heading %}
           <h2 class="layout__heading">{{ layout_heading }}</h2>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
       <div class="layout__region layout__region--first">
         {{ block('layout_first') }}
       </div>
@@ -66,11 +68,11 @@
 {% elseif layout_larger_right_col %}
   <div class="c-paragraph c-paragraph--type-two-columns-larger-right-column c-paragraph--view-mode-default">
     <div class="layout layout--twocol-larger-right-col">
-      {% if layout_heading %}
-        <div class="layout__region layout__region--top">
+      <div class="layout__region layout__region--top">
+        {% if layout_heading %}
           <h2 class="layout__heading">{{ layout_heading }}</h2>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
       <div class="layout__region layout__region--first">
         {{ block('layout_first') }}
       </div>

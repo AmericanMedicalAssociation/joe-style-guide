@@ -16,6 +16,11 @@
     }
   }
 
+  // Hide top `layout__region--top` if no heading
+  .layout__region--top:not(:has(.layout__heading)) {
+    display: none;
+  }
+
   .layout__heading {
     margin-block: 0;
   }
