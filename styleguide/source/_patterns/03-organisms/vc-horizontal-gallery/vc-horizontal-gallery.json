@@ -1,0 +1,38 @@
+{
+  "htmlClass": "vc-gallery",
+  "gallery": {
+    "title": "Anthony and the Role of Silence in Portraiture in Clinical Settings",
+    "description": "<p>This article describes one collaborative arts-based research project. Portrait artist Mark Gilbert and coinvestigators consider lessons for art and healing from one patient, Anthony, whose experience of head and neck cancer diagnosis, surgery, and recovery suggests how silence is ethically, artistically, and clinically significant.</p>",
+    "control_label": "Gallery Artworks"
+  },
+  "gallery_items": [
+    {
+      "label": "Detail portrait, by Mark Gilbert, 2018",
+      "image": {
+        "src": "https://placehold.co/550x500",
+        "alt": "All text"
+      }
+    },
+    {
+      "label": "Kathryn, by Mark Gilbert, 2019",
+      "image": {
+        "src": "https://placehold.co/550x500",
+        "alt": "All text"
+      }
+    },
+    {
+      "label": "Detail portrait, by Mark Gilbert, 2017",
+      "image": {
+        "src": "https://placehold.co/550x500",
+        "alt": "All text"
+      }
+    },
+    {
+      "label": "Anthony (Before Surgery), Mark Gilbert 2008",
+      "image": {
+        "src": "https://placehold.co/550x500",
+        "alt": "All text"
+      }
+    }
+  ]
+}

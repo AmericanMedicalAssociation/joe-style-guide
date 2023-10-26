@@ -1,0 +1,28 @@
+<div class="vc-horizontal-gallery">
+  {% if gallery.title or gallery.description %}
+    <div class="vc-container--tight">
+      <header class="vc-horizontal-gallery__header">
+        <h2 class="vc-horizontal-gallery__heading">{{ gallery.title }}</h2>
+        {% if gallery.description %}
+          <div class="vc-horizontal-gallery__desc">
+            {{ gallery.description|raw }}
+          </div>
+        {% endif %}
+      </header>
+    </div>
+  {% endif %}
+  <div class="vc-horizontal-gallery__items">
+    {% for item in gallery_items %}
+      <span class="vc-horizontal-gallery__artwork" role="button">
+        {% set image = item.image %}
+        {% include "@atoms/image.twig" %}
+        {% if item.label %}
+          <span class="vc-horizontal-gallery__artwork-label">{{ item.label }}</span>
+        {% endif %}
+      </span>
+    {% endfor %}
+  </div>
+  <div class="vc-horizontal-gallery__controls">
+    <span class="vc-horizontal-gallery__controls-label">{{ gallery.control_label }}</span>
+  </div>
+</div>
