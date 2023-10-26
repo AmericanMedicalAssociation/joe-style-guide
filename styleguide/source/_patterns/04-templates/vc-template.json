@@ -1,5 +1,4 @@
 {
-  "htmlClass": "vc-art",
   "htmlClass": "vc-ethics",
   "theme_mode": "dark",
   "header_wordmark": {
@@ -113,11 +112,14 @@
     }
   ],
   "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980",
-  "offset_center": {
-    "page_content": {
-      "placeholder": {
-        "text": "Page content placeholder"
-      }
+  "page_header": {
+    "placeholder": {
+      "text": "Page header placeholder"
+    }
+  },
+  "page_content": {
+    "placeholder": {
+      "text": "Page content placeholder"
     }
   }
 }

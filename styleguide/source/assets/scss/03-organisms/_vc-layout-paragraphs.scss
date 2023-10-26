@@ -1,10 +1,10 @@
 :root[class*='vc-'] {
-  .c-field__content {
-    --layout-padding: 3rem;
-    padding-block: var(--layout-padding);
+  .c-paragraph {
+    --layout-margin: 3rem;
+    margin-block: var(--layout-margin);
 
     @include breakpoint($bp-med) {
-      --layout-padding: 6rem;
+      --layout-margin: 6rem;
     }
   }
 
