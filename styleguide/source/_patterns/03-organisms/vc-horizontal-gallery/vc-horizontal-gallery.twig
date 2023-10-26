@@ -8,12 +8,17 @@
             {{ gallery.description|raw }}
           </div>
         {% endif %}
+        {% if gallery.label %}
+          <div class="vc-horizontal-gallery__gallery-label">
+            {{ gallery.label|raw }}
+          </div>
+        {% endif %}
       </header>
     </div>
   {% endif %}
   <div class="vc-horizontal-gallery__items">
     {% for item in gallery_items %}
-      <span class="vc-horizontal-gallery__artwork" role="button">
+      <span class="vc-horizontal-gallery__artwork" role="button" data-micromodal-trigger="modal-{{ gallery.id }}" data-slidenum="{{ loop.index0 }}">
         {% set image = item.image %}
         {% include "@atoms/image.twig" %}
         {% if item.label %}
@@ -24,5 +29,37 @@
   </div>
   <div class="vc-horizontal-gallery__controls">
     <span class="vc-horizontal-gallery__controls-label">{{ gallery.control_label }}</span>
+  </div>
+</div>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-{{ gallery.id }}">
+  <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+    <div aria-labelledby="modal-1-title" class="modal__container" role="dialog">
+      <main class="modal__content" id="modal-1-content">
+        <div class="vc-horizontal-gallery__artwork-items">
+          {% for item in gallery_items %}
+            <div>
+              {% set featured_media = item.featured_media %}
+              {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+            </div>
+          {% endfor %}
+          {# <div>
+                                          <img src="https://placehold.co/400x500?text=Slide1">Name Here
+                                        </div>
+                                        <div>
+                                          <img src="https://placehold.co/550x500?text=Slide2">Name Here
+                                        </div>
+                                        <div>
+                                          <img src="https://placehold.co/400x500?text=Slide3">Name Here
+                                        </div>
+                                        <div>
+                                          <img src="https://placehold.co/650x500?text=Slide4">Name Here
+                                        </div> #}
+        </div>
+      </main>
+      <footer class="modal__footer">
+        <button aria-label="Close this dialog window" class="modal__btn" data-micromodal-close="">Close</button>
+      </footer>
+    </div>
   </div>
 </div>

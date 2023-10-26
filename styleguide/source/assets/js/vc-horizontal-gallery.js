@@ -11,8 +11,12 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_horizontal_gallery = {
     attach: function (context, settings) {
+      // Variables
       const horizontalGalleries = $('.vc-horizontal-gallery__items');
+      const modalButton = document.querySelectorAll('.vc-horizontal-gallery__artwork');
+      const modalArtwork = $('.vc-horizontal-gallery__artwork-items');
 
+      // Gallery slider
       horizontalGalleries.each(function () {
         $(this).slick({
           infinite: false,
@@ -34,6 +38,31 @@
               }
             }
           ]
+        });
+      });
+
+      // Artwork slider
+      modalArtwork.each(function () {
+        $(this).slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          speed: 0,
+          touchMove: false,
+          draggable: false,
+          swipe: false,
+          initialSlide: 0
+        });
+      });
+
+      // Initate modal
+      MicroModal.init();
+
+      // Open to correct artwork when clicks
+      modalButton.forEach((e) => {
+        e.addEventListener('click', () => {
+          $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
         });
       });
     }
