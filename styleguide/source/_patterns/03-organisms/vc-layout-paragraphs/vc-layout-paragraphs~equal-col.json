@@ -2,7 +2,8 @@
   "htmlClass": "vc-art",
   "layout_fullwidth": false,
   "layout_equal_col": true,
-  "layout_heading": "Equal Col Heading - Optional",
+  "layout_heading": "Centered Equal Col Heading - Optional",
+  "layout_heading_centered": true,
   "layout_first": {
     "placeholder": {
       "text": "First Region"
