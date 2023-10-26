@@ -21,14 +21,14 @@
           const expanded = this.getAttribute('aria-expanded') === 'true' || false;
           this.setAttribute('aria-expanded', !expanded);
           vcToolContent.hidden = !vcToolContent.hidden;
+
+          document.addEventListener('click', function (e) {
+            if (vcToolBtn !== e.target) {
+              vcToolContent.hidden = true;
+            }
+          });
         });
       }
-
-      document.addEventListener('click', function (e) {
-        if (vcToolBtn !== e.target) {
-          vcToolContent.hidden = true;
-        }
-      });
     }
   };
 })(jQuery, Drupal);
