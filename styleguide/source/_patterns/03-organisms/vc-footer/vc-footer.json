@@ -1,40 +1,4 @@
 {
   "htmlClass": "vc-ethics",
-  "theme_mode": "dark",
-  "footer_wordmark": {
-    "title": "AMA Journal of Ethics",
-    "subtitle": "Illuminating the Art of Medicine",
-    "tm": "true"
-  },
-  "footer_logo": {
-    "alt": "American Medical Association",
-    "link": "https://www.ama-assn.org/"
-  },
-  "footer_navs": [
-    {
-      "href": "/",
-      "text": "About"
-    },
-    {
-      "href": "/",
-      "text": "Conditions of Use"
-    },
-    {
-      "href": "/",
-      "text": "Privacy Policy"
-    },
-    {
-      "href": "/",
-      "text": "Cookie Settings"
-    },
-    {
-      "href": "/",
-      "text": "FAQs"
-    },
-    {
-      "href": "/",
-      "text": "Contact"
-    }
-  ],
-  "copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
+  "theme_mode": "dark"
 }

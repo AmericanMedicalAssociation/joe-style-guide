@@ -1,0 +1,11 @@
+{
+  "htmlClass": "vc-art",
+  "layout_fullwidth": false,
+  "layout_centered": true,
+  "layout_heading": "One Col Centered Heading - Optional",
+  "layout_bottom": {
+    "placeholder": {
+      "text": "Bottom Region"
+    }
+  }
+}
