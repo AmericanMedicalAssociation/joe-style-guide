@@ -1,19 +1,53 @@
 {
-  "htmlClass": "vc-gallery",
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #F5F5F5; --c-text: #000; --c-hero-bg: #C54374; --c-button-bg: #9FE7C7; --c-button-bg-hover: #71E8B3; --c-button-text: #484848;",
   "theme_mode": "light",
   "featured_media": {
-    "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/bg-hero-art-3--medium.jpg' alt='Alt text'>",
     "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2019",
     "copyright": "Courtesy of Mark Gilbert",
     "media": "Media: Charcoal"
   },
   "text_block": {
-    "content": "<p>This comic captures a patient’s frustration when an ongoing health issue seemingly does not get resolved after the patient sees the physician. Instead of a happy ending, patients can experience cliffhanger after cliffhanger, as physicians struggle to diagnose or treat them. This process lengthens patients’ path to healing and can become another source of stress.</p><p>Physicians struggle in this situation, too. There are only so many clinicians, and many patients compete for their time. The current system doesn’t allow physicians to <a href='#'>dedicate enough time</a> and energy to properly question patients, perform examinations, and earn their trust. Which resources might enable physicians to meet a patient’s needs in the first, rather than the tenth, appointment?</p>"
+    "content": "<p class='lede'>This comic considers how patients can work to use the right vocabulary to help their physicians help them, since patients suffer when physicians fail to properly diagnose and intervene on their ailments. This comic also considers how patients can experience performance anxiety after what might be months of preparation for a key clinic visit in hopes of getting help.</p>"
   },
   "text_block_first": {
-    "content": "<p>This comic captures a patient’s frustration when an ongoing health issue seemingly does not get resolved after the patient sees the physician. Instead of a happy ending, patients can experience cliffhanger after cliffhanger, as physicians struggle to diagnose or treat them. This process lengthens patients’ path to healing and can become another source of stress.</p>"
+    "content": "<h2>Example Heading</h2><p>This comic captures a patient’s frustration when an ongoing health issue seemingly does not get resolved after the patient sees the physician. Instead of a happy ending, patients can experience cliffhanger after cliffhanger, as physicians struggle to diagnose or treat them. This process lengthens patients’ path to healing and can become another source of stress.</p><p>Physicians struggle in this situation, too. There are only so many clinicians, and many patients compete for their time. The current system doesn’t allow physicians to <a href='#'>dedicate enough time</a> and energy to properly question patients, perform examinations, and earn their trust. Which resources might enable physicians to meet a patient’s needs in the first, rather than the tenth, appointment?</p>"
   },
-  "text_block_second": {
-    "content": "<p>Physicians struggle in this situation, too. There are only so many clinicians, and many patients compete for their time. The current system doesn’t allow physicians to <a href='#'>dedicate enough time</a> and energy to properly question patients, perform examinations, and earn their trust. Which resources might enable physicians to meet a patient’s needs in the first, rather than the tenth, appointment?</p>"
-  }
+  "featured_media_second": {
+    "image": "<img src='../../assets/images/vc/bg-hero-art-1--large.jpg' alt='Alt text'>",
+    "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2019",
+    "copyright": "Courtesy of Mark Gilbert",
+    "media": "Media: Charcoal"
+  },
+  "featured_quote": {
+    "blockquote": "“I cheered when my dad, an emergency room physician with a perennial cough, sent a photo of his vaccine card to our family chat.”",
+    "attribution": "Michaela Chan"
+  },
+  "cards": {
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": "<p>Helping physicians, medical students and all health care professionals address ethical challenges that arise in patient care.</p>",
+    "link": "Learn More About CME",
+    "href": "/"
+  },
+  "card_group": [
+    {
+      "title": "Continuing Medical Education",
+      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+      "link": "Visit CME",
+      "href": "/"
+    },
+    {
+      "title": "Continuing Medical Education",
+      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+      "link": "Visit CME",
+      "href": "/"
+    },
+    {
+      "title": "Continuing Medical Education",
+      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+      "link": "Visit CME",
+      "href": "/"
+    }
+  ]
 }

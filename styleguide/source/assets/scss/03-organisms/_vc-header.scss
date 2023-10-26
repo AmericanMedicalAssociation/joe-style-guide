@@ -56,19 +56,29 @@
   }
 }
 
+// Art of Medicine header overrides
+:root.vc-art .vc-header {
+  .joe__wordmark a {
+    color: var(--c-hero-text);
+  }
+
+  .vc-header__action-button svg {
+
+    path,
+    circle {
+      stroke: var(--c-hero-text);
+    }
+  }
+}
+
 .vc-header {
   position: relative;
   padding-block: 0.5rem;
   z-index: 1;
 
-  &::before {
-    content: '';
-    background-color: var(--c-bg);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+  // Art of Medicine header overrides
+  :root.vc-art & {
+    background-color: var(--c-hero-bg);
   }
 
   .joe__sticky-header & {
@@ -78,6 +88,22 @@
     left: 0;
     right: 0;
     top: 0;
+
+    // Art of Medicine header overrides
+    :root.vc-art & {
+      background-color: var(--c-hero-bg);
+    }
+
+    .joe__primary-nav__item a {
+
+      &:link,
+      &:visited,
+      &:active,
+      &:hover,
+      &:focus {
+        color: unset;
+      }
+    }
   }
 
   // Primary nav overrides

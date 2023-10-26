@@ -25,6 +25,16 @@
     margin-block: 0;
   }
 
+  .layout__heading--centered {
+    text-align: center;
+  }
+
+  .layout__region--first,
+  .layout__region--second {
+    display: flex;
+    align-items: center;
+  }
+
   // ONE COLUMN - CENTERED
   .layout--onecol-centered {
     @extend .vc-container--tight;

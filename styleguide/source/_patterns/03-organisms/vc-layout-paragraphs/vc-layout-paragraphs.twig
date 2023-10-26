@@ -3,7 +3,7 @@
     <div class="layout layout--onecol-fullwidth">
       <div class="layout__region layout__region--top">
         {% if layout_heading %}
-          <h2 class="layout__heading">{{ layout_heading }}</h2>
+          <h2 class="layout__heading {% if layout_heading_centered %}layout__heading--centered{% endif %}">{{ layout_heading }}</h2>
         {% endif %}
       </div>
       <div class="layout__region layout__region--bottom">
@@ -19,7 +19,7 @@
     <div class="layout layout--onecol-centered">
       <div class="layout__region layout__region--top">
         {% if layout_heading %}
-          <h2 class="layout__heading">{{ layout_heading }}</h2>
+          <h2 class="layout__heading {% if layout_heading_centered %}layout__heading--centered{% endif %}">{{ layout_heading }}</h2>
         {% endif %}
       </div>
       <div class="layout__region layout__region--bottom">
@@ -32,7 +32,7 @@
     <div class="layout layout--twocol-equal">
       <div class="layout__region layout__region--top">
         {% if layout_heading %}
-          <h2 class="layout__heading">{{ layout_heading }}</h2>
+          <h2 class="layout__heading {% if layout_heading_centered %}layout__heading--centered{% endif %}">{{ layout_heading }}</h2>
         {% endif %}
       </div>
       <div class="layout__region layout__region--first">
@@ -54,7 +54,7 @@
     <div class="layout layout--twocol-larger-left-col">
       <div class="layout__region layout__region--top">
         {% if layout_heading %}
-          <h2 class="layout__heading">{{ layout_heading }}</h2>
+          <h2 class="layout__heading {% if layout_heading_centered %}layout__heading--centered{% endif %}">{{ layout_heading }}</h2>
         {% endif %}
       </div>
       <div class="layout__region layout__region--first">
@@ -70,7 +70,7 @@
     <div class="layout layout--twocol-larger-right-col">
       <div class="layout__region layout__region--top">
         {% if layout_heading %}
-          <h2 class="layout__heading">{{ layout_heading }}</h2>
+          <h2 class="layout__heading {% if layout_heading_centered %}layout__heading--centered{% endif %}">{{ layout_heading }}</h2>
         {% endif %}
       </div>
       <div class="layout__region layout__region--first">

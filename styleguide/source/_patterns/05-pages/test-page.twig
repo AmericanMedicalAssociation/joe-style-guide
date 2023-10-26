@@ -4,7 +4,8 @@
 
   {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
     layout_centered: true,
-    layout_heading: "Example Heading"
+    layout_heading: "Abstract",
+    layout_heading_centered: true
   } %}
     {% block layout_bottom %}
       {% include "@organisms/vc-text-block/vc-text-block.twig" %}
@@ -21,7 +22,6 @@
 
   {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
     layout_equal_col: true,
-    layout_heading: "Example Heading"
   } %}
     {% block layout_first %}
       {% set text_block = text_block_first %}
@@ -29,7 +29,24 @@
     {% endblock %}
     {% block layout_second %}
       {% set text_block = text_block_second %}
-      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+      {% set featured_media  = featured_media_second %}
+      {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-featured-quote/vc-featured-quote.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-cards/vc-cards.twig" %}
     {% endblock %}
   {% endembed %}
 
