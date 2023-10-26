@@ -23,12 +23,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(var(--c-bg-rgb), 1) 0%, rgba(var(--c-bg-rgb), 0.4) 80%, rgba(var(--c-bg-rgb), 0.85) 100%);
+    background: linear-gradient(0deg, rgba(var(--c-bg-rgb), 1) 0%, rgba(var(--c-bg-rgb), var(--c-hero-bg-opacity, 0.4)) 80%, rgba(var(--c-bg-rgb), 0.85) 100%);
   }
-}
-
-.vc-hero-ethics__image--less-opacity::after {
-  background: linear-gradient(0deg, rgba(var(--c-bg-rgb), 1) 0%, rgba(var(--c-bg-rgb), 0.6) 80%, rgba(var(--c-bg-rgb), 0.85) 100%);
 }
 
 .vc-hero-ethics__container {
