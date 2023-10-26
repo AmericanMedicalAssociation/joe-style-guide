@@ -1,7 +1,113 @@
 {
-  "header_wordmark": {
+  "vc_header_wordmark": {
     "title": "AMA Journal of Ethics",
     "subtitle": "Illuminating the Art of Medicine",
     "tm": true
-  }
+  },
+  "vc_primary_navs": [
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/",
+      "text": "Issues"
+    },
+    {
+      "href": "/",
+      "text": "Articles"
+    },
+    {
+      "href": "/",
+      "text": "Cases"
+    },
+    {
+      "href": "/",
+      "text": "Art"
+    },
+    {
+      "href": "/",
+      "text": "Multimedia"
+    },
+    {
+      "href": "/",
+      "text": "CME"
+    }
+  ],
+  "vc_utility_navs": [
+    {
+      "href": "/",
+      "text": "Facebook",
+      "icon": "facebook"
+    },
+    {
+      "href": "/",
+      "text": "Twitter",
+      "icon": "twitter"
+    },
+    {
+      "href": "/",
+      "text": "YouTube",
+      "icon": "youtube"
+    },
+    {
+      "href": "/",
+      "text": "Instagram",
+      "icon": "instagram"
+    }
+  ],
+  "vc_search_label": {
+    "text": "Search AMA Journal of Ethics",
+    "id": "site-search"
+  },
+  "vc_search_inputs": [
+    {
+      "type": "search",
+      "name": "Site Search",
+      "id": "site-search",
+      "placeholder": "Search"
+    },
+    {
+      "type": "submit",
+      "name": "Site Search Submit",
+      "id": "site-search-submit",
+      "value": "Search"
+    }
+  ],
+  "vc_footer_wordmark": {
+    "title": "AMA Journal of Ethics",
+    "subtitle": "Illuminating the Art of Medicine",
+    "tm": "true"
+  },
+  "vc_footer_logo": {
+    "alt": "American Medical Association",
+    "link": "https://www.ama-assn.org/"
+  },
+  "vc_footer_navs": [
+    {
+      "href": "/",
+      "text": "About"
+    },
+    {
+      "href": "/",
+      "text": "Conditions of Use"
+    },
+    {
+      "href": "/",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "/",
+      "text": "Cookie Settings"
+    },
+    {
+      "href": "/",
+      "text": "FAQs"
+    },
+    {
+      "href": "/",
+      "text": "Contact"
+    }
+  ],
+  "vc_copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
 }
