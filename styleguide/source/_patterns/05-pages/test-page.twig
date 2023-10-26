@@ -1,0 +1,20 @@
+{% extends '@templates/vc-template.twig' %}
+
+{% block pageContent %}
+  {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: "Full-width Heading - Optional"
+  } %}
+    {% block layout_bottom %}
+      adsfadsf
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@organisms/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true
+  } %}
+    {% block layout_bottom %}
+      Centered
+    {% endblock %}
+  {% endembed %}
+{% endblock %}
