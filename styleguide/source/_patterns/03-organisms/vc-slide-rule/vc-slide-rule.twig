@@ -5,6 +5,32 @@
       {{ slide_rule.image_after|raw }}
     </div>
   </div>
+  <div class="vc-slide-rule__info">
+    <div class="vc-slide-rule__info-before">
+      {% if slide_rule.copyright_before %}
+        <span class="vc-slide-rule__copyright">
+          {{ slide_rule.copyright_before }}
+        </span>
+      {% endif %}
+      {% if slide_rule.media_before %}
+        <span class="vc-slide-rule__media">
+          {{ slide_rule.media_before }}
+        </span>
+      {% endif %}
+    </div>
+    <div class="vc-slide-rule__info-after">
+      {% if slide_rule.copyright_after %}
+        <span class="vc-slide-rule__copyright">
+          {{ slide_rule.copyright_after }}
+        </span>
+      {% endif %}
+      {% if slide_rule.media_after %}
+        <span class="vc-slide-rule__media">
+          {{ slide_rule.media_after }}
+        </span>
+      {% endif %}
+    </div>
+  </div>
   {% if slide_rule.caption %}
     <div class="vc-container--tight vc-slide-rule__container">
       <div class="vc-slide-rule__caption">
