@@ -6,8 +6,10 @@
     </div>
   {% endif %}
   <h3 class="vc-card__title">{{ card.title }}</h3>
-  <div class="vc-card__desc">
-    {{ card.description|raw }}
-  </div>
+  {% if card.description %}
+    <div class="vc-card__desc">
+      {{ card.description|raw }}
+    </div>
+  {% endif %}
   <a class="vc-card__link" href="{{ card.href }}">{{ card.link }}</a>
 </div>
