@@ -1,27 +1,28 @@
 {
-  "htmlClass": "vc-gallery",
+  "htmlClass": "vc-art",
   "gallery": {
-    "id": "1",
-    "title": "Anthony and the Role of Silence in Portraiture in Clinical Settings",
-    "description": "<p>This article describes one collaborative arts-based research project. Portrait artist Mark Gilbert and coinvestigators consider lessons for art and healing from one patient, Anthony, whose experience of head and neck cancer diagnosis, surgery, and recovery suggests how silence is ethically, artistically, and clinically significant.</p>",
-    "control_label": "Gallery Artworks"
+    "id": "2",
+    "title": null,
+    "description": null,
+    "label": "<strong>Figure.</strong> Is There a Script for How to Help a Physician Help Me?",
+    "control_label": "Comic Artworks"
   },
   "gallery_items": [
     {
-      "label": "Detail portrait, by Mark Gilbert, 2018",
+      "label": null,
       "image": {
         "src": "https://placehold.co/550x500",
         "alt": "All text"
       },
       "featured_media": {
-        "image": "<img src='https://placehold.co/1560x2440' alt='Alt text'>",
+        "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
         "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2018",
         "copyright": "Courtesy of Mark Gilbert",
-        "media": "Media: Charcoal asdfasdf"
+        "media": "Media: Charcoal"
       }
     },
     {
-      "label": "Kathryn, by Mark Gilbert, 2019",
+      "label": null,
       "image": {
         "src": "https://placehold.co/550x500",
         "alt": "All text"
@@ -34,7 +35,7 @@
       }
     },
     {
-      "label": "Detail portrait, by Mark Gilbert, 2017",
+      "label": null,
       "image": {
         "src": "https://placehold.co/550x500",
         "alt": "All text"
@@ -47,7 +48,7 @@
       }
     },
     {
-      "label": "Anthony (Before Surgery), Mark Gilbert 2008",
+      "label": null,
       "image": {
         "src": "https://placehold.co/550x500",
         "alt": "All text"

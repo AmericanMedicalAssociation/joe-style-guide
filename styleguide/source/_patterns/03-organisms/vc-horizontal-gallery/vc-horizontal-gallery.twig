@@ -1,5 +1,5 @@
 <div class="vc-horizontal-gallery">
-  {% if gallery.title or gallery.description %}
+  {% if gallery.title or gallery.description or gallery.label %}
     <div class="vc-container--tight">
       <header class="vc-horizontal-gallery__header">
         <h2 class="vc-horizontal-gallery__heading">{{ gallery.title }}</h2>
@@ -28,7 +28,15 @@
     {% endfor %}
   </div>
   <div class="vc-horizontal-gallery__controls">
+    <button type="button" class="slick-prev">
+      <span class="visually-hidden">Previous</span>
+      {% include "@base/icons/icon-gallery-arrow--prev.svg" %}
+    </button>
     <span class="vc-horizontal-gallery__controls-label">{{ gallery.control_label }}</span>
+    <button type="button" class="slick-next">
+      <span class="visually-hidden">Next</span>
+      {% include "@base/icons/icon-gallery-arrow--next.svg" %}
+    </button>
   </div>
 </div>
 
@@ -43,18 +51,6 @@
               {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
             </div>
           {% endfor %}
-          {# <div>
-                                          <img src="https://placehold.co/400x500?text=Slide1">Name Here
-                                        </div>
-                                        <div>
-                                          <img src="https://placehold.co/550x500?text=Slide2">Name Here
-                                        </div>
-                                        <div>
-                                          <img src="https://placehold.co/400x500?text=Slide3">Name Here
-                                        </div>
-                                        <div>
-                                          <img src="https://placehold.co/650x500?text=Slide4">Name Here
-                                        </div> #}
         </div>
       </main>
       <footer class="modal__footer">

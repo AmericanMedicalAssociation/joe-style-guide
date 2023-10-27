@@ -17,7 +17,7 @@
       const modalArtwork = $('.vc-horizontal-gallery__artwork-items');
 
       // Gallery slider
-      horizontalGalleries.each(function () {
+      horizontalGalleries.each(function (e) {
         $(this).slick({
           infinite: false,
           slidesToShow: 2,
@@ -28,6 +28,8 @@
           speed: 800,
           touchThreshold: 500,
           touchMove: false,
+          prevArrow: $(this).parent().find('.slick-prev'),
+          nextArrow: $(this).parent().find('.slick-next'),
           responsive: [
             {
               breakpoint: 900,
@@ -52,14 +54,15 @@
           touchMove: false,
           draggable: false,
           swipe: false,
-          initialSlide: 0
+          initialSlide: 0,
+          adaptiveHeight: true
         });
       });
 
       // Initate modal
       MicroModal.init();
 
-      // Open to correct artwork when clicks
+      // Open to correct artwork when clicked
       modalButton.forEach((e) => {
         e.addEventListener('click', () => {
           $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
