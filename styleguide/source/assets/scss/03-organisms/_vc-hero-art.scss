@@ -151,6 +151,7 @@
 
   @include breakpoint($bp-med) {
     grid-column: 1 / -1;
+    padding-block: 3rem 2.5rem;
   }
 
   .vc-hero-art--text-right & {
@@ -201,7 +202,23 @@
   width: auto;
 
   @include breakpoint($bp-large) {
-    width: 45rem;
+    width: 55rem;
+  }
+}
+
+.vc-hero-art__shape {
+  @include breakpoint($bp-large) {
+    shape-outside: polygon(100% 100%, 0% 0%, 100% 0%);
+    width: 150px;
+    height: 180px;
+    float: right;
+    margin-inline: 0 6rem;
+
+    .vc-hero-art--text-right & {
+      shape-outside: polygon(0% 100%, 0% 0%, 100% 0%);
+      float: left;
+      margin-inline: 6rem 0;
+    }
   }
 }
 
@@ -209,10 +226,8 @@
   color: var(--c-hero-title);
   text-wrap: balance;
 
-  :root[class*='vc-art'] & {
-    @include breakpoint(0 $bp-xlarge) {
-      margin-block-start: 0;
-    }
+  :root.vc-art & {
+    margin-block-start: 0;
   }
 }
 
