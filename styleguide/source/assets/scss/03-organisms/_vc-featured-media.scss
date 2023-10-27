@@ -1,5 +1,9 @@
 .vc-featured-media {
-  padding-inline: 1.5rem;
+  padding-inline: 1.25rem;
+
+  @include breakpoint($bp-large) {
+    padding-inline: 1.5rem;
+  }
 }
 
 .vc-featured-media__container {
@@ -27,6 +31,10 @@
   @include type($font-sans-serif, 0.6em, $font-weight-medium, 1.1);
   position: absolute;
   bottom: -0.5em;
+
+  @include breakpoint($bp-large) {
+    font-size: 0.8em;
+  }
 }
 
 .vc-featured-media__copyright {
