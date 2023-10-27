@@ -120,7 +120,7 @@
   .vc-gallery__items {
     .slick-track {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       padding-block: 2rem;
 
       @include breakpoint($bp-med) {

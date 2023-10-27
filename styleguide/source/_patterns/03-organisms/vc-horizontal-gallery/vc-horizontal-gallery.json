@@ -1,5 +1,6 @@
 {
   "htmlClass": "vc-gallery",
+  "theme_mode": "light",
   "gallery": {
     "id": "1",
     "title": "Portraits of Care",
