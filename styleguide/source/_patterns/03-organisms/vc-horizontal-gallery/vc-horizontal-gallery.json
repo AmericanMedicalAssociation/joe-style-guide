@@ -2,62 +2,66 @@
   "htmlClass": "vc-gallery",
   "gallery": {
     "id": "1",
-    "title": "Anthony and the Role of Silence in Portraiture in Clinical Settings",
-    "description": "<p>This article describes one collaborative arts-based research project. Portrait artist Mark Gilbert and coinvestigators consider lessons for art and healing from one patient, Anthony, whose experience of head and neck cancer diagnosis, surgery, and recovery suggests how silence is ethically, artistically, and clinically significant.</p>",
+    "title": "Portraits of Care",
+    "description": "<p>At the request of Virginia Aita and the fourth author (WL), the first author (MG) was invited to coconduct an arts-based research study using portraiture to investigate care and caregiving. In this mixed-methods study, MG drew and painted patients and their caregivers. The project culminated in an exhibit, Here I Am and Nowhere Else: Portraits of Care (POC) and was displayed at the Bemis Center for Contemporary Arts in 2008-2009.1 This exhibit featured visual art as a means of cultivating deeper understanding of ethical and aesthetic values expressed in the experiences of patients, family caregivers, clinicians, and others—janitors, biomedical researchers, public health professionals, and policymakers, for example—working in health care. POC considered portraiture to be an untapped resource in health care that could be used to “imagine the humane dimensions, cultural frameworks and processes that shape human experiences of health and illness.”2 The relationship that MG shared with one POC participant, Anthony, is especially illustrative of this purpose. Although this essay about Anthony is conveyed in MG’s voice, this work has been a collaboration among the 4 authors.</p>",
     "control_label": "Gallery Artworks"
   },
   "gallery_items": [
     {
-      "label": "Detail portrait, by Mark Gilbert, 2018",
+      "label": "Anthony (Before Surgery), by Mark Gilbert, 2008",
       "image": {
-        "src": "https://placehold.co/550x500",
+        "src": "../../assets/images/vc/img-anthony--small.jpg",
         "alt": "All text"
       },
       "featured_media": {
-        "image": "<img src='https://placehold.co/1560x2440' alt='Alt text'>",
-        "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2018",
+        "image": "<img src='../../assets/images/vc/img-anthony--large.jpg' alt='Alt text'>",
+        "figure_text": "<strong>Figure 1.</strong> Anthony (Before Surgery), 2008",
         "copyright": "Courtesy of Mark Gilbert",
-        "media": "Media: Charcoal asdfasdf"
-      }
+        "media": "Media: Woodcut, 44\" x 32\""
+      },
+      "featured_media_description": "<h3>Anthony</h3><p>I first met Anthony in the company of WL just prior to his tumor resection surgery. Anthony had graying hair tied back in a ponytail. His thin beard covered, but could not hide, a protruding cancer that enveloped most of his mandible, lower jaw, and tongue. When Anthony first noticed the tumor, he avoided treatment and traveled around the Midwest by himself. MG wondered why Anthony delayed seeking treatment and if his finally doing so was at the behest of his sister Gloria, who accompanied him that day to the clinic. Anthony was soft spoken, and his voice was somewhat muffled, as the tumor restricted movement of his tongue and jaw. His surgery that day would leave him unable to communicate verbally and therefore would illuminate the ethical and aesthetic roles of silence in MG’s subsequent interactions with him.</p>"
     },
     {
-      "label": "Kathryn, by Mark Gilbert, 2019",
+      "label": "Tumor (Anthony), by Mark Gilbert, 2006",
       "image": {
-        "src": "https://placehold.co/550x500",
+        "src": "../../assets/images/vc/img-tumor--small.jpg",
         "alt": "All text"
       },
       "featured_media": {
-        "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
-        "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2019",
+        "image": "<img src='../../assets/images/vc/img-tumor--large.jpg' alt='Alt text'>",
+        "figure_text": "<strong>Figure 2.</strong> Tumor (Anthony), 2006",
         "copyright": "Courtesy of Mark Gilbert",
-        "media": "Media: Charcoal"
-      }
+        "media": "Media: Monoprint, 40\" x 26\""
+      },
+      "featured_media_description": "<h3>Silence in Tumor Resection</h3><p>Surgical removal of Anthony’s larynx, tongue, and lower jaw left him unable to talk. A citizen of the Winnebago tribe of Eastern Nebraska, Anthony had misgivings about sitting for his portrait, and these misgivings were founded in his traditional belief that being drawn or photographed “toys with someone’s spirits.” MG was initially concerned that the verbal one-sidedness of the interactions would be awkward, but Anthony wrote short notes during his portrait sessions to communicate. MG learned that Anthony was also an artist who worked in traditional leather and beadwork. Many of MG’s and Anthony’s exchanges focused on their respective artistic practices. Anthony visited MG’s studio weekly for 6 months.</p><p>Silently, together, MG and Anthony cocreated in multiple media and formats. Portraits of Anthony were drawn on canvas and paper and carved into wood for a relief print. MG used photography to record Anthony’s time as an anesthetized patient. Anthony’s resected tumor is shown below in a color monotype.</p>"
     },
     {
-      "label": "Detail portrait, by Mark Gilbert, 2017",
+      "label": "Removed Cancer (Anthony), by Mark Gilbert, 2008",
       "image": {
-        "src": "https://placehold.co/550x500",
+        "src": "../../assets/images/vc/img-removed-cancer--small.jpg",
         "alt": "All text"
       },
       "featured_media": {
-        "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
-        "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2017",
+        "image": "<img src='../../assets/images/vc/img-removed-cancer--large.jpg' alt='Alt text'>",
+        "figure_text": "<strong>Figure 3.</strong> Removed Cancer (Anthony), 2008",
         "copyright": "Courtesy of Mark Gilbert",
-        "media": "Media: Charcoal"
-      }
+        "media": "Media: Copper photogravure, 20\" x 15\""
+      },
+      "featured_media_description": "<p>A photogravure of Anthony’s tongue and lower jaw, suspended in WL’s hands, was also made.</p><p>As WL and others worked to remove Anthony’s jaw, tongue, and larynx, MG quietly sketched in pencil and photographed the specimen. Once removed, Anthony’s jaw, voice box, and tongue were held by MG in his hand. MG still vividly remembers their weight.</p>"
     },
     {
-      "label": "Anthony (Before Surgery), Mark Gilbert 2008",
+      "label": "Anthony, Mark Gilbert 2007",
       "image": {
-        "src": "https://placehold.co/550x500",
+        "src": "../../assets/images/vc/img-anthony-2--small.jpg",
         "alt": "All text"
       },
       "featured_media": {
-        "image": "<img srcset='https://placehold.co/640x360  640w, https://placehold.co/1280x720  1280w, https://placehold.co/2560x1440 2560w' sizes='100vw' src='https://placehold.co/2560x1440' alt='Alt text'>",
-        "figure_text": "<strong>Figure 1.</strong> Kathryn, by Mark Gilbert, 2008",
+        "image": "<img src='../../assets/images/vc/img-anthony-2--large.jpg' alt='Alt text'>",
+        "figure_text": "<strong>Figure 4.</strong> Anthony, 2007",
         "copyright": "Courtesy of Mark Gilbert",
-        "media": "Media: Charcoal"
-      }
+        "media": "Media: Charcoal on paper, 44\" x 32\""
+      },
+      "featured_media_description": "<h3>Tumor, Body, and Story</h3><p>In depicting the tumor, MG hoped to respectfully depict the mass and volume of what was removed from Anthony’s body. Aesthetically, the cancer glistened and seemed bejeweled under the glare of the operating theater lights; ethically and clinically, however, the tumor specimen can be appreciated as being threatening and insidious. Elsewhere the third author (MMD) and her coauthor, 2 Indigenous scholars, explain how, “as part of the self-telling body that is the field of MH and NM [Medical Humanities and Narrative Medicine], we tell our stories … because, like the parts of a body or the individual strands in a sweetgrass braid, our stories are connected to yours, irrevocably connected.”3 In holding the tumor or even beholding the images made of the tumor, we might more fully recognize how the tumor, whether inside or outside Anthony’s body, is an integral part of his story, a critical thread in his narrative. MG spent more time with Anthony than any other participant in POC. In the silence of the studio, Anthony and MG listened and responded to each other’s curiosity and presence, drawing on portraiture to navigate different orientations to Anthony’s life with the tumor and his life after its resection.</p>"
     }
   ]
 }

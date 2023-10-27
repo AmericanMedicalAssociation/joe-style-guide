@@ -54,9 +54,7 @@
                 </div>
                 {% if item.featured_media_description %}
                   <div class="vc-modal__second">
-                    {{ item.featured_media_description }}
-                    <h3>Artist-in-Residence Program</h3>
-                    <p>When artist Mark Gilbert asked that I, a health care professional, reserve an hour in my workday to sit for a life-sized portrait as part of his art-based study on dementia and caregiving, it was not as unusual an “ask” as one might think. For the Geriatric Ambulatory Care/Memory Disability Clinic, part of the Nova Scotia Health Authority (formerly Capital Health), with which I am affiliated, is like a small gallery of local artists’ large oil paintings and sculptures on themes of memory and dementia. This is the result of an artist-in-residence (AIR) program,1 a scholarship program in which artists help assess patients’ memory with families and clinicians and create works that represent what they saw, heard, and felt during that encounter.</p>
+                    {{ item.featured_media_description|raw }}
                   </div>
                 {% endif %}
               </div>
