@@ -26,7 +26,6 @@
           centerPadding: '5%',
           variableWidth: true,
           speed: 800,
-          touchThreshold: 500,
           touchMove: false,
           prevArrow: $(this).parent().find('.slick-prev'),
           nextArrow: $(this).parent().find('.slick-next'),
