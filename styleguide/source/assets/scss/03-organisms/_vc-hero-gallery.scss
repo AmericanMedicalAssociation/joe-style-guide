@@ -48,59 +48,59 @@
     margin: 1rem 0 0;
   }
 
-  .slick-arrow {
-    text-indent: -9999em;
-    line-height: 0;
-    background: unset;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0;
-    width: 4rem;
-    height: 2rem;
-
-    &:active,
-    &:focus,
-    &:hover {
+  .vc-hero-gallery__nav-controls {
+    .slick-arrow {
+      text-indent: -9999em;
+      line-height: 0;
       background: unset;
       background-color: transparent;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      padding: 0;
+      width: 4rem;
+      height: 2rem;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: unset;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &[aria-disabled='true'] {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      svg g {
+        stroke: var(--c-link);
+      }
     }
 
-    &[aria-disabled='true'] {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-  }
-
-  .slick-prev {
-    background-image: url('../images/vc/icon-gallery-arrow--prev.svg');
-
-    &:active,
-    &:focus,
-    &:hover {
+    .slick-prev {
       background-image: url('../images/vc/icon-gallery-arrow--prev.svg');
-      transform: translateX(-0.5rem);
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-image: url('../images/vc/icon-gallery-arrow--prev.svg');
+        transform: translateX(-0.5rem);
+      }
     }
-  }
 
-  .slick-next {
-    background-image: url('../images/vc/icon-gallery-arrow--next.svg');
-
-    &:active,
-    &:focus,
-    &:hover {
+    .slick-next {
       background-image: url('../images/vc/icon-gallery-arrow--next.svg');
-      transform: translateX(0.5rem);
-    }
-  }
 
-  &[data-theme='light'] {
-    .slick-arrow {
-      filter: brightness(0%);
+      &:active,
+      &:focus,
+      &:hover {
+        background-image: url('../images/vc/icon-gallery-arrow--next.svg');
+        transform: translateX(0.5rem);
+      }
     }
   }
 }
