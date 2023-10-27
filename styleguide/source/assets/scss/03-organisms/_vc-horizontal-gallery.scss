@@ -26,20 +26,6 @@
       margin-top: 0;
     }
   }
-
-  .vc-modal__close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    border-radius: 50%;
-    padding: 0.5rem;
-    margin: 0;
-
-    svg path {
-      stroke: var(--c-button-text);
-    }
-  }
 }
 
 .vc-horizontal-gallery__desc {
@@ -54,11 +40,6 @@
 
 .vc-horizontal-gallery__artwork {
   cursor: pointer;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .vc-horizontal-gallery__artwork-label {
@@ -85,14 +66,8 @@
   }
 }
 
-// Modal styles
+// Modal slideshow styles
 .vc-modal {
-  display: none;
-
-  &.is-open {
-    display: block;
-  }
-
   .slick-slider {
     user-select: auto;
   }
@@ -103,51 +78,6 @@
 
   .slick-current {
     visibility: visible;
-  }
-}
-
-.vc-modal__container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--c-bg);
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    background-color: transparent;
-    width: 14px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--c-link);
-    background-clip: padding-box;
-    border-radius: 9999px;
-    border: 3px solid transparent;
-  }
-}
-
-.vc-modal__content {
-  min-height: 100vh;
-  padding: 4rem 1rem 5rem;
-
-  @include breakpoint($bp-med) {
-    padding-inline: 2rem;
-  }
-
-  @include breakpoint($bp-large) {
-    padding-inline: 3rem;
-  }
-}
-
-.vc-modal__footer {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-  @include breakpoint($bp-med) {
-    right: 2rem;
   }
 }
 

@@ -115,11 +115,9 @@
   display: none;
 }
 
-// Custom styles
+// Custom `vc-` styles
 :root[class*='vc-'] {
-
-  .vc-hero-gallery__nav,
-  .vc-horizontal-gallery__items {
+  .vc-gallery__items {
     .slick-track {
       display: flex;
       align-items: flex-start;
@@ -216,11 +214,15 @@
           }
         }
       }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
-  .vc-hero-gallery__nav-controls,
-  .vc-horizontal-gallery__controls {
+  .vc-gallery__controls {
     .slick-arrow {
       display: flex;
       justify-content: center;
@@ -245,7 +247,6 @@
       }
 
       &[aria-disabled='true'] {
-        opacity: 0;
         visibility: hidden;
       }
 

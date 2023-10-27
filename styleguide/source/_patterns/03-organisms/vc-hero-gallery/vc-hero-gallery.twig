@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="vc-hero-gallery__nav">
+  <div class="vc-hero-gallery__nav vc-gallery__items">
     {% for item in hero.gallery_nav %}
       <a class="vc-hero-gallery__anchor" href="{{ item.href }}">
         {% set image = item.image %}
@@ -19,7 +19,7 @@
       </a>
     {% endfor %}
   </div>
-  <div class="vc-hero-gallery__nav-controls">
+  <div class="vc-hero-gallery__nav-controls vc-gallery__controls">
     <button type="button" class="slick-prev">
       <span class="visually-hidden">Previous</span>
       {% include "@base/icons/icon-gallery-arrow--prev.svg" %}

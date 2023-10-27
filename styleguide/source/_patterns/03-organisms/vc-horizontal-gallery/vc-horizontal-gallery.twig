@@ -16,7 +16,7 @@
       </header>
     </div>
   {% endif %}
-  <div class="vc-horizontal-gallery__items">
+  <div class="vc-horizontal-gallery__items vc-gallery__items">
     {% for item in gallery_items %}
       <span class="vc-horizontal-gallery__artwork" role="button" data-micromodal-trigger="modal-{{ gallery.id }}" data-slidenum="{{ loop.index0 }}">
         {% set image = item.image %}
@@ -27,7 +27,7 @@
       </span>
     {% endfor %}
   </div>
-  <div class="vc-horizontal-gallery__controls">
+  <div class="vc-horizontal-gallery__controls vc-gallery__controls">
     <button type="button" class="slick-prev">
       <span class="visually-hidden">Previous</span>
       {% include "@base/icons/icon-gallery-arrow--prev.svg" %}
