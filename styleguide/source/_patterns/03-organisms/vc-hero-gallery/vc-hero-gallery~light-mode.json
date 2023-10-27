@@ -13,7 +13,7 @@
         "href": "#modal-1",
         "image": {
           "src": "../../assets/images/vc/img-gallery-anchor--1.jpg",
-          "alt": "All text"
+          "alt": "Alt text"
         }
       },
       {
@@ -21,7 +21,7 @@
         "href": "#modal-2",
         "image": {
           "src": "../../assets/images/vc/img-gallery-anchor--2.jpg",
-          "alt": "All text"
+          "alt": "Alt text"
         }
       },
       {
@@ -29,7 +29,7 @@
         "href": "#modal-3",
         "image": {
           "src": "../../assets/images/vc/img-gallery-anchor--3.jpg",
-          "alt": "All text"
+          "alt": "Alt text"
         }
       },
       {
@@ -37,7 +37,7 @@
         "href": "#modal-4",
         "image": {
           "src": "../../assets/images/vc/img-gallery-anchor--4.jpg",
-          "alt": "All text"
+          "alt": "Alt text"
         }
       }
     ]
