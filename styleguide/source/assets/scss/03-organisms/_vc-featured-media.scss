@@ -19,7 +19,7 @@
 
 .vc-featured-media__caption {
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
-  margin-block: 1rem;
+  margin-block: 0 1rem;
 }
 
 .vc-featured-media__copyright,

@@ -1,0 +1,10 @@
+{
+  "htmlClass": "vc-art",
+  "layout_fullwidth": true,
+  "layout_heading": "Full-width Heading - Optional",
+  "layout_bottom": {
+    "placeholder": {
+      "text": "Bottom Region"
+    }
+  }
+}
