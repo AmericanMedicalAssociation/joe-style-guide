@@ -1,9 +1,7 @@
 {
+  "htmlClass": "vc-art",
   "issue": {
-    "title": {
-      "text": "Oct. 2017",
-      "level": "4"
-    },
+    "title": null,
     "articles": [
       {
         "style": "reverse",
@@ -25,6 +23,9 @@
           "href": "#",
           "class": "joe__article-teaser__title",
           "text": "Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
+        },
+        "image": {
+          "src": "https://placehold.co/450x225"
         }
       },
       {
@@ -39,7 +40,7 @@
           "text": "How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
         },
         "image": {
-          "src": "https://placehold.co/150"
+          "src": "https://placehold.co/450x225"
         }
       },
       {
@@ -64,7 +65,7 @@
           "text": "The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
         },
         "image": {
-          "src": "https://placehold.co/150"
+          "src": "https://placehold.co/450x225"
         }
       },
       {
@@ -84,6 +85,9 @@
           "href": "#",
           "class": "joe__article-teaser__title",
           "text": "The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+        },
+        "image": {
+          "src": "https://placehold.co/450x225"
         }
       }
     ]

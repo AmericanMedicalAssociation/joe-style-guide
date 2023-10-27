@@ -1,7 +1,11 @@
-<footer class="joe__article-footer"> 
+<footer class="joe__article-footer">
   {% if editor_note %}
     {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Editor's Note" } } %}
     {{ editor_note }}
+  {% endif %}
+  {% if curator_note %}
+    {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Curator's NOTE" } } %}
+    {{ curator_note }}
   {% endif %}
   {% if citation %}
     {% include "@atoms/title-label.twig" with { "title_label": {"level" : "3", "text" : "Citation" } } %}
@@ -20,6 +24,6 @@
     <small>{{ disclosure }}</small>
   {% endif %}
   {% if ethics_case %}
-    <small>The people and events in this case are fictional. Resemblance to real events or to names of people, living or dead, is entirely coincidental. The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.</small>
+    <small>The people and events in this case are fictional. Resemblance to real events or to names of people, living or dead, is entirely coincidental. The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.</small>
   {% endif %}
 </footer>
