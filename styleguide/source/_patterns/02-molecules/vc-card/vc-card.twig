@@ -5,11 +5,15 @@
       {% include "@atoms/image.twig" %}
     </div>
   {% endif %}
-  <h3 class="vc-card__title">{{ card.title }}</h3>
-  {% if card.description %}
-    <div class="vc-card__desc">
-      {{ card.description|raw }}
+  <div class="vc-card__content">
+    <h3 class="vc-card__title">{{ card.title }}</h3>
+    {% if card.description %}
+      <div class="vc-card__desc">
+        {{ card.description|raw }}
+      </div>
+    {% endif %}
+    <div class="vc-card__action">
+      <a class="vc-card__link" href="{{ card.href }}">{{ card.link }}</a>
     </div>
-  {% endif %}
-  <a class="vc-card__link" href="{{ card.href }}">{{ card.link }}</a>
+  </div>
 </div>

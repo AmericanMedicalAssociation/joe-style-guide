@@ -23,5 +23,34 @@
     @include breakpoint($bp-med) {
       grid-column: span 4;
     }
+
+    // Center if only one card
+    &:only-child {
+      @include breakpoint($bp-small) {
+        grid-column: 2 / 12;
+      }
+
+      @include breakpoint($bp-med) {
+        grid-column: span 12;
+        flex-direction: row;
+        gap: 2rem;
+        padding-block-end: 1rem;
+
+        .vc-card__image {
+          flex-basis: 100%;
+          margin: 0;
+        }
+
+        img {
+          object-fit: cover;
+          object-position: center;
+          height: 100%;
+        }
+      }
+
+      @include breakpoint($bp-large) {
+        grid-column: 3 / 11;
+      }
+    }
   }
 }
