@@ -40,10 +40,10 @@
   </div>
 </div>
 
-<div aria-hidden="true" class="modal micromodal-slide" id="modal-{{ gallery.id }}">
-  <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
-    <div aria-labelledby="modal-1-title" class="modal__container" role="dialog">
-      <main class="modal__content" id="modal-1-content">
+<div aria-hidden="true" class="vc-modal micromodal-slide" id="modal-{{ gallery.id }}">
+  <div class="vc-modal__overlay" data-micromodal-close="" tabindex="-1">
+    <di class="vc-modal__container" role="dialog">
+      <main class="vc-modal__content" id="modal-1-content">
         <div class="vc-horizontal-gallery__artwork-items">
           {% for item in gallery_items %}
             <div>
@@ -75,7 +75,7 @@
         </div>
       </main>
       <footer class="vc-modal__footer">
-        <button aria-label="Close this dialog window" class="vc-modal__button" data-micromodal-close="">
+        <button aria-label="Close this dialog window" class="vc-modal__close" data-micromodal-close="">
           <span class="visually-hidden">Close</span>
           {% include "@base/icons/icon-close.svg" %}
         </button>

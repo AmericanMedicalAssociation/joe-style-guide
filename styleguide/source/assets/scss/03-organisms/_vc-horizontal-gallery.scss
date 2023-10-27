@@ -77,7 +77,7 @@
     }
   }
 
-  .vc-modal__button {
+  .vc-modal__close {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,7 +238,7 @@
 }
 
 // Modal styles
-.modal {
+.vc-modal {
   display: none;
 
   &.is-open {
@@ -258,7 +258,7 @@
   }
 }
 
-.modal__container {
+.vc-modal__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -280,7 +280,7 @@
   }
 }
 
-.modal__content {
+.vc-modal__content {
   padding: 3rem 1rem 5rem;
 
   @include breakpoint($bp-med) {
@@ -323,8 +323,8 @@
 .vc-modal__controls {
   position: fixed;
   bottom: 0;
-  left: 1rem;
-  right: 1rem;
+  left: 0;
+  right: 0;
   background-color: var(--c-bg);
   box-shadow: 0 0 50px rgba($black, 0.2);
   display: flex;
