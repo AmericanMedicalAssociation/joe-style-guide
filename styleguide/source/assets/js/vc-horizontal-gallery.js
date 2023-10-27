@@ -55,7 +55,9 @@
           draggable: false,
           swipe: false,
           initialSlide: 0,
-          adaptiveHeight: true
+          adaptiveHeight: true,
+          prevArrow: $(this).parent().find('.slick-prev'),
+          nextArrow: $(this).parent().find('.slick-next'),
         });
       });
 

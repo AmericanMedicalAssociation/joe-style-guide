@@ -3,51 +3,91 @@
     margin-block-start: 0;
   }
 
-  .slick-arrow {
-    background: unset;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0;
-    width: 4rem;
-    height: 2rem;
-
-    &:active,
-    &:focus,
-    &:hover {
+  .vc-horizontal-gallery__controls {
+    .slick-arrow {
       background: unset;
       background-color: transparent;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      padding: 0;
+      width: 4rem;
+      height: 2rem;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: unset;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &[aria-disabled='true'] {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      svg g {
+        stroke: var(--c-link);
+      }
     }
 
-    &[aria-disabled='true'] {
-      opacity: 0.5;
-      cursor: not-allowed;
+    .slick-prev {
+
+      &:active,
+      &:focus,
+      &:hover {
+        transform: translateX(-0.5rem);
+      }
     }
 
-    svg g {
-      stroke: var(--c-text);
+    .slick-next {
+
+      &:active,
+      &:focus,
+      &:hover {
+        transform: translateX(0.5rem);
+      }
     }
   }
 
-  .slick-prev {
+  .vc-modal__controls {
+    .slick-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 1.25rem;
 
-    &:active,
-    &:focus,
-    &:hover {
-      transform: translateX(-0.5rem);
+      &[aria-disabled='true'] {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      svg g {
+        stroke: var(--c-button-text);
+      }
     }
   }
 
-  .slick-next {
+  .vc-modal__second {
+    >*:first-child {
+      margin-top: 0;
+    }
+  }
 
-    &:active,
-    &:focus,
-    &:hover {
-      transform: translateX(0.5rem);
+  .vc-modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0;
+
+    svg path {
+      stroke: var(--c-button-text);
     }
   }
 }
@@ -204,29 +244,90 @@
   &.is-open {
     display: block;
   }
+
+  .slick-slider {
+    user-select: auto;
+  }
+
+  .slick-slide {
+    visibility: hidden;
+  }
+
+  .slick-current {
+    visibility: visible;
+  }
 }
 
-.modal__container,
-.modal__content {
+.modal__container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: var(--c-bg);
-}
-
-.modal__content {
   overflow-y: auto;
-  padding: 1rem;
 
-  @include breakpoint($bp-med) {
-    padding: 2rem;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 14px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--c-link);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    border: 3px solid transparent;
   }
 }
 
-.modal__footer {
+.modal__content {
+  padding: 3rem 1rem 5rem;
+
+  @include breakpoint($bp-med) {
+    padding-inline: 2rem;
+  }
+
+  @include breakpoint($bp-large) {
+    padding-inline: 3rem;
+  }
+}
+
+.vc-modal__footer {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
+
+  @include breakpoint($bp-med) {
+    right: 2rem;
+  }
+}
+
+.vc-modal__first {
+  @include breakpoint($bp-med) {
+    grid-column: 2 / 12;
+
+    // Update grid span when `vc-modal__second` displays
+    &:has(+.vc-modal__second) {
+      grid-column: span 7;
+    }
+  }
+}
+
+.vc-modal__second {
+  @include breakpoint($bp-med) {
+    grid-column: span 5;
+    margin-block-start: 5rem;
+  }
+}
+
+.vc-modal__controls {
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  background-color: var(--c-bg);
+  box-shadow: 0 0 50px rgba($black, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
