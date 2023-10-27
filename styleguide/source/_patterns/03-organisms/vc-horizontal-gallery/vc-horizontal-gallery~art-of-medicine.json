@@ -13,7 +13,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-1--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-1--large.jpg' alt='Alt text'>",
@@ -27,7 +27,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-2--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-2--large.jpg' alt='Alt text'>",
@@ -41,7 +41,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-3--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-3--large.jpg' alt='Alt text'>",
@@ -55,7 +55,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-4--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-4--large.jpg' alt='Alt text'>",
@@ -69,7 +69,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-5--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-5--large.jpg' alt='Alt text'>",
@@ -83,7 +83,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-6--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-6--large.jpg' alt='Alt text'>",
@@ -97,7 +97,7 @@
       "label": null,
       "image": {
         "src": "../../assets/images/vc/img-onstage-7--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-onstage-7--large.jpg' alt='Alt text'>",

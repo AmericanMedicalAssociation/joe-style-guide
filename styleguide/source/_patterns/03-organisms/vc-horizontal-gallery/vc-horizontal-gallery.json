@@ -11,7 +11,7 @@
       "label": "Anthony (Before Surgery), by Mark Gilbert, 2008",
       "image": {
         "src": "../../assets/images/vc/img-anthony--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-anthony--large.jpg' alt='Alt text'>",
@@ -25,7 +25,7 @@
       "label": "Tumor (Anthony), by Mark Gilbert, 2006",
       "image": {
         "src": "../../assets/images/vc/img-tumor--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-tumor--large.jpg' alt='Alt text'>",
@@ -39,7 +39,7 @@
       "label": "Removed Cancer (Anthony), by Mark Gilbert, 2008",
       "image": {
         "src": "../../assets/images/vc/img-removed-cancer--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-removed-cancer--large.jpg' alt='Alt text'>",
@@ -53,7 +53,7 @@
       "label": "Anthony, Mark Gilbert 2007",
       "image": {
         "src": "../../assets/images/vc/img-anthony-2--small.jpg",
-        "alt": "All text"
+        "alt": "Alt text"
       },
       "featured_media": {
         "image": "<img src='../../assets/images/vc/img-anthony-2--large.jpg' alt='Alt text'>",
