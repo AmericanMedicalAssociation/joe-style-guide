@@ -11,28 +11,33 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_hero_gallery = {
     attach: function (context, settings) {
-      $('.vc-hero-gallery__nav').slick({
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '5%',
-        variableWidth: true,
-        speed: 800,
-        touchThreshold: 500,
-        touchMove: false,
-        appendArrows: $('.vc-hero-gallery__nav-controls'),
-        responsive: [
-          {
-            breakpoint: 900,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              variableWidth: false
+
+      const vcHeroGallery = document.querySelector('.vc-hero-gallery');
+
+      if (vcHeroGallery) {
+        $('.vc-hero-gallery__nav').slick({
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '5%',
+          variableWidth: true,
+          speed: 800,
+          touchThreshold: 500,
+          touchMove: false,
+          appendArrows: $('.vc-hero-gallery__nav-controls'),
+          responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false
+              }
             }
-          }
-        ]
-      });
+          ]
+        });
+      }
     }
   };
 })(jQuery, Drupal);
