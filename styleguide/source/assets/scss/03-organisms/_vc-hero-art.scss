@@ -278,6 +278,13 @@
 
   .vc-hero-art__tool-button,
   a.vc-hero-art__tool-button {
+
+    &:active,
+    &:hover,
+    &:focus {
+      padding-block-start: 10px;
+    }
+
     @include breakpoint(0 $bp-small) {
       padding-inline: 10px;
     }
