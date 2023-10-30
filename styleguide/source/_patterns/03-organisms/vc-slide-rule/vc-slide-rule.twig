@@ -1,4 +1,9 @@
 <div class="vc-slide-rule">
+  {% if slide_rule.figure_text %}
+    <div class="vc-slide-rule__caption">
+      {{ slide_rule.figure_text|raw }}
+    </div>
+  {% endif %}
   <div class="vc-slide-rule__slider beer-slider">
     {{ slide_rule.image_before|raw }}
     <div class="beer-reveal">
@@ -31,11 +36,13 @@
       {% endif %}
     </div>
   </div>
-  {% if slide_rule.caption %}
-    <div class="vc-container--tight vc-slide-rule__container">
-      <div class="vc-slide-rule__caption">
-        {{ slide_rule.caption|raw }}
-      </div>
-    </div>
-  {% endif %}
+  {# {% if slide_rule.caption %}
+          <div class="vc-container--tight vc-slide-rule__container">
+            <div class="vc-slide-rule__caption">
+              {{ slide_rule.caption|raw }}
+            </div>
+          </div>
+        {% endif %} #}
+  {# TODO Reaction component here #}
+  <span>Reaction</span>
 </div>
