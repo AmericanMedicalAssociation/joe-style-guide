@@ -8,6 +8,12 @@
   margin-block-end: 3rem;
 }
 
+.vc-cards__header--centered {
+  @include breakpoint($bp-small) {
+    text-align: center;
+  }
+}
+
 .vc-cards__desc {
   max-width: 80ch;
 }
