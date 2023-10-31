@@ -1,9 +1,27 @@
+:root[class*='vc-'] {
+  .vc-video-tabs__heading {
+    margin-block-start: 0;
+  }
+}
+
+.vc-video-tabs__header {
+  margin-block-end: 3rem;
+}
+
+.vc-video-tabs__desc {
+  max-width: 80ch;
+}
+
 .vc-video-tabs__group {
   display: flex;
   flex-direction: column;
 
   @include breakpoint($bp-med) {
     flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  @include breakpoint($bp-large) {
     gap: 4rem;
   }
 }
@@ -27,10 +45,6 @@
   li,
   a {
     display: block;
-
-    @include breakpoint($bp-med) {
-      // display: inline-block;
-    }
   }
 
   a {
@@ -50,7 +64,6 @@
   }
 
   [aria-selected] {
-    // background: var(--c-bg);
     font-weight: 800;
 
     @include breakpoint(0 $bp-med) {
@@ -63,8 +76,6 @@
 
     @include breakpoint($bp-med) {
       position: relative;
-      // top: 2px;
-      // border: 1px solid var(--c-text);
       border-bottom: 0;
     }
   }

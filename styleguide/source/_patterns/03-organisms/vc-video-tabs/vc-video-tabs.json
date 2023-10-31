@@ -1,5 +1,9 @@
 {
   "htmlClass": "vc-art",
+  "video_tabs": {
+    "title": "Video Tabs Heading",
+    "description": "<p>Example introduction text below the section heading.</p>"
+  },
   "video_group": [
     {
       "label": "Overcoming Pseudo-stoicism in Medicine",
