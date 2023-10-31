@@ -1,0 +1,48 @@
+<div class="vc-reaction-bar">
+  <div class="vc-reaction-bar__actions {% if reaction.question %}vc-reaction-bar__actions--has-question{% endif %}">
+    {% if reaction.question %}
+      <span class="vc-reaction-bar__question">{{ reaction.question }}</span>
+    {% endif %}
+    <div class="vc-reaction-bar__emojis">
+      <button aria-expanded="false" class="vc-reaction-bar__emojis-button" type="button">
+        <span class="visually-hidden">Add Reaction</span>
+        {% include "@base/icons/icon-reaction-button.svg" %}
+      </button>
+      <div class="vc-reaction-bar__emojis-dropdown" hidden>
+        <span class="vc-reaction-bar__emojis-icon" role="button">
+          <img src="../../assets/images/vc/icon-emoji--thinking-face.svg" alt="Thinking Face Emoji">
+        </span>
+        <span class="vc-reaction-bar__emojis-icon" role="button">
+          <img src="../../assets/images/vc/icon-emoji--heart-eyes.svg" alt="Heart Eyes Emoji">
+        </span>
+        <span class="vc-reaction-bar__emojis-icon" role="button">
+          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
+        </span>
+        <span class="vc-reaction-bar__emojis-icon" role="button">
+          <img src="../../assets/images/vc/icon-emoji--drink.svg" alt="Drink Emoji">
+        </span>
+        <span class="vc-reaction-bar__emojis-icon" role="button">
+          <img src="../../assets/images/vc/icon-emoji--skull.svg" alt="Skull Emoji">
+        </span>
+      </div>
+    </div>
+  </div>
+  {% if reaction.total %}
+    <div class="vc-reaction-bar__total">
+      {% if reaction.total == 1 %}
+        <div class="vc-reaction-bar__emojis-selected">
+          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
+        </div>
+        <span class="vc-reaction-bar__total-label">{{ reaction.total }}
+          Reaction</span>
+      {% elseif reaction.total > 1 %}
+        <div class="vc-reaction-bar__emojis-selected">
+          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
+          <img src="../../assets/images/vc/icon-emoji--thinking-face.svg" alt="Thinking Face Emoji">
+        </div>
+        <span class="vc-reaction-bar__total-label">{{ reaction.total }}
+          Reaction</span>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
