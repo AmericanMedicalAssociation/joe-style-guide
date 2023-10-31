@@ -69,6 +69,12 @@
           $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
         });
       });
+
+      const testButton = document.querySelector('.vc-modal__close');
+
+      testButton.addEventListener('click', (e) => {
+        console.log(e);
+      });
     }
   };
 })(jQuery, Drupal);

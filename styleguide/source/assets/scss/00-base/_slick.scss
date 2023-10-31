@@ -247,7 +247,10 @@
       }
 
       &[aria-disabled='true'] {
+        opacity: 0;
         visibility: hidden;
+        transform: translateY(100%);
+        overflow: hidden;
       }
 
       svg g {
