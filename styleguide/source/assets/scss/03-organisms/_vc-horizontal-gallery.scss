@@ -1,0 +1,152 @@
+:root[class*='vc-'] {
+  .vc-horizontal-gallery__heading {
+    margin-block-start: 0;
+  }
+
+  .vc-modal__controls {
+    .slick-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 1.25rem;
+
+      &[aria-disabled='true'] {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+        overflow: hidden;
+      }
+
+      svg g {
+        stroke: var(--c-button-text);
+      }
+    }
+  }
+
+  .vc-modal__second {
+    >*:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+:root.vc-gallery {
+  .vc-horizontal-gallery {
+    position: relative;
+    padding-block-start: 14rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 20px;
+      height: 10rem;
+      transform: translateX(-50%);
+      background-image: url('../images/vc/bg-gallery-pattern--dark.svg');
+      background-repeat: repeat;
+      background-position: center top;
+    }
+  }
+
+  &[data-theme='light'] {
+    .vc-horizontal-gallery::before {
+      background-image: url('../images/vc/bg-gallery-pattern--light.svg');
+      background-size: 22px;
+    }
+  }
+}
+
+.vc-horizontal-gallery__desc {
+  +.vc-horizontal-gallery__gallery-label {
+    margin-block-start: 3rem;
+  }
+}
+
+.vc-horizontal-gallery__gallery-label {
+  text-align: center;
+}
+
+.vc-horizontal-gallery__artwork {
+  cursor: pointer;
+}
+
+.vc-horizontal-gallery__artwork-label {
+  @include type($franklin-gothic-comp, 0.9em, $font-weight-medium, 1);
+  display: block;
+  margin: 0.75rem 0 0;
+}
+
+.vc-horizontal-gallery__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vc-horizontal-gallery__controls-label {
+  @include type($font-sans-serif, 0.8em, $font-weight-medium, 1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  @include breakpoint($bp-small) {
+    font-size: 1em;
+  }
+}
+
+// Modal slideshow styles
+.vc-modal {
+  .slick-slider {
+    user-select: auto;
+  }
+
+  .slick-slide {
+    visibility: hidden;
+  }
+
+  .slick-current {
+    visibility: visible;
+  }
+}
+
+.vc-modal__first {
+  @include breakpoint($bp-med) {
+    grid-column: 2 / 12;
+
+    // Update grid span when `vc-modal__second` displays
+    &:has(+.vc-modal__second) {
+      grid-column: span 7;
+    }
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 2 / 12;
+    }
+  }
+}
+
+.vc-modal__second {
+  @include breakpoint($bp-med) {
+    grid-column: span 5;
+    margin-block-start: 5rem;
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 3 / 11;
+      margin-block-start: 0;
+    }
+  }
+}
+
+.vc-modal__controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--c-bg);
+  box-shadow: 0 0 50px rgba($black, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
