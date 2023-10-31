@@ -116,6 +116,11 @@
     &:has(+.vc-modal__second) {
       grid-column: span 7;
     }
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 2 / 12;
+    }
   }
 }
 
@@ -123,6 +128,12 @@
   @include breakpoint($bp-med) {
     grid-column: span 5;
     margin-block-start: 5rem;
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 3 / 11;
+      margin-block-start: 0;
+    }
   }
 }
 

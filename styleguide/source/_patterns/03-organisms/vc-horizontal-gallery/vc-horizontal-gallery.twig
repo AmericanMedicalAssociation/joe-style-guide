@@ -47,7 +47,7 @@
         <div class="vc-horizontal-gallery__artwork-items">
           {% for item in gallery_items %}
             <div>
-              <div class="vc-grid vc-modal__grid">
+              <div class="vc-grid vc-modal__grid {% if item.stacked %}vc-modal__grid--stacked{% endif %}">
                 <div class="vc-modal__first">
                   {% set featured_media = item.featured_media %}
                   {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
