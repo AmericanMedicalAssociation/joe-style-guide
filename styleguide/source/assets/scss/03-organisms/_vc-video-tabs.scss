@@ -1,0 +1,90 @@
+.vc-video-tabs__group {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($bp-med) {
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+}
+
+.vc-video-tabs__group [role='tablist'] {
+  padding: 0;
+  margin: 0;
+
+  @include breakpoint($bp-med) {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    @include breakpoint($bp-med) {
+      border-bottom: 1px solid var(--c-text);
+    }
+  }
+
+  li,
+  a {
+    display: block;
+
+    @include breakpoint($bp-med) {
+      // display: inline-block;
+    }
+  }
+
+  a {
+    border: 1px solid var(--c-text);
+    padding: 0.5rem 1rem;
+
+    @include breakpoint($bp-med) {
+      border: 0;
+      padding: 1rem 0;
+    }
+  }
+
+  li+li a {
+    @include breakpoint(0 $bp-med) {
+      border-top: 0;
+    }
+  }
+
+  [aria-selected] {
+    // background: var(--c-bg);
+    font-weight: 800;
+
+    @include breakpoint(0 $bp-med) {
+
+      // Add in a visual element to indicate the active state of selected label
+      &::after {
+        content: '\0020⬅ ';
+      }
+    }
+
+    @include breakpoint($bp-med) {
+      position: relative;
+      // top: 2px;
+      // border: 1px solid var(--c-text);
+      border-bottom: 0;
+    }
+  }
+}
+
+// Tab content
+.vc-video-tabs__group [role='tabpanel'] {
+  position: relative;
+  aspect-ratio: 16 / 9;
+
+  iframe,
+  object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include breakpoint($bp-med) {
+    flex-basis: 70%;
+  }
+}

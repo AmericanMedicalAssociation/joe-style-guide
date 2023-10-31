@@ -1,0 +1,18 @@
+<div class="vc-video-tabs">
+  <div class="vc-container">
+    <div class="vc-video-tabs__group">
+      <ul>
+        {% for item in video_group %}
+          <li>
+            <a href="#section{{ loop.index }}">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% for item in video_group %}
+        <section class="vc-video-tabs__video" id="section{{ loop.index }}">
+          {{ item.video|raw }}
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>

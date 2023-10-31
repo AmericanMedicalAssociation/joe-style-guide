@@ -1,0 +1,17 @@
+{
+  "htmlClass": "vc-art",
+  "video_group": [
+    {
+      "label": "Overcoming Pseudo-stoicism in Medicine",
+      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+    },
+    {
+      "label": "And I Told the Doctor, I Think There’s Something Wrong",
+      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/bBTin1qtvRc?si=sQPxSRdY0fcKCItJ&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+    },
+    {
+      "label": "Bagalamukhi’s Words as Resistance",
+      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/NfwpHuMbvk8?si=vJRDYS7IzRj-_8fu&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+    }
+  ]
+}
