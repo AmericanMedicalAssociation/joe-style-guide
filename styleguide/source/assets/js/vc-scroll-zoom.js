@@ -15,8 +15,6 @@
       // Find all inViewCaptions classes
       const inViewCaptions = document.querySelectorAll('.vc-scroll-zoom__captions');
 
-      console.log(inViewCaptions);
-
       // Find the dimensions of inViewport
       const inViewport = function (e) {
         const distance = e.getBoundingClientRect();
