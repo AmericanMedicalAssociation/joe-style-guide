@@ -32,10 +32,8 @@
         for (let i = 0; i < inViewCaptions.length; i++) {
           if (inViewport(inViewCaptions[i])) {
             // If in view
-            inViewCaptions[i].classList.add('in-view');
             inViewCaptions[i].previousElementSibling.classList.add('is-sticky');
           } else {
-            inViewCaptions[i].classList.remove('in-view');
             inViewCaptions[i].previousElementSibling.classList.remove('is-sticky');
           }
         }
