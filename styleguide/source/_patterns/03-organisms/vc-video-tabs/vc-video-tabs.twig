@@ -1,0 +1,26 @@
+<div class="vc-video-tabs">
+  <div class="vc-container">
+    <header class="vc-video-tabs__header">
+      <h2 class="vc-video-tabs__heading">{{ video_tabs.title }}</h2>
+      {% if video_tabs.description %}
+        <div class="vc-video-tabs__desc">
+          {{ video_tabs.description|raw }}
+        </div>
+      {% endif %}
+    </header>
+    <div class="vc-video-tabs__group">
+      <ul>
+        {% for item in video_group %}
+          <li>
+            <a href="#section{{ loop.index }}">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% for item in video_group %}
+        <section class="vc-video-tabs__video" id="section{{ loop.index }}">
+          {{ item.video|raw }}
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>
