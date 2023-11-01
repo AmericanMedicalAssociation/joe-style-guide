@@ -1,0 +1,19 @@
+<div class="vc-scroll-zoom">
+  <div class="vc-scroll-zoom__image-container">
+    <div class="vc-scroll-zoom__image-blur">
+      {{ scroll_zoom.image|raw }}
+    </div>
+    <div class="vc-scroll-zoom__image">
+      {{ scroll_zoom.image|raw }}
+    </div>
+  </div>
+  <div class="vc-scroll-zoom__captions vc-container">
+    {% for caption in scroll_zoom.captions %}
+      <div class="vc-scroll-zoom__caption {% if caption.position_right %}vc-scroll-zoom__caption--right{% endif %}">
+        <div class="vc-scroll-zoom__caption-desc">
+          {{ caption.description|raw }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
