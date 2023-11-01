@@ -1,3 +1,24 @@
+.vc-ethics-pattern {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('../images/vc/bg-ethics-pattern.svg');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 0.8rem;
+    opacity: 0.35;
+    filter: invert(1);
+
+    :root[data-theme='light'] & {
+      filter: none;
+    }
+  }
+}
+
 .vc-scroll-zoom__image-container {
   position: relative;
   height: 100vh;
@@ -69,6 +90,26 @@
 
   @include breakpoint($bp-large) {
     max-width: 40rem;
+  }
+
+  &::after {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.75rem;
+    height: 75%;
+
+    @include breakpoint($bp-small) {
+      right: -0.5rem;
+    }
+
+    .vc-scroll-zoom__caption--right & {
+      right: auto;
+      left: -0.75rem;
+
+      @include breakpoint($bp-small) {
+        left: -0.5rem;
+      }
+    }
   }
 
   >p:last-child {
