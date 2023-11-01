@@ -11,7 +11,7 @@
   Drupal.behaviors.resourceToolips = {
     attach: function () {
       // Separates the sup tags that have multiple numbers into individual sup tags
-      $('article sup, aside sup, .vc-scroll-zoom sup').each(function () {
+      $('article sup, aside sup').each(function () {
         var $sup = $(this);
         var supText = $sup.text().trim();
         if (supText.indexOf(',') > -1) {
@@ -22,7 +22,7 @@
         }
       });
       // Sup on hover connect it to the references
-      $('article sup, aside sup, .vc-scroll-zoom sup').hover(function () {
+      $('article sup, aside sup').hover(function () {
         // Find the <sup> tag number and convert it into an integer
         var $supNumber = parseInt($(this).text()) - 1;
         // Take <sup> number and use it to get the reference
