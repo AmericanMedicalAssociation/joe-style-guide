@@ -136,17 +136,28 @@ $initial-reveal: 50%;
   }
 }
 
+.vc-slide-rule {
+  .vc-reaction-bar {
+    .layout--onecol-fullwidth & {
+      padding-inline: 1rem;
+
+      @include breakpoint($bp-large) {
+        padding-inline: 1.5rem;
+      }
+    }
+  }
+}
+
 .vc-slide-rule__caption {
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
-  padding-inline: 1.25rem;
   margin-block: 0 1rem;
 
-  @include breakpoint($bp-large) {
-    padding-inline: 1.5rem;
-  }
+  .layout--onecol-fullwidth & {
+    padding-inline: 1.25rem;
 
-  .layout--onecol-centered & {
-    padding-inline: 0;
+    @include breakpoint($bp-large) {
+      padding-inline: 1.5rem;
+    }
   }
 }
 
@@ -154,14 +165,13 @@ $initial-reveal: 50%;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  padding-inline: 1rem;
 
-  @include breakpoint($bp-large) {
-    padding-inline: 1.5rem;
-  }
+  .layout--onecol-fullwidth & {
+    padding-inline: 1rem;
 
-  .layout--onecol-centered & {
-    padding-inline: 0;
+    @include breakpoint($bp-large) {
+      padding-inline: 1.5rem;
+    }
   }
 }
 

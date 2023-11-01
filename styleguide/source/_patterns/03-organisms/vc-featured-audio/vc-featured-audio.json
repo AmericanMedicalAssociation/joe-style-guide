@@ -7,5 +7,9 @@
     "src": "../../assets/audio/mixkit-morning-birds-2472.mp3",
     "copyright": "© Copyright: Recorded July 27, 2023.",
     "transcript_download": "/"
+  },
+  "reaction": {
+    "question": null,
+    "total": 1
   }
 }

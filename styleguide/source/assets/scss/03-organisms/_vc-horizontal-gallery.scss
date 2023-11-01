@@ -122,6 +122,14 @@
     // Update grid if stacked
     .vc-modal__grid--stacked & {
       grid-column: 2 / 12;
+
+      .vc-reaction-bar {
+        margin-block-end: 0;
+      }
+    }
+
+    .vc-reaction-bar {
+      margin-block-end: 5rem;
     }
   }
 }
