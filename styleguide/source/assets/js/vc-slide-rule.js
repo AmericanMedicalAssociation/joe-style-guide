@@ -11,15 +11,20 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_slide_rule = {
     attach: function (context, settings) {
-      $.fn.BeerSlider = function (options) {
-        options = options || {};
-        return this.each(function () {
-          new BeerSlider(this, options);
+
+      const vcSlider = document.querySelector('.vc-slide-rule');
+
+      if (vcSlider) {
+        $.fn.BeerSlider = function (options) {
+          options = options || {};
+          return this.each(function () {
+            new BeerSlider(this, options);
+          });
+        };
+        $('.vc-slide-rule__slider').each(function (index, el) {
+          $(el).BeerSlider()
         });
-      };
-      $('.vc-slide-rule__slider').each(function (index, el) {
-        $(el).BeerSlider()
-      });
+      }
     }
   };
 })(jQuery, Drupal);

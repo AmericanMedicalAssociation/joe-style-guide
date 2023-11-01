@@ -3,7 +3,6 @@
   flex-direction: column;
   border: 1px solid var(--c-text);
   padding: 1rem 1rem 2rem;
-  max-width: 70ch;
 }
 
 .vc-card__image {
@@ -14,6 +13,12 @@
     width: 100%;
     height: auto;
   }
+}
+
+.vc-card__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 :root[class*='vc-'] {
