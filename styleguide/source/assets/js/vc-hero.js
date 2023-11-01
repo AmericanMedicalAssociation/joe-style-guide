@@ -22,11 +22,24 @@
           this.setAttribute('aria-expanded', !expanded);
           vcToolContent.hidden = !vcToolContent.hidden;
 
-          document.addEventListener('click', function (e) {
-            if (vcToolBtn !== e.target) {
-              vcToolContent.hidden = true;
+          // On `esc` press hide open `vcToolContent`
+          document.addEventListener('keyup', (e) => {
+            if (!vcToolContent.hidden) {
+              const key = e.key || e.keyCode;
+              if (key === 'Escape' || key === 'Esc' || key === 27) {
+                vcToolBtn.setAttribute('aria-expanded', 'false');
+                vcToolContent.hidden = true;
+              }
             }
           });
+
+          // Close `vcToolContent` when mouseup outside of elements
+          document.addEventListener('mouseup', function (e) {
+            if (!e.target.closest('.vc-hero__tool-content') && !e.target.closest('.vc-hero__tool-button')) {
+              vcToolBtn.setAttribute('aria-expanded', 'false');
+              vcToolContent.hidden = true;
+            }
+          }, false);
         });
       }
     }
