@@ -12,6 +12,7 @@
       {% include "@molecules/author-information.twig" %}
     {% endif %}
     {% if issue %}
+      {% set issue = vc_issue %}
       {% include "@organisms/article-issue-footer.twig" %}
     {% endif %}
   </div>

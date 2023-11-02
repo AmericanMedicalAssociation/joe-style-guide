@@ -1,6 +1,6 @@
 {
   "htmlClass": "vc-art",
-  "htmlStyle": "--c-bg: #EBEBEB; --c-text: #262626; --c-hero-bg: #484848; --c-hero-title: #5CD5D4; --c-button-bg: #5CD5D4; --c-button-bg-hover: #77F1F0; --c-button-text: #484848;",
+  "htmlStyle": "",
   "hero": {
     "image_small": "../../assets/images/vc/bg-hero-art-1--small.jpg",
     "image_medium": "../../assets/images/vc/bg-hero-art-1--medium.jpg",
@@ -142,10 +142,8 @@
       ]
     }
   ],
-  "curator_note": "Background image by Samantha Welker.",
   "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
   "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
-  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
   "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
   "ethics_case": false,
   "article_authors": [
@@ -153,97 +151,5 @@
       "name": "Beck Regan",
       "description": " is a second-year medical student at the Virginia Commonwealth University School of Medicine in Richmond. They are a student in the Family Medicine Scholars Training and Admission Tract interested in health care access, transgender health care, and mountain biking."
     }
-  ],
-  "issue": {
-    "title": null,
-    "articles": [
-      {
-        "style": "reverse",
-        "flag": {
-          "type": "Peer-Reviewed CME Article"
-        },
-        "authors": [
-          {
-            "name": "Jeremy Balch"
-          },
-          {
-            "name": "Julia H. Schoen"
-          },
-          {
-            "name": "Payal K. Patel"
-          }
-        ],
-        "title": {
-          "href": "#",
-          "class": "joe__article-teaser__title",
-          "text": "Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
-        },
-        "image": {
-          "src": "https://placehold.co/450x225"
-        }
-      },
-      {
-        "style": "reverse",
-        "flag": {
-          "type": "Podcast",
-          "class": "joe__flag--red"
-        },
-        "title": {
-          "href": "#",
-          "class": "joe__article-teaser__title",
-          "text": "How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
-        },
-        "image": {
-          "src": "https://placehold.co/450x225"
-        }
-      },
-      {
-        "style": "reverse",
-        "flag": {
-          "type": "The Code Says"
-        },
-        "authors": [
-          {
-            "name": "Jeremy Balch"
-          },
-          {
-            "name": "Julia H. Schoen"
-          },
-          {
-            "name": "Payal K. Patel"
-          }
-        ],
-        "title": {
-          "href": "#",
-          "class": "joe__article-teaser__title",
-          "text": "The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
-        },
-        "image": {
-          "src": "https://placehold.co/450x225"
-        }
-      },
-      {
-        "style": "reverse",
-        "flag": {
-          "type": "State of the Art and Science"
-        },
-        "authors": [
-          {
-            "name": "Steven S. Coughlin"
-          },
-          {
-            "name": "Osman Yousufzai"
-          }
-        ],
-        "title": {
-          "href": "#",
-          "class": "joe__article-teaser__title",
-          "text": "The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
-        },
-        "image": {
-          "src": "https://placehold.co/450x225"
-        }
-      }
-    ]
-  }
+  ]
 }
