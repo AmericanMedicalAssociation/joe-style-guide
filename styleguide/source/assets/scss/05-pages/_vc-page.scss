@@ -1,0 +1,54 @@
+:root[class*='vc-'] article {
+
+  .layout__region--top,
+  .layout__region--bottom,
+  .layout__region--first,
+  .layout__region--second {
+    opacity: 0;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      opacity: 1;
+    }
+
+  }
+
+  .c-paragraph.in-view {
+    .layout__region--top {
+      animation-name: sectionFadeIn;
+      animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+    }
+
+    .layout__region--first,
+    .layout__region--bottom {
+      animation-name: sectionFadeIn;
+      animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+      animation-duration: 1s;
+      animation-delay: 0.25s;
+      animation-fill-mode: forwards;
+    }
+
+    .layout__region--second {
+      animation-name: sectionFadeIn;
+      animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    .layout__region--top,
+    .layout__region--bottom,
+    .layout__region--first,
+    .layout__region--second {
+
+      // Reduce animation motion if enabled per user
+      @media (prefers-reduced-motion) {
+        animation-timing-function: linear;
+        animation-duration: 0s;
+      }
+    }
+  }
+}
