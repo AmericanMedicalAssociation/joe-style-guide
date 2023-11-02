@@ -13,7 +13,7 @@
             {% include "@base/icons/icon-close.svg" %}
           </span>
         </button>
-        <div hidden id="vc-header-nav">
+        <div hidden class="vc-header__dropdown" id="vc-header-nav">
           <div class="vc-header-nav__container">
             <div class="vc-header-nav__nav-primary">
               {% set primary_navs = vc_primary_navs %}
@@ -49,7 +49,7 @@
             {% include "@base/icons/icon-close.svg" %}
           </span>
         </button>
-        <div hidden id="vc-header__search">
+        <div hidden class="vc-header__dropdown" id="vc-header__search">
           <h2 class="vc-header__search-heading">Search AMA Journal of Ethics</h2>
           {% set search_label = vc_search_label %}
           {% set search_inputs = vc_search_inputs %}

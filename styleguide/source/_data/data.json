@@ -109,5 +109,9 @@
       "text": "Contact"
     }
   ],
-  "vc_copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980"
+  "vc_copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980",
+  "reaction": {
+    "question": "How does this artwork make you feel?",
+    "total": "5"
+  }
 }

@@ -1,10 +1,15 @@
 {
   "htmlClass": "vc-gallery",
+  "theme_mode": "dark",
   "featured_audio": {
     "title": "Editorial Fellow Interview: “Why Should We Care About the Mental Health of Older Adults?”",
     "description": "<p>Dr Badr Ratnakaran joins Ethics Talk to discuss his curation of the October 2023 issue: “Geriatric Psychiatry.”</p>",
-    "src": "//html5-player.libsyn.com/embed/episode/id/27772962/height/90/theme/custom/thumbnail/no/direction/backward/render-playlist/no/custom-color/141258/",
+    "src": "../../assets/audio/mixkit-morning-birds-2472.mp3",
     "copyright": "© Copyright: Recorded July 27, 2023.",
     "transcript_download": "/"
+  },
+  "reaction": {
+    "question": null,
+    "total": 1
   }
 }

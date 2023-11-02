@@ -7,9 +7,18 @@
       </div>
     {% endif %}
   </header>
-  <div class="vc-featured-audio__container clearfix">
-    {% set audio = featured_audio %}
-    {% include "@atoms/audio-player.twig" %}
+  <div class="vc-featured-audio__container">
+    <div class="vc-featured-audio__spectrum-container">
+      <div class="vc-featured-audio__spectrum">
+        {% for i in 1..127 %}
+          <div class="vc-featured-audio__spectrum-bar" id="bar-{{ i }}"></div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="vc-featured-audio__player">
+      <audio src="{{ featured_audio.src }}" controls="controls"></audio>
+    </div>
+    {% include "@base/icons/audio-blur.svg" %}
   </div>
   <footer class="vc-featured-audio__footer">
     {% if featured_audio.transcript_download %}
@@ -21,6 +30,5 @@
       </span>
     {% endif %}
   </footer>
-  {# TODO Reaction component here #}
-  <span>Reaction</span>
+  {% include "@molecules/vc-reaction-bar/vc-reaction-bar.twig" %}
 </div>

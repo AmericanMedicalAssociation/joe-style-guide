@@ -136,6 +136,58 @@ $initial-reveal: 50%;
   }
 }
 
+.vc-slide-rule {
+  .vc-reaction-bar {
+    .layout--onecol-fullwidth & {
+      padding-inline: 1rem;
+
+      @include breakpoint($bp-large) {
+        padding-inline: 1.5rem;
+      }
+    }
+  }
+}
+
 .vc-slide-rule__caption {
-  margin-block-start: 2rem;
+  @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
+  margin-block: 0 1rem;
+
+  .layout--onecol-fullwidth & {
+    padding-inline: 1.25rem;
+
+    @include breakpoint($bp-large) {
+      padding-inline: 1.5rem;
+    }
+  }
+}
+
+.vc-slide-rule__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .layout--onecol-fullwidth & {
+    padding-inline: 1rem;
+
+    @include breakpoint($bp-large) {
+      padding-inline: 1.5rem;
+    }
+  }
+}
+
+.vc-slide-rule__info-before,
+.vc-slide-rule__info-after {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.6em;
+  line-height: 1.1;
+
+  @include breakpoint($bp-large) {
+    font-size: 0.8em;
+  }
+}
+
+.vc-slide-rule__info-after {
+  text-align: right;
 }
