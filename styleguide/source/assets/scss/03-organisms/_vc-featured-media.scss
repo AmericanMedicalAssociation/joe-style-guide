@@ -4,6 +4,16 @@
   @include breakpoint($bp-large) {
     padding-inline: 1.5rem;
   }
+
+  .layout--onecol-centered & {
+    @include breakpoint($bp-med) {
+      margin-inline: -1.25rem;
+    }
+
+    @include breakpoint($bp-large) {
+      margin-inline: -1.5rem;
+    }
+  }
 }
 
 .vc-featured-media__container {
