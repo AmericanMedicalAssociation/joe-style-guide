@@ -30,30 +30,10 @@
   }
 }
 
+// vc Gallery overrides
 :root.vc-gallery {
   .vc-horizontal-gallery {
-    position: relative;
-    padding-block-start: 14rem;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 20px;
-      height: 10rem;
-      transform: translateX(-50%);
-      background-image: url('../images/vc/bg-gallery-pattern--dark.svg');
-      background-repeat: repeat;
-      background-position: center top;
-    }
-  }
-
-  &[data-theme='light'] {
-    .vc-horizontal-gallery::before {
-      background-image: url('../images/vc/bg-gallery-pattern--light.svg');
-      background-size: 22px;
-    }
+    @extend %vc-gallery-pattern;
   }
 }
 

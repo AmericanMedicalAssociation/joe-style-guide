@@ -40,3 +40,51 @@
     @extend %element-invisible-off;
   }
 }
+
+// VC Gallery
+.vc-gallery-pattern,
+%vc-gallery-pattern {
+  position: relative;
+  padding-block-start: 14rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 10rem;
+    transform: translateX(-50%);
+    background-image: url('../images/vc/bg-gallery-pattern--dark.svg');
+    background-repeat: repeat;
+    background-position: center top;
+
+    :root[data-theme='light'] & {
+      background-image: url('../images/vc/bg-gallery-pattern--light.svg');
+      background-size: 22px;
+    }
+  }
+}
+
+// VC Ethics
+.vc-ethics-pattern,
+%vc-ethics-pattern {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('../images/vc/bg-ethics-pattern.svg');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 0.8rem;
+    opacity: 0.35;
+    filter: invert(1);
+
+    :root[data-theme='light'] & {
+      filter: none;
+    }
+  }
+}
