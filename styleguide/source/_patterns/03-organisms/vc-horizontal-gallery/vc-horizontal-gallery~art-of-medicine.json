@@ -6,107 +6,107 @@
     "title": null,
     "description": null,
     "label": "<strong>Figure.</strong> Is There a Script for How to Help a Physician Help Me?",
-    "control_label": "Comic Artworks"
-  },
-  "gallery_items": [
-    {
-      "stacked": true,
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-1--small.jpg",
-        "alt": "Alt text"
+    "control_label": "Comic Artworks",
+    "gallery_items": [
+      {
+        "stacked": true,
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-1--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-1--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
       },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-1--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-2--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-2--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
       },
-      "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-2--small.jpg",
-        "alt": "Alt text"
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-3--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-3--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
       },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-2--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-4--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-4--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
       },
-      "featured_media_description": null
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-3--small.jpg",
-        "alt": "Alt text"
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-5--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-5--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
       },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-3--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-6--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-6--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
       },
-      "featured_media_description": null
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-4--small.jpg",
-        "alt": "Alt text"
-      },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-4--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
-      },
-      "featured_media_description": null
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-5--small.jpg",
-        "alt": "Alt text"
-      },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-5--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
-      },
-      "featured_media_description": null
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-6--small.jpg",
-        "alt": "Alt text"
-      },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-6--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
-      },
-      "featured_media_description": null
-    },
-    {
-      "label": null,
-      "image": {
-        "src": "../../assets/images/vc/img-onstage-7--small.jpg",
-        "alt": "Alt text"
-      },
-      "featured_media": {
-        "image": "<img src='../../assets/images/vc/img-onstage-7--large.jpg' alt='Alt text'>",
-        "figure_text": null,
-        "copyright": null,
-        "media": "Media: Procreate®"
-      },
-      "featured_media_description": null
-    }
-  ]
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-7--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-7--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      }
+    ]
+  }
 }

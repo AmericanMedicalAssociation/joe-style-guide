@@ -1,0 +1,227 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #F5F5F5; --c-text: #3A4941; --c-hero-bg: #C54374; --c-button-bg: #9FE7C7; --c-button-bg-hover: #71E8B3; --c-button-text: #484848;",
+  "hero": {
+    "modifier_class": "vc-hero-art--text-left vc-hero-art--full",
+    "image_small": "../../assets/images/vc/bg-hero-art-3--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-3--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-3--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "On Stage, But Not on Cue",
+    "author": "Julia O'Brien",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>This comic considers how patients can work to use the right vocabulary to help their physicians help them, since patients suffer when physicians fail to properly diagnose and intervene on their ailments. This comic also considers how patients can experience performance anxiety after what might be months of preparation for a key clinic visit in hopes of getting help.</p>"
+  },
+  "comics": {
+    "id": "1",
+    "title": null,
+    "description": null,
+    "label": "<strong>Figure.</strong> Is There a Script for How to Help a Physician Help Me?",
+    "control_label": "Comic Artworks",
+    "gallery_items": [
+      {
+        "stacked": true,
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-1--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-1--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-2--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-2--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-3--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-3--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-4--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-4--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-5--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-5--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-6--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-6--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      },
+      {
+        "label": null,
+        "image": {
+          "src": "../../assets/images/vc/img-onstage-7--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-onstage-7--large.jpg' alt='Alt text'>",
+          "figure_text": null,
+          "copyright": null,
+          "media": "Media: Procreate®"
+        },
+        "featured_media_description": null
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Beck Regan",
+      "description": " is a second-year medical student at the Virginia Commonwealth University School of Medicine in Richmond. They are a student in the Family Medicine Scholars Training and Admission Tract interested in health care access, transgender health care, and mountain biking."
+    }
+  ]
+}

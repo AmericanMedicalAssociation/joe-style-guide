@@ -1,12 +1,13 @@
 :root[class*='vc-'] {
 
   .vc-modal {
+    position: relative;
     display: none;
+    z-index: 999;
 
     &.is-open {
       display: block;
     }
-
   }
 
   .vc-modal__container {

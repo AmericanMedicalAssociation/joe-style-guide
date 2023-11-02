@@ -17,7 +17,7 @@
     </div>
   {% endif %}
   <div class="vc-horizontal-gallery__items vc-gallery__items">
-    {% for item in gallery_items %}
+    {% for item in gallery.gallery_items %}
       <span class="vc-horizontal-gallery__artwork" role="button" data-micromodal-trigger="modal-{{ gallery.id }}" data-slidenum="{{ loop.index0 }}">
         {% set image = item.image %}
         {% include "@atoms/image.twig" %}
@@ -42,10 +42,10 @@
 
 <div aria-hidden="true" class="vc-modal micromodal-slide" id="modal-{{ gallery.id }}">
   <div class="vc-modal__overlay" data-micromodal-close="" tabindex="-1">
-    <di class="vc-modal__container" role="dialog">
+    <div class="vc-modal__container" role="dialog">
       <main class="vc-modal__content" id="modal-1-content">
         <div class="vc-horizontal-gallery__artwork-items">
-          {% for item in gallery_items %}
+          {% for item in gallery.gallery_items %}
             <div>
               <div class="vc-grid vc-modal__grid {% if item.stacked %}vc-modal__grid--stacked{% endif %}">
                 <div class="vc-modal__first">
