@@ -88,3 +88,36 @@
     }
   }
 }
+
+// VC Art of Medicine
+:root.vc-art {
+  .c-field__content {
+    // isolation: isolate;
+    position: relative;
+  }
+
+  .vc-art__bg-shapes {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    overflow: hidden;
+
+    &.flip {
+      transform: scaleX(-1);
+    }
+
+    svg {
+      @include breakpoint($bp-large) {
+        width: 100%;
+        height: auto;
+      }
+
+      g {
+        fill: var(--c-button-bg);
+      }
+    }
+  }
+}

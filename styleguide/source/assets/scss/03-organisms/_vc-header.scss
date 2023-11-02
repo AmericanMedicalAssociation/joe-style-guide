@@ -86,7 +86,7 @@
 .vc-header {
   position: relative;
   padding-block: 0.5rem;
-  z-index: 1;
+  z-index: 100;
 
   // Art of Medicine header overrides
   :root.vc-art & {

@@ -1,9 +1,9 @@
 .vc-hero-art {
   position: relative;
-  margin-block-end: 5rem;
+  margin-block-end: 10rem;
 
-  @include breakpoint($bp-med) {
-    margin-block-end: 10rem;
+  @include breakpoint($bp-small) {
+    margin-block-end: 15rem;
   }
 }
 

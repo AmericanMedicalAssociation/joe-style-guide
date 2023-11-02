@@ -18,7 +18,7 @@
     "content": "<p class='lede'>This series of 4 images visually considers ethical questions about the US health sector’s emissions.</p>"
   },
   "featured_media_1": {
-    "image": "<img src='https://placehold.co/1440x2000' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/bg-hero-art-1--large.jpg' alt='Alt text'>",
     "figure_text": "<strong>Figure 1.</strong> Smokestacks",
     "copyright": null,
     "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney, with custom parameter weighting."
@@ -27,7 +27,7 @@
     "content": "<p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
   },
   "featured_media_2": {
-    "image": "<img src='https://placehold.co/1440x2000' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/img-art-1-figure2.png' alt='Alt text'>",
     "figure_text": "<strong>Figure 2.</strong> Landfill",
     "copyright": null,
     "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
@@ -36,7 +36,7 @@
     "content": "<p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
   },
   "featured_media_3": {
-    "image": "<img src='https://placehold.co/1440x2000' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/img-art-1-figure3.jpeg' alt='Alt text'>",
     "figure_text": "<strong>Figure 3.</strong> Drought",
     "copyright": null,
     "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
@@ -45,7 +45,7 @@
     "content": "<p>Dystopian consequences of the Anthropocene are represented here by first responders,<sup>2</sup> on whom we rely when facing emergencies and who have limited capacity as individuals for the collective response needed to mitigate <a href='https://journalofethics.ama-assn.org/article/climate-change-and-health-equity/2021-02'>climate change</a>, which is annually causing millions of deaths worldwide.<sup>3</sup> In this bleak landscape, those tasked with saving lives are also stranded.</p>"
   },
   "featured_media_4": {
-    "image": "<img src='https://placehold.co/1440x2000' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/img-art-1-figure4.png' alt='Alt text'>",
     "figure_text": "<strong>Figure 4.</strong> Reclaimed",
     "copyright": null,
     "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
