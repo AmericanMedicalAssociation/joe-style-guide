@@ -26,6 +26,16 @@
     {% endblock %}
   {% endembed %}
 
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set text_block = body_copy %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
   {% set issue = vc_issue %}
   {% include "@organisms/vc-article-bottom/vc-article-bottom.twig" %}
 {% endblock %}
