@@ -49,7 +49,7 @@
       if (vcArtShapes) {
         const vcArtHeader = document.querySelector('.vc-hero-art');
 
-        if (vcArtHeader.classList.contains('vc-hero-art--right-left')) {
+        if (vcArtHeader.classList.contains('vc-hero-art--text-right')) {
           vcArtShapes.classList.add('flip');
         }
       }

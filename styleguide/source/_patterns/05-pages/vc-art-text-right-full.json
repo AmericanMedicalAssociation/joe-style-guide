@@ -1,0 +1,128 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #393939; --c-text: #fff; --c-hero-bg: #262626; --c-hero-text: #fff; --c-button-bg: #CE4A22; --c-button-bg-hover: #B4330C; --c-button-text: #fff;",
+  "hero": {
+    "modifier_class": "vc-hero-art--text-right vc-hero-art--full",
+    "image_small": "../../assets/images/vc/bg-hero-art-4--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-4--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-4--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "Public Health Risk and Civic Peership",
+    "author": "Michaela Chan",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>During the COVID-19 pandemic, some US federal courts required jurors’ vaccination against COVID-19, which, according to some, made a juror less representative of a peer. This comic investigates this set of concerns narratively and visually.</p>"
+  },
+  "featured_media_1": {
+    "image": "<img src='../../assets/images/vc/img-art-2-figure1.jpeg' alt='Alt text'>",
+    "figure_text": "<strong>Figure.</strong> Juries During COVID-19",
+    "copyright": null,
+    "media": "Media: Ink on paper, 8.5\" x 11\"."
+  },
+  "figure_caption_1": {
+    "content": "<p>The growing COVID-19 pandemic provided novel loci of polarization of Americans throughout 2020. Wearing a mask or refusing to mask <a href='#'>became a political statement</a>. At the highest levels of government, leaders disputed the advice of experts; facts themselves were and continue to be politicized. Scientific institutions became targets of ire at a moment when science was singularly equipped to offer key contributions of global and domestic importance. A glimmer of hope arrived in November 2020, when companies released results of clinical trials showing vaccines’ over 90% efficacy in preventing COVID-19 in tens of thousands of human subjects who received the vaccines.1</p><p>Most frontline workers lined up to receive shots. The vaccine rollout felt to many like the first good news in a long time—a kind of scientific and cultural permission to cautiously exhale a breath held far too long. I cheered when my dad, an emergency room physician with a perennial cough, sent a photo of his vaccine card to our family chat.</p><p>Not everyone saw the unprecedented mRNA vaccines as a remedy to a desperate situation. Hostility and hesitation were and remain pervasive. Compared to other wealthy nations, the United States lagged in its rate of vaccination by the end of 2021.2 Many eligible adults refused the jabs. To raise vaccination numbers, <a href='#'>mandates</a> were issued across public and private companies, universities, health care organizations, and state and local governments.</p><p>As an example of a nationwide trend, in June 2021, proof of vaccination against COVID-19 was required by a federal judge of jurors in a federal trial on pharmacy chains’ roles in the opioid epidemic.3 The comic’s last panel highlights the fluctuation of representation in the jury box across history as policy changes rooted out racism, sexism, and discrimination against poverty.</p><p>Did vaccine mandates shift representation in jury boxes unjustly? A litigation consulting firm found that liberal jurors slightly favor plaintiffs, while conservative jurors slightly favor defendants. In the June 2021 federal opioid case, defendants prompted the presiding judge to throw out the mandate for that particular case.4 In the final panel of the comic, over calligraphy in which the words <em>owner</em>, <em>property</em>, and <em>freemen</em> are legible, the comic reads, “by a jury of one’s peers.“ Perhaps <em>peers</em> should have an asterisk in our democratic, civic, and public health deliberations, as we reconsider what it means to be a citizen of a nation, of the world.</p>"
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Beck Regan",
+      "description": " is a second-year medical student at the Virginia Commonwealth University School of Medicine in Richmond. They are a student in the Family Medicine Scholars Training and Admission Tract interested in health care access, transgender health care, and mountain biking."
+    }
+  ]
+}
