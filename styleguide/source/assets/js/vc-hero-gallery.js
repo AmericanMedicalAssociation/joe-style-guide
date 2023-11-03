@@ -23,9 +23,9 @@
           centerPadding: '5%',
           variableWidth: true,
           speed: 800,
-          touchThreshold: 500,
           touchMove: false,
-          appendArrows: $('.vc-hero-gallery__nav-controls'),
+          prevArrow: $('.vc-hero-gallery__nav').parent().find('.slick-prev'),
+          nextArrow: $('.vc-hero-gallery__nav').parent().find('.slick-next'),
           responsive: [
             {
               breakpoint: 900,
