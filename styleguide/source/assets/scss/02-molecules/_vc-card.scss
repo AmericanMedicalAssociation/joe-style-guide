@@ -1,9 +1,19 @@
 .vc-card {
+  isolation: isolate;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--c-bg);
-  border: 1px solid var(--c-text);
   padding: 1rem 1rem 2rem;
+
+  &::before {
+    content: '';
+    box-shadow: 0 0 0 1px var(--c-text);
+    position: absolute;
+    inset: 0;
+    opacity: 0.25;
+    z-index: -1;
+  }
 }
 
 .vc-card__image {
