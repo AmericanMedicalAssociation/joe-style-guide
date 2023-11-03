@@ -24,4 +24,41 @@
       {% include "@organisms/vc-scroll-zoom/vc-scroll-zoom.twig" %}
     {% endblock %}
   {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_larger_left_col: true,
+    layout_heading: null
+  } %}
+    {% block layout_first %}
+      {% set featured_media = featured_media_1 %}
+      {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+    {% endblock %}
+    {% block layout_second %}
+      {% set text_block = caption_1 %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-featured-quote/vc-featured-quote.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_larger_right_col: true,
+    layout_heading: null
+  } %}
+    {% block layout_first %}
+      {% set text_block = caption_2 %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+    {% block layout_second %}
+      {% set featured_media = featured_media_2 %}
+      {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+    {% endblock %}
+  {% endembed %}
 {% endblock %}

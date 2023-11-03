@@ -63,5 +63,28 @@
         "description": "<p>Given its popular and professional appeal, The Doctor has been employed over the years to depict the practice of medicine in highly public and sometimes contradictory ways.</p>"
       }
     ]
+  },
+  "featured_media_1": {
+    "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",
+    "figure_text": null,
+    "copyright": null,
+    "media": "Media: Oil on canvas, 8.5\" x 11\"."
+  },
+  "caption_1": {
+    "content": "<p>Raised by his grandmother, a supporter of the working-class Chartist movement, Fildes established his early reputation as an artistic champion of social realism. His works, including Applicants for Admission to a Casual Ward (1874), captured and drew attention to the harsh lived realities of the poor. Depicting a grim scene of families, homeless and hungry, which most well-off Londoners would have avoided in real life, Applicants attracted gallery patrons so numerous that police and barriers were needed to secure the painting.<sup>8</sup></p>"
+  },
+  "featured_quote": {
+    "blockquote": "“So his manner is all, and Fildes captures it forever: the furrowed brow; the hand propping the firm bearded chin; the calm, concerned authority.”",
+    "attribution": "C Douglas",
+    "attribution_title": "British Medical Journal"
+  },
+  "featured_media_2": {
+    "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",
+    "figure_text": null,
+    "copyright": null,
+    "media": "Media: Oil on canvas, 8.5\" x 11\"."
+  },
+  "caption_2": {
+    "content": "<p>Another of Fildes’ popular social realist paintings was The Widower (1875). A father who labors to care for a sick child appears helpless, without either medicine to dispense or a doctor to tend to the child. The rest of his children carry on around him, seemingly oblivious to the gravity of the situation. While Fildes’ works shone a spotlight on the desperate plight of too many in Victorian society, his conscience-raising and critical success did not afford him the material comforts of life. That would soon change.</p>"
   }
 }
