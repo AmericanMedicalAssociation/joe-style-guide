@@ -1,6 +1,7 @@
 .vc-card {
   display: flex;
   flex-direction: column;
+  background-color: var(--c-bg);
   border: 1px solid var(--c-text);
   padding: 1rem 1rem 2rem;
 }
@@ -25,6 +26,26 @@
   .vc-card__title {
     margin-block-start: 0.5rem;
   }
+
+  a.vc-card__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &::after {
+      transition: transform 0.3s ease;
+      content: '\00A0 \2192';
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      &::after {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+
 }
 
 .vc-card__desc {
