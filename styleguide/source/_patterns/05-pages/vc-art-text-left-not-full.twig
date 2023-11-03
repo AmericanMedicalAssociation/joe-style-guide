@@ -104,6 +104,8 @@
     layout_heading: null
   } %}
     {% block layout_bottom %}
+      {% set featured_media = featured_video %}
+      {% set reaction = featured_video.reaction %}
       {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
     {% endblock %}
   {% endembed %}
