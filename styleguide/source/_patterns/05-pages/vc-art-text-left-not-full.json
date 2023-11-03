@@ -21,25 +21,31 @@
     "image": "<img src='../../assets/images/vc/bg-hero-art-1--large.jpg' alt='Alt text'>",
     "figure_text": "<strong>Figure 1.</strong> Smokestacks",
     "copyright": null,
-    "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney, with custom parameter weighting."
+    "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney."
   },
   "caption_1": {
-    "content": "<p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
+    "content": "<h2>Caption</h2><p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
   },
   "featured_media_2": {
     "image": "<img src='../../assets/images/vc/img-art-1-figure2.png' alt='Alt text'>",
     "figure_text": "<strong>Figure 2.</strong> Landfill",
     "copyright": null,
-    "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
+    "media": "Media: Affinity Designer iterated through the AI art program Midjourney."
   },
   "caption_2": {
-    "content": "<p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
+    "content": "<h2>Caption</h2><p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
   },
-  "featured_media_3": {
-    "image": "<img src='../../assets/images/vc/img-art-1-figure3.jpeg' alt='Alt text'>",
+  "slide_rule": {
     "figure_text": "<strong>Figure 3.</strong> Drought",
-    "copyright": null,
-    "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
+    "image_before": "<img src='../../assets/images/vc/img-art-1-figure3.jpeg' alt='Alt text'>",
+    "copyright_before": null,
+    "media_before": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting.",
+    "image_after": "<img src='../../assets/images/vc/img-art-1-figure3b.jpg' alt='Alt text'>",
+    "copyright_after": null,
+    "media_after": null,
+    "reaction": {
+      "question": "How does this artwork make you feel?"
+    }
   },
   "caption_3": {
     "content": "<p>Dystopian consequences of the Anthropocene are represented here by first responders,<sup>2</sup> on whom we rely when facing emergencies and who have limited capacity as individuals for the collective response needed to mitigate <a href='https://journalofethics.ama-assn.org/article/climate-change-and-health-equity/2021-02'>climate change</a>, which is annually causing millions of deaths worldwide.<sup>3</sup> In this bleak landscape, those tasked with saving lives are also stranded.</p>"
@@ -52,6 +58,55 @@
   },
   "caption_4": {
     "content": "<p>An operating room overrun with lush vegetation represents hope for a more sustainable, “greener” approach to health care. Plants’ reclamation of a once sterile, artificial place prompt a reimagining of spaces designated for health and well-being.</p>"
+  },
+  "featured_video": {
+    "image": null,
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+    "figure_text": "<strong>Figure 1.</strong> This short film considers ethical and clinical implications of the phenomenon of pseudo-stoicism, especially in medicine.",
+    "copyright": null,
+    "media": "Media: Procreate® and Adobe Premiere® Pro CC 2022 (22.0)",
+    "reaction": {
+      "question": "How does this video make you feel?"
+    }
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
   },
   "tags": [
     {

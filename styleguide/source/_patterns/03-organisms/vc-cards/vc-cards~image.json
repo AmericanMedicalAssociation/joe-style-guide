@@ -5,38 +5,38 @@
     "title": "Education from the AMA Code of Medical Ethics",
     "description": null,
     "link": "Learn More About CME",
-    "href": "/"
-  },
-  "card_group": [
-    {
-      "image": {
-        "src": "https://placehold.co/400x250",
-        "alt": "Alt text"
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://placehold.co/400x250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
       },
-      "title": "Continuing Medical Education",
-      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
-      "link": "Visit CME",
-      "href": "/"
-    },
-    {
-      "image": {
-        "src": "https://placehold.co/400x250",
-        "alt": "Alt text"
+      {
+        "image": {
+          "src": "https://placehold.co/400x250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
       },
-      "title": "Continuing Medical Education",
-      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
-      "link": "Visit CME",
-      "href": "/"
-    },
-    {
-      "image": {
-        "src": "https://placehold.co/400x250",
-        "alt": "Alt text"
-      },
-      "title": "Continuing Medical Education",
-      "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
-      "link": "Visit CME",
-      "href": "/"
-    }
-  ]
+      {
+        "image": {
+          "src": "https://placehold.co/400x250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  }
 }

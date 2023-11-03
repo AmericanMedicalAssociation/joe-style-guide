@@ -10,7 +10,6 @@
     @media (prefers-reduced-motion) {
       opacity: 1;
     }
-
   }
 
   .c-paragraph.in-view {
@@ -37,6 +36,11 @@
       animation-duration: 1s;
       animation-delay: 0.5s;
       animation-fill-mode: forwards;
+    }
+
+    // Override the fullwidth animation
+    .layout--onecol-fullwidth .layout__region--bottom {
+      animation-name: sectionFadeInAlt;
     }
 
     .layout__region--top,
