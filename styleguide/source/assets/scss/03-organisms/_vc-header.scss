@@ -91,6 +91,7 @@
   // Art of Medicine header overrides
   :root.vc-art & {
     background-color: var(--c-hero-bg);
+    box-shadow: 0 0 50px rgba($black, 0.2);
   }
 
   .joe__sticky-header & {
