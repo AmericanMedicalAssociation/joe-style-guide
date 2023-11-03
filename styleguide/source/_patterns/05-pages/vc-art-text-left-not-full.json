@@ -21,19 +21,19 @@
     "image": "<img src='../../assets/images/vc/bg-hero-art-1--large.jpg' alt='Alt text'>",
     "figure_text": "<strong>Figure 1.</strong> Smokestacks",
     "copyright": null,
-    "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney, with custom parameter weighting."
+    "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney."
   },
   "caption_1": {
-    "content": "<p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
+    "content": "<h2>Caption</h2><p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
   },
   "featured_media_2": {
     "image": "<img src='../../assets/images/vc/img-art-1-figure2.png' alt='Alt text'>",
     "figure_text": "<strong>Figure 2.</strong> Landfill",
     "copyright": null,
-    "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
+    "media": "Media: Affinity Designer iterated through the AI art program Midjourney."
   },
   "caption_2": {
-    "content": "<p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
+    "content": "<h2>Caption</h2><p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
   },
   "slide_rule": {
     "figure_text": "<strong>Figure 3.</strong> Drought",
@@ -42,7 +42,7 @@
     "media_before": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting.",
     "image_after": "<img src='../../assets/images/vc/img-art-1-figure3b.jpg' alt='Alt text'>",
     "copyright_after": null,
-    "media_after": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting.",
+    "media_after": null,
     "reaction": {
       "question": "How does this artwork make you feel?"
     }
