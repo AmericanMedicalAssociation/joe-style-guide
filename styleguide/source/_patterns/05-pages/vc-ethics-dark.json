@@ -76,7 +76,11 @@
   "featured_quote": {
     "blockquote": "“So his manner is all, and Fildes captures it forever: the furrowed brow; the hand propping the firm bearded chin; the calm, concerned authority.”",
     "attribution": "C Douglas",
-    "attribution_title": "British Medical Journal"
+    "attribution_title": "British Medical Journal",
+    "image": {
+      "src": "https://placehold.co/370x370",
+      "alt": "Alt Text"
+    }
   },
   "featured_media_2": {
     "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",

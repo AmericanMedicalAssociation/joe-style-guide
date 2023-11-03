@@ -17,6 +17,7 @@
 
     @include breakpoint($bp-med) {
       flex-direction: row;
+      align-items: flex-start;
       gap: 3rem;
     }
 
@@ -101,6 +102,82 @@
       @include breakpoint($bp-large) {
         @include type($font-serif, 2em, $font-weight-bold, 1.4);
       }
+    }
+  }
+}
+
+:root.vc-ethics {
+  .vc-featured-quote {
+    position: relative;
+    padding-block-start: 14rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 10rem;
+      height: 3rem;
+      background-image: url('../images/vc/bg-ethics-pattern.svg');
+      background-repeat: repeat;
+      background-position: center top;
+      background-size: 0.8rem;
+      opacity: 0.35;
+    }
+
+    &::after {
+      @include type($font-sans-serif, 6em, $font-weight-medium, 1);
+      content: '\201C';
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 0.4em;
+      height: 0.4em;
+      background-color: var(--c-text);
+      border-radius: 50%;
+      color: var(--c-audio-viz);
+      padding: 0 0.1em 0.2em;
+    }
+  }
+
+  .vc-featured-quote__image {
+    @include breakpoint($bp-med) {
+      margin-block-start: -6rem;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .vc-featured-quote__blockquote {
+    @include type($font-serif, 1.5em, $font-weight-medium, 1.4);
+
+    @include breakpoint($bp-large) {
+      @include type($font-serif, 1.75em, $font-weight-medium, 1.4);
+    }
+  }
+
+  .vc-featured-quote__attr {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  .vc-featured-quote__attr-title {
+    @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.4);
+    font-style: italic;
+  }
+
+  &[data-theme='light'] {
+    .vc-featured-quote::before {
+      filter: invert(1);
     }
   }
 }
