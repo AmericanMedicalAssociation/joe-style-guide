@@ -39,6 +39,10 @@
   .layout--onecol-centered {
     @extend .vc-container--tight;
 
+    .vc-container {
+      --container-padding: 0;
+    }
+
     .layout__region {
       border: 0;
       width: auto;
@@ -81,6 +85,10 @@
   .layout--twocol-equal {
     @extend .vc-container;
 
+    .vc-container {
+      --container-padding: 0;
+    }
+
     >.layout__region {
       border: 0;
       margin: 0;
@@ -108,6 +116,10 @@
   .layout--twocol-larger-left-col {
     @extend .vc-container;
 
+    .vc-container {
+      --container-padding: 0;
+    }
+
     >.layout__region {
       border: 0;
       margin: 0;
@@ -134,6 +146,10 @@
   // TWO COLUMNS - LARGER RIGHT COL
   .layout--twocol-larger-right-col {
     @extend .vc-container;
+
+    .vc-container {
+      --container-padding: 0;
+    }
 
     >.layout__region {
       border: 0;

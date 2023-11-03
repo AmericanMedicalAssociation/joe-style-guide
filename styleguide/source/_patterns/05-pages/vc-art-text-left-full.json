@@ -128,6 +128,24 @@
   "body_copy": {
     "content": "<p>Being a patient <a href='#'>in search of a diagnosis</a>—or a physician who can make one—is often riddled with frustration, anger, self-doubt, and performance anxiety. Patients can spend a lot of time preparing for a clinic visit, which can generate as much pressure on a patient as a performance does for an actor. When patients feel they have to help their physicians help them, clinical encounters can be poignant, unrewarding sources of exacerbated suffering of an illness.</p><p>This comic captures a patient’s frustration when an ongoing health issue seemingly does not get resolved after the patient sees the physician. Instead of a happy ending, patients can experience cliffhanger after cliffhanger, as physicians struggle to diagnose or treat them. This process lengthens patients’ path to healing and can become another source of stress.</p><p>Physicians struggle in this situation, too. There are only so many clinicians, and many patients compete for their time. The current system doesn’t allow physicians to <a href='#'>dedicate enough time</a> and energy to properly question patients, perform examinations, and earn their trust. Which resources might enable physicians to meet a patient’s needs in the first, rather than the tenth, appointment?</p>"
   },
+  "video_tabs": {
+    "title": "Video Tabs Heading",
+    "description": "<p>Example introduction text below the section heading.</p>",
+    "video_group": [
+      {
+        "label": "Overcoming Pseudo-stoicism in Medicine",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "And I Told the Doctor, I Think There’s Something Wrong",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/bBTin1qtvRc?si=sQPxSRdY0fcKCItJ&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "Bagalamukhi’s Words as Resistance",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/NfwpHuMbvk8?si=vJRDYS7IzRj-_8fu&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      }
+    ]
+  },
   "tags": [
     {
       "url": "#",
