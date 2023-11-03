@@ -61,4 +61,46 @@
       {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
     {% endblock %}
   {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-slide-rule/vc-slide-rule.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set text_block = slide_rule_caption %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set featured_media = featured_video %}
+      {% set reaction = featured_video.reaction %}
+      {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-cards/vc-cards.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% set issue = vc_issue %}
+  {% include "@organisms/vc-article-bottom/vc-article-bottom.twig" %}
 {% endblock %}

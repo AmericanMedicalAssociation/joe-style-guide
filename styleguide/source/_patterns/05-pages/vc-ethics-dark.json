@@ -78,17 +78,178 @@
     "attribution": "C Douglas",
     "attribution_title": "British Medical Journal",
     "image": {
-      "src": "https://placehold.co/370x370",
+      "src": "../../assets/images/vc/img-ethics-1-quote.jpg",
       "alt": "Alt Text"
     }
   },
   "featured_media_2": {
-    "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",
+    "image": "<img src='../../assets/images/vc/img-ethics-1-figure2.jpg' alt='Alt text'>",
     "figure_text": null,
     "copyright": null,
     "media": "Media: Oil on canvas, 8.5\" x 11\"."
   },
   "caption_2": {
     "content": "<p>Another of Fildes’ popular social realist paintings was The Widower (1875). A father who labors to care for a sick child appears helpless, without either medicine to dispense or a doctor to tend to the child. The rest of his children carry on around him, seemingly oblivious to the gravity of the situation. While Fildes’ works shone a spotlight on the desperate plight of too many in Victorian society, his conscience-raising and critical success did not afford him the material comforts of life. That would soon change.</p>"
-  }
+  },
+  "slide_rule": {
+    "figure_text": null,
+    "image_before": "<img src='../../assets/images/vc/img-ethics-1-figure3.jpg' alt='Alt text'>",
+    "copyright_before": null,
+    "media_before": null,
+    "image_after": "<img src='../../assets/images/vc/img-ethics-1-figure3b.jpg' alt='Alt text'>",
+    "copyright_after": null,
+    "media_after": null
+  },
+  "slide_rule_caption": {
+    "content": "<p>Being paid handsomely to immortalize the powerful rich seems far from what a young Fildes could imagine, let alone accept, as an artist of the voiceless poor. So when Tate offered him The Doctor commission, Fildes jumped at the chance at some redemption by creating “something that would worthily represent me….. It is some time now since I painted an English subject of importance—a long time since the Casual Ward, The Widower and The Return of the Penitent series.”<sup>10</sup></p>"
+  },
+  "featured_video": {
+    "image": null,
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7MrQcLvDVSs?si=HzKzQzPQRH01Wxu3' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+    "figure_text": null,
+    "copyright": null,
+    "media": null,
+    "reaction": {
+      "question": "How does this video make you feel?"
+    }
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Audiey C. Kao, MD, PhD",
+      "description": " is the editor in chief of the AMA Journal of Ethics."
+    }
+  ]
 }

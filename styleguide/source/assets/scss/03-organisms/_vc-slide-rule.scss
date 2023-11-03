@@ -148,6 +148,10 @@ $initial-reveal: 50%;
   }
 }
 
+.vc-slide-rule__slider {
+  overflow: visible;
+}
+
 .vc-slide-rule__caption {
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
   margin-block: 0 1rem;
@@ -190,4 +194,20 @@ $initial-reveal: 50%;
 
 .vc-slide-rule__info-after {
   text-align: right;
+}
+
+:root.vc-ethics {
+  .vc-slide-rule__slider {
+    @extend %vc-ethics-pattern;
+    isolation: isolate;
+
+    &::after {
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 30%;
+      height: 2rem;
+      z-index: -1;
+    }
+  }
 }
