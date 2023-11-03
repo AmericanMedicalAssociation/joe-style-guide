@@ -1,7 +1,7 @@
 .vc-hero-gallery {
   --top-padding: 8rem;
-  --bottom-padding: 8rem;
-  padding-block: var(--top-padding);
+  --bottom-padding: 3rem;
+  padding-block: var(--top-padding) var(--bottom-padding);
 
   @include breakpoint($bp-large) {
     --top-padding: 10rem;
@@ -40,6 +40,16 @@
 
   a.vc-hero-gallery__anchor {
     text-decoration: none;
+
+    img {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        box-shadow: 0 0 0 6px var(--c-link);
+      }
+    }
   }
 
   .vc-hero-gallery__anchor-label {

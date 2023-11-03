@@ -3,3 +3,28 @@
 {% block pageHeader %}
   {% include "@organisms/vc-hero-gallery/vc-hero-gallery.twig" %}
 {% endblock %}
+
+{% block pageContent %}
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set gallery = gallery_1 %}
+      {% include "@organisms/vc-horizontal-gallery/vc-horizontal-gallery.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set gallery = gallery_2 %}
+      {% include "@organisms/vc-horizontal-gallery/vc-horizontal-gallery.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% set issue = vc_issue %}
+  {% include "@organisms/vc-article-bottom/vc-article-bottom.twig" %}
+{% endblock %}
