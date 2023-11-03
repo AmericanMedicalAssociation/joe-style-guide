@@ -21,6 +21,7 @@
     layout_heading: null
   } %}
     {% block layout_bottom %}
+      {% set scroll_zoom = scroll_zoom_1 %}
       {% include "@organisms/vc-scroll-zoom/vc-scroll-zoom.twig" %}
     {% endblock %}
   {% endembed %}
@@ -45,6 +46,16 @@
   } %}
     {% block layout_bottom %}
       {% include "@organisms/vc-featured-quote/vc-featured-quote.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set scroll_zoom = scroll_zoom_2 %}
+      {% include "@organisms/vc-scroll-zoom/vc-scroll-zoom.twig" %}
     {% endblock %}
   {% endembed %}
 

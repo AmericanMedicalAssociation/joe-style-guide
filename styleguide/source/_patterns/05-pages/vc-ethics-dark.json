@@ -15,7 +15,7 @@
   "abstract": {
     "content": "<p class='lede'>One of the most recognized paintings of Western medicine, Luke Fildes’ The Doctor aimed to represent a caring physician in a humble setting during an era when people living with poverty rarely had access to health care and nearly all physicians were White men. The Doctor challenges us to think about what good doctoring is.</p>"
   },
-  "scroll_zoom": {
+  "scroll_zoom_1": {
     "image": "<img srcset='../../assets/images/vc/bg-hero-ethics--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics--large.jpg' alt='Alt text'>",
     "captions": [
       {
@@ -41,7 +41,30 @@
       },
       {
         "description": "<p>The child’s parents recede into the background, reinforcing their helplessness to affect their child’s fate. A dawn light filtering through the window reveals the father comforting the mother, casting further uncertainty on their child’s immediate future.</p>"
-      },
+      }
+    ]
+  },
+  "featured_media_1": {
+    "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",
+    "figure_text": null,
+    "copyright": null,
+    "media": "Media: Oil on canvas, 8.5\" x 11\"."
+  },
+  "caption_1": {
+    "content": "<p>Raised by his grandmother, a supporter of the working-class Chartist movement, Fildes established his early reputation as an artistic champion of social realism. His works, including Applicants for Admission to a Casual Ward (1874), captured and drew attention to the harsh lived realities of the poor. Depicting a grim scene of families, homeless and hungry, which most well-off Londoners would have avoided in real life, Applicants attracted gallery patrons so numerous that police and barriers were needed to secure the painting.<sup>8</sup></p>"
+  },
+  "featured_quote": {
+    "blockquote": "“So his manner is all, and Fildes captures it forever: the furrowed brow; the hand propping the firm bearded chin; the calm, concerned authority.”",
+    "attribution": "C Douglas",
+    "attribution_title": "British Medical Journal",
+    "image": {
+      "src": "../../assets/images/vc/img-ethics-1-quote.jpg",
+      "alt": "Alt Text"
+    }
+  },
+  "scroll_zoom_2": {
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics--large.jpg' alt='Alt text'>",
+    "captions": [
       {
         "description": "<p>Despite the painting’s depiction, a doctor’s presence in a working-class home is more idealized than reality. During the Victorian era, such house calls were generally afforded to those with wealth and power.</p>"
       },
@@ -63,24 +86,6 @@
         "description": "<p>Given its popular and professional appeal, The Doctor has been employed over the years to depict the practice of medicine in highly public and sometimes contradictory ways.</p>"
       }
     ]
-  },
-  "featured_media_1": {
-    "image": "<img src='../../assets/images/vc/img-ethics-1-figure1.jpg' alt='Alt text'>",
-    "figure_text": null,
-    "copyright": null,
-    "media": "Media: Oil on canvas, 8.5\" x 11\"."
-  },
-  "caption_1": {
-    "content": "<p>Raised by his grandmother, a supporter of the working-class Chartist movement, Fildes established his early reputation as an artistic champion of social realism. His works, including Applicants for Admission to a Casual Ward (1874), captured and drew attention to the harsh lived realities of the poor. Depicting a grim scene of families, homeless and hungry, which most well-off Londoners would have avoided in real life, Applicants attracted gallery patrons so numerous that police and barriers were needed to secure the painting.<sup>8</sup></p>"
-  },
-  "featured_quote": {
-    "blockquote": "“So his manner is all, and Fildes captures it forever: the furrowed brow; the hand propping the firm bearded chin; the calm, concerned authority.”",
-    "attribution": "C Douglas",
-    "attribution_title": "British Medical Journal",
-    "image": {
-      "src": "../../assets/images/vc/img-ethics-1-quote.jpg",
-      "alt": "Alt Text"
-    }
   },
   "featured_media_2": {
     "image": "<img src='../../assets/images/vc/img-ethics-1-figure2.jpg' alt='Alt text'>",
