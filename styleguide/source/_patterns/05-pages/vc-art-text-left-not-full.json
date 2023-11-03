@@ -78,7 +78,7 @@
     "card_group": [
       {
         "image": {
-          "src": "https://placehold.co/400x250",
+          "src": "https://picsum.photos/id/25/400/250",
           "alt": "Alt text"
         },
         "title": "Continuing Medical Education",
@@ -88,7 +88,7 @@
       },
       {
         "image": {
-          "src": "https://placehold.co/400x250",
+          "src": "https://picsum.photos/id/11/400/250",
           "alt": "Alt text"
         },
         "title": "Continuing Medical Education",
@@ -98,7 +98,7 @@
       },
       {
         "image": {
-          "src": "https://placehold.co/400x250",
+          "src": "https://picsum.photos/id/83/400/250",
           "alt": "Alt text"
         },
         "title": "Continuing Medical Education",
