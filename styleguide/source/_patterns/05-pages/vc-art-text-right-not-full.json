@@ -1,0 +1,128 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #EBEBEB; --c-text: #262626; --c-hero-bg: #484848; --c-hero-title: #5CD5D4; --c-button-bg: #5CD5D4; --c-button-bg-hover: #77F1F0; --c-button-text: #484848;",
+  "hero": {
+    "modifier_class": "vc-hero-art--text-right vc-hero-art--not-full",
+    "image_small": "../../assets/images/vc/bg-hero-art-2--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-2--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-2--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "A Completely Normal Conversation With a Box",
+    "author": "Beck Regan",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>Health professional students often attend lectures equating resiliency with self-care. While self-care is vital, this graphic series suggests a dialectical tension between resiliency (as self-care) and resiliency (as group action or solidarity) and considers how actualizing and mobilizing “wellness” really is done in health professions education.</p>"
+  },
+  "featured_media_1": {
+    "image": "<img src='../../assets/images/vc/img-art-3-figure1.jpeg' alt='Alt text'>",
+    "figure_text": "<strong>Figure.</strong> Detail from Resiliency: A Completely Normal Conversation Between a Box and a Medical Student",
+    "copyright": null,
+    "media": "Procreate®."
+  },
+  "figure_caption_1": {
+    "content": "<p><p>This comic considers how actualizing and mobilizing “wellness” really is done in health professions education. Health professional students often attend lectures equating <a href=''>resiliency</a> with self-care. In many medical schools, students formally are coached in wellness but are actually still required to behave in ways that undermine their wellness.<sup>1,2</sup> Such norms in medical education also spill over to health professions educational norms more broadly.<sup>3 </sup>While self-care is vital, this graphic series suggests a dialectical tension between resiliency that comes from self-care and resiliency that can be generated from group action or solidarity forged in interprofessional learning.</p>"
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Beck Regan",
+      "description": " is a second-year medical student at the Virginia Commonwealth University School of Medicine in Richmond. They are a student in the Family Medicine Scholars Training and Admission Tract interested in health care access, transgender health care, and mountain biking."
+    }
+  ]
+}
