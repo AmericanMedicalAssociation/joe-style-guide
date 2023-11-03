@@ -91,3 +91,17 @@
     transform: translateY(0);
   }
 }
+
+@keyframes verticalThrob {
+  0% {
+    transform: rotate(-90deg) translate(0, -50%);
+  }
+
+  50% {
+    transform: rotate(-90deg) translate(-1rem, -50%);
+  }
+
+  100% {
+    transform: rotate(-90deg) translate(0, -50%);
+  }
+}
