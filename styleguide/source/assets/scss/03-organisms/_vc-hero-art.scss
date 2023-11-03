@@ -58,18 +58,18 @@
   }
 
   picture {
-    animation-name: heroFadeIn;
-    animation-timing-function: ease;
-    animation-duration: 10s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    // animation-name: heroFadeIn;
+    // animation-timing-function: ease;
+    // animation-duration: 10s;
+    // animation-delay: 0s;
+    // animation-fill-mode: forwards;
+    // opacity: 0;
 
     // Reduce animation motion if enabled per user
     @media (prefers-reduced-motion) {
-      animation-timing-function: linear;
-      animation-duration: 0s;
-      opacity: 1;
+      // animation-timing-function: linear;
+      // animation-duration: 0s;
+      // opacity: 1;
     }
 
     @include breakpoint($bp-large) {
