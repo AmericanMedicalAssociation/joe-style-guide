@@ -265,6 +265,45 @@
       }
     ]
   },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
   "curator_note": "Background image by Samantha Welker.",
   "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
   "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",

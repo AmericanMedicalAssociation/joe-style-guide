@@ -45,6 +45,15 @@
     {% endblock %}
   {% endembed %}
 
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-cards/vc-cards.twig" %}
+    {% endblock %}
+  {% endembed %}
+
   {% set issue = vc_issue %}
   {% include "@organisms/vc-article-bottom/vc-article-bottom.twig" %}
 {% endblock %}
