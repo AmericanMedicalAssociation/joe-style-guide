@@ -161,8 +161,15 @@
   a.vc-hero-ethics__tool-button {
     @include breakpoint($bp-med) {
       position: relative;
+      background-color: var(--c-button-bg-alt);
+      color: var(--c-link);
       min-width: 13rem;
       padding-inline-end: 0;
+
+      &:link,
+      &:visited {
+        color: var(--c-link);
+      }
 
       &::after {
         transition: all 0.3s ease;
@@ -172,17 +179,18 @@
         left: 100%;
         width: 0;
         height: 0;
-        border-bottom: 48.56px solid var(--c-button-bg);
+        border-bottom: 48.56px solid var(--c-button-bg-alt);
         border-right: 48.56px solid transparent;
       }
 
       &:active,
       &:hover,
       &:focus {
+        background-color: var(--c-button-bg-hover-alt);
         min-width: 14rem;
 
         &::after {
-          border-bottom-color: var(--c-button-bg-hover);
+          border-bottom-color: var(--c-button-bg-hover-alt);
         }
       }
     }
