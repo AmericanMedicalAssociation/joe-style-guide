@@ -53,6 +53,16 @@
   "caption_4": {
     "content": "<p>An operating room overrun with lush vegetation represents hope for a more sustainable, “greener” approach to health care. Plants’ reclamation of a once sterile, artificial place prompt a reimagining of spaces designated for health and well-being.</p>"
   },
+  "featured_media": {
+    "image": null,
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+    "figure_text": "<strong>Figure 1.</strong> This short film considers ethical and clinical implications of the phenomenon of pseudo-stoicism, especially in medicine.",
+    "copyright": null,
+    "media": "Media: Procreate® and Adobe Premiere® Pro CC 2022 (22.0)",
+    "reaction": {
+      "question": "How does this video make you feel?"
+    }
+  },
   "tags": [
     {
       "url": "#",
