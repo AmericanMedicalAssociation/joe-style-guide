@@ -13,7 +13,20 @@
 }
 
 .vc-hero-gallery__flag {
+  animation-name: fadeIn;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   text-align: center;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
+  }
 }
 
 .vc-hero-gallery__flag-type {
@@ -25,8 +38,21 @@
 
 :root.vc-gallery {
   .vc-hero-gallery__title {
+    animation-name: sectionFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     text-wrap: balance;
     margin-block-start: 1rem;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      animation-timing-function: linear;
+      animation-duration: 0s;
+      opacity: 1;
+    }
   }
 
   .vc-hero-gallery__title--masked {
@@ -60,11 +86,41 @@
 }
 
 .vc-hero-gallery__desc {
+  animation-name: sectionFadeIn;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   text-wrap: balance;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
+  }
 
   @include breakpoint($bp-large) {
     font-size: 1.2em;
     line-height: 1.4;
+  }
+}
+
+.vc-hero-gallery__nav,
+.vc-hero-gallery__nav-controls {
+  animation-name: sectionFadeIn;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
   }
 }
 

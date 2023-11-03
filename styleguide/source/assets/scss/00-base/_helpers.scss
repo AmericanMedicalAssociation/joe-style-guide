@@ -63,6 +63,22 @@
       background-image: url('../images/vc/bg-gallery-pattern--light.svg');
       background-size: 22px;
     }
+
+    .in-view & {
+      animation-name: sectionFadeIn;
+      animation-timing-function: ease;
+      animation-duration: 2s;
+      animation-delay: 0.25s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      // Reduce animation motion if enabled per user
+      @media (prefers-reduced-motion) {
+        animation-timing-function: linear;
+        animation-duration: 0s;
+        opacity: 1;
+      }
+    }
   }
 }
 

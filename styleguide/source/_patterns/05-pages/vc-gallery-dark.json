@@ -9,8 +9,16 @@
     "description": "<p>This issue considers how portraiture introduces innovative strategies for perceiving ethical and aesthetic value and motivates deeper and fuller understanding of patients’, clinicians’, and others’ health care experiences.</p>",
     "gallery_nav": [
       {
-        "title": "Child Abuse Depictions In Schools",
+        "title": "Silence In Portraiture",
         "href": "#vc-horizontal-gallery-1",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--3.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Child Abuse Depictions In Schools",
+        "href": "#vc-horizontal-gallery-2",
         "image": {
           "src": "../../assets/images/vc/img-gallery-anchor--1.jpg",
           "alt": "Alt text"
@@ -18,17 +26,9 @@
       },
       {
         "title": "Dementia Care",
-        "href": "#vc-horizontal-gallery-2",
-        "image": {
-          "src": "../../assets/images/vc/img-gallery-anchor--2.jpg",
-          "alt": "Alt text"
-        }
-      },
-      {
-        "title": "Silence In Portraiture",
         "href": "#vc-horizontal-gallery-3",
         "image": {
-          "src": "../../assets/images/vc/img-gallery-anchor--3.jpg",
+          "src": "../../assets/images/vc/img-gallery-anchor--2.jpg",
           "alt": "Alt text"
         }
       },
@@ -44,8 +44,8 @@
   },
   "gallery_1": {
     "id": "1",
-    "title": "Should Art About Child Abuse Be Exhibited in Corridors of Health Professional Schools?",
-    "description": "<p>Imagine an exhibition—on a topic like child sexual abuse, dementia, or epilepsy, for example—not typically considered by museums or galleries. The question, then, is Where might such an exhibit be displayed? How about a medical school, for instance?</p><p>An exhibition of this kind might include visceral psychological portraits and explanatory text tailored to the learning activities of medical students. This article examines these curatorial and ethical considerations.</p>",
+    "title": "Anthony and the Role of Silence in Portraiture in Clinical Settings",
+    "description": "<p>This article describes one collaborative arts-based research project. Portrait artist Mark Gilbert and coinvestigators consider lessons for art and healing from one patient, Anthony, whose experience of head and neck cancer diagnosis, surgery, and recovery suggests how silence is ethically, artistically, and clinically significant.</p>",
     "control_label": "Gallery Artworks",
     "gallery_items": [
       {
@@ -113,60 +113,49 @@
     "control_label": "Gallery Artworks",
     "gallery_items": [
       {
-        "label": "Anthony (Before Surgery), by Mark Gilbert, 2008",
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2008",
         "image": {
-          "src": "../../assets/images/vc/img-anthony--small.jpg",
+          "src": "https://picsum.photos/id/25/550/500",
           "alt": "Alt text"
         },
         "featured_media": {
-          "image": "<img src='../../assets/images/vc/img-anthony--large.jpg' alt='Alt text'>",
-          "figure_text": "<strong>Figure 1.</strong> Anthony (Before Surgery), 2008",
-          "copyright": "Courtesy of Mark Gilbert",
-          "media": "Media: Woodcut, 44\" x 32\""
+          "image": "<img src='https://picsum.photos/id/25/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
         },
-        "featured_media_description": "<h3>Anthony</h3><p>I first met Anthony in the company of WL just prior to his tumor resection surgery. Anthony had graying hair tied back in a ponytail. His thin beard covered, but could not hide, a protruding cancer that enveloped most of his mandible, lower jaw, and tongue. When Anthony first noticed the tumor, he avoided treatment and traveled around the Midwest by himself. MG wondered why Anthony delayed seeking treatment and if his finally doing so was at the behest of his sister Gloria, who accompanied him that day to the clinic. Anthony was soft spoken, and his voice was somewhat muffled, as the tumor restricted movement of his tongue and jaw. His surgery that day would leave him unable to communicate verbally and therefore would illuminate the ethical and aesthetic roles of silence in MG’s subsequent interactions with him.</p>"
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
       },
       {
-        "label": "Tumor (Anthony), by Mark Gilbert, 2006",
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2006",
         "image": {
-          "src": "../../assets/images/vc/img-tumor--small.jpg",
+          "src": "https://picsum.photos/id/11/550/500",
           "alt": "Alt text"
         },
         "featured_media": {
-          "image": "<img src='../../assets/images/vc/img-tumor--large.jpg' alt='Alt text'>",
-          "figure_text": "<strong>Figure 2.</strong> Tumor (Anthony), 2006",
-          "copyright": "Courtesy of Mark Gilbert",
-          "media": "Media: Monoprint, 40\" x 26\""
+          "image": "<img src='https://picsum.photos/id/11/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2006",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
         },
-        "featured_media_description": "<h3>Silence in Tumor Resection</h3><p>Surgical removal of Anthony’s larynx, tongue, and lower jaw left him unable to talk. A citizen of the Winnebago tribe of Eastern Nebraska, Anthony had misgivings about sitting for his portrait, and these misgivings were founded in his traditional belief that being drawn or photographed “toys with someone’s spirits.” MG was initially concerned that the verbal one-sidedness of the interactions would be awkward, but Anthony wrote short notes during his portrait sessions to communicate. MG learned that Anthony was also an artist who worked in traditional leather and beadwork. Many of MG’s and Anthony’s exchanges focused on their respective artistic practices. Anthony visited MG’s studio weekly for 6 months.</p><p>Silently, together, MG and Anthony cocreated in multiple media and formats. Portraits of Anthony were drawn on canvas and paper and carved into wood for a relief print. MG used photography to record Anthony’s time as an anesthetized patient. Anthony’s resected tumor is shown below in a color monotype.</p>"
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
       },
       {
-        "label": "Removed Cancer (Anthony), by Mark Gilbert, 2008",
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2010",
         "image": {
-          "src": "../../assets/images/vc/img-removed-cancer--small.jpg",
+          "src": "https://picsum.photos/id/83/550/500",
           "alt": "Alt text"
         },
         "featured_media": {
-          "image": "<img src='../../assets/images/vc/img-removed-cancer--large.jpg' alt='Alt text'>",
-          "figure_text": "<strong>Figure 3.</strong> Removed Cancer (Anthony), 2008",
-          "copyright": "Courtesy of Mark Gilbert",
-          "media": "Media: Copper photogravure, 20\" x 15\""
+          "image": "<img src='https://picsum.photos/id/83/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2010",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
         },
-        "featured_media_description": "<p>A photogravure of Anthony’s tongue and lower jaw, suspended in WL’s hands, was also made.</p><p>As WL and others worked to remove Anthony’s jaw, tongue, and larynx, MG quietly sketched in pencil and photographed the specimen. Once removed, Anthony’s jaw, voice box, and tongue were held by MG in his hand. MG still vividly remembers their weight.</p>"
-      },
-      {
-        "label": "Anthony, Mark Gilbert 2007",
-        "image": {
-          "src": "../../assets/images/vc/img-anthony-2--small.jpg",
-          "alt": "Alt text"
-        },
-        "featured_media": {
-          "image": "<img src='../../assets/images/vc/img-anthony-2--large.jpg' alt='Alt text'>",
-          "figure_text": "<strong>Figure 4.</strong> Anthony, 2007",
-          "copyright": "Courtesy of Mark Gilbert",
-          "media": "Media: Charcoal on paper, 44\" x 32\""
-        },
-        "featured_media_description": "<h3>Tumor, Body, and Story</h3><p>In depicting the tumor, MG hoped to respectfully depict the mass and volume of what was removed from Anthony’s body. Aesthetically, the cancer glistened and seemed bejeweled under the glare of the operating theater lights; ethically and clinically, however, the tumor specimen can be appreciated as being threatening and insidious. Elsewhere the third author (MMD) and her coauthor, 2 Indigenous scholars, explain how, “as part of the self-telling body that is the field of MH and NM [Medical Humanities and Narrative Medicine], we tell our stories … because, like the parts of a body or the individual strands in a sweetgrass braid, our stories are connected to yours, irrevocably connected.”3 In holding the tumor or even beholding the images made of the tumor, we might more fully recognize how the tumor, whether inside or outside Anthony’s body, is an integral part of his story, a critical thread in his narrative. MG spent more time with Anthony than any other participant in POC. In the silence of the studio, Anthony and MG listened and responded to each other’s curiosity and presence, drawing on portraiture to navigate different orientations to Anthony’s life with the tumor and his life after its resection.</p>"
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
       }
     ]
   },
