@@ -96,6 +96,8 @@ sup {
 
 // Base styles for .vc-* pages
 :root[class*='vc-'] {
+  scroll-behavior: smooth;
+
   body {
     background-color: var(--c-bg);
     color: var(--c-text);

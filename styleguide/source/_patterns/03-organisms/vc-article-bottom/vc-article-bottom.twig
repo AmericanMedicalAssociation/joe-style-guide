@@ -13,7 +13,9 @@
     {% endif %}
     {% if issue %}
       {% set issue = vc_issue %}
-      {% include "@organisms/article-issue-footer.twig" %}
+      {% include "@organisms/article-issue-footer.twig" with {
+        issue_label: "You Might Also Like"
+      } %}
     {% endif %}
   </div>
 </div>

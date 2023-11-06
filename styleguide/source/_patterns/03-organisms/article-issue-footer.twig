@@ -3,7 +3,7 @@
     {% include "@atoms/title-label.twig" with {
       "title_label": {
         "level": "3",
-        "text": "Also in this Issue"
+        "text": issue_label|default('Also in this Issue')
       }
     } %}
     {% set title_label = issue.title %}

@@ -34,6 +34,7 @@
 :root.vc-gallery {
   .vc-horizontal-gallery {
     @extend %vc-gallery-pattern;
+    margin-block-end: 2rem;
   }
 }
 

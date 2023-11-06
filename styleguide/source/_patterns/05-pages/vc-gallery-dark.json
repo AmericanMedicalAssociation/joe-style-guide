@@ -1,0 +1,313 @@
+{
+  "htmlClass": "vc-gallery",
+  "htmlStyle": "--hero-gallery-image: url('../images/vc/bg-hero-gallery--dark.jpg');",
+  "theme_mode": "dark",
+  "hero": {
+    "has_mask": true,
+    "image": "/assets/images/vc/bg-hero-art-1--small.jpg",
+    "page_title": "Portraiture in Health Care",
+    "description": "<p>This issue considers how portraiture introduces innovative strategies for perceiving ethical and aesthetic value and motivates deeper and fuller understanding of patients’, clinicians’, and others’ health care experiences.</p>",
+    "gallery_nav": [
+      {
+        "title": "Silence In Portraiture",
+        "href": "#vc-horizontal-gallery-1",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--3.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Child Abuse Depictions In Schools",
+        "href": "#vc-horizontal-gallery-2",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--1.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Dementia Care",
+        "href": "#vc-horizontal-gallery-3",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--2.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Portrait of 1 in 3000",
+        "href": "#vc-horizontal-gallery-4",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--4.jpg",
+          "alt": "Alt text"
+        }
+      }
+    ]
+  },
+  "gallery_1": {
+    "id": "1",
+    "title": "Anthony and the Role of Silence in Portraiture in Clinical Settings",
+    "description": "<p>This article describes one collaborative arts-based research project. Portrait artist Mark Gilbert and coinvestigators consider lessons for art and healing from one patient, Anthony, whose experience of head and neck cancer diagnosis, surgery, and recovery suggests how silence is ethically, artistically, and clinically significant.</p>",
+    "control_label": "Gallery Artworks",
+    "gallery_items": [
+      {
+        "label": "Anthony (Before Surgery), by Mark Gilbert, 2008",
+        "image": {
+          "src": "../../assets/images/vc/img-anthony--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-anthony--large.jpg' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Anthony (Before Surgery), 2008",
+          "copyright": "Courtesy of Mark Gilbert",
+          "media": "Media: Woodcut, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Anthony</h3><p>I first met Anthony in the company of WL just prior to his tumor resection surgery. Anthony had graying hair tied back in a ponytail. His thin beard covered, but could not hide, a protruding cancer that enveloped most of his mandible, lower jaw, and tongue. When Anthony first noticed the tumor, he avoided treatment and traveled around the Midwest by himself. MG wondered why Anthony delayed seeking treatment and if his finally doing so was at the behest of his sister Gloria, who accompanied him that day to the clinic. Anthony was soft spoken, and his voice was somewhat muffled, as the tumor restricted movement of his tongue and jaw. His surgery that day would leave him unable to communicate verbally and therefore would illuminate the ethical and aesthetic roles of silence in MG’s subsequent interactions with him.</p>"
+      },
+      {
+        "label": "Tumor (Anthony), by Mark Gilbert, 2006",
+        "image": {
+          "src": "../../assets/images/vc/img-tumor--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-tumor--large.jpg' alt='Alt text'>",
+          "figure_text": "<strong>Figure 2.</strong> Tumor (Anthony), 2006",
+          "copyright": "Courtesy of Mark Gilbert",
+          "media": "Media: Monoprint, 40\" x 26\""
+        },
+        "featured_media_description": "<h3>Silence in Tumor Resection</h3><p>Surgical removal of Anthony’s larynx, tongue, and lower jaw left him unable to talk. A citizen of the Winnebago tribe of Eastern Nebraska, Anthony had misgivings about sitting for his portrait, and these misgivings were founded in his traditional belief that being drawn or photographed “toys with someone’s spirits.” MG was initially concerned that the verbal one-sidedness of the interactions would be awkward, but Anthony wrote short notes during his portrait sessions to communicate. MG learned that Anthony was also an artist who worked in traditional leather and beadwork. Many of MG’s and Anthony’s exchanges focused on their respective artistic practices. Anthony visited MG’s studio weekly for 6 months.</p><p>Silently, together, MG and Anthony cocreated in multiple media and formats. Portraits of Anthony were drawn on canvas and paper and carved into wood for a relief print. MG used photography to record Anthony’s time as an anesthetized patient. Anthony’s resected tumor is shown below in a color monotype.</p>"
+      },
+      {
+        "label": "Removed Cancer (Anthony), by Mark Gilbert, 2008",
+        "image": {
+          "src": "../../assets/images/vc/img-removed-cancer--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-removed-cancer--large.jpg' alt='Alt text'>",
+          "figure_text": "<strong>Figure 3.</strong> Removed Cancer (Anthony), 2008",
+          "copyright": "Courtesy of Mark Gilbert",
+          "media": "Media: Copper photogravure, 20\" x 15\""
+        },
+        "featured_media_description": "<p>A photogravure of Anthony’s tongue and lower jaw, suspended in WL’s hands, was also made.</p><p>As WL and others worked to remove Anthony’s jaw, tongue, and larynx, MG quietly sketched in pencil and photographed the specimen. Once removed, Anthony’s jaw, voice box, and tongue were held by MG in his hand. MG still vividly remembers their weight.</p>"
+      },
+      {
+        "label": "Anthony, Mark Gilbert 2007",
+        "image": {
+          "src": "../../assets/images/vc/img-anthony-2--small.jpg",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='../../assets/images/vc/img-anthony-2--large.jpg' alt='Alt text'>",
+          "figure_text": "<strong>Figure 4.</strong> Anthony, 2007",
+          "copyright": "Courtesy of Mark Gilbert",
+          "media": "Media: Charcoal on paper, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Tumor, Body, and Story</h3><p>In depicting the tumor, MG hoped to respectfully depict the mass and volume of what was removed from Anthony’s body. Aesthetically, the cancer glistened and seemed bejeweled under the glare of the operating theater lights; ethically and clinically, however, the tumor specimen can be appreciated as being threatening and insidious. Elsewhere the third author (MMD) and her coauthor, 2 Indigenous scholars, explain how, “as part of the self-telling body that is the field of MH and NM [Medical Humanities and Narrative Medicine], we tell our stories … because, like the parts of a body or the individual strands in a sweetgrass braid, our stories are connected to yours, irrevocably connected.”3 In holding the tumor or even beholding the images made of the tumor, we might more fully recognize how the tumor, whether inside or outside Anthony’s body, is an integral part of his story, a critical thread in his narrative. MG spent more time with Anthony than any other participant in POC. In the silence of the studio, Anthony and MG listened and responded to each other’s curiosity and presence, drawing on portraiture to navigate different orientations to Anthony’s life with the tumor and his life after its resection.</p>"
+      }
+    ]
+  },
+  "gallery_2": {
+    "id": "2",
+    "title": "Should Art About Child Abuse Be Exhibited in Corridors of Health Professional Schools?",
+    "description": "<p>Imagine an exhibition—on a topic like child sexual abuse, dementia, or epilepsy, for example—not typically considered by museums or galleries. The question, then, is Where might such an exhibit be displayed? How about a medical school, for instance?</p><p>An exhibition of this kind might include visceral psychological portraits and explanatory text tailored to the learning activities of medical students. This article examines these curatorial and ethical considerations.</p>",
+    "control_label": "Gallery Artworks",
+    "gallery_items": [
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2008",
+        "image": {
+          "src": "https://picsum.photos/id/25/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/25/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2006",
+        "image": {
+          "src": "https://picsum.photos/id/11/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/11/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2006",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2010",
+        "image": {
+          "src": "https://picsum.photos/id/83/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/83/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2010",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      }
+    ]
+  },
+  "gallery_3": {
+    "id": "3",
+    "title": "On Seeing and Being Seen in Dementia Care",
+    "description": "<p>This article reflects on one health care professional’s experience of sitting for Mark Gilbert’s arts-based Patient and Caregiver Portraiture study. The author, a clinical social worker, discusses the roles of ageism, invisibility, and stigma in the lives of people with dementia.</p><p> This article also explores the similarity between the process of an artist seeing the entirety of a scene and the process of a clinician assessing a patient; both artist and clinician are powerfully influential in their capacity to represent the personhood of a subject or patient.</p>",
+    "control_label": "Gallery Artworks",
+    "gallery_items": [
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2008",
+        "image": {
+          "src": "https://picsum.photos/id/95/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/95/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2006",
+        "image": {
+          "src": "https://picsum.photos/id/98/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/98/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2006",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2010",
+        "image": {
+          "src": "https://picsum.photos/id/110/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/110/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2010",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      }
+    ]
+  },
+  "gallery_4": {
+    "id": "4",
+    "title": "Neurofibromatosis and a Portrait of 1 in 3000",
+    "description": "<p>Neurofibromatosis, a genetic disorder that occurs in 1 in 3000 births, can cause tumors to grow anywhere on or in the body. The first author (RM), an artist-researcher and mother of a son living with neurofibromatosis, has painted and exhibited more than 200 portraits of people living with neurofibromatosis to raise awareness of and resources for this little-known disorder. Among many stories shared through RM’s works is the story of Ashok, a Nepali man who has undergone 3 surgeries to remove facially disfiguring tumors that developed as a result of neurofibromatosis. This article analyzes portraits of Ashok and interviews that the senior author (RI) conducted with Ashok and RM during each phase of his surgical process to present a case study of their lived experience at the intersection of art and medicine that illustrates the power of portraiture as medicine.</p>",
+    "control_label": "Gallery Artworks",
+    "gallery_items": [
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2008",
+        "image": {
+          "src": "https://picsum.photos/id/121/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/121/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2006",
+        "image": {
+          "src": "https://picsum.photos/id/128/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/128/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2006",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      },
+      {
+        "stacked": true,
+        "label": "Artwork Title, by John Doe, 2010",
+        "image": {
+          "src": "https://picsum.photos/id/152/550/500",
+          "alt": "Alt text"
+        },
+        "featured_media": {
+          "image": "<img src='https://picsum.photos/id/152/1250/960' alt='Alt text'>",
+          "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2010",
+          "copyright": "Courtesy of John Doe",
+          "media": "Media: Photography, 44\" x 32\""
+        },
+        "featured_media_description": "<h3>Example Stacked Content</h3><p>Quisque et sem viverra, blandit urna at, malesuada ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in luctus dolor, eget varius lorem. Vivamus nec interdum libero. Nunc varius, quam sit amet dapibus semper, diam dolor commodo orci, nec ornare eros tortor vitae odio. Donec finibus, mauris tempus venenatis scelerisque, lectus tellus laoreet lectus, id ultrices turpis enim ut arcu. Suspendisse potenti. Donec in mattis neque. Nullam tincidunt eros et risus porttitor, ut accumsan dui tincidunt. Quisque dapibus, dui id aliquet lobortis, metus magna blandit est, vitae semper urna ipsum eget urna.</p>"
+      }
+    ]
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
+  "curator_note": "Background image by Samantha Welker.",
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false
+}
