@@ -1,8 +1,18 @@
 .vc-featured-media {
-  padding-inline: 1.25rem;
+  padding-inline: 1.5rem;
 
   @include breakpoint($bp-large) {
-    padding-inline: 1.5rem;
+    padding-inline: 1.75rem;
+  }
+
+  .layout--onecol-centered & {
+    @include breakpoint($bp-med) {
+      margin-inline: -1.5rem;
+    }
+
+    @include breakpoint($bp-large) {
+      margin-inline: -1.75rem;
+    }
   }
 }
 
@@ -30,23 +40,25 @@
 .vc-featured-media__media {
   @include type($font-sans-serif, 0.6em, $font-weight-medium, 1.1);
   position: absolute;
-  bottom: -0.5em;
+  bottom: -0.75em;
 
   @include breakpoint($bp-large) {
     font-size: 0.8em;
+    bottom: 0;
   }
 }
 
 .vc-featured-media__copyright {
-  left: -0.75rem;
+  left: -1rem;
   transform: rotate(-90deg);
   transform-origin: left;
 }
 
 .vc-featured-media__media {
-  right: -0.75rem;
+  right: -1rem;
   transform: rotate(90deg);
   transform-origin: right;
+  padding-inline-start: 1.25rem;
 }
 
 .vc-featured-media__video {

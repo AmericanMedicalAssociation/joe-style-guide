@@ -10,6 +10,11 @@
       {% include '@base/placeholder.twig' %}
     {% endblock %}
     <div class="c-field__content">
+      {% if htmlClass == 'vc-art' %}
+        <div class="vc-art__bg-shapes">
+          {% include "@base/icons/bg-art-of-medicine.svg" %}
+        </div>
+      {% endif %}
       {% block pageContent %}
         {% set placeholder = page_content.placeholder %}
         {% include '@base/placeholder.twig' %}

@@ -16,59 +16,63 @@
       const modalButton = document.querySelectorAll('.vc-horizontal-gallery__artwork');
       const modalArtwork = $('.vc-horizontal-gallery__artwork-items');
 
-      // Gallery slider
-      horizontalGalleries.each(function (e) {
-        $(this).slick({
-          infinite: false,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '5%',
-          variableWidth: true,
-          speed: 800,
-          touchMove: false,
-          prevArrow: $(this).parent().find('.slick-prev'),
-          nextArrow: $(this).parent().find('.slick-next'),
-          responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false
+      if (modalArtwork) {
+        $('.vc-modal').appendTo('body');
+
+        // Gallery slider
+        horizontalGalleries.each(function (e) {
+          $(this).slick({
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '5%',
+            variableWidth: true,
+            speed: 800,
+            touchMove: false,
+            prevArrow: $(this).parent().find('.slick-prev'),
+            nextArrow: $(this).parent().find('.slick-next'),
+            responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  variableWidth: false
+                }
               }
-            }
-          ]
+            ]
+          });
         });
-      });
 
-      // Artwork slider
-      modalArtwork.each(function () {
-        $(this).slick({
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: false,
-          speed: 0,
-          touchMove: false,
-          draggable: false,
-          swipe: false,
-          initialSlide: 0,
-          adaptiveHeight: true,
-          prevArrow: $(this).parent().find('.slick-prev'),
-          nextArrow: $(this).parent().find('.slick-next'),
+        // Artwork slider
+        modalArtwork.each(function () {
+          $(this).slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            speed: 0,
+            touchMove: false,
+            draggable: false,
+            swipe: false,
+            initialSlide: 0,
+            adaptiveHeight: true,
+            prevArrow: $(this).parent().find('.slick-prev'),
+            nextArrow: $(this).parent().find('.slick-next'),
+          });
         });
-      });
 
-      // Initate modal
-      MicroModal.init();
+        // Initate modal
+        MicroModal.init();
 
-      // Open to correct artwork when clicked
-      modalButton.forEach((e) => {
-        e.addEventListener('click', () => {
-          $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
+        // Open to correct artwork when clicked
+        modalButton.forEach((e) => {
+          e.addEventListener('click', () => {
+            $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
+          });
         });
-      });
+      }
     }
   };
 })(jQuery, Drupal);

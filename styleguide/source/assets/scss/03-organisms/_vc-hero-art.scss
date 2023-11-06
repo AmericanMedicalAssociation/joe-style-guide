@@ -1,9 +1,13 @@
 .vc-hero-art {
   position: relative;
-  margin-block-end: 5rem;
+  margin-block-end: 6rem;
+
+  @include breakpoint($bp-small) {
+    margin-block-end: 10rem;
+  }
 
   @include breakpoint($bp-med) {
-    margin-block-end: 10rem;
+    margin-block-end: 15rem;
   }
 }
 
@@ -53,6 +57,20 @@
   }
 
   picture {
+    animation-name: heroFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      animation-timing-function: linear;
+      animation-duration: 0s;
+      opacity: 1;
+    }
+
     @include breakpoint($bp-large) {
       display: block;
     }

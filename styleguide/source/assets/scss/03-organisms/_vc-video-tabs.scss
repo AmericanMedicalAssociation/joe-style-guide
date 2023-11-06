@@ -2,6 +2,10 @@
   .vc-video-tabs__heading {
     margin-block-start: 0;
   }
+
+  .vc-video-tabs__group li a {
+    text-decoration: none;
+  }
 }
 
 .vc-video-tabs__header {
@@ -48,6 +52,9 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     border: 1px solid var(--c-text);
     padding: 0.5rem 1rem;
 
@@ -66,12 +73,19 @@
   [aria-selected] {
     font-weight: 800;
 
-    @include breakpoint(0 $bp-med) {
-
-      // Add in a visual element to indicate the active state of selected label
-      &::after {
-        content: '\0020⬅ ';
-      }
+    // Add in a visual element to indicate the active state of selected label
+    &::after {
+      content: '\2190';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--c-button-bg);
+      border-radius: 50%;
+      color: var(--c-button-text);
+      width: 0.4em;
+      height: 0.4em;
+      font-size: 1em;
+      padding: 0.4em 0.5em 0.6em 0.5em;
     }
 
     @include breakpoint($bp-med) {

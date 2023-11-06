@@ -42,6 +42,17 @@
           }, false);
         });
       }
+
+      // Art of Medicine flip bg shapes
+      const vcArtShapes = document.querySelector('.vc-art__bg-shapes');
+
+      if (vcArtShapes) {
+        const vcArtHeader = document.querySelector('.vc-hero-art');
+
+        if (vcArtHeader.classList.contains('vc-hero-art--text-right')) {
+          vcArtShapes.classList.add('flip');
+        }
+      }
     }
   };
 })(jQuery, Drupal);
