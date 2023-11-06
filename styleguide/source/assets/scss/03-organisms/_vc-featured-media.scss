@@ -74,3 +74,19 @@
     height: 100%;
   }
 }
+
+:root.vc-ethics {
+  .vc-featured-media__figure {
+    @extend %vc-ethics-pattern;
+    isolation: isolate;
+
+    &::after {
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 30%;
+      height: 2rem;
+      z-index: -1;
+    }
+  }
+}

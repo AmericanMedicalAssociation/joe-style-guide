@@ -174,3 +174,11 @@
     }
   }
 }
+
+:root.vc-ethics {
+  .c-paragraph {
+    @include breakpoint($bp-med) {
+      --layout-margin: 12rem;
+    }
+  }
+}

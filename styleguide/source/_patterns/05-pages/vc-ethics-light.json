@@ -1,0 +1,199 @@
+{
+  "htmlClass": "vc-ethics",
+  "htmlStyle": "--c-hero-bg-opacity: 0.6;",
+  "theme_mode": "light",
+  "hero": {
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics-light--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics-light--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics-light--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics-light--large.jpg' alt='Alt text'>",
+    "issue_date": "Aug 2020",
+    "issue_href": "/",
+    "page_title": "Practicing Four Elements of Sanctuary Health Care",
+    "author": "Lauren Beatty",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/",
+    "cme_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>Eleven million undocumented immigrants in the United States, including children, face barriers to health. By practicing 4 elements of <a href='#'>sanctuary health care</a>, clinicians and organizations can help.</p>"
+  },
+  "scroll_zoom_1": {
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics-light--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics-light--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics-light--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethic-light--large.jpg' alt='Alt text'>",
+    "captions": [
+      {
+        "description": "<p>Example caption lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula orci et purus ornare finibus. Suspendisse eleifend sagittis lacus at molestie. Mauris maximus mi diam, viverra malesuada elit placerat sit amet.</p>"
+      },
+      {
+        "description": "<p>Example caption lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula orci et purus ornare finibus. Suspendisse eleifend sagittis lacus at molestie. Mauris maximus mi diam, viverra malesuada elit placerat sit amet.</p>"
+      },
+      {
+        "description": "<p>Example caption lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula orci et purus ornare finibus. Suspendisse eleifend sagittis lacus at molestie. Mauris maximus mi diam, viverra malesuada elit placerat sit amet.</p>",
+        "position_right": true
+      },
+      {
+        "description": "<p>Example caption lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula orci et purus ornare finibus. Suspendisse eleifend sagittis lacus at molestie. Mauris maximus mi diam, viverra malesuada elit placerat sit amet.</p>"
+      }
+    ]
+  },
+  "video_tabs": {
+    "title": "Video Tabs Heading",
+    "description": "<p>Example introduction text below the section heading.</p>",
+    "video_group": [
+      {
+        "label": "Overcoming Pseudo-stoicism in Medicine",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "And I Told the Doctor, I Think There’s Something Wrong",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/bBTin1qtvRc?si=sQPxSRdY0fcKCItJ&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "Bagalamukhi’s Words as Resistance",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/NfwpHuMbvk8?si=vJRDYS7IzRj-_8fu&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      }
+    ]
+  },
+  "featured_quote": {
+    "blockquote": "“11 million undocumented immigrants in the US, including children, face barries to health. By practicing 4 elements of sanctuary health care, clinicians and organizations can help.",
+    "attribution": "Jane Doe",
+    "attribution_title": null
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Audiey C. Kao, MD, PhD",
+      "description": " is the editor in chief of the AMA Journal of Ethics."
+    }
+  ]
+}
