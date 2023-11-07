@@ -17,7 +17,7 @@
   {% endembed %}
 
   {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
-    layout_equal_col: true,
+    layout_larger_left_col: true,
     layout_heading: null
   } %}
     {% block layout_first %}
@@ -36,6 +36,16 @@
   } %}
     {% block layout_bottom %}
       {% include "@organisms/vc-featured-quote/vc-featured-quote.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set text_block = body_1 %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
     {% endblock %}
   {% endembed %}
 
