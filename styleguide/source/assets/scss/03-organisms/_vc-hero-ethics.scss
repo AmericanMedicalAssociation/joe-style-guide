@@ -169,6 +169,12 @@
       color: var(--c-link);
     }
 
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: var(--c-button-bg-hover-alt);
+    }
+
     @include breakpoint($bp-med) {
       position: relative;
       min-width: 13rem;
@@ -189,7 +195,6 @@
       &:active,
       &:hover,
       &:focus {
-        background-color: var(--c-button-bg-hover-alt);
         min-width: 14rem;
 
         &::after {
