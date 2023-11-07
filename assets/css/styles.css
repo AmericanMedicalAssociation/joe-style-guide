@@ -7180,13 +7180,15 @@ main + .joe__footer {
 
 .vc-hero-ethics__container {
   --top-padding: 8rem;
+  --bottom-padding: 2rem;
   position: relative;
-  padding-block: var(--top-padding);
+  padding-block: var(--top-padding) var(--bottom-padding);
   isolation: isolate;
 }
 @media (min-width: 75em) {
   .vc-hero-ethics__container {
     --top-padding: 20rem;
+    --bottom-padding: 8rem;
   }
 }
 @media (min-width: 56.25em) {
@@ -7316,11 +7318,14 @@ main + .joe__footer {
   }
 }
 
+:root.vc-ethics .vc-hero-ethics__tool-button,
+:root.vc-ethics a.vc-hero-ethics__tool-button {
+  background-color: var(--c-button-bg-alt);
+}
 @media (min-width: 56.25em) {
   :root.vc-ethics .vc-hero-ethics__tool-button,
   :root.vc-ethics a.vc-hero-ethics__tool-button {
     position: relative;
-    background-color: var(--c-button-bg-alt);
     color: var(--c-link);
     min-width: 13rem;
     -webkit-padding-end: 0;
