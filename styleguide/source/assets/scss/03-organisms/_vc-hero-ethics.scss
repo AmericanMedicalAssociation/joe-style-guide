@@ -42,12 +42,14 @@
 
 .vc-hero-ethics__container {
   --top-padding: 8rem;
+  --bottom-padding: 2rem;
   position: relative;
-  padding-block: var(--top-padding);
+  padding-block: var(--top-padding) var(--bottom-padding);
   isolation: isolate;
 
   @include breakpoint($bp-large) {
     --top-padding: 20rem;
+    --bottom-padding: 8rem;
   }
 
   &::before {
@@ -159,9 +161,10 @@
 
   .vc-hero-ethics__tool-button,
   a.vc-hero-ethics__tool-button {
+    background-color: var(--c-button-bg-alt);
+
     @include breakpoint($bp-med) {
       position: relative;
-      background-color: var(--c-button-bg-alt);
       color: var(--c-link);
       min-width: 13rem;
       padding-inline-end: 0;

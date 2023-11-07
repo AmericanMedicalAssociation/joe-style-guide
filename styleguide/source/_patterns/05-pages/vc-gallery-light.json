@@ -4,7 +4,7 @@
   "theme_mode": "light",
   "hero": {
     "has_mask": true,
-    "image": "/assets/images/vc/bg-hero-art-1--small.jpg",
+    "image": "../../assets/images/vc/bg-hero-art-1--small.jpg",
     "page_title": "Portraiture in Health Care",
     "description": "<p>This issue considers how portraiture introduces innovative strategies for perceiving ethical and aesthetic value and motivates deeper and fuller understanding of patients’, clinicians’, and others’ health care experiences.</p>",
     "gallery_nav": [
