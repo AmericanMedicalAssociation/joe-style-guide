@@ -4,7 +4,7 @@
   "theme_mode": "dark",
   "hero": {
     "has_mask": true,
-    "image": "../../assets/images/vc/bg-hero-art-1--small.jpg",
+    "image": "/assets/images/vc/bg-hero-art-1--small.jpg",
     "page_title": "Portraiture in Health Care",
     "description": "<p>This issue considers how portraiture introduces innovative strategies for perceiving ethical and aesthetic value and motivates deeper and fuller understanding of patients’, clinicians’, and others’ health care experiences.</p>",
     "gallery_nav": [
@@ -120,7 +120,8 @@
           "alt": "Alt text"
         },
         "featured_media": {
-          "image": "<img src='https://picsum.photos/id/25/1250/960' alt='Alt text'>",
+          "image": null,
+          "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/hnp1pt8biD4?si=ncAK3AiXZpQL-pxX' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
           "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
           "copyright": "Courtesy of John Doe",
           "media": "Media: Photography, 44\" x 32\""
