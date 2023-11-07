@@ -7328,6 +7328,12 @@ main + .joe__footer {
 :root.vc-ethics a.vc-hero-ethics__tool-button:visited {
   color: var(--c-link);
 }
+:root.vc-ethics .vc-hero-ethics__tool-button:active, :root.vc-ethics .vc-hero-ethics__tool-button:hover, :root.vc-ethics .vc-hero-ethics__tool-button:focus,
+:root.vc-ethics a.vc-hero-ethics__tool-button:active,
+:root.vc-ethics a.vc-hero-ethics__tool-button:hover,
+:root.vc-ethics a.vc-hero-ethics__tool-button:focus {
+  background-color: var(--c-button-bg-hover-alt);
+}
 @media (min-width: 56.25em) {
   :root.vc-ethics .vc-hero-ethics__tool-button,
   :root.vc-ethics a.vc-hero-ethics__tool-button {
@@ -7353,7 +7359,6 @@ main + .joe__footer {
   :root.vc-ethics a.vc-hero-ethics__tool-button:active,
   :root.vc-ethics a.vc-hero-ethics__tool-button:hover,
   :root.vc-ethics a.vc-hero-ethics__tool-button:focus {
-    background-color: var(--c-button-bg-hover-alt);
     min-width: 14rem;
   }
   :root.vc-ethics .vc-hero-ethics__tool-button:active::after, :root.vc-ethics .vc-hero-ethics__tool-button:hover::after, :root.vc-ethics .vc-hero-ethics__tool-button:focus::after,
