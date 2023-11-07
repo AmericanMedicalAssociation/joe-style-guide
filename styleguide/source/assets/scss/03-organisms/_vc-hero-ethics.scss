@@ -162,17 +162,17 @@
   .vc-hero-ethics__tool-button,
   a.vc-hero-ethics__tool-button {
     background-color: var(--c-button-bg-alt);
+    color: var(--c-link);
+
+    &:link,
+    &:visited {
+      color: var(--c-link);
+    }
 
     @include breakpoint($bp-med) {
       position: relative;
-      color: var(--c-link);
       min-width: 13rem;
       padding-inline-end: 0;
-
-      &:link,
-      &:visited {
-        color: var(--c-link);
-      }
 
       &::after {
         transition: all 0.3s ease;
