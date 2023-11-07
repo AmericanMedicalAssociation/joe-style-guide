@@ -50,10 +50,7 @@
           // No dropdown delay if `prefers-reduced-motion` is enabled
           activeDrop.hidden = !activeDrop.hidden;
         } else {
-          // Delay dropdown display so animations can finish
-          setTimeout(() => {
-            activeDrop.hidden = !activeDrop.hidden;
-          }, 300);
+          activeDrop.hidden = !activeDrop.hidden;
         }
       }
 
@@ -105,6 +102,13 @@
             }
           }
         });
+
+        // Close dropdowns when mouseup outside of elements
+        document.addEventListener('mouseup', function (e) {
+          if (!e.target.closest('.vc-header__action-button') && !e.target.closest('.vc-header__dropdown')) {
+            closeDropdown();
+          }
+        }, false);
       }
     }
   };

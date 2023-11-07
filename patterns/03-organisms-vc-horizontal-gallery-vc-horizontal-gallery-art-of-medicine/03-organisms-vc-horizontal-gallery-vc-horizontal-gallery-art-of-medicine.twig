@@ -1,0 +1,83 @@
+<div class="vc-horizontal-gallery" id="vc-horizontal-gallery-{{ gallery.id }}">
+  {% if gallery.title or gallery.description or gallery.label %}
+    <div class="vc-container--tight">
+      <header class="vc-horizontal-gallery__header">
+        <h2 class="vc-horizontal-gallery__heading">{{ gallery.title }}</h2>
+        {% if gallery.description %}
+          <div class="vc-horizontal-gallery__desc">
+            {{ gallery.description|raw }}
+          </div>
+        {% endif %}
+        {% if gallery.label %}
+          <div class="vc-horizontal-gallery__gallery-label">
+            {{ gallery.label|raw }}
+          </div>
+        {% endif %}
+      </header>
+    </div>
+  {% endif %}
+  <div class="vc-horizontal-gallery__items vc-gallery__items">
+    {% for item in gallery.gallery_items %}
+      <span class="vc-horizontal-gallery__artwork" role="button" data-micromodal-trigger="modal-{{ gallery.id }}" data-slidenum="{{ loop.index0 }}">
+        {% set image = item.image %}
+        {% include "@atoms/image.twig" %}
+        {% if item.label %}
+          <span class="vc-horizontal-gallery__artwork-label">{{ item.label }}</span>
+        {% endif %}
+      </span>
+    {% endfor %}
+  </div>
+  <div class="vc-horizontal-gallery__controls vc-gallery__controls">
+    <button type="button" class="slick-prev">
+      <span class="visually-hidden">Previous</span>
+      {% include "@base/icons/icon-gallery-arrow--prev.svg" %}
+    </button>
+    <span class="vc-horizontal-gallery__controls-label">{{ gallery.control_label }}</span>
+    <button type="button" class="slick-next">
+      <span class="visually-hidden">Next</span>
+      {% include "@base/icons/icon-gallery-arrow--next.svg" %}
+    </button>
+  </div>
+</div>
+
+<div aria-hidden="true" class="vc-modal micromodal-slide" id="modal-{{ gallery.id }}">
+  <div class="vc-modal__overlay" data-micromodal-close="" tabindex="-1">
+    <div class="vc-modal__container" role="dialog">
+      <main class="vc-modal__content" id="modal-1-content">
+        <div class="vc-horizontal-gallery__artwork-items">
+          {% for item in gallery.gallery_items %}
+            <div>
+              <div class="vc-grid vc-modal__grid {% if item.stacked %}vc-modal__grid--stacked{% endif %}">
+                <div class="vc-modal__first">
+                  {% set featured_media = item.featured_media %}
+                  {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+                </div>
+                {% if item.featured_media_description %}
+                  <div class="vc-modal__second">
+                    {{ item.featured_media_description|raw }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="vc-modal__controls">
+          <button type="button" class="slick-prev">
+            <span class="visually-hidden">Previous</span>
+            {% include "@base/icons/icon-gallery-arrow--prev.svg" %}
+          </button>
+          <button type="button" class="slick-next">
+            <span class="visually-hidden">Next</span>
+            {% include "@base/icons/icon-gallery-arrow--next.svg" %}
+          </button>
+        </div>
+      </main>
+      <footer class="vc-modal__footer">
+        <button aria-label="Close this dialog window" class="vc-modal__close" data-micromodal-close="">
+          <span class="visually-hidden">Close</span>
+          {% include "@base/icons/icon-close.svg" %}
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>

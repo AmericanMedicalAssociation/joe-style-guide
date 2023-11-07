@@ -1,6 +1,6 @@
 <div class="vc-cards">
   <div class="vc-container">
-    <header class="vc-cards__header">
+    <header class="vc-cards__header {% if cards.centered_header %}vc-cards__header--centered{% endif %}">
       <h2 class="vc-cards__heading">{{ cards.title }}</h2>
       {% if cards.description %}
         <div class="vc-cards__desc">
@@ -12,7 +12,7 @@
       {% endif %}
     </header>
     <div class="vc-cards__content">
-      {% for card in card_group %}
+      {% for card in cards.card_group %}
         {% include "@molecules/vc-card/vc-card.twig" %}
       {% endfor %}
     </div>

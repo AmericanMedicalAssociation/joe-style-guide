@@ -1,15 +1,40 @@
 <div class="vc-slide-rule">
+  {% if slide_rule.figure_text %}
+    <div class="vc-slide-rule__caption">
+      {{ slide_rule.figure_text|raw }}
+    </div>
+  {% endif %}
   <div class="vc-slide-rule__slider beer-slider">
     {{ slide_rule.image_before|raw }}
     <div class="beer-reveal">
       {{ slide_rule.image_after|raw }}
     </div>
   </div>
-  {% if slide_rule.caption %}
-    <div class="vc-container--tight vc-slide-rule__container">
-      <div class="vc-slide-rule__caption">
-        {{ slide_rule.caption|raw }}
-      </div>
+  <div class="vc-slide-rule__info">
+    <div class="vc-slide-rule__info-before">
+      {% if slide_rule.copyright_before %}
+        <span class="vc-slide-rule__copyright">
+          {{ slide_rule.copyright_before }}
+        </span>
+      {% endif %}
+      {% if slide_rule.media_before %}
+        <span class="vc-slide-rule__media">
+          {{ slide_rule.media_before }}
+        </span>
+      {% endif %}
     </div>
-  {% endif %}
+    <div class="vc-slide-rule__info-after">
+      {% if slide_rule.copyright_after %}
+        <span class="vc-slide-rule__copyright">
+          {{ slide_rule.copyright_after }}
+        </span>
+      {% endif %}
+      {% if slide_rule.media_after %}
+        <span class="vc-slide-rule__media">
+          {{ slide_rule.media_after }}
+        </span>
+      {% endif %}
+    </div>
+  </div>
+  {% include "@molecules/vc-reaction-bar/vc-reaction-bar.twig" %}
 </div>

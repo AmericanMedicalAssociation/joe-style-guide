@@ -21,14 +21,38 @@
           const expanded = this.getAttribute('aria-expanded') === 'true' || false;
           this.setAttribute('aria-expanded', !expanded);
           vcToolContent.hidden = !vcToolContent.hidden;
+
+          // On `esc` press hide open `vcToolContent`
+          document.addEventListener('keyup', (e) => {
+            if (!vcToolContent.hidden) {
+              const key = e.key || e.keyCode;
+              if (key === 'Escape' || key === 'Esc' || key === 27) {
+                vcToolBtn.setAttribute('aria-expanded', 'false');
+                vcToolContent.hidden = true;
+              }
+            }
+          });
+
+          // Close `vcToolContent` when mouseup outside of elements
+          document.addEventListener('mouseup', function (e) {
+            if (!e.target.closest('.vc-hero__tool-content') && !e.target.closest('.vc-hero__tool-button')) {
+              vcToolBtn.setAttribute('aria-expanded', 'false');
+              vcToolContent.hidden = true;
+            }
+          }, false);
         });
       }
 
-      document.addEventListener('click', function (e) {
-        if (vcToolBtn !== e.target) {
-          vcToolContent.hidden = true;
+      // Art of Medicine flip bg shapes
+      const vcArtShapes = document.querySelector('.vc-art__bg-shapes');
+
+      if (vcArtShapes) {
+        const vcArtHeader = document.querySelector('.vc-hero-art');
+
+        if (vcArtHeader.classList.contains('vc-hero-art--text-right')) {
+          vcArtShapes.classList.add('flip');
         }
-      });
+      }
     }
   };
 })(jQuery, Drupal);
