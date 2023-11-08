@@ -15,7 +15,7 @@
         .not(".vc-modal .vc-featured-media")
         .each(function () {
           $(this).prepend(
-            "<button aria-expanded='false' class='vc-button--is-zoomed' type='button'><span class='visually-hidden'>Zoom into Media Toggle</span><span class='vc-is-zoomed__open'><svg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><circle cx='10.875' cy='10.125' r='5.375' fill='transparent' stroke='#fff' stroke-width='2'></circle><path d='m15.707 14.293 4.5 4.5' stroke='#fff' stroke-width='2'></path></svg></span><span class='vc-is-zoomed__close'><svg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='m5.207 3.793 14.849 14.849M4.543 18.793 19.392 3.944' stroke='#fff' stroke-width='2'></path></svg></span></button>"
+            "<button aria-expanded='false' class='vc-button--is-zoomed' type='button'><span class='visually-hidden'>Zoom into Media Toggle</span><span class='vc-is-zoomed__open'><svg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='m11 16c3.3137 0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6-3.31371 0-6 2.68629-6 6 0 3.3137 2.68629 6 6 6z' stroke='#fff' stroke-width='2'/><path d='m15.707 14.293 4.5 4.5z' fill='transparent'/><g stroke='#fff' stroke-width='2'><path d='m15.707 14.293 4.5 4.5'/><path d='m11 7v6'/><path d='m8 10h6'/></g></svg></span><span class='vc-is-zoomed__close'><svg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='m5.207 3.793 14.849 14.849M4.543 18.793 19.392 3.944' stroke='#fff' stroke-width='2'></path></svg></span></button>"
           );
 
           const figureText = $(this).find(
