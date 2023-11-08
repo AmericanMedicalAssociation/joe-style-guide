@@ -1,0 +1,20 @@
+<div class="vc-audio-player">
+  <audio class="vc-audio-player__source" src="{{ featured_audio.src }}" controls="controls"></audio>
+  <button class="vc-audio-player__button" aria-pressed="false">
+    <span class="visually-hidden">Toggle Audio</span>
+    <span class="vc-audio-player__play">
+      {% include "@base/icons/icon-audio-play.svg" %}
+    </span>
+    <span class="vc-audio-player__pause">
+      {% include "@base/icons/icon-audio-pause.svg" %}
+    </span>
+    <span class="vc-audio-player__waves" role="presentation">
+      <span class="vc-audio-player__wave"></span>
+      <span class="vc-audio-player__wave"></span>
+      <span class="vc-audio-player__wave"></span>
+    </span>
+  </button>
+  {% if featured_audio.label %}
+    <span class="vc-audio-player__label">{{ featured_audio.label }}</span>
+  {% endif %}
+</div>

@@ -1,0 +1,96 @@
+.vc-audio-player {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.vc-audio-player__source {
+  display: none;
+}
+
+:root[class*=vc-] {
+  .vc-audio-player__button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    margin: 0;
+  
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &[aria-pressed='false'] {
+      .vc-audio-player__pause {
+        display: none;
+      }
+    }
+
+    &[aria-pressed='true'] {
+      .vc-audio-player__play {
+        display: none;
+      }
+
+      .vc-audio-player__waves {
+        animation-name: audioWaveFade;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        animation-delay: 0.15s;
+        animation-fill-mode: forwards;
+        display: flex;
+        width: 2rem;
+        margin-inline: 0.5rem;
+      }
+    }
+    
+    svg path {
+      fill: var(--c-button-text);
+    }
+  }
+}
+
+.vc-audio-player__waves {
+  transition: all 0.3s ease;
+  gap: 0.25rem;
+  width: 0;
+  height: 2rem;
+  margin-inline: 0;
+  opacity: 0;
+}
+
+.vc-audio-player__wave {
+  animation-name: audioWaves;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  background-color: var(--c-button-text);
+  border-radius: 3px;
+  width: 4px;
+  height: 2rem;
+
+  &:nth-child(1) {
+    animation-name: audioWave2;
+    animation-duration: 1s;
+  }
+
+  &:nth-child(2) {
+    animation-name: audioWave1;
+    animation-duration: 2s;
+  }
+
+  &:nth-child(3) {
+    animation-name: audioWave2;
+    animation-duration: 1.5s;
+  }
+}
+
+.vc-audio-player__label {
+  flex-grow: 1;
+  flex-basis: 75%;
+}
