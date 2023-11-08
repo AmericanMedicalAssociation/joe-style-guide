@@ -1,5 +1,5 @@
 <div class="vc-audio-player">
-  <audio class="vc-audio-player__source" src="{{ featured_audio.src }}" controls="controls"></audio>
+  <audio class="vc-audio-player__source" src="{{ audio_player.src }}" controls="controls"></audio>
   <button class="vc-audio-player__button" aria-pressed="false">
     <span class="visually-hidden">Toggle Audio</span>
     <span class="vc-audio-player__play">
@@ -14,7 +14,7 @@
       <span class="vc-audio-player__wave"></span>
     </span>
   </button>
-  {% if featured_audio.label %}
-    <span class="vc-audio-player__label">{{ featured_audio.label }}</span>
+  {% if audio_player.label %}
+    <span class="vc-audio-player__label">{{ audio_player.label }}</span>
   {% endif %}
 </div>

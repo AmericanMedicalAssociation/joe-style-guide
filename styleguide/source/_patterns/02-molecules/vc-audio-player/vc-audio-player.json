@@ -1,6 +1,6 @@
 {
   "htmlClass": "vc-gallery",
-  "featured_audio": {
+  "audio_player": {
     "src": "../../assets/audio/mixkit-morning-birds-2472.mp3",
     "label": "Listen to the sounds of nature as you view this collection."
   }
