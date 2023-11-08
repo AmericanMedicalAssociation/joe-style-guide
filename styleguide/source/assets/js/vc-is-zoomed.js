@@ -52,7 +52,6 @@
             .find(".beer-reveal img");
 
           revealImage.css("width", initImage);
-          console.log(revealImage);
         }
       });
 
