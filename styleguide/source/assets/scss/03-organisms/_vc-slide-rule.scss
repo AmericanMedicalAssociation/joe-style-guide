@@ -137,6 +137,8 @@ $initial-reveal: 50%;
 }
 
 .vc-slide-rule {
+  position: relative;
+
   .vc-reaction-bar {
     .layout--onecol-fullwidth & {
       padding-inline: 1rem;
@@ -154,7 +156,7 @@ $initial-reveal: 50%;
 
 .vc-slide-rule__caption {
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
-  margin-block: 0 1rem;
+  padding-block: 0 1rem;
 
   .layout--onecol-fullwidth & {
     padding-inline: 1.25rem;
@@ -169,6 +171,7 @@ $initial-reveal: 50%;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  margin-block-start: 0.5rem;
 
   .layout--onecol-fullwidth & {
     padding-inline: 1rem;
