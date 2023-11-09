@@ -46,6 +46,20 @@
   }
 }
 
+.vc-featured-audio {
+  .vc-reaction-bar {
+    .layout--onecol-fullwidth & {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+.vc-featured-audio__header {
+  .layout--onecol-fullwidth & {
+    @extend .vc-container--tight;
+  }
+}
+
 .vc-featured-audio__container {
   position: relative;
 }
@@ -60,4 +74,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem 2rem;
+
+  .layout--onecol-fullwidth & {
+    margin-inline: 1rem;
+  }
 }

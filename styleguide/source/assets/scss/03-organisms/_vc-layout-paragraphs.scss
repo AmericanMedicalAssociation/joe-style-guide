@@ -1,10 +1,10 @@
 :root[class*='vc-'] {
   .c-paragraph {
-    --layout-margin: 3rem;
+    --layout-margin: 4rem;
     margin-block: var(--layout-margin);
 
     @include breakpoint($bp-med) {
-      --layout-margin: 6rem;
+      --layout-margin: 8rem;
     }
   }
 
