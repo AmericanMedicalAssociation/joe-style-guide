@@ -120,7 +120,8 @@
           "alt": "Alt text"
         },
         "featured_media": {
-          "image": "<img src='https://picsum.photos/id/25/1250/960' alt='Alt text'>",
+          "image": null,
+          "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/hnp1pt8biD4?si=ncAK3AiXZpQL-pxX' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
           "figure_text": "<strong>Figure 1.</strong> Artwork Title, by John Doe, 2008",
           "copyright": "Courtesy of John Doe",
           "media": "Media: Photography, 44\" x 32\""
