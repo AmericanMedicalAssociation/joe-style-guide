@@ -11,8 +11,7 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_slide_rule = {
     attach: function (context, settings) {
-
-      const vcSlider = document.querySelector('.vc-slide-rule');
+      const vcSlider = document.querySelector(".vc-slide-rule");
 
       if (vcSlider) {
         $.fn.BeerSlider = function (options) {
@@ -21,10 +20,11 @@
             new BeerSlider(this, options);
           });
         };
-        $('.vc-slide-rule__slider').each(function (index, el) {
-          $(el).BeerSlider()
+
+        $(".vc-slide-rule__slider").each(function (index, el) {
+          $(el).BeerSlider();
         });
       }
-    }
+    },
   };
 })(jQuery, Drupal);
