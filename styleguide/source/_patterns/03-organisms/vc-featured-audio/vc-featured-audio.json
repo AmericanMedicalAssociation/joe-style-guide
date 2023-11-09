@@ -1,15 +1,13 @@
 {
-  "htmlClass": "vc-gallery",
-  "theme_mode": "dark",
+  "htmlClass": "vc-art",
   "featured_audio": {
-    "title": "Editorial Fellow Interview: “Why Should We Care About the Mental Health of Older Adults?”",
-    "description": "<p>Dr Badr Ratnakaran joins Ethics Talk to discuss his curation of the October 2023 issue: “Geriatric Psychiatry.”</p>",
-    "src": "../../assets/audio/mixkit-morning-birds-2472.mp3",
-    "copyright": "© Copyright: Recorded July 27, 2023.",
-    "transcript_download": "/",
-    "reaction": {
-      "question": null,
-      "total": 1
-    }
+    "title": "The six Cello Suites, are suites for unaccompanied cello by Johann Sebastian Bach",
+    "description": "<p>They are some of the most frequently performed solo compositions ever written for cello. Bach most likely composed them during the period 1717–1723.”</p>",
+    "src": "../../assets/audio/1-01 Suite No. 1 in G Major - Prélude.m4a",
+    "copyright": "© Copyright: Performed by Yo-Yo Ma, 1985."
+  },
+  "reaction": {
+    "question": "How does this cello suite make you feel?",
+    "total": 1
   }
 }

@@ -2,47 +2,71 @@
   .vc-featured-audio__heading {
     margin-block-start: 0;
   }
-}
 
-.vc-featured-audio__spectrum-container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+  .vc-featured-audio__button {
+    animation: buttonPulse 2s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border: 0;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0;
 
-.vc-featured-audio__spectrum {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  filter: url("#goo");
-  box-sizing: border-box;
-  transform: translateZ(0);
-  position: relative;
-  height: 100px;
-  margin-inline: 2rem;
-}
+    &:active,
+    &:focus,
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+      background-color: $white;
+    }
+  
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.vc-featured-audio__spectrum-bar {
-  background-color: var(--c-audio-viz);
-  flex: 1 1 auto;
-  height: 200px;
-  transform: translateZ(0) translateY(200px);
-  will-change: transform;
-  contain: strict;
-  overflow: hidden;
-}
+    &[aria-pressed='false'] {
+      .vc-featured-audio__pause {
+        display: none;
+      }
+    }
 
-.vc-featured-audio__player {
-  margin-block: 2px 0;
+    &[aria-pressed='true'] {
+      animation: none;
 
-  audio {
-    width: 100%;
+      .vc-featured-audio__play {
+        display: none;
+      }
+    }
   }
 }
 
-.vc-featured-audio__svg {
-  max-height: 0;
+.vc-featured-audio {
+  .vc-reaction-bar {
+    .layout--onecol-fullwidth & {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+.vc-featured-audio__header {
+  .layout--onecol-fullwidth & {
+    @extend .vc-container--tight;
+  }
+}
+
+.vc-featured-audio__container {
+  position: relative;
+  margin-block-start: 3rem;
+}
+
+.vc-featured-audio__player {
+  display: none;
 }
 
 .vc-featured-audio__footer {
@@ -51,4 +75,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem 2rem;
+
+  .layout--onecol-fullwidth & {
+    margin-inline: 1rem;
+  }
 }
