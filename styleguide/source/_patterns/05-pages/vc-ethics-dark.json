@@ -105,6 +105,12 @@
     "copyright_after": null,
     "media_after": null
   },
+  "featured_audio": {
+    "title": "The six Cello Suites, are suites for unaccompanied cello by Johann Sebastian Bach",
+    "description": "<p>They are some of the most frequently performed solo compositions ever written for cello. Bach most likely composed them during the period 1717–1723.”</p>",
+    "src": "../../assets/audio/1-01 Suite No. 1 in G Major - Prélude.m4a",
+    "copyright": "© Copyright: Performed by Yo-Yo Ma, 1985."
+  },
   "slide_rule_caption": {
     "content": "<p>Being paid handsomely to immortalize the powerful rich seems far from what a young Fildes could imagine, let alone accept, as an artist of the voiceless poor. So when Tate offered him The Doctor commission, Fildes jumped at the chance at some redemption by creating “something that would worthily represent me….. It is some time now since I painted an English subject of importance—a long time since the Casual Ward, The Widower and The Return of the Penitent series.”<sup>10</sup></p>"
   },
