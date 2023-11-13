@@ -44,6 +44,7 @@
     layout_heading: null
   } %}
     {% block layout_bottom %}
+      {% set reaction = featured_audio.reaction %}
       {% include "@organisms/vc-featured-audio/vc-featured-audio.twig" %}
     {% endblock %}
   {% endembed %}
