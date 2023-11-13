@@ -320,6 +320,7 @@
   text-align: left;
   color: var(--c-hero-text);
   padding: 0.5rem 1rem;
+  z-index: 5;
 
   &:after,
   &:before {

@@ -215,7 +215,7 @@
   text-align: left;
   color: var(--c-bg);
   padding: 0.5rem 1rem;
-  z-index: 1;
+  z-index: 5;
 
   @include breakpoint($bp-med) {
     left: 1.8rem;
