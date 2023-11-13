@@ -40,6 +40,16 @@
   {% endembed %}
 
   {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set reaction = featured_audio.reaction %}
+      {% include "@organisms/vc-featured-audio/vc-featured-audio.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
     layout_centered: true,
     layout_heading: null
   } %}

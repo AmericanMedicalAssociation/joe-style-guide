@@ -13,6 +13,14 @@
             {{ gallery.label|raw }}
           </div>
         {% endif %}
+        {% if gallery.audio_player %}
+          {% include "@molecules/vc-audio-player/vc-audio-player.twig" with {
+            audio_player: {
+              src: "../../assets/audio/mixkit-morning-birds-2472.mp3",
+              label: "Listen to the sounds of nature as you view this collection."
+            }
+          } %}
+        {% endif %}
       </header>
     </div>
   {% endif %}
