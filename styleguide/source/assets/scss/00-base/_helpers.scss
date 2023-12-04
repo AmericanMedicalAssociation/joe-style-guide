@@ -49,12 +49,12 @@
 
   &::before {
     content: '';
+    display: block;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: calc(50% - 10px);
     width: 20px;
     height: 10rem;
-    transform: translateX(-50%);
     background-image: url('../images/vc/bg-gallery-pattern--dark.svg');
     background-repeat: repeat;
     background-position: center top;
