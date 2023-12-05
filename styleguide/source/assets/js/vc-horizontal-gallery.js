@@ -13,7 +13,9 @@
     attach: function (context, settings) {
       // Variables
       const horizontalGalleries = $('.vc-horizontal-gallery__items');
-      const modalButton = document.querySelectorAll('.vc-horizontal-gallery__artwork');
+      const modalButton = document.querySelectorAll(
+        '.vc-horizontal-gallery__artwork'
+      );
       const modalArtwork = $('.vc-horizontal-gallery__artwork-items');
 
       if (modalArtwork) {
@@ -38,10 +40,10 @@
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  variableWidth: false
-                }
-              }
-            ]
+                  variableWidth: false,
+                },
+              },
+            ],
           });
         });
 
@@ -69,10 +71,24 @@
         // Open to correct artwork when clicked
         modalButton.forEach((e) => {
           e.addEventListener('click', () => {
-            $('.vc-horizontal-gallery__artwork-items').slick('slickGoTo', e.dataset.slidenum);
+            $('.vc-horizontal-gallery__artwork-items').slick(
+              'slickGoTo',
+              e.dataset.slidenum
+            );
+
+            $('.vc-modal .vc-featured-media__caption').each(function () {
+              setTimeout(() => {
+                const modalFiguresHeight = $(this).innerHeight();
+                $(this)
+                  .prev('img')
+                  .css({
+                    'padding-top': modalFiguresHeight + 'px',
+                  });
+              }, '50');
+            });
           });
         });
       }
-    }
+    },
   };
 })(jQuery, Drupal);
