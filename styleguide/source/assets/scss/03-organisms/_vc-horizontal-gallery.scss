@@ -105,8 +105,6 @@
   }
 
   .vc-featured-media__container {
-    // padding-block-start: 36px;
-
     @include breakpoint($bp-med) {
       height: calc(100vh - 13rem);
     }
@@ -115,16 +113,11 @@
   .vc-featured-media__figure {
     justify-content: center;
     height: 100%;
-    // height: calc(100vh - 8rem);
     background-color: rgba($black, 0.1);
-    // display: flex;
-    // flex-direction: column-reverse;
-    // margin: 0;
   
     img {
       object-fit: contain;
       width: 100%;
-      // height: 100%;
       max-height: 100%;
     }
   }
@@ -133,7 +126,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-    // bottom: 100%;
     background-color: var(--c-bg);
   }
 }

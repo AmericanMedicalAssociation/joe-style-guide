@@ -76,14 +76,19 @@
               e.dataset.slidenum
             );
 
-            $('.vc-modal .vc-featured-media__caption').each(function () {
+            $('.vc-modal .vc-featured-media').each(function () {
               setTimeout(() => {
-                const modalFiguresHeight = $(this).innerHeight();
+                const modalFiguresHeight = $(this)
+                  .find('.vc-featured-media__caption')
+                  .innerHeight();
                 $(this)
-                  .parent('.vc-featured-media__figure')
+                  .find('.vc-featured-media__figure')
                   .css({
                     'padding-top': modalFiguresHeight + 'px',
                   });
+                $(this)
+                  .find('.vc-button--is-zoomed')
+                  .css('top', modalFiguresHeight + 10);
               }, '50');
             });
           });
