@@ -80,7 +80,7 @@
               setTimeout(() => {
                 const modalFiguresHeight = $(this).innerHeight();
                 $(this)
-                  .prev('img')
+                  .parent('.vc-featured-media__figure')
                   .css({
                     'padding-top': modalFiguresHeight + 'px',
                   });

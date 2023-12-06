@@ -90,7 +90,7 @@
 
   .slick-slide {
     visibility: hidden;
-    // padding-block-end: 5rem;
+    padding-block-end: 5rem;
   }
 
   .slick-current {
@@ -98,8 +98,11 @@
   }
 
   .vc-featured-media__container {
-    height: calc(100vh - 8rem);
     // padding-block-start: 36px;
+
+    @include breakpoint($bp-med) {
+      height: calc(100vh - 13rem);
+    }
   }
 
   .vc-featured-media__figure {

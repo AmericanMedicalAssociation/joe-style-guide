@@ -34,7 +34,8 @@
 
   .vc-modal__content {
     min-height: 100vh;
-    padding: 4rem 1rem 5rem;
+    // padding: 4rem 1rem 5rem;
+    padding: 4rem 1rem 0;
 
     @include breakpoint($bp-med) {
       padding-inline: 2rem;
@@ -46,7 +47,7 @@
   }
 
   .vc-modal__footer {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
 
