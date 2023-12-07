@@ -25,4 +25,8 @@
 
 {% block footer %}
   {% include "@organisms/vc-footer/vc-footer.twig" %}
-{% endblock %}</div>
+{% endblock %}
+
+{% if htmlClass == "vc-gallery" %}
+  <a href="#vc-galleries" id="vc-back-to-galleries" class="button">Back to Galleries</a>
+{% endif %}</div>

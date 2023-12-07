@@ -140,3 +140,24 @@
     font-size: 1em;
   }
 }
+
+#vc-back-to-galleries {
+  transition: all 0.3s ease;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: 0 0 50px rgba($black, 0.2);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+
+  @include breakpoint($bp-small) {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
