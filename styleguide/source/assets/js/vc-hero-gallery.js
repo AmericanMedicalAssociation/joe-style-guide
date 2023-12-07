@@ -12,23 +12,6 @@
   Drupal.behaviors.vc_hero_gallery = {
     attach: function (context, settings) {
       const vcHeroGallery = document.querySelector('.vc-hero-gallery');
-      const vcBackToGalleries = document.getElementById('vc-back-to-galleries');
-
-      // Find the dimensions of pastViewport
-      const pastViewport = function (e) {
-        const distance = e.getBoundingClientRect();
-        return distance.bottom >= 0;
-      };
-
-      // Set inView
-      function pastView() {
-        if (pastViewport(vcHeroGallery)) {
-          // If in view
-          vcBackToGalleries.classList.remove('is-visible');
-        } else {
-          vcBackToGalleries.classList.add('is-visible');
-        }
-      }
 
       if (vcHeroGallery) {
         $('.vc-hero-gallery__nav').slick({
@@ -53,28 +36,6 @@
             },
           ],
         });
-
-        // Set throttle variables
-        let lastScrollPosition = 0;
-        let throttle = false;
-
-        window.addEventListener(
-          'scroll',
-          () => {
-            // Set lastScrollPosition to window.scrollY
-            lastScrollPosition = window.scrollY;
-            // Throttle scroll behavior
-            if (!throttle) {
-              setTimeout(() => {
-                pastView(lastScrollPosition);
-                throttle = false;
-                console.log('scrolling');
-              }, 25);
-            }
-            throttle = true;
-          },
-          false
-        );
       }
     },
   };

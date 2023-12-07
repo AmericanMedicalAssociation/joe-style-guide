@@ -28,8 +28,14 @@
 {% endblock %}
 
 {% if htmlClass == "vc-gallery" %}
-  <a href="#vc-galleries" id="vc-back-to-galleries" class="button">
+  <a href="#vc-galleries" id="vc-back-to-galleries" class="button vc-back-to-button">
     {% include "@base/icons/icon-up-arrow.svg" %}
     Back to Galleries
+  </a>
+{% endif %}
+{% if htmlClass == "vc-ethics" %}
+  <a href="#top" id="vc-back-to-top" class="button vc-back-to-button">
+    {% include "@base/icons/icon-up-arrow.svg" %}
+    Back to Top
   </a>
 {% endif %}</div>
