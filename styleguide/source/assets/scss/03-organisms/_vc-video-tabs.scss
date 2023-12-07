@@ -99,6 +99,7 @@
 .vc-video-tabs__group [role='tabpanel'] {
   position: relative;
   aspect-ratio: 16 / 9;
+  width: 100%;
 
   iframe,
   object {
