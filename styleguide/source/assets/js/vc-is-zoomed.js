@@ -86,6 +86,29 @@
         },
         false
       );
+
+      // On `esc` press close `is-zoomed`
+      document.addEventListener(
+        'keyup',
+        function (e) {
+          if (
+            !e.target.closest(
+              '.layout__region.is-zoomed, .vc-modal__first.is-zoomed'
+            )
+          ) {
+            console.log('hit');
+            const key = e.key || e.keyCode;
+            if (key === 'Escape' || key === 'Esc' || key === 27) {
+              $(
+                '.layout__region, .vc-modal__container, .vc-modal__first'
+              ).removeClass('is-zoomed');
+              $('.layout__region, .vc-modal__first').css('width', '');
+              $('.vc-button--is-zoomed').removeClass('is-open');
+            }
+          }
+        },
+        false
+      );
     },
   };
 })(jQuery, Drupal);
