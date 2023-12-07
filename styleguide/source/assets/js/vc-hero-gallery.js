@@ -17,12 +17,7 @@
       // Find the dimensions of pastViewport
       const pastViewport = function (e) {
         const distance = e.getBoundingClientRect();
-        return (
-          distance.left >= 0 &&
-          distance.right <=
-            (window.innerWidth || document.documentElement.clientWidth) &&
-          distance.bottom >= 0
-        );
+        return distance.bottom >= 0;
       };
 
       // Set inView
