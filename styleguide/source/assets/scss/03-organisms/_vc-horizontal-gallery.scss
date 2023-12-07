@@ -137,7 +137,7 @@
     grid-column: 2 / 12;
 
     // Update grid span when `vc-modal__second` displays
-    &:has(+.vc-modal__second) {
+    &:not(:only-child) {
       grid-column: span 7;
     }
 
