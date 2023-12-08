@@ -12,7 +12,9 @@
 
   .joe__link--reversed {
     @extend %joe__type--smaller;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1em;
   }
 
