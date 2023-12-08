@@ -73,10 +73,15 @@
 
 .vc-hero-ethics__shape {
   @include breakpoint($bp-med) {
-    width: 600px;
+    width: 560px;
     height: 600px;
     float: left;
-    shape-outside: polygon(0% 100%, 0% 0%, 100% 100%);
+    shape-outside: polygon(16% 0px, 16% 22%, 100% 100%, 0px 100%, 0px 0px);
+  }
+
+  @include breakpoint($bp-large) {
+    width: 600px;
+    shape-outside: polygon(25% 0px, 25% 25%, 100% 100%, 0px 100%, 0px 0px);
   }
 }
 
