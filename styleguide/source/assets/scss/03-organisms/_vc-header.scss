@@ -1,4 +1,11 @@
 // Visual Content header
+
+:root[class*='vc-'] {
+  .joe__sticky-header {
+    padding-top: 0;
+  }
+}
+
 :root[class*='vc-'] .vc-header {
 
   .joe__wordmark a {
@@ -57,16 +64,28 @@
 }
 
 // Art of Medicine header overrides
-:root.vc-art .vc-header {
-  .joe__wordmark a {
-    color: var(--c-hero-text);
+:root.vc-art {
+  padding-block-start: 3.2rem;
+
+  @include breakpoint($bp-small) {
+    padding-block-start: 3.8rem;
   }
 
-  .vc-header__action-button svg {
+  @include breakpoint($bp-med) {
+    padding-block-start: 4.8rem;
+  }
 
-    path,
-    circle {
-      stroke: var(--c-hero-text);
+  .vc-header {
+    .joe__wordmark a {
+      color: var(--c-hero-text);
+    }
+  
+    .vc-header__action-button svg {
+  
+      path,
+      circle {
+        stroke: var(--c-hero-text);
+      }
     }
   }
 }
@@ -84,7 +103,10 @@
 }
 
 .vc-header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   padding-block: 0.5rem;
   z-index: 100;
 
@@ -97,10 +119,6 @@
   .joe__sticky-header & {
     background-color: var(--c-bg);
     box-shadow: 0 0 50px rgba($black, 0.2);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
 
     // Art of Medicine header overrides
     :root.vc-art & {
