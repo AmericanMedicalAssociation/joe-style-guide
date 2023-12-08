@@ -3,6 +3,12 @@
     margin-block-start: 0;
   }
 
+  .vc-horizontal-gallery__items {
+    .slick-track {
+      padding-block-start: 0;
+    }
+  }
+
   .vc-modal__controls {
     .slick-arrow {
       display: flex;
