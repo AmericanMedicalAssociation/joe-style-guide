@@ -33,7 +33,6 @@
   @include type($font-serif, 1em, $font-weight-bold, 1);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-inline-end: 2rem;
 }
 
 :root.vc-gallery {
@@ -129,12 +128,14 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding-inline: 1rem;
 }
 
 .vc-hero-gallery__nav-label {
   @include type($font-sans-serif, 0.8em, $font-weight-medium, 1);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-align: center;
 
   @include breakpoint($bp-small) {
     font-size: 1em;

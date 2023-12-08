@@ -232,8 +232,12 @@
       background-repeat: no-repeat;
       background-size: contain;
       padding: 0;
-      width: 4rem;
+      width: 3rem;
       height: 2rem;
+
+      @include breakpoint($bp-small) {
+        width: 4rem;
+      }
 
       &:active,
       &:focus,
@@ -249,7 +253,6 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(100%);
-        overflow: hidden;
       }
 
       svg g {
