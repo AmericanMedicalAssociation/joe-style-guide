@@ -158,6 +158,10 @@ $initial-reveal: 50%;
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
   padding-block: 0 1rem;
 
+  @include breakpoint($bp-med) {
+    @include type($font-sans-serif, 1em, $font-weight-medium, 1.1);
+  }
+
   .layout--onecol-fullwidth & {
     padding-inline: 1.25rem;
 
