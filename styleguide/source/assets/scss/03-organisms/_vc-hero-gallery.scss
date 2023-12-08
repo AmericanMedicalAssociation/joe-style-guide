@@ -66,16 +66,6 @@
 
   a.vc-hero-gallery__anchor {
     text-decoration: none;
-
-    img {
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      img {
-        box-shadow: 0 0 0 6px var(--c-link);
-      }
-    }
   }
 
   .vc-hero-gallery__anchor-label {
