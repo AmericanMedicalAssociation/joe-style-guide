@@ -32,7 +32,7 @@
 
 .vc-video-tabs__group [role='tablist'] {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.5rem;
 
   @include breakpoint($bp-med) {
     flex-basis: 30%;
@@ -41,8 +41,10 @@
   }
 
   li {
-    @include breakpoint($bp-med) {
-      border-bottom: 1px solid var(--c-text);
+    border-bottom: 1px solid var(--c-text);
+
+    &:last-child {
+      border-bottom: 0;
     }
   }
 
@@ -55,7 +57,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: 1px solid var(--c-text);
     padding: 0.5rem 1rem;
 
     @include breakpoint($bp-med) {
@@ -99,6 +100,7 @@
 .vc-video-tabs__group [role='tabpanel'] {
   position: relative;
   aspect-ratio: 16 / 9;
+  width: 100%;
 
   iframe,
   object {
