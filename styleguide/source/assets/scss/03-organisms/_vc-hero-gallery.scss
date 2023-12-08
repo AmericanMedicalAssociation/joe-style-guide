@@ -67,6 +67,7 @@
     text-decoration: none;
 
     img {
+      max-width: 450px;
       transition: all 0.3s ease;
     }
 
@@ -129,6 +130,10 @@
   align-items: center;
   gap: 1rem;
   padding-inline: 1rem;
+
+  @include breakpoint($bp-med) {
+    top: -2rem;
+  }
 }
 
 .vc-hero-gallery__nav-label {
