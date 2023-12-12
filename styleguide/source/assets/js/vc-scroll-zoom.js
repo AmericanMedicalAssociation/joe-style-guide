@@ -12,11 +12,10 @@
   Drupal.behaviors.vc_scroll_zoom = {
     attach: function (context, settings) {
 
-      /**
-       * Set the svg display, which controls image zoom based on caption.
-       */
-
+      // Set the svg display, which controls image zoom based on caption.
       const svg = $('.image-wrapper svg');
+
+      // Set our global params.
       let viewBox = svg.attr('viewBox');
       let anchorList = [];
       let desktopCoordList = [];
@@ -24,6 +23,16 @@
       let mobileCoordList = [];
       let viewboxCoords;
       let breakpoint;
+      let coords;
+      let visibleCaption = -1;
+      let prevScrollPosition = 0;
+      let scrollingDown;
+      // Find all captionsBox classes. These are captioned images.
+      // @todo This only allows one per instance per page.
+      const captionsBox = document.querySelectorAll('.vc-scroll-zoom__captions');
+
+      // Find all unique captions inside the image.
+      const captionsList = document.querySelectorAll('.vc-scroll-zoom__caption');
 
       // Get caption data.
       function loadArrays() {
@@ -39,11 +48,22 @@
         });
       }
 
-      // Portable svg update function
-      function updateSvg(coords) {
-        svg.attr({
-          viewBox: coords,
-        });
+      // Portable svg update function.
+      // See https://gsap.com/docs/v3/Eases.
+      function updateSvg(coords, index = 0) {
+        // Only move if the scroll forces an allowed change.
+        if ((index > visibleCaption && scrollingDown) || (index < visibleCaption && !scrollingDown)) {
+          gsap.to(svg, {
+            scale: 1,
+            duration: 1.3,
+            attr: {
+              viewBox: coords
+            },
+            ease: 'power2.out'
+          });
+
+          visibleCaption = index;
+        }
       }
 
       // Set active breakpoint on resize.
@@ -68,10 +88,10 @@
         breakpointCheck(width, height);
 
         //  Set starting coords based on first slide.
-        let coords = $('.static-display').attr('data-coordinates-' + breakpoint);
+        coords = $('.static-display').attr('data-coordinates-' + breakpoint);
 
         //  set coords
-        updateSvg(coords);
+        updateSvg(coords, 0);
       }
 
       // Set the proper coordinates based on breakpoint and available values.
@@ -103,49 +123,44 @@
        * Set the scroll behaviors.
        */
 
-        // Find all captionsBox classes. These are captioned images.
-      const captionsBox = document.querySelectorAll('.vc-scroll-zoom__captions');
-
-      // Find all unique captions inside the image.
-      // @todo This only allows one per instance per page.
-      const captionsList = document.querySelectorAll('.vc-scroll-zoom__caption');
-
-      // Find the dimensions of captionsBox
-      const inViewport = function (e) {
-        const distance = e.getBoundingClientRect();
-        return (
-          distance.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-          distance.left >= 0 &&
-          distance.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-          distance.bottom >= 0);
-      };
+        // Find the dimensions of captionsBox
+      const inViewport = function (e, caller = '') {
+          const distance = e.getBoundingClientRect();
+          return (
+            distance.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            distance.left >= 0 &&
+            distance.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+            distance.bottom >= 0);
+        };
 
       // Set inView
       function isInView() {
+
         for (let i = 0; i < captionsBox.length; i++) {
-          if (inViewport(captionsBox[i])) {
+          if (inViewport(captionsBox[i], 'box')) {
             // If in view set the bounding image box to sticky.
             captionsBox[i].previousElementSibling.classList.add('is-sticky');
 
             // Now determine which caption we are looking at.
             for (let j = 0; j < captionsList.length; j++) {
-              if (inViewport(captionsList[j])) {
-                // Get the SVG render options, offset by 1 to account for the initial image.
-                coords = getCoords(j + 1);
-                updateSvg(coords);
+              // Get the SVG render options, offset by 1 to account for the initial image.
+              let offset = j + 1;
+              if (inViewport(captionsList[j], 'caption') && offset !== visibleCaption) {
+                coords = getCoords(offset);
+                updateSvg(coords, offset);
               }
             }
           } else {
             captionsBox[i].previousElementSibling.classList.remove('is-sticky');
             // The 0th element is the default image.
             coords = getCoords(0);
-            updateSvg(coords);
+            updateSvg(coords, 0);
           }
         }
       }
 
       // If has captionsBox, run throttled inViewport
-      if (captionsBox) {
+      if (captionsBox && captionsList) {
         // Set throttle variables
         let lastScrollPosition = 0;
         let throttle = false;
@@ -153,11 +168,14 @@
         window.addEventListener('scroll', () => {
           // Set lastScrollPosition to window.scrollY
           lastScrollPosition = window.scrollY;
+          // Track scroll direction.
+          scrollingDown = (prevScrollPosition - lastScrollPosition) <= 0;
           // Throttle scroll behavior
           if (!throttle) {
             setTimeout(() => {
-              isInView(lastScrollPosition);
+              isInView();
               throttle = false;
+              prevScrollPosition = lastScrollPosition;
             }, 25);
           }
           throttle = true;
