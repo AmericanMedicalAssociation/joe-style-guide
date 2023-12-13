@@ -29,23 +29,13 @@
   </div>
   {% if reaction.total %}
     <div class="vc-reaction-bar__total">
-      {% if reaction.total == 1 %}
-        <div class="vc-reaction-bar__emojis-selected">
-          {% for item in reaction.selected %}
-            {{ item }}
-          {% end for %}
-        </div>
-        <span class="vc-reaction-bar__total-label">{{ reaction.total }}
-          Reaction</span>
-      {% elseif reaction.total > 1 %}
-        <div class="vc-reaction-bar__emojis-selected">
-          {% for item in reaction.selected %}
-            {{ item }}
-          {% end for %}
-        </div>
-        <span class="vc-reaction-bar__total-label">{{ reaction.total }}
-          Reactions</span>
-      {% endif %}
+      <div class="vc-reaction-bar__emojis-selected">
+        {% for item in reaction.selected %}
+          {{ attribute(_context, 'emoji_'~item) }}
+        {% endfor %}
+      </div>
+      <span class="vc-reaction-bar__total-label">{{ reaction.total }}
+      Reaction{% if reaction.total > 1 %}s{% endif %}</span>
     </div>
   {% endif %}
 </div>
