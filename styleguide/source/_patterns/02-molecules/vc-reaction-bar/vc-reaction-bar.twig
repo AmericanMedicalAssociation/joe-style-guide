@@ -10,19 +10,19 @@
       </button>
       <div class="vc-reaction-bar__emojis-dropdown" hidden>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          <img src="../../assets/images/vc/icon-emoji--thinking-face.svg" alt="Thinking Face Emoji">
+          🤔
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          <img src="../../assets/images/vc/icon-emoji--heart-eyes.svg" alt="Heart Eyes Emoji">
+          😍
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
+          🔥
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          <img src="../../assets/images/vc/icon-emoji--drink.svg" alt="Drink Emoji">
+          🥃
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          <img src="../../assets/images/vc/icon-emoji--skull.svg" alt="Skull Emoji">
+          💀
         </span>
       </div>
     </div>
@@ -31,14 +31,14 @@
     <div class="vc-reaction-bar__total">
       {% if reaction.total == 1 %}
         <div class="vc-reaction-bar__emojis-selected">
-          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
+          🔥
         </div>
         <span class="vc-reaction-bar__total-label">{{ reaction.total }}
           Reaction</span>
       {% elseif reaction.total > 1 %}
         <div class="vc-reaction-bar__emojis-selected">
-          <img src="../../assets/images/vc/icon-emoji--fire.svg" alt="Fire Emoji">
-          <img src="../../assets/images/vc/icon-emoji--thinking-face.svg" alt="Thinking Face Emoji">
+          🔥
+          🤔
         </div>
         <span class="vc-reaction-bar__total-label">{{ reaction.total }}
           Reactions</span>
