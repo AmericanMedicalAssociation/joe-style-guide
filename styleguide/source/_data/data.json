@@ -113,7 +113,7 @@
   "reaction": {
     "question": "How does this artwork make you feel?",
     "total": "5",
-    "selected": [1, 2, 3]
+    "selected": [1, 2]
   },
   "vc_issue": {
     "title": null,

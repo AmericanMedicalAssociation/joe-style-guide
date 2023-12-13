@@ -1,13 +1,15 @@
 {
   "htmlClass": "vc-art",
-  "emoji_1": "\uD83E\uDD14",
-  "emoji_2": "\uD83D\uDE0D",
-  "emoji_3": "\uD83D\uDD25",
-  "emoji_4": "\uD83E\uDD43",
-  "emoji_5": "\uD83D\uDC80",
+  "emoji": [
+    "\uD83E\uDD14",
+    "\uD83D\uDE0D",
+    "\uD83D\uDD25",
+    "\uD83E\uDD43",
+    "\uD83D\uDC80"
+  ],
   "reaction": {
     "question": "How does this artwork makes you feel?",
     "total": 5,
-    "selected": [1, 2, 3]
+    "selected": [1, 2]
   }
 }

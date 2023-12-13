@@ -9,21 +9,11 @@
         {% include "@base/icons/icon-reaction-button.svg" %}
       </button>
       <div class="vc-reaction-bar__emojis-dropdown" hidden>
-        <span class="vc-reaction-bar__emojis-icon" role="button">
-          {{ emoji_1 }}
-        </span>
-        <span class="vc-reaction-bar__emojis-icon" role="button">
-          {{ emoji_2 }}
-        </span>
-        <span class="vc-reaction-bar__emojis-icon" role="button">
-          {{ emoji_3 }}
-        </span>
-        <span class="vc-reaction-bar__emojis-icon" role="button">
-          {{ emoji_4 }}
-        </span>
-        <span class="vc-reaction-bar__emojis-icon" role="button">
-          {{ emoji_5 }}
-        </span>
+        {% for icon in emoji %}
+          <span class="vc-reaction-bar__emojis-icon" role="button">
+            {{ icon }}
+          </span>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -31,7 +21,7 @@
     <div class="vc-reaction-bar__total">
       <div class="vc-reaction-bar__emojis-selected">
         {% for item in reaction.selected %}
-          {{ attribute(_context, 'emoji_'~item) }}
+          {{ emoji[item] }}
         {% endfor %}
       </div>
       <span class="vc-reaction-bar__total-label">{{ reaction.total }}
