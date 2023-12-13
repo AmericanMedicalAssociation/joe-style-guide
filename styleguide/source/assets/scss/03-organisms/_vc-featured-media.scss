@@ -34,7 +34,11 @@
 
 .vc-featured-media__caption {
   @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
-  padding-block: 0 1rem;
+  padding-block: 0 1rem; 
+
+  @include breakpoint($bp-med) {
+    @include type($font-sans-serif, 1em, $font-weight-medium, 1.1);
+  }
 }
 
 .vc-featured-media__copyright,
@@ -65,6 +69,7 @@
 .vc-featured-media__video {
   position: relative;
   aspect-ratio: 16 / 9;
+  width: 100%;
 
   iframe,
   object {

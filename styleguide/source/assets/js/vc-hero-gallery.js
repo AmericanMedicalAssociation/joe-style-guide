@@ -11,7 +11,6 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_hero_gallery = {
     attach: function (context, settings) {
-
       const vcHeroGallery = document.querySelector('.vc-hero-gallery');
 
       if (vcHeroGallery) {
@@ -32,12 +31,12 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                variableWidth: false
-              }
-            }
-          ]
+                variableWidth: false,
+              },
+            },
+          ],
         });
       }
-    }
+    },
   };
 })(jQuery, Drupal);

@@ -1,5 +1,5 @@
 .vc-text-block {
-  .lede {
+  p {
     @include type($font-serif, 1em, $font-weight-medium, 1.5);
 
     @include breakpoint($bp-large) {
