@@ -1,3 +1,13 @@
 {
-  "htmlClass": "vc-art"
+  "htmlClass": "vc-art",
+  "emoji_1": "\uD83E\uDD14",
+  "emoji_2": "\uD83D\uDE0D",
+  "emoji_3": "\uD83D\uDD25",
+  "emoji_4": "\uD83E\uDD43",
+  "emoji_5": "\uD83D\uDC80",
+  "reaction": {
+    "question": "What?",
+    "total": 5,
+    "selected": [1, 2, 3]
+  }
 }

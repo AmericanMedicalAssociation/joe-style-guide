@@ -10,19 +10,19 @@
       </button>
       <div class="vc-reaction-bar__emojis-dropdown" hidden>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          🤔
+          {{ emoji_1 }}
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          😍
+          {{ emoji_2 }}
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          🔥
+          {{ emoji_3 }}
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          🥃
+          {{ emoji_4 }}
         </span>
         <span class="vc-reaction-bar__emojis-icon" role="button">
-          💀
+          {{ emoji_5 }}
         </span>
       </div>
     </div>
@@ -31,14 +31,17 @@
     <div class="vc-reaction-bar__total">
       {% if reaction.total == 1 %}
         <div class="vc-reaction-bar__emojis-selected">
-          🔥
+          {% for item in reaction.selected %}
+            {{ item }}
+          {% end for %}
         </div>
         <span class="vc-reaction-bar__total-label">{{ reaction.total }}
           Reaction</span>
       {% elseif reaction.total > 1 %}
         <div class="vc-reaction-bar__emojis-selected">
-          🔥
-          🤔
+          {% for item in reaction.selected %}
+            {{ item }}
+          {% end for %}
         </div>
         <span class="vc-reaction-bar__total-label">{{ reaction.total }}
           Reactions</span>
