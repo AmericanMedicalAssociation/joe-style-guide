@@ -110,15 +110,15 @@ sup {
     }
   }
 
-  a:link,
-  a:visited {
+  a:link :not(.menu-item),
+  a:visited :not(.menu-item) {
     color: var(--c-link);
     text-decoration: underline;
   }
 
-  a:active,
-  a:hover,
-  a:focus {
+  a:active :not(.menu-item),
+  a:hover :not(.menu-item),
+  a:focus :not(.menu-item) {
     color: var(--c-link);
     text-decoration: none;
   }
