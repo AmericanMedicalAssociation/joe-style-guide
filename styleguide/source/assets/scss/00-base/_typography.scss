@@ -99,26 +99,33 @@ sup {
   scroll-behavior: smooth;
   scroll-padding: 25px;
 
-  body {
+  main,
+  header {
     background-color: var(--c-bg);
     color: var(--c-text);
 
     // Small adjustment to base font size at $bp-large for `vc-*` pages
+    // This is probably fine, but might need to be in `body`
     @include breakpoint($bp-large) {
       font-size: (calc($base-font-size / 16px)) * 110%;
       line-height: $base-line-height * 1.2;
     }
   }
 
-  a:link :not(.menu-item),
-  a:visited :not(.menu-item) {
+  a:link main,
+  a:link header,
+  a:visited main,
+  a:visited header {
     color: var(--c-link);
     text-decoration: underline;
   }
 
-  a:active :not(.menu-item),
-  a:hover :not(.menu-item),
-  a:focus :not(.menu-item) {
+  a:active main,
+  a:active header,
+  a:hover main,
+  a:hover header,
+  a:focus main,
+  a:focus header {
     color: var(--c-link);
     text-decoration: none;
   }
