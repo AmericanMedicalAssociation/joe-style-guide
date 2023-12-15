@@ -21,8 +21,8 @@
     layout_heading: null
   } %}
     {% block layout_bottom %}
-      {% set scroll_zoom = scroll_zoom_1 %}
-      {% include "@organisms/vc-scroll-zoom/vc-scroll-zoom.twig" %}
+      {% set scroll_zoom = scroll_zoom %}
+      {% include "@organisms/vc-scroll-zoom/vc-scroll-zoom.twig" with scroll_zoom %}
     {% endblock %}
   {% endembed %}
 
