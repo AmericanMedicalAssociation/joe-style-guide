@@ -8,6 +8,12 @@
 // @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 // =============================================================================
 
+// Makes the images in modal appear without margins.
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .visually-hidden,
 %visually-hidden,
 .element-invisible,
