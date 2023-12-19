@@ -123,7 +123,7 @@ sup {
 }
 
 // Correct for toolbar.
-div:not(.toolbar) > a {
+*:not(.toolbar) > a {
   color: var(--c-link);
 }
 
