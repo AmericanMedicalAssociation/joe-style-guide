@@ -16,7 +16,7 @@
       if (vcHeroGallery) {
         $('.vc-hero-gallery__nav').slick({
           infinite: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '5%',
