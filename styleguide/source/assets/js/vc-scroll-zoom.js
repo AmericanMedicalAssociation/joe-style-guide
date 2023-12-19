@@ -55,11 +55,11 @@
         if ((index > visibleCaption && scrollingDown) || (index < visibleCaption && !scrollingDown)) {
           gsap.to(svg, {
             scale: 1,
-            duration: 1.3,
+            duration: 2.5,
             attr: {
               viewBox: coords
             },
-            ease: 'power2.out'
+            ease: 'power2.inOut'
           });
 
           visibleCaption = index;
