@@ -1,4 +1,10 @@
 :root[class*='vc-'] {
+  .aom-footer {
+    --c-footer-text: #ffffff;
+    --c-footer-link: #ffffff;
+    --c-footer-bg: #3d3b40;
+  }
+
   .joe__footer {
     background-color: var(--c-footer-bg);
     border: 0;
