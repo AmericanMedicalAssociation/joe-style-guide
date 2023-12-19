@@ -67,6 +67,17 @@
     text-decoration: none;
   }
 
+  a.vc-hero-gallery__anchor img {
+    max-width: 450px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  a.vc-hero-gallery__anchor:hover img {
+    -webkit-box-shadow: 0 0 0 6px var(--c-link);
+    box-shadow: 0 0 0 6px var(--c-link);
+  }
+
   .vc-hero-gallery__anchor-label {
     @include type($font-serif, 1em, $font-weight-bold, 1);
     text-align: center;
