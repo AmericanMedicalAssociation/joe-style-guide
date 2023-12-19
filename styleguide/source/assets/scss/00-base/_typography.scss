@@ -110,16 +110,24 @@ sup {
     }
   }
 
-  a:link :not(.menu-item),
-  a:visited :not(.menu-item) {
-    color: var(--c-link);
+  a:link,
+  a:visited {
     text-decoration: underline;
   }
 
-  a:active :not(.menu-item),
-  a:hover :not(.menu-item),
-  a:focus :not(.menu-item) {
-    color: var(--c-link);
+  a:active,
+  a:hover,
+  a:focus {
     text-decoration: none;
   }
+}
+
+// Correct for toolbar.
+div:not(.toolbar) > a {
+  color: var(--c-link);
+}
+
+// Correct for workbench tabs.
+div.workbench-tabs {
+  color: #000;
 }
