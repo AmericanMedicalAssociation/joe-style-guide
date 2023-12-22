@@ -1,0 +1,16 @@
+{
+  "htmlClass": "vc-ethics",
+  "htmlStyle": "--c-hero-bg-opacity: 0.6;",
+  "theme_mode": "light",
+  "hero": {
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics-light--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics-light--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics-light--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics-light--large.jpg' alt='Alt text'>",
+    "issue_date": "Aug 2020",
+    "issue_href": "/",
+    "page_title": "Practicing Four Elements of Sanctuary Health Care",
+    "author": "Lauren Beatty",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/",
+    "cme_href": "/"
+  }
+}

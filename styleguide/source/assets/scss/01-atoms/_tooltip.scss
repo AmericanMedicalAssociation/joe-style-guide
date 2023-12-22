@@ -11,4 +11,10 @@
   z-index: 10;
   left: 0;
   top: 0;
+
+  :root[class*='vc-'] & {
+    background: var(--c-bg);
+    border: 1px solid var(--c-text);
+    color: var(--c-text);
+  }
 }

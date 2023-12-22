@@ -1,0 +1,41 @@
+{% include '@atoms/skip-nav.twig' %}
+
+{% block header %}
+  {% include "@organisms/vc-header/vc-header.twig" %}
+{% endblock %}
+<main id="main-content" role="main">
+  <article class="vc-article">
+    {% block pageHeader %}
+      {% set placeholder = page_header.placeholder %}
+      {% include '@base/placeholder.twig' %}
+    {% endblock %}
+    <div class="c-field__content">
+      {% if htmlClass == 'vc-art' %}
+        <div class="vc-art__bg-shapes">
+          {% include "@base/icons/bg-art-of-medicine.svg" %}
+        </div>
+      {% endif %}
+      {% block pageContent %}
+        {% set placeholder = page_content.placeholder %}
+        {% include '@base/placeholder.twig' %}
+      {% endblock %}
+    </div>
+  </article>
+</main>
+
+{% block footer %}
+  {% include "@organisms/vc-footer/vc-footer.twig" %}
+{% endblock %}
+
+{% if htmlClass == "vc-gallery" %}
+  <a href="#vc-galleries" id="vc-back-to-galleries" class="button vc-back-to-button">
+    {% include "@base/icons/icon-up-arrow.svg" %}
+    Back to Galleries
+  </a>
+{% endif %}
+{% if htmlClass == "vc-ethics" %}
+  <a href="#top" id="vc-back-to-top" class="button vc-back-to-button">
+    {% include "@base/icons/icon-up-arrow.svg" %}
+    Back to Top
+  </a>
+{% endif %}</div>

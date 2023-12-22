@@ -1,0 +1,17 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #F5F5F5; --c-text: #3A4941; --c-hero-bg: #C54374; --c-button-bg: #9FE7C7; --c-button-bg-hover: #71E8B3; --c-button-text: #484848;",
+  "hero": {
+    "modifier_class": "vc-hero-art--text-left vc-hero-art--full",
+    "image_small": "../../assets/images/vc/bg-hero-art-3--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-3--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-3--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "On Stage, But Not on Cue",
+    "author": "Julia O'Brien",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/"
+  }
+}

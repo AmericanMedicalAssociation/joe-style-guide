@@ -21,7 +21,7 @@
 .joe__tag {
   display: inline;
   letter-spacing: 0;
-  
+
   a:link,
   a:visited {
     display: inline;
@@ -30,12 +30,53 @@
     padding: 0 2px;
     border-bottom: 2px solid $orange-darker;
   }
-  
+
   a:active,
   a:hover,
   a:focus {
     color: $white;
     text-decoration: none;
     background-color: $orange-darker;
+  }
+}
+
+:root[class*='vc-'] {
+  .joe__tags {
+    max-width: 1000px;
+    color: var(--c-footer-text);
+    padding: 0;
+    margin: 0 0 5rem;
+
+    a {
+      color: var(--c-footer-link);
+      border-bottom: 0;
+
+      &:active,
+      &:hover,
+      &:focus {
+        color: unset;
+        text-decoration: unset;
+        background-color: unset;
+      }
+    }
+  }
+
+  .joe__tag {
+    @include type($font-sans-serif, 0.875em, $font-weight-bold, 1.25);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-block-end: 1rem;
+  }
+
+  .joe__tags-title {
+    @include type($font-serif, 0.9em, $font-weight-medium, 1.25);
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    background-color: var(--c-footer-text);
+    color: var(--c-footer-bg);
+    padding: 2rem 2rem 1rem;
+    margin-block-start: 0;
   }
 }

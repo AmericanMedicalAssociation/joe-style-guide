@@ -1,0 +1,136 @@
+:root[class*='vc-'] {
+
+  .vc-modal {
+    position: relative;
+    display: none;
+    z-index: 999;
+
+    &.is-open {
+      display: block;
+    }
+
+    .vc-button--is-zoomed {
+      @include breakpoint(0 $bp-med) {
+        display: none;
+      }
+    }
+
+    .vc-button--is-zoomed {
+      background: var(--c-button-text);
+      border: 2px solid var(--c-button-bg);
+      padding: 0.25rem;
+  
+      svg path,
+      svg circle {
+        stroke: var(--c-button-bg);
+      }
+    }
+  }
+
+  .vc-modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--c-bg);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 14px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--c-link);
+      background-clip: padding-box;
+      border-radius: 9999px;
+      border: 3px solid transparent;
+    }
+  }
+
+  .vc-modal__content {
+    min-height: 100vh;
+    padding: 4rem 1rem 0;
+
+    @include breakpoint($bp-med) {
+      padding-inline: 2rem;
+    }
+
+    @include breakpoint($bp-large) {
+      padding-inline: 3rem;
+    }
+  }
+
+  .vc-modal__footer {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+
+    @include breakpoint($bp-med) {
+      right: 2rem;
+    }
+  }
+
+  .vc-modal__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0;
+
+    svg path {
+      stroke: var(--c-button-text);
+    }
+  }
+}
+
+.vc-modal__first.is-zoomed {
+  background-color: var(--c-bg);
+  padding-inline: 0;
+  z-index: 10;
+
+  .vc-modal__grid--stacked & {
+    @include breakpoint($bp-med) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .vc-featured-media {
+    width: 100%;
+    padding-inline: 0;
+    margin-inline: 0;
+  }
+
+  .vc-featured-media__container {
+    overflow-y: auto;
+    height: calc(100vh - 5rem);
+  }
+
+  .vc-featured-media__figure {
+    height: auto;
+    
+    img {
+      max-height: none;
+    }
+  }
+
+  .vc-featured-media__media,
+  .vc-featured-media__copyright,
+  .vc-reaction-bar,
+  .vc-modal__controls {
+    display: none;
+  }
+}
+
+.vc-modal__container.is-zoomed {
+  .slick-slide {
+    padding-block-end: 0;
+  }
+
+  .vc-modal__footer {
+    display: none;
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "",
+  "hero": {
+    "image_small": "../../assets/images/vc/bg-hero-art-1--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-1--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-1--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "Greener Health Care Is a Necessity",
+    "author": "Brian Robert Smith",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/",
+    "cme_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>This series of 4 images visually considers ethical questions about the US health sector’s emissions.</p>"
+  },
+  "featured_media_1": {
+    "image": "<img src='../../assets/images/vc/bg-hero-art-1--large.jpg' alt='Alt text'>",
+    "figure_text": "<strong>Figure 1.</strong> Smokestacks",
+    "copyright": null,
+    "media": "Media: Affinity Designer iterated through the artificial intelligence (AI) art program Midjourney."
+  },
+  "caption_1": {
+    "content": "<h2>Caption</h2><p>This drawing explores the dissonance between a hospital’s healing capacity and its emissions’ <a href='#'>environmental harms</a>. Air pollution threatens patients’ health in a variety of ways, including by exacerbating respiratory and cardiovascular illness and increasing spread of infectious diseases.<sup>1</sup></p>"
+  },
+  "featured_media_2": {
+    "image": "<img src='../../assets/images/vc/img-art-1-figure2.png' alt='Alt text'>",
+    "figure_text": "<strong>Figure 2.</strong> Landfill",
+    "copyright": null,
+    "media": "Media: Affinity Designer iterated through the AI art program Midjourney."
+  },
+  "caption_2": {
+    "content": "<h2>Caption</h2><p>Mountains of plastic represent one environmental harm of the US health sector. Vast amounts of waste, especially single-use plastics, suggest the importance of finding sustainable alternatives.</p>"
+  },
+  "slide_rule": {
+    "figure_text": "<strong>Figure 3.</strong> Drought",
+    "image_before": "<img src='../../assets/images/vc/img-art-1-figure3.jpeg' alt='Alt text'>",
+    "copyright_before": null,
+    "media_before": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting.",
+    "image_after": "<img src='../../assets/images/vc/img-art-1-figure3b.jpg' alt='Alt text'>",
+    "copyright_after": null,
+    "media_after": null,
+    "reaction": {
+      "question": "How does this artwork make you feel?"
+    }
+  },
+  "caption_3": {
+    "content": "<p>Dystopian consequences of the Anthropocene are represented here by first responders,<sup>2</sup> on whom we rely when facing emergencies and who have limited capacity as individuals for the collective response needed to mitigate <a href='https://journalofethics.ama-assn.org/article/climate-change-and-health-equity/2021-02'>climate change</a>, which is annually causing millions of deaths worldwide.<sup>3</sup> In this bleak landscape, those tasked with saving lives are also stranded.</p>"
+  },
+  "featured_media_4": {
+    "image": "<img src='../../assets/images/vc/img-art-1-figure4.png' alt='Alt text'>",
+    "figure_text": "<strong>Figure 4.</strong> Reclaimed",
+    "copyright": null,
+    "media": "Media: Affinity Designer iterated through the AI art program Midjourney, with custom parameter weighting."
+  },
+  "caption_4": {
+    "content": "<p>An operating room overrun with lush vegetation represents hope for a more sustainable, “greener” approach to health care. Plants’ reclamation of a once sterile, artificial place prompt a reimagining of spaces designated for health and well-being.</p>"
+  },
+  "featured_video": {
+    "image": null,
+    "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+    "figure_text": "<strong>Figure 1.</strong> This short film considers ethical and clinical implications of the phenomenon of pseudo-stoicism, especially in medicine.",
+    "copyright": null,
+    "media": "Media: Procreate® and Adobe Premiere® Pro CC 2022 (22.0)",
+    "reaction": {
+      "question": "How does this video make you feel?"
+    }
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Beck Regan",
+      "description": " is a second-year medical student at the Virginia Commonwealth University School of Medicine in Richmond. They are a student in the Family Medicine Scholars Training and Admission Tract interested in health care access, transgender health care, and mountain biking."
+    }
+  ]
+}

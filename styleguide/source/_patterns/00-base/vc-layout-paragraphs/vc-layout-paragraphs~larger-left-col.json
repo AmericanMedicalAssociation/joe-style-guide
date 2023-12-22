@@ -1,0 +1,16 @@
+{
+  "htmlClass": "vc-art",
+  "layout_fullwidth": false,
+  "layout_larger_left_col": true,
+  "layout_heading": "Larger Left Col Heading - Optional",
+  "layout_first": {
+    "placeholder": {
+      "text": "First Region"
+    }
+  },
+  "layout_second": {
+    "placeholder": {
+      "text": "Second Region"
+    }
+  }
+}

@@ -1,0 +1,355 @@
+.vc-hero-art {
+  position: relative;
+  margin-block-end: 6rem;
+
+  @include breakpoint($bp-small) {
+    margin-block-end: 10rem;
+  }
+
+  @include breakpoint($bp-med) {
+    margin-block-end: 15rem;
+  }
+}
+
+.vc-container {
+  .vc-hero-art--text-right & {
+    justify-items: end;
+
+    @include breakpoint($bp-med) {
+      justify-items: normal;
+    }
+  }
+}
+
+.vc-hero-art__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5rem;
+  z-index: -1;
+  overflow: hidden;
+
+  @include breakpoint($bp-large) {
+    .vc-hero-art--not-full & {
+      left: auto;
+      right: 0;
+      bottom: -1000px;
+      mask-image: url('../images/vc/bg-hero-image-left-art.svg');
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: top left;
+      width: calc(100% - 40rem);
+    }
+
+    .vc-hero-art--text-right.vc-hero-art--not-full & {
+      left: 0;
+      right: auto;
+      mask-image: url('../images/vc/bg-hero-image-right-art.svg');
+      mask-position: top right;
+    }
+  }
+
+  @include breakpoint($bp-xlarge) {
+    .vc-hero-art--not-full & {
+      width: 50%;
+    }
+  }
+
+  picture {
+    animation-name: heroFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      animation-timing-function: linear;
+      animation-duration: 0s;
+      opacity: 1;
+    }
+
+    @include breakpoint(5em) {
+      display: block;
+      bottom: 2rem;
+    }
+
+    @include breakpoint($bp-large) {
+      display: block;
+    }
+
+    .vc-hero-art--full & {
+      @include breakpoint($bp-large) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    .vc-hero-art--full & {
+      max-width: 2000px;
+    }
+  }
+}
+
+.vc-hero-art__flag {
+  position: relative;
+  background-color: var(--c-button-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  color: var(--c-button-text);
+  text-transform: uppercase;
+  text-align: left;
+  grid-column: 1 / -1;
+  padding: 2rem;
+  max-width: 10rem;
+
+  @include breakpoint($bp-med) {
+    grid-column: 1 / 4;
+    max-width: none;
+
+    .vc-hero-art--text-right & {
+      grid-column: 10 / -1;
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    min-height: 18rem;
+  }
+
+  .vc-hero-art--text-right & {
+    text-align: right;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(310deg, rgba($black, 0) 53%, rgba($black, 0.05) 53%);
+  }
+}
+
+.vc-hero-art__flag-type {
+  position: relative;
+  font-family: $font-serif;
+  font-weight: 500;
+  word-spacing: 100vw;
+
+  @include breakpoint($bp-large) {
+    @include type($font-serif, 1.25em, $font-weight-medium, 2);
+  }
+}
+
+.vc-hero-art__flag-date {
+  position: relative;
+  font-family: $font-sans-serif-comp;
+  font-weight: 400;
+}
+
+:root[class*='vc-art'] {
+  a.vc-hero-art__flag-date {
+    color: var(--c-button-text);
+  }
+}
+
+.vc-hero-art__content {
+  grid-column: 1 / -1;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  color: var(--c-hero-text);
+  padding: 2rem;
+
+  @include breakpoint($bp-med) {
+    grid-column: 1 / -1;
+    padding-block: 3rem 2.5rem;
+  }
+
+  .vc-hero-art--text-right & {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.vc-hero-art__content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: var(--c-hero-bg);
+  overflow: hidden;
+  z-index: -1;
+
+  @include breakpoint($bp-large) {
+    background-color: transparent;
+  }
+}
+
+#vc-hero-art__content-bg {
+  display: none;
+
+  @include breakpoint($bp-large) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+
+    .vc-hero-art--text-right & {
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+  }
+
+  path {
+    fill: var(--c-hero-bg);
+  }
+}
+
+.vc-hero-art__content-body {
+  width: auto;
+
+  @include breakpoint($bp-large) {
+    width: 55rem;
+  }
+}
+
+.vc-hero-art__shape {
+  @include breakpoint($bp-large) {
+    shape-outside: polygon(100% 100%, 0% 0%, 100% 0%);
+    width: 150px;
+    height: 180px;
+    float: right;
+    margin-inline: 0 6rem;
+
+    .vc-hero-art--text-right & {
+      shape-outside: polygon(0% 100%, 0% 0%, 100% 0%);
+      float: left;
+      margin-inline: 6rem 0;
+    }
+  }
+}
+
+.vc-hero-art__title {
+  color: var(--c-hero-title);
+  text-wrap: balance;
+
+  :root.vc-art & {
+    margin-block-start: 0;
+  }
+}
+
+.vc-hero-art__tools {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  gap: 0.5rem;
+
+  .vc-hero-art--text-right & {
+    left: auto;
+    right: 0;
+  }
+}
+
+.vc-hero-art__tool {
+  position: relative;
+
+  &:nth-child(even) {
+    .vc-hero-art__tool-button::after {
+      transform: skewY(-3.5deg);
+      transform-origin: right;
+    }
+  }
+}
+
+.vc-hero-art__tool-button {
+  position: relative;
+
+  &::after {
+    background-color: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transform: skewY(3.5deg);
+    transform-origin: left;
+    z-index: -1;
+  }
+}
+
+:root[class*='vc-art'] {
+
+  .vc-hero-art__tool-button,
+  a.vc-hero-art__tool-button {
+
+    &:active,
+    &:hover,
+    &:focus {
+      padding-block-start: 10px;
+    }
+
+    @include breakpoint(0 $bp-small) {
+      padding-inline: 10px;
+    }
+  }
+}
+
+.vc-hero-art__tool-content {
+  @include type($font-sans-serif, 0.7em, $font-weight-medium, 1.2);
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  max-width: 25rem;
+  background-color: var(--c-hero-bg);
+  border: 1px solid var(--c-hero-text);
+  text-align: left;
+  color: var(--c-hero-text);
+  padding: 0.5rem 1rem;
+  z-index: 5;
+
+  &:after,
+  &:before {
+    bottom: 100%;
+    left: 3rem;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &::after {
+    border-color: transparent;
+    border-bottom-color: var(--c-hero-bg);
+    border-width: 8px;
+    margin-left: -8px;
+  }
+
+  &::before {
+    border-color: transparent;
+    border-bottom-color: var(--c-hero-text);
+    border-width: 9px;
+    margin-left: -9px;
+  }
+}

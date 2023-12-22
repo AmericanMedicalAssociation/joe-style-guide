@@ -3,18 +3,35 @@
   background-color: $black-10;
   padding: $gutter-mobile;
   margin: 3em 0;
-  
+
   .joe__title-label {
     @include type($font-serif, .875em, $font-weight-bold, 1.25);
   }
-  
+
   small {
     display: block;
     margin-top: 20px;
     font-style: italic;
   }
-  
+
   @include breakpoint($bp-med) {
     padding: $gutter;
+  }
+}
+
+:root[class*='vc-'] {
+  .joe__article-footer {
+    max-width: 1000px;
+    background-color: rgba($black, 0.1);
+    color: var(--c-footer-text);
+
+    >.joe__title-label:first-child {
+      margin-block-start: 0;
+    }
+
+    .joe__title-label {
+      @include type($font-sans-serif, 0.875em, $font-weight-bold, 1.25);
+      margin-block: 2rem 0.25rem;
+    }
   }
 }

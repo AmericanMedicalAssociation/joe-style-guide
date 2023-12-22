@@ -21,3 +21,96 @@ $black-20: #d1d3d4;
 $black-10: #E5E5E5;
 $black-05: #f1f1f1;
 $white: #ffffff;
+
+// Art of Medicine `vc-art` variables - Dark mode `Default`
+:root.vc-art {
+  --c-bg: #fff;
+  --c-text: #414042;
+  --c-link: var(--c-text);
+  --c-hero-bg: var(--c-text);
+  --c-hero-text: var(--c-bg);
+  --c-hero-title: var(--c-hero-text);
+  --c-button-bg: #06847F;
+  --c-button-bg-hover: #CE4A22;
+  --c-button-text: var(--c-bg);
+  --c-audio-viz: var(--c-button-bg);
+  --c-footer-bg: var(--c-text);
+  --c-footer-label-bg: var(--c-bg);
+  --c-footer-label-text: var(--c-text);
+  --c-footer-text: var(--c-bg);
+  --c-footer-link: var(--c-bg);
+}
+
+// Ethics Close Up `vc-ethics` variables - Dark mode `Default`
+:root.vc-ethics,
+:root.vc-ethics[data-theme='dark'] {
+  --c-bg-rgb: 36, 40, 45;
+  --c-bg: rgb(var(--c-bg-rgb));
+  --c-text: #fff;
+  --c-link: var(--c-text);
+  --c-button-bg-alt: #191B1D;
+  --c-button-bg-hover-alt: #0f1011;
+  --c-button-bg: #512D6D;
+  --c-button-bg-hover: #3d2053;
+  --c-button-text: var(--c-text);
+  --c-audio-viz: #7D4DA3;
+  --c-footer-bg: var(--c-text);
+  --c-footer-label-bg: #2B2C33;
+  --c-footer-label-text: var(--c-text);
+  --c-footer-text: var(--c-bg);
+  --c-footer-link: var(--c-bg);
+  --c-caption-bg: 13, 15, 16;
+}
+
+// Ethics Close Up `vc-ethics` variables - Light mode
+:root.vc-ethics[data-theme='light'] {
+  --c-bg-rgb: 236, 236, 236;
+  --c-bg: rgb(var(--c-bg-rgb));
+  --c-text: #3d3b40;
+  --c-link: var(--c-text);
+  --c-button-bg-alt: #fff;
+  --c-button-bg-hover-alt: #ddd;
+  --c-button-bg: #7D4DA3;
+  --c-button-bg-hover: #512D6D;
+  --c-button-text: #fff;
+  --c-audio-viz: #512D6D;
+  --c-footer-bg: var(--c-text);
+  --c-footer-label-bg: #fff;
+  --c-footer-label-text: var(--c-text);
+  --c-footer-text: var(--c-bg);
+  --c-footer-link: var(--c-bg);
+  --c-caption-bg: var(--c-bg-rgb);
+}
+
+// Gallery `vc-gallery` variables - Dark mode `Default`
+:root.vc-gallery,
+:root.vc-gallery[data-theme='dark'] {
+  --c-bg: #1D1E23;
+  --c-text: #fff;
+  --c-link: var(--c-text);
+  --c-button-bg: var(--c-text);
+  --c-button-bg-hover: #ECECEC;
+  --c-button-text: var(--c-bg);
+  --c-audio-viz: #7D4DA3;
+  --c-footer-bg: var(--c-text);
+  --c-footer-label-bg: #2B2C33;
+  --c-footer-label-text: var(--c-text);
+  --c-footer-text: var(--c-bg);
+  --c-footer-link: var(--c-bg);
+}
+
+// Gallery `vc-gallery` variables - Light mode
+:root.vc-gallery[data-theme='light'] {
+  --c-bg: #EBEBE5;
+  --c-text: #171A1D;
+  --c-link: var(--c-text);
+  --c-button-bg: var(--c-text);
+  --c-button-bg-hover: #0f1113;
+  --c-button-text: #fff;
+  --c-audio-viz: #512D6D;
+  --c-footer-bg: var(--c-text);
+  --c-footer-label-bg: #fff;
+  --c-footer-label-text: var(--c-text);
+  --c-footer-text: var(--c-bg);
+  --c-footer-link: var(--c-bg);
+}

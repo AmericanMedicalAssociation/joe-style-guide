@@ -1,5 +1,5 @@
 {
-  "featured_case" : {
+  "featured_case": {
     "style": "featured",
     "flag": {
       "type": "Case with Commentary",
@@ -8,22 +8,22 @@
     },
     "authors": [
       {
-        "name" : "Amy Barnhorst"
+        "name": "Amy Barnhorst"
       },
       {
-        "name" : "Garen Wintemute"
+        "name": "Garen Wintemute"
       },
       {
-        "name" : "Marian E. Betz"
+        "name": "Marian E. Betz"
       }
     ],
     "image": {
-      "src":"https://ipsumimage.appspot.com/450x225"
+      "src": "https://placehold.co/450x225"
     },
     "title": {
       "href": "#",
       "class": "joe__article-teaser__title",
-      "text":"How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
+      "text": "How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
     },
     "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138.",
     "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711."

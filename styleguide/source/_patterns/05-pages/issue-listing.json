@@ -104,23 +104,23 @@
     },
     "description": "People suffering some form of violence routinely seek health care. As first responders, clinicians are required to treat these patients equitably and promote their best interests. In clinical practice, guidelines can help or hinder clinicians’ capacities to fulfill these duties to patients who are victims of gun violence or rape, for example. Standards of care regarding sexual assault protocols and forensic examinations have important limitations that need clinical and ethical consideration.",
     "number": " Volume 20, Number 1: 1-111",
-    "articles" : [
-      { 
+    "articles": [
+      {
         "flag": {
           "type": "CME"
         },
         "authors": [
           {
-            "name" : "Melinda Manning"
+            "name": "Melinda Manning"
           }
         ],
         "image": {
-          "src":"https://ipsumimage.appspot.com/450x225"
+          "src": "https://placehold.co/450x225"
         },
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"What If a Resident or Medical Student Is Raped? Hospitals’ and Academic Medical Centers’ Title IX Obligations"
+          "text": "What If a Resident or Medical Student Is Raped? Hospitals’ and Academic Medical Centers’ Title IX Obligations"
         }
       },
       {
@@ -130,19 +130,19 @@
         },
         "authors": [
           {
-            "name" : "Amy Barnhorst"
+            "name": "Amy Barnhorst"
           },
           {
-            "name" : "Garen Wintemute"
+            "name": "Garen Wintemute"
           },
           {
-            "name" : "Marian E. Betz"
+            "name": "Marian E. Betz"
           }
         ],
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
+          "text": "How Should Physicians Make Decisions about Mandatory Reporting When a Patient Might Become Violent?"
         }
       },
       {
@@ -151,19 +151,19 @@
         },
         "authors": [
           {
-            "name" : "Bandy X. Lee"
+            "name": "Bandy X. Lee"
           },
           {
-            "name" : "John L. Young"
+            "name": "John L. Young"
           }
         ],
         "image": {
-          "src":"https://ipsumimage.appspot.com/450x225"
+          "src": "https://placehold.co/450x225"
         },
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"Clinicians’ Need for an Ecological Approach to Violence Reduction"
+          "text": "Clinicians’ Need for an Ecological Approach to Violence Reduction"
         }
       }
     ]

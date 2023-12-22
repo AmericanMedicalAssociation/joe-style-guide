@@ -1,0 +1,64 @@
+{% extends '@templates/vc-template.twig' %}
+
+{% block pageHeader %}
+  {% include "@organisms/vc-hero-art/vc-hero-art.twig" %}
+{% endblock %}
+
+{% block pageContent %}
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading_centered: true,
+    layout_heading: "Abstract"
+  } %}
+    {% block layout_bottom %}
+      {% set text_block = abstract %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_larger_left_col: true,
+    layout_heading: null
+  } %}
+    {% block layout_first %}
+      {% set featured_media = featured_media_1 %}
+      {% include "@organisms/vc-featured-media/vc-featured-media.twig" %}
+    {% endblock %}
+    {% block layout_second %}
+      {% set text_block = figure_caption_1 %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% include "@organisms/vc-featured-quote/vc-featured-quote.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_fullwidth: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set reaction = featured_audio.reaction %}
+      {% include "@organisms/vc-featured-audio/vc-featured-audio.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed "@base/vc-layout-paragraphs/vc-layout-paragraphs.twig" with {
+    layout_centered: true,
+    layout_heading: null
+  } %}
+    {% block layout_bottom %}
+      {% set text_block = body_1 %}
+      {% include "@organisms/vc-text-block/vc-text-block.twig" %}
+    {% endblock %}
+  {% endembed %}
+
+  {% set issue = vc_issue %}
+  {% include "@organisms/vc-article-bottom/vc-article-bottom.twig" %}
+{% endblock %}
