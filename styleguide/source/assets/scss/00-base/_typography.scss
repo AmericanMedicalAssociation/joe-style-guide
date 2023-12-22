@@ -122,10 +122,16 @@ sup {
   }
 }
 
-div:not(.toolbar) > a {
-  color: var(--c-link);
-}
-
-div.workbench-tabs {
-  color: #000;
+:root[class*='vc-'] div:not(.toolbar) {
+  a:link,
+  a:visited {
+    color: var(--c-link);
+    text-decoration: underline;
+  }
+  a:active,
+  a:hover,
+  a:focus {
+    color: var(--c-link);
+    text-decoration: none;
+  }
 }
