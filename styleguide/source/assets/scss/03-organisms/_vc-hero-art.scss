@@ -71,6 +71,11 @@
       opacity: 1;
     }
 
+    @include breakpoint(5em) {
+      display: block;
+      bottom: 2rem;
+    }
+
     @include breakpoint($bp-large) {
       display: block;
     }
