@@ -112,12 +112,14 @@ sup {
 
   a:link,
   a:visited {
+    color: var(--c-link);
     text-decoration: underline;
   }
 
   a:active,
   a:hover,
   a:focus {
+    color: var(--c-link);
     text-decoration: none;
   }
 
