@@ -120,18 +120,18 @@ sup {
   a:focus {
     text-decoration: none;
   }
-}
 
-:root[class*='vc-'] div:not(.toolbar) {
-  a:link,
-  a:visited {
-    color: var(--c-link);
-    text-decoration: underline;
-  }
-  a:active,
-  a:hover,
-  a:focus {
-    color: var(--c-link);
-    text-decoration: none;
+  .toolbar a {
+    color:#2B2C33;
+    &:link,
+    &:visited {
+      color:#2B2C33;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      color:#2B2C33;
+    }
   }
 }
