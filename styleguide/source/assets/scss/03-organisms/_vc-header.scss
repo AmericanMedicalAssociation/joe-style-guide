@@ -96,9 +96,9 @@
   .vc-header {
     transition: all 0.2s ease;
     position: fixed;
-    top: var(--drupal-displace-offset-top, 0px);
-    left: var(--drupal-displace-offset-left, 0px);
-    right: var(--drupal-displace-offset-right, 0px);
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }
 
