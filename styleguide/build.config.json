@@ -39,6 +39,7 @@
       "source/assets/js/nav.js",
       "source/assets/js/resource-tooltips.js",
       "source/assets/js/poll-reveal.js",
+      "source/assets/js/youtube-pause.js",
       "source/_patterns/**/*.js"
     ],
     "dest"  : "public/assets/js/"
