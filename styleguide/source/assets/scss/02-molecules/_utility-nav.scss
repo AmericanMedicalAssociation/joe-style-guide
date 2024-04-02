@@ -158,3 +158,12 @@
     }
   }
 }
+
+// On VC pages, modify nav color.
+:root[class*=vc-] {
+  .joe__utility-nav__list--right .joe__utility-nav__item.social .social-icon svg {
+    fill: var(--c-link);
+    height: 100%;
+    width: 100%;
+  }
+}

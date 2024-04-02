@@ -1,0 +1,137 @@
+.vc-hero-gallery {
+  --top-padding: 8rem;
+  --bottom-padding: 3rem;
+  padding-block: var(--top-padding) var(--bottom-padding);
+
+  @include breakpoint($bp-large) {
+    --top-padding: 10rem;
+  }
+}
+
+.vc-hero-gallery__content-body {
+  text-align: center;
+}
+
+.vc-hero-gallery__flag {
+  animation-name: fadeIn;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  text-align: center;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
+  }
+}
+
+.vc-hero-gallery__flag-type {
+  @include type($font-serif, 1em, $font-weight-bold, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+:root.vc-gallery {
+  .vc-hero-gallery__title {
+    animation-name: sectionFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-wrap: balance;
+    margin-block-start: 1rem;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      animation-timing-function: linear;
+      animation-duration: 0s;
+      opacity: 1;
+    }
+  }
+
+  .vc-hero-gallery__title--masked {
+    background-image: var(--hero-gallery-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a.vc-hero-gallery__anchor {
+    text-decoration: none;
+  }
+
+  .vc-hero-gallery__anchor-label {
+    @include type($font-serif, 1em, $font-weight-bold, 1);
+    text-align: center;
+    margin: 1rem 0 0;
+  }
+}
+
+.vc-hero-gallery__desc {
+  animation-name: sectionFadeIn;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  text-wrap: balance;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
+  }
+
+  @include breakpoint($bp-large) {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}
+
+.vc-hero-gallery__nav,
+.vc-hero-gallery__nav-controls {
+  animation-name: sectionFadeIn;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  // Reduce animation motion if enabled per user
+  @media (prefers-reduced-motion) {
+    animation-timing-function: linear;
+    animation-duration: 0s;
+    opacity: 1;
+  }
+}
+
+.vc-hero-gallery__nav-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+
+  @include breakpoint($bp-med) {
+    top: -2rem;
+  }
+}
+
+.vc-hero-gallery__nav-label {
+  @include type($font-sans-serif, 0.8em, $font-weight-medium, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include breakpoint($bp-small) {
+    font-size: 1em;
+  }
+}

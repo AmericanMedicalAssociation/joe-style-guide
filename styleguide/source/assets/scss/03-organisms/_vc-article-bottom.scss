@@ -1,0 +1,38 @@
+.vc-article-bottom {
+  background-color: var(--c-footer-bg);
+  color: var(--c-footer-text);
+  margin-block-start: 6rem;
+  overflow: hidden;
+
+  @include breakpoint($bp-large) {
+    margin-block-start: 10rem;
+  }
+
+  a {
+    color: var(--c-footer-link);
+  }
+}
+
+.vc-article-bottom__container {
+  position: relative;
+  padding-block-start: 1px;
+
+  >* {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4rem);
+    width: 0;
+    height: 0;
+    border-top: 1000px solid var(--c-bg);
+    border-left: 1000px solid transparent;
+
+    @include breakpoint($bp-large) {
+      left: 1100px;
+    }
+  }
+}

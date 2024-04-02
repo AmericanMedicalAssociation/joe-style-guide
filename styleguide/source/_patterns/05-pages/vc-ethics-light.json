@@ -1,0 +1,272 @@
+{
+  "htmlClass": "vc-ethics",
+  "htmlStyle": "--c-hero-bg-opacity: 0.6;",
+  "theme_mode": "light",
+  "hero": {
+    "image": "<img srcset='../../assets/images/vc/bg-hero-ethics-light--small.jpg  640w, ../../assets/images/vc/bg-hero-ethics-light--medium.jpg  1280w, ../../assets/images/vc/bg-hero-ethics-light--large.jpg 2560w' sizes='100vw' src='../../assets/images/vc/bg-hero-ethics-light--large.jpg' alt='Alt text'>",
+    "issue_date": "Aug 2020",
+    "issue_href": "/",
+    "page_title": "Practicing Four Elements of Sanctuary Health Care",
+    "author": "Lauren Beatty",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/",
+    "cme_href": "/"
+  },
+  "abstract": {
+    "content": "<p class='lede'>Eleven million undocumented immigrants in the United States, including children, face barriers to health. By practicing 4 elements of <a href='#'>sanctuary health care</a>, clinicians and organizations can help.</p>"
+  },
+  "scroll_zoom": {
+    "htmlClass": "vc-ethics",
+    "theme_mode": "light",
+    "startingcoords_desktop": "330 183 864 864",
+    "startingcoords_mobile": "365 254 728 728",
+    "startingcoords_tablet": "193 114 1062 1062",
+    "image": "../../assets/images/vc/bg-hero-ethics--large.jpg",
+    "alt_text": "Luke Fildes’ painting 'The Doctor'",
+    "captions": [
+      {
+        "description": "<p>One of the most recognized paintings of Western medicine, Luke Fildes’ The Doctor was hailed as an ideal representation of caring when it was first exhibited at the Royal Academy of Art in 1891. Henry Tate wanted an English painting worthy of a new gallery in his name, but he left the subject matter of his commission to Fildes.</p>",
+        "position_right": false,
+        "index": 0,
+        "desktop": "",
+        "tablet": "",
+        "mobile": ""
+      },
+      {
+        "description": "<p>As witness to a doctor’s care of his son who died of typhoid fever, Fildes wanted to put on record the status of the doctor.</p>",
+        "position_right": true,
+        "index": 1,
+        "desktop": "563 276 305 305",
+        "tablet": "341 240 743 743",
+        "mobile": "438 364 549 549"
+      },
+      {
+        "description": "<p>Light has long symbolized hope and wisdom and a table lamp provides the primary illumination in this otherwise dimly lit scene. At first glance, the doctor and his young patient seem to be the only figures present.</p>",
+        "position_right": false,
+        "index": 2,
+        "desktop": "51 320 278 278",
+        "tablet": "101 341 186 186",
+        "mobile": "81 364 219 219"
+      },
+      {
+        "description": "<p>Nearly centered in the painting, the child lies in a makeshift bed of 2 mismatched chairs. An outstretched left arm hangs over the pillow, signaling a certain precariousness of the moment. The doctor’s presence signals some hope that the child will recover.</p>",
+        "position_right": true,
+        "index": 3,
+        "desktop": "698 432 384 384",
+        "tablet": "578 452 619 619",
+        "mobile": "619 499 504 504"
+      },
+      {
+        "description": "<p>Not sitting tiredly despite a night vigil, the doctor is illuminated in a forward-leaning position, chin in his hand. His stare is not a casual gaze, but one that is intensely and diagnostically trained on the child.</p>",
+        "position_right": true,
+        "index": 4,
+        "desktop": "306 365 362 362",
+        "tablet": "337 398 363 363",
+        "mobile": "328 412 336 336"
+      },
+      {
+        "description": "<p>A fisherman’s net hardly visible in the rafters represents manual labor, presumably a means by which the father of the child supports his family. This labor is juxtaposed to the doctor’s intellectual and professional work, which apparently supersedes the power of manual labor and that of the child’s parents.</p>",
+        "position_right": false,
+        "index": 5,
+        "desktop": "306 22 330 330",
+        "tablet": "337 103 363 363",
+        "mobile": "328 68 336 336"
+      },
+      {
+        "description": "<p>The child’s parents recede into the background, reinforcing their helplessness to affect their child’s fate. A dawn light filtering through the window reveals the father comforting the mother, casting further uncertainty on their child’s immediate future.</p>",
+        "position_right": true,
+        "index": 6,
+        "desktop": "859 148 390 390",
+        "tablet": "754 178 538 538",
+        "mobile": "803 210 459 459"
+      },
+      {
+        "description": "<p>Despite the painting’s depiction, a doctor’s presence in a working-class home is more idealized than reality. During the Victorian era, such house calls were generally afforded to those with wealth and power.</p>",
+        "position_right": false,
+        "index": 7,
+        "desktop": "352 335 653 653",
+        "tablet": "216 145 942 942",
+        "mobile": "335 348 611 611"
+      },
+      {
+        "description": "<p>Prior paintings of the ill at home also never depicted a medical practitioner with a bottle of medicine, which was previously associated with only familial caregivers.<sup>4</sup></p>",
+        "position_right": false,
+        "index": 8,
+        "desktop": "-41 471 210 210",
+        "tablet": "10 479 185 185",
+        "mobile": "21 504 122 122"
+      },
+      {
+        "description": "<p>On the floor, 2 fragments of paper are probably the filled prescription for the medicine.<sup>5</sup> The torn and crumpled prescription suggests that the medicine has been dispensed, but its effect remains an open question.</p>",
+        "position_right": true,
+        "index": 9,
+        "desktop": "352 335 453 453",
+        "tablet": "566 837 337 337",
+        "mobile": "619 795 325 325"
+      }
+    ]
+  },
+  "video_tabs": {
+    "title": "Video Tabs Heading",
+    "description": "<p>Example introduction text below the section heading.</p>",
+    "video_group": [
+      {
+        "label": "Overcoming Pseudo-stoicism in Medicine",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/7nhaYRXO9cE?si=fg1qnBL7pFoGxtdX&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "And I Told the Doctor, I Think There’s Something Wrong",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/bBTin1qtvRc?si=sQPxSRdY0fcKCItJ&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      },
+      {
+        "label": "Bagalamukhi’s Words as Resistance",
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/NfwpHuMbvk8?si=vJRDYS7IzRj-_8fu&enablejsapi=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+      }
+    ]
+  },
+  "featured_quote": {
+    "blockquote": "“11 million undocumented immigrants in the US, including children, face barries to health. By practicing 4 elements of sanctuary health care, clinicians and organizations can help.",
+    "attribution": "Jane Doe",
+    "attribution_title": null
+  },
+  "cards": {
+    "centered_header": false,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "description": null,
+    "link": "Learn More About CME",
+    "href": "/",
+    "card_group": [
+      {
+        "image": {
+          "src": "https://picsum.photos/id/25/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/11/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      },
+      {
+        "image": {
+          "src": "https://picsum.photos/id/83/400/250",
+          "alt": "Alt text"
+        },
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  },
+  "tags": [
+    {
+      "url": "#",
+      "text": "Humanities/Art"
+    },
+    {
+      "url": "#",
+      "text": "Professionalism/Clinician advocacy "
+    },
+    {
+      "url": "#",
+      "text": "Health professions education/Humanities in health professions education"
+    }
+  ],
+  "references": [
+    {
+      "text": "Wallace LM, Turner A, Kosmala-Anderson J, et al. Evidence: Co-Creating Health: Evaluation of First Phase. London, England: Health Foundation; 2012. http://www.health.org.uk/mwg-internal/de5fs23hu73ds/progress?id=EOe09MTNkeTnqOr91ggJpFZikDutLX3qXgiUcFyk33s,&dl. Accessed September 29, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Boyle D, Harris M. The challenge of coproduction: how equal partnerships between professionals and the public are crucial to improving public services. London, UK: Nesta; December 2009. http://www.nesta.org.uk/sites/default/files/the_challenge_of_co-production.pdf. Accessed August 9, 2017.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Ramaswamy V, Ozcan K. The Co-Creation Paradigm. Stanford, CA: Stanford University Press; 2014.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Batalden M, Batalden P, Margolis P, et al. Coproduction of healthcare service. BMJ Qual Saf. 2016;25(7):509-517.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Mladenov T, Owens J, Cribb A. Personalisation in disability services and healthcare: a critical comparative analysis. Crit Soc Policy. 2015;35(3):307-326.",
+      "links": [
+        {
+          "text": "View Article",
+          "url": "#"
+        },
+        {
+          "text": "PubMed",
+          "url": "#"
+        },
+        {
+          "text": "Google Scholar",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "citation": "AMA Journal of Ethics. November 2017, Volume 19, Number 11: 1132-1138",
+  "doi": "10.1001/journalofethics.2017.19.11.msoc1-1711",
+  "acknowledgements": "Alan Cribb is a professorial fellow at the Health Foundation and is grateful for the associated funding.",
+  "disclosure": "The viewpoints expressed in this article are those of the author(s) and do not necessarily reflect the views and policies of the AMA.",
+  "ethics_case": false,
+  "article_authors": [
+    {
+      "name": "Audiey C. Kao, MD, PhD",
+      "description": " is the editor in chief of the AMA Journal of Ethics."
+    }
+  ]
+}

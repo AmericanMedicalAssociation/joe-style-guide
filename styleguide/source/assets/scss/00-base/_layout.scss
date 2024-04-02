@@ -12,10 +12,72 @@
   margin: 0 auto;
   @include gutter($padding-right-half...);
   @include gutter($padding-left-half...);
-  
+
   @include breakpoint($bp-med) {
     @include gutter($padding-right-full...);
     @include gutter($padding-left-full...);
   }
 }
 
+// Visual Content container styles
+.vc-container {
+  --container-width: #{$vc-max-width};
+  --container-padding: 2rem;
+  width: #{'min(100% - var(--container-padding), var(--container-width))'};
+  margin: 0 auto;
+
+  @include breakpoint($bp-med) {
+    --container-padding: 4rem;
+  }
+
+  // Remove padding when containers are nested
+  .container {
+    max-width: unset;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vc-container {
+    --container-padding: 0;
+  }
+}
+
+.vc-container--tight {
+  --container-width: #{$vc-max-width-tight};
+  --container-padding: 2rem;
+  width: #{'min(100% - var(--container-padding), var(--container-width))'};
+  margin: 0 auto;
+
+  @include breakpoint($bp-med) {
+    --container-padding: 4rem;
+  }
+}
+
+// Set the default grid gap
+$gap: 2em;
+$row-gap: $gap;
+
+// Set the base grid layout
+@mixin basegrid($bp: $bp-med, $cols: 12, $col-gap: $gap, $row-gap: $gap) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: $col-gap;
+  grid-row-gap: $row-gap;
+
+  // Adjust global gap size at this bp
+  @include breakpoint($bp-large) {
+    grid-column-gap: $col-gap * 2;
+    grid-row-gap: $row-gap * 2;
+  }
+
+  // Adjust grid columns at variable bp
+  @include breakpoint($bp) {
+    grid-template-columns: repeat(#{$cols}, 1fr);
+  }
+}
+
+// Visual Content grid layout to container element
+.vc-grid {
+  @include basegrid();
+}

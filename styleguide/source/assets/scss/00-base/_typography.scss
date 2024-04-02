@@ -7,13 +7,14 @@ body {
   color: $black-90;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  
+
   @include type($base-font-family, $base-font-size, $base-font-weight, $base-line-height);
 
   @include breakpoint($bp-med) {
     font-size: (calc($base-font-size / 16px)) * 110%;
     line-height: $base-line-height * 1.1;
   }
+
   @include breakpoint($bp-large) {
     font-size: (calc($base-font-size / 16px)) * 120%;
     line-height: $base-line-height * 1.2;
@@ -53,9 +54,11 @@ p,
   height: 1px;
   width: 1px;
   overflow: hidden;
+
   @if support-legacy-browser(ie, '7') {
     clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
   }
+
   clip: rect(1px, 1px, 1px, 1px);
 }
 
@@ -85,7 +88,52 @@ sup {
   position: relative;
   line-height: 1;
   font-size: $base-font-size * 0.8;
+
   &:hover {
     cursor: pointer;
+  }
+}
+
+// Base styles for .vc-* pages
+:root[class*='vc-'] {
+  scroll-behavior: smooth;
+  scroll-padding: 25px;
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+
+    // Small adjustment to base font size at $bp-large for `vc-*` pages
+    @include breakpoint($bp-large) {
+      font-size: (calc($base-font-size / 16px)) * 110%;
+      line-height: $base-line-height * 1.2;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: var(--c-link);
+    text-decoration: underline;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    color: var(--c-link);
+    text-decoration: none;
+  }
+
+  .toolbar a {
+    color:#2B2C33;
+    &:link,
+    &:visited {
+      color:#2B2C33;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      color:#2B2C33;
+    }
   }
 }

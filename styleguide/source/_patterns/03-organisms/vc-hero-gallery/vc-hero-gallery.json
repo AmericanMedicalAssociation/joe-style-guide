@@ -1,0 +1,45 @@
+{
+  "htmlClass": "vc-gallery",
+  "htmlStyle": "--hero-gallery-image: url('../images/vc/bg-hero-gallery--dark.jpg');",
+  "theme_mode": "dark",
+  "hero": {
+    "has_mask": true,
+    "image": "../../assets/images/vc/bg-hero-art-1--small.jpg",
+    "page_title": "Portraiture in Health Care",
+    "description": "<p>This issue considers how portraiture introduces innovative strategies for perceiving ethical and aesthetic value and motivates deeper and fuller understanding of patients’, clinicians’, and others’ health care experiences.</p>",
+    "gallery_nav": [
+      {
+        "title": "Child Abuse Depictions In Schools",
+        "href": "#modal-1",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--1.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Dementia Care",
+        "href": "#modal-2",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--2.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Silence In Portraiture",
+        "href": "#modal-3",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--3.jpg",
+          "alt": "Alt text"
+        }
+      },
+      {
+        "title": "Portrait of 1 in 3000",
+        "href": "#modal-4",
+        "image": {
+          "src": "../../assets/images/vc/img-gallery-anchor--4.jpg",
+          "alt": "Alt text"
+        }
+      }
+    ]
+  }
+}

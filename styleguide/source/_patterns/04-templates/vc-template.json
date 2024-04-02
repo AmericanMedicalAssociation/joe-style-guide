@@ -1,0 +1,14 @@
+{
+  "htmlClass": "vc-ethics",
+  "theme_mode": "dark",
+  "page_header": {
+    "placeholder": {
+      "text": "Page header placeholder"
+    }
+  },
+  "page_content": {
+    "placeholder": {
+      "text": "Page content placeholder"
+    }
+  }
+}

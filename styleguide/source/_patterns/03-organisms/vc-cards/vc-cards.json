@@ -1,0 +1,15 @@
+{
+  "htmlClass": "vc-art",
+  "cards": {
+    "centered_header": true,
+    "title": "Education from the AMA Code of Medical Ethics",
+    "card_group": [
+      {
+        "title": "Continuing Medical Education",
+        "description": "<p>Education from the AMA offers continuing medical education and other learning modules for physicians who strive to practice ethically. Topic filters allow users to select educational offerings that meet their individual needs.</p>",
+        "link": "Visit CME",
+        "href": "/"
+      }
+    ]
+  }
+}

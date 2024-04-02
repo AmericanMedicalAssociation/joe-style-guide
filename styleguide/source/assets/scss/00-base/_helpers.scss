@@ -1,0 +1,157 @@
+// =============================================================================
+// Visibility Helpers
+//
+// This mixin allows you to visually hide something but keep it accessible via
+// a screen reader for accessibility purposes.
+//
+// Element-invisible as defined by snook.ca
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+// =============================================================================
+
+// Makes the images in modal appear without margins.
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visually-hidden,
+%visually-hidden,
+.element-invisible,
+%element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+.visually-hidden-off,
+%visually-hidden-off,
+.element-invisible-off,
+%element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+.element-focusable,
+%element-focusable {
+  @extend %element-invisible;
+
+  &:active,
+  &:focus {
+    @extend %element-invisible-off;
+  }
+}
+
+// VC Gallery
+.vc-gallery-pattern,
+%vc-gallery-pattern {
+  position: relative;
+  padding-block-start: 14rem;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 10rem;
+    background-image: url('../images/vc/bg-gallery-pattern--dark.svg');
+    background-repeat: repeat;
+    background-position: center top;
+
+    :root[data-theme='light'] & {
+      background-image: url('../images/vc/bg-gallery-pattern--light.svg');
+      background-size: 22px;
+    }
+
+    .in-view & {
+      animation-name: sectionFadeIn;
+      animation-timing-function: ease;
+      animation-duration: 2s;
+      animation-delay: 0.25s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      // Reduce animation motion if enabled per user
+      @media (prefers-reduced-motion) {
+        animation-timing-function: linear;
+        animation-duration: 0s;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// VC Ethics
+.vc-ethics-pattern,
+%vc-ethics-pattern {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('../images/vc/bg-ethics-pattern.svg');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 0.8rem;
+    opacity: 0.35;
+    filter: invert(1);
+
+    :root[data-theme='light'] & {
+      filter: none;
+    }
+  }
+}
+
+// VC Art of Medicine
+:root.vc-art {
+  .c-field__content {
+    position: relative;
+  }
+
+  .vc-art__bg-shapes {
+    animation-name: sectionFadeInAlt;
+    animation-timing-function: ease;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    overflow: hidden;
+
+    // Reduce animation motion if enabled per user
+    @media (prefers-reduced-motion) {
+      animation-timing-function: linear;
+      animation-duration: 0s;
+      opacity: 1;
+    }
+
+    &.flip svg {
+      transform: scaleX(-1);
+    }
+
+    svg {
+      @include breakpoint($bp-large) {
+        width: 100%;
+        height: auto;
+      }
+
+      g {
+        fill: var(--c-hero-bg);
+      }
+    }
+  }
+}

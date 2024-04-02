@@ -1,0 +1,36 @@
+<div class="vc-scroll-zoom">
+  <div class="vc-scroll-zoom__image-container">
+    <div class="vc-scroll-zoom__image">
+      <div class="image-wrapper loading first static-display"
+           data-section="static"
+           data-coordinates-desktop="{{ startingcoords_desktop }}"
+           data-coordinates-tablet="{{ startingcoords_tablet }}"
+           data-coordinates-mobile="{{ startingcoords_mobile }}"
+           data-anchor="part-0"
+      >
+        <svg viewBox="{{ startingcoords_desktop }}" x="100%" y="100%">
+          <foreignObject style="overflow: visible; width: 100%; height: 100%">
+            <img src="{{ image }}" class="svg-embedded-image" />
+          </foreignObject>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="vc-scroll-zoom__captions vc-container">
+    {% for caption in captions %}
+      <div class="vc-scroll-zoom__caption
+        {% if caption.position_right %}vc-scroll-zoom__caption--right{% endif %}
+        part-{{ caption.index + 1 }} section"
+           data-section="dynamic"
+           data-coordinates-desktop="{{ caption.desktop }}"
+           data-coordinates-tablet="{{ caption.tablet }}"
+           data-coordinates-mobile="{{ caption.mobile }}"
+           data-anchor="part-{{ caption.index + 1 }}"
+      >
+        <div class="vc-scroll-zoom__caption-desc vc-ethics-pattern">
+          {{ caption.description|raw }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

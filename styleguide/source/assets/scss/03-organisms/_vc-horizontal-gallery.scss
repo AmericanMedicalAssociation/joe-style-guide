@@ -1,0 +1,223 @@
+:root[class*='vc-'] {
+  .vc-horizontal-gallery__heading {
+    margin-block-start: 0;
+  }
+
+  .vc-horizontal-gallery__items {
+    .slick-track {
+      padding-block-start: 0;
+    }
+  }
+
+  .vc-modal__controls {
+    .slick-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--c-button-text);
+      border: 2px solid var(--c-button-bg);
+      border-radius: 50%;
+      padding: 0.25rem;
+
+      @include breakpoint($bp-med) {
+        padding: 0.75rem;
+      }
+
+      &[aria-disabled='true'] {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+        overflow: hidden;
+      }
+
+      svg path {
+        fill: var(--c-button-bg);
+      }
+    }
+  }
+
+  .vc-modal__second {
+    >*:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// vc Gallery overrides
+:root.vc-gallery {
+  .vc-horizontal-gallery {
+    @extend %vc-gallery-pattern;
+    margin-block-end: 2rem;
+  }
+}
+
+.vc-horizontal-gallery {
+  .slick-list {
+    width: calc(100vw - 1rem);
+  }
+}
+
+.vc-horizontal-gallery__desc {
+  +.vc-horizontal-gallery__gallery-label {
+    margin-block-start: 3rem;
+  }
+}
+
+.vc-horizontal-gallery__gallery-label {
+  text-align: center;
+}
+
+.vc-horizontal-gallery__artwork {
+  cursor: pointer;
+}
+
+.vc-horizontal-gallery__artwork-label {
+  @include type($franklin-gothic-comp, 0.9em, $font-weight-medium, 1);
+  display: block;
+  margin: 0.75rem 0 0;
+}
+
+.vc-horizontal-gallery__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+}
+
+.vc-horizontal-gallery__controls-label {
+  @include type($font-sans-serif, 0.8em, $font-weight-medium, 1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  @include breakpoint($bp-small) {
+    font-size: 1em;
+  }
+}
+
+// Modal slideshow styles
+.vc-modal {
+  .slick-slider {
+    user-select: auto;
+  }
+
+  .slick-slide {
+    visibility: hidden;
+    padding-block-end: 5rem;
+  }
+
+  .slick-current {
+    visibility: visible;
+  }
+
+  .vc-featured-media__container {
+    @include breakpoint($bp-med) {
+      height: calc(100vh - 13rem);
+    }
+  }
+
+  .vc-featured-media__figure {
+    justify-content: center;
+    height: 100%;
+    background-color: rgba($black, 0.1);
+  
+    img {
+      object-fit: contain;
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+  
+  .vc-featured-media__caption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--c-bg);
+  }
+}
+
+.vc-modal__first {
+  @include breakpoint($bp-med) {
+    position: relative;
+    padding-inline: 2rem;
+    grid-column: 2 / 12;
+
+    // Update grid span when `vc-modal__second` displays
+    &:not(:only-child) {
+      grid-column: span 7;
+    }
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 2 / 12;
+
+      .vc-reaction-bar {
+        margin-block-end: 0;
+      }
+    }
+  }
+}
+
+.vc-modal__second {
+  @include breakpoint($bp-med) {
+    grid-column: span 5;
+    margin-block-start: 5rem;
+
+    // Update grid if stacked
+    .vc-modal__grid--stacked & {
+      grid-column: 3 / 11;
+      margin-block-start: 0;
+    }
+  }
+}
+
+.vc-modal__controls {
+  @include breakpoint(0 $bp-med) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--c-bg);
+    box-shadow: 0 0 50px rgba($black, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    .slick-prev,
+    .slick-next {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  @include breakpoint($bp-med) {
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .slick-prev {
+      left: 0;
+    }
+  
+    .slick-next {
+      right: 0;
+    }
+  }
+}
+
+.vc-modal__first .vc-modal__controls {
+  @include breakpoint(0 $bp-med) {
+    display: none;
+  }
+}
+
+.vc-modal__content > .vc-modal__controls {
+  @include breakpoint($bp-med) {
+    display: none;
+  }
+}

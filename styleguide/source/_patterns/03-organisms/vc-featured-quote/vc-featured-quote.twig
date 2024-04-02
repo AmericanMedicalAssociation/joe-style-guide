@@ -1,0 +1,21 @@
+<div class="vc-featured-quote {% if featured_quote.image.src %}vc-featured-quote--image{% endif %}">
+  <div class="vc-container vc-featured-quote__container">
+    {% set image = featured_quote.image %}
+    {% if featured_quote.image.src %}
+      <div class="vc-featured-quote__image">
+        {% include "@atoms/image.twig" %}
+      </div>
+    {% endif %}
+    <div class="vc-featured-quote__content">
+      <blockquote class="vc-featured-quote__blockquote">
+        {{ featured_quote.blockquote }}
+      </blockquote>
+      {% if featured_quote.attribution %}
+        <div class="vc-featured-quote__attr">{{ featured_quote.attribution }}</div>
+      {% endif %}
+      {% if featured_quote.attribution_title %}
+        <div class="vc-featured-quote__attr-title">{{ featured_quote.attribution_title }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,260 @@
+:root[class*='vc-'] {
+  .c-paragraph {
+    --layout-margin: 4rem;
+    margin-block: var(--layout-margin);
+
+    @include breakpoint($bp-med) {
+      --layout-margin: 8rem;
+    }
+  }
+
+  .layout {
+    @include basegrid();
+
+    @include breakpoint($bp-large) {
+      grid-row-gap: $row-gap;
+    }
+  }
+
+  // Hide top `layout__region--top` if no heading
+  .layout__region--top:not(:has(.layout__heading)) {
+    display: none;
+  }
+
+  .layout__heading {
+    margin-block: 0;
+  }
+
+  .layout__heading--centered {
+    text-align: center;
+  }
+
+  .layout__region--first,
+  .layout__region--second {
+    display: flex;
+    align-items: center;
+  }
+
+  // ONE COLUMN - CENTERED
+  .layout--onecol-centered {
+    @extend .vc-container--tight;
+
+    .vc-container {
+      --container-padding: 0;
+    }
+
+    .layout__region {
+      border: 0;
+      width: auto;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+
+      >.layout__region--top,
+      >.layout__region--bottom {
+        grid-column: span 12;
+        margin: 0;
+      }
+    }
+  }
+
+  // ONE COLUMN - FULL WIDTH
+  .layout--onecol-fullwidth {
+    .layout__region {
+      border: 0;
+    }
+
+    >.layout__region--top {
+      @extend .vc-container;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+      }
+
+      >.layout__region--bottom {
+        grid-column: span 12;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - EQUAL
+  .layout--twocol-equal {
+    @extend .vc-container;
+
+    .vc-container {
+      --container-padding: 0;
+    }
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 6;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 6;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - LARGER LEFT COL
+  .layout--twocol-larger-left-col {
+    @extend .vc-container;
+
+    .vc-container {
+      --container-padding: 0;
+    }
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      >.layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 7;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 5;
+        margin: 0;
+      }
+    }
+  }
+
+  // TWO COLUMNS - LARGER RIGHT COL
+  .layout--twocol-larger-right-col {
+    @extend .vc-container;
+
+    .vc-container {
+      --container-padding: 0;
+    }
+
+    >.layout__region {
+      border: 0;
+      margin: 0;
+    }
+
+    @include breakpoint($bp-med) {
+      .layout__region--top {
+        grid-column: span 12;
+        margin: 0;
+      }
+
+      >.layout__region--first {
+        grid-column: span 5;
+        margin: 0;
+      }
+
+      >.layout__region--second {
+        grid-column: span 7;
+        margin: 0;
+      }
+    }
+  }
+
+  .layout__region.is-zoomed {
+    position: absolute;
+    top: auto;
+    left: 0;
+    background-color: var(--c-bg);
+    box-shadow: 0 0 100px rgba($black, 0.2);
+    padding-block: 2rem;
+    z-index: 10;
+
+    .vc-featured-media {
+      width: 100%;
+      padding-inline: 0rem;
+      margin-inline: 0;
+    }
+
+    .vc-featured-media__media,
+    .vc-featured-media__copyright {
+      display: none;
+    }
+
+    .vc-slide-rule__slider {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .vc-button--is-zoomed {
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0;
+    z-index: 10;
+
+    svg path,
+    svg circle {
+      stroke: var(--c-button-text);
+    }
+
+    span {
+      display: block;
+      line-height: 0;
+    }
+
+    .vc-is-zoomed__close {
+      display: none;
+    }
+
+    &.is-open {
+      .vc-is-zoomed__open {
+        display: none;
+      }
+
+      .vc-is-zoomed__close {
+        display: block;
+      }
+    }
+  }
+
+  .vc-featured-media .vc-button--is-zoomed {
+    right: calc(1.75rem + 10px);
+  }
+
+  .is-zoomed .vc-featured-media .vc-button--is-zoomed {
+    right: calc(1rem + 10px);
+  }
+}
+
+:root.vc-ethics {
+  .c-paragraph {
+    @include breakpoint($bp-med) {
+      --layout-margin: 12rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "htmlClass": "vc-art",
+  "htmlStyle": "--c-bg: #393939; --c-text: #fff; --c-hero-bg: #262626; --c-hero-text: #fff; --c-button-bg: #CE4A22; --c-button-bg-hover: #B4330C; --c-button-text: #fff;",
+  "hero": {
+    "modifier_class": "vc-hero-art--text-right vc-hero-art--full",
+    "image_small": "../../assets/images/vc/bg-hero-art-4--small.jpg",
+    "image_medium": "../../assets/images/vc/bg-hero-art-4--medium.jpg",
+    "image_large": "../../assets/images/vc/bg-hero-art-4--large.jpg",
+    "issue_date": "May 2023",
+    "issue_href": "/",
+    "page_title": "Public Health Risk and Civic Peership",
+    "author": "Michaela Chan",
+    "citation": "<em>AMA J Ethics.</em> 2023;25(10):E771-776. doi: 10.1001/amajethics.2023.771.",
+    "pdf_href": "/",
+    "altmetric_href": "/"
+  }
+}

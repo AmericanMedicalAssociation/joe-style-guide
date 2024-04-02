@@ -1,0 +1,11 @@
+{
+  "htmlClass": "vc-gallery",
+  "button": {
+    "href": "",
+    "info": "alt",
+    "text": "Gallery Button",
+    "type": "button",
+    "style": "",
+    "size": ""
+  }
+}

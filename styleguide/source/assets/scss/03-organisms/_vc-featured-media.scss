@@ -1,0 +1,98 @@
+.vc-featured-media {
+  position: relative;
+  padding-inline: 1.5rem;
+
+  @include breakpoint($bp-large) {
+    padding-inline: 1.75rem;
+  }
+
+  .layout--onecol-centered & {
+    @include breakpoint($bp-med) {
+      margin-inline: -1.5rem;
+    }
+
+    @include breakpoint($bp-large) {
+      margin-inline: -1.75rem;
+    }
+  }
+}
+
+.vc-featured-media__container {
+  position: relative;
+}
+
+.vc-featured-media__figure {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.vc-featured-media__caption {
+  @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.1);
+  padding-block: 0 1rem; 
+
+  @include breakpoint($bp-med) {
+    @include type($font-sans-serif, 1em, $font-weight-medium, 1.1);
+  }
+}
+
+.vc-featured-media__copyright,
+.vc-featured-media__media {
+  @include type($font-sans-serif, 0.6em, $font-weight-medium, 1.1);
+  position: absolute;
+  bottom: -0.75em;
+
+  @include breakpoint($bp-large) {
+    font-size: 0.8em;
+    bottom: 0;
+  }
+}
+
+.vc-featured-media__copyright {
+  left: -1rem;
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
+.vc-featured-media__media {
+  right: -1rem;
+  transform: rotate(90deg);
+  transform-origin: right;
+  padding-inline-start: 1.25rem;
+}
+
+.vc-featured-media__video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+
+  iframe,
+  object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+:root.vc-ethics {
+  .vc-featured-media__figure {
+    @extend %vc-ethics-pattern;
+    isolation: isolate;
+
+    &::after {
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 30%;
+      height: 2rem;
+      z-index: -1;
+    }
+  }
+}

@@ -145,11 +145,11 @@
     }
   ],
   "issue": {
-    "title" : {
+    "title": {
       "text": "Oct. 2017",
       "level": "4"
-      },
-    "articles" : [
+    },
+    "articles": [
       {
         "style": "reverse",
         "flag": {
@@ -157,19 +157,19 @@
         },
         "authors": [
           {
-            "name" : "Jeremy Balch"
+            "name": "Jeremy Balch"
           },
           {
-            "name" : "Julia H. Schoen"
+            "name": "Julia H. Schoen"
           },
           {
-            "name" : "Payal K. Patel"
+            "name": "Payal K. Patel"
           }
         ],
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
+          "text": "Hard Time and Health Care: The Squeeze on Medicine Behind Bars"
         }
       },
       {
@@ -181,10 +181,10 @@
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
+          "text": "How Clinicians Can Use Their Skills and Authority to Promote Health Equity: An Interview with Dr. Mona Hanna-Attisha and Dr. Camara P. Jones"
         },
         "image": {
-          "src":"https://ipsumimage.appspot.com/450x225"
+          "src": "https://placehold.co/450x225"
         }
       },
       {
@@ -194,22 +194,22 @@
         },
         "authors": [
           {
-            "name" : "Jeremy Balch"
+            "name": "Jeremy Balch"
           },
           {
-            "name" : "Julia H. Schoen"
+            "name": "Julia H. Schoen"
           },
           {
-            "name" : "Payal K. Patel"
+            "name": "Payal K. Patel"
           }
         ],
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
+          "text": "The AMA Code of Medical Ethics’ Opinions Related to Physicians’ Roles in Safe Drinking Water Access"
         },
         "image": {
-          "src":"https://ipsumimage.appspot.com/450x225"
+          "src": "https://placehold.co/450x225"
         }
       },
       {
@@ -219,23 +219,23 @@
         },
         "authors": [
           {
-          "name" : "Steven S. Coughlin"
-        },
-        {
-          "name" : "Osman Yousufzai"
-        }
+            "name": "Steven S. Coughlin"
+          },
+          {
+            "name": "Osman Yousufzai"
+          }
         ],
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
+          "text": "The Importance of Clinicians and Community Members Receiving Timely and Accurate Information about Waterborne Hazards"
         }
       }
     ]
   },
   "related": {
-    "articles" : [
-      { 
+    "articles": [
+      {
         "size": "small",
         "flag": {
           "type": "AMA Code Says",
@@ -243,13 +243,13 @@
         },
         "authors": [
           {
-            "name" : "Annalise Norling"
+            "name": "Annalise Norling"
           }
         ],
         "title": {
           "href": "#",
           "class": "joe__article-teaser__title",
-          "text":"The AMA Code of Medical Ethics’ Opinions Related to Health Care for Incarcerated People"
+          "text": "The AMA Code of Medical Ethics’ Opinions Related to Health Care for Incarcerated People"
         }
       }
     ]

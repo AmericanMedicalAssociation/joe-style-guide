@@ -1,0 +1,183 @@
+.vc-featured-quote {
+  background-color: var(--c-text);
+  color: var(--c-bg);
+  padding-block: 3rem;
+
+  @include breakpoint($bp-large) {
+    padding-block: 6rem;
+  }
+}
+
+.vc-featured-quote--image {
+  .vc-featured-quote__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @include breakpoint($bp-med) {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+
+    @include breakpoint($bp-large) {
+      gap: 5rem;
+    }
+  }
+
+  .vc-featured-quote__content {
+    @include breakpoint($bp-med) {
+      text-align: left;
+      padding-inline: 0;
+    }
+  }
+}
+
+.vc-featured-quote__image {
+  flex-shrink: 0;
+  width: 100px;
+
+  @include breakpoint($bp-small) {
+    width: 200px;
+  }
+
+  @include breakpoint($bp-med) {
+    width: 370px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.vc-featured-quote__content {
+  text-align: center;
+
+  @include breakpoint($bp-med) {
+    padding-inline: 5%;
+  }
+
+  @include breakpoint($bp-large) {
+    padding-inline: 10%;
+  }
+}
+
+.vc-featured-quote__blockquote {
+  text-wrap: balance;
+  margin-top: 0;
+}
+
+
+:root.vc-art {
+  .vc-featured-quote {
+    background-image: url('../images/vc/bg-featured-quote-art.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .vc-featured-quote__blockquote {
+    @include type($font-serif, 1.5em, $font-weight-bold, 1.4);
+
+    @include breakpoint($bp-large) {
+      @include type($font-serif, 2.25em, $font-weight-bold, 1.4);
+    }
+  }
+
+  .vc-featured-quote__attr {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  .vc-featured-quote__attr-title {
+    @include type($font-sans-serif, 0.8em, $font-weight-medium, 1.4);
+    font-style: italic;
+  }
+
+  .vc-featured-quote--image {
+    .vc-featured-quote__blockquote {
+      @include breakpoint($bp-large) {
+        @include type($font-serif, 2em, $font-weight-bold, 1.4);
+      }
+    }
+  }
+}
+
+:root.vc-ethics {
+  .vc-featured-quote {
+    position: relative;
+    padding-block-start: 14rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 10rem;
+      height: 3rem;
+      background-image: url('../images/vc/bg-ethics-pattern.svg');
+      background-repeat: repeat;
+      background-position: center top;
+      background-size: 0.8rem;
+      opacity: 0.35;
+    }
+
+    &::after {
+      @include type($font-sans-serif, 6em, $font-weight-medium, 1);
+      content: '\201C';
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 0.4em;
+      height: 0.4em;
+      background-color: var(--c-text);
+      border-radius: 50%;
+      color: var(--c-button-bg);
+      padding: 0 0.1em 0.2em;
+    }
+  }
+
+  .vc-featured-quote__image {
+    @include breakpoint($bp-med) {
+      margin-block-start: -6rem;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .vc-featured-quote__blockquote {
+    @include type($font-serif, 1.5em, $font-weight-medium, 1.4);
+
+    @include breakpoint($bp-large) {
+      @include type($font-serif, 1.75em, $font-weight-medium, 1.4);
+    }
+  }
+
+  .vc-featured-quote__attr {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  .vc-featured-quote__attr-title {
+    @include type($font-sans-serif, 0.9em, $font-weight-medium, 1.4);
+    font-style: italic;
+  }
+
+  &[data-theme='light'] {
+    .vc-featured-quote::before {
+      filter: invert(1);
+    }
+  }
+}
