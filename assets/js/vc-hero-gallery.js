@@ -11,13 +11,12 @@
 (function ($, Drupal) {
   Drupal.behaviors.vc_hero_gallery = {
     attach: function (context, settings) {
-
       const vcHeroGallery = document.querySelector('.vc-hero-gallery');
 
       if (vcHeroGallery) {
         $('.vc-hero-gallery__nav').slick({
           infinite: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '5%',
@@ -32,12 +31,12 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                variableWidth: false
-              }
-            }
-          ]
+                variableWidth: false,
+              },
+            },
+          ],
         });
       }
-    }
+    },
   };
 })(jQuery, Drupal);
