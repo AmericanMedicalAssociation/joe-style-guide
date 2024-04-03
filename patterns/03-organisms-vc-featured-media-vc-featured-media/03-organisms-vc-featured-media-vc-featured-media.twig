@@ -1,0 +1,31 @@
+<div class="vc-featured-media">
+  <div class="vc-featured-media__container">
+    <figure class="vc-featured-media__figure">
+      {% block media %}
+        {% if featured_media.image %}
+          {{ featured_media.image|raw }}
+        {% elseif featured_media.video %}
+          <div class="vc-featured-media__video">
+            {{ featured_media.video|raw }}
+          </div>
+        {% endif %}
+      {% endblock %}
+      {% if featured_media.figure_text %}
+        <figcaption class="vc-featured-media__caption">
+          {{ featured_media.figure_text|raw }}
+        </figcaption>
+      {% endif %}
+    </figure>
+    {% if featured_media.copyright %}
+      <span class="vc-featured-media__copyright">
+        {{ featured_media.copyright }}
+      </span>
+    {% endif %}
+    {% if featured_media.media %}
+      <span class="vc-featured-media__media">
+        {{ featured_media.media }}
+      </span>
+    {% endif %}
+  </div>
+  {% include "@molecules/vc-reaction-bar/vc-reaction-bar.twig" %}
+</div>
