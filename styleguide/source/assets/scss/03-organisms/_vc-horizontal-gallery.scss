@@ -161,7 +161,8 @@
 .vc-modal__second {
   @include breakpoint($bp-med) {
     grid-column: span 5;
-    margin-block-start: 5rem;
+    margin-block-start: 0;
+    align-self: center;
 
     // Update grid if stacked
     .vc-modal__grid--stacked & {
