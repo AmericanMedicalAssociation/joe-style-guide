@@ -17,9 +17,8 @@
 
     .vc-button--is-zoomed {
       background: var(--c-button-text);
-      border: 2px solid var(--c-button-bg);
       padding: 0.25rem;
-  
+
       svg path,
       svg circle {
         stroke: var(--c-button-bg);
@@ -111,7 +110,7 @@
 
   .vc-featured-media__figure {
     height: auto;
-    
+
     img {
       max-height: none;
     }

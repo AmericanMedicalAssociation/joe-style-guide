@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
       background: var(--c-button-text);
-      border: 2px solid var(--c-button-bg);
       border-radius: 50%;
       padding: 0.25rem;
 
@@ -121,14 +120,14 @@
     justify-content: center;
     height: 100%;
     background-color: rgba($black, 0.1);
-  
+
     img {
       object-fit: contain;
       width: 100%;
       max-height: 100%;
     }
   }
-  
+
   .vc-featured-media__caption {
     position: absolute;
     top: 0;
@@ -162,7 +161,8 @@
 .vc-modal__second {
   @include breakpoint($bp-med) {
     grid-column: span 5;
-    margin-block-start: 5rem;
+    margin-block-start: 0;
+    align-self: center;
 
     // Update grid if stacked
     .vc-modal__grid--stacked & {
@@ -199,11 +199,11 @@
       top: 50%;
       transform: translateY(-50%);
     }
-  
+
     .slick-prev {
       left: 0;
     }
-  
+
     .slick-next {
       right: 0;
     }
