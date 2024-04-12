@@ -112,7 +112,8 @@
   "vc_copyright": "American Medical Association. All Rights Reserved. ISSN 2376-6980",
   "reaction": {
     "question": "How does this artwork make you feel?",
-    "total": "5"
+    "total": "5",
+    "selected": [1, 2]
   },
   "vc_issue": {
     "title": null,
