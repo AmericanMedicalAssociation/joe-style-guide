@@ -112,14 +112,12 @@ sup {
 
   a:link,
   a:visited {
-    color: var(--c-link);
     text-decoration: underline;
   }
 
   a:active,
   a:hover,
   a:focus {
-    color: var(--c-link);
     text-decoration: none;
   }
 
@@ -136,4 +134,14 @@ sup {
       color:#2B2C33;
     }
   }
+}
+
+// Correct for toolbar.
+div:not(.toolbar) > a {
+  color: var(--c-link);
+}
+
+// Correct for workbench tabs.
+div.workbench-tabs {
+  color: #000;
 }
