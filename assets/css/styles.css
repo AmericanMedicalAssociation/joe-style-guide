@@ -657,7 +657,6 @@
 }
 :root[class*=vc-] .vc-modal .vc-button--is-zoomed {
   background: var(--c-button-text);
-  border: 2px solid var(--c-button-bg);
   padding: 0.25rem;
 }
 :root[class*=vc-] .vc-modal .vc-button--is-zoomed svg path,
@@ -8063,7 +8062,6 @@ main + .joe__footer {
       -ms-flex-align: center;
           align-items: center;
   background: var(--c-button-text);
-  border: 2px solid var(--c-button-bg);
   border-radius: 50%;
   padding: 0.25rem;
 }
@@ -8206,8 +8204,9 @@ main + .joe__footer {
 @media (min-width: 56.25em) {
   .vc-modal__second {
     grid-column: span 5;
-    -webkit-margin-before: 5rem;
-            margin-block-start: 5rem;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    align-self: center;
   }
   .vc-modal__grid--stacked .vc-modal__second {
     grid-column: 3/11;
