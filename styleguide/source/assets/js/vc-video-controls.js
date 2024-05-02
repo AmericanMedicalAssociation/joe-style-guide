@@ -67,8 +67,32 @@
         });
       }
 
+      // Function to play the video in the corresponding tab when a tab link is clicked
+      function playVideoInTab(tabHref) {
+          // Find the video element associated with the tab href and play the video
+          var videoElement = $(tabHref).find('iframe.youtube-iframe');
+          if (videoElement.length > 0) {
+          var playerId = videoElement.attr('id');
+          var player = youtubePlayers.find(function (p) {
+              return p.getIframe().id === playerId;
+          });
+          if (player) {
+              player.playVideo();
+          }
+          }
+      }
+
       // Load the YouTube API script
       loadScript(scriptURL, onYouTubeAPILoaded);
+
+      // Add onclick event for tab link
+      $('.vc-video-tabs__group ul a').on('click', function () {
+        // Pause all other YouTube players when the tab link is clicked
+        pauseOtherPlayers(null); // Pass null to pause all players
+      // Get the href attribute from the clicked tab link and call playVideoInTab
+      var tabHref = $(this).attr('href');
+      playVideoInTab(tabHref);
+      });
 
     },
   };
