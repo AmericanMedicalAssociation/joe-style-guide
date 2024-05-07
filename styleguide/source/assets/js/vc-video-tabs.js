@@ -19,7 +19,6 @@
         const tablist = videoTabs.querySelector('ul');
         const tabs = tablist.querySelectorAll('a');
         const panels = videoTabs.querySelectorAll('[id^="section"]');
-        const allVideos = document.querySelectorAll('.vc-video-tabs__video iframe');
 
         // The tab switching function
         const switchTab = (oldTab, newTab) => {
@@ -55,11 +54,6 @@
             const currentTab = tablist.querySelector('[aria-selected]');
             if (e.currentTarget !== currentTab) {
               switchTab(currentTab, e.currentTarget);
-            }
-
-            // Pause videos when clicked
-            for (let i = 0; i < allVideos.length; i++) {
-              allVideos[i].contentWindow.postMessage('{"event":"command", "func":"pauseVideo", "args":""}', '*');
             }
           });
 
