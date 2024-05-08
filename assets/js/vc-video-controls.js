@@ -70,6 +70,12 @@
       // Load the YouTube API script
       loadScript(scriptURL, onYouTubeAPILoaded);
 
+      // Add onclick event for tab link
+      $('.vc-video-tabs__group ul a').on('click', function () {
+        // Pause all other YouTube players when the tab link is clicked
+        pauseOtherPlayers(null); // Pass null to pause all players
+      });
+
     },
   };
 })(jQuery, Drupal);
