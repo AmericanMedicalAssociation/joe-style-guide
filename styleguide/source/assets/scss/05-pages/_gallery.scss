@@ -862,3 +862,34 @@ a.scroll-down {
 .iScrollIndicator {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
+
+.vc-hero-gallery__anchor {
+  .viewbox-wrapper {
+    width: 100%; /* Set the width to 100% by default */
+    height: 100%; /* Set the height to 100% by default */
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden; /* Hide any overflow content */
+    svg {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    @include breakpoint($bp-small max-width) {
+      display: flex;
+      aspect-ratio: .75 / 1;
+    }
+    @include breakpoint($bp-med) {
+        width: 550px; /* Set the maximum width for desktop */
+        height: 500px; /* Set the maximum height for desktop */
+    }
+  }
+}
+
+.vc-horizontal-gallery__artwork {
+  svg {
+    @include breakpoint($bp-med) {
+      width: 550px;
+      height: 500px;
+    }
+  }
+}
