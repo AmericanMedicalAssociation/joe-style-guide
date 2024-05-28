@@ -876,7 +876,7 @@ a.scroll-down {
     }
     @include breakpoint($bp-small max-width) {
       display: flex;
-      aspect-ratio: .75 / 1;
+      aspect-ratio: unset;
     }
     @include breakpoint($bp-med) {
         width: 550px; /* Set the maximum width for desktop */
