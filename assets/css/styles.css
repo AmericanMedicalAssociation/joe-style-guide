@@ -10609,6 +10609,39 @@ a.scroll-down .icon:after {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
 
+.vc-hero-gallery__anchor .viewbox-wrapper {
+  width: 100%; /* Set the width to 100% by default */
+  height: 100%; /* Set the height to 100% by default */
+  position: relative; /* Ensure proper positioning */
+  overflow: hidden; /* Hide any overflow content */
+}
+.vc-hero-gallery__anchor .viewbox-wrapper svg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media (max-width: 37.5em) {
+  .vc-hero-gallery__anchor .viewbox-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    aspect-ratio: unset;
+  }
+}
+@media (min-width: 56.25em) {
+  .vc-hero-gallery__anchor .viewbox-wrapper {
+    width: 550px; /* Set the maximum width for desktop */
+    height: 500px; /* Set the maximum height for desktop */
+  }
+}
+
+@media (min-width: 56.25em) {
+  .vc-horizontal-gallery__artwork svg {
+    width: 550px;
+    height: 500px;
+  }
+}
+
 .joe__page--top {
   background-color: rgba(255, 255, 255, 0.9);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(#ffffff));
