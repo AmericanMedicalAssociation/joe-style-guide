@@ -4221,7 +4221,7 @@ blockquote {
   margin-right: 0;
 }
 .joe__utility-nav__list--right .joe__utility-nav__item.social .social-icon {
-  height: 23px;
+  height: 36px;
   width: 26px;
   position: relative;
   border-left-color: transparent;
@@ -8067,7 +8067,7 @@ main + .joe__footer {
 }
 @media (min-width: 56.25em) {
   :root[class*=vc-] .vc-modal__controls .slick-arrow {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
 }
 :root[class*=vc-] .vc-modal__controls .slick-arrow[aria-disabled=true] {
@@ -8186,7 +8186,7 @@ main + .joe__footer {
 @media (min-width: 56.25em) {
   .vc-modal__first {
     position: relative;
-    padding-inline: 2rem;
+    padding-inline: 2.75rem;
     grid-column: 2/12;
   }
   .vc-modal__first:not(:only-child) {
