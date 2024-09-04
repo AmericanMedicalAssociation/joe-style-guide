@@ -19,5 +19,11 @@ article[dir='rtl'] {
   footer.joe__article-footer p {
     text-align: right;
   }
+  /* Ensure references flow from right to left */
+  sup,
+  .superscript-reference {
+    direction: rtl;
+    unicode-bidi: bidi-override; /* For better browser compatibility */
+  }
 }
 
