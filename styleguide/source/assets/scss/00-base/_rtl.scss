@@ -19,5 +19,13 @@ article[dir='rtl'] {
   footer.joe__article-footer p {
     text-align: right;
   }
+  .article_abstract {
+    > h2 {
+      text-align: left;
+    }
+    p:first-of-type:not([dir="rtl"]) {
+      text-align: left;
+    }
+  }
 }
 
