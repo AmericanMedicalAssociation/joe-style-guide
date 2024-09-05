@@ -12,12 +12,13 @@ article[dir='rtl'] {
     direction: rtl;
   }
 
-  .joe__page-content--article {
+  footer.joe__article-footer {
+    text-align: left;
+    direction: ltr;
+  }
+
+  h3.joe__title-label {
     text-align: left;
   }
 
-  footer.joe__article-footer p {
-    text-align: right;
-  }
 }
-
