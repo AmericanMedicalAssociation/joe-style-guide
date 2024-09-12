@@ -24,5 +24,13 @@ article[dir='rtl'] {
     text-align: left;
     direction: ltr;
   }
+  
+  .article_abstract {
+    > h2 {
+      text-align: left;
+    }
+    p:first-of-type:not([dir="rtl"]) {
+      text-align: left;
+    }
+  }
 }
-
