@@ -19,11 +19,21 @@ article[dir='rtl'] {
   footer.joe__article-footer p {
     text-align: right;
   }
+<<<<<<< EWLJ-763-1-r-to-l-formatting-issues-with-articles-translated-to-arabic
   /* Ensure references flow from right to left */
   sup,
   .superscript-reference {
     direction: rtl;
     unicode-bidi: bidi-override; /* For better browser compatibility */
+=======
+  .article_abstract {
+    > h2 {
+      text-align: left;
+    }
+    p:first-of-type:not([dir="rtl"]) {
+      text-align: left;
+    }
+>>>>>>> develop
   }
 }
 

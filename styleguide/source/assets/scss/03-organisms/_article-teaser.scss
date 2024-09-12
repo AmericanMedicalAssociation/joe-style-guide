@@ -130,6 +130,10 @@
   }
 }
 
+.joe__article-teaser__title_ar {
+  text-align: end; /* RTL */
+} 
+
 .joe__article-teaser__meta {
   @extend %joe__type--smaller;
   display: block;
@@ -147,7 +151,17 @@
 .joe__article-teaser__desc {
   @extend %joe__type--smaller;
   margin-top: .5em;
+  text-align: start; /* LTR */
 }
+
+.joe__article-teaser__desc_ar {
+  @extend %joe__type--smaller;
+  margin-top: .5em;
+  text-align: end; /* RTL */
+}
+
+
+
 
 .joe__article-teaser--large {
   flex-direction: column;
