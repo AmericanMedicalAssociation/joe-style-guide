@@ -21,4 +21,24 @@ article[dir='rtl'] {
     text-align: left;
   }
 
+  /* Ensure references flow from right to left */
+  sup,
+  .superscript-reference {
+    direction: rtl;
+    unicode-bidi: bidi-override; /* For better browser compatibility */
+  }
+
+  .joe__references__list {
+    text-align: left;
+    direction: ltr;
+  }
+
+  .article_abstract {
+    > h2 {
+      text-align: left;
+    }
+    p:first-of-type:not([dir="rtl"]) {
+      text-align: left;
+    }
+  }
 }
