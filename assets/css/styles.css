@@ -790,6 +790,7 @@
 article[dir=rtl] {
   text-align: left;
   direction: ltr;
+  /* Ensure references flow from right to left */
 }
 article[dir=rtl] h2.joe__article-header__title {
   text-align: right;
@@ -799,11 +800,27 @@ article[dir=rtl] .joe__page-content.joe__article {
   text-align: right;
   direction: rtl;
 }
-article[dir=rtl] .joe__page-content--article {
+article[dir=rtl] footer.joe__article-footer {
+  text-align: left;
+  direction: ltr;
+}
+article[dir=rtl] h3.joe__title-label {
   text-align: left;
 }
-article[dir=rtl] footer.joe__article-footer p {
-  text-align: right;
+article[dir=rtl] sup,
+article[dir=rtl] .superscript-reference {
+  direction: rtl;
+  unicode-bidi: bidi-override; /* For better browser compatibility */
+}
+article[dir=rtl] .joe__references__list {
+  text-align: left;
+  direction: ltr;
+}
+article[dir=rtl] .article_abstract > h2 {
+  text-align: left;
+}
+article[dir=rtl] .article_abstract p:first-of-type:not([dir=rtl]) {
+  text-align: left;
 }
 
 /* Slider */
@@ -1090,7 +1107,7 @@ body {
   line-height: 1.35;
 }
 
-.joe__footer__block p, .joe__footer__block a, .joe__article-teaser__desc, .joe__article-teaser__meta, .joe__article-issue-footer .joe__link--reversed, .joe__utility-nav__list, .joe__tags-list, .joe__pager__item a, .joe__issue-teaser__meta, .joe__issue-header__meta, .joe__inline-caption, .chosen-container, .joe__article-header__reviewed, .joe__table td,
+.joe__footer__block p, .joe__footer__block a, .joe__article-teaser__desc_ar, .joe__article-teaser__desc, .joe__article-teaser__meta, .joe__article-issue-footer .joe__link--reversed, .joe__utility-nav__list, .joe__tags-list, .joe__pager__item a, .joe__issue-teaser__meta, .joe__issue-header__meta, .joe__inline-caption, .chosen-container, .joe__article-header__reviewed, .joe__table td,
 table td, input[type=checkbox] + label,
 input[type=radio] + label, label,
 legend,
@@ -5111,6 +5128,10 @@ blockquote {
   text-align: right;
 }
 
+.joe__article-teaser__title_ar {
+  text-align: end; /* RTL */
+}
+
 .joe__article-teaser__meta {
   display: block;
 }
@@ -5125,6 +5146,12 @@ blockquote {
 
 .joe__article-teaser__desc {
   margin-top: 0.5em;
+  text-align: start; /* LTR */
+}
+
+.joe__article-teaser__desc_ar {
+  margin-top: 0.5em;
+  text-align: end; /* RTL */
 }
 
 .joe__article-teaser--large {
