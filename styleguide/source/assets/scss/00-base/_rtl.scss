@@ -27,6 +27,11 @@ article[dir='rtl'] {
     unicode-bidi: bidi-override; /* For better browser compatibility */
   }
 
+  .joe__references__list {
+    text-align: left;
+    direction: ltr;
+  }
+
   .article_abstract {
     > h2 {
       text-align: left;
@@ -36,4 +41,3 @@ article[dir='rtl'] {
     }
   }
 }
-
