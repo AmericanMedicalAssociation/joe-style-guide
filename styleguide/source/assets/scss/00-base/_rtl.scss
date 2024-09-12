@@ -19,6 +19,12 @@ article[dir='rtl'] {
   footer.joe__article-footer p {
     text-align: right;
   }
+
+  .joe__references__list {
+    text-align: left;
+    direction: ltr;
+  }
+  
   .article_abstract {
     > h2 {
       text-align: left;
@@ -28,4 +34,3 @@ article[dir='rtl'] {
     }
   }
 }
-
