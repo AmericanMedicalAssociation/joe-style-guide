@@ -1,10 +1,12 @@
 article[dir='rtl'] {
   text-align: left;
   direction: ltr;
-
-  h2.joe__article-header__title {
-    text-align: right;
-    direction: rtl;
+  
+  .joe__article-header {
+    .joe__article-header__title {
+      text-align: right;
+      direction: rtl;
+    }
   }
 
   .joe__page-content.joe__article {
@@ -41,4 +43,10 @@ article[dir='rtl'] {
       text-align: left;
     }
   }
+
+  .joe__tags {
+    text-align: left;
+    direction: ltr;
+  }
+
 }
