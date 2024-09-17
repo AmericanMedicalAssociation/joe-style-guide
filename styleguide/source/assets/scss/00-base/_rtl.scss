@@ -1,7 +1,7 @@
 article[dir='rtl'] {
   text-align: left;
   direction: ltr;
-  
+
   .joe__article-header {
     .joe__article-header__title {
       text-align: right;
@@ -44,6 +44,11 @@ article[dir='rtl'] {
     }
   }
 
+  .ama__tooltip {
+    text-align: left;
+    direction: ltr;
+  }
+  
   .joe__tags {
     text-align: left;
     direction: ltr;
