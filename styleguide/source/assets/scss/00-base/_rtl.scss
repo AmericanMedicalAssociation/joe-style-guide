@@ -25,7 +25,9 @@ article[dir='rtl'] {
   sup,
   .superscript-reference {
     direction: rtl;
-    unicode-bidi: bidi-override; /* For better browser compatibility */
+    unicode-bidi: embed; /* For better browser compatibility */
+    min-width: 12px;
+    display: inline-block;
   }
 
   .joe__references__list {
@@ -40,5 +42,10 @@ article[dir='rtl'] {
     p:first-of-type:not([dir="rtl"]) {
       text-align: left;
     }
+  }
+
+  .ama__tooltip {
+    text-align: left;
+    direction: ltr;
   }
 }
