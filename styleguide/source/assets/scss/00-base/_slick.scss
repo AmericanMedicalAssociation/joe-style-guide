@@ -278,4 +278,10 @@
       }
     }
   }
+
+  .joe__primary-nav {
+    ul > .joe__utility-nav__item:first-child {
+      display: none;
+    }
+  }
 }
