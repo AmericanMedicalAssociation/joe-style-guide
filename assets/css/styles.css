@@ -792,7 +792,7 @@ article[dir=rtl] {
   direction: ltr;
   /* Ensure references flow from right to left */
 }
-article[dir=rtl] h2.joe__article-header__title {
+article[dir=rtl] .joe__article-header .joe__article-header__title {
   text-align: right;
   direction: rtl;
 }
@@ -810,7 +810,9 @@ article[dir=rtl] h3.joe__title-label {
 article[dir=rtl] sup,
 article[dir=rtl] .superscript-reference {
   direction: rtl;
-  unicode-bidi: bidi-override; /* For better browser compatibility */
+  unicode-bidi: embed; /* For better browser compatibility */
+  min-width: 12px;
+  display: inline-block;
 }
 article[dir=rtl] .joe__references__list {
   text-align: left;
@@ -821,6 +823,14 @@ article[dir=rtl] .article_abstract > h2 {
 }
 article[dir=rtl] .article_abstract p:first-of-type:not([dir=rtl]) {
   text-align: left;
+}
+article[dir=rtl] .ama__tooltip {
+  text-align: left;
+  direction: ltr;
+}
+article[dir=rtl] .joe__tags {
+  text-align: left;
+  direction: ltr;
 }
 
 /* Slider */
@@ -1068,6 +1078,9 @@ article[dir=rtl] .article_abstract p:first-of-type:not([dir=rtl]) {
 :root[class*=vc-] .vc-gallery__controls .slick-next:active, :root[class*=vc-] .vc-gallery__controls .slick-next:focus, :root[class*=vc-] .vc-gallery__controls .slick-next:hover {
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
+}
+:root[class*=vc-] .joe__primary-nav ul > .joe__utility-nav__item:first-child {
+  display: none;
 }
 
 body {
@@ -5124,12 +5137,25 @@ blockquote {
   text-decoration: underline;
   border-bottom: 0;
 }
-.joe__article-teaser__title p[dir=RTL] {
-  text-align: right;
-}
 
 .joe__article-teaser__title_ar {
+  font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0.6em;
   text-align: end; /* RTL */
+}
+.joe__article-teaser__title_ar a:link,
+.joe__article-teaser__title_ar a:visited {
+  color: #000000;
+  border-bottom: 0;
+}
+.joe__article-teaser__title_ar a:active,
+.joe__article-teaser__title_ar a:hover,
+.joe__article-teaser__title_ar a:focus {
+  text-decoration: underline;
+  border-bottom: 0;
 }
 
 .joe__article-teaser__meta {
