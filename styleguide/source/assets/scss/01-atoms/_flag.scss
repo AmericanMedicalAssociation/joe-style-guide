@@ -32,25 +32,20 @@
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
   padding: 2em 10px 10px;
   top: -1.3em;
-  
   .joe__flag__type {
     display: block;
   }
-  
   .joe__poll & {
     top: -2em;
   }
-  
   .joe__issue-listing--current & {
     top: -2.7em;
     padding-top: 2em;
 
   }
-  
   @include breakpoint($bp-med) {
     padding: 2.75em 12px 10px;
     top: -2em;
-    
     .joe__poll & {
       top: -2.7em;
     }
@@ -85,4 +80,9 @@
 .joe__flag--blue {
   background-color: $navy-lighter;
   background: $blue-gradient;
+}
+// Override H2 flag type.
+h2.joe__flag__type {
+  font-size: 1em;
+  margin: 0;
 }

@@ -506,6 +506,10 @@ $header-spacer-height-mobile: calc((#{$header-top-bottom-padding-mobile} * 2) + 
             margin-bottom: 1.5em;
             margin-top: 0;
           }
+          // Override H2 flag type.
+          h2.joe__flag__type {
+            margin-bottom: 0;
+          }
           .title {
             margin-bottom: .5em;
             @include breakpoint($bp-med) {
