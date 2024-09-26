@@ -353,3 +353,15 @@
     margin-left: -9px;
   }
 }
+
+// Override h2 flag type styles.
+h2.vc-hero-gallery__flag-type {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+h2.vc-hero-art__flag-type {
+  margin: 0;
+  @include breakpoint(max-width $bp-med) {
+    font-size: 18px;
+  }
+}

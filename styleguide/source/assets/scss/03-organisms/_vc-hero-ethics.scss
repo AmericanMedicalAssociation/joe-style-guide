@@ -299,3 +299,7 @@
     filter: brightness(0%);
   }
 }
+// Override H2 flag type.
+h2.vc-hero-ethics__flag-type {
+  display: inline;
+}
