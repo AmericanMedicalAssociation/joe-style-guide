@@ -1601,6 +1601,11 @@ button:focus {
   background: linear-gradient(45deg, #1f1f52 0%, #3f3f6d 100%);
 }
 
+h2.joe__flag__type {
+  font-size: 1em;
+  margin: 0;
+}
+
 textarea, select, input[type=text],
 input[type=email],
 input[type=search],
@@ -1918,7 +1923,7 @@ h1,
   margin-top: 2em;
 }
 
-h2,
+h2 :not(.vc-hero-art__flag-type) :not(.vc-hero-gallery__flag-type) :not(.vc-hero-gallery__flag-type),
 .joe__h2 {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
   font-size: 1.5em;
@@ -1970,7 +1975,7 @@ h6,
 }
 
 :root[class*=vc-] h1,
-:root[class*=vc-] h2,
+:root[class*=vc-] h2 :not(.vc-hero-art__flag-type) :not(.vc-hero-gallery__flag-type) :not(.vc-hero-gallery__flag-type),
 :root[class*=vc-] h3,
 :root[class*=vc-] h4,
 :root[class*=vc-] h5,
@@ -1984,7 +1989,7 @@ h6,
   font-size: clamp(2.75rem, 1.696rem + 4.68vw, 5.5rem);
   line-height: 1;
 }
-:root[class*=vc-] h2 {
+:root[class*=vc-] h2 :not(.vc-hero-art__flag-type) :not(.vc-hero-gallery__flag-type) :not(.vc-hero-gallery__flag-type) {
   font-size: clamp(2rem, 1.444rem + 2.468vw, 3.45rem);
 }
 :root[class*=vc-] h3 {
@@ -4750,6 +4755,7 @@ blockquote {
   line-height: 1.15;
   font-style: italic;
   margin-top: 0;
+  margin-bottom: 6px;
 }
 .joe__footer .joe__wordmark__subtitle {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
@@ -7566,6 +7572,20 @@ main + .joe__footer {
   margin-left: -9px;
 }
 
+h2.vc-hero-gallery__flag-type {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+h2.vc-hero-art__flag-type {
+  margin: 0;
+}
+@media (max-width: 56.25em) {
+  h2.vc-hero-art__flag-type {
+    font-size: 18px;
+  }
+}
+
 .vc-hero-ethics {
   position: relative;
   overflow: hidden;
@@ -7911,6 +7931,10 @@ main + .joe__footer {
 :root.vc-ethics[data-theme=light] .vc-hero-ethics__vertical-label::before {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
+}
+
+h2.vc-hero-ethics__flag-type {
+  display: inline;
 }
 
 .vc-hero-gallery {
@@ -10214,6 +10238,9 @@ main + .joe__footer {
 .gallery .text-column .section.caption .inner h2 {
   margin-bottom: 1.5em;
   margin-top: 0;
+}
+.gallery .text-column .section.caption .inner h2.joe__flag__type {
+  margin-bottom: 0;
 }
 .gallery .text-column .section.caption .inner .title {
   margin-bottom: 0.5em;
