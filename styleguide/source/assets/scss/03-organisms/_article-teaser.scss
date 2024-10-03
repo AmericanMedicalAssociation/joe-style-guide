@@ -168,7 +168,8 @@
 .joe__article-teaser__desc_ar {
   @extend %joe__type--smaller;
   margin-top: .5em;
-  text-align: end; /* RTL */
+  text-align: right; /* RTL */
+  direction: rtl;
 }
 
 
