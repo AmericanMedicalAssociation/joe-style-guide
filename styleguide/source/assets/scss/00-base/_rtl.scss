@@ -50,10 +50,18 @@ article[dir='rtl'] {
     text-align: left;
     direction: ltr;
   }
-  
+
   .joe__tags {
     text-align: left;
     direction: ltr;
   }
 
+  /* Ensure title and summary fields are aligned to right */
+  .joe__article-teaser__block {
+    .joe__article-teaser__title,
+    .joe__article-teaser__desc {
+      text-align: right;
+      direction: rtl;
+    }
+  }
 }
