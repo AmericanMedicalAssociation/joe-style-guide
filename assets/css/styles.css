@@ -791,6 +791,7 @@ article[dir=rtl] {
   text-align: left;
   direction: ltr;
   /* Ensure references flow from right to left */
+  /* Ensure title and summary fields are aligned to right */
 }
 article[dir=rtl] .joe__article-header .joe__article-header__title {
   text-align: right;
@@ -831,6 +832,11 @@ article[dir=rtl] .ama__tooltip {
 article[dir=rtl] .joe__tags {
   text-align: left;
   direction: ltr;
+}
+article[dir=rtl] .joe__article-teaser__block .joe__article-teaser__title,
+article[dir=rtl] .joe__article-teaser__block .joe__article-teaser__desc {
+  text-align: right;
+  direction: rtl;
 }
 
 /* Slider */
@@ -5183,7 +5189,8 @@ blockquote {
 
 .joe__article-teaser__desc_ar {
   margin-top: 0.5em;
-  text-align: end; /* RTL */
+  text-align: right; /* RTL */
+  direction: rtl;
 }
 
 .joe__article-teaser--large {
