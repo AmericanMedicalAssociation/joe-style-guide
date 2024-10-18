@@ -3,7 +3,7 @@
   background: linear-gradient(rgba($white, .75) 0%, $white 100%);
   position: relative;
   padding-top: 1em;
-  
+
   // create shadow corner effect
   &:before {
     content: "";
@@ -20,7 +20,7 @@
     min-height: 450px;
     max-height: 600px;
   }
-  
+
   @include breakpoint($bp-med) {
     padding-top: 1.5em;
   }
@@ -33,4 +33,16 @@
 .joe__article--bottom {
   @include gutter($margin-bottom-full...);
   background-color: $white;
+}
+
+.available__in {
+  display: flex;
+  align-items: center;
+  .joe__tags-title {
+    padding-top: 3px;
+    letter-spacing: 0;
+  }
+  .joe__tags-list li {
+    border-bottom: 0;
+  }
 }
