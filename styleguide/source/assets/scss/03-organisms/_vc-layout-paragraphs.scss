@@ -143,36 +143,72 @@
     }
   }
 
-  // TWO COLUMNS - LARGER RIGHT COL
-  .layout--twocol-larger-right-col {
-    @extend .vc-container;
+// TWO COLUMNS - LARGER RIGHT COL
+.layout--twocol-larger-right-col {
+  @extend .vc-container;
 
-    .vc-container {
-      --container-padding: 0;
+  .vc-container {
+    --container-padding: 0;
+  }
+
+  display: grid;
+  grid-template-columns: 5fr 7fr; // Adjusted for even spacing similar to left layout
+  gap: 24px;
+  align-items: start;
+
+  > .layout__region {
+    border: 0;
+    margin: 0;
+  }
+
+  @include breakpoint($bp-med) {
+    > .layout__region--first {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+
+      p {
+        margin: 0;
+      }
     }
 
-    >.layout__region {
-      border: 0;
-      margin: 0;
-    }
-
-    @include breakpoint($bp-med) {
-      .layout__region--top {
-        grid-column: span 12;
-        margin: 0;
-      }
-
-      >.layout__region--first {
-        grid-column: span 5;
-        margin: 0;
-      }
-
-      >.layout__region--second {
-        grid-column: span 7;
-        margin: 0;
-      }
+    > .layout__region--second {
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding-left: 24px; // Add spacing similar to the left layout
     }
   }
+
+  @media (max-width: $bp-med) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .layout__region--first {
+      order: 2;
+      width: 100%;
+      padding: 10px 0; // Consistent padding across layouts
+    }
+
+    > .layout__region--second {
+      order: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0; // Ensure no extra padding on mobile
+    }
+  }
+}
+
+  
+
 
   .layout__region.is-zoomed {
     position: absolute;
