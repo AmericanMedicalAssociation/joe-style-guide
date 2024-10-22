@@ -39,10 +39,14 @@
   display: flex;
   align-items: center;
   .joe__tags-title {
-    padding-top: 3px;
+    padding-top: 0.3em;
     letter-spacing: 0;
   }
   .joe__tags-list li {
     border-bottom: 0;
+
+    > a {
+      font-size: 0.95em;
+    }
   }
 }
