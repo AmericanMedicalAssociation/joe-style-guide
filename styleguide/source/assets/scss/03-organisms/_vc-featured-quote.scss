@@ -1,10 +1,14 @@
 .vc-featured-quote {
   background-color: var(--c-text);
   color: var(--c-bg);
-  padding-block: 3rem;
+  padding-block: 1.5rem;
+
+  @include breakpoint($bp-small) {
+    padding-block: 3rem;
+  }
 
   @include breakpoint($bp-large) {
-    padding-block: 6rem;
+    padding-block: 4rem;
   }
 }
 
@@ -67,7 +71,13 @@
 
 .vc-featured-quote__blockquote {
   text-wrap: balance;
-  margin-top: 0;
+  margin: 0 auto 0.5em auto;
+  > p {
+    margin: 0 0;
+  }
+  @include breakpoint($bp-large) {
+    margin: 0.5em auto;
+  }
 }
 
 
@@ -80,8 +90,10 @@
   }
 
   .vc-featured-quote__blockquote {
-    @include type($font-serif, 1.5em, $font-weight-bold, 1.4);
-
+    @include type($font-serif, 1.2em, $font-weight-bold, 1.4);
+    @include breakpoint($bp-med) {
+      @include type($font-serif, 1.8em, $font-weight-bold, 1.4);
+    }
     @include breakpoint($bp-large) {
       @include type($font-serif, 2.25em, $font-weight-bold, 1.4);
     }
@@ -89,12 +101,20 @@
 
   .vc-featured-quote__attr {
     font-weight: $font-weight-bold;
+    font-size: 0.8em;
     text-transform: uppercase;
+    @include breakpoint($bp-med) {
+      font-size: 1em;
+    }
+
   }
 
   .vc-featured-quote__attr-title {
-    @include type($font-sans-serif, 0.8em, $font-weight-medium, 1.4);
+    @include type($font-sans-serif, 0.6em, $font-weight-medium, 1.4);
     font-style: italic;
+    @include breakpoint($bp-large) {
+      @include type($font-sans-serif, 0.8em, $font-weight-medium, 1.4);
+    }
   }
 
   .vc-featured-quote--image {
@@ -157,7 +177,7 @@
   }
 
   .vc-featured-quote__blockquote {
-    @include type($font-serif, 1.5em, $font-weight-medium, 1.4);
+    @include type($font-serif, 1em, $font-weight-medium, 1.4);
 
     @include breakpoint($bp-large) {
       @include type($font-serif, 1.75em, $font-weight-medium, 1.4);
