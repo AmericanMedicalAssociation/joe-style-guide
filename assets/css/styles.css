@@ -1085,9 +1085,6 @@ article[dir=rtl] .joe__article-teaser__block .joe__article-teaser__desc {
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
 }
-:root[class*=vc-] .joe__primary-nav ul > .joe__utility-nav__item:first-child {
-  display: none;
-}
 
 body {
   /* stylelint-disable property-no-vendor-prefix */
@@ -6469,11 +6466,16 @@ main + .joe__footer {
 .vc-featured-quote {
   background-color: var(--c-text);
   color: var(--c-bg);
-  padding-block: 3rem;
+  padding-block: 1.5rem;
+}
+@media (min-width: 37.5em) {
+  .vc-featured-quote {
+    padding-block: 3rem;
+  }
 }
 @media (min-width: 75em) {
   .vc-featured-quote {
-    padding-block: 6rem;
+    padding-block: 4rem;
   }
 }
 
@@ -6551,7 +6553,15 @@ main + .joe__footer {
 
 .vc-featured-quote__blockquote {
   text-wrap: balance;
-  margin-top: 0;
+  margin: 0 auto 0.5em auto;
+}
+.vc-featured-quote__blockquote > p {
+  margin: 0 0;
+}
+@media (min-width: 75em) {
+  .vc-featured-quote__blockquote {
+    margin: 0.5em auto;
+  }
 }
 
 :root.vc-art .vc-featured-quote {
@@ -6562,9 +6572,17 @@ main + .joe__footer {
 }
 :root.vc-art .vc-featured-quote__blockquote {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   line-height: 1.4;
+}
+@media (min-width: 56.25em) {
+  :root.vc-art .vc-featured-quote__blockquote {
+    font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.4;
+  }
 }
 @media (min-width: 75em) {
   :root.vc-art .vc-featured-quote__blockquote {
@@ -6576,14 +6594,28 @@ main + .joe__footer {
 }
 :root.vc-art .vc-featured-quote__attr {
   font-weight: 700;
+  font-size: 0.8em;
   text-transform: uppercase;
+}
+@media (min-width: 56.25em) {
+  :root.vc-art .vc-featured-quote__attr {
+    font-size: 1em;
+  }
 }
 :root.vc-art .vc-featured-quote__attr-title {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 400;
   line-height: 1.4;
   font-style: italic;
+}
+@media (min-width: 75em) {
+  :root.vc-art .vc-featured-quote__attr-title {
+    font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.4;
+  }
 }
 @media (min-width: 75em) {
   :root.vc-art .vc-featured-quote--image .vc-featured-quote__blockquote {
@@ -6596,13 +6628,19 @@ main + .joe__footer {
 
 :root.vc-ethics .vc-featured-quote {
   position: relative;
-  -webkit-padding-before: 14rem;
-          padding-block-start: 14rem;
+  -webkit-padding-before: 6rem;
+          padding-block-start: 6rem;
+}
+@media (min-width: 75em) {
+  :root.vc-ethics .vc-featured-quote {
+    -webkit-padding-before: 8rem;
+            padding-block-start: 8rem;
+  }
 }
 :root.vc-ethics .vc-featured-quote::before {
   content: "";
   position: absolute;
-  top: 7rem;
+  top: 2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -6615,6 +6653,11 @@ main + .joe__footer {
   background-size: 0.8rem;
   opacity: 0.35;
 }
+@media (min-width: 75em) {
+  :root.vc-ethics .vc-featured-quote::before {
+    top: 4rem;
+  }
+}
 :root.vc-ethics .vc-featured-quote::after {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 6em;
@@ -6622,7 +6665,7 @@ main + .joe__footer {
   line-height: 1;
   content: "“";
   position: absolute;
-  top: 5rem;
+  top: 0.5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -6642,6 +6685,11 @@ main + .joe__footer {
   color: var(--c-button-bg);
   padding: 0 0.1em 0.2em;
 }
+@media (min-width: 75em) {
+  :root.vc-ethics .vc-featured-quote::after {
+    top: 2rem;
+  }
+}
 @media (min-width: 56.25em) {
   :root.vc-ethics .vc-featured-quote__image {
     -webkit-margin-before: -6rem;
@@ -6653,9 +6701,12 @@ main + .joe__footer {
 }
 :root.vc-ethics .vc-featured-quote__blockquote {
   font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1.4;
+}
+:root.vc-ethics .vc-featured-quote__blockquote > p {
+  margin: 0 0;
 }
 @media (min-width: 75em) {
   :root.vc-ethics .vc-featured-quote__blockquote {
@@ -6663,19 +6714,34 @@ main + .joe__footer {
     font-size: 1.75em;
     font-weight: 400;
     line-height: 1.4;
+    margin: 0.5em auto;
   }
 }
 :root.vc-ethics .vc-featured-quote__attr {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-size: 0.8em;
+}
+@media (min-width: 56.25em) {
+  :root.vc-ethics .vc-featured-quote__attr {
+    font-size: 1em;
+  }
 }
 :root.vc-ethics .vc-featured-quote__attr-title {
   font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: 400;
   line-height: 1.4;
   font-style: italic;
+}
+@media (min-width: 56.25em) {
+  :root.vc-ethics .vc-featured-quote__attr-title {
+    font-family: "franklin-gothic-urw", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.4;
+  }
 }
 :root.vc-ethics[data-theme=light] .vc-featured-quote::before {
   -webkit-filter: invert(1);
