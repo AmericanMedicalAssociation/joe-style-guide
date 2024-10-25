@@ -106,7 +106,6 @@
     @include breakpoint($bp-med) {
       font-size: 1em;
     }
-
   }
 
   .vc-featured-quote__attr-title {
@@ -129,12 +128,15 @@
 :root.vc-ethics {
   .vc-featured-quote {
     position: relative;
-    padding-block-start: 14rem;
+    padding-block-start: 6rem;
+    @include breakpoint($bp-large) {
+      padding-block-start: 8rem;
+    }
 
     &::before {
       content: '';
       position: absolute;
-      top: 7rem;
+      top: 2rem;
       left: 50%;
       transform: translateX(-50%);
       display: block;
@@ -145,13 +147,17 @@
       background-position: center top;
       background-size: 0.8rem;
       opacity: 0.35;
+
+      @include breakpoint($bp-large) {
+        top: 4rem;
+      }
     }
 
     &::after {
       @include type($font-sans-serif, 6em, $font-weight-medium, 1);
       content: '\201C';
       position: absolute;
-      top: 5rem;
+      top: 0.5rem;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -163,6 +169,10 @@
       border-radius: 50%;
       color: var(--c-button-bg);
       padding: 0 0.1em 0.2em;
+
+      @include breakpoint($bp-large) {
+        top: 2rem;
+      }
     }
   }
 
@@ -179,8 +189,12 @@
   .vc-featured-quote__blockquote {
     @include type($font-serif, 1em, $font-weight-medium, 1.4);
 
+    > p {
+      margin: 0 0;
+    }
     @include breakpoint($bp-large) {
       @include type($font-serif, 1.75em, $font-weight-medium, 1.4);
+      margin: 0.5em auto;
     }
   }
 
@@ -188,6 +202,11 @@
     font-weight: $font-weight-bold;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    font-size: 0.8em;
+
+    @include breakpoint($bp-med) {
+      font-size: 1em;
+    }
   }
 
   .vc-featured-quote__attr-title {
