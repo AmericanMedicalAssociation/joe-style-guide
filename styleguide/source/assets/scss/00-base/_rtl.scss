@@ -64,4 +64,16 @@ article[dir='rtl'] {
       direction: rtl;
     }
   }
+
+  /* Ensure title and summary fields are aligned to left IF direction is ltr */
+  article[dir='ltr'] {
+    .joe__article-teaser__block {
+      .joe__article-teaser__title,
+      .joe__article-teaser__desc {
+        text-align: left;
+        direction: ltr;
+      }
+    }
+  }
+
 }
