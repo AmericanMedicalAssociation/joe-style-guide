@@ -7,40 +7,52 @@
   display: flex;
   display: -webkit-flex;
   justify-content: flex-end;
-  
+
   .joe__button--tool {
     float: right;
     margin: 0 0 0 4px;
     position: relative;
-    
+
     @include breakpoint($bp-med) {
       margin: 0 0 0 8px;
     }
+
+    .altmetric-embed {
+      display: inline-block;
+      margin-left: 0.1em;
+      a {
+        cursor: unset;
+        text-decoration: none;
+      }
+      ._altmetric_score {
+        color: $white;
+      }
+    }
   }
-  
+
   .joe__tool-drawer {
-    
+
     .joe__button--tool {
       position: relative;
-      
+
       right: 119px;
       @include breakpoint($bp-med) {
         right: 134px;
       }
-      
+
       @include breakpoint($bp-large) {
         right: 142px;
       }
     }
   }
-  
+
   &.joe__article-tools--no-pdf .joe__tool-drawer .joe__button--tool {
     right: 52px;
-    
+
     @include breakpoint($bp-med) {
       right: 54px;
     }
-    
+
     @include breakpoint($bp-large) {
       right: 57px;
     }
