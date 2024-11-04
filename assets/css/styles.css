@@ -792,6 +792,7 @@ article[dir=rtl] {
   direction: ltr;
   /* Ensure references flow from right to left */
   /* Ensure title and summary fields are aligned to right */
+  /* Ensure title and summary fields are aligned to left IF direction is ltr */
 }
 article[dir=rtl] .joe__article-header .joe__article-header__title {
   text-align: right;
@@ -837,6 +838,11 @@ article[dir=rtl] .joe__article-teaser__block .joe__article-teaser__title,
 article[dir=rtl] .joe__article-teaser__block .joe__article-teaser__desc {
   text-align: right;
   direction: rtl;
+}
+article[dir=rtl] article[dir=ltr] .joe__article-teaser__block .joe__article-teaser__title,
+article[dir=rtl] article[dir=ltr] .joe__article-teaser__block .joe__article-teaser__desc {
+  text-align: left;
+  direction: ltr;
 }
 
 /* Slider */
@@ -2371,6 +2377,17 @@ table td {
   .joe__article-tools .joe__button--tool {
     margin: 0 0 0 8px;
   }
+}
+.joe__article-tools .joe__button--tool .altmetric-embed {
+  display: inline-block;
+  margin-left: 0.1em;
+}
+.joe__article-tools .joe__button--tool .altmetric-embed a {
+  cursor: unset;
+  text-decoration: none;
+}
+.joe__article-tools .joe__button--tool .altmetric-embed ._altmetric_score {
+  color: #ffffff;
 }
 .joe__article-tools .joe__tool-drawer .joe__button--tool {
   position: relative;
