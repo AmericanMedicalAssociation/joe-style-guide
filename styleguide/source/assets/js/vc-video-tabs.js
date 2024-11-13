@@ -12,10 +12,11 @@
   Drupal.behaviors.vc_video_tabs = {
     attach: function (context, settings) {
 
-      // Tabs based on https://inclusive-components.design/videoTabs-interfaces/
-      const videoTabs = document.querySelector('.vc-video-tabs__group');
+      // EWLJ-764: Select all tab groups on the page to handle multiple sets of tabs.
+      const videoTabsGroups = document.querySelectorAll('.vc-video-tabs__group');
 
-      if (videoTabs) {
+      // EWLJ-764: Loop through each video tab group and apply tab functionality.
+      videoTabsGroups.forEach((videoTabs) => {
         const tablist = videoTabs.querySelector('ul');
         const tabs = tablist.querySelectorAll('a');
         const panels = videoTabs.querySelectorAll('[id^="section"]');
@@ -41,10 +42,10 @@
         // Add the tablist role to the first <ul> in the .vc-video-tabs__group container
         tablist.setAttribute('role', 'tablist');
 
-        // Add semantics are remove user focusability for each tab
+        // Add semantics and remove user focusability for each tab
         Array.prototype.forEach.call(tabs, (tab, i) => {
           tab.setAttribute('role', 'tab');
-          tab.setAttribute('id', `tab ${i + 1}`);
+          tab.setAttribute('id', `tab-${i + 1}`); // EWLJ-764: Updated ID format for better uniqueness
           tab.setAttribute('tabindex', '-1');
           tab.parentNode.setAttribute('role', 'presentation');
 
@@ -85,7 +86,7 @@
         tabs[0].removeAttribute('tabindex');
         tabs[0].setAttribute('aria-selected', 'true');
         panels[0].hidden = false;
-      }
+      });
     }
   };
 })(jQuery, Drupal);
