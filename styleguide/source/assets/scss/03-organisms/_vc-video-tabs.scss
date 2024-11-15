@@ -30,25 +30,13 @@
   }
 }
 
-/* Mobile-specific styling for video aspect ratio */
-@media (max-width: $bp-med - 1) {
-  .vc-video-tabs__video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
-
-  .vc-video-tabs__video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/* Desktop and larger screens */
+.vc-video-tabs__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Sets default aspect ratio on larger screens */
+  overflow: hidden;
 }
-
 
 .vc-video-tabs__group [role='tablist'] {
   padding: 0;
@@ -85,7 +73,7 @@
     }
   }
 
-  li+li a {
+  li + li a {
     @include breakpoint(0 $bp-med) {
       border-top: 0;
     }
@@ -116,7 +104,7 @@
   }
 }
 
-// Tab content
+// Tab content for larger screens, ensuring 16:9 aspect ratio with fallback for iframe inside the tab panels
 .vc-video-tabs__group [role='tabpanel'] {
   position: relative;
   aspect-ratio: 16 / 9;
