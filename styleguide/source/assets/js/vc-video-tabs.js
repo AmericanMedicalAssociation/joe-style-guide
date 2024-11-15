@@ -15,6 +15,11 @@
       // EWLJ-764: Select all tab groups on the page to handle multiple sets of tabs.
       const videoTabsGroups = document.querySelectorAll('.vc-video-tabs__group');
 
+      // EWLJ-764: Check if NodeList.forEach is supported
+      if (!NodeList.prototype.forEach) {
+        NodeList.prototype.forEach = Array.prototype.forEach; // Polyfill for forEach on NodeList
+      }
+
       // EWLJ-764: Loop through each video tab group and apply tab functionality.
       videoTabsGroups.forEach((videoTabs) => {
         const tablist = videoTabs.querySelector('ul');
@@ -23,10 +28,11 @@
 
         // The tab switching function
         const switchTab = (oldTab, newTab) => {
-          newTab.focus();
+          // EWLJ-764: Prevent focus issues in Safari by adding a small delay on focus
+          setTimeout(() => newTab.focus(), 0);
+
           // Make the active tab focusable by the user (Tab key)
           newTab.removeAttribute('tabindex');
-          // Set the selected state
           newTab.setAttribute('aria-selected', 'true');
           oldTab.removeAttribute('aria-selected');
           oldTab.setAttribute('tabindex', '-1');
@@ -39,53 +45,63 @@
           panels[index].hidden = false;
         };
 
-        // Add the tablist role to the first <ul> in the .vc-video-tabs__group container
+        // EWLJ-764: Add the tablist role to the first <ul> in the .vc-video-tabs__group container
         tablist.setAttribute('role', 'tablist');
 
-        // Add semantics and remove user focusability for each tab
-        Array.prototype.forEach.call(tabs, (tab, i) => {
+        // EWLJ-764: Add semantics and remove user focusability for each tab
+        tabs.forEach((tab, i) => {
           tab.setAttribute('role', 'tab');
           tab.setAttribute('id', `tab-${i + 1}`); // EWLJ-764: Updated ID format for better uniqueness
           tab.setAttribute('tabindex', '-1');
           tab.parentNode.setAttribute('role', 'presentation');
 
-          // Handle clicking of tabs for mouse users
+          // EWLJ-764: Handle clicking of tabs for mouse users
           tab.addEventListener('click', (e) => {
             e.preventDefault();
-            const currentTab = tablist.querySelector('[aria-selected]');
+            const currentTab = tablist.querySelector('[aria-selected="true"]');
             if (e.currentTarget !== currentTab) {
               switchTab(currentTab, e.currentTarget);
             }
           });
 
-          // Handle keydown events for keyboard users
+          // EWLJ-764: Handle keydown events for keyboard users with cross-browser support
           tab.addEventListener('keydown', (e) => {
-            // Get the index of the current tab in the tabs node list
             const index = Array.prototype.indexOf.call(tabs, e.currentTarget);
-            // Work out which key the user is pressing and
-            // Calculate the new tab's index where appropriate
-            const dir = e.which === 37 ? index - 1 : e.which === 39 ? index + 1 : e.which === 40 ? 'down' : null;
+            const dir = e.key === 'ArrowLeft' ? index - 1 : e.key === 'ArrowRight' ? index + 1 : e.key === 'ArrowDown' ? 'down' : null;
             if (dir !== null) {
               e.preventDefault();
-              // If the down key is pressed, move focus to the open panel,
-              // otherwise switch to the adjacent tab
-              return dir === 'down' ? panels[i].focus() : tabs[dir] ? switchTab(e.currentTarget, tabs[dir]) : 'undefined';
+              if (dir === 'down') {
+                panels[i].focus();
+              } else if (tabs[dir]) {
+                switchTab(e.currentTarget, tabs[dir]);
+              }
             }
           });
         });
 
-        // Add tab panel semantics and hide them all
-        Array.prototype.forEach.call(panels, (panel, i) => {
+        // EWLJ-764: Add tab panel semantics and hide them all initially
+        panels.forEach((panel, i) => {
           panel.setAttribute('role', 'tabpanel');
           panel.setAttribute('tabindex', '-1');
           panel.setAttribute('aria-labelledby', tabs[i].id);
           panel.hidden = true;
         });
 
-        // Initially activate the first tab and reveal the first tab panel
+        // EWLJ-764: Initially activate the first tab and reveal the first tab panel
         tabs[0].removeAttribute('tabindex');
         tabs[0].setAttribute('aria-selected', 'true');
         panels[0].hidden = false;
+        
+        // EWLJ-764: Force a resize after the first load to ensure the correct aspect ratio
+        window.addEventListener('load', () => {
+          panels.forEach(panel => {
+            const iframe = panel.querySelector('iframe');
+            if (iframe) {
+              iframe.style.height = '100%'; // Reapply height to enforce correct ratio
+              iframe.style.width = '100%';
+            }
+          });
+        });
       });
     }
   };
