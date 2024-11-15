@@ -26,6 +26,17 @@
         const tabs = tablist.querySelectorAll('a');
         const panels = videoTabs.querySelectorAll('[id^="section"]');
 
+        // EWLJ-764: Helper function to resize iframe videos when tab is activated or page loads
+        const resizeIframe = () => {
+          panels.forEach(panel => {
+            const iframe = panel.querySelector('iframe');
+            if (iframe) {
+              iframe.style.height = '100%';
+              iframe.style.width = '100%';
+            }
+          });
+        };
+
         // The tab switching function
         const switchTab = (oldTab, newTab) => {
           // EWLJ-764: Prevent focus issues in Safari by adding a small delay on focus
@@ -43,6 +54,9 @@
           const oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
           panels[oldIndex].hidden = true;
           panels[index].hidden = false;
+
+          // EWLJ-764: Resize iframe when tab is activated
+          resizeIframe();
         };
 
         // EWLJ-764: Add the tablist role to the first <ul> in the .vc-video-tabs__group container
@@ -92,16 +106,11 @@
         tabs[0].setAttribute('aria-selected', 'true');
         panels[0].hidden = false;
         
-        // EWLJ-764: Force a resize after the first load to ensure the correct aspect ratio
-        window.addEventListener('load', () => {
-          panels.forEach(panel => {
-            const iframe = panel.querySelector('iframe');
-            if (iframe) {
-              iframe.style.height = '100%'; // Reapply height to enforce correct ratio
-              iframe.style.width = '100%';
-            }
-          });
-        });
+        // EWLJ-764: Trigger resize after the first load to ensure the correct aspect ratio
+        window.addEventListener('load', resizeIframe);
+
+        // EWLJ-764: Trigger resize on window resize to handle changes in viewport dimensions
+        window.addEventListener('resize', resizeIframe);
       });
     }
   };
