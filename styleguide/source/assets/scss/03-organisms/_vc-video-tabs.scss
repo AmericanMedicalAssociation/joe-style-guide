@@ -30,6 +30,14 @@
   }
 }
 
+/* Desktop and larger screens */
+.vc-video-tabs__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Sets default aspect ratio on larger screens */
+  overflow: hidden;
+}
+
 .vc-video-tabs__group [role='tablist'] {
   padding: 0;
   margin: 0 0 0.5rem;
@@ -65,7 +73,7 @@
     }
   }
 
-  li+li a {
+  li + li a {
     @include breakpoint(0 $bp-med) {
       border-top: 0;
     }
@@ -96,7 +104,7 @@
   }
 }
 
-// Tab content
+// Tab content for larger screens, ensuring 16:9 aspect ratio with fallback for iframe inside the tab panels
 .vc-video-tabs__group [role='tabpanel'] {
   position: relative;
   aspect-ratio: 16 / 9;
