@@ -172,6 +172,13 @@
   }
 }
 
+.modal__third {
+    grid-column: span 5;
+    margin-block-start: 0;
+    align-self: center;
+    padding-block-start: 1.5rem;
+}
+
 .vc-modal__controls {
   @include breakpoint(0 $bp-med) {
     position: fixed;
