@@ -5423,6 +5423,31 @@ blockquote {
     text-align: left;
   }
 }
+.joe__footer .joe__col-33 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+@media (min-width: 37.5em) {
+  .joe__footer .joe__col-33 {
+    display: block;
+  }
+}
+.joe__footer .joe__col-33 .joe__footer-brand {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 100%;
+}
+.joe__footer .joe__col-33 .joe__footer-second {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
 
 main + .joe__footer {
   -webkit-box-shadow: inherit;
@@ -5445,10 +5470,16 @@ main + .joe__footer {
   .joe__footer-brand {
     float: right;
     display: inline-block;
-    margin-top: 1.35em;
+    margin-top: 3px;
+    margin-bottom: 10px;
     margin-left: 0.75em;
     padding-left: 0.75em;
+  }
+}
+@media (min-width: 56.25em) {
+  .joe__footer-brand {
     width: 150px;
+    min-height: 77px;
   }
 }
 
@@ -5460,6 +5491,72 @@ main + .joe__footer {
   .joe__footer__block {
     margin-left: 1.5em;
     margin-right: 0;
+  }
+}
+
+.joe__footer-second {
+  clear: both;
+  margin-top: 0.5em;
+  float: right;
+}
+@media (min-width: 56.25em) {
+  .joe__footer-second {
+    margin-top: 0;
+  }
+}
+@media (min-width: 75em) {
+  .joe__footer-second {
+    margin-top: 0.5em;
+  }
+}
+.joe__footer-second .form-item > label {
+  display: none;
+}
+.joe__footer-second .form-item-markup {
+  font-size: 0.65em;
+  line-height: 18px;
+  clear: both;
+}
+.joe__footer-second .form-item-markup br {
+  display: none;
+}
+.joe__footer-second .form-item-email {
+  float: left;
+  width: 60%;
+  margin-right: 0.5em;
+}
+@media (min-width: 75em) {
+  .joe__footer-second .form-item-email {
+    width: 66%;
+  }
+}
+.joe__footer-second .webform-actions {
+  float: left;
+  width: 22%;
+  padding-top: 0.3em;
+}
+@media (min-width: 37.5em) {
+  .joe__footer-second .webform-actions {
+    padding-top: 0.2em;
+  }
+}
+@media (min-width: 56.25em) {
+  .joe__footer-second .webform-actions {
+    padding-top: 0;
+    width: 20%;
+  }
+}
+.joe__footer-second .webform-actions input {
+  font-size: 0.8em;
+}
+@media (min-width: 37.5em) {
+  .joe__footer-second .webform-actions input {
+    font-size: 0.6em;
+  }
+}
+@media (min-width: 56.25em) {
+  .joe__footer-second .webform-actions input {
+    font-size: 0.8em;
   }
 }
 
