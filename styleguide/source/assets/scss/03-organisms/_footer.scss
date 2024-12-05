@@ -8,6 +8,21 @@
   @include breakpoint($bp-small) {
     text-align: left;
   }
+
+  .joe__col-33 {
+    display: flex;
+    flex-flow: column;
+    @include breakpoint($bp-small) {
+      display: block;
+    }
+    .joe__footer-brand {
+      order: 3;
+      width: 100%;
+    }
+    .joe__footer-second {
+      order: 0;
+    }
+  }
 }
 
 main + .joe__footer {
@@ -33,11 +48,17 @@ main + .joe__footer {
   @include breakpoint($bp-small) {
     float: right;
     display: inline-block;
-    margin-top: 1.35em;
+    margin-top: 3px;
+    margin-bottom: 10px;
     margin-left: .75em;
     padding-left:.75em;
-    width: 150px;
   }
+
+  @include breakpoint($bp-med) {
+    width: 150px;
+    min-height: 77px;
+  }
+
 }
 
 .joe__footer__block {
@@ -51,5 +72,58 @@ main + .joe__footer {
   @include breakpoint($bp-small) {
     margin-left: 1.5em;
     margin-right: 0;
+  }
+}
+
+.joe__footer-second {
+  clear: both;
+  margin-top: 0.5em;
+  float: right;
+  @include breakpoint($bp-med) {
+    margin-top: 0;
+  }
+  @include breakpoint($bp-large) {
+    margin-top: 0.5em;
+  }
+  .form-item > label {
+    display: none;
+  }
+  .form-item-markup {
+    font-size: 0.65em;
+    line-height: 18px;
+    clear: both;
+    br {
+      display: none;
+    }
+  }
+  .form-item-email {
+    float: left;
+    width: 60%;
+    margin-right: 0.5em;
+    @include breakpoint($bp-large) {
+      width: 66%;
+    }
+  }
+  .webform-actions {
+    float: left;
+    width: 22%;
+    padding-top: 0.3em;
+    @include breakpoint($bp-small) {
+      padding-top: 0.2em;
+    }
+    @include breakpoint($bp-med) {
+      padding-top: 0;
+      width: 20%;
+    }
+    input {
+      font-size: 0.8em;
+      @include breakpoint($bp-small) {
+        font-size: 0.6em;
+      }
+      @include breakpoint($bp-med) {
+        font-size: 0.8em;
+      }
+
+    }
   }
 }
