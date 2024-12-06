@@ -4,17 +4,34 @@
   border-top: 1px solid $black-05;
   border-left: 1px solid $black-05;
   border-right: 1px solid $black-05;
-  display: none;
   position: absolute;
   background: $white;
   min-width: 250px;
   z-index: 10;
   left: 0;
   top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  a {
+    transition: none;
+  }
 
   :root[class*='vc-'] & {
     background: var(--c-bg);
     border: 1px solid var(--c-text);
     color: var(--c-text);
+  }
+}
+
+sup {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .ama__tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
