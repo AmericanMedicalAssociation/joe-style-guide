@@ -18,7 +18,9 @@
     border-radius: 2.5rem;
     padding: 1rem;
     margin: 0;
-  
+    max-width: 76px;
+    max-height: 76px;
+
     span {
       display: flex;
       justify-content: center;
@@ -47,7 +49,7 @@
         margin-inline: 0.5rem;
       }
     }
-    
+
     svg path {
       fill: var(--c-button-text);
     }

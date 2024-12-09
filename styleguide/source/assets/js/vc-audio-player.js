@@ -12,7 +12,7 @@
   Drupal.behaviors.vc_audio_player = {
     attach: function (context, settings) {
       const audioButtons = document.querySelectorAll(
-        ".vc-audio-player__button"
+        ".vc-audio-player__button__old"
       );
 
       if (audioButtons) {
