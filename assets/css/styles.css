@@ -4373,6 +4373,8 @@ blockquote {
   border-radius: 2.5rem;
   padding: 1rem;
   margin: 0;
+  max-width: 76px;
+  max-height: 76px;
 }
 :root[class*=vc-] .vc-audio-player__button span {
   display: -webkit-box;
@@ -8477,15 +8479,6 @@ h2.vc-hero-ethics__flag-type {
     -webkit-margin-before: 0;
             margin-block-start: 0;
   }
-}
-
-.modal__third {
-  grid-column: span 5;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  align-self: center;
-  -webkit-padding-before: 1.5rem;
-          padding-block-start: 1.5rem;
 }
 
 @media (min-width: 0) and (max-width: 56.25em) {
