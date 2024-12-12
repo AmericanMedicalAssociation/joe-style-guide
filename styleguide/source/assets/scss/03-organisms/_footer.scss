@@ -85,6 +85,10 @@ main + .joe__footer {
   @include breakpoint($bp-large) {
     margin-top: 0.5em;
   }
+  .joe__rail-cta__text,
+  .joe__rail-cta__title {
+    display: none;
+  }
   .form-item > label {
     display: none;
   }
