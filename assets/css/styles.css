@@ -5511,6 +5511,10 @@ main + .joe__footer {
     margin-top: 0.5em;
   }
 }
+.joe__footer-second .joe__rail-cta__text,
+.joe__footer-second .joe__rail-cta__title {
+  display: none;
+}
 .joe__footer-second .form-item > label {
   display: none;
 }
