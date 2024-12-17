@@ -55,6 +55,13 @@
               },
             ],
           });
+
+          // Fix for aria-hidden on slick slider for screen reader use
+          $(this).on('init afterChange', function(event, slick, currentSlide) {
+            setTimeout(function() {
+                $('.slick-slide.slick-current').attr('aria-hidden', false);
+            }, 100);
+          });
         });
 
         // Artwork slider
