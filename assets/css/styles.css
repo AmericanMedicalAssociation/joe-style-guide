@@ -820,9 +820,6 @@ article[dir=rtl] .joe__references__list {
   text-align: left;
   direction: ltr;
 }
-article[dir=rtl] .article_abstract > h2 {
-  text-align: left;
-}
 article[dir=rtl] .article_abstract p:first-of-type:not([dir=rtl]) {
   text-align: left;
 }
@@ -2038,6 +2035,7 @@ span[class^=icon-] {
 
 /* Links */
 a,
+.joe__filter-button.reset,
 .joe__link--reversed,
 .joe__link--black,
 input[type=reset],
@@ -2048,9 +2046,11 @@ input[type=reset],
   transition: all 0.3s ease;
 }
 a:hover, a:focus,
+.joe__filter-button.reset:hover,
 .joe__link--reversed:hover,
 .joe__link--black:hover,
 input[type=reset]:hover,
+.joe__filter-button.reset:focus,
 .joe__link--reversed:focus,
 .joe__link--black:focus,
 input[type=reset]:focus,
@@ -2060,6 +2060,7 @@ input[type=reset]:focus,
   text-decoration: underline;
 }
 .joe__article p a,
+.joe__article p .joe__filter-button.reset,
 .joe__article p .joe__link--reversed,
 .joe__article p .joe__link--black,
 .joe__article p input[type=reset],
@@ -2067,12 +2068,15 @@ input[type=reset]:focus,
   text-decoration: underline;
 }
 .joe__article p a:active, .joe__article p a:hover, .joe__article p a:focus,
+.joe__article p .joe__filter-button.reset:active,
 .joe__article p .joe__link--reversed:active,
 .joe__article p .joe__link--black:active,
 .joe__article p input[type=reset]:active,
+.joe__article p .joe__filter-button.reset:hover,
 .joe__article p .joe__link--reversed:hover,
 .joe__article p .joe__link--black:hover,
 .joe__article p input[type=reset]:hover,
+.joe__article p .joe__filter-button.reset:focus,
 .joe__article p .joe__link--reversed:focus,
 .joe__article p .joe__link--black:focus,
 .joe__article p input[type=reset]:focus,
@@ -3466,6 +3470,25 @@ blockquote {
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.joe__filter-button.reset {
+  font-family: "museo-slab", Georgia, Times, "Times New Roman", serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.25;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #f2ce5a;
 }
 
 .joe__filter-button[type=submit] {
