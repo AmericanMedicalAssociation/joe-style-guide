@@ -28,7 +28,6 @@
         // Take <sup> number and use it to get the reference
         var $lists = $('.joe__references__list');
         var $reference = $lists.length > 1 ? $lists.eq(1).find('li').eq($supNumber) : $lists.eq(0).find('li').eq($supNumber);
-
         // Prevent the hover function from cloning the reference more than once
         if (!$(this).find('.ama__tooltip').length) {
           // Append a div with the reference to the <sup>
