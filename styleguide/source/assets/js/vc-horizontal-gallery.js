@@ -17,6 +17,16 @@
         '.vc-horizontal-gallery__artwork'
       );
       const modalArtwork = $('.vc-horizontal-gallery__artwork-items');
+      function stopAllPlayers() {
+        // Stop all audio players
+        $(".jp__player").each(function() {
+          $(this).jPlayer("stop");
+        });
+        // Stop all youtube
+        $('.vc-featured-media__video iframe,.youtube-iframe').each(function(){
+          this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+        });
+      }
 
       if (modalArtwork) {
         $('.vc-modal').appendTo('body');
@@ -45,6 +55,13 @@
               },
             ],
           });
+
+          // Fix for aria-hidden on slick slider for screen reader use
+          $(this).on('init afterChange', function(event, slick, currentSlide) {
+            setTimeout(function() {
+                $('.slick-slide.slick-current').attr('aria-hidden', false);
+            }, 100);
+          });
         });
 
         // Artwork slider
@@ -66,7 +83,9 @@
         });
 
         // Initate modal
-        MicroModal.init();
+        MicroModal.init({
+          onClose: modal => stopAllPlayers(),
+        });
 
         // Open to correct artwork when clicked
         modalButton.forEach((e) => {
@@ -75,7 +94,9 @@
               'slickGoTo',
               e.dataset.slidenum
             );
-
+            $(".jp__player").each(function(index) {
+              stopAllPlayers();
+            });
             $('.vc-modal .vc-featured-media').each(function () {
               setTimeout(() => {
                 const modalFiguresHeight = $(this)
@@ -93,7 +114,55 @@
             });
           });
         });
+
       }
+
+      $(".slick-prev, .slick-next").on('click', function() {
+        stopAllPlayers();
+      });
+
+      $(".jp__player").each(function(index) {
+        var idPlayer = $(this).attr("id"),
+          audioID = $(this).attr("data-audio-id");
+
+        // console.log(idPlayer+" : ");
+        // console.log($(this).attr("data-audio-id"));
+
+        $("#"+idPlayer).jPlayer({
+          ready: function () {
+            var that = this;
+            $.ajax({
+              url: 'https://html5-player.libsyn.com/embed/getitemdetails',
+              type: "GET",
+              data : {
+                item_id : audioID,
+                height : "480",
+                autoplay : "false",
+                thumbnail : "0",
+              },
+              success: function(data) {
+                //update the embed code
+                $(that).jPlayer("setMedia", {
+                  mp3: data.download_link // Defines the mp3 url
+                });
+                $("#"+idPlayer+"-jp_container .vc-audio-player__label").text(data.item_title);
+              }
+            });
+
+          },
+          play: function() {
+            // Stop all youtube
+            $('.vc-featured-media__video iframe,.youtube-iframe').each(function(){
+              this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+            });
+            $(this).jPlayer("pauseOthers"); // pause all players except this one.
+          },
+          cssSelectorAncestor: "#"+idPlayer+"-jp_container",
+          supplied: "mp3",
+          wmode: "window"
+        });
+      });
+
     },
   };
 })(jQuery, Drupal);

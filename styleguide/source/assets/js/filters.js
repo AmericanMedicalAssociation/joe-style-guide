@@ -112,6 +112,36 @@
       // Apply Chosen on the sort-by select box.
       $('.joe__search-bar .form-item-sort-by .form-select').chosen( {disable_search: true} );
 
+      // Add an ID to the dropdown for ARIA controls
+      var $chosenDropdown = $('#edit_sort_by__2_chosen').find('.chosen-drop');
+      if ($chosenDropdown.length) {
+        $chosenDropdown.attr('id', 'edit_sort_by__2_chosen_drop');
+      }
+
+      // Apply appropriate ARIA attributes
+      var $chosenElement = $('#edit_sort_by__2_chosen');
+      if ($chosenElement.length) {
+        $chosenElement.attr({
+          'aria-label': 'Sort by',
+          'role': 'combobox',
+          'aria-controls': 'edit_sort_by__2_chosen_drop',
+          'aria-expanded': 'false'
+        });
+
+        // Use MutationObserver to watch for class changes
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'class') {
+              var isExpanded = $chosenElement.hasClass('chosen-with-drop');
+              $chosenElement.attr('aria-expanded', isExpanded ? 'true' : 'false');
+            }
+          });
+        });
+
+        // Configure the observer to watch for attribute changes
+        observer.observe($chosenElement[0], { attributes: true });
+      }
+
       // On narrow screens hide all filters and expose them when clicking on a button.
       var filterTrigger = $('.joe__filters--trigger');
       var filters = $('.joe__filters');

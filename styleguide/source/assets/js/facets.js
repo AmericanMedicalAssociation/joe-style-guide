@@ -15,14 +15,22 @@
         $('.joe__facet').each(function () {
 
           var title = $(this).find('.fieldset-legend');
+          var menu = $(this).find('.fieldset-wrapper .form-checkboxes');
 
-          title.click(function () {
+          title.attr('aria-controls', menu.attr('id'));
+          title.attr('tabindex', '0');
+
+          function toggleFacet() {
             $(this).toggleClass('expanded').parent().next().slideToggle();
-          });
-
-          if ($(this).find('input').is(':checked')) {
-            title.addClass('expanded').parent().next().slideDown();
           }
+
+          title.click(toggleFacet);
+
+          title.keydown(function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13 || e.key === ' ' || e.keyCode === 32) {
+              toggleFacet.call(this);
+            }
+          });
         });
       }
       init()
