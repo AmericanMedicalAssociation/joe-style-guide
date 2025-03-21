@@ -128,7 +128,7 @@ input[type='radio'] {
 }
 
 .facet-dropdown-items ul {
-  padding: 0;
+  padding: 0 0 0 2px;
 
   li.facet-item {
     display: flex;
@@ -186,6 +186,10 @@ input[type='radio'] {
       outline: white dotted 2px;
     }
 
+    input[type="checkbox"]:focus + label span.facet-item__value {
+      text-decoration: underline;
+    }
+
     a {
       color: white;
     }
@@ -213,10 +217,10 @@ button {
   }
 
   &.facet-dropdown-toggle {
-    display: flex;
+    display: flex;    
     align-items: center;
     background: transparent;
-    padding-left: 0;
+    padding-left: 2px;
 
     &:hover {
       cursor: pointer;
