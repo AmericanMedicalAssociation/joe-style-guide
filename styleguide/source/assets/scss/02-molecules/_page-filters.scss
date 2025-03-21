@@ -82,7 +82,7 @@
     text-transform: uppercase;
     font-weight: bold;
 
-    &:hover {
+    &:hover { 
       cursor: pointer;
     }
   }
@@ -139,6 +139,10 @@
     background-color: $orange;
     background: $orange;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .joe__filter-button[type="reset"] {
@@ -146,6 +150,12 @@
 }
 
 .joe__facet {
+  &:focus {
+    .fieldset-legend {
+      outline: 1px solid $white;
+    }
+  }
+
   .form-wrapper {
     margin-top: 1em;
 
@@ -173,15 +183,32 @@
     }
   }
 
+  .facet-dropdown-items {
+    // To show full focus outline
+    padding: 1px 0 0 2px;
+  }
+
   .facet-dropdown-items .form-item {
     display: flex;
     margin-bottom: 10px;
     color: $white;
 
+    label:hover {
+      cursor: pointer;
+    }
 
     input[type="checkbox"] {
       position: absolute;
       opacity: 0;
+
+      &:focus {
+        + label{
+          text-decoration: underline;
+          &:before {
+            outline: white dotted 2px;
+          }
+        }
+      }
 
       + label {
         padding-left: 32px;
