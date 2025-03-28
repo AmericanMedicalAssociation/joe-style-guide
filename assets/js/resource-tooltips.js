@@ -11,8 +11,9 @@
   Drupal.behaviors.resourceToolips = {
     attach: function () {
       // Separates the sup tags that have multiple numbers into individual sup tags
-      $('article sup, aside sup').each(function () {
+      $('article sup, aside sup').each(function ()  {
         var $sup = $(this);
+        // Get the text inside the <sup> tag
         var supText = $sup.text().trim();
         if (supText.indexOf(',') > -1) {
           $sup.replaceWith($sup.text().split(',').map(function (el, i) {
@@ -21,33 +22,40 @@
           }));
         }
       });
-      // Sup on hover connect it to the references
-      $('article sup, aside sup').hover(function () {
-        // Find the <sup> tag number and convert it into an integer
-        var $supNumber = parseInt($(this).text()) - 1;
-        // Take <sup> number and use it to get the reference
-        var $lists = $('.joe__references__list');
-        var $reference = $lists.length > 1 ? $lists.eq(1).find('li').eq($supNumber) : $lists.eq(0).find('li').eq($supNumber);
-        // Prevent the hover function from cloning the reference more than once
-        if (!$(this).find('.ama__tooltip').length) {
-          // Append a div with the reference to the <sup>
-          if ($reference.html() === undefined) {
-            $(this).append('<div class="ama__tooltip">Reference not found.</div>');
-            // Show the reference tooltip
-            $(this).children('.ama__tooltip').fadeIn()
-          } else {
-            $(this).append('<div class="ama__tooltip">' + $reference.html() + '</div>');
-            // Show the reference tooltip
-            $(this).children('.ama__tooltip').fadeIn()
-          }
-        } else {
-          $(this).find('.ama__tooltip').fadeIn();
+
+      // Create and add tooltips to the sup tags
+      $('article sup, aside sup').each(function () {
+        var $sup = $(this);
+        // Get the text inside the <sup> tag
+        var supText = $sup.text().trim();
+
+        // Check if supText is not empty or null
+        if (!supText) {
+          return;
         }
-      }, function () {
-        // Hide reference tooltip
-        $(this).find('.ama__tooltip').fadeOut();
-      }
-      );
+
+        // Find the <sup> tag number and convert it into an integer
+        var $supNumber = parseInt(supText) - 1;
+
+        // Add tabindex and aria attributes to the <sup> tag for navigation and screen readers
+        $sup.attr({
+          'tabindex': '0',
+          'aria-label': 'Footnote Link ' + supText,
+          'aria-describedby': 'reference-' + $supNumber
+        });
+
+        // Take <sup> number and use it to get the reference
+        var $reference = $('.joe__references__list li').eq($supNumber);
+        // Create a unique id for each reference
+        var $referenceId = 'reference-' + $supNumber;
+
+        // Prevent the function from cloning the reference more than once
+        if (!$sup.find('.ama__tooltip').length) {
+          // Append the reference to the <sup> tag
+          var tooltipContent = $reference.html() || 'Reference not found.';
+          $sup.append('<div id="' + $referenceId + '" class="ama__tooltip">' + tooltipContent + '</div>');
+        }
+      });
     }
   };
 })(jQuery, Drupal);
