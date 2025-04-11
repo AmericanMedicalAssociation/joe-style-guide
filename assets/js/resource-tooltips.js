@@ -45,7 +45,9 @@
         });
 
         // Take <sup> number and use it to get the reference
-        var $reference = $('.joe__references__list li').eq($supNumber);
+        var $lists = $('.joe__references__list');
+        var $reference = $lists.length > 1 ? $lists.eq(1).find('li').eq($supNumber) : $lists.eq(0).find('li').eq($supNumber);
+
         // Create a unique id for each reference
         var $referenceId = 'reference-' + $supNumber;
 
