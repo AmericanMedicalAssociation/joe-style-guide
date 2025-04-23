@@ -1,0 +1,191 @@
+.joe__layout--topics-three-column { /* Updated class name */
+
+    .cssgrid & {
+      display: grid;
+      display: -ms-grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      // min-height: 30em;
+      -ms-grid-columns: 1fr;
+      -ms-grid-rows: auto;
+  
+      @include breakpoint($bp-med) {
+        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+        grid-template-rows: auto;
+        -ms-grid-columns: 1fr 1fr 1fr; /* Three equal columns */
+        -ms-grid-rows: auto; /* Adjust rows as needed */
+      }
+    }
+  
+    // Flexbox fallback for CSS Grids
+    .no-cssgrid.flexbox & {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      align-items: stretch;
+  
+      @include breakpoint($bp-med) {
+        flex-direction: row;
+      }
+    }
+  
+    // Fallback for browsers without css grid or flexbox
+    .no-cssgrid.no-flexbox & {
+      @extend %clearfix;
+    }
+  
+    .joe__topics-col-33,
+    .joe__topics-col-33-second,
+    .joe__topics-col-33-third {
+      ul {
+        list-style-type: none;
+        padding-left: 0; /* Remove default padding */
+        margin-left: 0; /* Remove default margin */
+      }
+    }
+  }
+  
+  .joe__topics-col-33 { /* First column - Renamed */
+    grid-column: 1 / 1;
+    grid-row: 1;
+    -ms-grid-row: 1;
+    min-width: 0;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  
+    @include breakpoint($bp-med) {
+      @include gutter($margin-right-half...); /* Apply right gutter */
+      padding-left: 0;
+      grid-column: 1 / 2; /* Span one column */
+      grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1; /* Span one column */
+      -ms-grid-row: 1;
+    }
+  
+    // Flexbox fallback for CSS Grids
+    .no-cssgrid & {
+  
+      @include breakpoint($bp-med) {
+        width: 33.333%; /* Approximately one-third width */
+      }
+    }
+  
+    // Fallback for browsers without css grid or flexbox
+    .no-cssgrid.no-flexbox & {
+  
+      @include breakpoint($bp-med) {
+        clear: left;
+        display: inline-block;
+        float: left;
+      }
+    }
+  }// end col one
+  
+  .joe__topics-col-33-second { /* Second column - Renamed */
+    grid-column: 1 / 1;
+    grid-row: 2;
+    -ms-grid-row: 2;
+    min-width: 0;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  
+    @include breakpoint($bp-med) {
+      @include gutter($margin-left-half...); /* Apply left gutter */
+      padding: 0;
+      grid-column: 2 / 3; /* Second column in the grid */
+      grid-row: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+    }
+  
+    // Flexbox fallback for CSS Grids
+    .no-cssgrid & {
+  
+      @include breakpoint($bp-med) {
+        width: 33.333%; /* Approximately one-third width */
+      }
+    }
+  
+    // Fallback for browsers without css grid or flexbox
+    .no-cssgrid.no-flexbox & {
+  
+      @include breakpoint($bp-med) {
+        display: inline-block;
+        float: left;
+      }
+    }
+  } // end col-two (now the second column)
+  
+  
+  .joe__topics-col-33-third { /* Third column - Renamed */
+    grid-column: 1 / 1;
+    grid-row: 3;
+    -ms-grid-row: 3;
+    min-width: 0;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  
+    @include breakpoint($bp-med) {
+      @include gutter($margin-left-half...); /* Apply left gutter */
+      padding: 0;
+      grid-column: 3 / 4; /* Third column in the grid */
+      grid-row: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+    }
+  
+    // Flexbox fallback for CSS Grids
+    .no-cssgrid & {
+  
+      @include breakpoint($bp-med) {
+        width: 33.333%; /* Approximately one-third width */
+      }
+    }
+  
+    // Fallback for browsers without css grid or flexbox
+    .no-cssgrid.no-flexbox & {
+  
+      @include breakpoint($bp-med) {
+        display: inline-block;
+        float: left;
+      }
+    }
+  } // end col-three
+
+
+.joe__list--topics h3 {
+  color: #3f3f6d;
+  }
+
+  .topics-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px;
+  }
+
+  .topics-list .field { /* Assuming your field output is wrapped in a div with class 'field' */
+     flex-grow: 1; /* Allow the text part to take up available space */
+     margin-right: 10px; /* Optional: Add space between text and icon */
+  }
+
+  .topics-list a {
+    display: inline-flex; /* Use flexbox to center the arrow */
+    align-items: center; /* Vertically center the arrow */
+    justify-content: center; /* Horizontally center the arrow */
+    margin-left: 10px; /* Keep the margin */
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 30px; /* Adjust as needed for the circle size */
+    height: 30px; /* Adjust as needed */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #3f3f6d; /* Dark blue background */
+    color: white; /* White arrow color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Adjust arrow size if it's a text character */
+  }
+  
+  .topics-list a:hover {
+    background-color: #1f1f52; /* Darker blue on hover */
+  }
+  
