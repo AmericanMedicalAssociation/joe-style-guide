@@ -41,6 +41,9 @@
   .joe__topics__label {
     color: $white;
     margin-bottom: 2em;
+    @include breakpoint($bp-med) {
+      font-size: clamp(1.25rem, 1.077rem + 0.765vw, 1.7rem);
+    }
   }
 
   .joe__featured-listing-rows,
