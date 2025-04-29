@@ -1,6 +1,7 @@
-.joe__layout--topics-three-column { /* Updated class name */
+.joe__layout--topics-three-column { 
+   padding-bottom: 4em;
 
-    .cssgrid & {
+  .cssgrid & {
       display: grid;
       display: -ms-grid;
       grid-template-columns: 1fr;
@@ -8,186 +9,216 @@
       // min-height: 30em;
       -ms-grid-columns: 1fr;
       -ms-grid-rows: auto;
-  
+
       @include breakpoint($bp-med) {
-        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-        grid-template-rows: auto;
-        -ms-grid-columns: 1fr 1fr 1fr; /* Three equal columns */
-        -ms-grid-rows: auto; /* Adjust rows as needed */
+          grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+          grid-template-rows: auto;
+          -ms-grid-columns: 1fr 1fr 1fr; /* Three equal columns */
+          -ms-grid-rows: auto; /* Adjust rows as needed */
       }
-    }
-  
-    // Flexbox fallback for CSS Grids
-    .no-cssgrid.flexbox & {
+  }
+
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid.flexbox & {
       display: flex;
       display: -webkit-flex;
       flex-direction: column;
       align-items: stretch;
-  
+
       @include breakpoint($bp-med) {
-        flex-direction: row;
+          flex-direction: row;
       }
-    }
-  
-    // Fallback for browsers without css grid or flexbox
-    .no-cssgrid.no-flexbox & {
-      @extend %clearfix;
-    }
-  
-    .joe__topics-col-33,
-    .joe__topics-col-33-second,
-    .joe__topics-col-33-third {
-      ul {
-        list-style-type: none;
-        padding-left: 0; /* Remove default padding */
-        margin-left: 0; /* Remove default margin */
-      }
-    }
   }
-  
-  .joe__topics-col-33 { /* First column - Renamed */
-    grid-column: 1 / 1;
-    grid-row: 1;
-    -ms-grid-row: 1;
-    min-width: 0;
-    padding-left: $gutter-mobile;
-    padding-right: $gutter-mobile;
-  
-    @include breakpoint($bp-med) {
-      @include gutter($margin-right-half...); /* Apply right gutter */
-      padding-left: 0;
+
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+      @extend %clearfix;
+  }
+
+  .joe__topics-col-33,
+  .joe__topics-col-33-second,
+  .joe__topics-col-33-third {
+      ul {
+          list-style-type: none;
+          padding-left: 0; /* Remove default padding */
+          margin-left: 0; /* Remove default margin */
+      }
+  }
+}
+
+.joe__topics-col-33 { /* First column - Renamed */
+  grid-column: 1 / 1;
+  grid-row: 1;
+  -ms-grid-row: 1;
+  min-width: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include breakpoint($bp-med) {
+      /* padding-left: $gutter-half;  /*coding partner */
+      /* padding-right: $gutter-half; /* coding partner */
       grid-column: 1 / 2; /* Span one column */
       grid-row: 1;
       -ms-grid-column: 1;
       -ms-grid-column-span: 1; /* Span one column */
       -ms-grid-row: 1;
-    }
-  
-    // Flexbox fallback for CSS Grids
-    .no-cssgrid & {
-  
+  }
+
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+
       @include breakpoint($bp-med) {
-        width: 33.333%; /* Approximately one-third width */
+          width: 33.333%; /* Approximately one-third width */
+         /*  padding-left: $gutter-half; /* coding partner */
+         /*  padding-right: $gutter-half; /* coding partner */
       }
-    }
-  
-    // Fallback for browsers without css grid or flexbox
-    .no-cssgrid.no-flexbox & {
-  
+  }
+
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+
       @include breakpoint($bp-med) {
-        clear: left;
-        display: inline-block;
-        float: left;
+          clear: left;
+          display: inline-block;
+          float: left;
       }
-    }
-  }// end col one
-  
-  .joe__topics-col-33-second { /* Second column - Renamed */
-    grid-column: 1 / 1;
-    grid-row: 2;
-    -ms-grid-row: 2;
-    min-width: 0;
-    padding-left: $gutter-mobile;
-    padding-right: $gutter-mobile;
-  
-    @include breakpoint($bp-med) {
-      @include gutter($margin-left-half...); /* Apply left gutter */
-      padding: 0;
+  }
+}// end col one
+
+.joe__topics-col-33-second { /* Second column - Renamed */
+  grid-column: 1 / 1;
+  grid-row: 2;
+  -ms-grid-row: 2;
+  min-width: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include breakpoint($bp-med) {
+     /*  padding-left: $gutter-half; /* coding partner */
+     /*  padding-right: $gutter-half; /* coding partner */
       grid-column: 2 / 3; /* Second column in the grid */
       grid-row: 1;
       -ms-grid-row: 1;
       -ms-grid-column: 2;
-    }
-  
-    // Flexbox fallback for CSS Grids
-    .no-cssgrid & {
-  
+  }
+
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+
       @include breakpoint($bp-med) {
-        width: 33.333%; /* Approximately one-third width */
+          width: 33.333%; /* Approximately one-third width */
+          /* padding-left: $gutter-half; /* coding partner */
+          /* padding-right: $gutter-half; /* coding partner */
       }
-    }
-  
-    // Fallback for browsers without css grid or flexbox
-    .no-cssgrid.no-flexbox & {
-  
+  }
+
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+
       @include breakpoint($bp-med) {
-        display: inline-block;
-        float: left;
+          display: inline-block;
+          float: left;
       }
-    }
-  } // end col-two (now the second column)
-  
-  
-  .joe__topics-col-33-third { /* Third column - Renamed */
-    grid-column: 1 / 1;
-    grid-row: 3;
-    -ms-grid-row: 3;
-    min-width: 0;
-    padding-left: $gutter-mobile;
-    padding-right: $gutter-mobile;
-  
-    @include breakpoint($bp-med) {
-      @include gutter($margin-left-half...); /* Apply left gutter */
-      padding: 0;
+  }
+} // end col-two (now the second column)
+
+
+.joe__topics-col-33-third { /* Third column - Renamed */
+  grid-column: 1 / 1;
+  grid-row: 3;
+  -ms-grid-row: 3;
+  min-width: 0;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include breakpoint($bp-med) {
+     /* padding-left: $gutter-half; /* coding partner */
+     /* padding-right: $gutter-half; /* coding partner */
       grid-column: 3 / 4; /* Third column in the grid */
       grid-row: 1;
       -ms-grid-row: 1;
       -ms-grid-column: 3;
-    }
-  
-    // Flexbox fallback for CSS Grids
-    .no-cssgrid & {
-  
-      @include breakpoint($bp-med) {
-        width: 33.333%; /* Approximately one-third width */
-      }
-    }
-  
-    // Fallback for browsers without css grid or flexbox
-    .no-cssgrid.no-flexbox & {
-  
-      @include breakpoint($bp-med) {
-        display: inline-block;
-        float: left;
-      }
-    }
-  } // end col-three
+  }
 
+  // Flexbox fallback for CSS Grids
+  .no-cssgrid & {
+
+      @include breakpoint($bp-med) {
+          width: 33.333%; /* Approximately one-third width */
+          /* padding-left: $gutter-half; /* coding partner */
+          /* padding-right: $gutter-half; /* coding partner */
+      }
+  }
+
+  // Fallback for browsers without css grid or flexbox
+  .no-cssgrid.no-flexbox & {
+
+      @include breakpoint($bp-med) {
+          display: inline-block;
+          float: left;
+      }
+  }
+} // end col-three
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.joe__list--topics {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
 
 .joe__list--topics h3 {
   color: #3f3f6d;
-  }
-
-  .topics-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    padding: 10px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
 }
 
-.topics-list .field {
-    flex-grow: 1;
-    margin-right: 10px;
+.topics-list a.topic-row-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-.topics-list a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #3f3f6d; 
-    text-decoration: none;
+.topics-list a.topic-row-link:hover {
+  background-color: transparent;
 }
 
-.topics-list a:hover {
-    background-color: #ea8575;
+.topics-list a.topic-row-link:hover .topic-link {
+  color: $blue-darkest;
+  text-decoration: underline;
 }
 
-.topics-list a .arrow-right {
+.topics-list a.topic-row-link:hover .arrow-right-container { /* coding partner: Hover for the arrow container */
+  background-color: #ea8575; /* coding partner: Change container background on hover */
+}
+
+.topics-list .topic-link {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.topics-list .arrow-right-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3f3f6d;
+}
+
+.topics-list .arrow-right {
   display: inline-block;
   width: 60%;
   height: 60%;
@@ -196,6 +227,5 @@
   background-position: center;
   background-size: contain;
   opacity: 1;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1); /* coding partner: Keep arrow white */
 }
-  
