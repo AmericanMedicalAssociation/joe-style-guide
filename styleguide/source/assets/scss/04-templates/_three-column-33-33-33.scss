@@ -1,164 +1,121 @@
-.joe__layout--topics-three-column { 
-   padding-bottom: 4em;
-
+.joe__layout--topics-three-column {
+  padding-bottom: 4em;
   .cssgrid & {
-      display: grid;
-      display: -ms-grid;
-      grid-template-columns: 1fr;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto;
+    @include breakpoint($bp-med) {
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
-      // min-height: 30em;
-      -ms-grid-columns: 1fr;
+      -ms-grid-columns: 1fr 1fr 1fr;
       -ms-grid-rows: auto;
-
-      @include breakpoint($bp-med) {
-          grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-          grid-template-rows: auto;
-          -ms-grid-columns: 1fr 1fr 1fr; /* Three equal columns */
-          -ms-grid-rows: auto; /* Adjust rows as needed */
-      }
+    }
   }
-
-  // Flexbox fallback for CSS Grids
   .no-cssgrid.flexbox & {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: column;
-      align-items: stretch;
-
-      @include breakpoint($bp-med) {
-          flex-direction: row;
-      }
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: stretch;
+    @include breakpoint($bp-med) {
+      flex-direction: row;
+    }
   }
-
-  // Fallback for browsers without css grid or flexbox
   .no-cssgrid.no-flexbox & {
-      @extend %clearfix;
+    @extend %clearfix;
   }
-
   .joe__topics-col-33,
   .joe__topics-col-33-second,
   .joe__topics-col-33-third {
-      ul {
-          list-style-type: none;
-          padding-left: 0; /* Remove default padding */
-          margin-left: 0; /* Remove default margin */
-      }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
   }
 }
 
-.joe__topics-col-33 { /* First column - Renamed */
+.joe__topics-col-33 {
   grid-column: 1 / 1;
   grid-row: 1;
   -ms-grid-row: 1;
   min-width: 0;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
-
   @include breakpoint($bp-med) {
-      /* padding-left: $gutter-half;  /*coding partner */
-      /* padding-right: $gutter-half; /* coding partner */
-      grid-column: 1 / 2; /* Span one column */
-      grid-row: 1;
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1; /* Span one column */
-      -ms-grid-row: 1;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
   }
-
-  // Flexbox fallback for CSS Grids
   .no-cssgrid & {
-
-      @include breakpoint($bp-med) {
-          width: 33.333%; /* Approximately one-third width */
-         /*  padding-left: $gutter-half; /* coding partner */
-         /*  padding-right: $gutter-half; /* coding partner */
-      }
+    @include breakpoint($bp-med) {
+      width: 33.333%;
+    }
   }
-
-  // Fallback for browsers without css grid or flexbox
   .no-cssgrid.no-flexbox & {
-
-      @include breakpoint($bp-med) {
-          clear: left;
-          display: inline-block;
-          float: left;
-      }
+    @include breakpoint($bp-med) {
+      clear: left;
+      display: inline-block;
+      float: left;
+    }
   }
-}// end col one
+}
 
-.joe__topics-col-33-second { /* Second column - Renamed */
+.joe__topics-col-33-second {
   grid-column: 1 / 1;
   grid-row: 2;
   -ms-grid-row: 2;
   min-width: 0;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
-
   @include breakpoint($bp-med) {
-     /*  padding-left: $gutter-half; /* coding partner */
-     /*  padding-right: $gutter-half; /* coding partner */
-      grid-column: 2 / 3; /* Second column in the grid */
-      grid-row: 1;
-      -ms-grid-row: 1;
-      -ms-grid-column: 2;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
   }
-
-  // Flexbox fallback for CSS Grids
   .no-cssgrid & {
-
-      @include breakpoint($bp-med) {
-          width: 33.333%; /* Approximately one-third width */
-          /* padding-left: $gutter-half; /* coding partner */
-          /* padding-right: $gutter-half; /* coding partner */
-      }
+    @include breakpoint($bp-med) {
+      width: 33.333%;
+    }
   }
-
-  // Fallback for browsers without css grid or flexbox
   .no-cssgrid.no-flexbox & {
-
-      @include breakpoint($bp-med) {
-          display: inline-block;
-          float: left;
-      }
+    @include breakpoint($bp-med) {
+      display: inline-block;
+      float: left;
+    }
   }
-} // end col-two (now the second column)
+}
 
-
-.joe__topics-col-33-third { /* Third column - Renamed */
+.joe__topics-col-33-third {
   grid-column: 1 / 1;
   grid-row: 3;
   -ms-grid-row: 3;
   min-width: 0;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
-
   @include breakpoint($bp-med) {
-     /* padding-left: $gutter-half; /* coding partner */
-     /* padding-right: $gutter-half; /* coding partner */
-      grid-column: 3 / 4; /* Third column in the grid */
-      grid-row: 1;
-      -ms-grid-row: 1;
-      -ms-grid-column: 3;
+    grid-column: 3 / 4;
+    grid-row: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
-
-  // Flexbox fallback for CSS Grids
   .no-cssgrid & {
-
-      @include breakpoint($bp-med) {
-          width: 33.333%; /* Approximately one-third width */
-          /* padding-left: $gutter-half; /* coding partner */
-          /* padding-right: $gutter-half; /* coding partner */
-      }
+    @include breakpoint($bp-med) {
+      width: 33.333%;
+    }
   }
-
-  // Fallback for browsers without css grid or flexbox
   .no-cssgrid.no-flexbox & {
-
-      @include breakpoint($bp-med) {
-          display: inline-block;
-          float: left;
-      }
+    @include breakpoint($bp-med) {
+      display: inline-block;
+      float: left;
+    }
   }
-} // end col-three
+}
 
 .topics-list {
   display: flex;
@@ -197,8 +154,8 @@
   text-decoration: underline;
 }
 
-.topics-list a.topic-row-link:hover .arrow-right-container { /* coding partner: Hover for the arrow container */
-  background-color: #ea8575; /* coding partner: Change container background on hover */
+.topics-list a.topic-row-link:hover .arrow-right-container {
+  background-color: #ea8575;
 }
 
 .topics-list .topic-link {
@@ -227,5 +184,5 @@
   background-position: center;
   background-size: contain;
   opacity: 1;
-  filter: brightness(0) invert(1); /* coding partner: Keep arrow white */
+  filter: brightness(0) invert(1);
 }
