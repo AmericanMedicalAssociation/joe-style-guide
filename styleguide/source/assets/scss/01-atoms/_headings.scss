@@ -85,6 +85,7 @@ h6,
   h2
     :not(.vc-hero-art__flag-type)
     :not(.vc-hero-gallery__flag-type)
+    :not(.joe__article-teaser__title)
     :not(.vc-hero-gallery__flag-type) {
     font-size: clamp(2rem, 1.444rem + 2.468vw, 3.45rem);
   }
