@@ -1,6 +1,6 @@
 .joe__article-hero.is-front-page-specific {
-  height: 500px;
-  margin-bottom: -350px;
+  height: 900px;
+  margin-bottom: -750px;
 }
 
 .joe__article-hero {
@@ -29,7 +29,12 @@
 
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -725px;
+    margin-bottom: -500px;
+  }
+
+  @include breakpoint($bp-large) {
+    height: 900px;
+    margin-bottom: -525px;
   }
 }
 

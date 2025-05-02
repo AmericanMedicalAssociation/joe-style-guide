@@ -31,20 +31,16 @@
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
   padding: 0.75em 10px 10px;
-  // top: -1.3em;
   .joe__flag__type {
     display: block;
   }
-  .joe__poll & {
-    // top: -2em;
-  }
+
   .joe__issue-listing--current & {
     top: -2.7em;
     padding-top: 2em;
   }
   @include breakpoint($bp-xxs) {
     padding: 1.6em 12px 10px;
-    // top: -2em;
     .joe__poll & {
       top: -2.7em;
     }
