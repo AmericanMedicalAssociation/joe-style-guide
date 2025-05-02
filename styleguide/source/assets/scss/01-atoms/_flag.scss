@@ -41,10 +41,9 @@
   .joe__issue-listing--current & {
     top: -2.7em;
     padding-top: 2em;
-
   }
   @include breakpoint($bp-xxs) {
-    padding: 0.75em 12px 10px;
+    padding: 1.6em 12px 10px;
     // top: -2em;
     .joe__poll & {
       top: -2.7em;
