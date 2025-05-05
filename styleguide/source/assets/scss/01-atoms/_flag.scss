@@ -30,7 +30,7 @@
 
 .joe__flag--larger {
   @include type($font-serif, .75em, $font-weight-medium, 1.25);
-  padding: 2em 10px 10px;
+  padding: 1em 10px 10px;
   top: -1.3em;
   .joe__flag__type {
     display: block;

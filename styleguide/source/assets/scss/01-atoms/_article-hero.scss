@@ -14,7 +14,7 @@
 
   @include breakpoint($bp-xs) {
     height: 600px;
-    margin-bottom: -400px;
+    margin-bottom: -480px;
   }
 
   @include breakpoint($bp-small) {
@@ -35,12 +35,12 @@
 
 .joe__article-hero--no-image {
   height: 400px;
-  margin-bottom: -375px;
+  margin-bottom: -275px;
   max-width: none;
 
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -725px;
+    margin-bottom: -575px;
   }
   .joe__article-hero__overlay {
     display: none;
