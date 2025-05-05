@@ -24,13 +24,9 @@
 
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -500px;
+    margin-bottom: -575px;
   }
 
-  @include breakpoint($bp-large) {
-    height: 900px;
-    margin-bottom: -525px;
-  }
 }
 
 .joe__article-hero--no-image {
