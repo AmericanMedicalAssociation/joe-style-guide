@@ -1,18 +1,21 @@
 .joe__sticky-header {
-  padding-top: 100px;
+  // padding-top: 100px;
 }
 
 .joe__header {
   @extend %clearfix;
-  background-color: $white;
+  background-color: rgba(255, 255, 255, 0.85);
   box-shadow: $shadow;
   border-top: 4px solid $blue-darkest;
   padding: 8px 0 8px;
   z-index: 2;
-  position: relative;
+  position: sticky;
   transition: all .25s ease-in;
   z-index: 11;
-  
+  width: 100%;
+  top: 0;
+  margin-top: -115px;
+
   .joe__wordmark {
     float: left;
     max-width: calc(100% - 105px);
@@ -25,7 +28,7 @@
   }
   
   .joe__sticky-header & {
-    position: fixed;
+    // position: fixed;
     left: 0;
     right: 0;
     top: 0;
