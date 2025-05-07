@@ -130,59 +130,61 @@
 }
 
 .joe__list--topics h3 {
-  color: #3f3f6d;
+  color: $navy-lighter;
   margin-top: 0;
   margin-bottom: 1em;
   margin-left: 0;
 }
 
-.topics-list a.topic-row-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  text-decoration: none;
-  color: inherit;
-}
+.topics-list {
+  a.topic-row-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
 
-.topics-list a.topic-row-link:hover {
-  background-color: transparent;
-}
+    &:hover {
+      background-color: transparent;
 
-.topics-list a.topic-row-link:hover .topic-link {
-  color: $blue-darkest;
-  text-decoration: underline;
-}
+      .topic-link {
+        color: $blue-darkest;
+        text-decoration: underline;
+      }
 
-.topics-list a.topic-row-link:hover .arrow-right-container {
-  background-color: #ea8575;
-}
+      .arrow-right-container {
+        background-color: $orange-lighter;
+      }
+    }
+  }
 
-.topics-list .topic-link {
-  flex-grow: 1;
-  margin-right: 10px;
-}
+  .topic-link {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
 
-.topics-list .arrow-right-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #3f3f6d;
-}
+  .arrow-right-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $navy-lighter;
+  }
 
-.topics-list .arrow-right {
-  display: inline-block;
-  width: 60%;
-  height: 60%;
-  background-image: url("../assets/icons/svg/arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 1;
-  filter: brightness(0) invert(1);
+  .arrow-right {
+    display: inline-block;
+    width: 60%;
+    height: 60%;
+    background-image: url("../assets/icons/svg/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    filter: brightness(0) invert(1);
+  }
 }
