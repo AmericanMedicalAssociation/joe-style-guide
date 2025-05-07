@@ -42,7 +42,7 @@
     color: $white;
     margin-bottom: 2em;
     @include breakpoint($bp-med) {
-      font-size: clamp(1rem, 0.9rem + 0.765vw, 1.1rem);
+      font-size: clamp(1.1rem, 1.2rem + 0.765vw, 1.3rem);
     }
   }
 
