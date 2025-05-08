@@ -1,5 +1,5 @@
 .joe__layout--topics-three-column {
-  padding-bottom: 4em;
+  margin-bottom: 5em;
   .cssgrid & {
     display: grid;
     display: -ms-grid;
@@ -42,6 +42,8 @@
   grid-row: 1;
   -ms-grid-row: 1;
   min-width: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
   @include breakpoint($bp-med) {
@@ -70,6 +72,8 @@
   grid-row: 2;
   -ms-grid-row: 2;
   min-width: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
   @include breakpoint($bp-med) {
@@ -96,6 +100,8 @@
   grid-row: 3;
   -ms-grid-row: 3;
   min-width: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
   padding-left: $gutter-mobile;
   padding-right: $gutter-mobile;
   @include breakpoint($bp-med) {
@@ -132,7 +138,7 @@
 .joe__list--topics h3 {
   color: $navy-lighter;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
   margin-left: 0;
 }
 
