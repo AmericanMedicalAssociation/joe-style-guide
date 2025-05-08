@@ -92,7 +92,7 @@
              $("body").removeClass("joe__sticky-gallery-header");
            }
          } else {
-           if (winTop >= 30) {
+           if (winTop >= 100) {
              $("body").addClass("joe__sticky-header");
            } else {
              $("body").removeClass("joe__sticky-header");
