@@ -68,6 +68,11 @@
     height: 900px;
     margin-bottom: -464px;
   }
+  @include breakpoint($bp-xl) {
+    height: 1000px;
+  }
+
+
 }
 
 .joe__article-hero__overlay {
