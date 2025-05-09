@@ -141,13 +141,20 @@
       display: block;
       visibility: visible;
       float: left;
-      padding: 2px;
     }
 
     @include breakpoint($bp-large) {
       margin: -7px 0 0 0;
       width: 36px;
       height: 35px;
+    }
+
+    .icon-menu {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
