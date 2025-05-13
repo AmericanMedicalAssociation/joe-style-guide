@@ -24,12 +24,12 @@
 
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -500px;
+    margin-bottom: -564px;
   }
 
   @include breakpoint($bp-large) {
     height: 900px;
-    margin-bottom: -525px;
+    margin-bottom: -564px;
   }
 }
 
@@ -40,11 +40,39 @@
 
   @include breakpoint($bp-med) {
     height: 800px;
-    margin-bottom: -725px;
+    margin-bottom: -475px;
   }
   .joe__article-hero__overlay {
     display: none;
   }
+}
+
+.joe__article-hero-front-page {
+
+  @include breakpoint($bp-xs) {
+    height: 600px;
+    margin-bottom: -400px;
+  }
+
+  @include breakpoint($bp-small) {
+    height: 700px;
+    margin-bottom: -425px;
+  }
+
+  @include breakpoint($bp-med) {
+    height: 800px;
+    margin-bottom: -464px;
+  }
+
+  @include breakpoint($bp-large) {
+    height: 900px;
+    margin-bottom: -464px;
+  }
+  @include breakpoint($bp-xl) {
+    height: 1000px;
+  }
+
+
 }
 
 .joe__article-hero__overlay {

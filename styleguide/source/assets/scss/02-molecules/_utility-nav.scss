@@ -50,14 +50,15 @@
   margin: 0;
   padding: 0;
   line-height: inherit;
-
   @include breakpoint($bp-med) {
     float: left;
+    display: none;
   }
 }
 
 //Social List
 .joe__utility-nav__list--right {
+  display: block;
   @include breakpoint($bp-med) {
     float: right;
   }

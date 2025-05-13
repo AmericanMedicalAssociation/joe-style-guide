@@ -1,12 +1,13 @@
 .joe__primary-nav {
-  
+
   @include breakpoint($bp-med) {
     float: right;
     clear: right;
-    
+
     .joe__sticky-header & {
       float: none;
       text-align: center;
+      display: none;
     }
   }
 }
@@ -20,7 +21,7 @@
 .joe__primary-nav__item {
   @include type($font-serif, 1em, $font-weight-bold, 1.25);
   display: block;
-  
+
   a:link,
   a:visited {
     display: block;
@@ -28,17 +29,20 @@
     border-bottom: 1px solid $white;
     border-left: 1px solid $white;
     color: $white;
+    @include breakpoint($bp-med) {
+      border: 0;
+    }
   }
-  
+
   a:active,
   a:hover,
   a:focus {
     position: relative;
   }
-  
+
   @include breakpoint($bp-med) {
     display: inline-block;
-    
+
     a:link,
     a:visited {
       display: inline-block;
@@ -46,29 +50,29 @@
       color: $navy-lighter;
       border-bottom: 0;
     }
-    
+
     a:active,
     a:hover,
     a:focus {
       position: relative;
       border-bottom: 0;
     }
-    
+
     &:last-child {
       a:link,
       a:visited {
         padding-right: 0;
       }
     }
-    
+
     .joe__sticky-header & {
-      
+
       a:link,
       a:visited {
         color: $white;
         border: 0;
       }
-      
+
       a:active,
       a:hover,
       a:focus {
