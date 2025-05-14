@@ -4,6 +4,7 @@
 
 .joe__page-header__title {
   margin-top: 0;
+  margin-bottom: 0.5em;
   
   @include breakpoint($bp-med) {
     @include type($font-serif, 2.05em, $font-weight-bold, 1.25);
