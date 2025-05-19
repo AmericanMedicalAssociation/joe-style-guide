@@ -42,6 +42,7 @@
   grid-row: 1;
   -ms-grid-row: 1;
   min-width: 0;
+  padding-bottom: 2em;
   margin-bottom: 2em;
   margin-top: 1em;
   padding-right: $gutter;
@@ -71,6 +72,7 @@
   grid-row: 2;
   -ms-grid-row: 2;
   min-width: 0;
+  padding-bottom: 2em;
   margin-bottom: 1em;
   margin-top: 1em;
   padding-right: $gutter;
@@ -98,6 +100,7 @@
   grid-row: 3;
   -ms-grid-row: 3;
   min-width: 0;
+  padding-bottom: 2em;
   margin-bottom: 1em;
   margin-top: 1em;
   padding-right: $gutter;
@@ -123,6 +126,8 @@
 .topics-list {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $black-20;
+  height: 4em;
   padding: 0;
 }
 
@@ -137,7 +142,9 @@
   color: $navy-lighter;
   margin-top: 0;
   margin-left: 0;
-  font-size: 1.1em;
+  font-family: $museo-slab;
+  font-size: 1em;
+  line-height: normal;
 }
 
 .topics-list {
@@ -145,15 +152,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 1em 0;
     text-decoration: none;
-    color: inherit;
+    color: $blue-darkest;
 
     &:hover {
       background-color: transparent;
 
       .topic-link {
-        color: $blue-darkest;
+        color: $black-90;
         text-decoration: underline;
       }
 
@@ -167,7 +174,8 @@
     flex-grow: 1;
     margin-right: 10px;
     @include breakpoint($bp-large) {
-    font-size: 0.7em;
+    font-size: 1em;
+    line-height: 1em;
   }
   }
 
