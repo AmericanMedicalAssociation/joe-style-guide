@@ -34,11 +34,15 @@
   padding: 1em;
   margin-bottom: 2em;
   grid-row: 2;
-  @include breakpoint($bp-med) {
-    margin-top: -100px;
+  @include breakpoint($bp-small) {
+    margin-top: -120px;
+  }
+  @include breakpoint($bp-large) {
     margin-right: 1em;
   }
-
+  @include breakpoint($bp-large) {
+    margin-top: -100px;
+  }
   .joe__article-teaser {
     margin-bottom: 0.8em;
   }
