@@ -34,10 +34,15 @@
   padding: 1em;
   margin-bottom: 2em;
   grid-row: 2;
-  @include breakpoint($bp-small) {
-    margin-top: -120px;
+
+  @include breakpoint($bp-xs) {
+    margin-top: -50px;
   }
-  @include breakpoint($bp-large) {
+
+  @include breakpoint($bp-small) {
+    margin-top: -50px;
+  }
+  @include breakpoint($bp-med) {
     margin-right: 1em;
   }
   @include breakpoint($bp-large) {
