@@ -34,13 +34,28 @@
   padding: 1em;
   margin-bottom: 2em;
   grid-row: 2;
+
+  @include breakpoint($bp-xs) {
+    margin-top: -50px;
+  }
+
+  @include breakpoint($bp-small) {
+    margin-top: -50px;
+  }
   @include breakpoint($bp-med) {
     margin-right: 1em;
+  }
+  @include breakpoint($bp-large) {
+    margin-top: -100px;
+  }
+  .joe__article-teaser {
+    margin-bottom: 0.8em;
   }
 
   .joe__topics__label {
     color: $white;
     margin-bottom: 2em;
+    margin-top: 1em;
     @include breakpoint($bp-med) {
       font-size: clamp(1.1rem, 1.2rem + 0.765vw, 1.3rem);
     }
@@ -68,6 +83,10 @@
     }
   }
 
+  .joe__article-teaser__block {
+    padding-right: 0.8em;
+  }
+
   .joe__flag {
     background-color: $gold;
     background: $gold;
@@ -75,6 +94,10 @@
     .joe__flag__type {
       color: $navy;
     }
+  }
+
+  .joe__article-teaser__title {
+    margin-bottom: 0.3em;
   }
 }
 
