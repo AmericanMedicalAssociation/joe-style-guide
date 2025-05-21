@@ -1242,7 +1242,7 @@ sup:hover {
 @media (min-width: 37.5em) {
   .joe__article-hero {
     height: 700px;
-    margin-bottom: -425px;
+    margin-bottom: -475px;
   }
 }
 @media (min-width: 56.25em) {
@@ -10321,14 +10321,33 @@ h2.vc-hero-ethics__flag-type {
   margin-bottom: 2em;
   grid-row: 2;
 }
+@media (min-width: 25em) {
+  .joe__featured-listing--block {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 37.5em) {
+  .joe__featured-listing--block {
+    margin-top: -50px;
+  }
+}
 @media (min-width: 56.25em) {
   .joe__featured-listing--block {
     margin-right: 1em;
   }
 }
+@media (min-width: 75em) {
+  .joe__featured-listing--block {
+    margin-top: -100px;
+  }
+}
+.joe__featured-listing--block .joe__article-teaser {
+  margin-bottom: 0.8em;
+}
 .joe__featured-listing--block .joe__topics__label {
   color: #ffffff;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 @media (min-width: 56.25em) {
   .joe__featured-listing--block .joe__topics__label {
@@ -10355,6 +10374,9 @@ h2.vc-hero-ethics__flag-type {
     grid-row-start: 2;
   }
 }
+.joe__featured-listing--block .joe__article-teaser__block {
+  padding-right: 0.8em;
+}
 .joe__featured-listing--block .joe__flag {
   background-color: #f2ce5a;
   background: #f2ce5a;
@@ -10362,6 +10384,9 @@ h2.vc-hero-ethics__flag-type {
 }
 .joe__featured-listing--block .joe__flag .joe__flag__type {
   color: #1f1f52;
+}
+.joe__featured-listing--block .joe__article-teaser__title {
+  margin-bottom: 0.3em;
 }
 
 .joe__article {
