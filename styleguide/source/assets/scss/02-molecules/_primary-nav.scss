@@ -1,13 +1,27 @@
 .joe__primary-nav {
-
   @include breakpoint($bp-med) {
     float: right;
     clear: right;
-
-    .joe__sticky-header & {
+  }
+  .joe__sticky-header & {
+    @include breakpoint($bp-med) {
       float: none;
       text-align: center;
       display: none;
+    }
+  }
+}
+
+html {
+  &.vc-ethics,
+  &.vc-gallery,
+  &.vc-art {
+    .joe__sticky-header .joe__primary-nav {
+      @include breakpoint($bp-med) {
+        float: none;
+        clear: right;
+        display: block;
+      }
     }
   }
 }
