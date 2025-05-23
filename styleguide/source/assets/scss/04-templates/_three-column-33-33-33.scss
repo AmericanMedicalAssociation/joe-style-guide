@@ -7,7 +7,7 @@
     grid-template-rows: auto;
     -ms-grid-columns: 1fr;
     -ms-grid-rows: auto;
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
       -ms-grid-columns: 1fr 1fr 1fr;
@@ -19,7 +19,7 @@
     display: -webkit-flex;
     flex-direction: column;
     align-items: stretch;
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       flex-direction: row;
     }
   }
@@ -42,11 +42,11 @@
   grid-row: 1;
   -ms-grid-row: 1;
   min-width: 0;
-  margin-bottom: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
   margin-top: 1em;
-  padding-left: $gutter-mobile;
-  padding-right: $gutter-mobile;
-  @include breakpoint($bp-med) {
+  padding-right: $gutter;
+  @include breakpoint($bp-large) {
     grid-column: 1 / 2;
     grid-row: 1;
     -ms-grid-column: 1;
@@ -54,12 +54,12 @@
     -ms-grid-row: 1;
   }
   .no-cssgrid & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       width: 33.333%;
     }
   }
   .no-cssgrid.no-flexbox & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       clear: left;
       display: inline-block;
       float: left;
@@ -72,23 +72,23 @@
   grid-row: 2;
   -ms-grid-row: 2;
   min-width: 0;
+  padding-bottom: 2em;
   margin-bottom: 1em;
   margin-top: 1em;
-  padding-left: $gutter-mobile;
-  padding-right: $gutter-mobile;
-  @include breakpoint($bp-med) {
+  padding-right: $gutter;
+  @include breakpoint($bp-large) {
     grid-column: 2 / 3;
     grid-row: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
   .no-cssgrid & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       width: 33.333%;
     }
   }
   .no-cssgrid.no-flexbox & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       display: inline-block;
       float: left;
     }
@@ -100,23 +100,23 @@
   grid-row: 3;
   -ms-grid-row: 3;
   min-width: 0;
+  padding-bottom: 2em;
   margin-bottom: 1em;
   margin-top: 1em;
-  padding-left: $gutter-mobile;
-  padding-right: $gutter-mobile;
-  @include breakpoint($bp-med) {
+  padding-right: $gutter;
+  @include breakpoint($bp-large) {
     grid-column: 3 / 4;
     grid-row: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
   .no-cssgrid & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       width: 33.333%;
     }
   }
   .no-cssgrid.no-flexbox & {
-    @include breakpoint($bp-med) {
+    @include breakpoint($bp-large) {
       display: inline-block;
       float: left;
     }
@@ -126,6 +126,8 @@
 .topics-list {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $black-20;
+  min-height: 4em;
   padding: 0;
 }
 
@@ -133,13 +135,16 @@
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  height: 2.5em;
 }
 
 .joe__list--topics h3 {
   color: $navy-lighter;
   margin-top: 0;
-  margin-bottom: 0.2em;
   margin-left: 0;
+  font-family: $museo-slab;
+  font-size: 1em;
+  line-height: normal;
 }
 
 .topics-list {
@@ -147,15 +152,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 1em 0;
     text-decoration: none;
-    color: inherit;
+    color: $blue-darkest;
 
     &:hover {
       background-color: transparent;
 
       .topic-link {
-        color: $blue-darkest;
+        color: $black-90;
         text-decoration: underline;
       }
 
@@ -168,6 +173,10 @@
   .topic-link {
     flex-grow: 1;
     margin-right: 10px;
+    @include breakpoint($bp-large) {
+    font-size: 1em;
+    line-height: 1em;
+  }
   }
 
   .arrow-right-container {
@@ -186,7 +195,7 @@
     display: inline-block;
     width: 60%;
     height: 60%;
-    background-image: url("../assets/icons/svg/arrow-right.svg");
+    background-image: url("../icons/svg/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
