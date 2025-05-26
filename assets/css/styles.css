@@ -10467,6 +10467,7 @@ h2.vc-hero-ethics__flag-type {
   border-bottom: 2px solid #CE4A22;
 }
 
+.page-node-podcast .layout-container,
 .page-node-article .layout-container {
   overflow: hidden;
 }
