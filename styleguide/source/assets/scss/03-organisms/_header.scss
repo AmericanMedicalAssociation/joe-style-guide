@@ -202,7 +202,6 @@
   }
   &.is-active {
     visibility: visible;
-    transition:  visibility 0s ease-in, opacity .2s ease-in .2s;
     opacity: 1;
     z-index: 12;
   }
