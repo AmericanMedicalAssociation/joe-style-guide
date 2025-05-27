@@ -5899,8 +5899,6 @@ main + .joe__footer {
 }
 #joe__all-menu.is-active {
   visibility: visible;
-  -webkit-transition: visibility 0s ease-in, opacity 0.2s ease-in 0.2s;
-  transition: visibility 0s ease-in, opacity 0.2s ease-in 0.2s;
   opacity: 1;
   z-index: 12;
 }
