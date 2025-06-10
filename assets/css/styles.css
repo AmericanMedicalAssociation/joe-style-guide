@@ -1242,19 +1242,18 @@ sup:hover {
 @media (min-width: 37.5em) {
   .joe__article-hero {
     height: 700px;
-    margin-bottom: -475px;
+    margin-bottom: -490px;
   }
 }
 @media (min-width: 56.25em) {
   .joe__article-hero {
     height: 800px;
-    margin-bottom: -564px;
+    margin-bottom: -538px;
   }
 }
 @media (min-width: 75em) {
   .joe__article-hero {
-    height: 900px;
-    margin-bottom: -564px;
+    margin-bottom: -538px;
   }
 }
 
@@ -10339,26 +10338,7 @@ h2.vc-hero-ethics__flag-type {
   padding: 1em;
   margin-bottom: 2em;
   grid-row: 2;
-}
-@media (min-width: 25em) {
-  .joe__featured-listing--block {
-    margin-top: -50px;
-  }
-}
-@media (min-width: 37.5em) {
-  .joe__featured-listing--block {
-    margin-top: -50px;
-  }
-}
-@media (min-width: 56.25em) {
-  .joe__featured-listing--block {
-    margin-right: 1em;
-  }
-}
-@media (min-width: 75em) {
-  .joe__featured-listing--block {
-    margin-top: -100px;
-  }
+  margin-top: 0;
 }
 .joe__featured-listing--block .joe__article-teaser {
   margin-bottom: 0.8em;
