@@ -54,6 +54,7 @@
     margin-bottom: .5em;
     width: 100%;
     max-width: 100%;
+    height: auto;
   }
 
   &:link,
@@ -143,7 +144,7 @@
     border-bottom: 0;
   }
   text-align: end; /* RTL */
-} 
+}
 
 .joe__article-teaser__meta {
   @extend %joe__type--smaller;
