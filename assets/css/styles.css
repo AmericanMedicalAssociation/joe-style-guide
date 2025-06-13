@@ -5192,6 +5192,7 @@ blockquote {
   margin-bottom: 0.5em;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 .joe__article-teaser__image:link, .joe__article-teaser__image:visited {
   border-bottom: 0;
