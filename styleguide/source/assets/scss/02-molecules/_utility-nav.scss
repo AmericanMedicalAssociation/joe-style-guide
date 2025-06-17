@@ -64,6 +64,7 @@
   }
   .joe__utility-nav__item {
     margin-right: 0;
+    padding: .4em 0;
     &:last-child {
       margin-right: 0;
     }
@@ -88,7 +89,7 @@
 
       .social-icon {
         height: 36px;
-        width: 26px;
+        // width: 26px;
         position: relative;
         border-left-color: transparent;
         padding: 9px .2em;
