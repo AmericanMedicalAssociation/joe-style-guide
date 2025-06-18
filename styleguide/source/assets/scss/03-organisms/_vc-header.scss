@@ -61,6 +61,19 @@
       text-decoration: underline;
     }
   }
+  // Social icons on next line
+  .joe__utility-nav__list--right {
+    .joe__utility-nav__item:not(.social) {
+      width: 100%;
+    }
+    .social {
+      margin-top: 8px;
+    }
+    .social-icon.facebook {
+      width: 15px;
+      padding-right: 5px;
+    }
+  }
 }
 
 // Art of Medicine header overrides
@@ -79,9 +92,9 @@
     .joe__wordmark a {
       color: var(--c-hero-text);
     }
-  
+
     .vc-header__action-button svg {
-  
+
       path,
       circle {
         stroke: var(--c-hero-text);
