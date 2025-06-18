@@ -27,6 +27,17 @@
   @include breakpoint($bp-large) {
     margin-bottom: -538px;
   }
+  picture {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
 
 .joe__article-hero--no-image {
