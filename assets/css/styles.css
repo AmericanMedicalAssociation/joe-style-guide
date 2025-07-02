@@ -1256,6 +1256,17 @@ sup:hover {
     margin-bottom: -538px;
   }
 }
+.joe__article-hero picture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.joe__article-hero picture img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 
 .joe__article-hero--no-image {
   height: 400px;
@@ -7200,6 +7211,17 @@ main + .joe__footer {
 :root[class*=vc-] .vc-header .joe__primary-nav__item a:hover, :root[class*=vc-] .vc-header .joe__primary-nav__item a:focus, :root[class*=vc-] .vc-header .joe__primary-nav__item a:active {
   text-decoration: underline;
 }
+:root[class*=vc-] .vc-header .joe__utility-nav__list--right .joe__utility-nav__item:not(.social) {
+  width: 100%;
+}
+:root[class*=vc-] .vc-header .joe__utility-nav__list--right .social {
+  margin-top: 8px;
+}
+:root[class*=vc-] .vc-header .joe__utility-nav__list--right .social-icon.facebook {
+  width: 15px;
+  padding-right: 5px;
+  padding-left: 0;
+}
 
 :root.vc-art {
   -webkit-padding-before: 3.2rem;
@@ -10318,7 +10340,7 @@ h2.vc-hero-ethics__flag-type {
   left: -6px;
   z-index: -1;
   display: block;
-  background: url("../images/background-gradient.png");
+  background: url("../images/background-gradient.webp");
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -11546,7 +11568,7 @@ a.scroll-down .icon:after {
   left: -6px;
   z-index: -1;
   display: block;
-  background: url("../images/background-gradient.png");
+  background: url("../images/background-gradient.webp");
   background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
