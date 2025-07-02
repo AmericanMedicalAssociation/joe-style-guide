@@ -17,10 +17,12 @@
             navAll = $('#joe__all-menu'),
             menuTriggerDesktop = $('#menu-trigger-desktop'),
             elementsToClone = $('#joe__nav-drawer').find('.joe__primary-nav__list, .joe__utility-nav__list'),
-            searchDrawer = $('#site-search-form');
+            searchDrawer = $('#site-search-form'),
+            targetContainer = $('#joe__all-menu .nav-all');
 
-        elementsToClone.clone().appendTo('#joe__all-menu .nav-all');
-
+        if (targetContainer.is(':empty')) {
+         elementsToClone.clone().appendTo(targetContainer);
+        }
          // Menu
          // When a user clicks on the menu trigger (main)
         menuTrigger.click(function() {
