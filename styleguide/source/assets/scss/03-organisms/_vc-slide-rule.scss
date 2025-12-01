@@ -35,14 +35,14 @@ $initial-reveal: 50%;
   position: absolute;
   left: 0;
   top: 0;
-  right: calc(100% - #{$initial-reveal});
+  right: calc(100% - #{($initial-reveal / 100)});
   overflow: hidden;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.35s;
 
   &> :first-child {
-    width: calc(100%*100%/#{$initial-reveal});
+    width: calc(100% * (#{$initial-reveal} / 100));
     max-width: none;
     height: 100%;
   }

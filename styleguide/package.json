@@ -50,7 +50,6 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-svgmin": "^1.2.4",
     "gulp4-run-sequence": "^1.0.0",
-    "gulpicon": "^1.2.1",
     "node-sass": "^8.0.0",
     "sass": "^1.56.1",
     "ws": "^7.5.9"

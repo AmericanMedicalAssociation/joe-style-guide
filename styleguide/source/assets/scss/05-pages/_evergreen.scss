@@ -1,0 +1,28 @@
+.homepage-evergreen {
+
+  .joe__page-header,
+  .joe__issue-header__title,
+  .joe__page--content {
+    text-align: center;
+  }
+
+  .joe__issue-header__desc {
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+  }
+
+  .joe__issue-filter {
+    display: flex;
+    justify-content: center;
+
+    &__children {
+      text-align: center;
+    }
+
+  }
+
+  .joe__page-header__title {
+     @include type($font-serif, 1.7em, $font-weight-bold, 1.2);
+  }
+
+}

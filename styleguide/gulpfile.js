@@ -26,7 +26,6 @@ var gulp        = require('gulp'),
     gutil       = require('gulp-util');
     pWaitFor    = require('p-wait-for'),
     pathExists  = require('path-exists'),
-    gulpicon    = require("gulpicon/tasks/gulpicon"),
     plumber     = require('gulp-plumber');
 
 // Config
@@ -86,7 +85,10 @@ gulp.task('scripts', function () {
     .pipe(uglify())
     .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
     .pipe(gulp.dest(config.scripts.dest))
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(browserSync.reload({
+      stream:true,
+      notify:false
+    }));
 });
 
 // Task: Handle fonts
@@ -121,24 +123,13 @@ gulp.task('minifyIcons', function() {
     .pipe(gulp.dest(config.icons.min));
 });
 
-// Based on https://github.com/filamentgroup/gulpicon#usage
-var iconFiles = glob.sync(config.icons.files);
-var iconConfig = require(config.icons.configFile);
-iconConfig.dest = config.icons.dest;
-gulp.task('makeIcons', gulpicon(iconFiles, iconConfig));
-gulp.task('waitForIcons', function(callback) {
-  var trigger = iconConfig.dest + 'preview.html';
-  return pWaitFor(() => pathExists(trigger, '1000')).then(() => {
-    console.log('Yay! The icons now exist.');
-  });
-});
 gulp.task('reloadIcons', function() {
   return gulp.src('.', {read: false, allowEmpty: true})
     .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('icons', function (callback) {
-  runSequence('minifyIcons', 'makeIcons', 'waitForIcons', 'reloadIcons', callback);
+  runSequence('minifyIcons', 'reloadIcons', callback);
 });
 
 gulp.task('sass', gulp.series('scss-lint', function(callback){
@@ -243,10 +234,11 @@ gulp.task('default', gulp.series('clean:before', function(callback){
 
   // We need to re-run sass last to make sure the latest styles.css gets loaded
   runSequence(
-    ['scripts', 'fonts', 'images', 'sass'],
+    ['fonts', 'images', 'icons'],
     'patternlab',
     'styleguide',
     'sass',
+    'scripts',
     callback
   );
 }));

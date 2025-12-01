@@ -27,7 +27,9 @@
 		"php": ">=5.4",
 		"pattern-lab/core": "^2",
 		"pattern-lab/patternengine-twig": "^2.0.0",
-		"pattern-lab/styleguidekit-twig-default": "^3.0.0"
+		"pattern-lab/styleguidekit-twig-default": "^3.0.0",
+		"pattern-lab/styleguidekit-assets-default": "^3.5",
+		"cweagans/composer-patches": "^1.6"
 	},
 	"scripts": {
 		"post-install-cmd": [
@@ -58,13 +60,25 @@
 				"pattern-lab/starterkit-twig-demo"
 			]
 		},
-		"patches": {
-			"pattern-lab/core": {
-				"Add scss files to builder": "patches/core-builder-scss-files.patch"
-			},
-			"pattern-lab/styleguidekit-assets-default": {
-				"Add scss panel to viewer": "patches/styleguidekit-index-scss-panel.patch"
-			}
-		}
+    "patches": {
+      "pattern-lab/core": {
+        "Add scss files to builder": "patches/core-builder-scss-files.patch"
+      },
+      "pattern-lab/styleguidekit-assets-default": {
+        "Add scss panel to viewer": "patches/styleguidekit-index-scss-panel.patch"
+      }
+    }
+	},
+	"config": {
+		"allow-plugins": {
+			"cweagans/composer-patches": true
+		},
+		"audit": {
+    		"ignore": [
+      			"PKSA-wws7-mr54-jsny",
+				"PKSA-yhcn-xrg3-68b1",
+				"PKSA-2wrf-1xmk-1pky"
+   			 ]
+  		}
 	}
 }
